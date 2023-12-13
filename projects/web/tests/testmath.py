@@ -20,7 +20,7 @@ html = markdown.markdown(md, extensions=[
       # 'eqnmath',
       # 'alignmath',
       'fenced_code',
-      'md_mermaid',
+      #'md_mermaid',
       ])
 print('===================')
 print(html)

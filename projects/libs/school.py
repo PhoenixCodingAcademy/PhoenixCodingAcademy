@@ -30,7 +30,7 @@ def Markdown(md):
   if not md: return ''
   try:
     html = markdown.markdown(md, extensions=[
-      'md_mermaid',
+      #'md_mermaid',
       'fenced_code', # triple backticks
       'tables',
       TocExtension(toc_depth=2)
