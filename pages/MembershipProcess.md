@@ -8,7 +8,7 @@ This page shows how to invite a member to the organization.
 As an admin, here is how to invite a new member:
 
 * Sign in to Github with you PCA admin account
-* Go to https://github.com/orgs/PhoenixCodingAcademy/people
+* Go to [https://github.com/orgs/PhoenixCodingAcademy/people](https://github.com/orgs/PhoenixCodingAcademy/people)
 * Click green Invite Member button
 * Type in new user's github account; e.g. "Dagny Howard" below
 
@@ -38,6 +38,6 @@ As an admin, here is how to invite a new member:
 
 >>> ![Alt text](/static/images/membership5.png)
 
-* When she clicks the green Join Phoenix Coding Academy High School, then she will be a member listed the Members tab of link https://github.com/orgs/PhoenixCodingAcademy/people
+* When she clicks the green Join Phoenix Coding Academy High School, then she will be a member listed the Members tab of link [https://github.com/orgs/PhoenixCodingAcademy/people](https://github.com/orgs/PhoenixCodingAcademy/people)
 
 
