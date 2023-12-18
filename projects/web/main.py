@@ -5,6 +5,7 @@ This will start the Flask web but watch it for changes and automatically reload 
 '''
 import glob
 import os
+import re
 import sys
 import yaml
 
@@ -19,8 +20,9 @@ sys.path.insert(0, root)
 import libs.tools as tools
 from libs.school import *
 from libs.exam import *
-from flask import Flask, Blueprint, render_template, request, send_file, redirect, send_from_directory
+from libs.search import Search
 
+from flask import Flask, Blueprint, render_template, request, send_file, redirect, send_from_directory
 from api import *
 
 #fnStartup = tools.GetAncestorPath('startup.yaml')
@@ -124,6 +126,38 @@ def _assignment(id):
 
 
 
+@app.route('/pages')
+def _pages():
+  '''
+  Get a list of all pages (*.md) under the "pages" folder.
+  '''
+  school = getSchool()
+  pagesPath = tools.GetAncestorPath('pages')
+  pages = glob.glob(os.path.join(pagesPath, '*.md'))
+  title = "Pages"
+  html = '<ul>'
+  for page in pages:
+    fn = os.path.split(page)[1]
+    if fn.startswith('_'): continue
+    path = f"/pages/{fn}"
+    name = fn[:-3]
+    text = tools.readFile(page)
+    desc = ""
+    match = re.search(r"DESCRIPTION:(?P<A>.*)", text)
+    if match:
+      desc = " - " + match.group("A").strip()
+    html = html + f"""<li><a href="{path}">{name}</a><i>{desc}</i></li>"""
+  html += '\n</ul>'
+
+  rootRepo = RepoRoot()
+  webPath = os.path.join(rootRepo, 'projects', 'web')
+  p = os.path.join(webPath, 'templates', "pages.html")
+  p = "pages.html"
+  return render_template(p, html=html, title=title)
+
+
+
+
 
 @app.route('/notebooks')
 def _notebooks():
@@ -183,6 +217,27 @@ def _client_example():
   Example page that calls an API
   '''
   return render_template('client_example.html')
+
+
+
+
+@app.route('/search')
+def _search():
+  '''
+
+  '''
+  term = request.args.get("search", '')
+  fn = tools.GetAncestorPath("projects/index.txt")
+  db = tools.readFile(fn)
+  search = Search(db)
+
+  html = '<ul>'
+  for sr in search.Search(term):
+    print(sr.score, sr.path)
+    html = html + f"""<li><a href="{sr.path}">{sr.path}</a><i> ({sr.score})</i></li>"""
+  html += '\n</ul>'
+  title = term
+  return render_template("search.html", html=html, title=title)
 
 
 

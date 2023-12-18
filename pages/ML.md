@@ -1,5 +1,9 @@
 [TOC]
 
+<!--
+DESCRIPTION: The mathematics of machine learning.
+-->
+
 # Overview
 
 Machine Learning (ML) is described with math.

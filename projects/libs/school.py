@@ -83,6 +83,7 @@ Error in YAML file:
 """
         print(s)
         raise Exception(s)
+      # Merge in the keys from the data file.
       for key, value in yo.items():
         if not key in item:
           item[key] = value
@@ -108,6 +109,22 @@ def getSchool():
   if not school or dirty:
     school = School(os.path.join(data, 'school.yaml'))
   return school
+
+
+
+filesCache = {}
+def GetFiles(path):
+  '''
+  Get all the files in a path. Cache this call every 5 minutes
+  '''
+
+  if path in filesCache:
+    ts, files = filesCache[path]
+
+
+
+
+
 
 
 class School:
