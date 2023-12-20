@@ -33,7 +33,7 @@ As an admin, here is how to invite a new member:
 
 >>> ![Alt text](/static/images/membership4.png)
 
-* She can click the green UUJoin @PhoenixCodingAcademy** button.
+* She can click the green **Join @PhoenixCodingAcademy** button.
 * In both cases, she will see this page:
 
 >>> ![Alt text](/static/images/membership5.png)
