@@ -7,7 +7,6 @@ def GetAncestorPath(relBasePath):
   lp = None
   while True:
     fp = os.path.abspath(os.path.join(p, relBasePath))
-    print(fp)
     if os.path.exists(fp):
       return fp
     p = os.path.abspath(os.path.join(p, '..'))

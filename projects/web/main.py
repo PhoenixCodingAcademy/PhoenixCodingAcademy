@@ -226,16 +226,21 @@ def _search():
   '''
 
   '''
-  term = request.args.get("search", '')
+  term = request.args.get("search", '').lower()
   fn = tools.GetAncestorPath("projects/index.txt")
   db = tools.readFile(fn)
   search = Search(db)
 
   html = '<ul>'
-  for sr in search.Search(term):
-    print(sr.score, sr.path)
-    html = html + f"""<li><a href="{sr.path}">{sr.path}</a><i> ({sr.score})</i></li>"""
-  html += '\n</ul>'
+  results = list(search.Search(term))
+  if results:
+    for sr in results:
+      ws = ' '.join([f"<b>{w}</b> ({s*100:.2f})" for w,s in sorted(sr.wordScores.items(), key=lambda x: x[1])])
+      if ws: ws = '- ' + ws
+      html = html + f"""<li><a href="{sr.path}">{sr.path}</a> {ws}</li>"""
+    html += '\n</ul>'
+  else:
+    html = "No matches found"
   title = term
   return render_template("search.html", html=html, title=title)
 
