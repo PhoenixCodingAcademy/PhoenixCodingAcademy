@@ -1,6 +1,6 @@
 # Phoenix Coding Academy Computer Science Club
 
-[Phoenix Coding Academy](/pages/PCA.md) (PCA) has an after-hours Computer Science Club that meets Friday after class. Members will learn modern tools for engineering and university academics. The course is designed for self-driven learners who attend PCA, but anyone is welcome. Attendance can be remote and asynchronous.
+[Phoenix Coding Academy](/pages/PCA.md) (PCA) has an after-hours Computer Science Club that meets Wednesdays after class at 3pm in Masamery's room. Members will learn modern tools for engineering and university academics. The course is designed for self-driven learners who attend PCA, but anyone is welcome. Attendance can be remote and asynchronous.
 
 - [Phoenix Coding Academy Computer Science Club](#phoenix-coding-academy-computer-science-club)
 - [Quick Links](#quick-links)
