@@ -53,6 +53,14 @@ data:
       short: Basic Reproducible Research and Data Science
       cat: Data Science
 
+    - id: AI/Linear Regression
+      short: Find a relation between any input and a continuous output; e.g. real numbers
+      cat: Artificial Intelligence
+    - id: AI/Logistic Regression
+      short: Find a relation between any input and a discrete output; e.g. {Yes, No} or {Bird, Cat, Dog, ...}
+      cat: Artificial Intelligence
+
+
     - id: Py3dMol
       short: Model a molecule in 3D
       cat: Chemistry
@@ -408,7 +416,7 @@ subjects:
   short: |
     MATLAB is a programming platform designed specifically for engineers and scientists to analyze and design systems and products.
     The heart of MATLAB is the MATLAB language, which is a matrix-based language that allows for the most natural expression
-    of computational mathematics1. MATLAB allows for matrix manipulations, plotting of functions and data, implementation of
+    of computational mathematics. MATLAB allows for matrix manipulations, plotting of functions and data, implementation of
     algorithms, creation of user interfaces, and interfacing with programs written in other languages.
     It is widely used by engineers and scientists worldwide for a range of applications, including deep learning and machine learning,
     signal processing and communications, image and video processing, control systems, test and measurement, computational finance,
@@ -715,6 +723,157 @@ subjects:
 
 
 
+
+- id: expertsystems
+  title: Expert System
+  parents: ai
+  short:
+
+- id: ga
+  title: Genetic Algorithms
+  parents: ai
+  short: Trying to find the best solution by breeding the best with the best and applying a fitness function.
+
+- id: ml
+  title: Machine Learning
+  parents: ai
+  short: Creating a complex model (or function) by training a system with given input and outputs.
+
+- id: machinevision
+  title: Machine Vision
+  parents: ai
+  short:
+
+- id: neuralnetworks
+  title: Neural Networks
+  parents: ai
+  short: Artificial Neural Networks simulate how brains learn.
+
+- id: nlp
+  title: Natural Language Processing
+  parents: ai
+  short:
+
+
+
+
+# ====================
+# Natural Language Processing
+
+- id: nlu
+  title: Natural Language Understanding (NLU)
+  parents: nlp
+  short: This focuses on semantic analysis or determining the intended meaning of text.
+
+- id: nlg
+  title: Natural Language Generation (NLG)
+  parents: nlp
+  short: This focuses on text generation by a machine.
+
+- id: speechrecognition
+  title: Speech Recognition
+  parents: nlp
+  short: This involves the translation of spoken language into text.
+
+- id: sentimentanalysis
+  title: Sentiment Analysis
+  parents: nlp
+  short: An NLP technique that analyzes text to identify its sentiments, such as "positive," "negative," or "neutral." Sentiment analysis is commonly used by businesses to better understand customer feedback.
+
+- id: nlpsummarization
+  title: Summarization
+  parents: nlp
+  short: An NLP technique that summarizes a longer text, in order to make it more manageable for time-sensitive readers.
+
+- id: nlpkeywordextraction
+  title: Keyword Extraction
+  parents: nlp
+  short: An NLP technique that analyzes a text to identify the most important keywords or phrases. Keyword extraction is commonly used for search engine optimization (SEO), social media monitoring, and business intelligence purposes.
+
+- id: nlptokenization
+  title: Tokenization
+  parents: nlp
+  short: The process of breaking characters, words, or subwords down into "tokens" that can be analyzed by a program.
+
+
+
+
+# ====================
+# Neural Networks
+- id: fnn
+  title: Feedforward Neural Networks (FNNs)
+  parents: neuralnetworks
+  short: The simplest type of neural network where information travels in one direction, from the input layer, through the hidden layers, to the output layer.
+
+- id: rnn
+  title: Recurrent Neural Networks (RNNs)
+  parents: neuralnetworks
+  short: Unlike FNNs, RNNs have connections that form directed cycles. This allows them to maintain an internal state that can process sequences of inputs.
+
+- id: ssm
+  title: Sequence-To-Sequence Models
+  parents: rnn
+  short: These are a variant of RNNs, used in tasks that require mapping input sequences to output sequences. They are widely used in tasks like machine translation, speech recognition, etc.
+
+- id: cnn
+  title: Convolutional Neural Networks (CNNs)
+  parents: neuralnetworks
+  short: Primarily used for image processing, natural language processing, and other grid-like data inputs. They have convolutional layers that filter inputs for useful information.
+
+- id: dnn
+  title: Deep Neural Networks (DNNs)
+  parents: neuralnetworks
+  short: Have multiple layers between the input and output layers (more than 3).
+
+- id: deeplearning
+  title: Deep Learning
+  parents: dnn
+  short: DNNs with lots of layers.
+
+- id: dbn
+  title: Deep Belief Networks (DBNs)
+  parents: neuralnetworks
+  short: These are generative graphical models which learn to extract a deep hierarchical representation of the training data.
+
+- id: rbfnn
+  title: Radial basis function Neural Networks (RBFNNs)
+  parents: neuralnetworks
+  short: These use radial basis functions as activation functions. They have an input layer, a hidden layer with non-linear radial symmetric activation functions, and a linear output layer.
+
+- id: mnn
+  title: Modular Neural Networks (MNNs)
+  parents: neuralnetworks
+  short: These are complex systems that are used to improve the performance of a system by integrating several neural network modules.
+
+
+
+
+- id: tensorflow
+  title: Tensorflow
+  parents: ai tools
+  short: |
+    An open-source platform for machine learning. Similar to numpy, Tensorflow can run on GPUs and in parallel across many machines.
+
+
+- id: keras
+  title: Keras
+  parents: tensorflow
+  short: |
+    An open-source, high-level, user-friendly python library used for building and training neural networks that runs on top of Tensorflow.
+    Developed to enable fast experimentation and iteration, and it lowers the barrier to entry for working with deep learning.
+    It adds the flexibility of Pytorch to Tensorflow.
+
+- id: pytorch
+  title: PyTorch
+  parents: ai tools
+  short: |
+    Another Pythonish open-source library similar to Tensorflow and created by Facebook.
+    It purports to be more flexible when creating complex models, easier to use with Python, easier to debug,
+    and imperative.
+
+
+
+
 #================================================================================
 #  HISTORY
 #================================================================================
@@ -824,6 +983,7 @@ subjects:
     * **1976** - Zilog releases [Z80](https://en.wikipedia.org/wiki/Zilog_Z80) microprocessor, compatible with the Intel 8080, and popularized by the [TRS-80](https://en.wikipedia.org/wiki/TRS-80_Model_II#Model_16).
     * **1976** - Seymour Cray invents the Cray-1 supercomputer - the first super computer.
     * **1976** - Guy Steele invents EMACS.
+    * **1976** - [COSMAC ELF](/Pages/Cosmac Elf.md) released.
     * **1978-06-08** - Intel 16-bit 8086 microprocessor; the first x86 chip.
     * **1978** - Japan releases the Space Invaders game.
     * **1979** - ADA programming language invented for the DoD.
