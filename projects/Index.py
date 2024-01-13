@@ -41,6 +41,7 @@ fileTypes['assignments'] = 0
 
 for subject in school.subjects:
   path = f"/subjects/{subject.id}"
+  index(path, subject.id)
   index(path, subject.title)
   index(path, subject.description)
   index(path, subject.short)
@@ -49,6 +50,7 @@ for subject in school.subjects:
 
   for course in subject.courses:
     path = f"/courses/{course.id}"
+    index(path, course.id)
     index(path, course.title)
     index(path, course.description)
     index(path, course.short)
@@ -57,6 +59,7 @@ for subject in school.subjects:
 
     for assignment in course.assignments:
       path = f"/assignments/{assignment.id}"
+      index(path, assignment.id)
       index(path, assignment.title)
       index(path, assignment.description)
       index(path, assignment.short)
