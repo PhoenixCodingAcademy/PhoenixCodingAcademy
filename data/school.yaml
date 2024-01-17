@@ -54,10 +54,19 @@ data:
       cat: Data Science
 
     - id: AI/Linear Regression
-      short: Find a relation between any input and a continuous output; e.g. real numbers
+      short: Find a linear relation between any input and a continuous output; e.g. real numbers
       cat: Artificial Intelligence
+
     - id: AI/Logistic Regression
       short: Find a relation between any input and a discrete output; e.g. {Yes, No} or {Bird, Cat, Dog, ...}
+      cat: Artificial Intelligence
+
+    - id: AI/Linear Regression (TF)
+      short: Use TensorFlow to find a relation between any input and a continuous output; e.g. real numbers
+      cat: Artificial Intelligence
+
+    - id: AI/Identify Faces
+      short: Take a photo and split out all the faces
       cat: Artificial Intelligence
 
 
@@ -824,6 +833,16 @@ subjects:
   title: Deep Neural Networks (DNNs)
   parents: neuralnetworks
   short: Have multiple layers between the input and output layers (more than 3).
+  description: |
+    Applications are:
+
+    * Automatic Machine Translation
+    * Object Classification in Photographs
+    * Automatic Handwriting Generation
+    * Character Text Generation
+    * Image Caption Generation
+    * Colorization of Black and White Images
+    * Automatic Game Playing
 
 - id: deeplearning
   title: Deep Learning
@@ -849,25 +868,25 @@ subjects:
 
 
 - id: tensorflow
-  title: Tensorflow
+  title: TensorFlow
   parents: ai tools
   short: |
-    An open-source platform for machine learning. Similar to numpy, Tensorflow can run on GPUs and in parallel across many machines.
+    An open-source platform for machine learning. Similar to numpy, TensorFlow can run on GPUs and in parallel across many machines.
 
 
 - id: keras
   title: Keras
   parents: tensorflow
   short: |
-    An open-source, high-level, user-friendly python library used for building and training neural networks that runs on top of Tensorflow.
+    An open-source, high-level, user-friendly python library used for building and training neural networks that runs on top of TensorFlow.
     Developed to enable fast experimentation and iteration, and it lowers the barrier to entry for working with deep learning.
-    It adds the flexibility of Pytorch to Tensorflow.
+    It adds the flexibility of PyTorch to TensorFlow.
 
 - id: pytorch
   title: PyTorch
   parents: ai tools
   short: |
-    Another Pythonish open-source library similar to Tensorflow and created by Facebook.
+    Another Pythonish open-source library similar to TensorFlow and created by Facebook.
     It purports to be more flexible when creating complex models, easier to use with Python, easier to debug,
     and imperative.
 
