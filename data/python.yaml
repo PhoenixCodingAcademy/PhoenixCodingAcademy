@@ -137,6 +137,8 @@ courses:
     In this course, you clone a repo that has a minecraft simulated environment written in Python using OpenGL.
     It's only about 1000 lines of code.
 
+    ![minecraft](/static/images/minecraft.png)
+
     ## Steps
 
     ```dos
