@@ -12,6 +12,7 @@ description: |
 
 purpose: |
   ...
+
 courses:
 - id: PythonBasics
   title: Python Basics
@@ -128,3 +129,48 @@ courses:
 - id: PythonCode
   title: Python Coding
   description: Very simple coding tools, such as input, process, output to the console. Define functions and use libraries.
+
+- id: PythonMinecraft
+  title: Programming Minecraft with Python
+  prerequisites: InstallPython
+  description: |
+    In this course, you clone a repo that has a minecraft simulated environment written in Python using OpenGL.
+    It's only about 1000 lines of code.
+
+    ## Steps
+
+    ```dos
+    c:
+    cd \csc
+    git clone https://github.com/robertscotthoward/minecraft.git
+    cd minecraft
+    pip install pyopengl pyglet==1.5.27
+    python Minecraft.py
+    ```
+
+    This loads MyCode.py by default, but you can run other files by adding the name of the file to the command line; e.g.
+
+    ```dos
+    python Minecraft.py MyCodeLetters
+    ```
+
+
+    ## Hotkeys
+
+    * `W`, `S`, `A`, `D` for standard Minecraft movement.
+    * `1`, `2`, `3` to change the stone to place. There are only three types of blocks you can place in this demo.
+    * `LEFT CLICK` remove a stone at the cursor.
+    * `RIGHT CLICK` add a stone at the cursor.
+    * Mouse to pan and scroll.
+    * `TAB` toggle flying. When flying, just point in the air and move. No double-space click needed.
+    * `SPACE` to jump.
+    * `ESCAPE` to exit window.
+    * `C` clear the board and reset.
+    * `L` to reload the file. Expect a pause while rendering.
+    * `H` to teleport back home; i.e. the default starting position and direction.
+    * `M` generate hills. Expect a pause while rendering.
+    * `R` same as these three key: `H` `C` `L`
+    * `Q` quit.
+
+
+
