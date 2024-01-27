@@ -138,6 +138,16 @@ class Iterator:
     return item
 
 
+class Expando():
+  pass
+
+class ToFluid(dict):
+    """dot.notation access to dictionary attributes"""
+    __getattr__ = dict.get
+    __setattr__ = dict.__setitem__
+    __delattr__ = dict.__delitem__
+
+
 def tests():
   h = md5("The quick brown fox jumps over the lazy dog")
   assert(h == "9e107d9d372bb6826bd81d3542a419d6")

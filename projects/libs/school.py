@@ -93,6 +93,7 @@ Error in YAML file:
 updated = {}
 school = None
 
+
 def getSchool():
   global school
   dirty = False

@@ -41,10 +41,23 @@ def RepoRoot():
 
 
 
+def getModel(title):
+  model = tools.Expando()
+  model.school = getSchool()
+  model.title = title
+  model.request = request
+  model.Markdown = Markdown
+  return model
+
+
+
+
 @app.route('/')
 def hello():
   school = getSchool()
-  return render_template('main.html', school=school, FileMarkdown=FileMarkdown, title='PCA')
+  model = getModel('PCA')
+  model.FileMarkdown = FileMarkdown
+  return render_template('main.html', model=model)
 
 
 @app.route('/info')
@@ -64,8 +77,8 @@ Repo Root:                    {os.path.abspath(root)}
 
 @app.route('/yaml')
 def _yaml():
-  school = getSchool()
-  return render_template('yaml.html', school=school, title='YAML')
+  model = getModel('YAML')
+  return render_template('yaml.html', model=model)
   return f'''
 <pre>
 PATH: {os.path.abspath('.')}
@@ -75,8 +88,9 @@ PATH: {os.path.abspath('.')}
 
 @app.route('/subjects')
 def _subjects():
-  school = getSchool()
-  return render_template('subjects.html', school=school, title='Subjects')
+  model = getModel('Subjects')
+  model.school = getSchool()
+  return render_template('subjects.html', model=model)
 
 
 @app.route('/subjects/<id>')
@@ -84,11 +98,18 @@ def _subject(id):
   school = getSchool()
   subject = school[id]
   if not subject:
-    return render_template('error.html', message=f"Item '{id}' not found.")
+    model = getModel(id)
+    model.message = f"Item '{id}' not found."
+    return render_template('error.html', model=model)
+
   if not isinstance(subject, Subject):
-    return render_template('error.html', message=f"Item '{id}' is not a Subject, but rather a '{type(subject)}'.", title="ERROR")
-  title = subject.title
-  return render_template('subject.html', subject=subject, Markdown=Markdown, title=title)
+    model = getModel('ERROR')
+    model.message = f"Item '{id}' is not a Subject, but rather a '{type(subject)}'."
+    return render_template('error.html', model=model)
+
+  model = getModel(subject.title)
+  model.subject = subject
+  return render_template('subject.html', model=model)
 
 
 @app.route('/courses/<id>')
@@ -96,17 +117,33 @@ def _course(id):
   school = getSchool()
   course = school[id]
   if not course:
-    return render_template('error.html', message=f"Item '{id}' not found.")
+    model = getModel(id)
+    model.message = f"Item '{id}' not found."
+    return render_template('error.html', model=model)
+
   if not isinstance(course, Course):
-    return render_template('error.html', message=f"Item '{id}' is not a Course, but rather a '{type(course)}'.", title="ERROR")
-  title = course.title
-  return render_template('course.html', course=course, Markdown=Markdown, title=title)
+    model = getModel('ERROR')
+    model.message = f"Item '{id}' is not a Course, but rather a '{type(course)}'.",
+    return render_template('error.html', model=model)
+
+  model = getModel(course.title)
+  model.course = course
+  return render_template('course.html', model=model)
 
 
 @app.route('/exams')
 def _exam():
   #request.args
-  return render_template('exams.html')
+  model = getModel('Exams')
+  return render_template('exams.html', model=model)
+
+
+@app.route('/feedback')
+def _feedback():
+  #request.args
+  model = getModel('Feedback')
+  model.page = request.args.get("page", '')
+  return render_template('feedback.html', model=model)
 
 
 @app.route('/assignments/<id>')
@@ -114,14 +151,18 @@ def _assignment(id):
   school = getSchool()
   assignment = school[id]
   if not assignment:
-    return render_template('error.html', message=f"Item '{id}' not found.")
+    model = getModel('ERROR')
+    model.message = f"Item '{id}' not found."
+    return render_template('error.html', model=model)
+
   if not isinstance(assignment, Assignment):
-    return render_template('error.html', message=f"Item '{id}' is not a Assignment, but rather a '{type(assignment)}'.")
-  title = assignment.title
-  if not isinstance(assignment, Assignment):
-    return render_template('error.html', message=f"Item '{id}' is not an Assignment, but rather a '{type(assignment)}'.", title="ERROR")
-  title = assignment.title
-  return render_template('assignment.html', assignment=assignment, Markdown=Markdown, title=title)
+    model = getModel('ERROR')
+    model.message = f"Item '{id}' is not an Assignment, but rather a '{type(assignment)}'."
+    return render_template('error.html', model=model)
+
+  model = getModel(assignment.title)
+  model.assignment = assignment
+  return render_template('assignment.html', model=model)
 
 
 
@@ -153,7 +194,9 @@ def _pages():
   webPath = os.path.join(rootRepo, 'projects', 'web')
   p = os.path.join(webPath, 'templates', "pages.html")
   p = "pages.html"
-  return render_template(p, html=html, title=title)
+  model = getModel(title)
+  model.html = html
+  return render_template(p, model=model)
 
 
 
@@ -192,11 +235,10 @@ def _notebooks():
       html += "</li>\n"
     html += '</ul>'
 
-  model = {
-    "path": notebooksPath,
-    "html": html
-  }
-  return render_template('notebooks.html', model=model, title='Notebooks')
+  model = getModel('Notebooks')
+  model.path = notebooksPath
+  model.html = html
+  return render_template('notebooks.html', model=model)
 
 @app.route('/notebooks/<id>')
 def _notebook(id):
@@ -241,8 +283,10 @@ def _search():
     html += '\n</ul>'
   else:
     html = "No matches found"
-  title = term
-  return render_template("search.html", html=html, title=title)
+
+  model = getModel(term)
+  model.html = html
+  return render_template("search.html", model=model)
 
 
 
@@ -263,7 +307,9 @@ def _default(path):
     if path.lower().endswith('.md'):
       path = os.path.join(rootRepo, path)
       data = tools.readFile(path)
-      return render_template('markdown.html', data=data, Markdown=Markdown, title=title)
+      model = getModel(title)
+      model.data = data
+      return render_template('markdown.html', model=model)
 
     p = os.path.join(webPath, 'static', path)
     if os.path.exists(p):
@@ -271,19 +317,20 @@ def _default(path):
 
     p = os.path.join(webPath, 'templates', path)
     if os.path.exists(p):
-      return render_template(path, title=title)
+      return render_template(path, model=getModel(title))
 
     p = os.path.join(webPath, 'templates', path + ".html")
     if os.path.exists(p):
-      return render_template(path + ".html", school=school, title=title)
+      return render_template(path + ".html", model=getModel(title))
 
     dp = os.path.join(rootRepo, 'data')
     path = os.path.join(rootRepo, path)
-    return render_template(f'{path}.html', school=school, title=title)
+
+    return render_template(f'{path}.html', model=getModel(title))
   except Exception as e:
-    title=f'''{type(e).__name__}'''
-    message=f'''{type(e).__name__}: {e}'''
-    return render_template("error.html", message=message, title=title)
+    model = getModel(f'''{type(e).__name__}''')
+    model.message = f'''{type(e).__name__}: {e}'''
+    return render_template("error.html", model=model)
 
 
 

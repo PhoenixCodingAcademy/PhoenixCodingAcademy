@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% block content %}
+<h1>Feedback</h1>
+
+<p>URL: {{ model.page | safe }}</p>
+<p>Click the link below to create a feedback email:</p>
+
+<p><a href="mailto:pca@willo.org?subject=FEEDBACK: {{ model.page }}">CREATE FEEDBACK EMAIL</a></p>
+
+Include:
+
+<ul>
+  <li>What you did</li>
+  <li>What you expect</li>
+  <li>What you got instead</li>
+</ul>
+
+{% endblock %}

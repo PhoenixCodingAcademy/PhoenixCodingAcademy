@@ -2,11 +2,11 @@
 {% block content %}
 
 {{ assignment.Breadcrumbs() | safe }}
-<h1>{{ assignment.title }}</h1>
+<h1>{{ model.assignment.title }}</h1>
 
-{{ Markdown(assignment.description) | safe }}
+{{ Markdown(model.assignment.description) | safe }}
 
-{{ assignment.includePurposeSection() | safe }}
-{{ assignment.includeAcceptanceSection() | safe }}
+{{ model.assignment.includePurposeSection() | safe }}
+{{ model.assignment.includeAcceptanceSection() | safe }}
 
 {% endblock %}

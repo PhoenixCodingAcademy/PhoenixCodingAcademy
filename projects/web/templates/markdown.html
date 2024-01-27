@@ -1,6 +1,6 @@
 {% extends 'base.html' %}
 {% block content %}
 
-{{ Markdown(data) | safe }}
+{{ model.Markdown(model.data) | safe }}
 
 {% endblock %}

@@ -2,10 +2,10 @@
 {% block content %}
 
 {{ course.Breadcrumbs() | safe }}
-<h1>{{ course.title }}</h1>
+<h1>{{ model.course.title }}</h1>
 
-{{ Markdown(course.description) | safe }}
-{{ course.includePurposeSection() | safe }}
-{{ course.includeAssignmentsSection() | safe }}
+{{ model.Markdown(model.course.description) | safe }}
+{{ model.course.includePurposeSection() | safe }}
+{{ model.course.includeAssignmentsSection() | safe }}
 
 {% endblock %}
