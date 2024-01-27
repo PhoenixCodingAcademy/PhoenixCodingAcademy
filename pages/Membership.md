@@ -9,7 +9,9 @@ Peruse this site to get an idea of what the club's promoted as a general interes
 If the club's general focus catches your attention, and you want to join the Phoenix Coding Academy (PCA) High School Computer Science Club, here's what to do:
 
 * Create a Github account if you don't already have one.
-* Send an email request to the address found at top of [the Github site](https://github.com/PhoenixCodingAcademy)
+* Send that account name to us with a request to join. Two methods to send:
+  * Email request
+  * Request in public [Discord Server](/pages/Discord.md)
   * Be sure to include your Github account name and your school or organization.
 * When accepted, you'll see the invitation at the top of [the Github site](https://github.com/PhoenixCodingAcademy) if you are signed into Github.
 * Click "View the invitation"

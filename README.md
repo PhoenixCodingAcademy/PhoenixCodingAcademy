@@ -12,7 +12,7 @@
 # Quick Links
 * [Club Home Page](http://phoenixcodingacademy.pythonanywhere.com/) - *The main club's home page.*
 * [Membership](/pages/Membership.md) - *how to join this club.*
-* [Discord Server](https://discord.gg/DYpSextpbK)
+* [Discord Server](/pages/Discord.md)
 * [Quick Start](/pages/QuickStart.md) - *how to pull the code for this site and run it locally on you machine.*
 * [Club History](/pages/ClubHistory.md) - *general architecture and requirements choices.*
 * [How this site works](/pages/Architecture.md) - *general architecture and requirements choices.*
