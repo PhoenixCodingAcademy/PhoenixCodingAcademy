@@ -1,7 +1,7 @@
 {% extends 'base.html' %}
 {% block content %}
 
-{{ course.Breadcrumbs() | safe }}
+{{ model.course.Breadcrumbs() | safe }}
 <h1>{{ model.course.title }}</h1>
 
 {{ model.Markdown(model.course.description) | safe }}

@@ -1,10 +1,10 @@
 {% extends 'base.html' %}
 {% block content %}
 
-{{ assignment.Breadcrumbs() | safe }}
+{{ model.assignment.Breadcrumbs() | safe }}
 <h1>{{ model.assignment.title }}</h1>
 
-{{ Markdown(model.assignment.description) | safe }}
+{{ model.Markdown(model.assignment.description) | safe }}
 
 {{ model.assignment.includePurposeSection() | safe }}
 {{ model.assignment.includeAcceptanceSection() | safe }}
