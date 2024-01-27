@@ -1,12 +1,12 @@
 {% extends 'base.html' %}
 {% block content %}
 
-<h1>{{ subject.title }}</h1>
+<h1>{{ model.subject.title }}</h1>
 
-{{ Markdown(subject.description) | safe }}
-{{ subject.includePurposeSection() | safe }}
-{{ subject.includeRelatedSection() | safe }}
-{{ subject.includeLinksSection() | safe }}
-{{ subject.includeCoursesSection() | safe }}
+{{ model.Markdown(model.subject.description) | safe }}
+{{ model.subject.includePurposeSection() | safe }}
+{{ model.subject.includeRelatedSection() | safe }}
+{{ model.subject.includeLinksSection() | safe }}
+{{ model.subject.includeCoursesSection() | safe }}
 
 {% endblock %}
