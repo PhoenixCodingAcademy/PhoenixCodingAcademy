@@ -53,6 +53,13 @@ data:
       short: Basic Reproducible Research and Data Science
       cat: Data Science
 
+
+
+
+    - id: AI/Gradient Descent
+      short: Minimize a given function iteratively
+      cat: Artificial Intelligence
+
     - id: AI/Linear Regression
       short: Find a linear relation between any input and a continuous output; e.g. real numbers
       cat: Artificial Intelligence

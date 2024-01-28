@@ -27,6 +27,8 @@ def index(path, sentence):
 
 
 school = libs.school.getSchool()
+
+# INDEX ALL PAGES
 data = libs.tools.GetAncestorPath("pages")
 fileTypes['pages'] = 0
 for fp in glob.glob(os.path.join(data, '*.md')):
@@ -35,6 +37,18 @@ for fp in glob.glob(os.path.join(data, '*.md')):
   index(f"/pages/{fn}", text)
   fileTypes['pages'] = fileTypes['pages'] + 1
 
+
+# INDEX ALL NOTEBOOKS
+notebooks = school.yo['data']['notebooks']
+gitUrl = notebooks['gitUrl']
+for notebook in notebooks['meta']:
+  id = notebook['id']
+  short = notebook['short']
+  cat = notebook['cat']
+  text = f"{id} {short} {cat}"
+  index(f"{gitUrl}/{fn}/{id}.ipynb", text)
+
+# INDEX ALL SUBJECTS, COURSES, and ASSIGNMENTS
 fileTypes['subjects'] = 0
 fileTypes['courses'] = 0
 fileTypes['assignments'] = 0
