@@ -45,8 +45,10 @@ for notebook in notebooks['meta']:
   id = notebook['id']
   short = notebook['short']
   cat = notebook['cat']
+  if 'Gradient' in id:
+    print()
   text = f"{id} {short} {cat}"
-  index(f"{gitUrl}/{fn}/{id}.ipynb", text)
+  index(f"{gitUrl}/{id}.ipynb", text)
 
 # INDEX ALL SUBJECTS, COURSES, and ASSIGNMENTS
 fileTypes['subjects'] = 0

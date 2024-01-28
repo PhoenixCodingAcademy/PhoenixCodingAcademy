@@ -273,13 +273,19 @@ def _search():
   db = tools.readFile(fn)
   search = Search(db)
 
+  school = getSchool()
+  gitUrl = school.yo['data']['notebooks']['gitUrl']
+
   html = '<ul>'
   results = list(search.Search(term))
   if results:
     for sr in results:
       ws = ' '.join([f"<b>{w}</b> ({s*100:.2f})" for w,s in sorted(sr.wordScores.items(), key=lambda x: x[1])])
       if ws: ws = '- ' + ws
-      html = html + f"""<li><a href="{sr.path}">{sr.path}</a> {ws}</li>"""
+      text = sr.path
+      if text.startswith(gitUrl):
+        text = "JUPYTER: " + text[len(gitUrl):]
+      html = html + f"""<li><a href="{sr.path}">{text}</a> {ws}</li>"""
     html += '\n</ul>'
   else:
     html = "No matches found"

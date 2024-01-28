@@ -40,8 +40,11 @@ class Search:
     self.db = {}
 
     for line in db.splitlines():
-      word = line.split(':')[0]
-      paths = line.split(':')[1].strip().split(',')
+      if 'gradient' in line:
+        print()
+      i = line.find(':')
+      word = line[0:i]
+      paths = line[i+1:].strip().split(',')
       self.db[word] = paths
 
   def Search(self, text):
@@ -91,7 +94,7 @@ if __name__ == "__main__":
   search = Search(db)
   print("Num words =", len(search.db))
 
-  for sr in search.Search("apl courses"):
-    print(sr.score, sr.path)
+  for sr in search.Search("gradient"):
+    print(sr.wordScores, sr.path)
 
   print("DONE")
