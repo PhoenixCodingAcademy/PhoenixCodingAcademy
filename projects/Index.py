@@ -10,20 +10,32 @@ import libs.school
 print("Indexing files...")
 
 fileTypes = {}
-
 words = {}
+
 def index(path, sentence):
+  '''
+  Tokenize @sentence and associated each token with path.
+  '''
   if not sentence: return
   sentence = sentence.lower()
+
+  def doMatches(matches):
+    for match in matches:
+      word = match.group(0)
+      if len(word) < 2: continue
+      if not word in words:
+        words[word] = []
+      list = words[word]
+      list.append(path)
+      words[word] = list
+
   matches = re.finditer(r"[a-z]+", sentence)
-  for match in matches:
-    word = match.group(0)
-    if len(word) < 2: continue
-    if not word in words:
-      words[word] = []
-    list = words[word]
-    list.append(path)
-    words[word] = list
+  doMatches(matches)
+
+  matches = re.finditer(r"[0-9]+", sentence)
+  doMatches(matches)
+
+
 
 
 school = libs.school.getSchool()
