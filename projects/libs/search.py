@@ -49,20 +49,25 @@ class Search:
 
   def Search(self, text):
     paths = {}
+    def doMatches(matches):
+      for match in matches:
+        word = match.group(0)
+        for w in self.db:
+          if w == word:
+            score = 30
+          else:
+            score = jaro.jaro_winkler_metric(word, w)
+          if score > .8:
+            for path in self.db[w]:
+              d = paths.get(path, {})
+              d[w] = score
+              paths[path] = d
+
     matches = re.finditer(r"[a-z]+", text)
-    mm = {}
-    for match in matches:
-      word = match.group(0)
-      for w in self.db:
-        if w == word:
-          score = 30
-        else:
-          score = jaro.jaro_winkler_metric(word, w)
-        if score > .8:
-          for path in self.db[w]:
-            d = paths.get(path, {})
-            d[w] = score
-            paths[path] = d
+    doMatches(matches)
+    matches = re.finditer(r"[0-9]+", text)
+    doMatches(matches)
+
     for path, ws in sorted(paths.items(), key=lambda x: -sum(score for w, score in x[1].items())):
       yield SearchResult(path, ws)
 
