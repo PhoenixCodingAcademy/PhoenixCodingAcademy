@@ -4,6 +4,8 @@
 
 We will go through the steps to setup a Raspberry Pi Zero 2 and connect to it from our laptops.
 
+![Alt text](/static/images/rpi2camera.png)
+
 # Details
 
 Start with a Wi-Fi **router** that connects to the internet. The **Raspberry Pi Zero 2** and the student's laptops (the "Devices") will connect to the router. Each device will get its own IP address from the router's DHCP server. The student devices can use Putty to SSH directly into the raspberry pi (RPI) and use Bash to configure it.
@@ -48,4 +50,31 @@ sudo apt-get update
 sudo apt install python3-opencv
 python3 -c 'import cv2; print(cv2.__version__)'
   # --> 4.5.1
+```
+
+To copy a file from B to A while logged into B:
+```
+scp /path/to/file username@a:/path/to/destination
+```
+
+To copy a file from B to A while logged into A:
+```
+scp username@b:/path/to/file /path/to/destination
+```
+
+# Camera
+```
+sudo raspi-config
+raspistill -o raspistill.jpg
+```
+
+* [How to enable Raspberry Pi camera using raspi-config](https://techoverflow.net/2019/07/23/how-to-enable-raspberry-pi-camera-using-raspi-config/)
+
+Additional things to try:
+```
+vcgencmd get_camera
+--> supported=1 detected=1, libcamera interfaces=0
+
+sudo modprobe bcm2835-v4l2
+v4l2-ctl --all
 ```
