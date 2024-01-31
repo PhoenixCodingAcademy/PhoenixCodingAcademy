@@ -5,6 +5,7 @@
 We will go through the steps to setup a Raspberry Pi Zero 2 and connect to it from our laptops.
 
 ![Alt text](/static/images/rpi2camera.png)
+![Alt text](/static/images/pizerohand.png)
 
 # Details
 
