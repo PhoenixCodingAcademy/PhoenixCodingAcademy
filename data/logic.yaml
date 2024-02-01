@@ -18,6 +18,12 @@ courses:
     Field Programmable Gate Array (FPGA), which is a circuit that will run your code. HDL can also be burned on an
     Application Specific Integrated Circuit (ASIC) chip.
 
+    See:
+
+    * [The official website of Nand to Tetris courses](https://www.nand2tetris.org/)
+    * [From Nand to Tetris In 12 Steps](https://www.youtube.com/watch?v=JtXvUoPx4Qs) - by Professor Shimon Schocken
+    * [Nand to Tetris Book Notes](https://books.dwf.dev/docs/nand-to-tetris/introduction)
+
   assignments:
   - id: logic_c1_a1
     title: Download the software IDE
