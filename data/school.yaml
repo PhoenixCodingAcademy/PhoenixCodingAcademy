@@ -699,6 +699,19 @@ subjects:
     text: Tech Company Engineering Blogs
     short: Some blogs worth reading to improve your system design.
 
+
+
+
+#================================================================================
+#  DIGITAL DESIGN
+#================================================================================
+
+- id: logic
+  title: Digital Logic
+  short: How electronic circuits and computer chips are created with digital logic components and transistors.
+  parents: eng
+
+
 #================================================================================
 #  SOFTWARE ENGINEERING
 #================================================================================

@@ -1,0 +1,45 @@
+description: |
+  Computers, CPUs, and logic circuits are a [IPO](/pages/IPO.md) graphs of logic gates, e.g. AND, OR, NOT, NAND, NOR, ...
+  The The [NAND Gate](https://en.wikipedia.org/wiki/NAND_gate) is [Turing Complete](/subjects/turingmachines), which means you
+  can create any computer in the world with just NAND gates. To prove this fact, a couple of smart computer professors
+  (Nisan and Schocken) wrote a course called [NAND to TETRIS](https://www.nand2tetris.org/). This is a complete online
+  digital computer class where you create a working computer that plays TETRIS from just composing NAND gates.
+  There is a free [Coursera](https://www.coursera.org/learn/nand2tetris2) class on it as well as on
+  [YouTube](https://www.youtube.com/watch?v=Mzy0RG9Z1Ak).
+
+
+courses:
+- id: logic_c1
+  title: NAND 2 TETRIS
+  description: |
+    Build an complete working computer from just NAND gates. You don't need a soldering iron or electronic parts.
+    This is all done in an [IDE](/subjects/editors) that you download and work in. It completely simulates the computer
+    using a language called Hardware Definition Language (HDL). AFter the language is written, it is easy to send it to a
+    Field Programmable Gate Array (FPGA), which is a circuit that will run your code. HDL can also be burned on an
+    Application Specific Integrated Circuit (ASIC) chip.
+
+  assignments:
+  - id: logic_c1_a1
+    title: Download the software IDE
+    description: |
+      * Follow the steps in [Download the Nand2tetris Software Suite](https://www.nand2tetris.org/software)
+      * Run the IDE.
+
+    acceptance: |
+      * You should see something like this:
+
+       ![](/static/images/nand2tetris-emulator.png)
+
+  - id: logic_c1_a2
+    title: Follow the course
+    description: |
+      Watch the introduction from the original authors:
+
+      * [Unit 0.0 - Introduction](https://www.youtube.com/watch?v=LqirVc5SlW0&list=PLrDd_kMiAuNmSb-CKWQqq9oBFN_KNMTaI) - build the hardware.
+        * 7 weeks, 6 projects, 1 computer, 0 prerequisites
+
+      Pick one of the following course curricula:
+
+      * [YouTube](https://www.youtube.com/watch?v=Mzy0RG9Z1Ak) - the course from [TeaLeaves](https://www.youtube.com/@TeaLeavesProgramming) channel.
+      * [Coursera](https://www.coursera.org/learn/nand2tetris2) - a free course from Coursera
+
