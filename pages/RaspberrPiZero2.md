@@ -79,3 +79,18 @@ vcgencmd get_camera
 sudo modprobe bcm2835-v4l2
 v4l2-ctl --all
 ```
+
+
+# Samba
+
+```
+sudo apt-get install samba
+sudo nano /etc/samba/smb.conf
+  [MyShare]
+  path = /path/to/your/directory
+  read only = no
+  browsable = yes
+sudo systemctl restart smbd
+sudo smbpasswd -a yourusername
+FILE EXPLORER: \\ip_address\MyShare
+```

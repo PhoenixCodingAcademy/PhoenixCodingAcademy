@@ -1,5 +1,9 @@
 # Cosmac Elf
 
+<!--
+DESCRIPTION: One of the first home micro computers from 1976.
+-->
+
 by Rob Howard
 
 The [COSMAC ELF](https://en.wikipedia.org/wiki/COSMAC_ELF) was my first computer. I built it with a soldering iron in late 1976, when it was introduced in *Popular Mechanics* magazine for about $150 (or $850 in today's currency). It has 8 toggle switches to enter a single byte, and your code had to fit in 256 bytes - no "K" or "M" or "G" prefixes - just bytes. An iPhone 15 has a billion times more memory.

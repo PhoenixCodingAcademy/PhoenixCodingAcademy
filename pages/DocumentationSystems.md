@@ -1,5 +1,8 @@
 [TOC]
 
+<!--
+DESCRIPTION: How to organize documentation with tools like wikis.
+-->
 
 
 # Principles (TODO)
