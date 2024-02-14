@@ -1,0 +1,141 @@
+description: |
+  Two or more computers connected to each other.
+
+courses:
+- id: networks1
+  title: Build a Network
+  short: Build a network in class with your team mates. It might already be done for you.
+  description: |
+    Our computer lab has many desktop computers, each connected to a router. Therefore, each has a unique IP address and optionally
+    a human-readable computer name associated with it.
+
+
+  assignments:
+  - id: networks1_1
+    title: You, the server.
+    short: Prove that your desktop really is a network node and can act as a server.
+    description: |
+      Find a desktop. That's your server. You are part of the network. The only thing that separates a "server" from a "desktop" or "laptop"
+      is how humans physically interact with it.
+
+      * **desktop** - it sits on a desk, or under it, and might use WiFi, but might have a cable.
+      * **laptop** - it sits on your lap and most likely connects to the network with WiFi.
+      * **server** - it might not have a keyboard, display, or mouse, and you might leave it on all the time, and it might be expensive.
+
+      Seriously, these are all computers and they are connected to the network via TCP/IP. Therefore, we have ourselves a network.
+
+      The lab does have an expensive machine in the cabinet (we call a server) and a bunch of desktops, but they all do the same thing.
+      We might as well be talking about trucks, cars, vans, and 18-wheelers. They all drive on the road and move things.
+
+      In this assignment, determine your server's unique identity. We'll assume you are a Windows desktop.
+
+      Run this:
+
+      ```
+      ipconfig /all
+      ```
+
+      It might show you a bunch of sections, one for each network adapter you have. Look for the one that contains **Default Gateway**.
+      That is the adapter that is actually connected to the network. It might look like this:
+
+      ```
+      Wireless LAN adapter Wi-Fi:
+
+        Connection-specific DNS Suffix  . :
+        Description . . . . . . . . . . . : Intel(R) Centrino(R) Ultimate-N 6300 AGN
+        Physical Address. . . . . . . . . : 3C-A9-F4-8B-D5-1C
+        DHCP Enabled. . . . . . . . . . . : Yes
+        Autoconfiguration Enabled . . . . : Yes
+        Link-local IPv6 Address . . . . . : fe80::44d0:9266:e8f4:34cc%16(Preferred)
+        IPv4 Address. . . . . . . . . . . : 192.168.1.2(Preferred)
+        Subnet Mask . . . . . . . . . . . : 255.255.255.0
+        Lease Obtained. . . . . . . . . . : Friday, February 02, 2024 6:29:33 PM
+        Lease Expires . . . . . . . . . . : Wednesday, February 14, 2024 6:41:37 AM
+        Default Gateway . . . . . . . . . : 192.168.1.1
+        DHCP Server . . . . . . . . . . . : 192.168.1.1
+        DHCPv6 IAID . . . . . . . . . . . : 222079476
+        DHCPv6 Client DUID. . . . . . . . : 00-01-00-01-22-94-97-A9-3C-A9-F4-8B-D5-1C
+        DNS Servers . . . . . . . . . . . : 192.168.1.1
+        NetBIOS over Tcpip. . . . . . . . : Enabled
+      ```
+      The **IPv4 Address** address (ex: **192.168.1.2**) is unique to your machine. Another computer on the same network will have
+      a different IP address.
+
+      Run:
+      ```
+      echo %COMPUTERNAME%
+      ```
+
+      This will show you your computer name. This does not have to be unique, but it would be confusing otherwise. So they typically
+      are unique. They exist to help humans.
+
+      Find your neighbors IP address (call it NEIGHBORIP). Then run:
+      ```
+      ping NEIGHBORIP
+      ```
+
+      Hopefully you don't see "Request timed out" or "Destination host unreachable."
+      You should be able to see a TTL (Time To Live) of some number.
+
+      To see all the computers on your network, run:
+      ```
+      net view
+      ```
+
+      Pick any computer (e.g. ANYNAME) and run:
+      ```
+      ping ANYNAME
+      ```
+
+      This is just another way to ping a machine - by name instead of IP address.
+
+    acceptance: |
+      * You shared your IP address with another user, and vice versa.
+      * You ping another machine.
+      * You know your computer name.
+      * You know the names of other machines.
+
+
+
+
+  - id: networks1_2
+    title: Create Web Server
+    short: Run a web site on your server that someone else can hit
+    description: |
+      Your desktop machine is on the network. So you should be able to make your own web server that serves up your web content
+      for others on the network to see.
+
+      A **web site** can be little more than a folder with one "index.html" file in it. So let's do that.
+
+      * Create a folder (e.g. "MyWebSite")
+      * Use some file editor (e.g. Notepad or Visual Code) to create a file named `index.html` and add some text to it. Maybe HTML like this:
+
+      ```html
+      <h1>My Web Site</h1>
+      Welcome.
+      ```
+
+      * Open the command console and change to that folder.
+      * Assuming you have Python 3 installed, run this command:
+
+      ```
+      python -m http.server
+      ```
+
+      Then open this URL in your browser: http://localhost:8000
+
+      Then try these URLs:
+
+      * http://192.168.0.1:8000/
+      * http://dellm4700:8000/
+
+      If you want to specify another folder (rather than the one the server is running in), or change the port:
+      ```
+      python3 -m http.server 8080 --directory /path/to/your/folder
+      ```
+
+
+  - id: networks1_3
+    title: Create a Hackable Web Server
+    short: Create a web site with SQL injection
+    description: |
