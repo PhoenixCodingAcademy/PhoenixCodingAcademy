@@ -8,4 +8,6 @@ Here is a suggested curriculum of subjects that will help you achieve the title 
 
 * [Git Version Control](/subjects/git) - you'll need to know the basics of Git and Github to pull down the project to your local machine and run the web site there.
   * [Clone the repo](course/Git_CloneWebRepo) - learn how to pull a copy of the code to your laptop so you can run it there.
-  *
+
+
+

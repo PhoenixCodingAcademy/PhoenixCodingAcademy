@@ -1096,26 +1096,6 @@ subjects:
 
     * [Run old machines in the browser](https://www.pcjs.org/)
     * [COSMAC](/pages/Cosmac Elf.md)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
   links:
   - url: https://en.wikipedia.org/wiki/History_of_computing
     text: Wikipedia - History of Computers
@@ -1162,6 +1142,58 @@ subjects:
       1000x faster.
   - url: https://www.visualcapitalist.com/30-year-timeline-world-wide-web/
     text: "Timeline: The 30-Year History of the World Wide Web"
+
+
+
+
+#================================================================================
+#  OTHER
+#================================================================================
+
+- id: other
+  title: Other
+  short: Uncategorized subjects that do not seem to have a "best" parent yet.
+
+- id: sdr
+  title: Software Defined Radio (SDR)
+  short: HAM Radio from your laptop
+  parents: other
+  description: |
+    For $40 from Amazon, you can get a Software-Defined Radio (SDR) USB dongle that plugs into your computer to allow it to
+    receive radio signals much like a HAM radio.
+
+    ![RTL SDR KIT](/static/images/rtl-sdr.png)
+
+    [RTL-SDR Blog V4 R828D RTL2832U 1PPM TCXO HF Bias Tee SMA Software Defined Radio with Dipole Antenna Kit ](https://www.amazon.com/RTL-SDR-Blog-RTL2832U-Software-Defined/dp/B0CD7558G)
+
+    # Quick Steps
+
+    * Plug in RealTek Limited (RTL) dongle
+    * [Download the software](https://www.sdr-radio.com/download), install and run it.
+      * Be sure to skip all the tricky adware advertisements. Look for this:
+        * ![Download](/static/images/rtl-sdr-download.png)
+    * Choose **Select radio**. You should see your dongle.
+
+
+  links:
+  - url: https://en.wikipedia.org/wiki/Software-defined_radio
+    text: Wikipedia
+  - url: https://www.sdr-radio.com/
+    text: SDR-Radio.com
+  - url: https://www.rtl-sdr.com/rtl-sdr-quick-start-guide/
+    text: SDR-Radio.com - Quick Start Guide
+    short: This page is a guide aimed at helping anyone set up a cheap radio scanner based on the RTL-SDR software defined radio as fast as possible on a Windows system.
+  - url: https://austinsnerdythings.com/2021/09/11/getting-started-with-sdr-software-defined-radio-a-tutorial/
+    text: Getting Started With SDR - Tutorial
+  - url: https://www.youtube.com/watch?v=9PzvGyBWeHM
+    text: YouTube SDR For Beginners - Listening To GMRS Or Ham On SDR & Basic Overview Of SDR Using CubicSDR Software
+  - url: https://www.youtube.com/watch?v=IeBlEC9e5cQ
+    text: YouTube Sharp Walkthrough & Trunking Explained for the Absolute Beginner
+  - url: https://www.police-frequencies.com/arizona/maricopa/phoenix/
+    text: Phoenix Police Frequencies
+
+
+
 
 
 
