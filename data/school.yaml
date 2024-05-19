@@ -87,6 +87,10 @@ data:
       short: Model a molecule in 3D
       cat: Chemistry
 
+    - id: Cryptography
+      short: Examples of RSA and AES encryption and number theory.
+      cat: Cryptography
+
     - id: PythonLists
       short: Examples of manipulating lists, playing cards, and dealing hand.
       cat: Python

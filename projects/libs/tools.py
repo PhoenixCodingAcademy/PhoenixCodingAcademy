@@ -63,7 +63,12 @@ def ParseYaml(s):
 def readFile(fn):
   dn = GetDataPath(fn)
   with open(dn) as f:
-    return f.read()
+    try:
+      return f.read()
+    except Exception as ex:
+      print(f"ERROR: file '{fn}'")
+      print(ex)
+      raise ex
 
 def writeFile(fn, data):
   with open(fn, 'w') as f:
