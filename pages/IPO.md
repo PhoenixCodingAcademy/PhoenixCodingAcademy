@@ -9,7 +9,7 @@ Even our sentences follow the structure. The subject is the "input". The verb is
 * PROCESS: "seeing"
 * OUTPUT: I (after I saw the movie, now with memories of the movie)
 
-Sometimes the roles are reversed and the circles represent the nouns and the arrows represent the verbs. What's important is that whatever the nodes represents (nouns or verbs) the arrows represent the other choice. If an arrow means a verb on a diagram, then all arrows mean verbs on that diagram. **Don't mix and match!** It will confuse your audience. Sadly some [Tensorflow](https://iq.opengenus.org/understand-basic-tensorflow-programming/) documents use nodes to represent both variables and functions, with arrows representing weights. Sigh.
+Sometimes the roles are reversed and the circles represent the nouns and the arrows represent the verbs. What's important is that whatever the nodes represents (nouns or verbs) the arrows represent the other choice. If an arrow means a verb on a diagram, then all arrows mean verbs on that diagram. **Don't mix and match!** It will confuse your audience. Sadly some [TensorFlow](https://iq.opengenus.org/understand-basic-tensorflow-programming/) documents use nodes to represent both variables and functions, with arrows representing weights. Sigh.
 
 # Notation
 
@@ -27,6 +27,9 @@ In all cases, one or more input nouns are fed into a verb to produce exactly one
 **METHOD 2**: Or like this, where the process operates on a single input to produce a single output:
 
 ![](/static/images/ipo5.png)
+
+Notice that both methods above have two nouns and one verb.
+
 
 
 

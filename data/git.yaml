@@ -176,6 +176,8 @@ links:
   text: Why Use Git for Your Organization
 - url: https://www.atlassian.com/git/tutorials/what-is-git
   text: What is Git | Atlassian Git Tutorial
+- url: https://martinheinz.dev/blog/109
+  text: Modern Git Commands and Features You Should Be Using
 - url: https://www.javatpoint.com/git
   text: Git Tutorial - javatpoint
 - url: https://www.youtube.com/watch?v=pBy1zgt0XPc

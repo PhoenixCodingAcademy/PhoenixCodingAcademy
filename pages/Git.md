@@ -1,5 +1,9 @@
 [TOC]
 
+<!--
+DESCRIPTION: The one, most important tool of software development that everyone should know.
+-->
+
 # Overview
 
 **Version Control** is any method that keeps track of changes to files in a folder tree. A classic methodology is to make copies of files and rename them with the date and time in the file name, and perhaps who was the last person to make the changes, and then email to your friends so they have a copy.
@@ -194,3 +198,5 @@ git l
 ```
 
 You can create other aliases in time.
+
+# References

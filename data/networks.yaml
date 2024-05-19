@@ -15,7 +15,8 @@ courses:
     title: You, the server.
     short: Prove that your desktop really is a network node and can act as a server.
     description: |
-      Find a desktop. That's your server. You are part of the network. The only thing that separates a "server" from a "desktop" or "laptop"
+      Find a desktop that is connected to the network, or ideally a wireless router.
+      That's your server. You are part of the network. The only thing that separates a "server" from a "desktop" or "laptop"
       is how humans physically interact with it.
 
       * **desktop** - it sits on a desk, or under it, and might use WiFi, but might have a cable.
@@ -28,6 +29,8 @@ courses:
       We might as well be talking about trucks, cars, vans, and 18-wheelers. They all drive on the road and move things.
 
       In this assignment, determine your server's unique identity. We'll assume you are a Windows desktop.
+
+      ## Step 1
 
       Run this:
 
@@ -61,6 +64,8 @@ courses:
       The **IPv4 Address** address (ex: **192.168.1.2**) is unique to your machine. Another computer on the same network will have
       a different IP address.
 
+      ## Step 2
+
       Run:
       ```
       echo %COMPUTERNAME%
@@ -68,6 +73,8 @@ courses:
 
       This will show you your computer name. This does not have to be unique, but it would be confusing otherwise. So they typically
       are unique. They exist to help humans.
+
+      ## Step 3
 
       Find your neighbors IP address (call it NEIGHBORIP). Then run:
       ```
@@ -77,10 +84,13 @@ courses:
       Hopefully you don't see "Request timed out" or "Destination host unreachable."
       You should be able to see a TTL (Time To Live) of some number.
 
+      ## Step 4
+
       To see all the computers on your network, run:
       ```
       net view
       ```
+      ## Step 5
 
       Pick any computer (e.g. ANYNAME) and run:
       ```
@@ -91,7 +101,7 @@ courses:
 
     acceptance: |
       * You shared your IP address with another user, and vice versa.
-      * You ping another machine.
+      * You ping'ed another machine.
       * You know your computer name.
       * You know the names of other machines.
 
@@ -105,7 +115,10 @@ courses:
       Your desktop machine is on the network. So you should be able to make your own web server that serves up your web content
       for others on the network to see.
 
-      A **web site** can be little more than a folder with one "index.html" file in it. So let's do that.
+      A **web site** can be little more than a folder with one "index.html" file in it, and served up by a programmed called a web server.
+      So let's do that.
+
+      ## Step 1 - create web site folder
 
       * Create a folder (e.g. "MyWebSite")
       * Use some file editor (e.g. Notepad or Visual Code) to create a file named `index.html` and add some text to it. Maybe HTML like this:
@@ -115,6 +128,8 @@ courses:
       Welcome.
       ```
 
+      ## Step 2 - start web server
+
       * Open the command console and change to that folder.
       * Assuming you have Python 3 installed, run this command:
 
@@ -122,12 +137,16 @@ courses:
       python -m http.server
       ```
 
+      ## Step 3 - open web site in browser
+
       Then open this URL in your browser: http://localhost:8000
 
-      Then try these URLs:
+      ## Options
+
+      Then try these URLs. They are different ways to do the same thing:
 
       * http://192.168.0.1:8000/
-      * http://dellm4700:8000/
+      * http://COMPUTERNAME:8000/
 
       If you want to specify another folder (rather than the one the server is running in), or change the port:
       ```

@@ -1,0 +1,32 @@
+
+{% extends 'base.html' %}
+
+{% block content %}
+    <h1>Welcome to Flask SQL Injection Example</h1>
+    <!-- A form that allows you to enter a firstname, lastname, and favorite_color, post it to the server,
+        and list out all entries below in a table. -->
+    <form method="post" action="/">
+        <label for="firstname">First Name:</label>
+        <input type="text" id="firstname" name="firstname" required>
+        <label for="lastname">Last Name:</label>
+        <input type="text" id="lastname" name="lastname" required>
+        <label for="favoritecolor">Favorite Color:</label>
+        <input type="text" id="favorite_color" name="favorite_color" required>
+        <input type="submit" value="Submit">
+    </form>
+    <h2>Entries</h2>
+    <table>
+        <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Favorite Color</th>
+        </tr>
+        {% for entry in data.people %}
+        <tr>
+            <td>{{ entry.id }}</td>
+            <td>{{ entry.firstname }}</td>
+            <td>{{ entry.lastname }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+{% endblock %}

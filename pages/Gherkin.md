@@ -1,5 +1,9 @@
 [TOC]
 
+<!--
+DESCRIPTION: A popular method to describe user stories in the software profession.
+-->
+
 # Overview
 
 You use:

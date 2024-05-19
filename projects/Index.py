@@ -7,6 +7,8 @@ import re
 import libs.tools
 import libs.school
 
+
+
 print("Indexing files...")
 
 fileTypes = {}

@@ -1,0 +1,21 @@
+description: |
+  [TensorFlow](https://en.wikipedia.org/wiki/TensorFlow), created by Google in 2015,
+  is an open-source platform for machine learning. TensorFlow can run on GPUs and in parallel across many machines.
+
+  # Quick Start
+
+  ```cmd
+  pip install tensorflow
+  ```
+
+courses:
+- id: xxx1
+  title: xxx
+  description: xxx
+  assignments:
+  - id: xxx
+    title: xxx
+    description: |
+      xxx
+    acceptance: |
+      xxx

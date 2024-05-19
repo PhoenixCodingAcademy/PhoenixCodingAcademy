@@ -406,6 +406,18 @@ subjects:
     This subject is less about how to solve math problems and more about what types of problems are there that can make a
     business profitable, and what types of tools exist that can solve them.
 
+- id: tensors
+  parents: math
+  title: Tensors
+  description: |
+    Tensors are a generalization of matrices to higher dimensions. They are used in physics, engineering, and computer science.
+
+- id: linearalgebra
+  parents: math
+  title: Linear Algebra
+  short: |
+    Linear algebra is the branch of mathematics concerning linear equations such as linear functions and their representations through matrices and vector spaces.
+
 - id: mathapps
   title: Mathematical Software and Applications
   short: A list of popular math tools.
@@ -905,13 +917,25 @@ subjects:
     An open-source platform for machine learning. Similar to numpy, TensorFlow can run on GPUs and in parallel across many machines.
 
 
+- id: einsum
+  title: Keras
+  parents: tensors neuralnetworks
+  short: |
+    Einstein summation convention is a compact representation of certain tensor operations.
+    It is used in many libraries, including TensorFlow and PyTorch.
+  links:
+  - url: https://swe-to-mle.pages.dev/posts/einsum-for-tensor-manipulation/
+    text: EinSum for Tensor Manipulation
+
 - id: keras
   title: Keras
-  parents: tensorflow
+  parents: tensorflow tensors neuralnetworks
   short: |
     An open-source, high-level, user-friendly python library used for building and training neural networks that runs on top of TensorFlow.
     Developed to enable fast experimentation and iteration, and it lowers the barrier to entry for working with deep learning.
     It adds the flexibility of PyTorch to TensorFlow.
+
+
 
 - id: pytorch
   title: PyTorch
