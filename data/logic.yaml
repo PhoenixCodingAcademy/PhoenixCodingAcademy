@@ -13,7 +13,8 @@ courses:
   title: NAND 2 TETRIS
   description: |
     Build an complete working computer from just NAND gates. You don't need a soldering iron or electronic parts.
-    This is all done in an [IDE](/subjects/editors) that you download and work in. It completely simulates the computer
+    This is all done in a web-based [IDE](/subjects/editors) that you can also download and work in. See [WEB IDE](https://nand2tetris.github.io/web-ide/chip/).
+    It completely simulates the computer
     using a language called Hardware Definition Language (HDL). AFter the language is written, it is easy to send it to a
     Field Programmable Gate Array (FPGA), which is a circuit that will run your code. HDL can also be burned on an
     Application Specific Integrated Circuit (ASIC) chip.
@@ -23,18 +24,27 @@ courses:
     * [The official website of Nand to Tetris courses](https://www.nand2tetris.org/)
     * [From Nand to Tetris In 12 Steps](https://www.youtube.com/watch?v=JtXvUoPx4Qs) - by Professor Shimon Schocken
     * [Nand to Tetris Book Notes](https://books.dwf.dev/docs/nand-to-tetris/introduction)
+    * [Shimon Schocken: The self-organizing computer course](https://www.youtube.com/watch?v=iE7YRHxwoDs) - TEDx talk by Shimon Schocken
+    * [Lots of videos by students to help](https://www.youtube.com/results?search_query=nand2tetris) - YouTube search for Nand2Tetris videos
 
   assignments:
   - id: logic_c1_a1
-    title: Download the software IDE
+    title: Download the software IDE or use the web IDE
     description: |
       * Follow the steps in [Download the Nand2tetris Software Suite](https://www.nand2tetris.org/software)
+      * Or see [WEB IDE](https://nand2tetris.github.io/web-ide/chip/)
       * Run the IDE.
+      * Get familiar with it.
+
 
     acceptance: |
       * You should see something like this:
 
-       ![](/static/images/nand2tetris-emulator.png)
+      ![](/static/images/20250123123151.png)
+
+      -- or --
+
+      ![](/static/images/nand2tetris-emulator.png)
 
   - id: logic_c1_a2
     title: Follow the course
