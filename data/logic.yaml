@@ -15,7 +15,7 @@ courses:
     Build a complete working computer from just NAND gates. You don't need a soldering iron or electronic parts.
     This is all done in a web-based [IDE](/subjects/editors) that you can also download and work in. See [WEB IDE](https://nand2tetris.github.io/web-ide/chip/).
     It completely simulates the computer
-    using a language called Hardware Definition Language (HDL). AFter the language is written, it is easy to send it to a
+    using a language called Hardware Definition Language (HDL). After the language is written, it is easy to send it to a
     Field Programmable Gate Array (FPGA), which is a circuit that will run your code. HDL can also be burned on an
     Application Specific Integrated Circuit (ASIC) chip.
 
