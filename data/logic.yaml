@@ -36,6 +36,20 @@ courses:
       * Run the IDE.
       * Get familiar with it.
 
+      # General Architecture
+
+      ![](/static/images/g51bA.png)
+
+      # General Architecture High Level
+
+      ![](/static/images/XaILN.png)
+
+      # Arithmetic Logic Unit (ALU)
+
+      ![](/static/images/n2talu1.png)
+
+
+
 
     acceptance: |
       * You should see something like this:

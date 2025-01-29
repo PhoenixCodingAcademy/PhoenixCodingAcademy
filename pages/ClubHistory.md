@@ -8,12 +8,13 @@ DESCRIPTION: A journal of the weekly club meetings.
 # Overview
 
 Here are the meeting summaries and what has recently been completed.
+The entire history can be found in the GitHub's organization project: https://github.com/orgs/PhoenixCodingAcademy/projects/2
 
 # History
 
 ## 2024-02-14 (8)
 
-![Harley](/static/images/harley.png)
+<!-- ![Harley](/static/images/harley.png) -->
 
 ## 2024-02-07 (7)
 
