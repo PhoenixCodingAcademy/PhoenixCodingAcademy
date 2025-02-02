@@ -1,2 +1,2 @@
 call .venv\Scripts\activate
-code .
+call code .

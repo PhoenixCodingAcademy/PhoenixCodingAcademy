@@ -11,6 +11,7 @@ description: |
 courses:
 - id: logic_c1
   title: NAND 2 TETRIS
+  keywords: nand2tetris
   description: |
     Build a complete working computer from just NAND gates. You don't need a soldering iron or electronic parts.
     This is all done in a web-based [IDE](/subjects/editors) that you can also download and work in. See [WEB IDE](https://nand2tetris.github.io/web-ide/chip/).

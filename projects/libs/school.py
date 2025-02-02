@@ -197,6 +197,7 @@ class Item:
     self.id = yo.get('id', None)
     self.title = yo.get('title', None) or self.id
     self.description = yo.get('description', None)
+    self.keywords = yo.get('keywords', None)
     self.short = yo.get('short', '')
     self.purpose = yo.get('purpose', '')
 

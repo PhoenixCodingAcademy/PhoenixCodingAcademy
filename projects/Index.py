@@ -74,6 +74,7 @@ for subject in school.subjects:
   index(path, subject.id)
   index(path, subject.title)
   index(path, subject.description)
+  index(path, subject.keywords)
   index(path, subject.short)
   index(path, subject.purpose)
   fileTypes['subjects'] = fileTypes['subjects'] + 1
@@ -83,6 +84,7 @@ for subject in school.subjects:
     index(path, course.id)
     index(path, course.title)
     index(path, course.description)
+    index(path, course.keywords)
     index(path, course.short)
     index(path, course.purpose)
     fileTypes['courses'] = fileTypes['courses'] + 1
@@ -92,6 +94,7 @@ for subject in school.subjects:
       index(path, assignment.id)
       index(path, assignment.title)
       index(path, assignment.description)
+      index(path, assignment.keywords)
       index(path, assignment.short)
       index(path, assignment.purpose)
       fileTypes['assignments'] = fileTypes['assignments'] + 1
