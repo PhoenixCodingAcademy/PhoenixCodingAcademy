@@ -327,6 +327,11 @@ subjects:
   short: Python is perhaps the most taught language in school these days. This site is built with it. There is very little you cannot do with Python.
   parents: programming
 
+- id: julia
+  title: Julia Programming Language
+  short:
+  parents: programming
+
 - id: rust
   title: Rust Programming
   short: You know, cargo

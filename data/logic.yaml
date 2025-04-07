@@ -49,6 +49,29 @@ courses:
 
       ![](/static/images/n2talu1.png)
 
+      # Machine and Assembly Language
+
+      Symbols:
+
+      * `MEM` - Memory
+      * `MEM[A]` - The value at memory address `A`
+
+      Registers:
+
+      * `A` the address pointer to memory
+      * `D` - same as MEM[A]
+
+      `0 a[15]`
+
+      Load A with the binary value a[15]. Thus A can hold a value from 0 to 32767.
+
+      `1 x x a c[6] d[3 j[3]`
+
+      dest = comp ; jump
+
+      ![](/static/images/Screenshot 2025-02-02 135115.png)
+
+
 
 
 

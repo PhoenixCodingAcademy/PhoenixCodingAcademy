@@ -1,0 +1,57 @@
+description: |
+  Julia is a high-performance dynamic language for numerical computing.
+  It is typically compared to Python, Matlab, C and Fortran.
+  It is high-level, readable, free and open source, easy to learn, and flexible.
+  It integrates seamlessly with C, C++, Python, R and other languages.
+  The language generates very efficient and fast-running code via the LLVM compiler, and put it in the Petaflop Club along with FORTRAN and C++ as the two others.
+
+  # Example
+  ![Julia Example](/static/images/julia1.png)
+
+
+  # Features
+  ## Easy
+  * High-level language, readable
+  * Dynamic and exploratory, rapid development, like Python. Has a REPL.
+  * Julia is easy to learn. Julia’s flexible syntax is familiar and comfortable for users of Python, R and Matlab.
+  * Julia integrates well with existing code and platforms. Users of C, C++, Python, R and other languages can easily integrate their existing code into Julia.
+  * Elegant code. Julia was built from the ground up for mathematical, scientific and statistical computing. It has advanced libraries that make programming simple and fast and dramatically reduce the number of lines of code required – in some cases, by 90% or more.
+
+  ## Fast, like C++
+  * One of only three languages that belong to the "[petaflop club](https://www.hpcwire.com/off-the-wire/julia-joins-petaflop-club/)". FORTRAN and C++ are the others.
+  * Julia is the fastest modern high performance open source computing language for data, analytics, algorithmic trading, machine learning and artificial intelligence. Julia combines the functionality and ease of use of Python, R, Matlab, SAS and Stata with the speed of C++ and Java. Julia delivers dramatic improvements in simplicity, speed, capacity and productivity. Julia provides parallel computing capabilities out of the box and unlimited scalability with minimal effort. With more than 1 million downloads and +161% annual growth, Julia is one of the top 10 programming languages developed on GitHub and adoption is growing rapidly in finance, insurance, energy, robotics, genomics, aerospace and many other fields.
+  * Julia is lightning fast. Julia provides speed improvements up to 1,000x for insurance model estimation, 225x for parallel supercomputing image analysis and 10x for macroeconomic modeling.
+  * Julia provides unlimited scalability. Julia applications can be deployed on large clusters with a click of a button and can run parallel and distributed computing quickly and easily on tens of thousands of nodes.
+
+  ## User Base
+  * Julia users, partners and employers hiring Julia programmers in 2017 include Amazon, Apple, BlackRock, Capital One, Comcast, Disney, Facebook, Ford, Google, Grindr, IBM, Intel, KPMG, Microsoft, NASA, Oracle, PwC, Raytheon and Uber.
+  * [Julia language cracks top 20 in Tiobe popularity index](https://www.infoworld.com/article/2338850/julia-language-cracks-top-20-in-tiobe-popularity-index.html)
+
+  ## Solves Two-language Problem
+  * Julia solves the two language problem. Because Julia combines the ease of use and familiar syntax of Python, R and Matlab with the speed of C, C++ or Java, programmers no longer need to estimate models in one language and reproduce them in a faster production language. This saves time and reduces error and cost.
+  * Julia Computing was founded in 2015 by the creators of the open source Julia language to develop products and provide support for businesses and researchers who use Julia.
+
+  ## Strongly typed and dynamic
+  This combination is unique to Julia. Dynamic languages like Python and Matlab tend to be easy to learn and the programs written in them tend to quite short. Up to now, such languages have only used fairly simple type systems, which meant the programs could not be optimized to make the best possible use of processor capacity.
+
+  It is the strong and very detailed type system that allows Julia code to run (almost) as fast as C.
+
+  * Julia can efficiently dispatch on as many arguments as we want, to work around the language's lack of multiple inheritance. Traits can depend on computed properties of types, allowing them to express relationships that multiple inheritance cannot.
+
+purpose: |
+
+links:
+- url: https://www.youtube.com/watch?v=JYs_94znYy0
+  text: Julia in 100 seconds
+  short: A quick introduction to Julia in under 2 minutes.
+- url: https://www.coursera.org/learn/julia-programming
+  text: Coursera Course
+  short: This is the course I took online. Got through it in about 3 weeks while working full time.
+- url: https://julialang.org/blog/2012/02/why-we-created-julia/
+  text: Why we created Julia
+- url: https://docs.julialang.org/
+  text: Julia Documentation
+- url: https://docs.julialang.org/en/v1/stdlib/REPL/
+  text: Julia REPL
+- url: https://www.youtube.com/watch?v=zCYraeCTrMU
+  text: You can run Julia in Jupyter Notebooks like Python
