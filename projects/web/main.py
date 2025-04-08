@@ -174,12 +174,18 @@ def _pages():
   '''
   school = getSchool()
   pagesPath = tools.GetAncestorPath('pages')
-  pages = glob.glob(os.path.join(pagesPath, '*.md'))
+  pages = glob.glob(os.path.join(pagesPath, '**/*.md'), recursive=True)
   title = "Pages"
   html = '<ul>'
+  fns = []
   for page in pages:
     fn = os.path.split(page)[1]
+    fn = page.replace(pagesPath, '').replace('\\', '/')
+    if fn.startswith('/'): fn = fn[1:]
     if fn.startswith('_'): continue
+    fns.append(fn)
+
+  for fn in sorted(fns, key=str.lower):
     path = f"/pages/{fn}"
     name = fn[:-3]
     text = tools.readFile(page)
