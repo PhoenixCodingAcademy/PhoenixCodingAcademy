@@ -49,9 +49,11 @@ This Sentinel Tower Gaming Desktop presents an excellent choice for a classroom 
 # Classroom
 
 Administrator
+
 * Installs Ollama Server, pulls various models to try (`ollama pull ...`), and starts the server (`ollama serve`)
 
 Student
+
 * Installs on its machine:
   * Ollama Client
   * `uv` to run various Python virtual environments.
@@ -61,6 +63,7 @@ Student
   * Cursor
 
 Teacher
+
 * Walks the students through using this software and what can be done with it.
 
 
