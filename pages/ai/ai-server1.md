@@ -7,9 +7,9 @@
 * WiFi 7
 * Windows 11 Pro
 
-Amazon: https://www.amazon.com/Sentinel-Desktop-Liquid-Cooled-PC/dp/B0DY87J55D ($6849)
+[Amazon $6849](https://www.amazon.com/Sentinel-Desktop-Liquid-Cooled-PC/dp/B0DY87J55D)
 
-You can always drop features to lower the price.
+You can always drop features to lower the price, but this looks pretty good. Comparable to what I use at home.
 
 # Reasons
 
