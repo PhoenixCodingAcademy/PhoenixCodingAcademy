@@ -6,7 +6,9 @@ Imagine someone asks you to create a static website that uses HTML, CSS, and Jav
 
 **Imagine that you could create this entire working site in 15 minutes using AI techniques!**
 
-Here's a quick example of something created in about that time: [Click Here](https://github.com/PhoenixCodingAcademy/example1)
+Here's a quick example of something created in about that time:
+* [Click Here for the repo](https://github.com/PhoenixCodingAcademy/example1)
+* [Click here for the web site](https://phoenixcodingacademy.github.io/example1/)
 
 There has never been a more fun and exciting time to learn engineering, computers, and robotics since ChatGPT was released to the public in November 2022.
 
