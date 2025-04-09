@@ -211,7 +211,11 @@ def _pages():
         path = f"/pages/{fn}"
         name = fn[:-3]
         print(f"fp: {fp}")
-        text = tools.readFile(fp)
+        try:
+          text = tools.readFile(fp)
+        except Exception as e:
+          print(f"Error reading file: {fp}{e}")
+          text = ""
         desc = ""
         match = re.search(r"DESCRIPTION:(?P<A>.*)", text)
         if match:
