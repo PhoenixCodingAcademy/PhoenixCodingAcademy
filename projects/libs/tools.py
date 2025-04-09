@@ -21,7 +21,10 @@ def GetDataPath(fn):
   This function defines where these data items are to be stored;
   currently in the "data/" folder, but we might change it later.
   '''
-  return os.path.join("data", fn)
+  fp = os.path.join("data", fn)
+  fp = fp.replace('/', os.path.sep)
+  fp = fp.replace('\\', os.path.sep)
+  return fp
 
 
 def DataFileExists(fn):
