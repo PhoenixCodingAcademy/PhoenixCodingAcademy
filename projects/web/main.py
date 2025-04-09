@@ -196,6 +196,7 @@ def _pages():
       fp = fp.replace('\\', os.path.sep)
       fn = fn.replace('/', os.path.sep)
       fn = fn.replace('\\', os.path.sep)
+
       if os.path.isdir(fp):
         h = recur(fp)
         name = fn
@@ -209,6 +210,7 @@ def _pages():
       else:
         path = f"/pages/{fn}"
         name = fn[:-3]
+        print(f"fp: {fp}")
         text = tools.readFile(fp)
         desc = ""
         match = re.search(r"DESCRIPTION:(?P<A>.*)", text)
