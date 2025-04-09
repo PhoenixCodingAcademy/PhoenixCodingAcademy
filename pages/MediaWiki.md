@@ -1,3 +1,7 @@
+<!--
+DESCRIPTION: Learn how to install and run MediaWiki, the free and open-source wiki software that powers Wikipedia, using Docker containers.
+-->
+[TOC]
 
 
 ```dos

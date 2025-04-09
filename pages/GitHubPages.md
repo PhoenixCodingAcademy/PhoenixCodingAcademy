@@ -1,3 +1,9 @@
+<!--
+DESCRIPTION: Learn how to quickly create and deploy a static website using GitHub Pages with markdown and HTML support.
+-->
+[TOC]
+
+
 # Github Pages
 
 Suppose you want to create a static fluent website quickly that looks good across different devices. You know HTML but would also like to use markdown to speed up the content creation. If you have a Github account, then making a web site is easy using Github Pages.

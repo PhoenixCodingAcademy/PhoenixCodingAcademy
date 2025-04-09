@@ -1,3 +1,6 @@
+<!--
+DESCRIPTION: A step-by-step guide for administrators to invite new members and for users to accept invitations to join the Phoenix Coding Academy organization on GitHub.
+-->
 [TOC]
 
 This page shows how to invite a member to the organization.

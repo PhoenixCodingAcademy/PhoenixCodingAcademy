@@ -1,8 +1,11 @@
+<!--
+DESCRIPTION: Learn how to write nicely formatted documents using Markdown's lightweight syntax, with support for headers, lists, formatting, diagrams and math notation.
+-->
+[TOC]
+
 # Markdown
 
 [Markdown](https://en.wikipedia.org/wiki/Markdown) is a lightweight method to create nicely formatted documents with just a text editor; as opposed to using an office word processor application. Markdown supports basic concepts, such as nested headers, bullet, bold, italics, etc. WIth markdown extensions, it can support [mermaid](https://mermaid.js.org/intro/) language for creating charts and graphs, and [LaTeX Math]() notation via the [MathJax](https://en.wikipedia.org/wiki/MathJax) JavaScript library.
-
-[TOC]
 
 
 

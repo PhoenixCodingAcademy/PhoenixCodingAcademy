@@ -1,0 +1,30 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+
+      {
+          "name": "Python: Current File",
+          "type": "debugpy",
+          "request": "launch",
+          "env": {
+              "PYTHONPATH": "${workspaceFolder}"
+          },
+          "program": "${file}",
+          "console": "integratedTerminal"
+      },
+      {
+          "name": "Python: main",
+          "type": "debugpy",
+          "request": "launch",
+          "program": "projects/web/main.py",
+          "console": "integratedTerminal"
+      },
+      // {
+      //     "name": "Python: main_report",
+      //     "type": "debugpy",
+      //     "request": "launch",
+      //     "program": "main_report.py",
+      //     "console": "integratedTerminal"
+      // }
+  ]
+}

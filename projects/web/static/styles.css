@@ -34,3 +34,25 @@ table {
 th {
   font-size: larger;
 }
+
+.nested-ul {
+  display: none; /* Initially hide nested ULs */
+  margin-left: 0px; /* Reduce indentation by half */
+  padding-left: 0rem; /* Override Bootstrap's default padding */
+  font-weight: normal;
+}
+
+.expandable {
+  cursor: pointer; /* Indicate it's clickable */
+  font-weight: bolder;
+}
+
+.expandable::before {
+  content: "+ "; /* Initial state: closed */
+  font-weight: bold;
+  margin-right: 5px;
+}
+
+.expanded::before {
+  content: "- "; /* Expanded state: open */
+}

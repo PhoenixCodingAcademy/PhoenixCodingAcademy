@@ -1,3 +1,7 @@
+<!--
+DESCRIPTION: Learn how to write academic papers following key principles of authenticity, proper citation, verifiability and collaboration while using modern tools like markdown, Bibtex and Github.
+-->
+
 [TOC]
 
 # Overview

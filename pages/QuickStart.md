@@ -1,3 +1,8 @@
+<!--
+DESCRIPTION: Instructions for cloning and running the Phoenix Coding Academy website locally.
+-->
+[TOC]
+
 # Quick Start
 
 Here's how you can pull (or "clone") this repository (or "repo") to your laptop (or desktop) and run the site there. You will need an Internet connection to clone the repo, but after that, you can do evolve the website in airplane mode. There you can modify the code and commit changes to you local cloned repo. Once you get all your changes done and tested, you can (with Internet) produce a pull request (PR) back to the repo for peer review. If approved, it will be deployed to the [production site](https://phoenixcodingacademy.pythonanywhere.com) where everyone can see it.

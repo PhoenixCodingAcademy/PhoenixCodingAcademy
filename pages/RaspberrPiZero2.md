@@ -1,3 +1,6 @@
+<!--
+DESCRIPTION: Learn how to set up and configure a Raspberry Pi Zero 2 microcomputer with camera module and connect to it remotely via SSH.
+-->
 [TOC]
 
 # Overview

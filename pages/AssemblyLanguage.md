@@ -1,3 +1,7 @@
+<!--
+DESCRIPTION: Learn about assembly language - the human-readable programming language that maps directly to machine code, and why understanding it remains valuable for modern programmers.
+-->
+
 [TOC]
 
 # Overview

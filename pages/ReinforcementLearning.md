@@ -1,6 +1,9 @@
-# Reinforcement Learning
-
+<!--
+DESCRIPTION: Learn about reinforcement learning, a type of machine learning where agents learn optimal behavior through trial and error interactions with an environment to maximize cumulative rewards.
+-->
 [TOC]
+
+# Reinforcement Learning
 
 Reinforcement Learning (RL) is subset of [Machine Learning](/pages/ML.md) (ML).
 In other ML algorithms, you are given a dataset with labeled input/output data where you try to discover a relationship between the input and output data.

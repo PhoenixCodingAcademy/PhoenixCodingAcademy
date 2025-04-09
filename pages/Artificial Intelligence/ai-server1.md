@@ -1,3 +1,8 @@
+<!--
+DESCRIPTION: Detailed specifications and justification for a high-end AI server computer to be used for teaching students about large language models and running an Ollama server.
+-->
+[TOC]
+
 # Sentinel Tower Gaming Desktop 360mm Liquid Cooled PC
 * 24-Core Intel Ultra 9 285K - 8 Cores, 8 Threads, 3.7 GHz Base, 5.7 GHz Turbo [Passmark 67979](https://www.cpubenchmark.net/cpu.php?cpu=Intel+Core+Ultra+9+285K&id=6296)
 * 192GB DDR5 RAM

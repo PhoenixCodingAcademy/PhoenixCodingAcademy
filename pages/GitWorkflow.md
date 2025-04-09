@@ -1,3 +1,8 @@
+<!--
+DESCRIPTION: Learn how to use Git for version control and collaboration in software development projects.
+-->
+[TOC]
+
 # Git Workflow
 
 **Git**, a free and open source version control system ([VCS](https://en.wikipedia.org/wiki/Version_control)), is the most popular one world-wide. If you don't know Git, you won't last long in the software field. Git is so useful that authors often use it create books, and professional use it as their resume.

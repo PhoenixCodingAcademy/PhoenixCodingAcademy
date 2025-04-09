@@ -1,5 +1,5 @@
 <!--
-DESCRIPTION: A journal of the weekly club meetings.
+DESCRIPTION: Amateur Radio and SDR.
 -->
 
 

@@ -174,27 +174,46 @@ def _pages():
   '''
   school = getSchool()
   pagesPath = tools.GetAncestorPath('pages')
-  pages = glob.glob(os.path.join(pagesPath, '**/*.md'), recursive=True)
   title = "Pages"
-  html = '<ul>'
-  fns = []
-  for page in pages:
-    fn = os.path.split(page)[1]
-    fn = page.replace(pagesPath, '').replace('\\', '/')
-    if fn.startswith('/'): fn = fn[1:]
-    if fn.startswith('_'): continue
-    fns.append(fn)
 
-  for fn in sorted(fns, key=str.lower):
-    path = f"/pages/{fn}"
-    name = fn[:-3]
-    text = tools.readFile(page)
-    desc = ""
-    match = re.search(r"DESCRIPTION:(?P<A>.*)", text)
-    if match:
-      desc = " - " + match.group("A").strip()
-    html = html + f"""<li><a href="{path}">{name}</a><i>{desc}</i></li>"""
-  html += '\n</ul>'
+  def recur(path):
+    fps = glob.glob(os.path.join(path, "*"))
+    fns = []
+    for fp in fps:
+      fp = fp.replace('/', '\\')
+      fs = os.path.split(fp)
+      fn = fs[1]
+      if fn.startswith('/'): fn = fn[1:]
+      if fn.startswith('_'): continue
+      fns.append((os.path.join(fs[0], fn), fn))
+
+    fns.sort(key=lambda x: str.lower(x[1]))
+
+    html = '<ul>'
+    for fp, fn in fns:
+      if os.path.isdir(fp):
+        h = recur(fp)
+        name = fn
+        html = html + f"""
+<li class="expandable">{name}<i>{desc}</i>
+<ul class="nested-ul">
+    {h}
+</ul>
+</li>
+        """
+      else:
+        path = f"/pages/{fn}"
+        name = fn[:-3]
+        text = tools.readFile(fp)
+        desc = ""
+        match = re.search(r"DESCRIPTION:(?P<A>.*)", text)
+        if match:
+          desc = " - " + match.group("A").strip()
+        html = html + f"""<li><a href="{path}">{name}</a><i>{desc}</i></li>"""
+    html += '\n</ul>'
+    return html
+
+  html = recur(pagesPath)
 
   rootRepo = RepoRoot()
   webPath = os.path.join(rootRepo, 'projects', 'web')

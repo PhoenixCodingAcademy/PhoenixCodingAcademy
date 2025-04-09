@@ -1,3 +1,6 @@
+<!--
+DESCRIPTION: Learn about Input-Process-Output (IPO) diagrams - a fundamental way to model how data and operations flow through systems, from simple tasks to complex computer programs.
+-->
 [TOC]
 
 # Input-Process-Output (IPO)

@@ -1,3 +1,6 @@
+<!--
+DESCRIPTION: Learn how to write mathematical equations and formulas in markdown documents using LaTeX math syntax and MathJax rendering.
+-->
 [TOC]
 
 # Overview

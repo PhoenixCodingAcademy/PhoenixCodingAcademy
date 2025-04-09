@@ -1,3 +1,6 @@
+<!--
+DESCRIPTION: Learn how to use LaTeX, a powerful typesetting system used for creating professional academic documents and mathematical publications.
+-->
 [TOC]
 
 # Overview

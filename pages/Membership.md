@@ -1,4 +1,8 @@
+<!--
+DESCRIPTION: Learn how to join the Phoenix Coding Academy Computer Science Club and become part of our learning community.
+-->
 [TOC]
+
 
 # Club Interest
 

@@ -1,3 +1,7 @@
+<!--
+DESCRIPTION: A detailed explanation of the design choices, requirements, and organization of this website's architecture.
+-->
+
 # Architecture
 
 >> Architecture is any solution to a prioritize list of constraints.

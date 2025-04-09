@@ -1,3 +1,8 @@
+<!--
+DESCRIPTION: Join the Phoenix AI Innovators Club to explore artificial intelligence, prompt engineering, and modern software development using AI tools and techniques.
+-->
+[TOC]
+
 # Phoenix Coding Academy A.I. Club
 
 Join the Phoenix AI Innovators Club and explore the exciting frontier of artificial intelligence! In today's rapidly evolving technological landscape, the traditional notion of "coding" is shifting. Just as calculators transformed arithmetic, AI is revolutionizing software creation. We'll delve into the world of prompt engineering, where crafting effective instructions for AI models is becoming the key skill, and even explore the rise of "vibe coders" who leverage AI to bring their visions to life. Forget endless lines of manual code - we'll focus on understanding AI's potential, experimenting with cutting-edge tools, and developing the skills to harness this powerful technology for innovation and creation, much like we now rely on computers instead of manual long division.

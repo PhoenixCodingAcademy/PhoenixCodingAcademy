@@ -1,3 +1,8 @@
+<!--
+DESCRIPTION: Requirements for the quiz engine.
+-->
+[TOC]
+
 * Create an exam from a list of subjects, courses, or assignments. This is resolved into a set of item ids.
 * Pick a random seed number, perhaps based on the student's id and exam number.
 * For each id in ids:

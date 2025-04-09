@@ -1,3 +1,6 @@
+<!--
+DESCRIPTION: Learn about graphs, directed graphs (digraphs), directed acyclic graphs (DAGs), and trees - the fundamental structures used in software architecture diagrams and version control systems like Git.
+-->
 [TOC]
 
 # Overview
