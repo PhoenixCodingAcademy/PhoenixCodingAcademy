@@ -73,6 +73,11 @@ def readFile(fn):
       print(ex)
       raise ex
 
+def readDataFile(fn):
+  dn = GetDataPath(fn)
+  return readFile(dn)
+
+
 def writeFile(fn, data):
   with open(fn, 'w') as f:
     f.write(data)

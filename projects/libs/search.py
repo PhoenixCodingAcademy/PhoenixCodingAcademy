@@ -95,7 +95,7 @@ class Search:
 
 if __name__ == "__main__":
   fn = tools.GetAncestorPath("projects/index.txt")
-  db = tools.readFile(fn)
+  db = tools.readDataFile(fn)
   search = Search(db)
   print("Num words =", len(search.db))
 

@@ -306,7 +306,7 @@ def _search():
   '''
   term = request.args.get("search", '').lower()
   fn = tools.GetAncestorPath("projects/index.txt")
-  db = tools.readFile(fn)
+  db = tools.readDataFile(fn)
   search = Search(db)
 
   school = getSchool()
@@ -348,7 +348,7 @@ def _default(path):
 
     if path.lower().endswith('.md'):
       path = os.path.join(rootRepo, path)
-      data = tools.readFile(path)
+      data = tools.readDataFile(path)
       model = getModel(title)
       model.data = data
       return render_template('markdown.html', model=model)

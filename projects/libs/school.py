@@ -52,7 +52,7 @@ def FileMarkdown(relPath):
   path = os.path.abspath(path)
   if not os.path.exists(path):
     return f"File '{path}' not found."
-  md = tools.readFile(path)
+  md = tools.readDataFile(path)
   return Markdown(md)
 
 

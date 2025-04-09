@@ -47,7 +47,7 @@ data = libs.tools.GetAncestorPath("pages")
 fileTypes['pages'] = 0
 for fp in glob.glob(os.path.join(data, '**/*.md'), recursive=True):
   fn = os.path.split(fp)[1]
-  text = libs.tools.readFile(fp)
+  text = libs.tools.readDataFile(fp)
   index(f"/pages/{fn}", text)
   fileTypes['pages'] = fileTypes['pages'] + 1
 
