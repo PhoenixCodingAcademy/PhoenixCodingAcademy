@@ -305,7 +305,7 @@ def _search():
 
   '''
   term = request.args.get("search", '').lower()
-  fn = tools.GetAncestorPath("projects/index.txt")
+  fn = tools.GetAncestorPath("index.txt")
   db = tools.readDataFile(fn)
   search = Search(db)
 
