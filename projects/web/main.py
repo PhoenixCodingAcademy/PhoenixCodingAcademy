@@ -180,7 +180,8 @@ def _pages():
     fps = glob.glob(os.path.join(path, "*"))
     fns = []
     for fp in fps:
-      fp = fp.replace('/', '\\')
+      fp = fp.replace('/', os.path.sep)
+      fp = fp.replace('\\', os.path.sep)
       fs = os.path.split(fp)
       fn = fs[1]
       if fn.startswith('/'): fn = fn[1:]
