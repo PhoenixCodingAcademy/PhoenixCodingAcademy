@@ -194,6 +194,8 @@ def _pages():
     for fp, fn in fns:
       fp = fp.replace('/', os.path.sep)
       fp = fp.replace('\\', os.path.sep)
+      fn = fn.replace('/', os.path.sep)
+      fn = fn.replace('\\', os.path.sep)
       if os.path.isdir(fp):
         h = recur(fp)
         name = fn
