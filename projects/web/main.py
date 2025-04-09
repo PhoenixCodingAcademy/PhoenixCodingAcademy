@@ -192,6 +192,8 @@ def _pages():
 
     html = '<ul>'
     for fp, fn in fns:
+      fp = fp.replace('/', os.path.sep)
+      fp = fp.replace('\\', os.path.sep)
       if os.path.isdir(fp):
         h = recur(fp)
         name = fn
