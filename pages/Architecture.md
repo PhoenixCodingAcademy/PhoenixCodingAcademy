@@ -42,6 +42,7 @@ The project folder, which is checked into Github, is organized as follows:
     * **zips/** - contains zip files that can be downloaded with url `/zips/FILENAME.zip`
     * **googleXXX.html** - the file that Google gave us to verify we had the authority to use their search engine.
     * **main.py** - the main entry point to the web application. From the command line, run `python main.py` to start the web server. Put a `--debug run` on the end to run in debug mode where you see more error messages.
+* **UpdateIndex.bat** - runs the script that recreates the `index.txt` file, which contains a cross-reference of all words to the pages they appear on. The "Search" button in the main toolbar of the site uses this index. Jaro Winkler is used to allow fuzzy matches on the index. The index.txt file contains one line per word, followed by a colon, and then a comma-separated list of relative pages that match the words. Pages with the most matches appear first.
 
 ## Data Driven
 

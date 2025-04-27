@@ -1,0 +1,22 @@
+description: |
+  Large Language Models are a type of machine learning model that uses a large amount of data to learn patterns and relationships.
+  Popular models include GPT-3, GPT-4, DeepSeek, Gemini, Ollama, and Claude.
+
+  * [Glossary](/pages/Artificial Intelligence/llm-glossary.md)
+
+
+purpose: |
+  Large Language Models are used to generate text, code, images, audio, and other forms of content.
+
+glossary: |
+  * **GPT-3** - A large language model developed by OpenAI.
+  * **GPT-4** - The latest version of GPT-3, with improved performance and capabilities.
+  * **DeepSeek** - A Chinese company that develops large language models by distilling GPT-3.
+  * **Gemini** - A large language model developed by Google.
+  * **Ollama** - An open-source large language model.
+  * **Claude** - A large language model developed by Anthropic.
+
+links:
+- url: https://www.llama.com/
+  text: Llama
+

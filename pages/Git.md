@@ -6,7 +6,7 @@ DESCRIPTION: The one, most important tool of software development that everyone 
 
 # Overview
 
-**Version Control** is any method that keeps track of changes to files in a folder tree. A classic methodology is to make copies of files and rename them with the date and time in the file name, and perhaps who was the last person to make the changes, and then email to your friends so they have a copy.
+**Version Control** is any method that keeps track of changes to files in a folder tree. A classic methodology is to make copies of files, rename them with the date and time in the file name (and perhaps include who made the changes), and then email them to your friends so they have a copy.
 
 **Git** is a free program that does version control, but in a more professional and convenient manner.
 
@@ -18,16 +18,19 @@ A **Git Repository** is:
 * Can be linked to one or more other repositories so that changes in one can be easily synchronized to another; e.g. merging, rebasing, pull requests.
 * A cryptographic block chain of changes to the folder (called **commits**). Each commit can contain changes to one or more files or folders. As a block chain, it is a [directed graph](/pages/Graphs.md). Since each commit is the cryptographic hash (SHA-256) of zero or more other existing commits, then it is a [DAG](/pages/Graphs.md).
 
-Git is a program that you install on your machine, and is primarily a method to have two or more repositories that both evolve independently (files and folders change over time), but are periodically synchronized together in some manner.
+Git is a program that you install on your machine. It enables multiple repositories to evolve independently (as files and folders change over time) while allowing them to be periodically synchronized with each other.
 
 ## Notation
 
 Your git environment has these named items that point to commits:
-*
+* `HEAD` - Points to the current commit you're working on
+* `main`/`master` - The default branch name
+* `origin` - The default name for the remote repository
+* Branch names - User-defined names that point to specific commits
 
 Commits are often drawn as nodes in a graph. Suppose you are on the `main` branch. When you create your first commit, you have a first commit:
 
-![Alt text](/static/images/commit0.png)
+![First Commit](/projects/web/static/images/commit0.png)
 
 
 
@@ -51,7 +54,7 @@ There are two methods to create a repository:
 
 ## Commit Changes
 
-When you make changes to the folders and files in your repository, you'll want to add all (or some) into a set (called **staging**) to create a commit. To stage all changes:
+When you make changes to the folders and files in your repository, you'll want to stage these changes (either all of them or specific ones) to prepare for creating a commit. To stage all changes:
 
 ```
 git add .
@@ -97,7 +100,7 @@ Untracked files:
         static/images/
 ```
 
-This tells you the following:
+This tells you the following.
 * `Your branch is up to date with 'upstream/main'` means there has been no new changes in the remote branch since you started working on it.
 * `Changes to be committed:` says you staged these files
 * `Changes not staged for commit:` there are some files you haven't staged yet.
@@ -168,7 +171,7 @@ For a prettier view:
 git log --pretty=format:"%h %Cgreen%ad%Creset %an %Cgreen%s%Creset" --date=format:"%a %Y-%m-%d %I:%M %p"
 ```
 
-to show:
+This will show.
 
 ```
 c945957 Thu 2023-11-16 03:12 PM Rob Howard requirements.txt created by pipreqs --encoding utf-8

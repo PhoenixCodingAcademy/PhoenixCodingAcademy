@@ -795,6 +795,11 @@ subjects:
   parents: ai
   short: Trying to find the best solution by breeding the best with the best and applying a fitness function.
 
+- id: llm
+  title: Large Language Models
+  parents: ai
+  short: A type of machine learning model that uses a large amount of data to learn patterns and relationships. Popular models include GPT-3, GPT-4, DeepSeek, Gemini, Ollama, and Claude.
+
 - id: ml
   title: Machine Learning
   parents: ai

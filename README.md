@@ -4,12 +4,14 @@
 
 [Phoenix Coding Academy](/pages/PCA.md) (PCA) had an after-hours Computer Science Club that met Wednesdays after class at 3pm in Masamery's room. Members will learn modern tools for engineering and university academics. The course is designed for self-driven learners who attend PCA, but anyone is welcome. Attendance can be remote and asynchronous. We'll probably propose this club again in August 2025.
 
+
 - [Phoenix Coding Academy Computer Science Club](#phoenix-coding-academy-computer-science-club)
 - [Quick Links](#quick-links)
 - [Summary Goals](#summary-goals)
 - [Goals](#goals)
 - [Strategy](#strategy)
 - [Testing](#testing)
+
 
 # Quick Links
 * [Club Home Page](http://phoenixcodingacademy.pythonanywhere.com/) - *The main club's home page.*
@@ -23,6 +25,7 @@
 * For members:
     * [Project Board](https://github.com/orgs/PhoenixCodingAcademy/projects/2/views/1)
 
+
 # Summary Goals
 * Learn by teaching. Help create class content and tests.
 * Learn collaborative application development through Git.
@@ -31,13 +34,13 @@
 * Think big! Scale out to other schools - perhaps nation-wide.
 
 
-
 # Goals
 * Primarily learn **what** subjects are important, why knowledge of them will give you a head start at the university or workplace, and increase your value to the world. Quickly know where to find the best online guides and tutorials, and how to get started quickly. Then, if any subject really grabs your interest, you can go further into the subject by following the online tutorials to learn **how** to solve problems. You can become the Subject Matter Expert (SME) for any number of courses in the club to provide new learners a person from which get help. Interested in a subject that is not in "this list"? Create it!
 * Pad your resume very quickly with lots of techniques where you can talk for 5 minutes on any subject.
 * Learn why these subjects are important in the professional and academic fields and how.
 * Help create this class by creating subject content as a team.
 * Learn by also teaching and taking practice tests that you create as you learn.
+
 
 # Strategy
 As a participant, you will be any or all of these roles:
