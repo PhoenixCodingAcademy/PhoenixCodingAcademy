@@ -13,7 +13,7 @@ description: |
   Here are some great (and free) playlists to understanding AI that you can subscribe to:
 
   ## Neural Networks
-  * [Neural Networks (3Blue1Brown)](https://www.youtube.com/watch?v=aircAruvnKk&list=PLZHQObOWTQDNU6R1_67000Dx_ZCJB-3pi) make up the primary powerful techniques of training LLMs, robots, agents, an image recognition, start here.
+  * [Neural Networks (3Blue1Brown) Matt Sanderson](https://www.youtube.com/watch?v=aircAruvnKk&list=PLZHQObOWTQDNU6R1_67000Dx_ZCJB-3pi) make up the primary powerful techniques of training LLMs, robots, agents, an image recognition, start here.
   * [Artificial Intelligence (Art of the Problem)](https://www.youtube.com/playlist?list=PLbg3ZX2pWlgKV8K6bFJr5dhM7oOClExUJ)
   * [What are Convolutional Neural Networks (CNNs)? (IBM Technology)](https://www.youtube.com/watch?v=QzY57FaENXg)
 
@@ -35,9 +35,14 @@ description: |
   * [Data School](https://www.youtube.com/@dataschool): This channel educates machine learning enthusiasts. Covers Python, Pandas, Jupyter, Scikit-Learn, and math models of AI.
   * [Deeplearning.ai](https://www.youtube.com/@Deeplearningai): This channel provides organized courses on AI and machine learning.
   * [Two Minute Papers](https://www.youtube.com/@TwoMinutePapers): This channel explains machine learning research papers in short videos.
-  * Lex Fridman Podcast: This channel features discussions on AI and ML.
-  * StatQuest with Josh Starmer: This channel simplifies statistical and machine-learning ideas.
-  * Olivio Sarikas: This channel provides in-depth tutorials and analyses of AI and machine learning technologies.
+  * [StatQuest with Josh Starmer](https://www.youtube.com/@StatQuest): This channel simplifies statistical and machine-learning ideas.
+  * [Olivio Sarikas](https://www.youtube.com/@OlivioSarikas): This channel provides in-depth tutorials and analyses of AI and machine learning technologies.
+
+  * [AI Purpose](https://www.youtube.com/@AIPurpose): Explores purpose applications of AI.
+  * [AI Meaning](https://www.youtube.com/@AIMeaning): Focuses on meaning applications of AI.
+  * [AI Value](https://www.youtube.com/@AIValue): Explores value applications of AI.
+  * [AI Worth](https://www.youtube.com/@AIWorth): Focuses on worth applications of AI.
+  * [AI Importance](https://www.youtube.com/@AIImportance): Explor
 
 
   ## From Universities
@@ -56,20 +61,21 @@ description: |
   ## Technical How-Tos
   * [Building LLMs from scratch (Vizuara)](https://www.youtube.com/playlist?list=PLPTV0NXA_ZSgsLAr8YCgCwhPIJNNtexWu) - MIT Ph.D (Dr. Rajat Dandekar) teaches this course.
   * Recommended LLMs (the best ones) (Discover AI)
-
+  * [REINFORCE: Reinforcement Learning Most Fundamental Algorithm (Andriy Drozdyuk)](https://www.youtube.com/watch?v=5eSh5F8gjWU) - [Author's LinkedIn](https://www.linkedin.com/in/andriy-drozdyuk/)
 
   # Tools and Demos
   * [Tiktokenizer](https://tiktokenizer.vercel.app/)
   * [Token Counter](https://tokencounter.vercel.app/)
   * [Example of what a Production-Grade Neural Network looks like](https://bbycroft.net/llm)
 
-  Master Python and ML Fundamentals
-  Dive into Deep Learning
-  Build Applications with Prompt Engineering
-  Building RAG Systems with LangChain
-  Fine-Tuning LLMs
-  Build AI Agents
-  Sharpen your skills and Build a Portfolio
+
+  * Master Python and ML Fundamentals
+  * Dive into Deep Learning
+  * Build Applications with Prompt Engineering
+  * Building RAG Systems with LangChain
+  * Fine-Tuning LLMs
+  * Build AI Agents
+  * Sharpen your skills and Build a Portfolio
 
   That's a solid high-level roadmap! Let's break down each of these steps to give you a clearer picture of what's involved and how to approach them:
 
