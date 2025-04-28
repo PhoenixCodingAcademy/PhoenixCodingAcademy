@@ -78,6 +78,7 @@ description: |
   * **Probability, and Statistics**: These are crucial for understanding uncertainty in data and model predictions. They form the backbone of concepts like Bayesian inference, probabilistic modeling, and evaluating AI model performance (e.g., accuracy, precision, and recall).
 
   Suggested resources:
+
   * [Large Language Models explained briefly](https://www.youtube.com/watch?v=LPZh9BOjkQs)
   * [Essence of linear algebra](https://www.youtube.com/watch?v=fNk_zzaMoSs&list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab) - one of the best online descriptions of Linear Algebra. Has the best graphics and explanations I've seen.
   * [Khan Academy](https://www.khanacademy.org/)
