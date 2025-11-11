@@ -1,6 +1,7 @@
 # Large Language Models (LLMs) Glossary
 
 
+
 # Tokenization
 
 **Tokenization** is the process of breaking down text into smaller units called **tokens** that a language model can process. It's the crucial first step that converts human-readable text into numerical representations that machines can understand.
@@ -31,7 +32,7 @@
 
 ## Why Tokenization Matters
 
-### **Key Functions**
+### **Key Functions:**
 - **Standardizes input**: Converts variable-length text to fixed vocabulary
 - **Handles any text**: Can encode rare words, typos, different languages
 - **Enables learning**: Maps text to embeddings the model can process
@@ -69,8 +70,8 @@ Each method learns which text patterns to group together during training, creati
 ### **Larger Vocabularies**
 ‚úÖ More efficient encoding (fewer tokens per text)
 ‚úÖ Better handling of rare words/proper nouns
-ÔøΩ Larger embedding matrices (more parameters)
-ÔøΩ Sparser training data per token
+‚ Larger embedding matrices (more parameters)
+‚å Sparser training data per token
 
 When a word not in the tokenization map is encountered, modern tokenizers handle it through **subword tokenization**. Here's what happens:
 
@@ -380,7 +381,7 @@ token_ids = [1234, 5678, 910]  # Alternative naming
 ## **Technical Usage**
 - In transformers: "The model processes **sequences** of tokens"
 - In training: "Each **sequence** is padded to the same length"
-- In papers: "Given an input **sequence** X = (xÔøΩ
+- In papers: "Given an input **sequence** X = (x‚Ç
 User: Difference between an LLM and a transformer
 Model: Here's the key difference:
 
@@ -633,7 +634,7 @@ The transformer outputs **logits** (raw scores), not probabilities:
 Input: [What, is, a, cat]
           ‚Üì Transformer
 Output: Logits for next token position
-        [2.1, -0.5, 4.3, -2.0, 1.5, ...]  ÔøΩ one score per vocabulary token
+        [2.1, -0.5, 4.3, -2.0, 1.5, ...]  ‚Üê one score per vocabulary token
          "the" "dog" "?" "xyz" "A"
 ```
 

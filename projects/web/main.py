@@ -349,6 +349,11 @@ def _default(path):
     if path.lower().endswith('.md'):
       path = os.path.join(rootRepo, path)
       data = tools.readDataFile(path)
+      
+      # Open the file again with explicit UTF-8 decoding, to avoid UnicodeDecodeError
+      with open(path, 'r', encoding='utf-8', errors='replace') as f:
+        data = f.read()
+
       model = getModel(title)
       model.data = data
       return render_template('markdown.html', model=model)

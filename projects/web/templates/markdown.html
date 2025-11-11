@@ -1,6 +1,104 @@
 {% extends 'base.html' %}
 {% block content %}
 
-{{ model.Markdown(model.data) | safe }}
+<div class="row">
+  <!-- Left Navigation Panel -->
+  <div class="col-md-3" style="max-width:320px;">
+    <nav id="markdown-toc" style="position: sticky; top: 80px; border-right: 1px solid #ddd; padding-right: 1em;">
+      <h5>Page Contents</h5>
+      <ul class="nav flex-column" id="toc-list"></ul>
+    </nav>
+  </div>
+  <!-- Main Content -->
+  <div class="col-md-9" id="markdown-content">
+    {{ model.Markdown(model.data) | safe }}
+  </div>
+</div>
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  function slugify(text) {
+    // Convert heading text to URL slug for ids
+    return text.toString().toLowerCase()
+      .replace(/[^a-z0-9\s\-]/g, '')     // Remove non-alphanumeric, non-space, non-hyphen
+      .replace(/\s+/g, '-')              // Convert spaces to hyphens
+      .replace(/\-+/g, '-')              // Merge multiple hyphens
+      .replace(/^\-+|\-+$/g, '');        // Trim hyphens
+  }
+  // Find all headers in the markdown content
+  const content = document.getElementById("markdown-content");
+  if (!content) return;
+  const headings = content.querySelectorAll("h1, h2, h3");
+  const tocList = document.getElementById("toc-list");
+  if (!tocList || !headings.length) return;
+
+  let lastLevel1 = null, lastLevel2 = null;
+  headings.forEach(function(header) {
+    // Ensure the header has an id
+    if (!header.id) {
+      header.id = slugify(header.textContent);
+    }
+    const item = document.createElement("li");
+    item.classList.add("nav-item");
+    let a = document.createElement("a");
+    a.className = "nav-link";
+    a.href = "#" + header.id;
+    a.textContent = header.textContent;
+    // Structure TOC according to header level
+    if (header.tagName === "H1") {
+      item.style.marginLeft = "0px";
+      item.appendChild(a);
+      tocList.appendChild(item);
+      lastLevel1 = item;
+      lastLevel2 = null;
+    } else if (header.tagName === "H2") {
+      item.style.marginLeft = "16px";
+      item.appendChild(a);
+      // nest under last H1
+      let ul;
+      if (lastLevel1) {
+        ul = lastLevel1.querySelector("ul");
+        if (!ul) {
+          ul = document.createElement("ul");
+          ul.className = "nav flex-column";
+          ul.style.paddingLeft = "0";
+          lastLevel1.appendChild(ul);
+        }
+        ul.appendChild(item);
+      } else {
+        tocList.appendChild(item);
+      }
+      lastLevel2 = item;
+    } else if (header.tagName === "H3") {
+      item.style.marginLeft = "32px";
+      item.appendChild(a);
+      // nest under last H2
+      let ul;
+      if (lastLevel2) {
+        ul = lastLevel2.querySelector("ul");
+        if (!ul) {
+          ul = document.createElement("ul");
+          ul.className = "nav flex-column";
+          ul.style.paddingLeft = "0";
+          lastLevel2.appendChild(ul);
+        }
+        ul.appendChild(item);
+      } else if (lastLevel1) {
+        // if no H2, nest under H1
+        let ul = lastLevel1.querySelector("ul");
+        if (!ul) {
+          ul = document.createElement("ul");
+          ul.className = "nav flex-column";
+          ul.style.paddingLeft = "0";
+          lastLevel1.appendChild(ul);
+        }
+        ul.appendChild(item);
+      } else {
+        tocList.appendChild(item);
+      }
+    }
+  });
+});
+</script>
 
 {% endblock %}
