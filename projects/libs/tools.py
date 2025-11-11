@@ -78,6 +78,12 @@ def readDataFile(fn):
   return readFile(dn)
 
 
+def readDataFileWithUnicode(fn, encoding='utf-8', errors='replace'):
+  dn = GetDataPath(fn)
+  with open(dn, 'r', encoding=encoding, errors=errors) as f:
+    return f.read()
+
+
 def writeFile(fn, data):
   with open(fn, 'w') as f:
     f.write(data)

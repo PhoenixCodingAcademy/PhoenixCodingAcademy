@@ -1,5 +1,7 @@
 <title>Large Language Models (LLMs) Glossary</title>
 
+An LLM is an application that uses a [neural network](/pages/ai-glossary#neuralnetwork)
+
 
 
 # Tokenization

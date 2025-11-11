@@ -485,6 +485,28 @@ subjects:
     text: A visual introduction to probability and statistics
     short: I found this site well done.
 
+- id: linearregression
+  title: Linear Regression
+  parents: math
+  short: Linear Regression is a simple way to find a "linear" relationship between two variables.
+  links:
+  - url: https://en.wikipedia.org/wiki/Linear_regression
+    text: Linear Regression Wiki Page
+  - url: https://www.khanacademy.org/math/statistics-probability/modeling-distributions-of-data/regression-standard-error/a/regression-line-example
+    text: Linear Regression Example
+  - url: https://www.khanacademy.org/math/statistics-probability/modeling-distributions-of-data/regression-standard-error/a/regression-line-example
+  description: |
+    Linear Regression is a simple way to find a "linear" relationship between two variables.
+    You start with a set of points (x,y) and you want to find a line that best fits the points.
+    Most often, a solution will not fit the points perfectly, but it will be the best fit possible.
+    The best fit is defined to be the line that minimizes the error function defined to be the sum of the squares of the differences between the points and the line.
+    The error function is called the "cost function".
+    The cost function is minimized by finding the values of the line that minimize the cost function.
+    The values of the line are called the "coefficients".
+    The coefficients are found by using the "least squares" method.
+    The least squares method is a mathematical technique that finds the values of the coefficients that minimize the cost function.
+
+
 - id: fem
   title: Finite Element Methods
   short: |
