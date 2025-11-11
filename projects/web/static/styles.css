@@ -6,6 +6,16 @@ h1 {
   color: maroon;
 }
 
+title {
+  display: block;
+  font-size: 4em;
+  font-weight: bold;
+  margin-top: 1em;
+  margin-bottom: 0.5em;
+  color: maroon;
+  padding-top: 20px;
+}
+
 blockquote {
   margin-left: 20px;
   font-style: italic;

@@ -1,8 +1,3 @@
-<!--
-DESCRIPTION: Learn about Input-Process-Output (IPO) diagrams - a fundamental way to model how data and operations flow through systems, from simple tasks to complex computer programs.
--->
-[TOC]
-
 # Input-Process-Output (IPO)
 
 Input-Process-Output (IPO) makes up literally everything that humans do on this planet, but definitely everything that computers do.
@@ -61,14 +56,14 @@ Suppose we have the expression $y = f(x)$ where x and y are variables (or values
 * PROCESS: function, operator; e.g. f
 * OUTPUT: results; e.g. Y
 
-
 ## Workflow
 
-* INPUT:
-* PROCESS:
-* OUTPUT:
+* INPUT: Current State
+* PROCESS: Some Event
+* OUTPUT: New State
 
-##
-* INPUT:
-* PROCESS:
-* OUTPUT:
+## Real-life Example: Making a Sandwich
+
+* INPUT: Bread, peanut butter, jelly
+* PROCESS: Assemble sandwich (spread peanut butter and jelly, put bread together)
+* OUTPUT: Peanut butter & jelly sandwich

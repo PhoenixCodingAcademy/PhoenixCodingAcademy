@@ -1,7 +1,8 @@
-- [A.I. Glossary](#ai-glossary)
+<title>A.I. Glossary</title>
 
+# Neural Networks
 
-# A.I. Glossary
+A neural network is an [IPO](/pages/IPO.md)
 
 
 
