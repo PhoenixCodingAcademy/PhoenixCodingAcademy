@@ -2,7 +2,7 @@
 {% block content %}
 
 <style>
-  /* Fix: Prevent markdown content from sliding under the nav in desktop mode */
+  /* Prevent markdown content from sliding under the nav in desktop mode */
   @media (min-width: 768px) {
     #markdown-container {
       display: flex;
@@ -20,14 +20,27 @@
       background: #fff;
       border-right: 1px solid #ddd;
       padding: 1em 1em 1em 0.5em;
-      /* match previous nav style overrides */
+      overscroll-behavior: contain;
+      pointer-events: auto;
     }
     #markdown-content {
-      margin-left: 330px !important; /* Always offset the toc width + padding */
+      margin-left: 330px !important;
       max-width: calc(100vw - 330px);
       min-width: 0;
       width: 100%;
       transition: margin-left 0.25s cubic-bezier(.4,0,.2,1);
+    }
+    /* TOC links cursor and pointer in desktop */
+    #markdown-toc a {
+      pointer-events: auto;
+      color: #007bff;
+      cursor: pointer;
+      text-decoration: underline;
+    }
+    #markdown-toc a:hover {
+      text-decoration: underline;
+      color: #0056b3;
+      cursor: pointer;
     }
   }
   @media (max-width: 767.98px) {
@@ -40,8 +53,216 @@
       max-width: 100vw;
       width: 100%;
     }
+    #markdown-toc {
+      /* Ensure TOC drawer sits ABOVE overlay on mobile */
+      z-index: 1205 !important;
+      background: #fff;
+      width: 100vw;
+      left: 0 !important;
+      position: fixed !important;
+      top: 60px !important;
+      height: auto !important;
+      /* Allow interaction in mobile drawer */
+      pointer-events: auto;
+    }
+    #markdown-toc ul,
+    #markdown-toc ol {
+      pointer-events: auto;
+    }
+    /* Optionally, allow pointer events for just the close button if such exists */
+    #markdown-toc .toc-close-btn {
+      pointer-events: auto;
+    }
+    /* Enable clickable TOC links in mobile */
+    #markdown-toc a {
+      pointer-events: auto;
+      color: #007bff !important;
+      cursor: pointer !important;
+      text-decoration: underline !important;
+    }
+    #markdown-toc a:hover {
+      color: #0056b3 !important;
+      cursor: pointer !important;
+      text-decoration: underline !important;
+    }
+  }
+
+  /* --- Scroll target fix for hamburger/contents menu --- */
+  .markdown-anchor-target {
+    display: block;
+    position: relative;
+    top: -65px;
+    visibility: hidden;
+    height: 1px;
+    width: 1px;
+    pointer-events: none;
   }
 </style>
+<script>
+// Fix: On mobile, keep TOC visible after click so scroll lands at right location, then close TOC AFTER scroll
+document.addEventListener("DOMContentLoaded", function() {
+  var toc = document.getElementById("markdown-toc");
+  if (toc) {
+    toc.addEventListener("click", function(e) {
+      // Prevent clicks inside TOC from bubbling to overlays/toggles
+      e.stopPropagation();
+      if (typeof e.stopImmediatePropagation === "function") e.stopImmediatePropagation();
+      let tgt = e.target;
+      while (tgt && tgt !== toc && tgt.tagName !== "A") tgt = tgt.parentElement;
+      if (tgt && tgt.tagName === "A" && tgt.hash && tgt.getAttribute("href").startsWith("#")) {
+        // Only prevent default on mobile so you can control scroll and nav closing!
+        if (window.innerWidth < 768) {
+          e.preventDefault();
+          let hash = tgt.hash;
+          // scroll first
+          scrollToHash(hash, true);
+          // Optionally update location.hash without native jump
+          if(history.replaceState){
+            history.replaceState(null, null, hash);
+          } else {
+            location.hash = hash;
+          }
+          // Wait a tick for scroll, THEN hide menu
+          setTimeout(function(){
+            var navmenu = document.getElementById("markdown-toc");
+            if (navmenu) {
+              navmenu.classList.remove('open');
+            }
+            document.body.classList.remove('toc-overlay-active');
+          }, 350); // allow scroll to start before closing
+        }
+        // Desktop: let normal browser action occur
+      }
+    });
+  }
+});
+</script>
+<script>
+  // Patch: always handle TOC anchor clicks, especially in mobile/hamburger mode
+  document.addEventListener("DOMContentLoaded", function() {
+    // Delegate click handler to markdown-toc for TOC links
+    var toc = document.getElementById("markdown-toc");
+    if (toc) {
+      toc.addEventListener("click", function(e) {
+        // Keep click inside the drawer
+        e.stopPropagation();
+        if (typeof e.stopImmediatePropagation === "function") e.stopImmediatePropagation();
+        let tgt = e.target;
+        // Find nearest <a> (for clicks on inner spans)
+        while (tgt && tgt !== toc && tgt.tagName !== "A") tgt = tgt.parentElement;
+        if (tgt && tgt.tagName === "A" && tgt.hash && tgt.getAttribute("href").startsWith("#")) {
+          e.preventDefault();
+          let hash = tgt.hash;
+          // Scroll
+          scrollToHash(hash, true);
+          // Optionally update location.hash without native jump
+          if(history.replaceState){
+            history.replaceState(null, null, hash);
+          } else {
+            location.hash = hash;
+          }
+          // Defer closing to allow smooth scroll first
+          if (window.innerWidth < 768) {
+            setTimeout(function(){
+              var navmenu = document.getElementById("markdown-toc");
+              if (navmenu) navmenu.classList.remove('open');
+              document.body.classList.remove('toc-overlay-active');
+            }, 350);
+          }
+        }
+      });
+    }
+  });
+</script>
+<script>
+  // Insert anchor targets before major markdown headers (h1/h2/h3...) after DOMContentLoaded
+  document.addEventListener("DOMContentLoaded", function() {
+    // Add anchors for all headers with id (as generated by markdown)
+    const headings = document.querySelectorAll('h1[id], h2[id], h3[id], h4[id], h5[id], h6[id]');
+    headings.forEach(function(header) {
+      // Avoid dual anchors if already present
+      if (header.previousElementSibling && header.previousElementSibling.classList && header.previousElementSibling.classList.contains('markdown-anchor-target')) return;
+      let a = document.createElement('span');
+      a.className = "markdown-anchor-target";
+      a.id = header.id; // set anchor id to match header id
+      
+      // Move id from header to anchor for best compatibility (prevents double scrolling in some browsers)
+      header.removeAttribute('id');
+      header.parentNode.insertBefore(a, header);
+    });
+  });
+</script>
+<script>
+// iOS browsers do not reliably scroll to hashes by default when UI overlays
+// Add robust scroll-to-anchor support for TOC links on mobile and iOS
+
+function scrollToHash(hash, smooth=true) {
+  if (!hash) return;
+  // Remove leading "#"
+  var id = hash.charAt(0) === '#' ? hash.slice(1) : hash;
+  var el = document.getElementById(id);
+  if (!el) return;
+  // Consider offset for fixed nav/top bars -- adjust as needed
+  var offset = 65; // matches nav/top bar height
+  var rect = el.getBoundingClientRect();
+  var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+  // Prefer scrollIntoView if supported and safe
+  if (typeof el.scrollIntoView === "function") {
+    // Some browsers (iOS Safari/Chrome) require delay before scrolling
+    setTimeout(() => {
+      el.scrollIntoView({ behavior: smooth ? "smooth" : "auto", block: "start", inline: "nearest" });
+      // Then nudge a bit if offset needed for fixed nav
+      // If still covered, do direct scroll adjustment
+      var actualY = el.getBoundingClientRect().top + window.scrollY - offset;
+      window.scrollTo({ top: actualY, behavior: smooth ? "smooth" : "auto" });
+    }, 30);
+  } else {
+    // Fallback
+    window.scrollTo({ top: rect.top + scrollTop - offset, behavior: smooth ? "smooth" : "auto" });
+  }
+}
+
+// Click handler for all TOC links to force scroll on mobile/iOS
+document.addEventListener("DOMContentLoaded", function() {
+  // For hash present in URL at load (direct link)
+  if (window.location.hash) {
+    // On iOS/Safari, the jump doesn't always occur, so force it
+    setTimeout(function() {
+      scrollToHash(window.location.hash, false);
+    }, 100);
+  }
+
+  // Attach click handlers to TOC links
+  document.getElementById('toc-list')?.addEventListener('click', function(e) {
+    if (e.target && e.target.matches("a.nav-link, a")) {
+      // Prevent bubbling to overlay or page handlers
+      e.stopPropagation();
+      if (typeof e.stopImmediatePropagation === "function") e.stopImmediatePropagation();
+      var href = e.target.getAttribute("href");
+      if (href && href.startsWith("#")) {
+        e.preventDefault();
+        // Update hash in location bar (so it still updates)
+        history.pushState(null, '', href);
+        scrollToHash(href, true);
+        // Auto-close drawer after navigation on mobile
+        if (window.matchMedia("(max-width: 767.98px)").matches) {
+          setTimeout(function(){
+            var navmenu = document.getElementById("markdown-toc");
+            if (navmenu) navmenu.classList.remove('open');
+            document.body.classList.remove('toc-overlay-active');
+          }, 350);
+        }
+      }
+    }
+  });
+
+  // Respond to hashchange events (e.g. manual nav, browser back/forward)
+  window.addEventListener("hashchange", function(evt) {
+    scrollToHash(window.location.hash, true);
+  }, false);
+});
+</script>
 <div id="markdown-container">
   <!-- TOC Toggle Button: fixed in upper left for mobile only -->
   <button id="toc-toggle-btn"
@@ -147,6 +368,8 @@
         }
         body.toc-overlay-active #toc-overlay-bg {
           display: block;
+          /* Do not intercept clicks; TOC handles its own clicks */
+          pointer-events: none !important;
         }
       }
     </style>
@@ -169,13 +392,23 @@
         tocNav.classList.add('open');
         document.body.classList.add('toc-overlay-active');
         // Hide toggle button while nav is open (on mobile)
-        if (toggleBtn && isMobile()) toggleBtn.style.visibility = "hidden";
+        if (toggleBtn && isMobile()) {
+          toggleBtn.style.visibility = "hidden";
+          toggleBtn.style.pointerEvents = "none";
+          toggleBtn.style.display = "none";
+        }
       }
       function closeToc() {
         tocNav.classList.remove('open');
         document.body.classList.remove('toc-overlay-active');
-        if (toggleBtn && isMobile()) toggleBtn.style.visibility = "visible";
+        if (toggleBtn && isMobile()) {
+          toggleBtn.style.display = "block";
+          toggleBtn.style.visibility = "visible";
+          toggleBtn.style.pointerEvents = "auto";
+        }
       }
+      // Expose for other inline handlers to use
+      window.__closeToc = closeToc;
       // Only activate if mobile
       function isMobile() {
         return window.matchMedia("(max-width: 767.98px)").matches;
