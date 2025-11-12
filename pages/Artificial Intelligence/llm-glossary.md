@@ -1,6 +1,10 @@
 <title>Large Language Models (LLMs) Glossary</title>
 
-An LLM is an application that uses a [neural network](/pages/ai-glossary#neuralnetwork)
+An LLM is an application that uses a [neural network](/pages/ai-glossary#neuralnetwork) that is trained with a large set of sentences to predict the next word that follows from an input sentence.
+This NN is called a [Transformer](#transformer). 
+
+More specifically, a [Vocabulary]() is used to convert (or [tokenize](#tokenization)) an English sentence into an array of numbers (called a [sequence](#sequence)), where each number is the index of a word. The sequence is fed into the transformer to predict the score for each word that it might come next. The best score is chosen and the output index of that winner determines the token. 
+The token is printed, appended to the input sequence, and fed back in to get the next probable token.
 
 
 
@@ -17,17 +21,17 @@ An LLM is an application that uses a [neural network](/pages/ai-glossary#neuraln
 
 ## Types of Tokenization
 
-### 1. **Word-Level**
+### Word-Level
 - Splits by spaces and punctuation
 - Simple but creates huge vocabularies
 - Example: `"running quickly"` → `["running", "quickly"]`
 
-### 2. **Character-Level**
+### Character-Level
 - Each character is a token
 - Very small vocabulary but long sequences
 - Example: `"cat"` → `["c", "a", "t"]`
 
-### 3. **Subword-Level** (Most Common in LLMs)
+### Subword-Level (Most Common in LLMs)
 - Balances between words and characters
 - Handles unknown words gracefully
 - Example: `"unbelievable"` → `["un", "believ", "able"]`
@@ -49,7 +53,8 @@ An LLM is an application that uses a [neural network](/pages/ai-glossary#neuraln
 
 Each method learns which text patterns to group together during training, creating an optimal balance between vocabulary size and sequence length.
 
-## Vocabularies
+
+
 
 ### Special tokens
 - **GPT-3/GPT-3 Tokens**.5**: 50,257 tokens  
@@ -70,10 +75,11 @@ Each method learns which text patterns to group together during training, creati
 ## Trade-offs
 
 ### **Larger Vocabularies**
-✅ More efficient encoding (fewer tokens per text)
-✅ Better handling of rare words/proper nouns
-� Larger embedding matrices (more parameters)
-� Sparser training data per token
+
+* More efficient encoding (fewer tokens per text)
+* Better handling of rare words/proper nouns
+* Larger embedding matrices (more parameters)
+* Sparser training data per token
 
 When a word not in the tokenization map is encountered, modern tokenizers handle it through **subword tokenization**. Here's what happens:
 
@@ -97,6 +103,17 @@ Some tokenizers (like GPT models) work at the byte level:
 - Any UTF-8 string can be represented as bytes
 - Guarantees that **any** text can be encoded, no matter how unusual
 - Example: Special Unicode characters or emoj
+
+
+
+
+# Vocabulary
+
+A vocabulary is an array of tokens from 0..N-1, where N is the number of tokens in the vocabulary. Token k is the (k-1)th index of the token.
+A token typically represents a word, or word-part, or any symbol.
+When training an LLM or using it, a vocabulary is chosen in advance. The size of the vocabulary (N) becomes the number of input connections to the NN.
+This is also the number of output connections of the NN.
+See [Transformer](#transformer) for an example of using a vocabulary in this NN.
 
 
 
