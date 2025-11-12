@@ -124,11 +124,15 @@ document.addEventListener("DOMContentLoaded", function() {
           }
           // Wait a tick for scroll, THEN hide menu
           setTimeout(function(){
-            var navmenu = document.getElementById("markdown-toc");
-            if (navmenu) {
-              navmenu.classList.remove('open');
+            if (window.__closeToc) {
+              window.__closeToc();
+            } else {
+              var navmenu = document.getElementById("markdown-toc");
+              if (navmenu) {
+                navmenu.classList.remove('open');
+              }
+              document.body.classList.remove('toc-overlay-active');
             }
-            document.body.classList.remove('toc-overlay-active');
           }, 350); // allow scroll to start before closing
         }
         // Desktop: let normal browser action occur
@@ -164,9 +168,13 @@ document.addEventListener("DOMContentLoaded", function() {
           // Defer closing to allow smooth scroll first
           if (window.innerWidth < 768) {
             setTimeout(function(){
-              var navmenu = document.getElementById("markdown-toc");
-              if (navmenu) navmenu.classList.remove('open');
-              document.body.classList.remove('toc-overlay-active');
+              if (window.__closeToc) {
+                window.__closeToc();
+              } else {
+                var navmenu = document.getElementById("markdown-toc");
+                if (navmenu) navmenu.classList.remove('open');
+                document.body.classList.remove('toc-overlay-active');
+              }
             }, 350);
           }
         }
@@ -248,9 +256,13 @@ document.addEventListener("DOMContentLoaded", function() {
         // Auto-close drawer after navigation on mobile
         if (window.matchMedia("(max-width: 767.98px)").matches) {
           setTimeout(function(){
-            var navmenu = document.getElementById("markdown-toc");
-            if (navmenu) navmenu.classList.remove('open');
-            document.body.classList.remove('toc-overlay-active');
+            if (window.__closeToc) {
+              window.__closeToc();
+            } else {
+              var navmenu = document.getElementById("markdown-toc");
+              if (navmenu) navmenu.classList.remove('open');
+              document.body.classList.remove('toc-overlay-active');
+            }
           }, 350);
         }
       }
