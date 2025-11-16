@@ -133,7 +133,7 @@ When the id of one table is used in another table, we say the two tables are rel
 
 ## Diagramming
 
-![](20251116151745.png)
+![](/static/images/20251116151745.png)
 
 
 
