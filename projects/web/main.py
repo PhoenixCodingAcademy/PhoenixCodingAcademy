@@ -360,6 +360,14 @@ def _default(path):
       model.data = data
       return render_template('markdown.html', model=model)
 
+    # If the path ends with an image extension, return the image file as a binary response.
+    image_exts = ('.png', '.jpg', '.jpeg', '.gif', '.svg', '.webp')
+    if path.lower().endswith(image_exts):
+      p = os.path.join(rootRepo, path)
+      if os.path.exists(p):
+        return send_file(p)
+
+
     p = os.path.join(webPath, 'static', path)
     if os.path.exists(p):
       return send_file(p)
