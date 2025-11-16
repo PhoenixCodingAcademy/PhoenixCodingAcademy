@@ -8,6 +8,7 @@ import os
 import re
 import sys
 import yaml
+from urllib.parse import quote
 
 thisFile = os.path.abspath(sys.argv[0])
 thisPath = os.path.dirname(thisFile)
@@ -203,15 +204,17 @@ def _pages():
         h = recur(fp)
         name = fn
         html = html + f"""
-<li class="expandable">{name}<i>{desc}</i>
+<li class="expandable">{name}
 <ul class="nested-ul">
     {h}
 </ul>
 </li>
         """
       else:
-        path = f"/pages/{fn}"
-        name = fn[:-3]
+        # Build URL path relative to the pages root, URL-encoded for spaces etc.
+        relpath = os.path.relpath(fp, pagesPath)
+        relurl = "/pages/" + quote(relpath.replace(os.path.sep, '/'))
+        name = os.path.splitext(fn)[0]
         print(f"fp: {fp}")
         try:
           text = tools.readFile(fp)
@@ -222,7 +225,7 @@ def _pages():
         match = re.search(r"DESCRIPTION:(?P<A>.*)", text)
         if match:
           desc = " - " + match.group("A").strip()
-        html = html + f"""<li><a href="{path}">{name}</a><i>{desc}</i></li>"""
+        html = html + f"""<li><a href="{relurl}">{name}</a><i>{desc}</i></li>"""
     html += '\n</ul>'
     return html
 
