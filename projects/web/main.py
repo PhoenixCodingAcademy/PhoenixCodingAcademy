@@ -173,6 +173,8 @@ def _pages():
   Get a list of all pages (*.md) under the "pages" folder.
   '''
   school = getSchool()
+
+  # Get the absolute path to the "pages" folder.
   pagesPath = tools.GetAncestorPath('pages')
   title = "Pages"
 
