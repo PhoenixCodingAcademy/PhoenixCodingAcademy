@@ -155,8 +155,11 @@ def _startexam():
   yamlPath = os.path.join(tools.GetAncestorPath('data'), 'questions', selectedYaml + '.yaml')
   if not os.path.exists(yamlPath):
     return jsonify({'error': 'YAML file not found'}), 404
-  
-  yamlData = tools.readYaml(yamlPath)
+
+  try:  
+    yamlData = tools.readYaml(yamlPath)
+  except Exception as e:
+    return jsonify({'error': f'Error reading YAML file "{selectedYaml}": {e.problem} at line {e.context_mark.line}'}), 500
   
   # Filter questions by difficulty
   allQuestions = yamlData.get('questions', [])

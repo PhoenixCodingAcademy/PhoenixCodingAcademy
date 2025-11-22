@@ -273,9 +273,9 @@ questions:
     links:
     - https://en.wikipedia.org/wiki/Sigmoid_function
   wrong:
-  - answer: (-1, 1)
+  - answer: "(-1, 1)"
     explanation: This is the range of the tanh function, not sigmoid.
-  - answer: [0, ∞)
+  - answer: "[0, ∞)"
     explanation: This is the range of ReLU, not sigmoid.
   - answer: (-∞, ∞)
     explanation: This is the range of linear activation or identity function, not sigmoid.
@@ -692,7 +692,7 @@ questions:
     - https://en.wikipedia.org/wiki/Hyperparameter_(machine_learning)
   wrong:
   - answer: A parameter that is more important than regular parameters
-    explanation: "Hyper" means external to the learning process, not importance level.
+    explanation: '"Hyper" means external to the learning process, not importance level.'
   - answer: A parameter learned from the training data
     explanation: This describes learned parameters (weights); hyperparameters are set manually.
   - answer: The highest-valued weight in the network
