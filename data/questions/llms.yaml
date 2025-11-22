@@ -788,13 +788,13 @@ questions:
     - https://en.wikipedia.org/wiki/Hyperparameter_(machine_learning)
   wrong:
   - answer: A parameter with extremely high values
-    explanation: "Hyper" doesn't mean large values; this misinterprets the prefix.
+    explanation: '"Hyper" doesn''t mean large values; this misinterprets the prefix.'
   - answer: An advanced parameter only experts can adjust
     explanation: While hyperparameters require expertise, this doesn't define what they are.
   - answer: A parameter that controls hyperlinks in model outputs
     explanation: This comically misinterprets "hyper" as relating to hyperlinks.
   - answer: The most important parameter in the model
-    explanation: "Hyper" doesn't indicate importance level.
+    explanation: '"Hyper" doesn''t indicate importance level; this misinterprets the prefix.'
   - answer: A parameter used in hyperspace for quantum computing
     explanation: This misrelates "hyper" to quantum computing concepts.
 
@@ -940,9 +940,9 @@ questions:
     - https://en.wikipedia.org/wiki/BERT_(language_model)
   wrong:
   - answer: A token that clears the model's memory between inputs
-    explanation: [CLS] doesn't clear memory; this misinterprets its purpose.
+    explanation: This misinterprets [CLS]'s purpose; it doesn't clear memory between inputs.
   - answer: A classification label assigned by the model
-    explanation: [CLS] is an input token, not an output label.
+    explanation: '[CLS] is an input token, not an output label.'
   - answer: A command-line syntax token for model configuration
     explanation: This misinterprets [CLS] as programming syntax.
   - answer: A closing bracket token for formatting outputs
@@ -954,18 +954,18 @@ questions:
   points: 4
   right:
   - answer: A special token used to separate different segments or sentences in the input sequence
-    explanation: [SEP] tokens mark boundaries between segments, enabling BERT to process sentence pairs for tasks like question answering.
+    explanation: '[SEP] tokens mark boundaries between segments, enabling BERT to process sentence pairs for tasks like question answering.'
     links:
     - https://en.wikipedia.org/wiki/BERT_(language_model)
   wrong:
   - answer: A token that separates training data from validation data
-    explanation: [SEP] is used within inputs, not to separate datasets.
+    explanation: '[SEP] is used within inputs, not to separate datasets.'
   - answer: A token marking the end of model training
     explanation: This describes training termination, not the [SEP] token.
   - answer: A separator used in the model's code implementation
-    explanation: [SEP] is a data token, not a programming construct.
+    explanation: '[SEP] is a data token, not a programming construct.'  
   - answer: A token for September in temporal data
-    explanation: This comically misinterprets [SEP] as an abbreviation for September.
+    explanation: This comically misinterprets '[SEP]' as an abbreviation for September.
   - answer: A security token separating authorized from unauthorized users
     explanation: This relates to access control, not BERT's token types.
 

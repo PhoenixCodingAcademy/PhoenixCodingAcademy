@@ -135,10 +135,86 @@ def _course(id):
 @app.route('/exams')
 def _exam():
   model = getModel('Exams')
-  model.yamlFiles = [os.path.basename(x) for x in glob.glob(os.path.join(tools.GetAncestorPath('data'), 'questions', '*.yaml')) if not os.path.basename(x).startswith('_')]
+  model.yamlFiles = [os.path.splitext(os.path.basename(x))[0] for x in glob.glob(os.path.join(tools.GetAncestorPath('data'), 'questions', '*.yaml')) if not os.path.basename(x).startswith('_')]
   model.yamlFiles.sort()
   model.questions = []
   return render_template('exams.html', model=model)
+
+
+@app.route('/startexam', methods=['POST'])
+def _startexam():
+  import random
+  import hashlib
+  
+  data = request.json
+  selectedYaml = data.get('selectedYaml', '')
+  maxPoints = data.get('maxPoints', 50)
+  maxDifficulty = data.get('maxDifficulty', 7)
+  
+  # Load the YAML file
+  yamlPath = os.path.join(tools.GetAncestorPath('data'), 'questions', selectedYaml + '.yaml')
+  if not os.path.exists(yamlPath):
+    return jsonify({'error': 'YAML file not found'}), 404
+  
+  yamlData = tools.readYaml(yamlPath)
+  
+  # Filter questions by difficulty
+  allQuestions = yamlData.get('questions', [])
+  questions = [q for q in allQuestions if q.get('points', 1) <= maxDifficulty]
+  
+  # Shuffle questions
+  random.shuffle(questions)
+  
+  # Select enough questions to reach maxPoints
+  selected = []
+  totalPts = 0
+  for q in questions:
+    if selected and totalPts >= maxPoints:
+      break
+    selected.append(q)
+    totalPts += q.get('points', 1)
+  
+  # Build per-question randomized answers
+  secret = 'exam_secret_key'
+  for idx, q in enumerate(selected):
+    allAnswers = []
+    
+    # Collect right answers
+    rightAnswers = q.get('right', [])
+    if not isinstance(rightAnswers, list):
+      rightAnswers = [rightAnswers] if rightAnswers else []
+    allAnswers.extend([{**a, 'isRight': True} for a in rightAnswers])
+    
+    # Collect wrong answers
+    wrongAnswers = q.get('wrong', [])
+    if not isinstance(wrongAnswers, list):
+      wrongAnswers = [wrongAnswers] if wrongAnswers else []
+    allAnswers.extend([{**a, 'isRight': False} for a in wrongAnswers])
+    
+    # Shuffle and pick 5
+    random.shuffle(allAnswers)
+    five = allAnswers[:5]
+    
+    # Add "None of the above"
+    five.append({
+      'answer': 'None of the above',
+      'isRight': False,
+      'isNoneOfTheAbove': True
+    })
+    
+    # Generate UIDs
+    for ansIdx, a in enumerate(five):
+      hashStr = secret + a.get('answer', '') + ('RIGHT' if a.get('isRight', False) else 'WRONG')
+      hashObj = hashlib.md5(hashStr.encode())
+      a['uid'] = f"{idx}-{hashObj.hexdigest()[:8]}"
+    
+    q['displayAnswers'] = five
+  
+  return jsonify({
+    'questions': selected,
+    'totalPoints': totalPts,
+    'history': yamlData.get('history', [])
+  })
 
 
 @app.route('/gradeexam', methods=['POST'])

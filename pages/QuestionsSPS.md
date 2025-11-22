@@ -61,7 +61,7 @@ At the end of the quiz, create a button called "Grade Quiz", which submits the e
 
 ---
 
-SUBJECT = Large Language Models
+SUBJECT = Python Programming
 
 You are an SUBJECT teacher. You wish to evaluate a new student to find out what level of knowledge the student knows about the subject so that you can recommend a course of studies.
 Create 100 questions of various levels of difficulty.
@@ -74,6 +74,8 @@ Still, if the context is more clear with two questions in one sentence, then do 
 Generate one or more "right" answer. There must be one but some questions might have multiple choice.
 Generate 5 false answers that sound correct but truely wrong.
 
+Consider some questions can be in the form "Which of the following are true statements?" or "Which of the following are false statements?" Then have multiple true answers mixed with false answers.
+
 Look at the question and the answers. Determine the number of points (1 to 20) the question might be worth according to this table:
 * Beginner - 1 point
 * Beginner-Intermediate - 2 points
@@ -83,6 +85,7 @@ Look at the question and the answers. Determine the number of points (1 to 20) t
 * Expert - 20 points
 
 Use the following YAML template to format the output.
+Ensure that strings are properly escaped if words are double-quoted inside.
 
 questions:
 - question: Which of the following are nice letters?

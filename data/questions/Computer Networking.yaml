@@ -1,0 +1,2558 @@
+questions:
+- question: What does IP stand for in networking?
+  points: 1
+  right:
+  - answer: Internet Protocol
+    explanation: IP stands for Internet Protocol, which is the principal communications protocol for routing data across networks.
+    links:
+    - https://en.wikipedia.org/wiki/Internet_Protocol
+  wrong:
+  - answer: Internal Process
+    explanation: This is not a networking term related to IP.
+  - answer: Internet Provider
+    explanation: This confuses IP with ISP (Internet Service Provider).
+  - answer: Interconnected Pathway
+    explanation: While descriptive, this is not what IP stands for.
+  - answer: Information Packet
+    explanation: Though packets carry information, IP doesn't stand for this.
+  - answer: Integrated Protocol
+    explanation: This sounds plausible but is incorrect.
+
+- question: What is the primary function of a router?
+  points: 1
+  right:
+  - answer: To forward data packets between networks
+    explanation: Routers examine destination addresses and forward packets to the appropriate network.
+    links:
+    - https://en.wikipedia.org/wiki/Router_(computing)
+  wrong:
+  - answer: To store website data
+    explanation: This is the function of a web server, not a router.
+  - answer: To convert digital signals to analog
+    explanation: This is the function of a modem.
+  - answer: To provide wireless connectivity only
+    explanation: Routers can be wired or wireless; this is too narrow.
+  - answer: To protect against viruses
+    explanation: This is the function of antivirus software or firewalls.
+  - answer: To amplify network signals
+    explanation: This is the function of a repeater or amplifier.
+
+- question: What does LAN stand for?
+  points: 1
+  right:
+  - answer: Local Area Network
+    explanation: LAN refers to a network that connects computers within a limited area such as a home or office.
+    links:
+    - https://en.wikipedia.org/wiki/Local_area_network
+  wrong:
+  - answer: Large Access Network
+    explanation: This is not the correct expansion of LAN.
+  - answer: Linear Application Network
+    explanation: This is not a real networking term.
+  - answer: Linked Area Node
+    explanation: This sounds technical but is incorrect.
+  - answer: Local Access Node
+    explanation: While similar sounding, this is not correct.
+  - answer: Lateral Area Network
+    explanation: The 'L' stands for Local, not Lateral.
+
+- question: What is a MAC address?
+  points: 2
+  right:
+  - answer: A unique hardware identifier assigned to a network interface card
+    explanation: MAC (Media Access Control) address is a unique identifier burned into the NIC at manufacture.
+    links:
+    - https://en.wikipedia.org/wiki/MAC_address
+  wrong:
+  - answer: A software-generated address that changes with each connection
+    explanation: MAC addresses are hardware-based and generally permanent.
+  - answer: The address of an Apple computer on a network
+    explanation: MAC has nothing to do with Apple Macintosh computers.
+  - answer: A temporary identifier used during network sessions
+    explanation: This describes a session ID, not a MAC address.
+  - answer: An encrypted version of an IP address
+    explanation: MAC addresses are separate from and not derived from IP addresses.
+  - answer: A virtual address assigned by the router
+    explanation: MAC addresses are physical, not virtual, and not assigned by routers.
+
+- question: What is the purpose of DNS?
+  points: 2
+  right:
+  - answer: To translate domain names into IP addresses
+    explanation: DNS (Domain Name System) converts human-readable domain names like google.com into IP addresses.
+    links:
+    - https://en.wikipedia.org/wiki/Domain_Name_System
+  wrong:
+  - answer: To encrypt data during transmission
+    explanation: This is the function of encryption protocols like SSL/TLS, not DNS.
+  - answer: To compress data packets
+    explanation: DNS does not perform data compression.
+  - answer: To filter malicious websites
+    explanation: While DNS can be used for filtering, this is not its primary purpose.
+  - answer: To assign IP addresses dynamically
+    explanation: This is the function of DHCP, not DNS.
+  - answer: To establish secure connections between servers
+    explanation: This is the role of security protocols, not DNS.
+
+- question: What is the default subnet mask for a Class C network?
+  points: 2
+  right:
+  - answer: 255.255.255.0
+    explanation: Class C networks use a subnet mask of 255.255.255.0, providing 254 host addresses.
+    links:
+    - https://en.wikipedia.org/wiki/Classful_network
+  wrong:
+  - answer: 255.255.0.0
+    explanation: This is the default subnet mask for Class B networks.
+  - answer: 255.0.0.0
+    explanation: This is the default subnet mask for Class A networks.
+  - answer: 255.255.255.255
+    explanation: This is a broadcast address, not a subnet mask.
+  - answer: 255.255.254.0
+    explanation: While this is a valid subnet mask, it's not the default for Class C.
+  - answer: 192.168.1.0
+    explanation: This is an IP address, not a subnet mask.
+
+- question: What layer of the OSI model does a switch operate at?
+  points: 2
+  right:
+  - answer: Layer 2 (Data Link Layer)
+    explanation: Traditional switches operate at the Data Link Layer, using MAC addresses to forward frames.
+    links:
+    - https://en.wikipedia.org/wiki/Network_switch
+  wrong:
+  - answer: Layer 1 (Physical Layer)
+    explanation: Hubs operate at Layer 1, not switches.
+  - answer: Layer 3 (Network Layer)
+    explanation: Routers primarily operate at Layer 3, though Layer 3 switches exist.
+  - answer: Layer 4 (Transport Layer)
+    explanation: Switches don't typically operate at the Transport Layer.
+  - answer: Layer 7 (Application Layer)
+    explanation: Application layer devices include proxies and gateways, not traditional switches.
+  - answer: Layer 5 (Session Layer)
+    explanation: Switches don't operate at the Session Layer.
+
+- question: What protocol is used to automatically assign IP addresses to devices on a network?
+  points: 1
+  right:
+  - answer: DHCP (Dynamic Host Configuration Protocol)
+    explanation: DHCP automatically assigns IP addresses and other network configuration to devices.
+    links:
+    - https://en.wikipedia.org/wiki/Dynamic_Host_Configuration_Protocol
+  wrong:
+  - answer: DNS (Domain Name System)
+    explanation: DNS translates domain names to IP addresses but doesn't assign them.
+  - answer: FTP (File Transfer Protocol)
+    explanation: FTP is used for file transfers, not IP address assignment.
+  - answer: HTTP (Hypertext Transfer Protocol)
+    explanation: HTTP is used for web traffic, not IP address assignment.
+  - answer: SMTP (Simple Mail Transfer Protocol)
+    explanation: SMTP is used for email transmission, not IP address assignment.
+  - answer: ARP (Address Resolution Protocol)
+    explanation: ARP maps IP addresses to MAC addresses but doesn't assign IPs.
+
+- question: What does HTTP stand for?
+  points: 1
+  right:
+  - answer: Hypertext Transfer Protocol
+    explanation: HTTP is the foundation of data communication for the World Wide Web.
+    links:
+    - https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol
+  wrong:
+  - answer: High Transfer Text Protocol
+    explanation: This is not the correct expansion of HTTP.
+  - answer: Hyperlink Transmission Protocol
+    explanation: While HTTP does transmit hyperlinks, this is not what it stands for.
+  - answer: Hosted Transfer Protocol
+    explanation: This is not a real protocol name.
+  - answer: Hypertext Technical Protocol
+    explanation: The 'T' stands for Transfer, not Technical.
+  - answer: Hypertext Transport Procedure
+    explanation: The last word is Protocol, not Procedure.
+
+- question: What is a firewall used for?
+  points: 1
+  right:
+  - answer: To control incoming and outgoing network traffic based on security rules
+    explanation: Firewalls act as a barrier between trusted and untrusted networks, filtering traffic.
+    links:
+    - https://en.wikipedia.org/wiki/Firewall_(computing)
+  wrong:
+  - answer: To increase network speed
+    explanation: Firewalls are for security, not speed optimization.
+  - answer: To convert IP addresses to domain names
+    explanation: This is the function of reverse DNS, not a firewall.
+  - answer: To store backup copies of data
+    explanation: This is the function of backup systems, not firewalls.
+  - answer: To distribute network load across multiple servers
+    explanation: This is the function of a load balancer, not a firewall.
+  - answer: To amplify wireless signals
+    explanation: This is the function of a wireless repeater or extender.
+
+- question: What is the maximum length of a standard Ethernet cable (Cat5e/Cat6)?
+  points: 2
+  right:
+  - answer: 100 meters (328 feet)
+    explanation: Standard Ethernet specifications limit cable runs to 100 meters to maintain signal integrity.
+    links:
+    - https://en.wikipedia.org/wiki/Ethernet_over_twisted_pair
+  wrong:
+  - answer: 50 meters (164 feet)
+    explanation: This is too short; the actual limit is 100 meters.
+  - answer: 200 meters (656 feet)
+    explanation: This exceeds the standard specification and would cause signal degradation.
+  - answer: 500 meters (1640 feet)
+    explanation: This is far too long for copper Ethernet cables.
+  - answer: 1 kilometer (3280 feet)
+    explanation: This distance would require fiber optic cable, not standard Ethernet.
+  - answer: 25 meters (82 feet)
+    explanation: This is well below the actual maximum distance.
+
+- question: What does WAN stand for?
+  points: 1
+  right:
+  - answer: Wide Area Network
+    explanation: WAN refers to a network that covers a broad area, such as connecting multiple cities or countries.
+    links:
+    - https://en.wikipedia.org/wiki/Wide_area_network
+  wrong:
+  - answer: Wireless Access Network
+    explanation: This is not the correct expansion of WAN.
+  - answer: World Area Network
+    explanation: While WANs can be worldwide, this is not what the acronym stands for.
+  - answer: Western Access Network
+    explanation: This is not a real networking term.
+  - answer: Wired Application Network
+    explanation: This is not what WAN stands for.
+  - answer: Wide Access Node
+    explanation: The 'N' stands for Network, not Node.
+
+- question: Which port number does HTTP use by default?
+  points: 2
+  right:
+  - answer: Port 80
+    explanation: HTTP uses TCP port 80 by default for unencrypted web traffic.
+    links:
+    - https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers
+  wrong:
+  - answer: Port 443
+    explanation: This is the default port for HTTPS, not HTTP.
+  - answer: Port 21
+    explanation: This is the port for FTP, not HTTP.
+  - answer: Port 22
+    explanation: This is the port for SSH, not HTTP.
+  - answer: Port 25
+    explanation: This is the port for SMTP (email), not HTTP.
+  - answer: Port 8080
+    explanation: While sometimes used as an alternate HTTP port, 80 is the default.
+
+- question: What is the purpose of a subnet mask?
+  points: 2
+  right:
+  - answer: To divide an IP address into network and host portions
+    explanation: Subnet masks determine which part of an IP address identifies the network and which part identifies the host.
+    links:
+    - https://en.wikipedia.org/wiki/Subnetwork
+  wrong:
+  - answer: To encrypt network traffic
+    explanation: Subnet masks don't provide encryption.
+  - answer: To translate domain names to IP addresses
+    explanation: This is the function of DNS, not subnet masks.
+  - answer: To filter malicious packets
+    explanation: This is the function of a firewall, not a subnet mask.
+  - answer: To increase bandwidth
+    explanation: Subnet masks don't affect bandwidth.
+  - answer: To assign MAC addresses to devices
+    explanation: MAC addresses are hardware-based and not assigned by subnet masks.
+
+- question: What does VPN stand for?
+  points: 1
+  right:
+  - answer: Virtual Private Network
+    explanation: VPN creates a secure, encrypted connection over a less secure network like the internet.
+    links:
+    - https://en.wikipedia.org/wiki/Virtual_private_network
+  wrong:
+  - answer: Virtual Protected Network
+    explanation: The 'P' stands for Private, not Protected.
+  - answer: Very Private Network
+    explanation: This is not the correct expansion of VPN.
+  - answer: Validated Private Network
+    explanation: This is not what VPN stands for.
+  - answer: Virtual Protocol Network
+    explanation: The 'P' stands for Private, not Protocol.
+  - answer: Verified Personal Network
+    explanation: This is not the correct meaning of VPN.
+
+- question: What is ping used for?
+  points: 1
+  right:
+  - answer: To test connectivity between two network devices
+    explanation: Ping sends ICMP echo requests to check if a host is reachable and measure round-trip time.
+    links:
+    - https://en.wikipedia.org/wiki/Ping_(networking_utility)
+  wrong:
+  - answer: To transfer files between computers
+    explanation: This is the function of FTP or other file transfer protocols.
+  - answer: To encrypt network traffic
+    explanation: Ping doesn't provide encryption.
+  - answer: To assign IP addresses
+    explanation: This is the function of DHCP, not ping.
+  - answer: To scan for viruses
+    explanation: This is the function of antivirus software.
+  - answer: To compress data packets
+    explanation: Ping doesn't compress data.
+
+- question: What protocol does ping use?
+  points: 2
+  right:
+  - answer: ICMP (Internet Control Message Protocol)
+    explanation: Ping uses ICMP echo request and echo reply messages to test connectivity.
+    links:
+    - https://en.wikipedia.org/wiki/Internet_Control_Message_Protocol
+  wrong:
+  - answer: TCP (Transmission Control Protocol)
+    explanation: Ping uses ICMP, not TCP.
+  - answer: UDP (User Datagram Protocol)
+    explanation: Ping uses ICMP, not UDP.
+  - answer: HTTP (Hypertext Transfer Protocol)
+    explanation: HTTP is for web traffic, not connectivity testing.
+  - answer: FTP (File Transfer Protocol)
+    explanation: FTP is for file transfers, not connectivity testing.
+  - answer: SMTP (Simple Mail Transfer Protocol)
+    explanation: SMTP is for email, not connectivity testing.
+
+- question: What is the difference between TCP and UDP?
+  points: 4
+  right:
+  - answer: TCP is connection-oriented and reliable, while UDP is connectionless and unreliable
+    explanation: TCP establishes connections and guarantees delivery; UDP sends data without establishing connections or guarantees.
+    links:
+    - https://en.wikipedia.org/wiki/Transmission_Control_Protocol
+    - https://en.wikipedia.org/wiki/User_Datagram_Protocol
+  wrong:
+  - answer: TCP is faster than UDP
+    explanation: UDP is actually faster because it has less overhead than TCP.
+  - answer: TCP is used for streaming, UDP is used for file transfers
+    explanation: This is reversed; UDP is typically used for streaming, TCP for file transfers.
+  - answer: TCP doesn't check for errors, UDP does
+    explanation: This is backwards; TCP provides error checking, UDP doesn't guarantee it.
+  - answer: TCP is connectionless, UDP is connection-oriented
+    explanation: This is exactly reversed; TCP is connection-oriented, UDP is connectionless.
+  - answer: TCP and UDP are the same protocol with different names
+    explanation: They are distinctly different protocols with different characteristics.
+
+- question: Which OSI layer is responsible for routing?
+  points: 2
+  right:
+  - answer: Layer 3 (Network Layer)
+    explanation: The Network Layer handles routing, logical addressing, and path determination.
+    links:
+    - https://en.wikipedia.org/wiki/OSI_model
+  wrong:
+  - answer: Layer 2 (Data Link Layer)
+    explanation: Layer 2 handles switching and MAC addresses, not routing.
+  - answer: Layer 4 (Transport Layer)
+    explanation: Layer 4 handles end-to-end communication and segmentation, not routing.
+  - answer: Layer 1 (Physical Layer)
+    explanation: Layer 1 handles physical transmission of bits, not routing.
+  - answer: Layer 7 (Application Layer)
+    explanation: Layer 7 provides network services to applications, not routing.
+  - answer: Layer 5 (Session Layer)
+    explanation: Layer 5 manages sessions between applications, not routing.
+
+- question: What is ARP used for?
+  points: 4
+  right:
+  - answer: To map IP addresses to MAC addresses
+    explanation: ARP (Address Resolution Protocol) resolves IP addresses to physical MAC addresses on a local network.
+    links:
+    - https://en.wikipedia.org/wiki/Address_Resolution_Protocol
+  wrong:
+  - answer: To map MAC addresses to IP addresses
+    explanation: This is the reverse of ARP's function; RARP does this.
+  - answer: To translate domain names to IP addresses
+    explanation: This is the function of DNS, not ARP.
+  - answer: To encrypt network traffic
+    explanation: ARP doesn't provide encryption.
+  - answer: To route packets between networks
+    explanation: This is the function of routers, not ARP.
+  - answer: To assign IP addresses dynamically
+    explanation: This is the function of DHCP, not ARP.
+
+- question: What does HTTPS stand for?
+  points: 1
+  right:
+  - answer: Hypertext Transfer Protocol Secure
+    explanation: HTTPS is HTTP with encryption provided by SSL/TLS for secure communication.
+    links:
+    - https://en.wikipedia.org/wiki/HTTPS
+  wrong:
+  - answer: Hypertext Transfer Protocol System
+    explanation: The 'S' stands for Secure, not System.
+  - answer: High Transfer Protocol Secure
+    explanation: This doesn't correctly expand HTTPS.
+  - answer: Hypertext Technical Protocol Secure
+    explanation: The second word is Transfer, not Technical.
+  - answer: Hyperlink Transfer Protocol Secure
+    explanation: The first word is Hypertext, not Hyperlink.
+  - answer: Hypertext Transfer Procedure Secure
+    explanation: It's Protocol, not Procedure.
+
+- question: What is the purpose of NAT (Network Address Translation)?
+  points: 4
+  right:
+  - answer: To allow multiple devices on a private network to share a single public IP address
+    explanation: NAT translates private IP addresses to a public IP address, conserving public IP addresses.
+    links:
+    - https://en.wikipedia.org/wiki/Network_address_translation
+  wrong:
+  - answer: To encrypt data during transmission
+    explanation: NAT doesn't provide encryption; it translates addresses.
+  - answer: To assign IP addresses to devices automatically
+    explanation: This is the function of DHCP, not NAT.
+  - answer: To convert domain names to IP addresses
+    explanation: This is the function of DNS, not NAT.
+  - answer: To filter malicious traffic
+    explanation: While NAT provides some security, its primary purpose is address translation.
+  - answer: To increase network bandwidth
+    explanation: NAT doesn't increase bandwidth; it translates addresses.
+
+- question: Which protocol is used for secure shell access?
+  points: 2
+  right:
+  - answer: SSH (Secure Shell)
+    explanation: SSH provides secure encrypted remote login and command execution.
+    links:
+    - https://en.wikipedia.org/wiki/Secure_Shell
+  wrong:
+  - answer: Telnet
+    explanation: Telnet provides remote access but is not secure (unencrypted).
+  - answer: FTP
+    explanation: FTP is for file transfer, not secure shell access.
+  - answer: HTTP
+    explanation: HTTP is for web traffic, not shell access.
+  - answer: SMTP
+    explanation: SMTP is for email, not shell access.
+  - answer: RDP
+    explanation: RDP provides remote desktop access, not shell access.
+
+- question: What port does HTTPS use by default?
+  points: 2
+  right:
+  - answer: Port 443
+    explanation: HTTPS uses TCP port 443 by default for encrypted web traffic.
+    links:
+    - https://en.wikipedia.org/wiki/HTTPS
+  wrong:
+  - answer: Port 80
+    explanation: This is the default port for HTTP, not HTTPS.
+  - answer: Port 8080
+    explanation: This is an alternate HTTP port, not the default for HTTPS.
+  - answer: Port 22
+    explanation: This is the port for SSH, not HTTPS.
+  - answer: Port 21
+    explanation: This is the port for FTP, not HTTPS.
+  - answer: Port 25
+    explanation: This is the port for SMTP, not HTTPS.
+
+- question: What is a broadcast address?
+  points: 4
+  right:
+  - answer: An address used to send data to all devices on a network segment
+    explanation: A broadcast address delivers packets to all hosts on a subnet simultaneously.
+    links:
+    - https://en.wikipedia.org/wiki/Broadcast_address
+  wrong:
+  - answer: An address used to send data to a specific device
+    explanation: This describes a unicast address, not a broadcast address.
+  - answer: An address that encrypts network traffic
+    explanation: Addresses don't encrypt traffic; they identify destinations.
+  - answer: An address used by routers only
+    explanation: Broadcast addresses can be used by any device, not just routers.
+  - answer: An address that translates domain names
+    explanation: This is related to DNS, not broadcast addresses.
+  - answer: An address assigned by DHCP
+    explanation: While DHCP can involve broadcasts, this doesn't define a broadcast address.
+
+- question: What is the loopback address in IPv4?
+  points: 2
+  right:
+  - answer: 127.0.0.1
+    explanation: The loopback address allows a device to send network traffic to itself for testing.
+    links:
+    - https://en.wikipedia.org/wiki/Localhost
+  wrong:
+  - answer: 192.168.1.1
+    explanation: This is a common private network address, not the loopback address.
+  - answer: 0.0.0.0
+    explanation: This represents an invalid or unknown address, not loopback.
+  - answer: 255.255.255.255
+    explanation: This is a broadcast address, not the loopback address.
+  - answer: 10.0.0.1
+    explanation: This is a private network address, not the loopback address.
+  - answer: 172.16.0.1
+    explanation: This is a private network address, not the loopback address.
+
+- question: What does MTU stand for?
+  points: 4
+  right:
+  - answer: Maximum Transmission Unit
+    explanation: MTU is the largest size packet or frame that can be transmitted in a single network transaction.
+    links:
+    - https://en.wikipedia.org/wiki/Maximum_transmission_unit
+  wrong:
+  - answer: Maximum Transfer Unit
+    explanation: The correct word is Transmission, not Transfer.
+  - answer: Minimum Transmission Unit
+    explanation: It's Maximum, not Minimum.
+  - answer: Maximum Throughput Unit
+    explanation: The word is Transmission, not Throughput.
+  - answer: Media Transmission Unit
+    explanation: The first word is Maximum, not Media.
+  - answer: Multiple Transmission Unit
+    explanation: The first word is Maximum, not Multiple.
+
+- question: What is the purpose of VLAN?
+  points: 4
+  right:
+  - answer: To logically segment a physical network into multiple broadcast domains
+    explanation: VLANs allow network segmentation for better management, security, and performance without physical separation.
+    links:
+    - https://en.wikipedia.org/wiki/Virtual_LAN
+  wrong:
+  - answer: To encrypt data between networks
+    explanation: VLANs segment networks but don't inherently provide encryption.
+  - answer: To assign IP addresses automatically
+    explanation: This is the function of DHCP, not VLANs.
+  - answer: To increase physical bandwidth
+    explanation: VLANs don't increase physical bandwidth; they provide logical segmentation.
+  - answer: To translate domain names to IP addresses
+    explanation: This is the function of DNS, not VLANs.
+  - answer: To compress network traffic
+    explanation: VLANs don't provide compression; they segment networks.
+
+- question: What is the difference between a hub and a switch?
+  points: 2
+  right:
+  - answer: A hub broadcasts data to all ports, while a switch sends data only to the intended recipient
+    explanation: Hubs are Layer 1 devices that repeat signals; switches are Layer 2 devices that intelligently forward frames.
+    links:
+    - https://en.wikipedia.org/wiki/Network_switch
+    - https://en.wikipedia.org/wiki/Ethernet_hub
+  wrong:
+  - answer: A hub is faster than a switch
+    explanation: Switches are generally faster and more efficient than hubs.
+  - answer: A hub operates at Layer 3, a switch at Layer 2
+    explanation: Hubs operate at Layer 1, switches at Layer 2.
+  - answer: A hub can route packets, a switch cannot
+    explanation: Neither hubs nor switches route packets; routers do.
+  - answer: A hub uses IP addresses, a switch uses MAC addresses
+    explanation: Hubs don't use addresses for forwarding; switches use MAC addresses.
+  - answer: They are the same device with different names
+    explanation: Hubs and switches are fundamentally different devices.
+
+- question: What is QoS (Quality of Service)?
+  points: 4
+  right:
+  - answer: A set of technologies to manage network traffic and prioritize certain types of data
+    explanation: QoS ensures that critical applications receive adequate bandwidth and low latency.
+    links:
+    - https://en.wikipedia.org/wiki/Quality_of_service
+  wrong:
+  - answer: A protocol for encrypting network traffic
+    explanation: QoS is about traffic management, not encryption.
+  - answer: A method for assigning IP addresses
+    explanation: This describes DHCP, not QoS.
+  - answer: A security feature that blocks malicious traffic
+    explanation: This describes a firewall, not QoS.
+  - answer: A protocol for translating domain names
+    explanation: This describes DNS, not QoS.
+  - answer: A standard for physical cable specifications
+    explanation: QoS is about traffic management, not physical standards.
+
+- question: What is the purpose of the gateway address?
+  points: 2
+  right:
+  - answer: To route traffic from a local network to other networks or the internet
+    explanation: The gateway (typically a router) is the device that forwards traffic outside the local network.
+    links:
+    - https://en.wikipedia.org/wiki/Default_gateway
+  wrong:
+  - answer: To assign IP addresses to devices
+    explanation: This is the function of DHCP, not the gateway.
+  - answer: To translate domain names to IP addresses
+    explanation: This is the function of DNS, not the gateway.
+  - answer: To encrypt network traffic
+    explanation: Gateways route traffic but don't inherently encrypt it.
+  - answer: To store web pages for faster access
+    explanation: This describes a proxy or cache, not a gateway's primary function.
+  - answer: To filter spam email
+    explanation: This is the function of email filters, not network gateways.
+
+- question: What does FTP stand for?
+  points: 1
+  right:
+  - answer: File Transfer Protocol
+    explanation: FTP is a standard protocol for transferring files between computers over a network.
+    links:
+    - https://en.wikipedia.org/wiki/File_Transfer_Protocol
+  wrong:
+  - answer: Fast Transfer Protocol
+    explanation: The 'F' stands for File, not Fast.
+  - answer: File Transmission Procedure
+    explanation: It's Protocol, not Procedure.
+  - answer: Free Transfer Protocol
+    explanation: The 'F' stands for File, not Free.
+  - answer: Folder Transfer Protocol
+    explanation: The 'F' stands for File, not Folder.
+  - answer: Fixed Transfer Protocol
+    explanation: The 'F' stands for File, not Fixed.
+
+- question: What port does FTP use for control commands?
+  points: 4
+  right:
+  - answer: Port 21
+    explanation: FTP uses port 21 for control commands and port 20 for data transfer in active mode.
+    links:
+    - https://en.wikipedia.org/wiki/File_Transfer_Protocol
+  wrong:
+  - answer: Port 20
+    explanation: Port 20 is used for data transfer, not control commands.
+  - answer: Port 22
+    explanation: This is the port for SSH, not FTP.
+  - answer: Port 25
+    explanation: This is the port for SMTP, not FTP.
+  - answer: Port 80
+    explanation: This is the port for HTTP, not FTP.
+  - answer: Port 443
+    explanation: This is the port for HTTPS, not FTP.
+
+- question: What is a collision domain?
+  points: 4
+  right:
+  - answer: A network segment where data packets can collide with each other
+    explanation: In a collision domain, only one device can transmit at a time; simultaneous transmissions cause collisions.
+    links:
+    - https://en.wikipedia.org/wiki/Collision_domain
+  wrong:
+  - answer: A network that uses encryption
+    explanation: Collision domains relate to physical network topology, not encryption.
+  - answer: A network segment protected by a firewall
+    explanation: Firewalls don't define collision domains.
+  - answer: A wireless network frequency range
+    explanation: While wireless has contention, this doesn't define a collision domain.
+  - answer: A subnet with multiple routers
+    explanation: Routers separate collision domains; this doesn't define one.
+  - answer: A network that uses DHCP
+    explanation: DHCP is unrelated to collision domains.
+
+- question: What is the purpose of ICMP?
+  points: 4
+  right:
+  - answer: To send error messages and operational information about network conditions
+    explanation: ICMP is used for diagnostics and reporting errors like unreachable hosts or network congestion.
+    links:
+    - https://en.wikipedia.org/wiki/Internet_Control_Message_Protocol
+  wrong:
+  - answer: To transfer files between computers
+    explanation: This is the function of FTP, not ICMP.
+  - answer: To encrypt network traffic
+    explanation: ICMP doesn't provide encryption.
+  - answer: To assign IP addresses dynamically
+    explanation: This is the function of DHCP, not ICMP.
+  - answer: To translate domain names to IP addresses
+    explanation: This is the function of DNS, not ICMP.
+  - answer: To establish secure connections
+    explanation: This is the function of protocols like SSL/TLS, not ICMP.
+
+- question: What is a proxy server?
+  points: 4
+  right:
+  - answer: An intermediary server that makes requests on behalf of clients
+    explanation: Proxy servers can provide caching, filtering, anonymity, and security functions.
+    links:
+    - https://en.wikipedia.org/wiki/Proxy_server
+  wrong:
+  - answer: A server that assigns IP addresses
+    explanation: This describes a DHCP server, not a proxy server.
+  - answer: A server that translates domain names
+    explanation: This describes a DNS server, not a proxy server.
+  - answer: A server that only stores email
+    explanation: This describes a mail server, not a proxy server's primary function.
+  - answer: A server that encrypts all network traffic
+    explanation: While proxies can use encryption, this isn't their defining characteristic.
+  - answer: A server that routes packets between networks
+    explanation: This describes a router, not a proxy server.
+
+- question: What does SMTP stand for?
+  points: 1
+  right:
+  - answer: Simple Mail Transfer Protocol
+    explanation: SMTP is the standard protocol for sending email across the Internet.
+    links:
+    - https://en.wikipedia.org/wiki/Simple_Mail_Transfer_Protocol
+  wrong:
+  - answer: Secure Mail Transfer Protocol
+    explanation: The 'S' stands for Simple, not Secure.
+  - answer: Simple Message Transfer Protocol
+    explanation: It's Mail, not Message.
+  - answer: Standard Mail Transfer Protocol
+    explanation: The 'S' stands for Simple, not Standard.
+  - answer: Simple Mail Transmission Procedure
+    explanation: It's Protocol, not Procedure.
+  - answer: System Mail Transfer Protocol
+    explanation: The 'S' stands for Simple, not System.
+
+- question: What is the difference between half-duplex and full-duplex communication?
+  points: 4
+  right:
+  - answer: Half-duplex allows communication in both directions but not simultaneously, while full-duplex allows simultaneous bidirectional communication
+    explanation: Half-duplex devices must take turns transmitting; full-duplex devices can send and receive at the same time.
+    links:
+    - https://en.wikipedia.org/wiki/Duplex_(telecommunications)
+  wrong:
+  - answer: Half-duplex is faster than full-duplex
+    explanation: Full-duplex is generally more efficient as it allows simultaneous communication.
+  - answer: Half-duplex uses wireless, full-duplex uses wired connections
+    explanation: Both wired and wireless can use either mode.
+  - answer: Half-duplex allows communication in one direction only
+    explanation: This describes simplex, not half-duplex.
+  - answer: Full-duplex requires two separate cables
+    explanation: Full-duplex can operate over a single cable using different wire pairs or frequencies.
+  - answer: There is no difference between them
+    explanation: They are fundamentally different communication modes.
+
+- question: What is port forwarding?
+  points: 4
+  right:
+  - answer: Redirecting network traffic from one port on a router to a specific device on the internal network
+    explanation: Port forwarding allows external access to services on internal network devices through NAT.
+    links:
+    - https://en.wikipedia.org/wiki/Port_forwarding
+  wrong:
+  - answer: Moving network cables from one port to another
+    explanation: Port forwarding is a logical configuration, not physical cable movement.
+  - answer: Encrypting data on specific ports
+    explanation: Port forwarding doesn't inherently provide encryption.
+  - answer: Assigning IP addresses to network ports
+    explanation: This doesn't accurately describe port forwarding.
+  - answer: Blocking all traffic except on specified ports
+    explanation: This describes firewall rules, not port forwarding specifically.
+  - answer: Increasing bandwidth on specific ports
+    explanation: Port forwarding doesn't increase bandwidth; it redirects traffic.
+
+- question: What is the purpose of traceroute?
+  points: 2
+  right:
+  - answer: To display the path and measure transit delays of packets across a network
+    explanation: Traceroute shows each hop a packet takes from source to destination and the time for each hop.
+    links:
+    - https://en.wikipedia.org/wiki/Traceroute
+  wrong:
+  - answer: To transfer files between computers
+    explanation: This is the function of FTP, not traceroute.
+  - answer: To encrypt network traffic
+    explanation: Traceroute is a diagnostic tool and doesn't provide encryption.
+  - answer: To assign IP addresses
+    explanation: This is the function of DHCP, not traceroute.
+  - answer: To translate domain names
+    explanation: This is the function of DNS, not traceroute.
+  - answer: To block malicious traffic
+    explanation: This is the function of a firewall, not traceroute.
+
+- question: What is bandwidth?
+  points: 2
+  right:
+  - answer: The maximum rate of data transfer across a network path
+    explanation: Bandwidth is typically measured in bits per second (bps) and indicates network capacity.
+    links:
+    - https://en.wikipedia.org/wiki/Bandwidth_(computing)
+  wrong:
+  - answer: The physical distance data can travel
+    explanation: This is not what bandwidth measures.
+  - answer: The number of devices on a network
+    explanation: This is network capacity in terms of devices, not bandwidth.
+  - answer: The strength of a wireless signal
+    explanation: This describes signal strength, not bandwidth.
+  - answer: The time it takes for data to travel
+    explanation: This describes latency, not bandwidth.
+  - answer: The amount of storage space on a server
+    explanation: This describes storage capacity, not bandwidth.
+
+- question: What is latency?
+  points: 2
+  right:
+  - answer: The time delay between sending and receiving data across a network
+    explanation: Latency is typically measured in milliseconds and represents the round-trip time for data.
+    links:
+    - https://en.wikipedia.org/wiki/Latency_(engineering)
+  wrong:
+  - answer: The maximum speed of data transfer
+    explanation: This describes bandwidth, not latency.
+  - answer: The number of packets lost during transmission
+    explanation: This describes packet loss, not latency.
+  - answer: The strength of network security
+    explanation: Security strength is unrelated to latency.
+  - answer: The distance between network devices
+    explanation: While distance affects latency, this doesn't define latency itself.
+  - answer: The amount of data stored in cache
+    explanation: Cache size is unrelated to network latency.
+
+- question: What is a DMZ in networking?
+  points: 7
+  right:
+  - answer: A demilitarized zone that adds a security layer between a private network and the internet
+    explanation: A DMZ hosts public-facing services while keeping the internal network protected.
+    links:
+    - https://en.wikipedia.org/wiki/DMZ_(computing)
+  wrong:
+  - answer: A zone where all traffic is encrypted
+    explanation: DMZ refers to network segmentation, not encryption.
+  - answer: A backup network that activates during failures
+    explanation: This describes redundancy or failover, not a DMZ.
+  - answer: A wireless network isolation zone
+    explanation: DMZ is a broader concept than just wireless isolation.
+  - answer: A network segment where DHCP doesn't work
+    explanation: DHCP can work in a DMZ; this doesn't define a DMZ.
+  - answer: A physical location where servers are stored
+    explanation: While DMZ servers may be in specific locations, DMZ is a logical concept.
+
+- question: What is the spanning tree protocol used for?
+  points: 7
+  right:
+  - answer: To prevent network loops in redundant switched networks
+    explanation: STP blocks redundant paths to prevent broadcast storms while maintaining backup paths for redundancy.
+    links:
+    - https://en.wikipedia.org/wiki/Spanning_Tree_Protocol
+  wrong:
+  - answer: To encrypt data during transmission
+    explanation: STP is about preventing loops, not encryption.
+  - answer: To assign IP addresses dynamically
+    explanation: This is the function of DHCP, not STP.
+  - answer: To route packets between networks
+    explanation: This is the function of routers, not STP.
+  - answer: To compress network traffic
+    explanation: STP doesn't compress traffic; it prevents loops.
+  - answer: To translate domain names to IP addresses
+    explanation: This is the function of DNS, not STP.
+
+- question: What is an SSL certificate used for?
+  points: 4
+  right:
+  - answer: To authenticate a website's identity and enable encrypted connections
+    explanation: SSL/TLS certificates establish trust and encrypt data between clients and servers.
+    links:
+    - https://en.wikipedia.org/wiki/Public_key_certificate
+  wrong:
+  - answer: To assign IP addresses to websites
+    explanation: IP assignment is unrelated to SSL certificates.
+  - answer: To increase website loading speed
+    explanation: SSL certificates provide security, not speed improvements.
+  - answer: To store website content
+    explanation: Certificates authenticate and encrypt, they don't store content.
+  - answer: To translate domain names to IP addresses
+    explanation: This is the function of DNS, not SSL certificates.
+  - answer: To route traffic between networks
+    explanation: This is the function of routers, not SSL certificates.
+
+- question: What is the difference between stateful and stateless firewalls?
+  points: 7
+  right:
+  - answer: Stateful firewalls track connection states and context, while stateless firewalls filter packets independently
+    explanation: Stateful firewalls remember previous packets and make decisions based on connection context; stateless firewalls examine each packet in isolation.
+    links:
+    - https://en.wikipedia.org/wiki/Stateful_firewall
+  wrong:
+  - answer: Stateful firewalls are slower than stateless firewalls
+    explanation: While stateful firewalls require more processing, this isn't the defining difference.
+  - answer: Stateless firewalls provide better security
+    explanation: Stateful firewalls generally provide superior security due to context awareness.
+  - answer: Stateful firewalls work only with TCP, stateless only with UDP
+    explanation: Both types can work with TCP and UDP protocols.
+  - answer: Stateless firewalls encrypt traffic, stateful firewalls don't
+    explanation: Neither type inherently provides encryption; they filter traffic.
+  - answer: There is no difference between them
+    explanation: They operate on fundamentally different principles.
+
+- question: What is CIDR notation?
+  points: 7
+  right:
+  - answer: A compact representation of an IP address and its associated routing prefix or subnet mask
+    explanation: CIDR notation uses a slash followed by the number of bits in the prefix (e.g., 192.168.1.0/24).
+    links:
+    - https://en.wikipedia.org/wiki/Classless_Inter-Domain_Routing
+  wrong:
+  - answer: A method for encrypting IP addresses
+    explanation: CIDR is a notation system, not an encryption method.
+  - answer: A protocol for assigning IP addresses
+    explanation: CIDR is a notation system, not a protocol like DHCP.
+  - answer: A type of network cable
+    explanation: CIDR relates to IP addressing, not physical cables.
+  - answer: A wireless security standard
+    explanation: CIDR is about IP address notation, not wireless security.
+  - answer: A domain name registration system
+    explanation: CIDR is unrelated to domain name registration.
+
+- question: What does BGP stand for?
+  points: 7
+  right:
+  - answer: Border Gateway Protocol
+    explanation: BGP is the protocol used to exchange routing information between autonomous systems on the internet.
+    links:
+    - https://en.wikipedia.org/wiki/Border_Gateway_Protocol
+  wrong:
+  - answer: Basic Gateway Protocol
+    explanation: The 'B' stands for Border, not Basic.
+  - answer: Broadcast Gateway Protocol
+    explanation: The 'B' stands for Border, not Broadcast.
+  - answer: Binary Gateway Protocol
+    explanation: The 'B' stands for Border, not Binary.
+  - answer: Bidirectional Gateway Protocol
+    explanation: The 'B' stands for Border, not Bidirectional.
+  - answer: Bridged Gateway Protocol
+    explanation: The 'B' stands for Border, not Bridged.
+
+- question: What is the purpose of SNMP?
+  points: 7
+  right:
+  - answer: To collect and organize information about managed devices on IP networks
+    explanation: SNMP (Simple Network Management Protocol) is used for monitoring and managing network devices.
+    links:
+    - https://en.wikipedia.org/wiki/Simple_Network_Management_Protocol
+  wrong:
+  - answer: To encrypt email messages
+    explanation: This is not the function of SNMP.
+  - answer: To transfer files between servers
+    explanation: This is the function of FTP, not SNMP.
+  - answer: To assign IP addresses dynamically
+    explanation: This is the function of DHCP, not SNMP.
+  - answer: To translate domain names to IP addresses
+    explanation: This is the function of DNS, not SNMP.
+  - answer: To establish VPN connections
+    explanation: This involves VPN protocols, not SNMP.
+
+- question: What is the difference between IPv4 and IPv6?
+  points: 4
+  right:
+  - answer: IPv4 uses 32-bit addresses while IPv6 uses 128-bit addresses, providing a much larger address space
+    explanation: IPv6 was developed to address IPv4 address exhaustion and includes other improvements like simplified headers.
+    links:
+    - https://en.wikipedia.org/wiki/IPv6
+  wrong:
+  - answer: IPv6 is slower than IPv4
+    explanation: IPv6 can actually be faster due to more efficient routing and packet processing.
+  - answer: IPv4 is more secure than IPv6
+    explanation: IPv6 has security features built into the protocol specification.
+  - answer: IPv6 is only for wireless networks
+    explanation: IPv6 works on both wired and wireless networks.
+  - answer: IPv4 uses letters, IPv6 uses only numbers
+    explanation: This is backwards; IPv6 uses hexadecimal (letters and numbers).
+  - answer: They are the same protocol with different names
+    explanation: They are fundamentally different protocol versions.
+
+- question: What is a unicast transmission?
+  points: 2
+  right:
+  - answer: A transmission sent from one sender to one specific receiver
+    explanation: Unicast is one-to-one communication, the most common form of network transmission.
+    links:
+    - https://en.wikipedia.org/wiki/Unicast
+  wrong:
+  - answer: A transmission sent to all devices on a network
+    explanation: This describes broadcast, not unicast.
+  - answer: A transmission sent to multiple specific receivers
+    explanation: This describes multicast, not unicast.
+  - answer: A transmission that uses encryption
+    explanation: Encryption is separate from the transmission type.
+  - answer: A transmission over wireless networks only
+    explanation: Unicast works on both wired and wireless networks.
+  - answer: A transmission that doesn't require IP addresses
+    explanation: Unicast transmissions require destination addresses.
+
+- question: What is a multicast transmission?
+  points: 4
+  right:
+  - answer: A transmission sent from one sender to multiple specific receivers simultaneously
+    explanation: Multicast is one-to-many communication where data is sent to a group of interested receivers.
+    links:
+    - https://en.wikipedia.org/wiki/Multicast
+  wrong:
+  - answer: A transmission sent to all devices on a network
+    explanation: This describes broadcast, not multicast.
+  - answer: A transmission sent to one specific receiver
+    explanation: This describes unicast, not multicast.
+  - answer: A transmission over multiple cables
+    explanation: Multicast refers to the addressing method, not physical cabling.
+  - answer: A transmission that uses multiple protocols
+    explanation: Multicast is about addressing, not protocol usage.
+  - answer: A transmission that is always encrypted
+    explanation: Multicast doesn't inherently involve encryption.
+
+- question: What is jitter in networking?
+  points: 4
+  right:
+  - answer: The variation in packet arrival time or delay
+    explanation: Jitter is the inconsistency in latency that can affect real-time applications like VoIP and video streaming.
+    links:
+    - https://en.wikipedia.org/wiki/Jitter
+  wrong:
+  - answer: The total time for data to travel across a network
+    explanation: This describes latency, not jitter.
+  - answer: The maximum bandwidth of a connection
+    explanation: This describes throughput capacity, not jitter.
+  - answer: The physical vibration of network cables
+    explanation: Jitter is a timing variation, not physical vibration.
+  - answer: The number of packets lost during transmission
+    explanation: This describes packet loss, not jitter.
+  - answer: The encryption strength of a connection
+    explanation: Encryption is unrelated to jitter.
+
+- question: What is packet loss?
+  points: 2
+  right:
+  - answer: The failure of transmitted data packets to reach their destination
+    explanation: Packet loss occurs due to network congestion, errors, or faulty hardware and degrades network performance.
+    links:
+    - https://en.wikipedia.org/wiki/Packet_loss
+  wrong:
+  - answer: The time it takes for packets to travel
+    explanation: This describes latency, not packet loss.
+  - answer: The encryption of network packets
+    explanation: Encryption is unrelated to packet loss.
+  - answer: The size reduction of data packets
+    explanation: This would describe compression, not packet loss.
+  - answer: The storage of packets in cache
+    explanation: This is unrelated to packet loss.
+  - answer: The rerouting of packets to alternative paths
+    explanation: This describes routing, not packet loss.
+
+- question: What is the purpose of a load balancer?
+  points: 7
+  right:
+  - answer: To distribute network traffic across multiple servers to optimize resource utilization and prevent overload
+    explanation: Load balancers improve reliability, performance, and scalability by distributing workload evenly.
+    links:
+    - https://en.wikipedia.org/wiki/Load_balancing_(computing)
+  wrong:
+  - answer: To encrypt all network traffic
+    explanation: Load balancers distribute traffic, they don't inherently encrypt it.
+  - answer: To assign IP addresses to servers
+    explanation: This is the function of DHCP, not load balancers.
+  - answer: To store backup copies of data
+    explanation: This is the function of backup systems, not load balancers.
+  - answer: To translate domain names to IP addresses
+    explanation: This is the function of DNS, not load balancers.
+  - answer: To filter malicious traffic
+    explanation: While some load balancers have security features, this isn't their primary purpose.
+
+- question: What is the difference between static and dynamic routing?
+  points: 7
+  right:
+  - answer: Static routing uses manually configured routes, while dynamic routing uses protocols to automatically discover and update routes
+    explanation: Static routes are fixed; dynamic routing adapts to network changes using protocols like OSPF or BGP.
+    links:
+    - https://en.wikipedia.org/wiki/Routing
+  wrong:
+  - answer: Static routing is faster than dynamic routing
+    explanation: While static routing has less overhead, this isn't the defining difference.
+  - answer: Dynamic routing doesn't work with IPv6
+    explanation: Dynamic routing protocols support both IPv4 and IPv6.
+  - answer: Static routing provides better security
+    explanation: Security depends on implementation, not the routing type.
+  - answer: Dynamic routing requires special hardware
+    explanation: Both types can run on the same hardware.
+  - answer: Static routing uses wireless, dynamic uses wired connections
+    explanation: Both types work on wired and wireless networks.
+
+- question: What is OSPF?
+  points: 7
+  right:
+  - answer: Open Shortest Path First, a dynamic routing protocol that uses link-state information
+    explanation: OSPF is an interior gateway protocol that calculates the shortest path using Dijkstra's algorithm.
+    links:
+    - https://en.wikipedia.org/wiki/Open_Shortest_Path_First
+  wrong:
+  - answer: A protocol for encrypting network traffic
+    explanation: OSPF is a routing protocol, not an encryption protocol.
+  - answer: A protocol for assigning IP addresses
+    explanation: This describes DHCP, not OSPF.
+  - answer: A protocol for transferring files
+    explanation: This describes FTP, not OSPF.
+  - answer: A wireless security standard
+    explanation: OSPF is a routing protocol, not a wireless security standard.
+  - answer: A protocol for email transmission
+    explanation: This describes SMTP, not OSPF.
+
+- question: What is the purpose of a NIC?
+  points: 1
+  right:
+  - answer: To provide the hardware interface between a computer and a network
+    explanation: A Network Interface Card (NIC) allows a device to connect to and communicate on a network.
+    links:
+    - https://en.wikipedia.org/wiki/Network_interface_controller
+  wrong:
+  - answer: To store network configuration files
+    explanation: NICs provide connectivity, not storage.
+  - answer: To encrypt all network traffic
+    explanation: NICs transmit and receive data but don't inherently encrypt it.
+  - answer: To assign IP addresses to devices
+    explanation: This is the function of DHCP, not a NIC.
+  - answer: To filter malicious packets
+    explanation: This is the function of a firewall, not a NIC.
+  - answer: To amplify wireless signals
+    explanation: This is the function of a wireless repeater or extender.
+
+- question: What is PoE?
+  points: 4
+  right:
+  - answer: Power over Ethernet, a technology that allows network cables to carry electrical power
+    explanation: PoE enables devices like IP cameras and phones to receive both data and power through a single Ethernet cable.
+    links:
+    - https://en.wikipedia.org/wiki/Power_over_Ethernet
+  wrong:
+  - answer: A protocol for encrypting Ethernet traffic
+    explanation: PoE is about power delivery, not encryption.
+  - answer: A type of fiber optic cable
+    explanation: PoE refers to power delivery over copper Ethernet cables.
+  - answer: A wireless networking standard
+    explanation: PoE is specifically for wired Ethernet connections.
+  - answer: A routing protocol
+    explanation: PoE is about power delivery, not routing.
+  - answer: A method for increasing Ethernet speed
+    explanation: PoE delivers power but doesn't affect data transmission speed.
+
+- question: What is the difference between a modem and a router?
+  points: 2
+  right:
+  - answer: A modem converts signals between different media types, while a router directs traffic between networks
+    explanation: Modems connect to ISPs; routers create and manage local networks and route traffic between them.
+    links:
+    - https://en.wikipedia.org/wiki/Modem
+    - https://en.wikipedia.org/wiki/Router_(computing)
+  wrong:
+  - answer: A modem is faster than a router
+    explanation: Speed depends on specifications; this isn't the defining difference.
+  - answer: A router connects to the ISP, a modem creates the local network
+    explanation: This is backwards; modems connect to ISPs, routers create local networks.
+  - answer: A modem is wireless, a router is wired
+    explanation: Both can be wired or wireless.
+  - answer: They are the same device with different names
+    explanation: They perform different functions, though often combined in one device.
+  - answer: A modem only works with cable internet
+    explanation: Modems work with various connection types (cable, DSL, fiber, etc.).
+
+- question: What is the purpose of subnetting?
+  points: 4
+  right:
+  - answer: To divide a network into smaller sub-networks for better organization, security, and efficiency
+    explanation: Subnetting allows for efficient IP address allocation and can improve network performance and security.
+    links:
+    - https://en.wikipedia.org/wiki/Subnetwork
+  wrong:
+  - answer: To encrypt network traffic
+    explanation: Subnetting is about network division, not encryption.
+  - answer: To increase bandwidth
+    explanation: Subnetting organizes networks but doesn't increase physical bandwidth.
+  - answer: To translate domain names to IP addresses
+    explanation: This is the function of DNS, not subnetting.
+  - answer: To assign IP addresses dynamically
+    explanation: This is the function of DHCP, not subnetting.
+  - answer: To compress data packets
+    explanation: Subnetting is about network organization, not data compression.
+
+- question: What is the purpose of the ARP cache?
+  points: 4
+  right:
+  - answer: To store recently resolved IP-to-MAC address mappings for faster network communication
+    explanation: The ARP cache reduces the need for repeated ARP broadcasts by storing mapping information.
+    links:
+    - https://en.wikipedia.org/wiki/Address_Resolution_Protocol
+  wrong:
+  - answer: To store website data for faster loading
+    explanation: This describes a web cache, not an ARP cache.
+  - answer: To encrypt network traffic
+    explanation: ARP cache stores mappings, it doesn't encrypt data.
+  - answer: To store user passwords
+    explanation: ARP cache stores address mappings, not passwords.
+  - answer: To store DNS query results
+    explanation: This describes DNS cache, not ARP cache.
+  - answer: To store routing table information
+    explanation: Routing tables are separate from ARP cache.
+
+- question: What is a socket in networking?
+  points: 7
+  right:
+  - answer: An endpoint for sending or receiving data, defined by an IP address and port number combination
+    explanation: Sockets enable applications to communicate over networks using the IP address and port as identifiers.
+    links:
+    - https://en.wikipedia.org/wiki/Network_socket
+  wrong:
+  - answer: A physical connector for network cables
+    explanation: While there are physical sockets, in networking terminology this refers to the logical endpoint.
+  - answer: A protocol for encrypting data
+    explanation: Sockets are communication endpoints, not encryption protocols.
+  - answer: A type of network switch
+    explanation: Sockets are software constructs, not hardware devices.
+  - answer: A wireless network frequency
+    explanation: Sockets are about addressing endpoints, not wireless frequencies.
+  - answer: A method for compressing data
+    explanation: Sockets are communication endpoints, not compression methods.
+
+- question: What is the difference between a public and private IP address?
+  points: 4
+  right:
+  - answer: Public IP addresses are routable on the internet, while private IP addresses are used within local networks and not directly accessible from the internet
+    explanation: Private IPs (10.x.x.x, 172.16-31.x.x, 192.168.x.x) require NAT to communicate with the internet.
+    links:
+    - https://en.wikipedia.org/wiki/Private_network
+  wrong:
+  - answer: Public IPs are faster than private IPs
+    explanation: Speed is not determined by whether an IP is public or private.
+  - answer: Private IPs are encrypted, public IPs are not
+    explanation: Encryption is separate from the IP address type.
+  - answer: Public IPs are assigned by routers, private IPs by ISPs
+    explanation: This is backwards; ISPs assign public IPs, local DHCP assigns private IPs.
+  - answer: Private IPs only work with IPv6
+    explanation: Private IP addresses exist in both IPv4 and IPv6.
+  - answer: There is no difference between them
+    explanation: They serve distinctly different purposes and have different routing behavior.
+
+- question: What is the three-way handshake in TCP?
+  points: 7
+  right:
+  - answer: A process that establishes a TCP connection using SYN, SYN-ACK, and ACK packets
+    explanation: The three-way handshake synchronizes sequence numbers and establishes a reliable connection before data transfer.
+    links:
+    - https://en.wikipedia.org/wiki/Transmission_Control_Protocol#Connection_establishment
+  wrong:
+  - answer: A method for encrypting TCP traffic
+    explanation: The handshake establishes connections but doesn't provide encryption.
+  - answer: A process for assigning IP addresses
+    explanation: This describes DHCP, not the TCP handshake.
+  - answer: A method for routing packets
+    explanation: The handshake establishes connections, it doesn't route packets.
+  - answer: A security feature that blocks malicious connections
+    explanation: While it establishes connections, this isn't a security feature.
+  - answer: A process that only applies to UDP
+    explanation: UDP is connectionless and doesn't use a three-way handshake.
+
+- question: What is a Time To Live (TTL) value?
+  points: 4
+  right:
+  - answer: A value in IP packets that limits the packet's lifetime and prevents infinite routing loops
+    explanation: TTL is decremented at each hop; when it reaches zero, the packet is discarded.
+    links:
+    - https://en.wikipedia.org/wiki/Time_to_live
+  wrong:
+  - answer: The maximum time a connection can remain open
+    explanation: TTL limits packet hops, not connection duration.
+  - answer: The time required to establish a connection
+    explanation: This describes connection establishment time, not TTL.
+  - answer: The lifespan of a MAC address
+    explanation: TTL applies to IP packets, not MAC addresses.
+  - answer: The duration data is stored in cache
+    explanation: While cache has TTL values, this specifically refers to IP packet TTL.
+  - answer: The maximum bandwidth of a connection
+    explanation: TTL is about packet lifetime, not bandwidth.
+
+- question: What is the purpose of port 53?
+  points: 4
+  right:
+  - answer: DNS (Domain Name System) queries and responses
+    explanation: Port 53 is used by DNS servers to resolve domain names to IP addresses.
+    links:
+    - https://en.wikipedia.org/wiki/Domain_Name_System
+  wrong:
+  - answer: HTTP web traffic
+    explanation: HTTP uses port 80, not 53.
+  - answer: HTTPS secure web traffic
+    explanation: HTTPS uses port 443, not 53.
+  - answer: FTP file transfers
+    explanation: FTP uses ports 20 and 21, not 53.
+  - answer: SSH secure shell access
+    explanation: SSH uses port 22, not 53.
+  - answer: Email transmission
+    explanation: Email uses ports like 25 (SMTP) or 110 (POP3), not 53.
+
+- question: What is SIP?
+  points: 7
+  right:
+  - answer: Session Initiation Protocol, used for signaling and controlling multimedia communication sessions
+    explanation: SIP is commonly used for VoIP calls, video conferencing, and instant messaging.
+    links:
+    - https://en.wikipedia.org/wiki/Session_Initiation_Protocol
+  wrong:
+  - answer: A protocol for transferring files
+    explanation: SIP is for multimedia session management, not file transfer.
+  - answer: A routing protocol
+    explanation: SIP manages communication sessions, it doesn't route packets.
+  - answer: A wireless security standard
+    explanation: SIP is about multimedia communication, not wireless security.
+  - answer: A protocol for assigning IP addresses
+    explanation: This describes DHCP, not SIP.
+  - answer: A protocol for encrypting email
+    explanation: SIP is for multimedia sessions, not email encryption.
+
+- question: What is VXLAN?
+  points: 12
+  right:
+  - answer: Virtual Extensible LAN, a network virtualization technology that encapsulates Layer 2 frames within Layer 4 UDP packets
+    explanation: VXLAN extends Layer 2 networks over Layer 3 infrastructure, commonly used in data centers and cloud environments.
+    links:
+    - https://en.wikipedia.org/wiki/Virtual_Extensible_LAN
+  wrong:
+  - answer: A wireless networking standard
+    explanation: VXLAN is about network virtualization, not wireless standards.
+  - answer: A protocol for encrypting VPN traffic
+    explanation: VXLAN is about network extension, not encryption.
+  - answer: A routing protocol for large networks
+    explanation: VXLAN is about network virtualization, not routing.
+  - answer: A type of physical network cable
+    explanation: VXLAN is a virtual technology, not a physical cable type.
+  - answer: A protocol for assigning virtual IP addresses
+    explanation: VXLAN extends Layer 2 networks, it doesn't assign IP addresses.
+
+- question: What is the purpose of MPLS?
+  points: 12
+  right:
+  - answer: Multiprotocol Label Switching uses labels to make forwarding decisions instead of examining packet headers, improving speed and flexibility
+    explanation: MPLS creates virtual paths through networks, enabling traffic engineering and VPNs.
+    links:
+    - https://en.wikipedia.org/wiki/Multiprotocol_Label_Switching
+  wrong:
+  - answer: To encrypt data during transmission
+    explanation: MPLS is about efficient packet forwarding, not encryption.
+  - answer: To assign IP addresses dynamically
+    explanation: This describes DHCP, not MPLS.
+  - answer: To translate domain names to IP addresses
+    explanation: This describes DNS, not MPLS.
+  - answer: To provide wireless connectivity
+    explanation: MPLS is a forwarding mechanism, not specific to wireless.
+  - answer: To compress network traffic
+    explanation: MPLS is about forwarding efficiency, not compression.
+
+- question: What is the purpose of RADIUS?
+  points: 7
+  right:
+  - answer: Remote Authentication Dial-In User Service provides centralized authentication, authorization, and accounting for network access
+    explanation: RADIUS is commonly used for authenticating users connecting to networks via VPN, wireless, or dial-up.
+    links:
+    - https://en.wikipedia.org/wiki/RADIUS
+  wrong:
+  - answer: To encrypt network traffic
+    explanation: RADIUS provides AAA services, not encryption.
+  - answer: To assign IP addresses
+    explanation: This is the function of DHCP, not RADIUS.
+  - answer: To route packets between networks
+    explanation: This is the function of routers, not RADIUS.
+  - answer: To translate domain names
+    explanation: This is the function of DNS, not RADIUS.
+  - answer: To compress data
+    explanation: RADIUS doesn't provide compression.
+
+- question: What is SDN (Software-Defined Networking)?
+  points: 12
+  right:
+  - answer: An approach to networking that separates the control plane from the data plane, allowing centralized programmable network management
+    explanation: SDN enables dynamic network configuration through software controllers rather than manual device configuration.
+    links:
+    - https://en.wikipedia.org/wiki/Software-defined_networking
+  wrong:
+  - answer: A protocol for encrypting network traffic
+    explanation: SDN is an architectural approach, not an encryption protocol.
+  - answer: A type of network cable
+    explanation: SDN is about network architecture, not physical cabling.
+  - answer: A wireless networking standard
+    explanation: SDN is a network architecture approach applicable to wired and wireless networks.
+  - answer: A method for assigning IP addresses
+    explanation: SDN is about network control architecture, not IP assignment.
+  - answer: A specific router brand
+    explanation: SDN is an architectural concept, not a product brand.
+
+- question: What is the difference between cut-through and store-and-forward switching?
+  points: 7
+  right:
+  - answer: Cut-through switching forwards frames before they are completely received, while store-and-forward receives the entire frame before forwarding
+    explanation: Cut-through is faster but doesn't check for errors; store-and-forward verifies frame integrity but has higher latency.
+    links:
+    - https://en.wikipedia.org/wiki/Network_switch#Switching_methods
+  wrong:
+  - answer: Cut-through is more reliable than store-and-forward
+    explanation: Store-and-forward is actually more reliable as it checks for errors.
+  - answer: Store-and-forward is faster than cut-through
+    explanation: Cut-through has lower latency as it doesn't wait for complete frame reception.
+  - answer: Cut-through only works with fiber optic cables
+    explanation: Switching methods are independent of cable type.
+  - answer: Store-and-forward encrypts data, cut-through doesn't
+    explanation: Neither method inherently provides encryption.
+  - answer: They are the same method with different names
+    explanation: They are fundamentally different switching approaches.
+
+- question: What is a gratuitous ARP?
+  points: 7
+  right:
+  - answer: An ARP request or reply sent without being prompted, typically to announce or update IP-to-MAC address mappings
+    explanation: Gratuitous ARP is used for detecting IP conflicts, updating caches, and redundancy protocols.
+    links:
+    - https://en.wikipedia.org/wiki/Address_Resolution_Protocol#ARP_announcements
+  wrong:
+  - answer: An ARP request that asks for payment
+    explanation: '"Gratuitous" means unsolicited, not related to payment.'
+  - answer: An encrypted ARP message
+    explanation: Gratuitous ARP isn't about encryption.
+  - answer: An ARP request that always fails
+    explanation: Gratuitous ARP is a legitimate network function.
+  - answer: An ARP message sent only by routers
+    explanation: Any device can send gratuitous ARP messages.
+  - answer: An ARP request for DNS servers only
+    explanation: Gratuitous ARP is about announcing IP-to-MAC mappings, not specific to DNS.
+
+- question: What is the purpose of EtherChannel or Link Aggregation?
+  points: 7
+  right:
+  - answer: To combine multiple physical network links into a single logical link for increased bandwidth and redundancy
+    explanation: Link aggregation improves throughput and provides failover capability by bundling multiple connections.
+    links:
+    - https://en.wikipedia.org/wiki/Link_aggregation
+  wrong:
+  - answer: To encrypt traffic across multiple links
+    explanation: Link aggregation is about combining bandwidth, not encryption.
+  - answer: To assign multiple IP addresses to one device
+    explanation: This describes multi-homing, not link aggregation.
+  - answer: To separate broadcast domains
+    explanation: This describes VLANs or routers, not link aggregation.
+  - answer: To compress data across links
+    explanation: Link aggregation combines bandwidth, it doesn't compress data.
+  - answer: To prioritize specific traffic types
+    explanation: This describes QoS, not link aggregation specifically.
+
+- question: What is jumbo frames?
+  points: 7
+  right:
+  - answer: Ethernet frames with payload larger than the standard 1500 bytes, typically up to 9000 bytes
+    explanation: Jumbo frames can improve network efficiency by reducing overhead when transferring large amounts of data.
+    links:
+    - https://en.wikipedia.org/wiki/Jumbo_frame
+  wrong:
+  - answer: Frames that are encrypted with stronger algorithms
+    explanation: Jumbo frames refer to size, not encryption.
+  - answer: Frames sent during peak network traffic
+    explanation: The term refers to frame size, not timing.
+  - answer: Frames used only in wireless networks
+    explanation: Jumbo frames are typically used in wired Ethernet networks.
+  - answer: Frames that carry routing information
+    explanation: Jumbo frames refer to size, not the type of data carried.
+  - answer: Frames that are prioritized over normal traffic
+    explanation: This describes QoS priority, not jumbo frames.
+
+- question: What is HSRP?
+  points: 12
+  right:
+  - answer: Hot Standby Router Protocol provides automatic router failover by creating a virtual router with multiple physical routers
+    explanation: HSRP ensures network availability by allowing a standby router to take over if the active router fails.
+    links:
+    - https://en.wikipedia.org/wiki/Hot_Standby_Router_Protocol
+  wrong:
+  - answer: A protocol for encrypting router communications
+    explanation: HSRP is about redundancy, not encryption.
+  - answer: A protocol for assigning IP addresses
+    explanation: This describes DHCP, not HSRP.
+  - answer: A routing protocol like OSPF or BGP
+    explanation: HSRP is a first-hop redundancy protocol, not a routing protocol.
+  - answer: A wireless networking standard
+    explanation: HSRP is about router redundancy, not wireless.
+  - answer: A protocol for compressing router traffic
+    explanation: HSRP provides redundancy, not compression.
+
+- question: What is the purpose of GRE (Generic Routing Encapsulation)?
+  points: 12
+  right:
+  - answer: To encapsulate a wide variety of network layer protocols inside virtual point-to-point links
+    explanation: GRE tunnels allow protocols to traverse networks that wouldn't normally support them.
+    links:
+    - https://en.wikipedia.org/wiki/Generic_Routing_Encapsulation
+  wrong:
+  - answer: To encrypt network traffic
+    explanation: GRE provides encapsulation but not encryption; it can be combined with IPSec for encryption.
+  - answer: To assign IP addresses dynamically
+    explanation: This describes DHCP, not GRE.
+  - answer: To provide load balancing
+    explanation: This describes load balancers, not GRE.
+  - answer: To translate domain names
+    explanation: This describes DNS, not GRE.
+  - answer: To authenticate users
+    explanation: This describes authentication protocols like RADIUS, not GRE.
+
+- question: What is the difference between RIP and OSPF?
+  points: 12
+  right:
+  - answer: RIP is a distance-vector protocol using hop count as metric, while OSPF is a link-state protocol using cost based on bandwidth
+    explanation: RIP is simpler but less scalable (max 15 hops); OSPF is more complex but suitable for larger networks with faster convergence.
+    links:
+    - https://en.wikipedia.org/wiki/Routing_Information_Protocol
+    - https://en.wikipedia.org/wiki/Open_Shortest_Path_First
+  wrong:
+  - answer: RIP is faster than OSPF
+    explanation: OSPF generally converges faster and is more efficient.
+  - answer: OSPF is only for small networks, RIP for large networks
+    explanation: This is backwards; OSPF scales better to large networks.
+  - answer: RIP uses link-state, OSPF uses distance-vector
+    explanation: This is reversed; RIP is distance-vector, OSPF is link-state.
+  - answer: OSPF only works with IPv6, RIP only with IPv4
+    explanation: Both protocols have versions supporting both IPv4 and IPv6.
+  - answer: They are the same protocol with different names
+    explanation: They are fundamentally different routing protocols.
+
+- question: What is IPSec?
+  points: 7
+  right:
+  - answer: Internet Protocol Security, a suite of protocols for securing IP communications through authentication and encryption
+    explanation: IPSec operates at the network layer and is commonly used for VPNs.
+    links:
+    - https://en.wikipedia.org/wiki/IPsec
+  wrong:
+  - answer: A protocol for assigning IP addresses
+    explanation: This describes DHCP, not IPSec.
+  - answer: A routing protocol
+    explanation: IPSec is about security, not routing.
+  - answer: A protocol for translating domain names
+    explanation: This describes DNS, not IPSec.
+  - answer: A wireless networking standard
+    explanation: IPSec can secure wireless traffic but is not a wireless standard.
+  - answer: A protocol for load balancing
+    explanation: This describes load balancing protocols, not IPSec.
+
+- question: What is the purpose of TACACS+?
+  points: 12
+  right:
+  - answer: Terminal Access Controller Access-Control System Plus provides separate authentication, authorization, and accounting for network device access
+    explanation: TACACS+ is commonly used for authenticating administrative access to network devices like routers and switches.
+    links:
+    - https://en.wikipedia.org/wiki/TACACS
+  wrong:
+  - answer: To encrypt all network traffic
+    explanation: TACACS+ provides AAA services, though it does encrypt its own traffic.
+  - answer: To assign IP addresses
+    explanation: This describes DHCP, not TACACS+.
+  - answer: To route packets between networks
+    explanation: This describes routing protocols, not TACACS+.
+  - answer: To translate domain names
+    explanation: This describes DNS, not TACACS+.
+  - answer: To provide wireless connectivity
+    explanation: TACACS+ is about authentication and authorization, not wireless connectivity.
+
+- question: What is EIGRP?
+  points: 12
+  right:
+  - answer: Enhanced Interior Gateway Routing Protocol, an advanced distance-vector routing protocol that uses multiple metrics
+    explanation: EIGRP combines features of distance-vector and link-state protocols and was originally Cisco proprietary.
+    links:
+    - https://en.wikipedia.org/wiki/Enhanced_Interior_Gateway_Routing_Protocol
+  wrong:
+  - answer: A protocol for encrypting routing updates
+    explanation: EIGRP is a routing protocol; it can authenticate but doesn't inherently encrypt.
+  - answer: A wireless networking standard
+    explanation: EIGRP is a routing protocol, not a wireless standard.
+  - answer: A protocol for assigning IP addresses
+    explanation: This describes DHCP, not EIGRP.
+  - answer: A load balancing protocol
+    explanation: While EIGRP can use multiple paths, it's primarily a routing protocol.
+  - answer: A VPN tunneling protocol
+    explanation: EIGRP is a routing protocol, not a VPN protocol.
+
+- question: What is asymmetric routing?
+  points: 12
+  right:
+  - answer: When network traffic takes different paths for the forward and return directions
+    explanation: Asymmetric routing can occur in networks with multiple paths and may cause issues with stateful devices like firewalls.
+    links:
+    - https://en.wikipedia.org/wiki/Asymmetric_routing
+  wrong:
+  - answer: When encryption is different for sending and receiving
+    explanation: Asymmetric routing is about path differences, not encryption.
+  - answer: When bandwidth is different in each direction
+    explanation: This describes asymmetric bandwidth, not asymmetric routing.
+  - answer: When IPv4 is used in one direction and IPv6 in the other
+    explanation: This doesn't describe asymmetric routing.
+  - answer: When routing protocols are different on each router
+    explanation: Asymmetric routing is about traffic paths, not protocol differences.
+  - answer: When one direction uses wireless and the other uses wired
+    explanation: Asymmetric routing refers to path differences, not medium differences.
+
+- question: What is the purpose of BFD (Bidirectional Forwarding Detection)?
+  points: 12
+  right:
+  - answer: To provide fast failure detection of forwarding paths between two routers or systems
+    explanation: BFD offers sub-second failure detection, much faster than traditional routing protocol timers.
+    links:
+    - https://en.wikipedia.org/wiki/Bidirectional_Forwarding_Detection
+  wrong:
+  - answer: To encrypt bidirectional traffic
+    explanation: BFD is about failure detection, not encryption.
+  - answer: To balance traffic in both directions
+    explanation: This describes load balancing, not BFD.
+  - answer: To assign IP addresses bidirectionally
+    explanation: BFD is about failure detection, not IP assignment.
+  - answer: To compress traffic in both directions
+    explanation: BFD is about failure detection, not compression.
+  - answer: To synchronize routing tables
+    explanation: BFD detects failures; routing protocols synchronize tables.
+
+- question: What is LLDP?
+  points: 7
+  right:
+  - answer: Link Layer Discovery Protocol, a vendor-neutral protocol for network devices to advertise their identity and capabilities
+    explanation: LLDP allows devices to discover information about directly connected neighbors.
+    links:
+    - https://en.wikipedia.org/wiki/Link_Layer_Discovery_Protocol
+  wrong:
+  - answer: A routing protocol for large networks
+    explanation: LLDP is about device discovery, not routing.
+  - answer: A protocol for encrypting Layer 2 traffic
+    explanation: LLDP advertises device information, it doesn't encrypt.
+  - answer: A wireless security standard
+    explanation: LLDP is about device discovery, not wireless security.
+  - answer: A protocol for assigning IP addresses
+    explanation: This describes DHCP, not LLDP.
+  - answer: A protocol for load balancing
+    explanation: LLDP is about device discovery, not load balancing.
+
+- question: What is the difference between IDS and IPS?
+  points: 7
+  right:
+  - answer: IDS (Intrusion Detection System) monitors and alerts on threats, while IPS (Intrusion Prevention System) actively blocks threats
+    explanation: IDS is passive detection; IPS is active prevention, sitting inline and taking action against threats.
+    links:
+    - https://en.wikipedia.org/wiki/Intrusion_detection_system
+    - https://en.wikipedia.org/wiki/Intrusion_prevention_system
+  wrong:
+  - answer: IDS is faster than IPS
+    explanation: IPS may have slightly more latency, but this isn't the defining difference.
+  - answer: IPS only works with wireless networks
+    explanation: IPS works with both wired and wireless networks.
+  - answer: IDS blocks threats, IPS only detects them
+    explanation: This is backwards; IPS blocks, IDS detects.
+  - answer: IDS is hardware-based, IPS is software-based
+    explanation: Both can be hardware or software implementations.
+  - answer: They are the same system with different names
+    explanation: They have fundamentally different functions (detection vs. prevention).
+
+- question: What is NetFlow?
+  points: 12
+  right:
+  - answer: A network protocol for collecting IP traffic information and monitoring network flow data
+    explanation: NetFlow provides visibility into network traffic patterns, helping with troubleshooting, analysis, and security.
+    links:
+    - https://en.wikipedia.org/wiki/NetFlow
+  wrong:
+  - answer: A protocol for routing traffic between networks
+    explanation: NetFlow monitors traffic, it doesn't route it.
+  - answer: A protocol for encrypting network data
+    explanation: NetFlow is about traffic monitoring, not encryption.
+  - answer: A protocol for assigning IP addresses
+    explanation: This describes DHCP, not NetFlow.
+  - answer: A load balancing protocol
+    explanation: NetFlow monitors traffic, it doesn't balance it.
+  - answer: A wireless networking standard
+    explanation: NetFlow is a traffic monitoring protocol, not a wireless standard.
+
+- question: What is the purpose of LACP (Link Aggregation Control Protocol)?
+  points: 12
+  right:
+  - answer: To dynamically manage link aggregation by negotiating and maintaining bundled physical links
+    explanation: LACP is part of IEEE 802.3ad standard and automatically configures and monitors link aggregation.
+    links:
+    - https://en.wikipedia.org/wiki/Link_Aggregation_Control_Protocol
+  wrong:
+  - answer: To encrypt aggregated traffic
+    explanation: LACP manages link bundling, it doesn't encrypt traffic.
+  - answer: To assign IP addresses to aggregated links
+    explanation: LACP manages physical link bundling, not IP assignment.
+  - answer: To route traffic across aggregated links
+    explanation: LACP manages link aggregation, not routing decisions.
+  - answer: To compress traffic on aggregated links
+    explanation: LACP manages link bundling, not compression.
+  - answer: To provide wireless link aggregation only
+    explanation: LACP is primarily used for wired Ethernet link aggregation.
+
+- question: What is SNAT and DNAT?
+  points: 12
+  right:
+  - answer: Source NAT translates the source IP address, while Destination NAT translates the destination IP address
+    explanation: SNAT is typically used for outbound traffic (hiding internal IPs); DNAT for inbound traffic (port forwarding).
+    links:
+    - https://en.wikipedia.org/wiki/Network_address_translation
+  wrong:
+  - answer: SNAT is for IPv4, DNAT is for IPv6
+    explanation: Both SNAT and DNAT can be used with IPv4 and IPv6.
+  - answer: SNAT encrypts traffic, DNAT doesn't
+    explanation: Neither SNAT nor DNAT inherently provides encryption.
+  - answer: SNAT is faster than DNAT
+    explanation: Performance is not the defining difference between them.
+  - answer: DNAT translates source addresses, SNAT translates destination addresses
+    explanation: This is backwards; SNAT translates source, DNAT translates destination.
+  - answer: They are the same with different names
+    explanation: They translate different parts of the packet header.
+
+- question: What is the purpose of VRRP?
+  points: 12
+  right:
+  - answer: Virtual Router Redundancy Protocol provides automatic assignment of available routers to participating hosts for failover
+    explanation: VRRP is similar to HSRP but is an open standard (RFC 5798) for first-hop router redundancy.
+    links:
+    - https://en.wikipedia.org/wiki/Virtual_Router_Redundancy_Protocol
+  wrong:
+  - answer: To encrypt router communications
+    explanation: VRRP is about redundancy, not encryption.
+  - answer: To assign IP addresses to routers
+    explanation: VRRP creates virtual routers for redundancy, not IP assignment.
+  - answer: To route traffic between VLANs
+    explanation: VRRP provides redundancy, not inter-VLAN routing itself.
+  - answer: To load balance traffic across routers
+    explanation: VRRP provides failover redundancy, not load balancing.
+  - answer: To compress router traffic
+    explanation: VRRP is about redundancy, not compression.
+
+- question: What is IS-IS?
+  points: 12
+  right:
+  - answer: Intermediate System to Intermediate System, a link-state routing protocol similar to OSPF
+    explanation: IS-IS operates at Layer 2 and is commonly used in large service provider networks.
+    links:
+    - https://en.wikipedia.org/wiki/IS-IS
+  wrong:
+  - answer: A protocol for encrypting routing updates
+    explanation: IS-IS is a routing protocol, not an encryption protocol.
+  - answer: A wireless networking standard
+    explanation: IS-IS is a routing protocol, not a wireless standard.
+  - answer: A protocol for assigning IP addresses
+    explanation: This describes DHCP, not IS-IS.
+  - answer: A distance-vector routing protocol
+    explanation: IS-IS is a link-state protocol, not distance-vector.
+  - answer: A protocol for network monitoring
+    explanation: IS-IS is a routing protocol, not a monitoring protocol.
+
+- question: What is RSVP in networking?
+  points: 12
+  right:
+  - answer: Resource Reservation Protocol, used to reserve network resources along a path for quality of service
+    explanation: RSVP allows applications to request specific QoS levels for data flows.
+    links:
+    - https://en.wikipedia.org/wiki/Resource_Reservation_Protocol
+  wrong:
+  - answer: A protocol for routing traffic
+    explanation: RSVP reserves resources, it doesn't route traffic.
+  - answer: A protocol for encrypting data
+    explanation: RSVP is about resource reservation, not encryption.
+  - answer: A protocol for assigning IP addresses
+    explanation: This describes DHCP, not RSVP.
+  - answer: A protocol for wireless networking
+    explanation: RSVP can be used on any network type, it's not specific to wireless.
+  - answer: A protocol for load balancing
+    explanation: RSVP reserves resources, it doesn't balance load.
+
+- question: What is micro-segmentation?
+  points: 12
+  right:
+  - answer: A security technique that creates secure zones in data centers and cloud environments to isolate workloads
+    explanation: Micro-segmentation provides granular security policies down to individual workload level.
+    links:
+    - https://en.wikipedia.org/wiki/Network_segmentation
+  wrong:
+  - answer: Creating very small physical network segments with switches
+    explanation: Micro-segmentation is typically virtual/logical, not physical segmentation.
+  - answer: A method for dividing IP addresses into smaller subnets
+    explanation: While related to segmentation, this describes subnetting, not micro-segmentation.
+  - answer: A protocol for encrypting small data segments
+    explanation: Micro-segmentation is about security isolation, not a specific encryption protocol.
+  - answer: A technique for compressing small packets
+    explanation: Micro-segmentation is about security, not compression.
+  - answer: Dividing networks into microsecond time slots
+    explanation: Micro-segmentation is about security zones, not time division.
+
+- question: What is the purpose of CoS (Class of Service)?
+  points: 7
+  right:
+  - answer: To classify and prioritize traffic at Layer 2 using the 802.1p priority field in Ethernet frames
+    explanation: CoS provides QoS at the data link layer, typically using 3 bits for 8 priority levels.
+    links:
+    - https://en.wikipedia.org/wiki/Class_of_service
+  wrong:
+  - answer: To encrypt Layer 2 traffic
+    explanation: CoS is about traffic prioritization, not encryption.
+  - answer: To assign IP addresses based on service type
+    explanation: CoS prioritizes traffic, it doesn't assign IP addresses.
+  - answer: To route packets based on service type
+    explanation: CoS marks packets for prioritization, it doesn't route them.
+  - answer: To compress traffic by service class
+    explanation: CoS is about prioritization, not compression.
+  - answer: To authenticate users based on their service level
+    explanation: CoS is about traffic priority, not user authentication.
+
+- question: What is a fabric in networking?
+  points: 12
+  right:
+  - answer: A network architecture where devices connect with many parallel paths, providing high bandwidth and redundancy
+    explanation: Network fabrics typically use technologies like spine-and-leaf topology for scalable, high-performance data center networks.
+    links:
+    - https://en.wikipedia.org/wiki/Network_fabric
+  wrong:
+  - answer: The physical material used to make network cables
+    explanation: In networking terminology, fabric refers to architecture, not physical materials.
+  - answer: A protocol for encrypting network traffic
+    explanation: Fabric describes architecture, not an encryption protocol.
+  - answer: A type of wireless networking standard
+    explanation: Fabric is an architectural concept, not specific to wireless.
+  - answer: A protocol for assigning IP addresses
+    explanation: Fabric describes architecture, not an IP assignment protocol.
+  - answer: A security feature that filters traffic
+    explanation: Fabric describes network architecture, not a security filter.
+
+- question: What is the difference between north-south and east-west traffic?
+  points: 12
+  right:
+  - answer: North-south traffic moves between the data center and external networks, while east-west traffic moves between servers within the data center
+    explanation: Modern data centers have significant east-west traffic due to distributed applications and microservices.
+    links:
+    - https://en.wikipedia.org/wiki/North-south_traffic
+  wrong:
+  - answer: North-south traffic is faster than east-west traffic
+    explanation: Speed depends on infrastructure; this isn't the defining difference.
+  - answer: North-south uses IPv4, east-west uses IPv6
+    explanation: Both directions can use either IP version.
+  - answer: East-west traffic goes to external networks
+    explanation: This is backwards; east-west is internal traffic.
+  - answer: North-south traffic is only wireless
+    explanation: These terms describe traffic direction, not the medium.
+  - answer: They refer to geographic locations of servers
+    explanation: These are metaphorical terms for traffic direction, not actual geography.
+
+- question: What is zero-trust networking?
+  points: 12
+  right:
+  - answer: A security model that assumes no user or device should be trusted by default, requiring verification for every access request
+    explanation: Zero-trust requires continuous verification regardless of location, eliminating implicit trust.
+    links:
+    - https://en.wikipedia.org/wiki/Zero_trust_security_model
+  wrong:
+  - answer: A network with zero latency
+    explanation: Zero-trust refers to a security model, not network performance.
+  - answer: A network that doesn't use encryption
+    explanation: Zero-trust actually emphasizes encryption; the term refers to trust model.
+  - answer: A network with no firewalls
+    explanation: Zero-trust uses security controls; the term refers to the trust model.
+  - answer: A network that doesn't require passwords
+    explanation: Zero-trust emphasizes authentication; the term refers to not automatically trusting.
+  - answer: A network with zero configuration
+    explanation: Zero-trust refers to a security model, not configuration requirements.
+
+- question: What is intent-based networking?
+  points: 20
+  right:
+  - answer: A network architecture that uses AI and machine learning to automatically configure and manage networks based on business intent
+    explanation: Intent-based networking translates business policies into network configurations and continuously validates that intent is achieved.
+    links:
+    - https://en.wikipedia.org/wiki/Intent-based_networking
+  wrong:
+  - answer: A network that reads users' intentions
+    explanation: Intent refers to business/operational intent, not human thought-reading.
+  - answer: A protocol for faster routing decisions
+    explanation: Intent-based networking is an architectural approach, not a specific protocol.
+  - answer: A network that only uses wireless connections
+    explanation: Intent-based networking is an approach applicable to any network type.
+  - answer: A security model for preventing intrusions
+    explanation: While it can enhance security, it's primarily about automated network management.
+  - answer: A network topology design pattern
+    explanation: It's an architectural approach to network management, not just a topology.
+
+- question: What is network disaggregation?
+  points: 20
+  right:
+  - answer: Separating network hardware from software, allowing the use of generic hardware with third-party network operating systems
+    explanation: Disaggregation provides flexibility, reduces vendor lock-in, and can lower costs by decoupling hardware and software.
+    links:
+    - https://en.wikipedia.org/wiki/Software-defined_networking#Network_disaggregation
+  wrong:
+  - answer: Physically separating network segments for security
+    explanation: This describes network segmentation, not disaggregation.
+  - answer: Removing aggregation from link bundles
+    explanation: Disaggregation refers to separating hardware and software, not link aggregation.
+  - answer: A protocol for breaking up large packets
+    explanation: Disaggregation is about hardware/software separation, not packet fragmentation.
+  - answer: Separating IPv4 and IPv6 traffic
+    explanation: Disaggregation refers to hardware/software separation, not IP version separation.
+  - answer: A method for disconnecting network devices
+    explanation: Disaggregation is about architectural separation, not physical disconnection.
+
+- question: What is segment routing?
+  points: 20
+  right:
+  - answer: A source routing technique that encodes the path as a list of segments in the packet header, simplifying network operations
+    explanation: Segment routing provides traffic engineering and service chaining without maintaining per-flow state in the network.
+    links:
+    - https://en.wikipedia.org/wiki/Segment_routing
+  wrong:
+  - answer: A method for dividing networks into segments
+    explanation: While the name is similar, segment routing is about encoding paths, not network segmentation.
+  - answer: A protocol for encrypting route information
+    explanation: Segment routing is about path encoding, not encryption.
+  - answer: A technique for compressing routing tables
+    explanation: Segment routing simplifies operations but isn't primarily about compression.
+  - answer: A method for isolating faulty network segments
+    explanation: Segment routing is about path control, not fault isolation.
+  - answer: A wireless routing protocol
+    explanation: Segment routing is applicable to any network type, not specific to wireless.
+
+- question: What is the role of the underlay and overlay in network virtualization?
+  points: 12
+  right:
+  - answer: The underlay provides physical connectivity, while the overlay creates virtual networks on top using encapsulation
+    explanation: Underlay handles transport; overlay creates logical networks independent of physical topology.
+    links:
+    - https://en.wikipedia.org/wiki/Network_overlay
+  wrong:
+  - answer: Underlay is virtual, overlay is physical
+    explanation: This is backwards; underlay is physical, overlay is virtual.
+  - answer: Underlay uses IPv6, overlay uses IPv4
+    explanation: Both layers can use either IP version.
+  - answer: Overlay provides physical connectivity only
+    explanation: This is backwards; overlay provides virtual connectivity.
+  - answer: Underlay is only for wireless networks
+    explanation: Underlay can be any physical network infrastructure.
+  - answer: They are the same layer with different names
+    explanation: They are distinctly different layers with different functions.
+
+- question: What is EVPN?
+  points: 20
+  right:
+  - answer: Ethernet VPN, a standards-based technology for Layer 2 and Layer 3 VPN services over IP/MPLS networks
+    explanation: EVPN provides MAC and IP learning, mobility, and multi-tenancy in data center and service provider networks.
+    links:
+    - https://en.wikipedia.org/wiki/Ethernet_VPN
+  wrong:
+  - answer: A protocol for encrypting VPN traffic
+    explanation: EVPN is about Ethernet virtualization, not encryption specifically.
+  - answer: A wireless VPN standard
+    explanation: EVPN can work over any underlay, not specific to wireless.
+  - answer: A protocol for assigning VPN IP addresses
+    explanation: EVPN is about Ethernet virtualization, not just IP assignment.
+  - answer: A replacement for all other VPN technologies
+    explanation: EVPN is powerful but doesn't replace all VPN use cases.
+  - answer: A security protocol for validating VPN users
+    explanation: EVPN is about network virtualization, not user authentication.
+
+questions:
+- question: Which of the following are true statements about TCP?
+  points: 7
+  right:
+  - answer: TCP provides reliable, ordered delivery of data
+    explanation: TCP uses acknowledgments and sequence numbers to ensure data arrives correctly and in order.
+    links:
+    - https://en.wikipedia.org/wiki/Transmission_Control_Protocol
+  - answer: TCP uses a three-way handshake to establish connections
+    explanation: TCP establishes connections using SYN, SYN-ACK, and ACK packets before data transfer begins.
+    links:
+    - https://en.wikipedia.org/wiki/Transmission_Control_Protocol#Connection_establishment
+  - answer: TCP includes flow control mechanisms
+    explanation: TCP uses sliding windows and other mechanisms to prevent overwhelming the receiver with data.
+    links:
+    - https://en.wikipedia.org/wiki/Transmission_Control_Protocol#Flow_control
+  - answer: TCP is connection-oriented
+    explanation: TCP establishes and maintains a connection between sender and receiver throughout communication.
+    links:
+    - https://en.wikipedia.org/wiki/Transmission_Control_Protocol
+  wrong:
+  - answer: TCP is faster than UDP for all applications
+    explanation: TCP has more overhead than UDP due to reliability features, making it slower for some use cases.
+  - answer: TCP is connectionless
+    explanation: TCP is connection-oriented, not connectionless; UDP is connectionless.
+  - answer: TCP does not guarantee delivery
+    explanation: TCP specifically provides guaranteed delivery through acknowledgments and retransmissions.
+  - answer: TCP operates at the Network Layer
+    explanation: TCP operates at the Transport Layer (Layer 4), not the Network Layer (Layer 3).
+  - answer: TCP uses only port 80
+    explanation: TCP can use any port from 0 to 65535; port 80 is just one commonly used port for HTTP.
+
+- question: Which of the following are false statements about DNS?
+  points: 4
+  right:
+  - answer: DNS encrypts all query traffic by default
+    explanation: Standard DNS queries are unencrypted; DNS over HTTPS (DoH) or DNS over TLS (DoT) are needed for encryption.
+  - answer: DNS runs on port 80
+    explanation: DNS typically uses port 53, not port 80 (which is used by HTTP).
+  - answer: DNS servers store all domain names in a single central database
+    explanation: DNS is distributed hierarchically across many servers worldwide, not centralized.
+  - answer: DNS only works with IPv4 addresses
+    explanation: DNS works with both IPv4 (A records) and IPv6 (AAAA records) addresses.
+  - answer: DNS queries always use TCP
+    explanation: DNS typically uses UDP for queries; TCP is used for zone transfers and when responses exceed 512 bytes.
+  wrong:
+  - answer: DNS translates domain names to IP addresses
+    explanation: This is the primary function of DNS, so this statement is true, not false.
+  - answer: DNS uses a hierarchical naming structure
+    explanation: DNS uses a hierarchical structure with root, top-level, and sub-domains, so this is true.
+  - answer: DNS servers can cache query results
+    explanation: DNS caching is a fundamental feature to improve performance, so this is true.
+  - answer: DNS uses port 53 by default
+    explanation: Port 53 is the standard DNS port, so this statement is true, not false.
+  - answer: DNS records have a Time To Live (TTL) value
+    explanation: TTL determines how long records can be cached, so this statement is true.
+
+- question: Which of the following are true statements about VLANs?
+  points: 7
+  right:
+  - answer: VLANs can segment a physical network into logical broadcast domains
+    explanation: VLANs create separate broadcast domains within a single physical network infrastructure.
+    links:
+    - https://en.wikipedia.org/wiki/Virtual_LAN
+  - answer: VLANs operate at Layer 2 of the OSI model
+    explanation: VLANs are a Data Link Layer (Layer 2) technology using 802.1Q tagging.
+    links:
+    - https://en.wikipedia.org/wiki/Virtual_LAN
+  - answer: Devices in different VLANs require a Layer 3 device to communicate
+    explanation: Inter-VLAN communication requires routing, typically provided by a router or Layer 3 switch.
+    links:
+    - https://en.wikipedia.org/wiki/Virtual_LAN#Inter-VLAN_routing
+  - answer: VLANs can improve network security by isolating traffic
+    explanation: VLANs provide logical separation that can enhance security by preventing direct communication between segments.
+    links:
+    - https://en.wikipedia.org/wiki/Virtual_LAN
+  wrong:
+  - answer: VLANs require separate physical switches for each VLAN
+    explanation: VLANs are logical separations on the same physical infrastructure; separate switches are not required.
+  - answer: A single VLAN can only exist on one switch
+    explanation: VLANs can span multiple switches using trunk links with 802.1Q tagging.
+  - answer: VLANs automatically encrypt all traffic
+    explanation: VLANs provide logical separation but do not inherently provide encryption.
+  - answer: VLANs increase physical bandwidth
+    explanation: VLANs organize traffic logically but don't increase the physical bandwidth capacity.
+  - answer: All devices can communicate freely across VLANs without routing
+    explanation: Devices in different VLANs require a Layer 3 device (router) to communicate with each other.
+
+- question: Which of the following are false statements about IPv6?
+  points: 7
+  right:
+  - answer: IPv6 addresses are 32 bits long
+    explanation: IPv6 addresses are 128 bits long, not 32 bits (IPv4 addresses are 32 bits).
+  - answer: IPv6 uses broadcast addresses like IPv4
+    explanation: IPv6 eliminated broadcast and uses multicast instead, including special multicast addresses.
+  - answer: IPv6 requires NAT for most home networks
+    explanation: IPv6 provides enough addresses to eliminate the need for NAT in most scenarios.
+  - answer: IPv6 is slower than IPv4
+    explanation: IPv6 can actually be faster due to more efficient routing and simplified header structure.
+  - answer: IPv6 adoption is complete worldwide
+    explanation: While adoption is growing, IPv6 is not yet universally deployed; many networks still use IPv4.
+  wrong:
+  - answer: IPv6 uses hexadecimal notation
+    explanation: IPv6 addresses are written in hexadecimal, separated by colons, so this is true.
+  - answer: IPv6 provides a much larger address space than IPv4
+    explanation: IPv6 provides 2^128 addresses compared to IPv4's 2^32, so this is true.
+  - answer: IPv6 includes IPSec support in its specification
+    explanation: IPSec was mandatory in the original IPv6 specification (now recommended), so this is true.
+  - answer: IPv6 simplifies header structure compared to IPv4
+    explanation: IPv6 has a simpler, more efficient header structure, so this is true.
+  - answer: IPv6 uses AAAA records in DNS
+    explanation: IPv6 addresses are stored in AAAA DNS records, so this is true.
+
+- question: Which of the following are true statements about firewalls?
+  points: 4
+  right:
+  - answer: Firewalls can operate at multiple layers of the OSI model
+    explanation: Firewalls can work at different layers, from packet filtering (Layer 3-4) to application firewalls (Layer 7).
+    links:
+    - https://en.wikipedia.org/wiki/Firewall_(computing)
+  - answer: Firewalls can filter traffic based on IP addresses and ports
+    explanation: Basic firewall functionality includes filtering based on source/destination IPs and port numbers.
+    links:
+    - https://en.wikipedia.org/wiki/Firewall_(computing)
+  - answer: Stateful firewalls track connection states
+    explanation: Stateful firewalls maintain information about active connections to make filtering decisions.
+    links:
+    - https://en.wikipedia.org/wiki/Stateful_firewall
+  - answer: Firewalls can be implemented in hardware or software
+    explanation: Firewalls can be dedicated hardware appliances, software running on servers, or cloud-based services.
+    links:
+    - https://en.wikipedia.org/wiki/Firewall_(computing)
+  wrong:
+  - answer: Firewalls automatically remove all viruses from network traffic
+    explanation: Firewalls filter traffic but don't necessarily scan for or remove viruses; that's antivirus functionality.
+  - answer: Firewalls make encryption unnecessary
+    explanation: Firewalls provide access control but don't replace the need for encryption.
+  - answer: Firewalls only work with TCP traffic
+    explanation: Firewalls can filter TCP, UDP, ICMP, and other protocol traffic.
+  - answer: A single firewall provides complete network security
+    explanation: Firewalls are one component of security; defense-in-depth requires multiple security layers.
+  - answer: Firewalls prevent all types of cyber attacks
+    explanation: Firewalls provide perimeter security but cannot prevent all attacks, especially those from inside or through allowed channels.
+
+- question: Which of the following are false statements about subnetting?
+  points: 7
+  right:
+  - answer: Subnetting reduces the total number of available host addresses
+    explanation: This is true, not false; subnet and broadcast addresses reduce usable hosts, making this a wrong answer for false statements.
+  - answer: All subnet masks must use consecutive 1s followed by consecutive 0s
+    explanation: This is true, not false; valid subnet masks use contiguous 1s, making this a wrong answer.
+  - answer: The subnet mask 255.255.255.128 provides 128 host addresses
+    explanation: This is false and correct for this question; it provides 126 usable hosts (128 total minus network and broadcast).
+  - answer: Subnetting can only be done with Class C networks
+    explanation: This is false; subnetting can be applied to any IP address class (A, B, or C).
+  - answer: A /24 network and a 255.255.255.0 subnet mask are different things
+    explanation: This is false; they represent the same subnet mask, just in different notations (CIDR vs dotted decimal).
+  wrong:
+  - answer: Subnetting divides a network into smaller sub-networks
+    explanation: This is the definition of subnetting, so this statement is true, not false.
+  - answer: Subnet masks determine the network and host portions of an IP address
+    explanation: This is the function of subnet masks, so this statement is true, not false.
+  - answer: CIDR notation uses a slash followed by the number of network bits
+    explanation: This is how CIDR notation works (e.g., /24), so this statement is true, not false.
+  - answer: Subnetting can improve network performance by reducing broadcast domains
+    explanation: This is a benefit of subnetting, so this statement is true, not false.
+  - answer: Variable Length Subnet Masking (VLSM) allows different subnet sizes
+    explanation: VLSM does allow for flexible subnet sizing, so this statement is true, not false.
+
+- question: Which of the following are true statements about DHCP?
+  points: 4
+  right:
+  - answer: DHCP uses a four-step process (DORA) to assign IP addresses
+    explanation: DHCP uses Discover, Offer, Request, and Acknowledge messages to assign addresses.
+    links:
+    - https://en.wikipedia.org/wiki/Dynamic_Host_Configuration_Protocol
+  - answer: DHCP can provide more than just IP addresses to clients
+    explanation: DHCP can provide subnet mask, default gateway, DNS servers, and other network configuration options.
+    links:
+    - https://en.wikipedia.org/wiki/Dynamic_Host_Configuration_Protocol
+  - answer: DHCP leases have expiration times
+    explanation: IP addresses are leased for specific time periods and must be renewed or will expire.
+    links:
+    - https://en.wikipedia.org/wiki/Dynamic_Host_Configuration_Protocol
+  - answer: DHCP uses UDP as its transport protocol
+    explanation: DHCP uses UDP ports 67 (server) and 68 (client) for communication.
+    links:
+    - https://en.wikipedia.org/wiki/Dynamic_Host_Configuration_Protocol
+  wrong:
+  - answer: DHCP assigns permanent IP addresses that never change
+    explanation: DHCP assigns temporary leases, not permanent addresses; static assignment provides permanent IPs.
+  - answer: DHCP operates at Layer 1 of the OSI model
+    explanation: DHCP operates at the Application Layer (Layer 7), not the Physical Layer.
+  - answer: DHCP requires manual configuration on every device
+    explanation: DHCP automates IP configuration, eliminating the need for manual configuration.
+  - answer: Only one DHCP server can exist on a network
+    explanation: Multiple DHCP servers can exist for redundancy, though care must be taken to avoid conflicts.
+  - answer: DHCP only works with IPv4
+    explanation: DHCPv6 exists for IPv6 networks, though IPv6 also uses SLAAC for address autoconfiguration.
+
+- question: Which of the following are false statements about wireless networking?
+  points: 4
+  right:
+  - answer: All Wi-Fi networks use the same channel and never interfere
+    explanation: This is false; Wi-Fi networks can use overlapping channels and frequently interfere with each other.
+  - answer: WEP is the most secure wireless encryption standard
+    explanation: This is false; WEP is outdated and easily cracked; WPA2 or WPA3 should be used instead.
+  - answer: Wireless networks always have the same speed as wired networks
+    explanation: This is false; wireless speeds are typically lower and more variable than wired connections.
+  - answer: 5 GHz Wi-Fi signals travel farther than 2.4 GHz signals
+    explanation: This is false; 2.4 GHz signals actually travel farther and penetrate obstacles better than 5 GHz.
+  - answer: A single access point can support unlimited concurrent users without performance degradation
+    explanation: This is false; access points have practical limits on concurrent users before performance degrades.
+  wrong:
+  - answer: Wireless networks use radio frequencies to transmit data
+    explanation: This is true; Wi-Fi uses radio frequencies in the 2.4 GHz and 5 GHz bands.
+  - answer: SSID is the network name broadcast by access points
+    explanation: This is true; SSID (Service Set Identifier) is the network name.
+  - answer: Wireless networks can use WPA3 for security
+    explanation: This is true; WPA3 is the latest Wi-Fi security standard.
+  - answer: Obstacles like walls can reduce wireless signal strength
+    explanation: This is true; physical obstacles attenuate wireless signals.
+  - answer: Multiple wireless standards exist (802.11a/b/g/n/ac/ax)
+    explanation: This is true; various 802.11 standards define different wireless capabilities.
+
+- question: Which of the following are true statements about the OSI model?
+  points: 4
+  right:
+  - answer: The OSI model has seven layers
+    explanation: The OSI model consists of seven layers from Physical (1) to Application (7).
+    links:
+    - https://en.wikipedia.org/wiki/OSI_model
+  - answer: Each layer provides services to the layer above it
+    explanation: Each OSI layer provides an abstraction and services to the layer directly above it.
+    links:
+    - https://en.wikipedia.org/wiki/OSI_model
+  - answer: The Transport Layer is Layer 4
+    explanation: The Transport Layer, which includes TCP and UDP, is the fourth layer of the OSI model.
+    links:
+    - https://en.wikipedia.org/wiki/OSI_model
+  - answer: Encapsulation occurs as data moves down the layers
+    explanation: Each layer adds its own header information as data moves from Layer 7 to Layer 1.
+    links:
+    - https://en.wikipedia.org/wiki/OSI_model
+  wrong:
+  - answer: The OSI model is a physical implementation used in all networks
+    explanation: The OSI model is a conceptual framework, not a physical implementation; TCP/IP is more commonly implemented.
+  - answer: The Application Layer is Layer 1
+    explanation: The Application Layer is Layer 7, the top layer; the Physical Layer is Layer 1.
+  - answer: The OSI model has only four layers
+    explanation: The OSI model has seven layers; you might be thinking of the TCP/IP model which has four.
+  - answer: Data travels only upward through the OSI layers
+    explanation: Data travels down the layers when sending and up the layers when receiving.
+  - answer: All layers use the same protocols
+    explanation: Each layer has its own specific protocols (e.g., HTTP at Layer 7, TCP at Layer 4, IP at Layer 3).
+
+- question: Which of the following are false statements about MAC addresses?
+  points: 4
+  right:
+  - answer: MAC addresses are assigned dynamically by DHCP
+    explanation: This is false; MAC addresses are typically burned into the NIC by the manufacturer, not assigned by DHCP.
+  - answer: MAC addresses work at Layer 3 of the OSI model
+    explanation: This is false; MAC addresses work at Layer 2 (Data Link Layer), not Layer 3 (Network Layer).
+  - answer: All MAC addresses on the internet must be unique
+    explanation: This is false; MAC addresses only need to be unique on a local network segment, not globally on the internet.
+  - answer: MAC addresses are 128 bits long
+    explanation: This is false; MAC addresses are 48 bits (6 bytes) long, typically shown as 12 hexadecimal digits.
+  - answer: MAC addresses can route packets between different networks
+    explanation: This is false; MAC addresses work at Layer 2 for local delivery; routing between networks requires Layer 3 IP addresses.
+  wrong:
+  - answer: MAC addresses are also called physical addresses
+    explanation: This is true; MAC addresses are also known as physical or hardware addresses.
+  - answer: MAC addresses are typically represented in hexadecimal
+    explanation: This is true; MAC addresses use hexadecimal notation (e.g., 00:1A:2B:3C:4D:5E).
+  - answer: The first half of a MAC address identifies the manufacturer
+    explanation: This is true; the first 24 bits are the OUI (Organizationally Unique Identifier) assigned to manufacturers.
+  - answer: ARP is used to resolve IP addresses to MAC addresses
+    explanation: This is true; ARP (Address Resolution Protocol) maps IP addresses to MAC addresses.
+  - answer: Switches use MAC addresses to forward frames
+    explanation: This is true; Layer 2 switches build MAC address tables to forward frames to the correct port.
+
+- question: Which of the following are true statements about network cables?
+  points: 2
+  right:
+  - answer: Cat6 cable supports higher speeds than Cat5e
+    explanation: Cat6 supports up to 10 Gbps over short distances, while Cat5e supports up to 1 Gbps.
+    links:
+    - https://en.wikipedia.org/wiki/Category_6_cable
+  - answer: Fiber optic cables use light to transmit data
+    explanation: Fiber optic cables transmit data as pulses of light through glass or plastic fibers.
+    links:
+    - https://en.wikipedia.org/wiki/Fiber-optic_cable
+  - answer: Crossover cables were traditionally used to connect similar devices
+    explanation: Crossover cables connect similar devices (switch to switch, PC to PC) by crossing transmit and receive pairs.
+    links:
+    - https://en.wikipedia.org/wiki/Ethernet_crossover_cable
+  - answer: Fiber optic cables are immune to electromagnetic interference
+    explanation: Since fiber uses light instead of electrical signals, it's not affected by EMI.
+    links:
+    - https://en.wikipedia.org/wiki/Fiber-optic_cable
+  wrong:
+  - answer: All Ethernet cables use fiber optic technology
+    explanation: Most Ethernet cables use copper (twisted pair), not fiber optics.
+  - answer: Network cables can be infinitely long without signal degradation
+    explanation: All cables have maximum length specifications beyond which signals degrade.
+  - answer: Single-mode fiber has a larger core diameter than multi-mode fiber
+    explanation: This is backwards; single-mode has a smaller core (8-10 microns) than multi-mode (50-62.5 microns).
+  - answer: Cat5e cable can reliably transmit at 10 Gbps over 100 meters
+    explanation: Cat5e is rated for 1 Gbps; 10 Gbps typically requires Cat6a or higher over 100 meters.
+  - answer: Coaxial cable is the most common cable type for modern Ethernet networks
+    explanation: Twisted pair (Cat5e/Cat6) is the most common; coaxial is largely obsolete for Ethernet.
+
+- question: Which of the following are false statements about routing protocols?
+  points: 7
+  right:
+  - answer: All routing protocols use the same metric for path selection
+    explanation: This is false; different protocols use different metrics (RIP uses hop count, OSPF uses cost, EIGRP uses composite metric).
+  - answer: Static routing automatically adapts to network topology changes
+    explanation: This is false; static routes are manually configured and don't automatically adapt to changes.
+  - answer: RIP supports networks with more than 15 hops
+    explanation: This is false; RIP has a maximum hop count of 15, considering 16 as unreachable.
+  - answer: Distance-vector protocols have a complete view of the entire network topology
+    explanation: This is false; distance-vector protocols only know about neighbors; link-state protocols have full topology views.
+  - answer: BGP is primarily used within a single organization's network
+    explanation: This is false; BGP is an exterior gateway protocol used between autonomous systems, not within them.
+  wrong:
+  - answer: OSPF is a link-state routing protocol
+    explanation: This is true; OSPF uses link-state advertisements to build a complete network topology.
+  - answer: Routing protocols help routers share network reachability information
+    explanation: This is true; the purpose of routing protocols is to exchange routing information.
+  - answer: Administrative distance is used to select between routes learned from different sources
+    explanation: This is true; administrative distance determines preference when multiple routing sources provide routes to the same destination.
+  - answer: Convergence time refers to how long it takes for all routers to agree on network topology
+    explanation: This is true; convergence is when all routers have consistent routing information.
+  - answer: Dynamic routing protocols can be classified as interior or exterior gateway protocols
+    explanation: This is true; IGPs work within an autonomous system, EGPs work between autonomous systems.
+
+- question: Which of the following are true statements about network security protocols?
+  points: 7
+  right:
+  - answer: SSL and TLS provide encryption for data in transit
+    explanation: SSL/TLS protocols encrypt communication between clients and servers to protect data confidentiality.
+    links:
+    - https://en.wikipedia.org/wiki/Transport_Layer_Security
+  - answer: IPSec can operate in transport mode or tunnel mode
+    explanation: IPSec has two modes; transport encrypts only the payload, tunnel encrypts the entire packet.
+    links:
+    - https://en.wikipedia.org/wiki/IPsec
+  - answer: WPA2 uses AES encryption for wireless security
+    explanation: WPA2 uses the Advanced Encryption Standard (AES) for strong wireless network security.
+    links:
+    - https://en.wikipedia.org/wiki/Wi-Fi_Protected_Access
+  - answer: SSH provides encrypted remote access to network devices
+    explanation: SSH (Secure Shell) provides encrypted terminal access and secure file transfer capabilities.
+    links:
+    - https://en.wikipedia.org/wiki/Secure_Shell
+  wrong:
+  - answer: HTTP provides encrypted communication by default
+    explanation: Standard HTTP is unencrypted; HTTPS (HTTP with SSL/TLS) is needed for encryption.
+  - answer: All VPNs use the same encryption protocol
+    explanation: VPNs can use various protocols including IPSec, SSL/TLS, PPTP, L2TP, and others.
+  - answer: WEP is more secure than WPA3
+    explanation: WEP is the oldest and least secure; WPA3 is the newest and most secure Wi-Fi encryption.
+  - answer: Digital certificates are not used in HTTPS
+    explanation: HTTPS relies on digital certificates to authenticate servers and establish encrypted connections.
+  - answer: Two-factor authentication is only used for physical access
+    explanation: Two-factor authentication is widely used for network and application access, not just physical access.
+
+- question: Which of the following are false statements about QoS (Quality of Service)?
+  points: 7
+  right:
+  - answer: QoS increases the total bandwidth available on a network
+    explanation: This is false; QoS manages and prioritizes existing bandwidth but doesn't increase physical capacity.
+  - answer: All traffic should always be given the same priority
+    explanation: This is false; QoS specifically involves prioritizing different types of traffic based on requirements.
+  - answer: QoS is only necessary on networks with unlimited bandwidth
+    explanation: This is false; QoS is needed when bandwidth is limited to ensure critical applications get priority.
+  - answer: Implementing QoS makes network configuration simpler
+    explanation: This is false; QoS typically adds complexity to network configuration and management.
+  - answer: QoS guarantees zero packet loss for all applications
+    explanation: This is false; QoS improves service for prioritized traffic but cannot guarantee zero packet loss.
+  wrong:
+  - answer: QoS can prioritize voice and video traffic over email
+    explanation: This is true; QoS allows prioritization of real-time applications over less time-sensitive ones.
+  - answer: Traffic shaping and traffic policing are QoS mechanisms
+    explanation: This is true; both are techniques used to control traffic flow and enforce QoS policies.
+  - answer: QoS can mark packets with priority values
+    explanation: This is true; mechanisms like DSCP and CoS are used to mark packets for priority handling.
+  - answer: QoS can help reduce latency and jitter for real-time applications
+    explanation: This is true; QoS prioritization helps maintain consistent performance for latency-sensitive applications.
+  - answer: Queuing mechanisms are part of QoS implementation
+    explanation: This is true; different queuing algorithms determine how packets are processed and forwarded.
+
+- question: Which of the following are true statements about NAT (Network Address Translation)?
+  points: 4
+  right:
+  - answer: NAT allows multiple devices to share a single public IP address
+    explanation: NAT translates multiple private IP addresses to a single or pool of public IP addresses.
+    links:
+    - https://en.wikipedia.org/wiki/Network_address_translation
+  - answer: NAT operates at Layer 3 and sometimes Layer 4 of the OSI model
+    explanation: NAT works with IP addresses (Layer 3) and often port numbers (Layer 4) for PAT/NAPT.
+    links:
+    - https://en.wikipedia.org/wiki/Network_address_translation
+  - answer: PAT (Port Address Translation) is a type of NAT
+    explanation: PAT, also called NAT overload, uses port numbers to multiplex multiple private addresses to one public address.
+    links:
+    - https://en.wikipedia.org/wiki/Network_address_translation
+  - answer: NAT can complicate some applications that embed IP addresses in their payload
+    explanation: Applications like FTP and SIP can have issues with NAT because they include IP addresses in application data.
+    links:
+    - https://en.wikipedia.org/wiki/Network_address_translation
+  wrong:
+  - answer: NAT is required for all internet connections
+    explanation: NAT is commonly used but not required; with sufficient public IPs, devices can connect directly.
+  - answer: NAT provides strong security equivalent to a firewall
+    explanation: While NAT provides some obscurity, it's not a security solution; dedicated firewalls are needed.
+  - answer: NAT works by encrypting IP addresses
+    explanation: NAT translates addresses but doesn't encrypt them.
+  - answer: NAT is unnecessary with IPv6
+    explanation: While IPv6 reduces the need for NAT due to abundant addresses, this statement is too absolute; NAT can still be used.
+  - answer: Static NAT always uses port translation
+    explanation: Static NAT creates one-to-one mappings between private and public IPs without necessarily using port translation.
+
+- question: Which of the following are false statements about network troubleshooting tools?
+  points: 4
+  right:
+  - answer: Ping can diagnose all types of network problems
+    explanation: This is false; ping only tests basic connectivity and doesn't diagnose application issues, DNS problems, or many other issues.
+  - answer: Traceroute shows the exact physical path cables take
+    explanation: This is false; traceroute shows logical router hops, not the physical cable routing.
+  - answer: Wireshark can fix network problems automatically
+    explanation: This is false; Wireshark is a packet analyzer for diagnosis but doesn't automatically fix problems.
+  - answer: A cable tester can diagnose Layer 3 routing problems
+    explanation: This is false; cable testers check physical layer issues, not routing (which is Layer 3).
+  - answer: Netstat only works on Cisco devices
+    explanation: This is false; netstat is a command-line tool available on most operating systems, not Cisco-specific.
+  wrong:
+  - answer: Wireshark can capture and analyze network packets
+    explanation: This is true; Wireshark is a packet analyzer that captures and displays network traffic details.
+  - answer: Nslookup or dig can be used to troubleshoot DNS issues
+    explanation: This is true; these tools query DNS servers to diagnose name resolution problems.
+  - answer: Traceroute can help identify where packets are being dropped
+    explanation: This is true; traceroute shows the path and can reveal where connectivity fails.
+  - answer: Iperf can measure network throughput
+    explanation: This is true; iperf is a tool specifically designed to measure network bandwidth and performance.
+  - answer: A tone generator can help locate physical cables
+    explanation: This is true; tone generators and probes are used to trace physical cables in walls or cable bundles.
+
+- question: Which of the following are true statements about load balancing?
+  points: 7
+  right:
+  - answer: Load balancers can distribute traffic across multiple servers
+    explanation: Load balancers distribute incoming requests across a pool of servers to optimize resource utilization.
+    links:
+    - https://en.wikipedia.org/wiki/Load_balancing_(computing)
+  - answer: Load balancers can improve application availability and reliability
+    explanation: By distributing load and providing failover, load balancers increase service uptime and reliability.
+    links:
+    - https://en.wikipedia.org/wiki/Load_balancing_(computing)
+  - answer: Load balancers can operate at different layers of the OSI model
+    explanation: Layer 4 load balancers work with TCP/UDP, Layer 7 load balancers work with application protocols like HTTP.
+    links:
+    - https://en.wikipedia.org/wiki/Load_balancing_(computing)
+  - answer: Session persistence can be configured on load balancers
+    explanation: Session persistence (sticky sessions) ensures a user's requests go to the same server for session continuity.
+    links:
+    - https://en.wikipedia.org/wiki/Load_balancing_(computing)
+  wrong:
+  - answer: Load balancers always reduce network latency
+    explanation: While load balancers can improve performance, they add a hop which may slightly increase latency.
+  - answer: Only one load balancing algorithm exists
+    explanation: Multiple algorithms exist including round-robin, least connections, IP hash, and weighted distributions.
+  - answer: Load balancers can only distribute HTTP traffic
+    explanation: Load balancers can distribute many protocols including HTTPS, TCP, UDP, and database connections.
+  - answer: Load balancers require all backend servers to be identical
+    explanation: While often similar, servers can have different capacities with weighted load balancing.
+  - answer: Load balancers eliminate the need for redundancy
+    explanation: Load balancers themselves need redundancy; they distribute load but don't eliminate the need for redundant infrastructure.
+
+- question: Which of the following are false statements about cloud networking?
+  points: 7
+  right:
+  - answer: Cloud networks don't require any physical infrastructure
+    explanation: This is false; cloud services run on physical servers, storage, and networking equipment in data centers.
+  - answer: Cloud networks are always slower than on-premises networks
+    explanation: This is false; cloud networks can offer high performance, sometimes exceeding on-premises capabilities.
+  - answer: Virtual networks in the cloud don't use real IP addresses
+    explanation: This is false; cloud virtual networks use real IP addresses, both private and public.
+  - answer: All data in cloud networks is automatically encrypted
+    explanation: This is false; encryption must be explicitly configured; not all cloud traffic is encrypted by default.
+  - answer: Cloud networking eliminates all security concerns
+    explanation: This is false; cloud networking introduces unique security considerations and shared responsibility models.
+  wrong:
+  - answer: Virtual networks can be created in cloud environments
+    explanation: This is true; VPCs (Virtual Private Clouds) and VNets are fundamental cloud networking concepts.
+  - answer: Cloud providers offer virtual routing and switching capabilities
+    explanation: This is true; cloud platforms provide software-defined networking features including routing and switching.
+  - answer: Hybrid cloud architectures can connect on-premises networks to cloud networks
+    explanation: This is true; VPNs, direct connections, and SD-WAN enable hybrid cloud connectivity.
+  - answer: Cloud networks can span multiple geographic regions
+    explanation: This is true; cloud providers offer global network infrastructure across many regions.
+  - answer: Software-defined networking is commonly used in cloud environments
+    explanation: This is true; SDN principles are fundamental to cloud networking architectures.
+
+- question: Which of the following are true statements about network protocols and ports?
+  points: 4
+  right:
+  - answer: Well-known ports range from 0 to 1023
+    explanation: Well-known ports are reserved for common services and protocols, assigned by IANA.
+    links:
+    - https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers
+  - answer: The same port number can be used by both TCP and UDP
+    explanation: TCP and UDP port spaces are independent; port 53 is used by both for DNS.
+    links:
+    - https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers
+  - answer: SMTP uses port 25 for email transmission
+    explanation: Port 25 is the standard port for SMTP (Simple Mail Transfer Protocol) email transfer.
+    links:
+    - https://en.wikipedia.org/wiki/Simple_Mail_Transfer_Protocol
+  - answer: Port numbers above 1023 can be used by user applications
+    explanation: Registered ports (1024-49151) and dynamic ports (49152-65535) are available for applications.
+    links:
+    - https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers
+  wrong:
+  - answer: All applications must use port 80
+    explanation: Port 80 is for HTTP; different applications use different ports.
+  - answer: Port numbers go up to 999
+    explanation: Port numbers range from 0 to 65535 (16-bit value).
+  - answer: Changing a service's port number makes it completely invisible
+    explanation: While non-standard ports add obscurity, port scanning can still discover services.
+  - answer: UDP and TCP cannot use the same port number on the same device
+    explanation: TCP and UDP have separate port spaces; the same number can be used simultaneously.
+  - answer: Only privileged users can connect to any port above 1023
+    explanation: This is backwards; typically privileged access is needed to bind to ports below 1024.
+
+- question: Which of the following are false statements about Ethernet?
+  points: 4
+  right:
+  - answer: Ethernet only works with fiber optic cables
+    explanation: This is false; Ethernet primarily uses twisted pair copper cables, though fiber is also supported.
+  - answer: Ethernet frames have no maximum size limit
+    explanation: This is false; standard Ethernet frames have a maximum size of 1518 bytes (1522 with VLAN tag).
+  - answer: Gigabit Ethernet is slower than Fast Ethernet
+    explanation: This is false; Gigabit Ethernet (1000 Mbps) is 10 times faster than Fast Ethernet (100 Mbps).
+  - answer: Ethernet uses token passing for media access control
+    explanation: This is false; Ethernet uses CSMA/CD (carrier sense multiple access with collision detection), not token passing.
+  - answer: All Ethernet networks require hubs to function
+    explanation: This is false; modern Ethernet uses switches, and hubs are largely obsolete.
+  wrong:
+  - answer: Ethernet is defined by IEEE 802.3 standards
+    explanation: This is true; the IEEE 802.3 standard defines Ethernet specifications.
+  - answer: Ethernet operates at Layer 2 of the OSI model
+    explanation: This is true; Ethernet is a Data Link Layer protocol.
+  - answer: Modern Ethernet typically uses full-duplex communication
+    explanation: This is true; switched Ethernet commonly operates in full-duplex mode.
+  - answer: Ethernet frames include source and destination MAC addresses
+    explanation: This is true; Ethernet frame headers contain both source and destination MAC addresses.
+  - answer: Different Ethernet standards support different speeds
+    explanation: This is true; standards include 10 Mbps, 100 Mbps, 1 Gbps, 10 Gbps, and higher.
+
+- question: Which of the following are true statements about network monitoring and management?
+  points: 7
+  right:
+  - answer: SNMP can be used to monitor and manage network devices
+    explanation: Simple Network Management Protocol allows monitoring and configuration of network devices remotely.
+    links:
+    - https://en.wikipedia.org/wiki/Simple_Network_Management_Protocol
+  - answer: Syslog is used for centralized logging of network events
+    explanation: Syslog provides a standard way for devices to send event messages to a central logging server.
+    links:
+    - https://en.wikipedia.org/wiki/Syslog
+  - answer: NetFlow provides visibility into network traffic patterns
+    explanation: NetFlow collects and analyzes IP traffic information for monitoring and troubleshooting.
+    links:
+    - https://en.wikipedia.org/wiki/NetFlow
+  - answer: Network monitoring tools can generate alerts based on thresholds
+    explanation: Monitoring systems can trigger alerts when metrics exceed defined thresholds for proactive management.
+  wrong:
+  - answer: Network monitoring requires physical access to every device
+    explanation: Network monitoring is typically done remotely using protocols like SNMP, not requiring physical access.
+  - answer: Network management tools can only monitor, never configure devices
+    explanation: Many management tools can both monitor and configure devices remotely.
+  - answer: SNMP only works with Cisco devices
+    explanation: SNMP is an industry standard supported by most network equipment manufacturers.
+  - answer: Network monitoring eliminates the need for security tools
+    explanation: Monitoring and security serve different purposes; both are needed for comprehensive network management.
+  - answer: Real-time monitoring is impossible on large networks
+    explanation: Modern monitoring tools are specifically designed to handle real-time monitoring of large-scale networks.
+
+- question: Which of the following are false statements about VPN technologies?
+  points: 7
+  right:
+  - answer: VPNs make all internet activity completely anonymous
+    explanation: This is false; while VPNs provide privacy, the VPN provider can see traffic, and other tracking methods exist.
+  - answer: All VPN protocols provide the same level of security
+    explanation: This is false; different protocols (PPTP, L2TP, IPSec, OpenVPN) offer different security levels.
+  - answer: VPNs always increase internet connection speed
+    explanation: This is false; VPNs typically add overhead and may reduce speed due to encryption and routing.
+  - answer: Free VPNs are always as secure as commercial VPNs
+    explanation: This is false; free VPNs may have security weaknesses, logging policies, or monetize user data.
+  - answer: VPNs eliminate all network security risks
+    explanation: This is false; VPNs provide encrypted tunnels but don't protect against all threats like malware or phishing.
+  wrong:
+  - answer: VPNs create encrypted tunnels over public networks
+    explanation: This is true; VPNs establish secure, encrypted connections over untrusted networks like the internet.
+  - answer: Site-to-site VPNs can connect entire office networks
+    explanation: This is true; site-to-site VPNs create persistent connections between networks.
+  - answer: Remote access VPNs allow individual users to connect to a corporate network
+    explanation: This is true; remote access VPNs enable secure connections for remote workers.
+  - answer: Split tunneling allows some traffic to bypass the VPN
+    explanation: This is true; split tunneling routes some traffic through the VPN and some directly to the internet.
+  - answer: VPNs can help bypass geographic content restrictions
+    explanation: This is true; VPNs can make it appear that users are connecting from different locations.

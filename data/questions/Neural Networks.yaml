@@ -1,0 +1,1710 @@
+questions:
+- question: What is a neural network?
+  points: 1
+  right:
+  - answer: A computational model inspired by biological neural networks that consists of interconnected nodes (neurons) that process information
+    explanation: This is the fundamental definition of a neural network, capturing both its biological inspiration and computational structure.
+    links:
+    - https://en.wikipedia.org/wiki/Neural_network
+  wrong:
+  - answer: A type of computer network that connects neurons in a laboratory
+    explanation: Neural networks are computational models, not physical networks of biological neurons.
+  - answer: A database system for storing brain scan data
+    explanation: Neural networks are computational models for processing information, not database systems.
+  - answer: A programming language designed for AI applications
+    explanation: Neural networks are models/architectures, not programming languages.
+  - answer: A hardware component in modern CPUs for faster processing
+    explanation: While specialized hardware exists for neural networks, a neural network itself is a software/mathematical model.
+  - answer: A social network for neuroscientists
+    explanation: This is completely unrelated to the computational concept of neural networks.
+
+- question: What is a perceptron?
+  points: 2
+  right:
+  - answer: The simplest type of artificial neural network consisting of a single neuron that performs binary classification
+    explanation: A perceptron is the most basic neural network unit, introduced by Frank Rosenblatt in 1958.
+    links:
+    - https://en.wikipedia.org/wiki/Perceptron
+  wrong:
+  - answer: A type of convolutional filter used in image processing
+    explanation: While CNNs use filters, a perceptron is a specific type of neural network unit, not a filter.
+  - answer: A deep learning framework developed by Google
+    explanation: This confuses a perceptron with software frameworks like TensorFlow.
+  - answer: A layer in a neural network that performs pooling operations
+    explanation: Pooling layers are different from perceptrons, which are classification units.
+  - answer: An algorithm for training multi-layer neural networks
+    explanation: This describes backpropagation, not a perceptron.
+  - answer: A visualization tool for neural network architectures
+    explanation: A perceptron is a computational unit, not a visualization tool.
+
+- question: What is an activation function?
+  points: 2
+  right:
+  - answer: A mathematical function applied to a neuron's output to introduce non-linearity into the network
+    explanation: Activation functions are crucial for enabling neural networks to learn complex, non-linear relationships.
+    links:
+    - https://en.wikipedia.org/wiki/Activation_function
+  wrong:
+  - answer: A function that activates or deactivates neurons based on network load
+    explanation: Activation functions transform outputs mathematically, not manage neuron availability.
+  - answer: A preprocessing step that normalizes input data
+    explanation: This describes data normalization, not activation functions.
+  - answer: A function that determines which neurons fire during inference
+    explanation: While activation functions affect neuron outputs, this description mischaracterizes their mathematical role.
+  - answer: The process of initializing neural network weights
+    explanation: This describes weight initialization, not activation functions.
+  - answer: A debugging function that shows which neurons are working correctly
+    explanation: Activation functions are mathematical transformations, not debugging tools.
+
+- question: What is the purpose of backpropagation?
+  points: 2
+  right:
+  - answer: To compute gradients of the loss function with respect to the network's weights, enabling training through gradient descent
+    explanation: Backpropagation is the fundamental algorithm for training neural networks by propagating errors backward.
+    links:
+    - https://en.wikipedia.org/wiki/Backpropagation
+  wrong:
+  - answer: To propagate input data forward through the network during inference
+    explanation: This describes forward propagation, not backpropagation.
+  - answer: To remove unnecessary neurons from the network to prevent overfitting
+    explanation: This describes pruning, not backpropagation.
+  - answer: To randomly initialize weights at the beginning of training
+    explanation: This describes weight initialization, not backpropagation.
+  - answer: To validate the network's accuracy on test data
+    explanation: This describes model evaluation, not the training mechanism of backpropagation.
+  - answer: To create backup copies of network weights during training
+    explanation: Backpropagation is about gradient computation, not creating backups.
+
+- question: What does ReLU stand for?
+  points: 1
+  right:
+  - answer: Rectified Linear Unit
+    explanation: ReLU is one of the most popular activation functions in modern neural networks.
+    links:
+    - https://en.wikipedia.org/wiki/Rectifier_(neural_networks)
+  wrong:
+  - answer: Recurrent Linear Unit
+    explanation: This confuses ReLU with recurrent architectures.
+  - answer: Regulated Learning Unit
+    explanation: This is a made-up term that sounds plausible but is incorrect.
+  - answer: Recursive Exponential Linear Unit
+    explanation: While ELU exists, this combination is incorrect.
+  - answer: Reinforced Linear Updater
+    explanation: This sounds technical but is not the correct expansion.
+  - answer: Relative Loss Unit
+    explanation: This is unrelated to the activation function ReLU.
+
+- question: What is the vanishing gradient problem?
+  points: 4
+  right:
+  - answer: A problem where gradients become extremely small during backpropagation through many layers, making it difficult to train deep networks
+    explanation: This problem was particularly severe with sigmoid and tanh activation functions in deep networks.
+    links:
+    - https://en.wikipedia.org/wiki/Vanishing_gradient_problem
+  wrong:
+  - answer: When the learning rate becomes too small and training stops progressing
+    explanation: While related to small updates, the vanishing gradient problem is about gradient magnitudes through layers, not learning rate.
+  - answer: When neurons stop activating during training due to dead weights
+    explanation: This partially describes the dying ReLU problem, not the vanishing gradient problem.
+  - answer: When the loss function approaches zero and no more learning occurs
+    explanation: Low loss indicates good training, not the vanishing gradient problem.
+  - answer: When computational resources run out during gradient computation
+    explanation: The vanishing gradient problem is mathematical, not about computational resources.
+  - answer: When gradients are computed incorrectly due to numerical precision errors
+    explanation: While precision can be an issue, vanishing gradients are a structural problem with deep networks.
+
+- question: What is a convolutional neural network (CNN) primarily used for?
+  points: 2
+  right:
+  - answer: Processing grid-like data such as images, where spatial hierarchies and local patterns are important
+    explanation: CNNs excel at image processing due to their ability to detect spatial features through convolution operations.
+    links:
+    - https://en.wikipedia.org/wiki/Convolutional_neural_network
+  wrong:
+  - answer: Processing sequential data like text and time series
+    explanation: This is the primary domain of recurrent neural networks, not CNNs.
+  - answer: Solving optimization problems in operations research
+    explanation: While neural networks can be applied to optimization, CNNs are specifically designed for spatial data.
+  - answer: Compressing large datasets for storage
+    explanation: CNNs are for pattern recognition, not data compression, though autoencoders can compress data.
+  - answer: Managing database queries efficiently
+    explanation: CNNs are for pattern recognition in spatial data, not database management.
+  - answer: Generating random numbers for simulations
+    explanation: CNNs are discriminative or generative models for spatial data, not random number generators.
+
+- question: What is a recurrent neural network (RNN)?
+  points: 2
+  right:
+  - answer: A neural network architecture with connections that form cycles, allowing information to persist and process sequential data
+    explanation: RNNs maintain hidden states that allow them to process sequences and temporal dependencies.
+    links:
+    - https://en.wikipedia.org/wiki/Recurrent_neural_network
+  wrong:
+  - answer: A network that recursively calls itself to process hierarchical data
+    explanation: While RNNs process sequences, they don't use recursive function calls in this sense.
+  - answer: A neural network that repeats the same computation multiple times for accuracy
+    explanation: RNNs process sequences through recurrent connections, not by repeating computations for accuracy.
+  - answer: A network architecture that can be trained multiple times on the same data
+    explanation: This describes retraining, not the architecture of RNNs.
+  - answer: A circular arrangement of neurons that vote on classification results
+    explanation: RNNs have recurrent connections for temporal processing, not voting mechanisms.
+  - answer: A network that recycles old training data to improve efficiency
+    explanation: RNNs are about sequential data processing through recurrent connections, not data recycling.
+
+- question: What does LSTM stand for?
+  points: 2
+  right:
+  - answer: Long Short-Term Memory
+    explanation: LSTM is a type of RNN architecture designed to better capture long-term dependencies.
+    links:
+    - https://en.wikipedia.org/wiki/Long_short-term_memory
+  wrong:
+  - answer: Linear Stochastic Training Model
+    explanation: This is a made-up term that sounds technical but is incorrect.
+  - answer: Layered Sequential Training Method
+    explanation: This sounds plausible but is not what LSTM stands for.
+  - answer: Long-Span Temporal Mapping
+    explanation: While temporal is related, this is not the correct expansion.
+  - answer: Learned State Transition Matrix
+    explanation: This is an incorrect but technical-sounding expansion.
+  - answer: Large-Scale Training Module
+    explanation: This is unrelated to the LSTM architecture.
+
+- question: What is overfitting in neural networks?
+  points: 2
+  right:
+  - answer: When a model learns the training data too well, including noise and outliers, resulting in poor generalization to new data
+    explanation: Overfitting is a fundamental problem in machine learning where the model memorizes rather than learns patterns.
+    links:
+    - https://en.wikipedia.org/wiki/Overfitting
+  wrong:
+  - answer: When a neural network has too many layers for the given problem
+    explanation: While excessive capacity can lead to overfitting, this definition is too narrow and confuses cause with effect.
+  - answer: When training takes too long and the model becomes stale
+    explanation: This is unrelated to overfitting, which is about poor generalization.
+  - answer: When the model fits the test data better than the training data
+    explanation: This is the opposite of what typically happens with overfitting.
+  - answer: When the neural network uses too much memory during training
+    explanation: Overfitting is about model performance, not memory usage.
+  - answer: When multiple models are combined and produce conflicting results
+    explanation: This describes ensemble disagreement, not overfitting.
+
+- question: What is underfitting?
+  points: 2
+  right:
+  - answer: When a model is too simple to capture the underlying patterns in the data, resulting in poor performance on both training and test data
+    explanation: Underfitting occurs when the model lacks sufficient capacity or hasn't trained long enough.
+    links:
+    - https://en.wikipedia.org/wiki/Overfitting
+  wrong:
+  - answer: When a model performs better on test data than training data
+    explanation: This would be unusual and is not the definition of underfitting.
+  - answer: When the training data is insufficient for the model's capacity
+    explanation: While insufficient data can contribute to poor performance, underfitting specifically refers to the model being too simple.
+  - answer: When the model trains faster than expected
+    explanation: Training speed is unrelated to underfitting.
+  - answer: When neurons fail to activate during training
+    explanation: This describes a different problem, not underfitting.
+  - answer: When the loss function decreases too quickly
+    explanation: Rapid loss decrease is generally good; underfitting shows high loss on both training and test sets.
+
+- question: What is dropout in neural networks?
+  points: 4
+  right:
+  - answer: A regularization technique where random neurons are temporarily ignored during training to prevent overfitting
+    explanation: Dropout was introduced by Hinton et al. and forces the network to learn robust features.
+    links:
+    - https://en.wikipedia.org/wiki/Dilution_(neural_networks)
+  wrong:
+  - answer: When neurons die during training and stop contributing to the network
+    explanation: This describes dying neurons, not the dropout regularization technique.
+  - answer: The process of removing unnecessary layers from a trained network
+    explanation: This describes network pruning or compression, not dropout.
+  - answer: When training is interrupted and must be restarted
+    explanation: This describes training interruption, not the dropout technique.
+  - answer: A technique for dropping outliers from the training data
+    explanation: Dropout applies to neurons during training, not data points.
+  - answer: The gradual decrease in learning rate during training
+    explanation: This describes learning rate decay, not dropout.
+
+- question: What is batch normalization?
+  points: 4
+  right:
+  - answer: A technique that normalizes the inputs of each layer to have zero mean and unit variance, improving training stability and speed
+    explanation: Batch normalization was introduced by Ioffe and Szegedy to address internal covariate shift.
+    links:
+    - https://en.wikipedia.org/wiki/Batch_normalization
+  wrong:
+  - answer: Processing training data in batches rather than one sample at a time
+    explanation: This describes batch training, not batch normalization.
+  - answer: Normalizing the final output layer to produce probability distributions
+    explanation: This describes softmax or output normalization, not batch normalization.
+  - answer: A technique for balancing class distributions in training batches
+    explanation: This describes class balancing, not batch normalization.
+  - answer: Standardizing the size of input batches for consistent memory usage
+    explanation: This is about batch sizing, not the normalization technique.
+  - answer: Removing outlier batches that hurt training performance
+    explanation: Batch normalization is about normalizing layer inputs, not removing data.
+
+- question: What is the sigmoid activation function's mathematical form?
+  points: 2
+  right:
+  - answer: σ(x) = 1 / (1 + e^(-x))
+    explanation: The sigmoid function squashes inputs to the range (0, 1) and was historically popular but can cause vanishing gradients.
+    links:
+    - https://en.wikipedia.org/wiki/Sigmoid_function
+  wrong:
+  - answer: σ(x) = max(0, x)
+    explanation: This is the ReLU function, not sigmoid.
+  - answer: σ(x) = tanh(x)
+    explanation: This is a different activation function, though related to sigmoid.
+  - answer: σ(x) = x^2
+    explanation: This is a simple quadratic function, not sigmoid.
+  - answer: σ(x) = e^x / (e^x + 1)
+    explanation: While this looks similar, it's not the standard sigmoid form (though mathematically equivalent).
+  - answer: σ(x) = 1 / (1 + x^2)
+    explanation: This is a different S-shaped curve, not the sigmoid function.
+
+- question: What is the range of the sigmoid activation function?
+  points: 1
+  right:
+  - answer: (0, 1)
+    explanation: The sigmoid function outputs values strictly between 0 and 1, approaching but never reaching these bounds.
+    links:
+    - https://en.wikipedia.org/wiki/Sigmoid_function
+  wrong:
+  - answer: (-1, 1)
+    explanation: This is the range of the tanh function, not sigmoid.
+  - answer: [0, ∞)
+    explanation: This is the range of ReLU, not sigmoid.
+  - answer: (-∞, ∞)
+    explanation: This is the range of linear activation or identity function, not sigmoid.
+  - answer: [0, 1]
+    explanation: Close, but sigmoid never actually reaches 0 or 1, only approaches them.
+  - answer: [-1, 0]
+    explanation: Sigmoid outputs positive values, not negative.
+
+- question: What is the dying ReLU problem?
+  points: 4
+  right:
+  - answer: When ReLU neurons output zero for all inputs and stop learning because gradients are zero for negative inputs
+    explanation: Once a ReLU neuron's weights push it into the negative region, it may never recover.
+    links:
+    - https://en.wikipedia.org/wiki/Rectifier_(neural_networks)
+  wrong:
+  - answer: When ReLU functions cause memory leaks during training
+    explanation: The dying ReLU problem is about gradient flow, not memory issues.
+  - answer: When too many ReLU activations are used in a single network
+    explanation: The problem is about individual neurons getting stuck, not the quantity of ReLU units.
+  - answer: When ReLU causes numerical overflow in deep networks
+    explanation: ReLU outputs can grow unbounded, but the dying ReLU problem is about outputs stuck at zero.
+  - answer: When ReLU neurons compete and eliminate each other
+    explanation: This mischaracterizes the problem; neurons don't compete in this way.
+  - answer: When the gradient of ReLU becomes undefined at x=0
+    explanation: While ReLU is non-differentiable at zero, the dying ReLU problem is about neurons stuck in negative regions.
+
+- question: What is a learning rate?
+  points: 1
+  right:
+  - answer: A hyperparameter that controls how much to adjust weights during training based on the computed gradient
+    explanation: The learning rate is crucial for training; too high causes instability, too low causes slow convergence.
+    links:
+    - https://en.wikipedia.org/wiki/Learning_rate
+  wrong:
+  - answer: The speed at which a neural network processes data during inference
+    explanation: Learning rate affects training updates, not inference speed.
+  - answer: The percentage of training data learned per epoch
+    explanation: Learning rate controls weight updates, not data coverage.
+  - answer: The rate at which new training examples are added to the dataset
+    explanation: This describes data augmentation rate, not learning rate.
+  - answer: How quickly a student learns neural network concepts
+    explanation: This is a humorous misinterpretation; learning rate is a technical hyperparameter.
+  - answer: The frequency of backpropagation updates per second
+    explanation: Learning rate is about update magnitude, not frequency.
+
+- question: What is gradient descent?
+  points: 2
+  right:
+  - answer: An optimization algorithm that iteratively adjusts parameters in the direction of steepest decrease of the loss function
+    explanation: Gradient descent is the foundation of neural network training, moving weights to minimize loss.
+    links:
+    - https://en.wikipedia.org/wiki/Gradient_descent
+  wrong:
+  - answer: A technique for reducing the number of layers in a neural network
+    explanation: This describes network compression, not gradient descent.
+  - answer: The process of gradients becoming smaller during backpropagation
+    explanation: This describes the vanishing gradient problem, not the gradient descent algorithm.
+  - answer: A method for initializing weights in descending order
+    explanation: Gradient descent is an optimization algorithm, not a weight initialization method.
+  - answer: The decrease in model accuracy when tested on new data
+    explanation: This describes performance degradation, not the optimization algorithm.
+  - answer: A visualization technique showing how gradients change over time
+    explanation: Gradient descent is an algorithm, not a visualization technique.
+
+- question: What is stochastic gradient descent (SGD)?
+  points: 2
+  right:
+  - answer: A variant of gradient descent that updates weights using a single training example or small batch at a time rather than the entire dataset
+    explanation: SGD is faster and more memory-efficient than batch gradient descent, with added noise that can help escape local minima.
+    links:
+    - https://en.wikipedia.org/wiki/Stochastic_gradient_descent
+  wrong:
+  - answer: A gradient descent variant that randomly initializes weights before each epoch
+    explanation: SGD refers to using random samples for updates, not random initialization.
+  - answer: A method that randomly selects which layers to update during training
+    explanation: SGD updates all parameters, but uses random data samples.
+  - answer: Gradient descent that uses random activation functions
+    explanation: SGD uses random data batches, not random activation functions.
+  - answer: An algorithm that randomly drops gradients to prevent overfitting
+    explanation: This sounds like dropout but mischaracterized; SGD is about batch sampling.
+  - answer: A technique that stochastically chooses between multiple loss functions
+    explanation: SGD uses random data samples, not random loss functions.
+
+- question: What is a loss function?
+  points: 2
+  right:
+  - answer: A function that measures how well the neural network's predictions match the actual target values
+    explanation: The loss function quantifies error and guides the optimization process during training.
+    links:
+    - https://en.wikipedia.org/wiki/Loss_function
+  wrong:
+  - answer: A function that calculates how many neurons are lost during training
+    explanation: Loss functions measure prediction error, not neuron count.
+  - answer: The amount of data lost during data preprocessing
+    explanation: Loss functions are about prediction error, not data loss.
+  - answer: A measure of computational efficiency lost due to poor architecture
+    explanation: Loss functions measure model error, not efficiency.
+  - answer: The decrease in model performance over time
+    explanation: This describes model degradation, not what a loss function measures during training.
+  - answer: A penalty function for using too many parameters
+    explanation: While regularization terms penalize complexity, the base loss function measures prediction error.
+
+- question: What is mean squared error (MSE)?
+  points: 2
+  right:
+  - answer: A loss function that calculates the average of the squared differences between predicted and actual values
+    explanation: MSE is commonly used for regression problems and penalizes larger errors more heavily.
+    links:
+    - https://en.wikipedia.org/wiki/Mean_squared_error
+  wrong:
+  - answer: The average of absolute differences between predictions and actual values
+    explanation: This describes mean absolute error (MAE), not MSE.
+  - answer: The standard deviation of prediction errors
+    explanation: Standard deviation is related but is not MSE; MSE is the average of squared errors.
+  - answer: The maximum error across all predictions
+    explanation: This describes maximum error, not mean squared error.
+  - answer: The squared root of average errors
+    explanation: This is close to RMSE (root mean squared error) but not MSE itself.
+  - answer: The median of squared prediction errors
+    explanation: MSE uses the mean (average), not median.
+
+- question: What is cross-entropy loss?
+  points: 4
+  right:
+  - answer: A loss function used for classification that measures the difference between two probability distributions
+    explanation: Cross-entropy is the standard loss for classification, especially with softmax outputs.
+    links:
+    - https://en.wikipedia.org/wiki/Cross_entropy
+  wrong:
+  - answer: A loss function that measures the entropy between different layers
+    explanation: Cross-entropy measures distribution difference, not inter-layer relationships.
+  - answer: The average number of bits needed to encode the training data
+    explanation: While related to information theory, this isn't the loss function definition.
+  - answer: A loss function that penalizes predictions crossing class boundaries
+    explanation: This mischaracterizes cross-entropy; it measures distributional differences.
+  - answer: The confusion between multiple classification categories
+    explanation: This describes confusion matrices, not the cross-entropy loss function.
+  - answer: A regularization term that encourages diverse predictions
+    explanation: Cross-entropy is a primary loss function, not a regularization term.
+
+- question: What is an epoch in neural network training?
+  points: 1
+  right:
+  - answer: One complete pass through the entire training dataset
+    explanation: Epochs are a basic unit of training measurement; models typically train for multiple epochs.
+    links:
+    - https://en.wikipedia.org/wiki/Epoch_(machine_learning)
+  wrong:
+  - answer: The time period between weight updates
+    explanation: This describes an iteration or update step, not an epoch.
+  - answer: A milestone where the model achieves a target accuracy
+    explanation: Epochs are about data passes, not accuracy milestones.
+  - answer: The era or time period when a model was trained
+    explanation: This is a layman's interpretation; an epoch is a technical training concept.
+  - answer: A single forward and backward pass through the network
+    explanation: This describes one iteration, not an epoch which processes all training data.
+  - answer: The amount of time training takes
+    explanation: Epochs measure data passes, not time duration.
+
+- question: What is a batch in neural network training?
+  points: 1
+  right:
+  - answer: A subset of training samples processed together before updating the model's weights
+    explanation: Batching balances computational efficiency with gradient accuracy.
+    links:
+    - https://en.wikipedia.org/wiki/Batch_normalization
+  wrong:
+  - answer: A complete set of all training data
+    explanation: This describes the entire dataset or epoch, not a batch.
+  - answer: A group of neural network layers processed simultaneously
+    explanation: Batches refer to data samples, not layers.
+  - answer: A collection of multiple epochs run together
+    explanation: Batches are subsets of data within an epoch, not groups of epochs.
+  - answer: A set of weights updated at the same time
+    explanation: All weights are typically updated together; batches refer to data samples.
+  - answer: Multiple models trained in parallel
+    explanation: Batches refer to data samples in a single model, not multiple models.
+
+- question: What is the softmax function used for?
+  points: 2
+  right:
+  - answer: Converting a vector of real numbers into a probability distribution where values sum to 1, commonly used in the output layer for multi-class classification
+    explanation: Softmax normalizes outputs into probabilities, making it ideal for classification tasks.
+    links:
+    - https://en.wikipedia.org/wiki/Softmax_function
+  wrong:
+  - answer: Making the network more flexible by softening hard constraints
+    explanation: Despite the name, softmax creates probability distributions, not flexibility.
+  - answer: A regularization technique that softly penalizes large weights
+    explanation: This describes L2 regularization, not softmax.
+  - answer: An activation function that returns the maximum value softly
+    explanation: While softmax emphasizes larger values, it creates a full probability distribution.
+  - answer: A pooling operation that takes a soft maximum of a region
+    explanation: This describes soft pooling, not the softmax function.
+  - answer: A technique for softly merging multiple model predictions
+    explanation: Softmax operates on a single model's outputs, not ensemble predictions.
+
+- question: What is a fully connected layer?
+  points: 1
+  right:
+  - answer: A layer where every neuron is connected to every neuron in the previous and next layers
+    explanation: Also called dense layers, these are the traditional neural network layers with complete connectivity.
+    links:
+    - https://en.wikipedia.org/wiki/Feedforward_neural_network
+  wrong:
+  - answer: A layer where all neurons share the same weights
+    explanation: This describes weight sharing in convolutional layers, not fully connected layers.
+  - answer: A layer that connects all inputs directly to outputs, skipping hidden layers
+    explanation: This describes a skip connection or direct connection, not a fully connected layer.
+  - answer: A layer where neurons are connected in a circular pattern
+    explanation: This describes recurrent connections, not fully connected layers.
+  - answer: The final layer that fully connects the network to the output
+    explanation: While output layers can be fully connected, the term applies to any layer with complete connectivity.
+  - answer: A layer where all computations are complete and optimized
+    explanation: This misinterprets "fully connected" as completion rather than connectivity pattern.
+
+- question: What is a convolutional layer?
+  points: 2
+  right:
+  - answer: A layer that applies learned filters to input data through convolution operations to detect spatial patterns
+    explanation: Convolutional layers are fundamental to CNNs and enable local feature detection.
+    links:
+    - https://en.wikipedia.org/wiki/Convolutional_neural_network
+  wrong:
+  - answer: A layer that converts data formats between different representations
+    explanation: This describes data transformation, not convolutional operations.
+  - answer: A layer that combines multiple neural networks into one
+    explanation: This describes ensemble or merging, not convolution.
+  - answer: A layer that performs mathematical conversations between neurons
+    explanation: This plays on the word but misrepresents convolutional operations.
+  - answer: A layer that averages all inputs to create a summary
+    explanation: This describes pooling or aggregation, not convolution.
+  - answer: A layer that rotates and transforms images for data augmentation
+    explanation: This describes augmentation, not the convolutional layer operation.
+
+- question: What is a pooling layer?
+  points: 2
+  right:
+  - answer: A layer that reduces the spatial dimensions of data by aggregating values in local regions, commonly using max or average operations
+    explanation: Pooling reduces dimensionality and provides translation invariance in CNNs.
+    links:
+    - https://en.wikipedia.org/wiki/Convolutional_neural_network
+  wrong:
+  - answer: A layer that collects and stores intermediate results for later use
+    explanation: Pooling reduces dimensions through aggregation, not storage.
+  - answer: A layer that combines predictions from multiple networks
+    explanation: This describes ensemble pooling, not spatial pooling layers.
+  - answer: A layer that pools computational resources for efficient processing
+    explanation: This misinterprets pooling as resource management rather than dimension reduction.
+  - answer: A layer that randomly samples from the input data
+    explanation: Pooling uses deterministic aggregation (max or average), not random sampling.
+  - answer: A layer that groups similar neurons together for organization
+    explanation: Pooling operates on spatial data regions, not neuron organization.
+
+- question: What is max pooling?
+  points: 2
+  right:
+  - answer: A pooling operation that selects the maximum value from each local region of the input
+    explanation: Max pooling is the most common pooling operation, preserving the strongest activations.
+    links:
+    - https://en.wikipedia.org/wiki/Convolutional_neural_network
+  wrong:
+  - answer: A technique that maximizes the number of pooling layers in a network
+    explanation: Max pooling is an operation type, not about layer quantity.
+  - answer: Selecting the maximum learning rate during training
+    explanation: Max pooling operates on data, not learning rates.
+  - answer: A pooling method that uses the maximum filter size possible
+    explanation: Max pooling refers to taking maximum values, not maximum sizes.
+  - answer: An optimization that finds the maximum gradient for updates
+    explanation: Max pooling is a data operation, not gradient optimization.
+  - answer: A technique that pools the maximum number of neurons together
+    explanation: Max pooling takes maximum values from regions, not maximum neurons.
+
+- question: What is transfer learning?
+  points: 4
+  right:
+  - answer: Using a pre-trained model on a new task by leveraging the knowledge it learned from a different but related task
+    explanation: Transfer learning is crucial for domains with limited data, allowing models to build on existing knowledge.
+    links:
+    - https://en.wikipedia.org/wiki/Transfer_learning
+  wrong:
+  - answer: Transferring training data from one dataset to another
+    explanation: Transfer learning uses pre-trained models, not data transfer.
+  - answer: Moving a trained model from one computer to another
+    explanation: This is model deployment, not transfer learning.
+  - answer: Converting a model from one framework to another
+    explanation: This describes model conversion, not transfer learning.
+  - answer: Transferring gradients between layers during backpropagation
+    explanation: This describes normal backpropagation, not transfer learning.
+  - answer: Learning to transfer styles between images
+    explanation: This describes style transfer, a specific application, not transfer learning broadly.
+
+- question: What is fine-tuning in neural networks?
+  points: 4
+  right:
+  - answer: Continuing to train a pre-trained model on a new dataset, often with a lower learning rate, to adapt it to a specific task
+    explanation: Fine-tuning is a common transfer learning strategy that adjusts pre-trained weights.
+    links:
+    - https://en.wikipedia.org/wiki/Transfer_learning
+  wrong:
+  - answer: Adjusting hyperparameters to achieve better performance
+    explanation: This describes hyperparameter tuning, not fine-tuning pre-trained models.
+  - answer: Removing small weights to make the model more efficient
+    explanation: This describes pruning, not fine-tuning.
+  - answer: Making small corrections to the model architecture
+    explanation: Fine-tuning adjusts weights, not architecture.
+  - answer: Precisely calibrating the loss function for optimal results
+    explanation: Fine-tuning refers to continued training, not loss function calibration.
+  - answer: Tuning the output layer to match the desired precision
+    explanation: While the output layer may be adjusted, fine-tuning involves retraining the model.
+
+- question: What is data augmentation?
+  points: 2
+  right:
+  - answer: Artificially increasing training data size and diversity by applying transformations like rotations, flips, and crops to existing data
+    explanation: Data augmentation helps prevent overfitting and improves model generalization.
+    links:
+    - https://en.wikipedia.org/wiki/Data_augmentation
+  wrong:
+  - answer: Adding more layers to the neural network to augment its capacity
+    explanation: This describes increasing model capacity, not data augmentation.
+  - answer: Collecting additional real-world data to supplement the training set
+    explanation: While this increases data, data augmentation specifically refers to synthetic transformations.
+  - answer: Augmenting the loss function with regularization terms
+    explanation: This describes regularization, not data augmentation.
+  - answer: Increasing the precision of numerical values in the dataset
+    explanation: This describes precision enhancement, not data augmentation.
+  - answer: Enhancing data quality by removing noise and outliers
+    explanation: This describes data cleaning, not augmentation.
+
+- question: What is L1 regularization?
+  points: 4
+  right:
+  - answer: A regularization technique that adds the sum of absolute values of weights to the loss function, encouraging sparsity
+    explanation: L1 regularization (Lasso) tends to push some weights to exactly zero, performing feature selection.
+    links:
+    - https://en.wikipedia.org/wiki/Regularization_(mathematics)
+  wrong:
+  - answer: A technique that limits networks to having only one layer
+    explanation: L1 refers to the L1 norm in mathematics, not layer count.
+  - answer: A regularization method that uses first-order gradients only
+    explanation: This describes first-order optimization, not L1 regularization.
+  - answer: Limiting the learning rate to level 1 during training
+    explanation: L1 regularization is about weight penalties, not learning rate limits.
+  - answer: A technique that regularizes only the first layer of the network
+    explanation: L1 regularization applies to all weights, not just the first layer.
+  - answer: Using only the primary loss function without additional terms
+    explanation: L1 regularization adds a penalty term; this describes no regularization.
+
+- question: What is L2 regularization?
+  points: 4
+  right:
+  - answer: A regularization technique that adds the sum of squared weights to the loss function, penalizing large weights
+    explanation: L2 regularization (Ridge) encourages smaller weights but doesn't force them to zero like L1.
+    links:
+    - https://en.wikipedia.org/wiki/Regularization_(mathematics)
+  wrong:
+  - answer: A technique requiring exactly two layers in the network
+    explanation: L2 refers to the L2 norm in mathematics, not layer count.
+  - answer: A regularization method using second-order gradients
+    explanation: This describes second-order optimization, not L2 regularization.
+  - answer: Limiting the learning rate to level 2 during training
+    explanation: L2 regularization is about squared weight penalties, not learning rate.
+  - answer: A technique that regularizes only the second layer
+    explanation: L2 regularization applies to all weights, not just one layer.
+  - answer: Using two loss functions simultaneously
+    explanation: L2 adds a squared penalty term but is still one combined loss function.
+
+- question: What is weight decay?
+  points: 4
+  right:
+  - answer: A regularization technique equivalent to L2 regularization where weights are reduced by a small factor at each update
+    explanation: Weight decay prevents weights from growing too large and helps prevent overfitting.
+    links:
+    - https://en.wikipedia.org/wiki/Regularization_(mathematics)
+  wrong:
+  - answer: The natural degradation of model performance over time
+    explanation: This describes model drift, not weight decay regularization.
+  - answer: A bug where weights gradually decrease to zero during training
+    explanation: Weight decay is an intentional regularization technique, not a bug.
+  - answer: The decrease in weight importance as more layers are added
+    explanation: This mischaracterizes weight decay as a structural phenomenon.
+  - answer: A technique for removing unnecessary weights from the network
+    explanation: This describes pruning, not weight decay.
+  - answer: The reduction in weight file size through compression
+    explanation: Weight decay is about regularization, not file compression.
+
+- question: What is early stopping?
+  points: 2
+  right:
+  - answer: A regularization technique where training is stopped when validation performance stops improving to prevent overfitting
+    explanation: Early stopping is simple but effective, monitoring validation metrics to determine when to stop.
+    links:
+    - https://en.wikipedia.org/wiki/Early_stopping
+  wrong:
+  - answer: Stopping training after a fixed number of epochs
+    explanation: This is fixed-epoch training; early stopping monitors performance dynamically.
+  - answer: Terminating training when the loss reaches zero
+    explanation: Zero loss is often impossible and undesirable; early stopping uses validation performance.
+  - answer: Stopping the first few layers from training while training others
+    explanation: This describes layer freezing, not early stopping.
+  - answer: Ending training early to save computational resources
+    explanation: While it may save resources, early stopping's purpose is preventing overfitting.
+  - answer: Stopping before the model learns any complex patterns
+    explanation: Early stopping prevents overfitting, not learning itself.
+
+- question: What is a hyperparameter?
+  points: 2
+  right:
+  - answer: A configuration setting chosen before training begins that controls the learning process but is not learned from data
+    explanation: Hyperparameters include learning rate, batch size, and architecture choices.
+    links:
+    - https://en.wikipedia.org/wiki/Hyperparameter_(machine_learning)
+  wrong:
+  - answer: A parameter that is more important than regular parameters
+    explanation: "Hyper" means external to the learning process, not importance level.
+  - answer: A parameter learned from the training data
+    explanation: This describes learned parameters (weights); hyperparameters are set manually.
+  - answer: The highest-valued weight in the network
+    explanation: Hyperparameters are configuration settings, not weight values.
+  - answer: A parameter that operates at superhuman speed
+    explanation: This misinterprets the prefix "hyper" in this context.
+  - answer: Parameters used only in very large networks
+    explanation: All networks have hyperparameters regardless of size.
+
+- question: What is the difference between parameters and hyperparameters?
+  points: 2
+  right:
+  - answer: Parameters are learned from data during training (like weights), while hyperparameters are set before training (like learning rate)
+    explanation: This distinction is fundamental to understanding neural network training and configuration.
+    links:
+    - https://en.wikipedia.org/wiki/Hyperparameter_(machine_learning)
+  wrong:
+  - answer: Parameters are for small models, hyperparameters are for large models
+    explanation: Both concepts apply to all model sizes; they differ in how they're determined.
+  - answer: Parameters are numerical, hyperparameters are categorical
+    explanation: Both can be numerical or categorical; the difference is in how they're set.
+  - answer: Parameters control speed, hyperparameters control accuracy
+    explanation: Both affect various aspects of training; the distinction is about learning vs. configuration.
+  - answer: Parameters are internal to code, hyperparameters are user-facing
+    explanation: While hyperparameters are often user-configured, this isn't the core distinction.
+  - answer: There is no real difference, the terms are interchangeable
+    explanation: These are distinct concepts with different roles in machine learning.
+
+- question: What is the purpose of a validation set?
+  points: 2
+  right:
+  - answer: To evaluate model performance during training and tune hyperparameters without touching the test set
+    explanation: Validation sets help monitor overfitting and select the best model configuration.
+    links:
+    - https://en.wikipedia.org/wiki/Training,_validation,_and_test_sets
+  wrong:
+  - answer: To validate that the training data is correct and clean
+    explanation: This describes data validation, not the validation set's purpose.
+  - answer: To store backup copies of training data
+    explanation: Validation sets are for evaluation, not data backup.
+  - answer: To validate user inputs to the neural network
+    explanation: This describes input validation in software, not a validation dataset.
+  - answer: To test the final model's performance after training completes
+    explanation: This is the test set's purpose; validation is used during training.
+  - answer: To ensure the model architecture is correct
+    explanation: Validation sets evaluate performance, not architecture correctness.
+
+- question: What is the purpose of a test set?
+  points: 2
+  right:
+  - answer: To provide a final, unbiased evaluation of the trained model's performance on unseen data
+    explanation: Test sets should only be used once at the end to assess true generalization ability.
+    links:
+    - https://en.wikipedia.org/wiki/Training,_validation,_and_test_sets
+  wrong:
+  - answer: To test different hyperparameters during model development
+    explanation: This is the validation set's purpose; test sets are for final evaluation only.
+  - answer: To test the model during every epoch of training
+    explanation: This describes validation; test sets should be used only after training completes.
+  - answer: To test the hardware's capability to run the model
+    explanation: Test sets evaluate model performance, not hardware capability.
+  - answer: To identify bugs in the model implementation
+    explanation: Test sets evaluate generalization, not code correctness.
+  - answer: To generate test cases for software testing
+    explanation: This describes software QA, not machine learning test sets.
+
+- question: What is an autoencoder?
+  points: 4
+  right:
+  - answer: A neural network trained to reconstruct its input, typically with a bottleneck layer that learns compressed representations
+    explanation: Autoencoders learn efficient data encodings in an unsupervised manner.
+    links:
+    - https://en.wikipedia.org/wiki/Autoencoder
+  wrong:
+  - answer: A neural network that automatically generates code for other networks
+    explanation: Autoencoders learn data representations, not generate code.
+  - answer: A system that automatically tunes hyperparameters
+    explanation: This describes automated hyperparameter tuning, not autoencoders.
+  - answer: A network that encodes data into text format automatically
+    explanation: Autoencoders learn compressed representations, not text conversion.
+  - answer: An algorithm that automatically designs network architectures
+    explanation: This describes neural architecture search, not autoencoders.
+  - answer: A tool that automatically encrypts neural network weights
+    explanation: Autoencoders are about learning representations, not encryption.
+
+- question: What is a generative adversarial network (GAN)?
+  points: 7
+  right:
+  - answer: A framework with two networks - a generator that creates fake data and a discriminator that distinguishes real from fake - trained in competition
+    explanation: GANs, introduced by Goodfellow et al., have revolutionized generative modeling.
+    links:
+    - https://en.wikipedia.org/wiki/Generative_adversarial_network
+  wrong:
+  - answer: A network that generates adversarial examples to attack other models
+    explanation: While GANs can generate, adversarial attacks are different from the GAN framework.
+  - answer: Two networks that compete for computational resources
+    explanation: GANs compete in learning objectives, not resources.
+  - answer: A network architecture that adversarially rejects bad training data
+    explanation: GANs generate data through competition, not filter training data.
+  - answer: Multiple networks that vote adversarially on classifications
+    explanation: This describes adversarial ensembles, not the GAN framework.
+  - answer: A general-purpose network for all adversarial tasks
+    explanation: GANs are specifically for generation through adversarial training.
+
+- question: What is the generator in a GAN?
+  points: 4
+  right:
+  - answer: The network that learns to create synthetic data samples that resemble the training data distribution
+    explanation: The generator maps random noise to realistic samples through adversarial training.
+    links:
+    - https://en.wikipedia.org/wiki/Generative_adversarial_network
+  wrong:
+  - answer: The network that generates training labels for the dataset
+    explanation: The generator creates data samples, not labels.
+  - answer: A component that generates random noise for training
+    explanation: Random noise is an input to the generator, not the generator itself.
+  - answer: The system that generates the discriminator network
+    explanation: Both networks are separate; the generator creates data samples.
+  - answer: A tool that generates code for the GAN architecture
+    explanation: The generator is a neural network component, not a code generation tool.
+  - answer: The process of generating batches of training data
+    explanation: The generator creates synthetic samples, not just batches of existing data.
+
+- question: What is the discriminator in a GAN?
+  points: 4
+  right:
+  - answer: The network that learns to distinguish between real training data and fake samples produced by the generator
+    explanation: The discriminator acts as a critic, pushing the generator to create better samples.
+    links:
+    - https://en.wikipedia.org/wiki/Generative_adversarial_network
+  wrong:
+  - answer: A network that discriminates between different classes in classification
+    explanation: While it classifies real vs fake, the discriminator's role is specific to the adversarial framework.
+  - answer: A tool that removes discriminatory bias from training data
+    explanation: The discriminator is about real/fake distinction, not bias removal.
+  - answer: The component that selects which samples to use for training
+    explanation: The discriminator evaluates samples but doesn't select training data.
+  - answer: A network that discriminates between good and bad hyperparameters
+    explanation: The discriminator evaluates generated samples, not hyperparameters.
+  - answer: The final layer that discriminates between output classes
+    explanation: The discriminator is an entire network in the GAN framework, not just a layer.
+
+- question: What is the Adam optimizer?
+  points: 4
+  right:
+  - answer: An adaptive learning rate optimization algorithm that combines momentum and RMSprop, maintaining per-parameter learning rates
+    explanation: Adam (Adaptive Moment Estimation) is one of the most popular optimizers in deep learning.
+    links:
+    - https://en.wikipedia.org/wiki/Stochastic_gradient_descent
+  wrong:
+  - answer: An optimizer named after its creator Adam Smith
+    explanation: Adam stands for Adaptive Moment Estimation, not a person's name.
+  - answer: The first optimization algorithm developed for neural networks
+    explanation: Adam is recent (2014); gradient descent came much earlier.
+  - answer: An optimizer that adds momentum to standard gradient descent only
+    explanation: Adam combines multiple techniques including momentum and adaptive learning rates.
+  - answer: A genetic algorithm for optimizing network architecture
+    explanation: Adam is a gradient-based optimizer, not a genetic algorithm.
+  - answer: An optimizer specifically designed for adversarial training
+    explanation: Adam is a general-purpose optimizer, not specific to adversarial training.
+
+- question: What is momentum in optimization?
+  points: 4
+  right:
+  - answer: A technique that adds a fraction of the previous update to the current update, helping accelerate convergence and escape local minima
+    explanation: Momentum helps smooth the optimization trajectory and can speed up training.
+    links:
+    - https://en.wikipedia.org/wiki/Stochastic_gradient_descent
+  wrong:
+  - answer: The speed at which training progresses through epochs
+    explanation: Momentum is a specific optimization technique, not training speed.
+  - answer: The forward propagation of activations through the network
+    explanation: This describes inference, not the momentum optimization technique.
+  - answer: The physical property that keeps neural networks running
+    explanation: This is a metaphorical misinterpretation; momentum is a mathematical technique.
+  - answer: The persistence of weights across training sessions
+    explanation: Momentum affects updates within training, not weight persistence.
+  - answer: The force that prevents overfitting
+    explanation: Momentum affects optimization dynamics, not directly preventing overfitting.
+
+- question: What is the attention mechanism?
+  points: 7
+  right:
+  - answer: A technique that allows models to focus on relevant parts of the input when processing each element, weighing different inputs differently
+    explanation: Attention, especially in transformers, has revolutionized NLP and other domains.
+    links:
+    - https://en.wikipedia.org/wiki/Attention_(machine_learning)
+  wrong:
+  - answer: A mechanism that monitors whether the model is paying attention during training
+    explanation: Attention is a learned weighting mechanism, not monitoring.
+  - answer: A technique for getting users to pay attention to model outputs
+    explanation: Attention is an internal model mechanism, not about user engagement.
+  - answer: A layer that focuses computational resources on difficult examples
+    explanation: Attention weighs input relevance, not computational allocation.
+  - answer: A debugging tool that highlights which neurons are active
+    explanation: Attention is a model component, not a debugging tool.
+  - answer: The mechanism that prevents the model from being distracted by noise
+    explanation: While attention can help focus on relevant information, this oversimplifies its mathematical function.
+
+- question: What is a transformer model?
+  points: 7
+  right:
+  - answer: A neural network architecture based entirely on attention mechanisms, processing sequences in parallel rather than sequentially
+    explanation: Transformers, introduced in "Attention is All You Need," have become dominant in NLP.
+    links:
+    - https://en.wikipedia.org/wiki/Transformer_(machine_learning_model)
+  wrong:
+  - answer: A model that transforms data from one format to another
+    explanation: While transformers process data, the name refers to the architecture, not data transformation.
+  - answer: A network that transforms between different neural network types
+    explanation: Transformers are a specific architecture, not a conversion tool.
+  - answer: A model that physically transforms its structure during training
+    explanation: Transformers have a fixed architecture; the name doesn't imply structural changes.
+  - answer: An optimization algorithm that transforms gradient updates
+    explanation: Transformers are an architecture, not an optimizer.
+  - answer: A technique for transforming images like the robots in disguise
+    explanation: This references Transformers fiction; the ML transformer is about attention mechanisms.
+
+- question: What is BERT?
+  points: 7
+  right:
+  - answer: Bidirectional Encoder Representations from Transformers - a pre-trained transformer model for natural language understanding
+    explanation: BERT revolutionized NLP by training on masked language modeling bidirectionally.
+    links:
+    - https://en.wikipedia.org/wiki/BERT_(language_model)
+  wrong:
+  - answer: Binary Encoded Recurrent Transformer for time series
+    explanation: BERT is bidirectional encoder for NLP, not binary encoded or for time series.
+  - answer: Basic Enhanced Regression Technique for neural networks
+    explanation: This is completely unrelated to BERT's actual meaning and purpose.
+  - answer: A character from Sesame Street who inspired the model
+    explanation: While humorously similar, BERT is an acronym for a technical concept.
+  - answer: Bayesian Estimation with Recursive Training
+    explanation: This is not what BERT stands for or represents.
+  - answer: Backward Error Reduction Technique
+    explanation: This is not the correct expansion or purpose of BERT.
+
+- question: What is GPT?
+  points: 7
+  right:
+  - answer: Generative Pre-trained Transformer - an autoregressive language model trained to predict the next token in a sequence
+    explanation: GPT models, developed by OpenAI, have shown remarkable language generation capabilities.
+    links:
+    - https://en.wikipedia.org/wiki/Generative_pre-trained_transformer
+  wrong:
+  - answer: General Purpose Transformer for all machine learning tasks
+    explanation: While versatile, GPT specifically stands for Generative Pre-trained Transformer.
+  - answer: Gradient Propagation Technique for training networks
+    explanation: GPT is a model family, not a training technique.
+  - answer: Graphical Processing Transformer for image analysis
+    explanation: GPT is primarily for language, not a graphics processing tool.
+  - answer: Global Parameter Training method
+    explanation: This is not what GPT stands for.
+  - answer: GUID Partition Table used in neural network storage
+    explanation: This references a disk partitioning scheme, not the AI model.
+
+- question: What is word embedding?
+  points: 4
+  right:
+  - answer: A learned representation where words are mapped to dense vectors in a continuous space where semantic similarity corresponds to vector proximity
+    explanation: Word embeddings like Word2Vec and GloVe capture semantic relationships in vector space.
+    links:
+    - https://en.wikipedia.org/wiki/Word_embedding
+  wrong:
+  - answer: The process of inserting words into neural network code
+    explanation: Word embedding is about vector representations, not code insertion.
+  - answer: A technique for embedding watermarks in generated text
+    explanation: Word embedding is about semantic representations, not watermarking.
+  - answer: Storing words inside the neural network's architecture
+    explanation: Word embedding maps words to vectors, not storage in architecture.
+  - answer: The physical memory location where words are stored
+    explanation: Word embedding is about semantic vector spaces, not memory locations.
+  - answer: A compression technique for reducing vocabulary size
+    explanation: Word embedding creates dense representations but isn't primarily about compression.
+
+- question: What is ResNet's key innovation?
+  points: 7
+  right:
+  - answer: Skip connections (residual connections) that allow gradients to flow directly through the network, enabling training of very deep networks
+    explanation: ResNet solved the degradation problem in very deep networks through residual learning.
+    links:
+    - https://en.wikipedia.org/wiki/Residual_neural_network
+  wrong:
+  - answer: Using ReLU activation functions throughout the network
+    explanation: ReLU was already common; ResNet's innovation was skip connections.
+  - answer: A new type of convolutional filter that reduces computational cost
+    explanation: ResNet's innovation was architectural (skip connections), not filter design.
+  - answer: Training networks with reset buttons to restart learning
+    explanation: ResNet refers to residual networks, not reset mechanisms.
+  - answer: A technique for reserving network capacity for different tasks
+    explanation: ResNet is about residual connections, not capacity reservation.
+  - answer: Using nets to catch residual errors during training
+    explanation: This misinterprets the name; residual refers to learning residual functions.
+
+- question: What is batch size's effect on training?
+  points: 4
+  right:
+  - answer: Larger batches provide more stable gradients but use more memory and may generalize worse; smaller batches add noise but can help escape local minima
+    explanation: Batch size involves trade-offs between stability, memory, and generalization.
+    links:
+    - https://en.wikipedia.org/wiki/Stochastic_gradient_descent
+  wrong:
+  - answer: Larger batches always lead to better model performance
+    explanation: Very large batches can actually hurt generalization despite stable training.
+  - answer: Batch size only affects training speed, not model quality
+    explanation: Batch size affects both training dynamics and final model generalization.
+  - answer: Smaller batches always converge faster than larger batches
+    explanation: While smaller batches update more frequently, convergence depends on multiple factors.
+  - answer: Batch size must always equal the number of classes
+    explanation: Batch size is independent of the number of classes.
+  - answer: Batch size determines the number of layers in the network
+    explanation: Batch size and network architecture are independent choices.
+
+- question: What is the curse of dimensionality?
+  points: 7
+  right:
+  - answer: The phenomenon where data becomes increasingly sparse as the number of dimensions increases, making learning more difficult
+    explanation: High-dimensional spaces have counterintuitive properties that challenge machine learning algorithms.
+    links:
+    - https://en.wikipedia.org/wiki/Curse_of_dimensionality
+  wrong:
+  - answer: A curse that prevents neural networks from having too many dimensions
+    explanation: It's a mathematical phenomenon, not an actual limitation or curse.
+  - answer: The problem of neural networks taking too long in high dimensions
+    explanation: While computation is affected, the curse specifically refers to data sparsity.
+  - answer: A bug that causes dimensions to corrupt during training
+    explanation: It's a mathematical property of high-dimensional spaces, not a bug.
+  - answer: The difficulty in visualizing more than three dimensions
+    explanation: While visualization is challenging, the curse refers to data sparsity and distance metrics.
+  - answer: A literary reference that inspired dimensional reduction techniques
+    explanation: It's a mathematical concept, not a literary reference.
+
+- question: What is dimensionality reduction?
+  points: 4
+  right:
+  - answer: Techniques for reducing the number of features while preserving important information, such as PCA or autoencoders
+    explanation: Dimensionality reduction helps combat the curse of dimensionality and improve efficiency.
+    links:
+    - https://en.wikipedia.org/wiki/Dimensionality_reduction
+  wrong:
+  - answer: Removing dimensions from the network architecture to make it smaller
+    explanation: This describes network compression, not data dimensionality reduction.
+  - answer: The process of converting 3D data to 2D for visualization only
+    explanation: Dimensionality reduction is more general than just 3D to 2D conversion.
+  - answer: A technique for reducing the physical dimensions of hardware
+    explanation: This refers to hardware miniaturization, not data dimensionality.
+  - answer: Reducing the number of training epochs to save time
+    explanation: This is about training duration, not feature dimensionality.
+  - answer: Eliminating redundant layers from the neural network
+    explanation: This describes architectural pruning, not data dimensionality reduction.
+
+- question: What is one-hot encoding?
+  points: 2
+  right:
+  - answer: A representation where categorical variables are converted to binary vectors with exactly one element set to 1 and others to 0
+    explanation: One-hot encoding is a standard technique for representing categorical data in neural networks.
+    links:
+    - https://en.wikipedia.org/wiki/One-hot
+  wrong:
+  - answer: A technique where only one neuron is active at a time
+    explanation: One-hot encoding represents data, not neuron activation patterns.
+  - answer: An encoding scheme where the network processes one sample at a time
+    explanation: This describes batch size of 1, not one-hot encoding.
+  - answer: A hot-swapping technique for updating network parameters live
+    explanation: One-hot refers to a data representation, not parameter updates.
+  - answer: The process of selecting the single best model from many candidates
+    explanation: One-hot encoding is about categorical representation, not model selection.
+  - answer: An optimization where only one parameter is updated per iteration
+    explanation: One-hot encoding represents categorical data, not optimization strategies.
+
+- question: What is the purpose of padding in convolutional layers?
+  points: 2
+  right:
+  - answer: To preserve spatial dimensions of the input or control the output size by adding extra pixels around the border
+    explanation: Padding ensures that convolutions don't reduce dimensions too quickly and that border information is processed.
+    links:
+    - https://en.wikipedia.org/wiki/Convolutional_neural_network
+  wrong:
+  - answer: To add extra training examples to prevent overfitting
+    explanation: This describes data augmentation, not spatial padding in convolutions.
+  - answer: To fill empty memory spaces for efficient computation
+    explanation: While memory layout matters, padding's purpose is about spatial dimensions.
+  - answer: To separate different feature maps from each other
+    explanation: Padding adds border pixels, not separate feature maps.
+  - answer: To protect the network from adversarial attacks
+    explanation: Padding is about spatial dimensions, not security.
+  - answer: To slow down training for better convergence
+    explanation: Padding affects output dimensions, not training speed directly.
+
+- question: What is stride in convolutional layers?
+  points: 2
+  right:
+  - answer: The number of pixels by which the filter moves across the input at each step during convolution
+    explanation: Stride controls the spatial overlap and output dimensions of convolutions.
+    links:
+    - https://en.wikipedia.org/wiki/Convolutional_neural_network
+  wrong:
+  - answer: The walking pattern of data through the network during training
+    explanation: Stride is a specific convolution parameter, not a data flow pattern.
+  - answer: The speed at which the network processes data
+    explanation: Stride affects spatial sampling, not processing speed.
+  - answer: The number of steps taken during gradient descent
+    explanation: This describes gradient descent iterations, not convolutional stride.
+  - answer: The distance between neurons in different layers
+    explanation: Stride is about filter movement in convolutions, not neuron spacing.
+  - answer: The progress increment shown during training
+    explanation: Stride is a convolution parameter, not a progress reporting mechanism.
+
+- question: What is a receptive field in CNNs?
+  points: 4
+  right:
+  - answer: The region in the input space that influences a particular neuron's activation in the network
+    explanation: Understanding receptive fields helps design CNN architectures with appropriate context windows.
+    links:
+    - https://en.wikipedia.org/wiki/Receptive_field
+  wrong:
+  - answer: The field of study that focuses on how networks receive data
+    explanation: Receptive field is a specific technical concept, not a field of study.
+  - answer: The area where neurons are most receptive to learning
+    explanation: Receptive field refers to input region influence, not learning receptiveness.
+  - answer: The physical field generated by neural network computations
+    explanation: There's no physical field; receptive field is about input region influence.
+  - answer: The set of all possible inputs a network can receive
+    explanation: Receptive field is specific to individual neurons, not all possible inputs.
+  - answer: The receiving antenna for input data in the network
+    explanation: This metaphor misses the point; receptive field is about spatial influence regions.
+
+- question: What is knowledge distillation?
+  points: 7
+  right:
+  - answer: Training a smaller student model to mimic a larger teacher model's behavior, transferring knowledge from complex to simpler models
+    explanation: Knowledge distillation enables model compression while maintaining much of the original performance.
+    links:
+    - https://en.wikipedia.org/wiki/Knowledge_distillation
+  wrong:
+  - answer: The process of extracting key insights from training data
+    explanation: This describes data analysis, not knowledge distillation between models.
+  - answer: Removing unnecessary knowledge from an overtrained model
+    explanation: Knowledge distillation transfers knowledge, not removes it.
+  - answer: A chemical process for purifying neural network weights
+    explanation: Despite the name, it's a machine learning technique, not chemistry.
+  - answer: Converting implicit knowledge in data to explicit rules
+    explanation: This describes rule extraction, not knowledge distillation.
+  - answer: The gradual loss of model performance over time
+    explanation: This describes model degradation, not knowledge distillation.
+
+- question: What is neural architecture search (NAS)?
+  points: 12
+  right:
+  - answer: An automated method for designing neural network architectures by searching through possible configurations using algorithms like reinforcement learning or evolutionary methods
+    explanation: NAS automates the traditionally manual process of architecture design, though at high computational cost.
+    links:
+    - https://en.wikipedia.org/wiki/Neural_architecture_search
+  wrong:
+  - answer: A search engine for finding neural network research papers
+    explanation: NAS is about automatically designing architectures, not searching literature.
+  - answer: The process of manually searching for the best architecture
+    explanation: NAS specifically refers to automated methods, not manual search.
+  - answer: A technique for searching through trained models to find the best one
+    explanation: NAS designs new architectures, not searches through existing trained models.
+  - answer: A database of pre-designed neural network architectures
+    explanation: NAS is an automated design process, not a database.
+  - answer: A visualization tool for exploring network structures
+    explanation: NAS designs architectures automatically, not visualizes them.
+
+- question: What is the difference between classification and regression?
+  points: 1
+  right:
+  - answer: Classification predicts discrete categories or classes, while regression predicts continuous numerical values
+    explanation: This is a fundamental distinction in supervised learning tasks.
+    links:
+    - https://en.wikipedia.org/wiki/Statistical_classification
+  wrong:
+  - answer: Classification is for images, regression is for text
+    explanation: Both can apply to various data types; the difference is about output type.
+  - answer: Classification uses neural networks, regression uses linear models
+    explanation: Both can use various model types including neural networks.
+  - answer: Classification is supervised, regression is unsupervised
+    explanation: Both are typically supervised learning tasks.
+  - answer: Classification predicts the past, regression predicts the future
+    explanation: Both can make predictions; the difference is discrete vs. continuous outputs.
+  - answer: Classification is easier than regression
+    explanation: Difficulty depends on the specific problem, not the task type.
+
+- question: What is gradient clipping?
+  points: 4
+  right:
+  - answer: A technique to prevent exploding gradients by limiting gradient values to a maximum threshold during training
+    explanation: Gradient clipping is especially important for RNNs which can suffer from exploding gradients.
+    links:
+    - https://en.wikipedia.org/wiki/Gradient_clipping
+  wrong:
+  - answer: Removing small gradients to speed up training
+    explanation: This would worsen learning; gradient clipping limits large gradients.
+  - answer: A technique for cutting unnecessary layers from the network
+    explanation: Gradient clipping affects gradient values, not network structure.
+  - answer: Clipping the learning rate when it becomes too large
+    explanation: Gradient clipping limits gradient magnitudes, not learning rate.
+  - answer: A method for attaching gradients to a clipboard for inspection
+    explanation: Despite the name, it's about limiting gradient values, not copying them.
+  - answer: Removing gradients that point in the wrong direction
+    explanation: Gradient clipping limits magnitude, not direction.
+
+- question: What are exploding gradients?
+  points: 4
+  right:
+  - answer: When gradients become extremely large during backpropagation, causing unstable training and numerical overflow
+    explanation: Exploding gradients are the opposite problem to vanishing gradients, often occurring in RNNs.
+    links:
+    - https://en.wikipedia.org/wiki/Vanishing_gradient_problem
+  wrong:
+  - answer: When gradients literally cause the hardware to overheat and explode
+    explanation: It's a numerical phenomenon, not physical explosion.
+  - answer: When too many gradients are computed simultaneously
+    explanation: Exploding gradients refer to magnitude, not quantity.
+  - answer: A technique for rapidly increasing learning speed
+    explanation: Exploding gradients are a problem, not a technique.
+  - answer: When gradients split into multiple directions during backpropagation
+    explanation: Exploding gradients are about magnitude, not directional splitting.
+  - answer: The sudden improvement in model performance during training
+    explanation: Exploding gradients cause instability and poor training, not improvement.
+
+- question: What is catastrophic forgetting?
+  points: 7
+  right:
+  - answer: When a neural network forgets previously learned tasks upon learning new ones, common in continual learning scenarios
+    explanation: Catastrophic forgetting is a major challenge for lifelong learning systems.
+    links:
+    - https://en.wikipedia.org/wiki/Catastrophic_interference
+  wrong:
+  - answer: When a model's weights are accidentally deleted during training
+    explanation: Catastrophic forgetting is about learning dynamics, not data loss.
+  - answer: Forgetting to save model checkpoints during long training runs
+    explanation: This is a practical mistake, not the technical concept of catastrophic forgetting.
+  - answer: When overfitting causes the model to forget training data patterns
+    explanation: Overfitting is memorizing training data; catastrophic forgetting is about sequential tasks.
+  - answer: A memory error that corrupts the model's parameters
+    explanation: Catastrophic forgetting is about learning new tasks overwriting old knowledge.
+  - answer: When the model forgets its architecture during training
+    explanation: Architecture is fixed; catastrophic forgetting is about learned knowledge.
+
+- question: What is continual learning?
+  points: 7
+  right:
+  - answer: The ability of a model to learn new tasks sequentially without forgetting previous tasks, also called lifelong learning
+    explanation: Continual learning aims to overcome catastrophic forgetting and enable adaptive systems.
+    links:
+    - https://en.wikipedia.org/wiki/Incremental_learning
+  wrong:
+  - answer: Training a model continuously without ever stopping
+    explanation: Continual learning is about sequential tasks, not continuous training time.
+  - answer: A learning schedule that gradually increases difficulty
+    explanation: This describes curriculum learning, not continual learning.
+  - answer: The continuation of training after early stopping
+    explanation: Continual learning is about multiple sequential tasks, not resuming training.
+  - answer: Learning that continues to improve indefinitely
+    explanation: Continual learning is about learning new tasks sequentially, not unlimited improvement.
+  - answer: A philosophy that emphasizes ongoing education for AI researchers
+    explanation: Continual learning is a technical concept for models, not a philosophy for researchers.
+
+- question: What is meta-learning?
+  points: 12
+  right:
+  - answer: Learning to learn - training models to quickly adapt to new tasks with minimal data by learning from multiple related tasks
+    explanation: Meta-learning enables few-shot learning and rapid adaptation, also called "learning to learn."
+    links:
+    - https://en.wikipedia.org/wiki/Meta_learning_(computer_science)
+  wrong:
+  - answer: Learning about the metadata of training datasets
+    explanation: Meta-learning is about learning adaptation strategies, not metadata.
+  - answer: A higher level of learning that surpasses human intelligence
+    explanation: Meta-learning is about task adaptation, not intelligence level.
+  - answer: Learning about how learning algorithms work theoretically
+    explanation: This describes educational study; meta-learning is about adaptive model training.
+  - answer: Training multiple models simultaneously on different tasks
+    explanation: While meta-learning uses multiple tasks, it's about learning adaptation, not just parallel training.
+  - answer: The process of learning which hyperparameters work best
+    explanation: This is hyperparameter optimization, not meta-learning (though they can be related).
+
+- question: What is few-shot learning?
+  points: 7
+  right:
+  - answer: Training models to learn new tasks from very few examples, typically fewer than 10 samples per class
+    explanation: Few-shot learning is crucial for domains where labeled data is scarce or expensive.
+    links:
+    - https://en.wikipedia.org/wiki/Few-shot_learning
+  wrong:
+  - answer: Training models with very few epochs
+    explanation: Few-shot refers to number of examples per class, not training epochs.
+  - answer: Learning that takes only a few seconds to complete
+    explanation: Few-shot refers to data quantity, not training time.
+  - answer: Using only a few shots of espresso to stay awake during training
+    explanation: This is humorous but wrong; few-shot refers to training examples.
+  - answer: A photography technique applied to image classification
+    explanation: Despite the photography terminology, it's about learning from few examples.
+  - answer: Training with few layers in the network
+    explanation: Few-shot refers to data samples, not network depth.
+
+- question: What is zero-shot learning?
+  points: 7
+  right:
+  - answer: The ability to recognize or perform tasks on classes that were never seen during training, using auxiliary information like descriptions
+    explanation: Zero-shot learning enables generalization to completely new categories.
+    links:
+    - https://en.wikipedia.org/wiki/Zero-shot_learning
+  wrong:
+  - answer: Learning without any training data at all
+    explanation: Zero-shot uses auxiliary information; it's zero examples of target classes, not zero data total.
+  - answer: Training a model in zero epochs
+    explanation: Zero-shot refers to unseen classes, not training epochs.
+  - answer: A model that learns nothing and always predicts zero
+    explanation: Zero-shot models can make predictions despite zero examples of target classes.
+  - answer: Learning without using any neural network layers
+    explanation: Zero-shot is about unseen classes, not network architecture.
+  - answer: A failed learning attempt with zero accuracy
+    explanation: Zero-shot is about learning new classes from descriptions, not failure.
+
+- question: What is an embedding layer?
+  points: 2
+  right:
+  - answer: A layer that maps discrete tokens (like words or categories) to continuous vector representations
+    explanation: Embedding layers are crucial for processing categorical data in neural networks.
+    links:
+    - https://en.wikipedia.org/wiki/Word_embedding
+  wrong:
+  - answer: A layer embedded deep within the network architecture
+    explanation: Embedding layers refer to mapping tokens to vectors, not layer position.
+  - answer: A layer for embedding watermarks in model outputs
+    explanation: Embedding layers map categorical inputs to vectors, not add watermarks.
+  - answer: The process of embedding the model in production systems
+    explanation: This describes deployment, not embedding layers.
+  - answer: A layer that embeds images inside the network
+    explanation: Embedding layers map discrete tokens to vectors, typically not used for images.
+  - answer: A technique for compressing layers into smaller representations
+    explanation: Embedding layers create vector representations of tokens, not compress layers.
+
+- question: What is the purpose of the softmax temperature parameter?
+  points: 7
+  right:
+  - answer: To control the sharpness of the probability distribution - lower temperature makes it more confident, higher makes it more uniform
+    explanation: Temperature scaling is used in knowledge distillation and sampling to control prediction confidence.
+    links:
+    - https://en.wikipedia.org/wiki/Softmax_function
+  wrong:
+  - answer: To monitor the physical temperature of GPUs during training
+    explanation: The temperature parameter is mathematical, not about hardware temperature.
+  - answer: To determine when the model has "cooled down" enough to stop training
+    explanation: Temperature is a softmax parameter, not a training stopping criterion.
+  - answer: To simulate different climate conditions in the training data
+    explanation: Temperature is about probability sharpness, not climate simulation.
+  - answer: To control how hot or cold the data preprocessing should be
+    explanation: Temperature affects softmax output distribution, not data preprocessing.
+  - answer: To prevent the model from overheating computationally
+    explanation: The parameter is about probability distribution shape, not computational load.
+
+- question: What is curriculum learning?
+  points: 7
+  right:
+  - answer: A training strategy where examples are presented in order of increasing difficulty, mimicking how humans learn
+    explanation: Curriculum learning can improve convergence and final performance by structured example ordering.
+    links:
+    - https://en.wikipedia.org/wiki/Curriculum_learning
+  wrong:
+  - answer: Learning the standard computer science curriculum through neural networks
+    explanation: Curriculum learning is about example ordering, not educational content.
+  - answer: Teaching neural networks about different school curricula
+    explanation: This misunderstands; it's about training example order, not educational curricula.
+  - answer: A schedule of which topics to teach the model first
+    explanation: It's about example difficulty ordering, not topic sequencing.
+  - answer: The process of continually updating the model curriculum
+    explanation: Curriculum learning is about example ordering within training, not ongoing updates.
+  - answer: Learning that follows a fixed timeline like academic semesters
+    explanation: It's about difficulty-based ordering, not time-based scheduling.
+
+- question: What is neural network pruning?
+  points: 7
+  right:
+  - answer: Removing unnecessary weights or neurons from a trained network to reduce size and computational cost while maintaining performance
+    explanation: Pruning helps create efficient models for deployment on resource-constrained devices.
+    links:
+    - https://en.wikipedia.org/wiki/Pruning_(decision_trees)
+  wrong:
+  - answer: Cutting back the training data to essential examples only
+    explanation: Pruning removes model parameters, not training data.
+  - answer: The gradual improvement of model performance over time
+    explanation: This describes learning progress; pruning is about removing parameters.
+  - answer: Removing outliers from the dataset during preprocessing
+    explanation: Pruning removes model components, not data points.
+  - answer: A gardening technique that inspired neural network design
+    explanation: While metaphorically inspired by gardening, it's about removing network parameters.
+  - answer: Trimming the learning rate during training
+    explanation: Pruning removes weights or neurons, not adjusts learning rates.
+
+- question: What is quantization in neural networks?
+  points: 7
+  right:
+  - answer: Reducing the numerical precision of weights and activations (e.g., from 32-bit to 8-bit) to decrease model size and speed up inference
+    explanation: Quantization is crucial for deploying models on mobile and edge devices.
+    links:
+    - https://en.wikipedia.org/wiki/Quantization_(machine_learning)
+  wrong:
+  - answer: Converting continuous outputs to discrete quantum states
+    explanation: Quantization reduces numerical precision, not related to quantum physics.
+  - answer: Measuring the quantity of neurons in each layer
+    explanation: Quantization is about numerical precision, not counting neurons.
+  - answer: Dividing the network into quantum-sized pieces for parallel processing
+    explanation: Quantization is about precision reduction, not network division.
+  - answer: The quantum mechanical effects observed in neural computations
+    explanation: Despite the name similarity, it's about numerical precision, not quantum mechanics.
+  - answer: Quantifying the quality of model predictions
+    explanation: Quantization is about precision reduction, not quality measurement.
+
+- question: What is depthwise separable convolution?
+  points: 12
+  right:
+  - answer: A convolution operation factored into depthwise and pointwise steps, reducing computational cost while maintaining expressive power
+    explanation: Depthwise separable convolutions are used in efficient architectures like MobileNet and EfficientNet.
+    links:
+    - https://en.wikipedia.org/wiki/Convolutional_neural_network
+  wrong:
+  - answer: A convolution that separates deep and shallow layers
+    explanation: It's about factoring the convolution operation, not separating layers by depth.
+  - answer: A technique for separating depth information in 3D images
+    explanation: It's a convolution factorization method, not about 3D depth information.
+  - answer: Convolutions that work at different depths of the network separately
+    explanation: It operates at single layers, factoring spatial and channel operations.
+  - answer: A method for keeping convolutional layers separate during training
+    explanation: It's a specific convolution type, not about layer separation during training.
+  - answer: Convolutions that can be separated and run on different devices
+    explanation: It's about mathematical factorization of operations, not distributed computing.
+
+- question: What is the difference between instance normalization and batch normalization?
+  points: 12
+  right:
+  - answer: Batch normalization normalizes across the batch dimension, while instance normalization normalizes each sample independently across spatial dimensions
+    explanation: Instance normalization is often used in style transfer, while batch normalization is common in classification.
+    links:
+    - https://en.wikipedia.org/wiki/Batch_normalization
+  wrong:
+  - answer: Instance normalization is for single samples, batch normalization is for multiple batches
+    explanation: While related to sample handling, this misses the key difference in normalization dimensions.
+  - answer: Instance normalization is faster but less accurate than batch normalization
+    explanation: The difference is in normalization dimensions, not speed/accuracy tradeoffs.
+  - answer: They are identical techniques with different names
+    explanation: They normalize over different dimensions and have different use cases.
+  - answer: Instance normalization is for classification, batch normalization is for generation
+    explanation: The tasks they're suited for differ, but the key difference is in normalization dimensions.
+  - answer: Instance normalization uses mean only, batch normalization uses mean and variance
+    explanation: Both use mean and variance; they differ in which dimensions they normalize over.
+
+- question: What is layer normalization?
+  points: 7
+  right:
+  - answer: A normalization technique that normalizes across the feature dimension for each sample independently, commonly used in transformers
+    explanation: Layer normalization is less sensitive to batch size than batch normalization and works well for sequences.
+    links:
+    - https://en.wikipedia.org/wiki/Batch_normalization
+  wrong:
+  - answer: Normalizing the number of layers in the network
+    explanation: Layer normalization normalizes activations within a layer, not layer counts.
+  - answer: A technique that makes all layers equal in importance
+    explanation: Layer normalization is about activation normalization, not layer importance.
+  - answer: Normalizing the weights of a specific layer
+    explanation: Layer normalization operates on activations, not weights directly.
+  - answer: Ensuring all layers have the same number of neurons
+    explanation: Layer normalization is about activation statistics, not neuron counts.
+  - answer: A debugging technique for checking if layers work normally
+    explanation: Layer normalization is a training technique, not a debugging tool.
+
+- question: What is group normalization?
+  points: 12
+  right:
+  - answer: A normalization technique that divides channels into groups and normalizes within each group, working well with small batch sizes
+    explanation: Group normalization bridges batch and layer normalization, providing stability regardless of batch size.
+    links:
+    - https://en.wikipedia.org/wiki/Batch_normalization
+  wrong:
+  - answer: Normalizing social groups in the training data for fairness
+    explanation: Group normalization is about channel grouping in neural networks, not social groups.
+  - answer: A technique for training multiple neural networks as a group
+    explanation: Group normalization operates within a single network, not across multiple networks.
+  - answer: Normalizing groups of layers together for consistency
+    explanation: Group normalization divides channels within layers, not groups layers.
+  - answer: A collaborative technique where multiple models normalize each other
+    explanation: Group normalization operates within a single model on channel groups.
+  - answer: Organizing neurons into groups that vote on activations
+    explanation: Group normalization computes statistics over channel groups, not voting mechanisms.
+
+- question: What is the Inception module?
+  points: 12
+  right:
+  - answer: A network module that applies multiple convolutional filters of different sizes in parallel and concatenates the results
+    explanation: Inception modules, introduced in GoogLeNet, capture multi-scale features efficiently.
+    links:
+    - https://en.wikipedia.org/wiki/Inception_(neural_network)
+  wrong:
+  - answer: The first module that initiates learning in a neural network
+    explanation: Inception refers to the parallel multi-scale architecture, not initialization.
+  - answer: A module inspired by the movie Inception with nested networks
+    explanation: While the movie inspired the name, the module is about parallel convolutions.
+  - answer: The inception point where training begins
+    explanation: Inception modules are architectural components, not training start points.
+  - answer: A module that creates dreams or hallucinations in networks
+    explanation: Despite the movie reference, it's about multi-scale feature extraction.
+  - answer: The original module from which all others are derived
+    explanation: Inception is a specific architectural pattern, not the origin of all modules.
+
+- question: What is neural style transfer?
+  points: 7
+  right:
+  - answer: A technique that applies the artistic style of one image to the content of another using neural networks
+    explanation: Style transfer uses CNN features to separate and recombine content and style representations.
+    links:
+    - https://en.wikipedia.org/wiki/Neural_style_transfer
+  wrong:
+  - answer: Transferring neural networks from one programming style to another
+    explanation: Style transfer is about image style, not code style.
+  - answer: A technique for transferring styles between different neural network architectures
+    explanation: Style transfer applies to images, not network architectures.
+  - answer: The process of adopting different training styles during learning
+    explanation: Style transfer is about image style transformation, not training methodology.
+  - answer: Transferring the writing style from one text to another
+    explanation: While text style transfer exists, neural style transfer typically refers to images.
+  - answer: A fashion technique that neural networks learn from style magazines
+    explanation: Style transfer is about artistic image transformation, not fashion.
+
+- question: What is adversarial training?
+  points: 7
+  right:
+  - answer: Training models on adversarial examples (inputs with small perturbations designed to fool the model) to improve robustness
+    explanation: Adversarial training helps defend against adversarial attacks and improves model reliability.
+    links:
+    - https://en.wikipedia.org/wiki/Adversarial_machine_learning
+  wrong:
+  - answer: Training two models to compete against each other like in GANs
+    explanation: While GANs use adversarial training, the term more broadly means training with adversarial examples.
+  - answer: Training in adverse conditions with limited resources
+    explanation: Adversarial training is about robustness to perturbations, not resource constraints.
+  - answer: A competitive training method where multiple teams train models
+    explanation: Adversarial training is about algorithmic robustness, not team competition.
+  - answer: Training models to be adversarial to humans
+    explanation: It's about robustness to perturbed inputs, not antagonism toward humans.
+  - answer: Training that adversarially affects model performance negatively
+    explanation: Adversarial training improves robustness, not degrade performance.
+
+- question: What is an adversarial example?
+  points: 4
+  right:
+  - answer: An input that has been subtly modified to cause a model to make incorrect predictions, often imperceptible to humans
+    explanation: Adversarial examples reveal vulnerabilities in neural networks and raise security concerns.
+    links:
+    - https://en.wikipedia.org/wiki/Adversarial_machine_learning
+  wrong:
+  - answer: An example that adversely affects training by being an outlier
+    explanation: Adversarial examples are intentionally crafted perturbations, not natural outliers.
+  - answer: A difficult training example that the model struggles with
+    explanation: Adversarial examples are specifically crafted to fool models, not naturally difficult.
+  - answer: An example used in adversarial training between two models
+    explanation: While used in adversarial training, the key property is the subtle perturbation.
+  - answer: A negative example showing what not to predict
+    explanation: Adversarial examples are perturbed inputs, not negative examples in training.
+  - answer: An example that adversely affects human understanding
+    explanation: Adversarial examples fool models while often remaining clear to humans.
+
+- question: What is the FGSM attack?
+  points: 12
+  right:
+  - answer: Fast Gradient Sign Method - an adversarial attack that creates perturbations by taking a step in the direction of the gradient's sign
+    explanation: FGSM is one of the simplest and fastest adversarial attack methods.
+    links:
+    - https://en.wikipedia.org/wiki/Adversarial_machine_learning
+  wrong:
+  - answer: Fast Gradient Stochastic Method for optimizing neural networks
+    explanation: FGSM is an attack method, not an optimization algorithm.
+  - answer: Finite Gradient State Machine for controlling training
+    explanation: This is not what FGSM stands for or does.
+  - answer: First Generation Synthesis Model for creating data
+    explanation: FGSM is an adversarial attack, not a generative model.
+  - answer: Full Gradient Summation Method for backpropagation
+    explanation: FGSM is an attack technique, not a backpropagation method.
+  - answer: Fast Global Search Method for architecture optimization
+    explanation: FGSM is specifically an adversarial attack method.
+
+- question: What is a Siamese network?
+  points: 7
+  right:
+  - answer: A neural network architecture with two or more identical subnetworks sharing weights, typically used for comparing inputs
+    explanation: Siamese networks are used for tasks like face verification and signature verification.
+    links:
+    - https://en.wikipedia.org/wiki/Siamese_neural_network
+  wrong:
+  - answer: A network architecture inspired by Siamese cats
+    explanation: The name comes from Siamese twins (identical), not Siamese cats.
+  - answer: Two networks trained simultaneously on different tasks
+    explanation: Siamese networks share weights and process related inputs, not different tasks.
+  - answer: A network that connects two different model architectures
+    explanation: Siamese networks use identical architectures with shared weights.
+  - answer: A network designed specifically for Thai language processing
+    explanation: Siamese refers to the twin structure, not the country or language.
+  - answer: Two networks that communicate during training
+    explanation: Siamese networks share weights but don't communicate; they process inputs for comparison.
+
+- question: What is contrastive learning?
+  points: 12
+  right:
+  - answer: A self-supervised learning approach that learns representations by contrasting similar (positive) and dissimilar (negative) pairs
+    explanation: Contrastive learning has been successful in learning powerful representations without labels.
+    links:
+    - https://en.wikipedia.org/wiki/Contrastive_learning
+  wrong:
+  - answer: Learning by contrasting different model architectures
+    explanation: Contrastive learning is about learning from data pairs, not architecture comparison.
+  - answer: A technique that increases contrast in image data
+    explanation: Contrastive learning is about representation learning, not image enhancement.
+  - answer: Learning that contrasts with traditional supervised methods
+    explanation: While different from supervised learning, the term refers to contrasting data pairs.
+  - answer: A method that learns only from negative examples
+    explanation: Contrastive learning uses both positive and negative pairs.
+  - answer: Training that contrasts model predictions with ground truth
+    explanation: This describes standard supervised learning, not contrastive learning specifically.
+
+- question: What is self-supervised learning?
+  points: 7
+  right:
+  - answer: Learning useful representations from unlabeled data by creating supervised tasks from the data itself, like predicting masked words
+    explanation: Self-supervised learning has enabled models like BERT and GPT to learn from massive unlabeled datasets.
+    links:
+    - https://en.wikipedia.org/wiki/Self-supervised_learning
+  wrong:
+  - answer: When a neural network supervises its own training without human input
+    explanation: Self-supervised learning creates labels from data structure, not autonomous supervision.
+  - answer: A network that monitors and corrects its own mistakes
+    explanation: This describes self-correction; self-supervised learning creates training signals from data.
+  - answer: Learning that requires no computational supervision or monitoring
+    explanation: Self-supervised learning is about creating labels from data, not computational monitoring.
+  - answer: When models self-evaluate their performance
+    explanation: Self-supervised learning generates training signals from unlabeled data.
+  - answer: Supervised learning where the model teaches itself from labeled data
+    explanation: Self-supervised learning specifically works with unlabeled data.
+
+- question: What is the difference between online and offline learning?
+  points: 4
+  right:
+  - answer: Online learning updates the model continuously as new data arrives, while offline learning trains on a fixed dataset before deployment
+    explanation: Online learning adapts to changing data distributions but can be unstable; offline learning is more stable but static.
+    links:
+    - https://en.wikipedia.org/wiki/Online_machine_learning
+  wrong:
+  - answer: Online learning requires internet connection, offline learning doesn't
+    explanation: The terms refer to training modes (continuous vs. batch), not internet connectivity.
+  - answer: Online learning is faster, offline learning is more accurate
+    explanation: Both have tradeoffs; the key difference is continuous adaptation vs. fixed training.
+  - answer: Online learning happens during inference, offline during training
+    explanation: Both are training modes; online means continuous updates, offline means batch training.
+  - answer: Online learning uses cloud resources, offline uses local hardware
+    explanation: The terms refer to update frequency, not computational infrastructure.
+  - answer: They are the same, just different terminology
+    explanation: They represent fundamentally different training paradigms.
+
+- question: What is active learning?
+  points: 7
+  right:
+  - answer: A learning approach where the model selects which data points to label next, typically choosing the most informative examples
+    explanation: Active learning reduces labeling costs by strategically selecting examples to label.
+    links:
+    - https://en.wikipedia.org/wiki/Active_learning_(machine_learning)
+  wrong:
+  - answer: Learning that requires active participation from users during inference
+    explanation: Active learning is about strategic data selection during training, not user participation.
+  - answer: A training method where the model is always actively updating
+    explanation: This describes continuous learning; active learning is about data selection.
+  - answer: Learning that uses activation functions actively
+    explanation: Active learning is about strategic sample selection, not activation functions.
+  - answer: Training that keeps neurons actively firing throughout
+    explanation: Active learning is about intelligent data labeling strategies.
+  - answer: A learning style where researchers actively monitor training
+    explanation: Active learning is about algorithmic data selection, not human monitoring.
+
+- question: What is ensemble learning in neural networks?
+  points: 4
+  right:
+  - answer: Combining predictions from multiple models to achieve better performance than any individual model
+    explanation: Ensembles reduce variance and often win competitions by aggregating diverse model predictions.
+    links:
+    - https://en.wikipedia.org/wiki/Ensemble_learning
+  wrong:
+  - answer: Training a musical ensemble to perform using neural networks
+    explanation: Despite the musical term, it's about combining multiple model predictions.
+  - answer: A technique where neurons work together in ensembles
+    explanation: Ensemble learning combines separate models, not individual neurons.
+  - answer: Learning multiple tasks simultaneously in one model
+    explanation: This describes multi-task learning; ensembles use multiple separate models.
+  - answer: A group of researchers working together on a model
+    explanation: Ensemble learning is about combining model predictions, not team collaboration.
+  - answer: Training one large model that contains multiple sub-models
+    explanation: Ensembles typically use separate independent models, though mixture of experts is related.
+
+- question: What is bagging in machine learning?
+  points: 4
+  right:
+  - answer: Bootstrap aggregating - training multiple models on different random samples of the training data and averaging their predictions
+    explanation: Bagging reduces variance and is the basis for Random Forests.
+    links:
+    - https://en.wikipedia.org/wiki/Bootstrap_aggregating
+  wrong:
+  - answer: Putting trained models into bags for storage
+    explanation: Despite the name, bagging is about training on bootstrap samples and aggregating.
+  - answer: A technique for packaging neural networks for deployment
+    explanation: Bagging is an ensemble method, not a deployment packaging technique.
+  - answer: Collecting all training data into bags for organization
+    explanation: Bagging creates random samples for training multiple models.
+  - answer: A regularization technique that bags up overfitted parameters
+    explanation: Bagging is an ensemble method using bootstrap sampling.
+  - answer: The process of removing bad data and bagging it separately
+    explanation: Bagging uses bootstrap sampling to create model diversity, not data cleaning.

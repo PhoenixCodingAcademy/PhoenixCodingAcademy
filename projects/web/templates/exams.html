@@ -1,18 +1,24 @@
 {% extends 'base.html' %}
 {% block content %}
 
-<div id="exam-app">
+<style>
+  #exam-form > div > label {
+    display: inline-block;
+    width: 200px;
+    text-align: right;
+    margin-right: 10px;
+  }
+</style>
+
+{% raw %}<div id="exam-app">
   <form id="exam-form" @submit.prevent="gradeExam">
     <div>
       <label for="yaml-select"><strong>Question set:</strong></label>
       <select id="yaml-select" v-model="selectedYaml" @change="resetExam">
         <option disabled selected value="">-- Select a question set --</option>
-        {% for file in model.yamlFiles %}
-        <option value="{{ file }}">{{ file }}</option>
-        {% endfor %}
+        <option v-for="file in yamlFiles" :key="file" :value="file">[[ file ]]</option>
       </select>
     </div>
-    {% raw %}
     <div>
       <label for="name"><strong>Name:</strong></label>
       <input id="name" v-model="studentName" type="text" required placeholder="Your full name; e.g. John Smith" />
@@ -31,18 +37,18 @@
 
     <div v-if="started" style="margin-top: 2em;">
       <div>
-        <h2>Quiz for {{ studentName }}</h2>
-        <div>{{ examDate }}</div>
+        <h2>Quiz for [[ studentName ]]</h2>
+        <div>[[ examDate ]]</div>
         <div>
-          {{ model.questions.length }} questions for a total of {{ model.totalPoints }} points.
+          [[ questions.length ]] questions for a total of [[ totalPoints ]] points.
         </div>
         <div v-if="history && history.length">
-          <div v-for="(row, idx) in history" :key="'history-' + idx">{{ row }}</div>
+          <div v-for="(row, idx) in history" :key="'history-' + idx">[[ row ]]</div>
         </div>
       </div>
       <hr>
       <div v-for="(q, qIdx) in questions" :key="'q-'+qIdx" style="margin-bottom:1.5em;">
-        <h3>Q[[ qIdx+1 ]]. [[ q.question ]]</h3>
+        <h3>Q[[ qIdx+1 ]]. [[ q.question ]] ([[ q.points ]] pts)</h3>
         <div v-for="(ans, aIdx) in q.displayAnswers" :key="ans.uid">
           <label>
             <input type="checkbox"
@@ -51,41 +57,45 @@
                    :value="ans.uid"
                    v-model="answers[qIdx]"
                    @change="answerChanged(qIdx, aIdx, ans.isNoneOfTheAbove)">
-            [[ ans.answer ]] ([[ q.points ]] pts)
+            [[ ans.answer ]]
           </label>
         </div>
       </div>
-      <button type="submit" :disabled="!model.readyToGrade">Grade Quiz</button>
+      <button type="submit" :disabled="!readyToGrade">Grade Quiz</button>
     </div>
-  </form>{% endraw %}
-  {% raw %}<div v-if="results">
+  </form>
+  <div v-if="results">
     <h3>Results</h3>
     <div>
-      Name: {{ results.name }}<br>
-      Score: {{ results.score }} / {{ results.maxPoints }}<br>
-      Max Difficulty: {{ results.maxDifficulty }}<br>
+      Name: [[ results.name ]]<br>
+      Score: [[ results.score ]] / [[ results.maxPoints ]]<br>
+      Max Difficulty: [[ results.maxDifficulty ]]<br>
       <div v-if="results.answers">
-        <div v-for="(ans, idx) in model.results.answers" :key="'result-'+idx">
-          <strong>Q{{ idx+1 }}:</strong>
+        <div v-for="(ans, idx) in results.answers" :key="'result-'+idx">
+          <strong>Q[[ idx+1 ]]:</strong>
           <span v-if="ans.right" style="color:green;">Right</span>
           <span v-else style="color:red;">Wrong</span>
         </div>
       </div>
     </div>
-  </div>{% endraw %}
-</div>
+  </div>
+</div>{% endraw %}
 
 <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
 <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/xxhashjs@0.2.2/build/xxhash.min.js"></script>
 <script>
+var yamlFiles = [];
+{% for file in model.yamlFiles %}
+yamlFiles.push('{{ file }}');
+{% endfor %}
 new Vue({
   el: '#exam-app',
   delimiters: ['[[', ']]'],
   data: {
-    yamlFiles: {{ model.yamlFiles|tojson }},
+    yamlFiles: yamlFiles,
     selectedYaml: '',
-    studentName: '',
+    studentName: localStorage.getItem('studentName') || '',
     maxPoints: 50,
     maxDifficulty: 7,
     started: false,
@@ -97,6 +107,11 @@ new Vue({
     totalPoints: 0,
     results: null,
     secret: 'exam_secret_key',  // For hashing IDs
+  },
+  watch: {
+    studentName(newName) {
+      localStorage.setItem('studentName', newName);
+    }
   },
   computed: {
     canStart() {
@@ -134,121 +149,22 @@ new Vue({
       this.history = [];
       this.examDate = new Date().toISOString().slice(0,10);
 
-      axios.get(`/static/questions/${this.selectedYaml}`)
+      // POST to API for exam generation
+      axios.post('/startexam', {
+        selectedYaml: this.selectedYaml,
+        maxPoints: this.maxPoints,
+        maxDifficulty: this.maxDifficulty
+      })
         .then(res => {
-          // YAML parsing is needed
-          const data = this.parseYAML(res.data);
-          let qs = (data.questions || []).filter(q => q.points <= this.maxDifficulty);
-          // Shuffle questions
-          qs = this.shuffle(Array.from(qs));
-          // Select enough questions to get at least maxPoints or a bit over
-          let sel = [], pt = 0;
-          for (let q of qs) {
-            if (sel.length > 0 && pt >= this.maxPoints)
-              break;
-            sel.push(q);
-            pt += q.points || 1;
-          }
-          // Build per-question randomized answers (pick 5, must support all wrong)
-          sel.forEach((q, idx) => {
-            let allAnswers = [];
-            if (Array.isArray(q.right)) {
-              allAnswers = q.right.map(a => ({...a, isRight: true}));
-            } else if (q.right) {
-              allAnswers = [{...q.right, isRight: true}]
-            }
-            if (Array.isArray(q.wrong)) {
-              allAnswers = allAnswers.concat(q.wrong.map(a => ({...a, isRight: false})));
-            }
-            // Remove explanation, links
-            allAnswers.forEach(a => { a.answer = a.answer || ''; });
-            allAnswers = this.shuffle(allAnswers);
-            // Pick 5, but can be all wrong
-            let five = allAnswers.slice(0, 5);
-            // If fewer, fill with more wrongs if possible
-            if (five.length < 5 && q.wrong && q.wrong.length >= 5) {
-              five = this.shuffle(q.wrong).slice(0, 5).map(a => ({...a, isRight: false}));
-            }
-            // None of the above
-            five.push({
-              answer: "None of the above",
-              isRight: false,
-              isNoneOfTheAbove: true
-            });
-
-            // UIDs for checkboxes
-            five.forEach((a, ansIdx) => {
-              let str = this.secret + (a.answer || '');
-              str += (a.isRight ? 'RIGHT' : 'WRONG');
-              let xxh = XXH.h32(str, 0xABCD).toString(16);
-              a.uid = idx + '-' + xxh;
-            });
-            q.displayAnswers = five;
-          });
-
-          this.questions = sel;
-          this.totalPoints = sel.reduce((acc, qq) => acc + (qq.points||1), 0);
+          this.questions = res.data.questions || [];
+          this.totalPoints = res.data.totalPoints || 0;
+          this.history = res.data.history || [];
           this.answers = Array(this.questions.length).fill().map(()=>[]);
-          this.history = data.history || [];
           this.started = true;
         })
         .catch(e => {
-          alert("Failed to load or parse YAML: " + e);
+          alert("Failed to start exam: " + (e.response?.data?.error || e.message));
         });
-    },
-    parseYAML(yamlStr) {
-      // Very basic YAML parsing for the subset structure, or inject js-yaml if available
-      if (window.jsyaml) {
-        return window.jsyaml.load(yamlStr);
-      }
-      try {
-        let out = {};
-        // Simple subset YAML - category, questions (list with sublists)
-        let lines = yamlStr.split('\n');
-        let key = '';
-        let current = null;
-        let mode = '';
-        out.questions = [];
-        for (let i=0; i<lines.length; ++i) {
-          let l = lines[i].trim();
-          if (!l) continue;
-          if (l.startsWith('category:')) continue;
-          if (l.startsWith('- question:')) {
-            current = {question: l.slice(12).trim()};
-            mode = '';
-            out.questions.push(current);
-          } else if (l.startsWith('points:')) {
-            if (current) current.points = parseInt(l.slice(7).trim());
-          } else if (l.startsWith('right:')) {
-            mode = 'right';
-            current.right = [];
-          } else if (l.startsWith('wrong:')) {
-            mode = 'wrong';
-            current.wrong = [];
-          } else if (l.startsWith('- answer:')) {
-            let ans = {answer: l.slice(9).trim()};
-            if (mode === 'right') current.right.push(ans);
-            else if (mode === 'wrong') current.wrong.push(ans);
-          } else if (l.startsWith('explanation:')) {
-            // Try to attach explanation to previous answer
-            let arr = mode === 'right' ? current.right : current.wrong;
-            if (arr && arr.length > 0) arr[arr.length-1].explanation = l.slice(12).trim();
-          }
-        }
-        return out;
-      } catch(e) {
-        alert("YAML parse error!");
-        return {questions:[]};
-      }
-    },
-    shuffle(arr) {
-      // Fisher-Yates shuffle
-      let a = arr.slice();
-      for (let i = a.length-1; i > 0; --i) {
-        let j = Math.floor(Math.random()*(i+1));
-        [a[i],a[j]] = [a[j],a[i]]
-      }
-      return a;
     },
     answerChanged(qIdx, aIdx, isNoneOfTheAbove) {
       // If "None of the above" is checked, uncheck others and vice versa
