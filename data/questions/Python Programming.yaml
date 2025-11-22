@@ -1,0 +1,2133 @@
+questions:
+- question: What is Python?
+  points: 1
+  right:
+  - answer: A high-level, interpreted programming language
+    explanation: Python is an interpreted, high-level, general-purpose programming language created by Guido van Rossum.
+    links:
+    - https://www.python.org/doc/essays/blurb/
+  wrong:
+  - answer: A low-level assembly language
+    explanation: Python is high-level, not low-level like assembly.
+  - answer: A compiled language like C++
+    explanation: Python is interpreted, not compiled to machine code directly.
+  - answer: A database management system
+    explanation: Python is a programming language, not a DBMS like MySQL.
+  - answer: A web browser
+    explanation: Python is a programming language, not software like Chrome or Firefox.
+  - answer: An operating system
+    explanation: Python runs on operating systems but is not one itself.
+
+- question: How do you print "Hello World" in Python?
+  points: 1
+  right:
+  - answer: print("Hello World")
+    explanation: The print() function outputs text to the console.
+    links:
+    - https://docs.python.org/3/library/functions.html#print
+  wrong:
+  - answer: echo "Hello World"
+    explanation: This is bash/shell syntax, not Python.
+  - answer: console.log("Hello World")
+    explanation: This is JavaScript syntax, not Python.
+  - answer: System.out.println("Hello World")
+    explanation: This is Java syntax, not Python.
+  - answer: printf("Hello World")
+    explanation: This is C syntax, not Python.
+  - answer: cout << "Hello World"
+    explanation: This is C++ syntax, not Python.
+
+- question: What symbol is used for single-line comments in Python?
+  points: 1
+  right:
+  - answer: "#"
+    explanation: The hash symbol starts a comment that extends to the end of the line.
+    links:
+    - https://docs.python.org/3/reference/lexical_analysis.html#comments
+  wrong:
+  - answer: "//"
+    explanation: This is used in C, C++, Java, and JavaScript, not Python.
+  - answer: "/*"
+    explanation: This starts multi-line comments in C-style languages, not Python.
+  - answer: "--"
+    explanation: This is used for comments in SQL and Lua, not Python.
+  - answer: "'"
+    explanation: Single quotes define strings in Python, not comments.
+  - answer: ";"
+    explanation: Semicolons can separate statements in Python but don't create comments.
+
+- question: What are the two main data types for numbers in Python?
+  points: 2
+  right:
+  - answer: int and float
+    explanation: Integers (int) and floating-point numbers (float) are the primary numeric types.
+    links:
+    - https://docs.python.org/3/library/stdtypes.html#numeric-types-int-float-complex
+  wrong:
+  - answer: integer and decimal
+    explanation: Python uses 'int' and 'float', not 'integer' and 'decimal' as type names.
+  - answer: short and long
+    explanation: These are C/Java types; Python 3 has unified int type.
+  - answer: number and digit
+    explanation: These are not Python data type names.
+  - answer: byte and word
+    explanation: These are not primary numeric types in Python.
+  - answer: single and double
+    explanation: These are Fortran/Pascal terminology, not Python.
+
+- question: How do you create a variable named 'age' with value 25?
+  points: 1
+  right:
+  - answer: age = 25
+    explanation: Python uses simple assignment with the equals sign.
+    links:
+    - https://docs.python.org/3/tutorial/introduction.html#using-python-as-a-calculator
+  wrong:
+  - answer: var age = 25
+    explanation: Python doesn't require the 'var' keyword like JavaScript.
+  - answer: int age = 25
+    explanation: Python doesn't require explicit type declaration like C or Java.
+  - answer: age := 25
+    explanation: The walrus operator := is for assignment expressions, not basic assignment.
+  - answer: let age = 25
+    explanation: Python doesn't use 'let' keyword like JavaScript.
+  - answer: dim age = 25
+    explanation: This is Visual Basic syntax, not Python.
+
+- question: What is the correct way to create a list in Python?
+  points: 1
+  right:
+  - answer: my_list = [1, 2, 3]
+    explanation: Square brackets define a list in Python.
+    links:
+    - https://docs.python.org/3/tutorial/datastructures.html#more-on-lists
+  wrong:
+  - answer: my_list = (1, 2, 3)
+    explanation: Parentheses create tuples, not lists.
+  - answer: my_list = {1, 2, 3}
+    explanation: Curly braces create sets, not lists.
+  - answer: my_list = <1, 2, 3>
+    explanation: Angle brackets are not used for data structures in Python.
+  - answer: my_list = array(1, 2, 3)
+    explanation: This is not valid Python syntax; lists use square brackets.
+  - answer: my_list = list:1, 2, 3
+    explanation: This is not valid Python syntax.
+
+- question: What does the len() function do?
+  points: 1
+  right:
+  - answer: Returns the number of items in an object
+    explanation: len() returns the length (number of items) of a container.
+    links:
+    - https://docs.python.org/3/library/functions.html#len
+  wrong:
+  - answer: Returns the last element of a list
+    explanation: This is not what len() does; use indexing like list[-1] for that.
+  - answer: Converts a string to lowercase
+    explanation: This is what lower() does, not len().
+  - answer: Calculates the length of a line in geometry
+    explanation: len() works with data structures, not geometric calculations.
+  - answer: Checks if a list is empty
+    explanation: While len() can be used for this, it primarily returns the count.
+  - answer: Joins multiple strings together
+    explanation: This is what join() does, not len().
+
+- question: What is the result of 10 / 3 in Python 3?
+  points: 2
+  right:
+  - answer: 3.3333333333333335 (a float)
+    explanation: In Python 3, the / operator always performs true division, returning a float.
+    links:
+    - https://docs.python.org/3/whatsnew/3.0.html#integers
+  wrong:
+  - answer: 3 (an integer)
+    explanation: This was Python 2 behavior; Python 3 returns a float.
+  - answer: 3.33 (rounded to 2 decimals)
+    explanation: Python doesn't automatically round division results.
+  - answer: An error
+    explanation: This division is perfectly valid in Python.
+  - answer: 3.0 (truncated)
+    explanation: True division returns the full result, not truncated.
+  - answer: "3 remainder 1"
+    explanation: This is not how Python represents division results.
+
+- question: What operator performs floor division in Python?
+  points: 2
+  right:
+  - answer: //
+    explanation: The double slash performs floor division, returning the quotient without remainder.
+    links:
+    - https://docs.python.org/3/reference/expressions.html#binary-arithmetic-operations
+  wrong:
+  - answer: /
+    explanation: Single slash performs true division, returning a float.
+  - answer: "%"
+    explanation: Percent sign is the modulo operator, not floor division.
+  - answer: "\\"
+    explanation: Backslash is an escape character, not an operator.
+  - answer: div
+    explanation: Python uses //, not a 'div' keyword.
+  - answer: floor()
+    explanation: While floor() exists, // is the operator for floor division.
+
+- question: How do you create a string in Python?
+  points: 1
+  right:
+  - answer: Using single quotes 'text' or double quotes "text"
+    explanation: Both single and double quotes can create strings in Python.
+    links:
+    - https://docs.python.org/3/tutorial/introduction.html#strings
+  - answer: Using triple quotes '''text''' or """text"""
+    explanation: Triple quotes create strings and can span multiple lines.
+  wrong:
+  - answer: Using backticks `text`
+    explanation: Backticks were used in Python 2 for repr(), not for strings in Python 3.
+  - answer: Using angle brackets <text>
+    explanation: Angle brackets don't create strings in Python.
+  - answer: Using the String() constructor
+    explanation: Python uses quotes, not a constructor like JavaScript.
+  - answer: Using square brackets [text]
+    explanation: Square brackets create lists, not strings.
+
+- question: What is the correct syntax for an if statement in Python?
+  points: 2
+  right:
+  - answer: "if condition:"
+    explanation: Python if statements end with a colon and use indentation for the block.
+    links:
+    - https://docs.python.org/3/tutorial/controlflow.html#if-statements
+  wrong:
+  - answer: if (condition) {}
+    explanation: Python doesn't use curly braces; it uses colons and indentation.
+  - answer: if condition then
+    explanation: Python doesn't use 'then' keyword like some other languages.
+  - answer: IF condition DO
+    explanation: Python uses lowercase keywords and colons, not DO.
+  - answer: if (condition);
+    explanation: Python doesn't require parentheses or semicolons.
+  - answer: if condition ->
+    explanation: Python uses colons, not arrows for if statements.
+
+- question: How do you define a function in Python?
+  points: 2
+  right:
+  - answer: "def function_name():"
+    explanation: The 'def' keyword defines a function, followed by name, parentheses, and colon.
+    links:
+    - https://docs.python.org/3/tutorial/controlflow.html#defining-functions
+  wrong:
+  - answer: function function_name() {}
+    explanation: Python uses 'def', not 'function', and colons not braces.
+  - answer: func function_name():
+    explanation: Python uses 'def', not 'func'.
+  - answer: define function_name():
+    explanation: Python uses 'def', not 'define'.
+  - answer: fn function_name() =>
+    explanation: This is Rust-like syntax, not Python.
+  - answer: void function_name()
+    explanation: Python doesn't require type declarations like C/Java.
+
+- question: What does the range() function do?
+  points: 2
+  right:
+  - answer: Generates a sequence of numbers
+    explanation: range() creates an immutable sequence of numbers, commonly used in for loops.
+    links:
+    - https://docs.python.org/3/library/stdtypes.html#range
+  wrong:
+  - answer: Returns a random number
+    explanation: This is what random.random() does, not range().
+  - answer: Sorts a list of numbers
+    explanation: This is what sorted() does, not range().
+  - answer: Finds the difference between max and min values
+    explanation: range() generates sequences, it doesn't calculate statistical ranges.
+  - answer: Creates a list of strings
+    explanation: range() generates numbers, not strings.
+  - answer: Checks if a number is within bounds
+    explanation: While range can be used with 'in', its primary purpose is generating sequences.
+
+- question: What is the correct way to create a for loop in Python?
+  points: 2
+  right:
+  - answer: "for item in sequence:"
+    explanation: Python for loops iterate over sequences using 'in' keyword.
+    links:
+    - https://docs.python.org/3/tutorial/controlflow.html#for-statements
+  wrong:
+  - answer: for (int i = 0; i < 10; i++)
+    explanation: This is C/Java syntax, not Python.
+  - answer: for item of sequence:
+    explanation: Python uses 'in', not 'of' (though JavaScript uses 'of').
+  - answer: foreach item in sequence:
+    explanation: Python uses 'for', not 'foreach'.
+  - answer: for item -> sequence:
+    explanation: Python uses 'in', not arrow syntax.
+  - answer: loop item in sequence:
+    explanation: Python uses 'for', not 'loop'.
+
+- question: How do you access the first element of a list called 'items'?
+  points: 1
+  right:
+  - answer: items[0]
+    explanation: Python uses zero-based indexing, so the first element is at index 0.
+    links:
+    - https://docs.python.org/3/tutorial/introduction.html#lists
+  wrong:
+  - answer: items[1]
+    explanation: This accesses the second element; Python uses zero-based indexing.
+  - answer: items.first()
+    explanation: Lists don't have a first() method in Python.
+  - answer: items.get(0)
+    explanation: Lists use bracket notation, not get() method (which is for dictionaries).
+  - answer: first(items)
+    explanation: There's no built-in first() function in Python.
+  - answer: items{0}
+    explanation: Python uses square brackets for indexing, not curly braces.
+
+- question: What does the append() method do for lists?
+  points: 1
+  right:
+  - answer: Adds an element to the end of the list
+    explanation: append() adds a single item to the end of a list.
+    links:
+    - https://docs.python.org/3/tutorial/datastructures.html#more-on-lists
+  wrong:
+  - answer: Adds an element to the beginning of the list
+    explanation: This is what insert(0, item) does; append() adds to the end.
+  - answer: Removes the last element from the list
+    explanation: This is what pop() does, not append().
+  - answer: Sorts the list
+    explanation: This is what sort() does, not append().
+  - answer: Joins two lists together
+    explanation: This is closer to what extend() does.
+  - answer: Counts the number of elements in the list
+    explanation: This is what len() does, not append().
+
+- question: What is a dictionary in Python?
+  points: 2
+  right:
+  - answer: A collection of key-value pairs
+    explanation: Dictionaries store data as key-value pairs, allowing fast lookups.
+    links:
+    - https://docs.python.org/3/tutorial/datastructures.html#dictionaries
+  wrong:
+  - answer: A sorted list of words
+    explanation: Dictionaries are key-value stores, not sorted word lists.
+  - answer: A function that defines words
+    explanation: Dictionaries are data structures, not functions.
+  - answer: An ordered sequence like a list
+    explanation: While modern Python dicts maintain insertion order, they're fundamentally key-value stores.
+  - answer: A way to compress text files
+    explanation: Dictionaries are data structures, not compression tools.
+  - answer: A module for language translation
+    explanation: Dictionaries are data structures, not translation tools.
+
+- question: How do you create an empty dictionary?
+  points: 1
+  right:
+  - answer: my_dict = {} or my_dict = dict()
+    explanation: Empty curly braces or dict() constructor create an empty dictionary.
+    links:
+    - https://docs.python.org/3/library/stdtypes.html#dict
+  wrong:
+  - answer: my_dict = []
+    explanation: Square brackets create an empty list, not a dictionary.
+  - answer: my_dict = ()
+    explanation: Parentheses create an empty tuple, not a dictionary.
+  - answer: my_dict = <>
+    explanation: This is not valid Python syntax.
+  - answer: my_dict = new dict()
+    explanation: Python doesn't use 'new' keyword like Java.
+  - answer: my_dict = dictionary()
+    explanation: The constructor is dict(), not dictionary().
+
+- question: What is the difference between a list and a tuple?
+  points: 2
+  right:
+  - answer: Lists are mutable, tuples are immutable
+    explanation: Lists can be changed after creation; tuples cannot be modified.
+    links:
+    - https://docs.python.org/3/tutorial/datastructures.html#tuples-and-sequences
+  wrong:
+  - answer: Lists use parentheses, tuples use brackets
+    explanation: It's the opposite - lists use brackets, tuples use parentheses.
+  - answer: Lists store numbers, tuples store strings
+    explanation: Both can store any type of data.
+  - answer: Lists are slower than tuples
+    explanation: While tuples can be slightly faster, the key difference is mutability.
+  - answer: Lists are for ordered data, tuples for unordered
+    explanation: Both are ordered sequences.
+  - answer: Tuples can only hold two items
+    explanation: Tuples can hold any number of items, not just two.
+
+- question: What keyword is used to import a module?
+  points: 1
+  right:
+  - answer: import
+    explanation: The 'import' keyword brings modules into your program.
+    links:
+    - https://docs.python.org/3/reference/simple_stmts.html#import
+  wrong:
+  - answer: include
+    explanation: This is C/C++ syntax, not Python.
+  - answer: require
+    explanation: This is Ruby/Node.js syntax, not Python.
+  - answer: using
+    explanation: This is C# syntax, not Python.
+  - answer: load
+    explanation: Python uses 'import', not 'load'.
+  - answer: bring
+    explanation: This is not a valid Python keyword.
+
+- question: How do you import only a specific function from a module?
+  points: 2
+  right:
+  - answer: from module_name import function_name
+    explanation: The 'from...import' syntax imports specific items from a module.
+    links:
+    - https://docs.python.org/3/reference/simple_stmts.html#import
+  wrong:
+  - answer: import function_name from module_name
+    explanation: The order is wrong; 'from' comes first in Python.
+  - answer: import module_name.function_name
+    explanation: This syntax doesn't selectively import; it tries to import a submodule.
+  - answer: use module_name::function_name
+    explanation: This is Rust-like syntax, not Python.
+  - answer: include module_name/function_name
+    explanation: This is not valid Python syntax.
+  - answer: get function_name from module_name
+    explanation: Python uses 'from...import', not 'get...from'.
+
+- question: What does the 'return' statement do in a function?
+  points: 2
+  right:
+  - answer: Sends a value back to the caller and exits the function
+    explanation: return provides the function's result and terminates execution.
+    links:
+    - https://docs.python.org/3/reference/simple_stmts.html#return
+  wrong:
+  - answer: Prints a value to the console
+    explanation: This is what print() does, not return.
+  - answer: Creates a new variable
+    explanation: return sends values back, it doesn't create variables.
+  - answer: Restarts the function from the beginning
+    explanation: return exits the function, it doesn't restart it.
+  - answer: Deletes the function
+    explanation: return doesn't delete anything, it returns a value.
+  - answer: Loops back to the function definition
+    explanation: return exits the function, it doesn't create a loop.
+
+- question: What is the correct way to create a class in Python?
+  points: 2
+  right:
+  - answer: "class ClassName:"
+    explanation: Classes are defined with 'class' keyword, name, and colon.
+    links:
+    - https://docs.python.org/3/tutorial/classes.html
+  wrong:
+  - answer: class ClassName {}
+    explanation: Python uses colons and indentation, not curly braces.
+  - answer: def class ClassName:
+    explanation: Don't use 'def' with classes; 'class' is its own keyword.
+  - answer: public class ClassName:
+    explanation: Python doesn't use access modifiers like 'public'.
+  - answer: create class ClassName:
+    explanation: Python uses 'class', not 'create class'.
+  - answer: object ClassName:
+    explanation: Python uses 'class', not 'object' keyword.
+
+- question: What is the special method name for initializing a class instance?
+  points: 2
+  right:
+  - answer: __init__
+    explanation: __init__ is the constructor method called when creating a new instance.
+    links:
+    - https://docs.python.org/3/reference/datamodel.html#object.__init__
+  wrong:
+  - answer: __new__
+    explanation: __new__ creates the instance; __init__ initializes it.
+  - answer: __start__
+    explanation: This is not a standard Python special method.
+  - answer: constructor
+    explanation: Python uses __init__, not a 'constructor' method name.
+  - answer: __create__
+    explanation: This is not a standard Python special method.
+  - answer: initialize
+    explanation: Python uses __init__, not 'initialize'.
+
+- question: What is the purpose of 'self' in class methods?
+  points: 2
+  right:
+  - answer: It refers to the instance of the class
+    explanation: self is the conventional name for the instance reference in methods.
+    links:
+    - https://docs.python.org/3/tutorial/classes.html#class-objects
+  wrong:
+  - answer: It refers to the class itself, not instances
+    explanation: That would be 'cls' in class methods; 'self' refers to instances.
+  - answer: It's a keyword that defines private variables
+    explanation: self is a parameter name, not a keyword for privacy.
+  - answer: It prevents the method from being called outside the class
+    explanation: self doesn't control access; it's the instance reference.
+  - answer: It makes the method static
+    explanation: Static methods don't have self; self indicates instance methods.
+  - answer: It's used to delete the object
+    explanation: self is the instance reference, not a deletion mechanism.
+
+- question: What does the 'pass' statement do?
+  points: 1
+  right:
+  - answer: Does nothing; it's a placeholder
+    explanation: pass is a null operation used when syntax requires a statement but no action is needed.
+    links:
+    - https://docs.python.org/3/reference/simple_stmts.html#pass
+  wrong:
+  - answer: Skips to the next iteration of a loop
+    explanation: This is what 'continue' does, not pass.
+  - answer: Exits a function
+    explanation: This is what 'return' does, not pass.
+  - answer: Ends a loop
+    explanation: This is what 'break' does, not pass.
+  - answer: Passes a value to another function
+    explanation: pass doesn't pass values; it's a null operation.
+  - answer: Creates a password hash
+    explanation: pass has nothing to do with passwords.
+
+- question: What is the output of print(type(5))?
+  points: 2
+  right:
+  - answer: <class 'int'>
+    explanation: type() returns the type of an object; 5 is an integer.
+    links:
+    - https://docs.python.org/3/library/functions.html#type
+  wrong:
+  - answer: integer
+    explanation: Python prints the class representation, not just the name.
+  - answer: int
+    explanation: The full output includes <class 'int'>, not just int.
+  - answer: number
+    explanation: Python uses specific types like int, not generic 'number'.
+  - answer: 5
+    explanation: type() returns the type, not the value itself.
+  - answer: <type 'int'>
+    explanation: Python 3 uses <class 'int'>, not <type 'int'>.
+
+- question: What does the 'break' statement do in a loop?
+  points: 2
+  right:
+  - answer: Exits the loop immediately
+    explanation: break terminates the innermost loop containing it.
+    links:
+    - https://docs.python.org/3/reference/simple_stmts.html#break
+  wrong:
+  - answer: Skips to the next iteration
+    explanation: This is what 'continue' does, not break.
+  - answer: Pauses the loop temporarily
+    explanation: break doesn't pause; it exits the loop completely.
+  - answer: Restarts the loop from the beginning
+    explanation: break exits the loop, it doesn't restart it.
+  - answer: Breaks the program execution
+    explanation: break only exits the loop, not the entire program.
+  - answer: Creates a breakpoint for debugging
+    explanation: break exits loops; breakpoints are set differently.
+
+- question: What does the 'continue' statement do in a loop?
+  points: 2
+  right:
+  - answer: Skips the rest of the current iteration and goes to the next
+    explanation: continue jumps to the next iteration of the loop.
+    links:
+    - https://docs.python.org/3/reference/simple_stmts.html#continue
+  wrong:
+  - answer: Exits the loop completely
+    explanation: This is what 'break' does, not continue.
+  - answer: Continues running the program after an error
+    explanation: continue affects loops, not error handling.
+  - answer: Repeats the current iteration
+    explanation: continue moves to the next iteration, not repeating the current one.
+  - answer: Pauses execution until user input
+    explanation: continue doesn't pause; it moves to the next iteration.
+  - answer: Continues to the next function
+    explanation: continue only affects the current loop.
+
+- question: What is a lambda function?
+  points: 4
+  right:
+  - answer: An anonymous, single-expression function
+    explanation: Lambda creates small unnamed functions with one expression.
+    links:
+    - https://docs.python.org/3/tutorial/controlflow.html#lambda-expressions
+  wrong:
+  - answer: A function that runs in parallel
+    explanation: Lambda refers to anonymous functions, not parallel execution.
+  - answer: A function from the math library
+    explanation: Lambda is a language feature, not a math function.
+  - answer: A function that can only return True or False
+    explanation: Lambda functions can return any value.
+  - answer: A Greek letter used in variable names
+    explanation: While λ is a Greek letter, lambda in Python is a keyword.
+  - answer: A function that must have parameters
+    explanation: Lambda functions can have zero or more parameters.
+
+- question: What does the 'with' statement do?
+  points: 4
+  right:
+  - answer: Manages context and ensures cleanup (like closing files)
+    explanation: with ensures proper acquisition and release of resources.
+    links:
+    - https://docs.python.org/3/reference/compound_stmts.html#with
+  wrong:
+  - answer: Creates a new scope for variables
+    explanation: with manages resources, not variable scope.
+  - answer: Imports multiple modules at once
+    explanation: with doesn't import modules; it manages context.
+  - answer: Combines multiple conditions in an if statement
+    explanation: with is for context management, not conditions.
+  - answer: Creates a loop that runs while a condition is true
+    explanation: This is what while does, not with.
+  - answer: Defines a private block of code
+    explanation: with manages resources, not code privacy.
+
+- question: What is list comprehension?
+  points: 4
+  right:
+  - answer: A concise way to create lists from iterables
+    explanation: List comprehensions provide a compact syntax for generating lists.
+    links:
+    - https://docs.python.org/3/tutorial/datastructures.html#list-comprehensions
+  wrong:
+  - answer: A method to compress lists to save memory
+    explanation: List comprehensions create lists, they don't compress them.
+  - answer: Understanding what a list contains
+    explanation: List comprehension is a syntax feature, not about understanding.
+  - answer: A way to read lists from files
+    explanation: List comprehensions generate lists in code, not from files.
+  - answer: Documentation about how lists work
+    explanation: List comprehension is a coding technique, not documentation.
+  - answer: A function that explains list contents
+    explanation: List comprehension is syntax for creating lists.
+
+- question: What is the syntax for a basic list comprehension?
+  points: 4
+  right:
+  - answer: "[expression for item in iterable]"
+    explanation: List comprehensions have an expression, for clause, and optional conditions.
+    links:
+    - https://docs.python.org/3/tutorial/datastructures.html#list-comprehensions
+  wrong:
+  - answer: "(expression for item in iterable)"
+    explanation: Parentheses create generator expressions, not list comprehensions.
+  - answer: "{expression for item in iterable}"
+    explanation: Curly braces create set/dict comprehensions, not lists.
+  - answer: "[item for expression in iterable]"
+    explanation: The expression comes first, then the for clause.
+  - answer: "for item in iterable [expression]"
+    explanation: This is not valid list comprehension syntax.
+  - answer: "list(expression for item in iterable)"
+    explanation: While this works, it's not the direct list comprehension syntax.
+
+- question: What is the difference between '==' and 'is' operators?
+  points: 4
+  right:
+  - answer: == checks value equality, 'is' checks identity (same object)
+    explanation: == compares values; 'is' checks if two references point to the same object.
+    links:
+    - https://docs.python.org/3/reference/expressions.html#comparisons
+  wrong:
+  - answer: They are exactly the same
+    explanation: == checks values, 'is' checks object identity - different concepts.
+  - answer: == is for numbers, 'is' is for strings
+    explanation: Both work with any types, but serve different purposes.
+  - answer: 'is' is faster than ==
+    explanation: While 'is' may be faster, they serve different purposes.
+  - answer: == checks type, 'is' checks value
+    explanation: == checks value equality; 'is' checks object identity.
+  - answer: 'is' is the assignment operator
+    explanation: = is assignment; 'is' checks identity.
+
+- question: What does the enumerate() function do?
+  points: 4
+  right:
+  - answer: Returns pairs of index and value from an iterable
+    explanation: enumerate() adds a counter to an iterable, returning (index, item) tuples.
+    links:
+    - https://docs.python.org/3/library/functions.html#enumerate
+  wrong:
+  - answer: Counts the number of items in a list
+    explanation: This is what len() does, not enumerate().
+  - answer: Sorts items in numerical order
+    explanation: This is what sorted() does, not enumerate().
+  - answer: Converts items to numbers
+    explanation: enumerate() adds indices, it doesn't convert types.
+  - answer: Lists all possible values of an enum
+    explanation: While related to enumeration, enumerate() specifically adds indices to iterables.
+  - answer: Creates a numbered list like in HTML
+    explanation: enumerate() works with Python iterables, not HTML.
+
+- question: What is the purpose of try-except blocks?
+  points: 2
+  right:
+  - answer: To handle exceptions and prevent program crashes
+    explanation: try-except catches and handles errors gracefully.
+    links:
+    - https://docs.python.org/3/tutorial/errors.html#handling-exceptions
+  wrong:
+  - answer: To try different algorithms until one works
+    explanation: try-except is for error handling, not algorithm selection.
+  - answer: To test if code runs faster
+    explanation: try-except is for error handling, not performance testing.
+  - answer: To execute code multiple times
+    explanation: try-except is for error handling, not repetition.
+  - answer: To accept user input safely
+    explanation: While it can help with input validation, its purpose is exception handling.
+  - answer: To except certain values from processing
+    explanation: try-except is for catching exceptions, not filtering values.
+
+- question: What does the 'finally' clause do in exception handling?
+  points: 4
+  right:
+  - answer: Executes code regardless of whether an exception occurred
+    explanation: finally always runs, whether an exception was raised or not.
+    links:
+    - https://docs.python.org/3/tutorial/errors.html#defining-clean-up-actions
+  wrong:
+  - answer: Only runs if no exception occurred
+    explanation: finally always runs; else runs when no exception occurred.
+  - answer: Only runs if an exception occurred
+    explanation: finally runs in all cases, exception or not.
+  - answer: Finishes the program execution
+    explanation: finally is for cleanup code, not ending programs.
+  - answer: Returns the final result of the try block
+    explanation: finally is for cleanup, not returning values.
+  - answer: Catches exceptions that except missed
+    explanation: finally doesn't catch exceptions; it runs cleanup code.
+
+- question: What is the output of print(bool([]))?
+  points: 2
+  right:
+  - answer: "False"
+    explanation: Empty lists evaluate to False in boolean context.
+    links:
+    - https://docs.python.org/3/library/stdtypes.html#truth-value-testing
+  wrong:
+  - answer: "True"
+    explanation: Empty sequences (including lists) are falsy in Python.
+  - answer: "[]"
+    explanation: bool() converts to boolean, not returning the list itself.
+  - answer: None
+    explanation: bool([]) returns False, not None.
+  - answer: 0
+    explanation: bool() returns True or False, not numbers.
+  - answer: An error occurs
+    explanation: Converting empty lists to boolean is valid and returns False.
+
+- question: What does the zip() function do?
+  points: 4
+  right:
+  - answer: Combines multiple iterables into tuples
+    explanation: zip() pairs up elements from multiple sequences.
+    links:
+    - https://docs.python.org/3/library/functions.html#zip
+  wrong:
+  - answer: Compresses files like WinZip
+    explanation: zip() combines iterables, it doesn't compress files.
+  - answer: Sorts multiple lists simultaneously
+    explanation: zip() combines lists, it doesn't sort them.
+  - answer: Removes duplicates from lists
+    explanation: This is closer to what set() does, not zip().
+  - answer: Adds all elements from multiple lists
+    explanation: zip() pairs elements, it doesn't add them.
+  - answer: Reverses the order of list elements
+    explanation: This is what reversed() does, not zip().
+
+- question: What is a generator in Python?
+  points: 7
+  right:
+  - answer: A function that yields values one at a time, maintaining state
+    explanation: Generators use yield to produce values lazily, one at a time.
+    links:
+    - https://docs.python.org/3/tutorial/classes.html#generators
+  wrong:
+  - answer: A function that creates random numbers
+    explanation: While random.random() exists, generators are about lazy evaluation.
+  - answer: A tool that generates Python code automatically
+    explanation: Generators are functions that yield values, not code generation tools.
+  - answer: A class that inherits from multiple parent classes
+    explanation: This describes multiple inheritance, not generators.
+  - answer: A function that only runs once
+    explanation: Generators can yield multiple times; they maintain state between yields.
+  - answer: A method that creates new objects
+    explanation: This describes constructors/factories, not generators.
+
+- question: What keyword is used to create a generator function?
+  points: 4
+  right:
+  - answer: yield
+    explanation: Functions containing yield become generators that can pause and resume.
+    links:
+    - https://docs.python.org/3/reference/simple_stmts.html#yield
+  wrong:
+  - answer: generate
+    explanation: Python uses 'yield', not 'generate'.
+  - answer: generator
+    explanation: Python uses 'yield', not 'generator' keyword.
+  - answer: return
+    explanation: return ends a function; yield pauses it and maintains state.
+  - answer: produce
+    explanation: Python uses 'yield', not 'produce'.
+  - answer: emit
+    explanation: Python uses 'yield', not 'emit'.
+
+- question: What is the purpose of *args in function definitions?
+  points: 4
+  right:
+  - answer: Accepts variable number of positional arguments
+    explanation: "*args collects extra positional arguments into a tuple."
+    links:
+    - https://docs.python.org/3/tutorial/controlflow.html#arbitrary-argument-lists
+  wrong:
+  - answer: Makes all arguments required
+    explanation: "*args makes arguments optional and variable in number."
+  - answer: Multiplies all arguments together
+    explanation: The asterisk is syntax for packing arguments, not multiplication.
+  - answer: Converts arguments to strings
+    explanation: "*args collects arguments, it doesn't convert types."
+  - answer: Creates an array of arguments
+    explanation: "*args creates a tuple (not array) of arguments."
+  - answer: Passes arguments to another function
+    explanation: While * can unpack, *args in definitions collects arguments.
+
+- question: What is the purpose of **kwargs in function definitions?
+  points: 4
+  right:
+  - answer: Accepts variable number of keyword arguments
+    explanation: "**kwargs collects extra keyword arguments into a dictionary."
+    links:
+    - https://docs.python.org/3/tutorial/controlflow.html#keyword-arguments
+  wrong:
+  - answer: Raises the arguments to a power
+    explanation: The double asterisk is syntax for packing, not exponentiation here.
+  - answer: Makes all arguments optional with default values
+    explanation: "**kwargs collects extra keyword arguments, it doesn't set defaults."
+  - answer: Converts arguments to key-value pairs
+    explanation: "**kwargs collects already-provided keyword arguments."
+  - answer: Creates two copies of each argument
+    explanation: "**kwargs collects keyword arguments into one dictionary."
+  - answer: Requires exactly two arguments
+    explanation: "**kwargs accepts any number of keyword arguments."
+
+- question: What is a decorator in Python?
+  points: 7
+  right:
+  - answer: A function that modifies another function's behavior
+    explanation: Decorators wrap functions to add functionality without modifying their code.
+    links:
+    - https://docs.python.org/3/glossary.html#term-decorator
+  wrong:
+  - answer: A function that adds visual styling to output
+    explanation: Decorators modify function behavior, not visual styling.
+  - answer: A design pattern for creating objects
+    explanation: While decorator is a design pattern, in Python it specifically modifies functions.
+  - answer: A tool for formatting code beautifully
+    explanation: Decorators modify behavior, they're not code formatters.
+  - answer: A class that inherits from another class
+    explanation: This describes inheritance, not decorators.
+  - answer: A comment that provides documentation
+    explanation: This describes docstrings, not decorators.
+
+- question: What symbol is used to apply a decorator to a function?
+  points: 4
+  right:
+  - answer: "@"
+    explanation: The @ symbol precedes decorator names above function definitions.
+    links:
+    - https://docs.python.org/3/reference/compound_stmts.html#function-definitions
+  wrong:
+  - answer: "#"
+    explanation: Hash is for comments, not decorators.
+  - answer: "$"
+    explanation: Dollar sign is not used for decorators in Python.
+  - answer: "&"
+    explanation: Ampersand is not the decorator syntax in Python.
+  - answer: "%"
+    explanation: Percent is the modulo operator, not for decorators.
+  - answer: "^"
+    explanation: Caret is the XOR operator, not for decorators.
+
+- question: What does the __str__ method do in a class?
+  points: 4
+  right:
+  - answer: Defines the string representation of an object
+    explanation: __str__ returns a human-readable string when str() is called.
+    links:
+    - https://docs.python.org/3/reference/datamodel.html#object.__str__
+  wrong:
+  - answer: Converts the object to uppercase
+    explanation: __str__ returns a representation; it doesn't modify the object.
+  - answer: Checks if an object is a string
+    explanation: __str__ returns a string representation, it doesn't check types.
+  - answer: Stores the object as a string permanently
+    explanation: __str__ returns a representation without changing the object.
+  - answer: Removes whitespace from the object
+    explanation: __str__ defines representation, it doesn't strip whitespace.
+  - answer: Makes the object immutable
+    explanation: __str__ is for representation, not affecting mutability.
+
+- question: What is the difference between __str__ and __repr__?
+  points: 7
+  right:
+  - answer: __str__ is for readable display, __repr__ is for unambiguous representation
+    explanation: __str__ is user-friendly; __repr__ should be unambiguous and ideally eval-able.
+    links:
+    - https://docs.python.org/3/reference/datamodel.html#object.__repr__
+  wrong:
+  - answer: They are exactly the same
+    explanation: They serve different purposes - readability vs unambiguity.
+  - answer: __str__ is for strings, __repr__ is for numbers
+    explanation: Both work with any object type.
+  - answer: __repr__ is only used internally by Python
+    explanation: __repr__ can be called directly and is used in various contexts.
+  - answer: __str__ is faster than __repr__
+    explanation: Performance isn't the distinguishing factor; purpose is.
+  - answer: __repr__ converts to regular expressions
+    explanation: __repr__ returns a representation string, not regex patterns.
+
+- question: What does the map() function do?
+  points: 4
+  right:
+  - answer: Applies a function to every item in an iterable
+    explanation: map() returns an iterator applying a function to each element.
+    links:
+    - https://docs.python.org/3/library/functions.html#map
+  wrong:
+  - answer: Creates a dictionary from a list
+    explanation: While related to mappings, map() applies functions to iterables.
+  - answer: Finds the location of items in a list
+    explanation: This is closer to what index() does, not map().
+  - answer: Creates a geographical map visualization
+    explanation: map() applies functions to iterables, not creating geographic maps.
+  - answer: Sorts items by their keys
+    explanation: This is closer to what sorted() does, not map().
+  - answer: Combines multiple lists into one
+    explanation: This is closer to what chain() or concatenation does.
+
+- question: What does the filter() function do?
+  points: 4
+  right:
+  - answer: Returns elements from an iterable where a function returns True
+    explanation: filter() keeps only items that satisfy a condition.
+    links:
+    - https://docs.python.org/3/library/functions.html#filter
+  wrong:
+  - answer: Removes duplicate items from a list
+    explanation: This is what set() does, not filter().
+  - answer: Cleans data by removing invalid characters
+    explanation: filter() tests conditions; it doesn't clean characters.
+  - answer: Sorts items based on a condition
+    explanation: filter() selects items; sorted() does sorting.
+  - answer: Converts all items to the same type
+    explanation: filter() selects items, it doesn't convert types.
+  - answer: Protects sensitive data
+    explanation: filter() selects items based on conditions, not security filtering.
+
+- question: What is the purpose of the __name__ variable?
+  points: 4
+  right:
+  - answer: Contains the name of the current module
+    explanation: __name__ is "__main__" when run as script, or the module name when imported.
+    links:
+    - https://docs.python.org/3/library/__main__.html
+  wrong:
+  - answer: Stores the user's name who wrote the code
+    explanation: __name__ is about module identity, not programmer identity.
+  - answer: Contains the name of the current function
+    explanation: Function names are accessed differently, not through __name__.
+  - answer: Holds the name of the Python installation
+    explanation: __name__ is about module context, not Python installation.
+  - answer: Stores variable names for debugging
+    explanation: __name__ identifies the module, not variable names.
+  - answer: Contains the filename without extension
+    explanation: While related, __name__ is specifically the module name in Python's namespace.
+
+- question: What does if __name__ == "__main__" do?
+  points: 4
+  right:
+  - answer: Checks if the script is being run directly (not imported)
+    explanation: This idiom runs code only when the file is executed, not when imported.
+    links:
+    - https://docs.python.org/3/library/__main__.html
+  wrong:
+  - answer: Checks if the file is named "main.py"
+    explanation: It checks if the module is being run directly, not the filename.
+  - answer: Sets the main function of the program
+    explanation: It checks execution context, it doesn't set a main function.
+  - answer: Ensures the code runs on the main thread
+    explanation: It's about import context, not threading.
+  - answer: Validates the programmer's credentials
+    explanation: It checks execution context, not authentication.
+  - answer: Makes the script the main module in a package
+    explanation: It checks if running directly, not package structure.
+
+- question: What is a set in Python?
+  points: 2
+  right:
+  - answer: An unordered collection of unique elements
+    explanation: Sets automatically remove duplicates and don't maintain order (before 3.7).
+    links:
+    - https://docs.python.org/3/tutorial/datastructures.html#sets
+  wrong:
+  - answer: An ordered list with duplicates allowed
+    explanation: This describes lists, not sets.
+  - answer: A key-value pair collection
+    explanation: This describes dictionaries, not sets.
+  - answer: A function that assigns values to variables
+    explanation: This describes assignment, not sets.
+  - answer: A collection that can only hold numbers
+    explanation: Sets can hold any hashable type, not just numbers.
+  - answer: A sorted sequence of elements
+    explanation: Sets are unordered (though Python 3.7+ maintains insertion order).
+
+- question: How do you create an empty set?
+  points: 2
+  right:
+  - answer: set()
+    explanation: Empty curly braces create a dict, so use set() for an empty set.
+    links:
+    - https://docs.python.org/3/library/stdtypes.html#set
+  wrong:
+  - answer: "{}"
+    explanation: Empty curly braces create an empty dictionary, not a set.
+  - answer: "[]"
+    explanation: Square brackets create an empty list, not a set.
+  - answer: "()"
+    explanation: Parentheses create an empty tuple, not a set.
+  - answer: new set()
+    explanation: Python doesn't use 'new' keyword.
+  - answer: Set()
+    explanation: Python is case-sensitive; it's set(), not Set().
+
+- question: What does the .get() method do for dictionaries?
+  points: 2
+  right:
+  - answer: Returns a value for a key, or a default if key doesn't exist
+    explanation: .get() safely retrieves values without raising KeyError.
+    links:
+    - https://docs.python.org/3/library/stdtypes.html#dict.get
+  wrong:
+  - answer: Always raises an error if key doesn't exist
+    explanation: .get() returns None or a default, not raising an error.
+  - answer: Adds a new key-value pair to the dictionary
+    explanation: This is what assignment does, not .get().
+  - answer: Deletes a key from the dictionary
+    explanation: This is what del or .pop() does, not .get().
+  - answer: Returns all keys in the dictionary
+    explanation: This is what .keys() does, not .get().
+  - answer: Checks if the dictionary is empty
+    explanation: .get() retrieves values, it doesn't check emptiness.
+
+- question: What is the difference between .remove() and .pop() for lists?
+  points: 4
+  right:
+  - answer: .remove() deletes by value, .pop() deletes by index and returns the item
+    explanation: .remove(value) finds and removes a value; .pop(index) removes and returns an item.
+    links:
+    - https://docs.python.org/3/tutorial/datastructures.html#more-on-lists
+  wrong:
+  - answer: They do exactly the same thing
+    explanation: They have different purposes - one uses value, one uses index.
+  - answer: .remove() is faster than .pop()
+    explanation: The difference is functionality, not speed.
+  - answer: .pop() only works on the last element
+    explanation: .pop() can take an index argument to remove any position.
+  - answer: .remove() returns the removed item
+    explanation: .remove() returns None; .pop() returns the removed item.
+  - answer: .pop() raises no error if item not found
+    explanation: .pop() raises IndexError if index is invalid.
+
+- question: What does the isinstance() function check?
+  points: 4
+  right:
+  - answer: Whether an object is an instance of a class or type
+    explanation: isinstance() checks if an object is of a specified type or class.
+    links:
+    - https://docs.python.org/3/library/functions.html#isinstance
+  wrong:
+  - answer: Whether a class has any instances
+    explanation: isinstance() checks specific objects, not class instance counts.
+  - answer: Whether two instances are equal
+    explanation: This is what == does, not isinstance().
+  - answer: Whether a variable is defined
+    explanation: isinstance() checks types, not variable existence.
+  - answer: Whether an object is empty
+    explanation: isinstance() checks types, not whether objects are empty.
+  - answer: Whether code is running in an instance of Python
+    explanation: isinstance() checks object types, not Python runtime.
+
+- question: What is multiple inheritance?
+  points: 7
+  right:
+  - answer: When a class inherits from more than one parent class
+    explanation: Python allows classes to inherit from multiple base classes.
+    links:
+    - https://docs.python.org/3/tutorial/classes.html#multiple-inheritance
+  wrong:
+  - answer: When a class is inherited by multiple child classes
+    explanation: This describes one parent with multiple children, not multiple inheritance.
+  - answer: When you import multiple modules
+    explanation: Multiple inheritance is about class relationships, not imports.
+  - answer: When a class has multiple instances
+    explanation: Multiple inheritance is about parent classes, not instances.
+  - answer: When you inherit the same class twice
+    explanation: Inheriting the same class twice is redundant, not multiple inheritance.
+  - answer: When multiple programs inherit code
+    explanation: Multiple inheritance is a class feature, not about programs.
+
+- question: What is the Method Resolution Order (MRO)?
+  points: 7
+  right:
+  - answer: The order Python searches for methods in inheritance hierarchies
+    explanation: MRO determines which parent class's method is called in multiple inheritance.
+    links:
+    - https://docs.python.org/3/library/stdtypes.html#class.__mro__
+  wrong:
+  - answer: The order methods are defined in a class
+    explanation: MRO is about inheritance search order, not definition order.
+  - answer: The recommended order to call methods
+    explanation: MRO is Python's determination of search order, not a recommendation.
+  - answer: The speed ranking of different methods
+    explanation: MRO is about inheritance, not performance.
+  - answer: The alphabetical ordering of method names
+    explanation: MRO is based on inheritance hierarchy, not alphabetical order.
+  - answer: The order methods were added to Python versions
+    explanation: MRO is about class hierarchies, not Python version history.
+
+- question: What does the super() function do?
+  points: 4
+  right:
+  - answer: Calls a method from a parent class
+    explanation: super() provides access to parent class methods, respecting MRO.
+    links:
+    - https://docs.python.org/3/library/functions.html#super
+  wrong:
+  - answer: Creates a superclass automatically
+    explanation: super() accesses existing parent classes, doesn't create them.
+  - answer: Makes a class more powerful
+    explanation: super() is for accessing parent methods, not enhancing classes.
+  - answer: Converts a class to a superclass
+    explanation: super() calls parent methods, doesn't change class relationships.
+  - answer: Creates a global variable
+    explanation: super() is for inheritance, not variable scope.
+  - answer: Increases the priority of a method
+    explanation: super() accesses parent methods, doesn't set priorities.
+
+- question: What is a property decorator used for?
+  points: 7
+  right:
+  - answer: Defines methods that act like attributes with getter/setter behavior
+    explanation: "@property makes methods accessible like attributes while allowing controlled access."
+    links:
+    - https://docs.python.org/3/library/functions.html#property
+  wrong:
+  - answer: Declares class attributes
+    explanation: Properties define computed attributes, not simple class attributes.
+  - answer: Makes attributes private
+    explanation: Properties control access, but don't enforce privacy like private members in other languages.
+  - answer: Decorates the class itself
+    explanation: "@property decorates methods, not classes."
+  - answer: Creates real estate objects
+    explanation: Property is about attribute access, not real estate.
+  - answer: Automatically validates all input
+    explanation: Properties can include validation, but don't do it automatically.
+
+- question: What is the difference between a shallow copy and a deep copy?
+  points: 7
+  right:
+  - answer: Shallow copies reference nested objects; deep copies duplicate everything
+    explanation: Shallow copies copy references; deep copies recursively duplicate all nested objects.
+    links:
+    - https://docs.python.org/3/library/copy.html
+  wrong:
+  - answer: Shallow copies are faster but identical to deep copies
+    explanation: They produce different results with nested objects.
+  - answer: Shallow copies only copy the first element
+    explanation: Shallow copies copy all top-level elements, but not nested ones.
+  - answer: Deep copies only work with numbers
+    explanation: Deep copies work with any object type.
+  - answer: Shallow copies use less memory
+    explanation: While true, the key difference is how nested objects are handled.
+  - answer: There is no difference
+    explanation: They differ significantly in handling nested objects.
+
+- question: What module is used to create deep copies?
+  points: 4
+  right:
+  - answer: copy
+    explanation: The copy module provides copy() for shallow and deepcopy() for deep copies.
+    links:
+    - https://docs.python.org/3/library/copy.html
+  wrong:
+  - answer: clone
+    explanation: Python uses the copy module, not clone.
+  - answer: duplicate
+    explanation: The module is called copy, not duplicate.
+  - answer: deepcopy
+    explanation: deepcopy is a function in the copy module, not a module itself.
+  - answer: replicate
+    explanation: Python uses the copy module, not replicate.
+  - answer: copycat
+    explanation: The module is called copy, not copycat.
+
+- question: What is a closure in Python?
+  points: 7
+  right:
+  - answer: A function that remembers values from its enclosing scope
+    explanation: Closures capture variables from outer functions even after those functions return.
+    links:
+    - https://docs.python.org/3/faq/programming.html#what-are-closures
+  wrong:
+  - answer: A function that closes files automatically
+    explanation: Closures are about scope and variables, not file operations.
+  - answer: The final statement in a function
+    explanation: Closures are about nested function behavior, not statement order.
+  - answer: A function that ends program execution
+    explanation: Closures don't end execution; they capture scope.
+  - answer: A way to make variables private
+    explanation: While closures can hide variables, that's not their primary purpose.
+  - answer: A function without any parameters
+    explanation: Closures can have parameters; they're about capturing outer scope.
+
+- question: What does the global keyword do?
+  points: 4
+  right:
+  - answer: Allows modification of variables in the global scope from within a function
+    explanation: global declares that a variable refers to the global scope, not local.
+    links:
+    - https://docs.python.org/3/reference/simple_stmts.html#global
+  wrong:
+  - answer: Makes all variables in a function visible everywhere
+    explanation: global only affects specified variables, not all variables.
+  - answer: Creates a variable accessible to all programs
+    explanation: global affects scope within a program, not across programs.
+  - answer: Imports all modules automatically
+    explanation: global is about variable scope, not imports.
+  - answer: Makes a function accessible from anywhere
+    explanation: Functions are global by default; global is for variables.
+  - answer: Increases the scope of local variables
+    explanation: global specifically references global scope, not just increasing scope.
+
+- question: What does the nonlocal keyword do?
+  points: 7
+  right:
+  - answer: Allows modification of variables in the nearest enclosing scope (not global)
+    explanation: nonlocal accesses variables in outer function scopes, not global or local.
+    links:
+    - https://docs.python.org/3/reference/simple_stmts.html#nonlocal
+  wrong:
+  - answer: Makes variables invisible to other functions
+    explanation: nonlocal allows access to enclosing scope, not hiding variables.
+  - answer: Creates variables that don't exist locally
+    explanation: nonlocal references existing variables in enclosing scopes.
+  - answer: Removes local scope from variables
+    explanation: nonlocal references enclosing scope, doesn't remove local scope.
+  - answer: Works the same as global
+    explanation: nonlocal accesses enclosing function scope; global accesses module scope.
+  - answer: Prevents variables from being used
+    explanation: nonlocal enables access to enclosing scope, not preventing use.
+
+- question: What is the walrus operator?
+  points: 7
+  right:
+  - answer: ":= allows assignment within expressions"
+    explanation: The walrus operator := assigns values as part of expressions (new in Python 3.8).
+    links:
+    - https://docs.python.org/3/whatsnew/3.8.html#assignment-expressions
+  wrong:
+  - answer: An operator for comparing strings
+    explanation: The walrus operator is for assignment expressions, not comparison.
+  - answer: A way to import modules
+    explanation: := is for assignment in expressions, not imports.
+  - answer: An operator for marine biology calculations
+    explanation: The nickname comes from its appearance (:=), not actual walruses.
+  - answer: The equality operator
+    explanation: Equality is ==; walrus operator is :=.
+  - answer: A deprecated Python feature
+    explanation: The walrus operator was added in Python 3.8 and is current.
+
+- question: What is monkey patching?
+  points: 12
+  right:
+  - answer: Dynamically modifying or extending code at runtime
+    explanation: Monkey patching changes classes or modules after they're defined, at runtime.
+    links:
+    - https://en.wikipedia.org/wiki/Monkey_patch
+  wrong:
+  - answer: A debugging technique using print statements
+    explanation: Monkey patching is about runtime modification, not debugging techniques.
+  - answer: A way to optimize code performance
+    explanation: Monkey patching modifies behavior, not specifically for optimization.
+  - answer: Testing code with random inputs
+    explanation: This describes fuzzing, not monkey patching.
+  - answer: A code review process
+    explanation: Monkey patching is a runtime technique, not a review process.
+  - answer: Writing code without proper planning
+    explanation: Monkey patching is a specific technique, not about development methodology.
+
+- question: What is a context manager?
+  points: 7
+  right:
+  - answer: An object that defines __enter__ and __exit__ methods for resource management
+    explanation: Context managers handle setup and cleanup, used with 'with' statements.
+    links:
+    - https://docs.python.org/3/reference/datamodel.html#context-managers
+  wrong:
+  - answer: A manager class for handling multiple threads
+    explanation: Context managers are for resource management, not specifically threading.
+  - answer: A function that manages global variables
+    explanation: Context managers handle resources, not variable management.
+  - answer: A tool for managing project dependencies
+    explanation: Context managers are language features, not project management tools.
+  - answer: A class that manages other classes
+    explanation: Context managers manage resources and cleanup, not class hierarchies.
+  - answer: A debugging context viewer
+    explanation: Context managers are for resource management, not debugging.
+
+- question: What does the @staticmethod decorator do?
+  points: 4
+  right:
+  - answer: Defines a method that doesn't receive self or cls as first argument
+    explanation: Static methods don't access instance or class state; they're like regular functions in a class.
+    links:
+    - https://docs.python.org/3/library/functions.html#staticmethod
+  wrong:
+  - answer: Makes a method unchangeable after definition
+    explanation: "@staticmethod defines behavior, not immutability."
+  - answer: Creates a class variable
+    explanation: "@staticmethod defines methods, not variables."
+  - answer: Makes the method faster
+    explanation: "@staticmethod changes behavior (no self/cls), not performance."
+  - answer: Prevents the method from being inherited
+    explanation: Static methods are inherited normally.
+  - answer: Makes the method private
+    explanation: "@staticmethod doesn't affect visibility."
+
+- question: What does the @classmethod decorator do?
+  points: 4
+  right:
+  - answer: Defines a method that receives the class as first argument (cls)
+    explanation: Class methods receive the class, not the instance, allowing them to modify class state.
+    links:
+    - https://docs.python.org/3/library/functions.html#classmethod
+  wrong:
+  - answer: Creates a new class
+    explanation: "@classmethod decorates methods, doesn't create classes."
+  - answer: Makes the method work only with class variables
+    explanation: Class methods receive cls but can work with any class aspects.
+  - answer: Prevents instances from calling the method
+    explanation: Class methods can be called on instances or classes.
+  - answer: Makes the method static
+    explanation: "@classmethod gives cls; @staticmethod has no automatic first argument."
+  - answer: Converts a function to a class
+    explanation: "@classmethod decorates methods within classes."
+
+- question: What is duck typing?
+  points: 7
+  right:
+  - answer: If an object behaves like a type, it's treated as that type
+    explanation: "Duck typing focuses on behavior, not explicit types: 'if it walks like a duck...'"
+    links:
+    - https://docs.python.org/3/glossary.html#term-duck-typing
+  wrong:
+  - answer: A way to convert ducks into code
+    explanation: Duck typing is about behavior-based type checking.
+  - answer: Explicit type checking before operations
+    explanation: Duck typing avoids explicit type checking, relying on behavior.
+  - answer: A typing system that requires type declarations
+    explanation: Duck typing is dynamic, not requiring declarations.
+  - answer: A way to debug type errors
+    explanation: Duck typing is a philosophy, not a debugging technique.
+  - answer: Strong typing enforced at compile time
+    explanation: Duck typing is about runtime behavior, not compile-time enforcement.
+
+- question: What is the GIL (Global Interpreter Lock)?
+  points: 12
+  right:
+  - answer: A mutex that allows only one thread to execute Python bytecode at once
+    explanation: The GIL prevents true parallel execution of Python threads on multiple cores.
+    links:
+    - https://docs.python.org/3/glossary.html#term-global-interpreter-lock
+  wrong:
+  - answer: A security feature that locks the Python interpreter
+    explanation: The GIL is for memory management, not security.
+  - answer: A function that locks global variables
+    explanation: The GIL is an interpreter-level lock, not for specific variables.
+  - answer: A tool for preventing race conditions
+    explanation: While it can prevent some races, the GIL's purpose is memory safety.
+  - answer: A feature that makes Python faster
+    explanation: The GIL actually limits parallelism; it's for memory safety.
+  - answer: A lock on the Python installation directory
+    explanation: The GIL is a runtime lock, not a filesystem lock.
+
+- question: What is the difference between threading and multiprocessing in Python?
+  points: 7
+  right:
+  - answer: Threading shares memory but affected by GIL; multiprocessing uses separate processes
+    explanation: Threads share memory but can't run truly parallel; processes are independent and can use multiple cores.
+    links:
+    - https://docs.python.org/3/library/threading.html
+    - https://docs.python.org/3/library/multiprocessing.html
+  wrong:
+  - answer: They are exactly the same
+    explanation: Threading uses threads in one process; multiprocessing uses separate processes.
+  - answer: Threading is always faster
+    explanation: For CPU-bound tasks, multiprocessing is often faster despite overhead.
+  - answer: Multiprocessing can't share data
+    explanation: Multiprocessing can share data through queues, pipes, and shared memory.
+  - answer: Threading requires more memory
+    explanation: Processes require more memory than threads.
+  - answer: Multiprocessing only works on Windows
+    explanation: Multiprocessing works on all major platforms.
+
+- question: What does the yield from statement do?
+  points: 12
+  right:
+  - answer: Delegates to a subgenerator, yielding all its values
+    explanation: yield from allows a generator to delegate part of its operations to another generator.
+    links:
+    - https://docs.python.org/3/whatsnew/3.3.html#pep-380
+  wrong:
+  - answer: Imports values from another module
+    explanation: yield from delegates to generators, not importing modules.
+  - answer: Returns multiple values at once
+    explanation: yield from delegates to another generator; it doesn't return multiple values directly.
+  - answer: Yields values starting from a specific index
+    explanation: yield from delegates to subgenerators, not controlling indices.
+  - answer: Creates a generator from a list
+    explanation: yield from delegates iteration, doesn't create generators from lists.
+  - answer: Stops yielding after a condition
+    explanation: yield from delegates completely to a subgenerator.
+
+- question: What is an async function in Python?
+  points: 12
+  right:
+  - answer: A coroutine function defined with async def that can be awaited
+    explanation: async functions are coroutines for asynchronous programming with asyncio.
+    links:
+    - https://docs.python.org/3/library/asyncio-task.html
+  wrong:
+  - answer: A function that runs in a separate thread
+    explanation: Async functions use cooperative multitasking, not threads.
+  - answer: A function that runs faster than normal functions
+    explanation: Async is about concurrent I/O, not inherent speed.
+  - answer: A function that never completes
+    explanation: Async functions complete; they just allow cooperative scheduling.
+  - answer: A synchronized function for thread safety
+    explanation: Async is for asynchronous programming, not synchronization.
+  - answer: A function that automatically handles errors
+    explanation: Async defines coroutines; error handling is separate.
+
+- question: What does the await keyword do?
+  points: 12
+  right:
+  - answer: Suspends coroutine execution until an awaitable completes
+    explanation: await pauses the current coroutine, allowing other tasks to run until the awaitable finishes.
+    links:
+    - https://docs.python.org/3/reference/expressions.html#await
+  wrong:
+  - answer: Waits for user input
+    explanation: await is for coroutines, not specifically user input.
+  - answer: Pauses all program execution
+    explanation: await only pauses the current coroutine, allowing others to run.
+  - answer: Creates a new thread
+    explanation: await is for async/await coroutines, not threading.
+  - answer: Waits a specific number of seconds
+    explanation: While asyncio.sleep() is awaitable, await itself doesn't wait for time.
+  - answer: Prevents race conditions
+    explanation: await is for asynchronous flow, not synchronization primitives.
+
+- question: What is a metaclass?
+  points: 20
+  right:
+  - answer: A class of a class that defines how a class behaves
+    explanation: Metaclasses define class creation behavior; they're classes whose instances are classes.
+    links:
+    - https://docs.python.org/3/reference/datamodel.html#metaclasses
+  wrong:
+  - answer: A class that contains metadata
+    explanation: While metaclasses can add metadata, they fundamentally control class creation.
+  - answer: An abstract base class
+    explanation: Abstract base classes are different from metaclasses.
+  - answer: A class with only class methods
+    explanation: Metaclasses define how classes are created, not their method types.
+  - answer: The parent class of all classes
+    explanation: That's 'object'; metaclasses control class creation behavior.
+  - answer: A deprecated Python feature
+    explanation: Metaclasses are current and powerful, though rarely needed.
+
+- question: What is the difference between type() and isinstance()?
+  points: 4
+  right:
+  - answer: type() returns exact type; isinstance() checks type hierarchy
+    explanation: type() gives the exact class; isinstance() respects inheritance.
+    links:
+    - https://docs.python.org/3/library/functions.html#type
+    - https://docs.python.org/3/library/functions.html#isinstance
+  wrong:
+  - answer: They do exactly the same thing
+    explanation: type() checks exact type; isinstance() includes parent classes.
+  - answer: type() is faster than isinstance()
+    explanation: While speed may differ, the key difference is inheritance handling.
+  - answer: isinstance() only works with built-in types
+    explanation: isinstance() works with all classes, built-in or custom.
+  - answer: type() converts objects between types
+    explanation: type() returns type information; it doesn't convert (that's type constructors).
+  - answer: isinstance() returns the type name
+    explanation: isinstance() returns True/False; type() returns the type.
+
+- question: What does the all() function do?
+  points: 4
+  right:
+  - answer: Returns True if all elements in an iterable are truthy
+    explanation: all() returns True only if every element evaluates to True.
+    links:
+    - https://docs.python.org/3/library/functions.html#all
+  wrong:
+  - answer: Returns all elements from an iterable
+    explanation: all() returns a boolean, not the elements.
+  - answer: Counts all items in an iterable
+    explanation: This is what len() does, not all().
+  - answer: Imports all functions from a module
+    explanation: all() tests truthiness; imports use 'from module import *'.
+  - answer: Applies a function to all elements
+    explanation: This is what map() does, not all().
+  - answer: Returns True if any element is truthy
+    explanation: This is what any() does, not all().
+
+- question: What does the any() function do?
+  points: 4
+  right:
+  - answer: Returns True if at least one element in an iterable is truthy
+    explanation: any() returns True if any element evaluates to True.
+    links:
+    - https://docs.python.org/3/library/functions.html#any
+  wrong:
+  - answer: Returns any random element from an iterable
+    explanation: any() returns a boolean, not an element.
+  - answer: Works the same as all()
+    explanation: any() needs one True; all() needs every element True.
+  - answer: Returns True only if all elements are truthy
+    explanation: This is what all() does, not any().
+  - answer: Checks if an iterable contains any elements
+    explanation: While related, any([]) returns False; it checks truthiness of elements.
+  - answer: Converts any type to boolean
+    explanation: any() checks if any element is truthy, doesn't convert types.
+
+- question: What is the purpose of the collections module?
+  points: 7
+  right:
+  - answer: Provides specialized container datatypes
+    explanation: collections offers alternatives to built-in types like deque, Counter, OrderedDict, etc.
+    links:
+    - https://docs.python.org/3/library/collections.html
+  wrong:
+  - answer: Collects garbage and manages memory
+    explanation: That's the gc module; collections provides data structures.
+  - answer: Creates collections of modules
+    explanation: collections provides container types, not module management.
+  - answer: Manages database collections
+    explanation: collections is for Python data structures, not databases.
+  - answer: Collects user input
+    explanation: collections provides data structures, not input functions.
+  - answer: A tool for collecting and analyzing data
+    explanation: collections provides container types, not data analysis tools.
+
+- question: What is a deque in Python?
+  points: 7
+  right:
+  - answer: A double-ended queue allowing fast appends/pops from both ends
+    explanation: deque from collections provides O(1) operations on both ends, unlike lists.
+    links:
+    - https://docs.python.org/3/library/collections.html#collections.deque
+  wrong:
+  - answer: A function to remove duplicates
+    explanation: deque is a double-ended queue data structure, not for removing duplicates.
+  - answer: A debugging tool
+    explanation: deque is a data structure, not a debugging tool.
+  - answer: A way to declare variables
+    explanation: deque is a container type, not for variable declaration.
+  - answer: A queue that can only hold decimals
+    explanation: deque can hold any type; it's a double-ended queue.
+  - answer: A deprecated list type
+    explanation: deque is current and useful, not deprecated.
+
+- question: What does Counter do in the collections module?
+  points: 7
+  right:
+  - answer: Counts hashable objects, creating a dictionary of frequencies
+    explanation: Counter tallies elements, providing counts as a dict subclass.
+    links:
+    - https://docs.python.org/3/library/collections.html#collections.Counter
+  wrong:
+  - answer: Creates a numerical counter variable
+    explanation: Counter counts element frequencies, not just incrementing a number.
+  - answer: Counts lines in a file
+    explanation: Counter counts elements in iterables, though could be used for lines.
+  - answer: A replacement for range()
+    explanation: Counter counts frequencies; range() generates sequences.
+  - answer: Prevents counting errors in math
+    explanation: Counter is for tallying elements, not preventing errors.
+  - answer: Counts down like a timer
+    explanation: Counter tallies element frequencies, not counting down time.
+
+- question: What is defaultdict?
+  points: 7
+  right:
+  - answer: A dict subclass that provides default values for missing keys
+    explanation: defaultdict calls a factory function to create default values for new keys.
+    links:
+    - https://docs.python.org/3/library/collections.html#collections.defaultdict
+  wrong:
+  - answer: The default dictionary in Python
+    explanation: defaultdict is a specialized dict type, not the default.
+  - answer: A dictionary with default sorting
+    explanation: defaultdict provides default values, not sorting.
+  - answer: A dictionary that can't be modified
+    explanation: defaultdict is mutable; it provides default values for missing keys.
+  - answer: A dictionary limited to default Python types
+    explanation: defaultdict can hold any type; it provides defaults for missing keys.
+  - answer: A simplified dictionary for beginners
+    explanation: defaultdict is more specialized, not simpler than regular dicts.
+
+- question: What does the itertools module provide?
+  points: 7
+  right:
+  - answer: Functions for creating iterators for efficient looping
+    explanation: itertools provides iterator building blocks like chain, cycle, combinations, etc.
+    links:
+    - https://docs.python.org/3/library/itertools.html
+  wrong:
+  - answer: Tools for iteration counting
+    explanation: While it has tools that involve counting, itertools creates iterator patterns.
+  - answer: Functions to make loops faster
+    explanation: itertools provides iterator patterns, not general loop optimization.
+  - answer: A replacement for for loops
+    explanation: itertools provides iterator tools, not replacing for loops.
+  - answer: Debugging tools for loops
+    explanation: itertools creates iterators, not debugging tools.
+  - answer: A way to terminate infinite loops
+    explanation: itertools creates iterators; it doesn't manage loop termination.
+
+- question: What is the difference between a module and a package?
+  points: 4
+  right:
+  - answer: A module is a single file; a package is a directory with __init__.py
+    explanation: Modules are .py files; packages are directories organizing multiple modules.
+    links:
+    - https://docs.python.org/3/tutorial/modules.html#packages
+  wrong:
+  - answer: They are exactly the same thing
+    explanation: Modules are files; packages are directories containing modules.
+  - answer: Modules are for functions; packages are for classes
+    explanation: Both can contain functions, classes, and any Python code.
+  - answer: Packages are compiled; modules are interpreted
+    explanation: Both are interpreted; the difference is organization.
+  - answer: Modules can't be imported
+    explanation: Modules are specifically designed to be imported.
+  - answer: Packages can only contain two modules
+    explanation: Packages can contain any number of modules.
+
+- question: What is the purpose of __init__.py?
+  points: 4
+  right:
+  - answer: Marks a directory as a Python package
+    explanation: __init__.py makes Python treat directories as packages (optional in Python 3.3+).
+    links:
+    - https://docs.python.org/3/tutorial/modules.html#packages
+  wrong:
+  - answer: Initializes all Python programs
+    explanation: __init__.py is for packages, not initializing programs.
+  - answer: The main entry point for Python applications
+    explanation: __init__.py is for packages; __main__.py is for entry points.
+  - answer: A configuration file for Python
+    explanation: __init__.py marks packages and can contain code, not configuration.
+  - answer: Required for every Python file
+    explanation: __init__.py is only for package directories.
+  - answer: Initializes the Python interpreter
+    explanation: __init__.py is for packages, not the interpreter.
+
+- question: What does the pickle module do?
+  points: 7
+  right:
+  - answer: Serializes and deserializes Python objects
+    explanation: pickle converts Python objects to byte streams and back for storage/transmission.
+    links:
+    - https://docs.python.org/3/library/pickle.html
+  wrong:
+  - answer: Stores pickled vegetables data
+    explanation: pickle serializes Python objects, not food data.
+  - answer: Selects random items from a list
+    explanation: random.choice() picks items; pickle serializes objects.
+  - answer: Compresses files
+    explanation: pickle serializes objects; compression modules are different.
+  - answer: Saves files in a special format
+    explanation: While pickle saves data, it specifically serializes Python objects.
+  - answer: A debugging tool for finding problems
+    explanation: pickle is for object serialization, not debugging.
+
+- question: What is the difference between pickle and JSON?
+  points: 7
+  right:
+  - answer: pickle is Python-specific binary format; JSON is text-based and language-agnostic
+    explanation: pickle handles more Python types but isn't portable; JSON is universal but limited.
+    links:
+    - https://docs.python.org/3/library/pickle.html
+    - https://docs.python.org/3/library/json.html
+  wrong:
+  - answer: They are exactly the same
+    explanation: pickle is Python-specific and binary; JSON is universal text format.
+  - answer: JSON is faster than pickle
+    explanation: Performance varies; the key difference is portability and type support.
+  - answer: pickle only works with numbers
+    explanation: pickle can serialize most Python objects.
+  - answer: JSON is Python-specific
+    explanation: JSON is language-agnostic; pickle is Python-specific.
+  - answer: pickle is human-readable
+    explanation: pickle is binary; JSON is human-readable text.
+
+- question: What does the re module provide?
+  points: 4
+  right:
+  - answer: Regular expression operations for pattern matching
+    explanation: re provides regex functionality for searching and manipulating text.
+    links:
+    - https://docs.python.org/3/library/re.html
+  wrong:
+  - answer: Functions to rerun code
+    explanation: re is for regular expressions, not code reexecution.
+  - answer: Tools for responding to events
+    explanation: re is for pattern matching, not event handling.
+  - answer: Real number mathematical operations
+    explanation: re is for regular expressions, not real number math.
+  - answer: Recursive function helpers
+    explanation: re is for regular expressions, not recursion.
+  - answer: Reply functions for networking
+    explanation: re is for regular expressions, not networking.
+
+- question: What is a regular expression?
+  points: 4
+  right:
+  - answer: A pattern describing a set of strings for matching
+    explanation: Regular expressions define search patterns using special syntax.
+    links:
+    - https://docs.python.org/3/library/re.html
+  wrong:
+  - answer: A normal mathematical expression
+    explanation: Regular expressions are for text patterns, not math.
+  - answer: An expression that follows standard rules
+    explanation: While named for regularity in formal language theory, they're pattern matchers.
+  - answer: A daily routine expression
+    explanation: Regular expressions are for text patterns, not schedules.
+  - answer: The default way to write expressions
+    explanation: Regular expressions are specialized pattern matching tools.
+  - answer: Expressions evaluated at regular intervals
+    explanation: Regular expressions are patterns, not time-based evaluations.
+
+- question: What does the os module provide?
+  points: 4
+  right:
+  - answer: Operating system dependent functionality
+    explanation: os provides file system operations, process management, environment variables, etc.
+    links:
+    - https://docs.python.org/3/library/os.html
+  wrong:
+  - answer: Only macOS specific features
+    explanation: os works across operating systems, not just macOS.
+  - answer: Online storage features
+    explanation: os is for operating system functionality, not online storage.
+  - answer: Object serialization
+    explanation: That's pickle; os is for OS interactions.
+  - answer: Optimization tools
+    explanation: os is for OS operations, not code optimization.
+  - answer: Output string formatting
+    explanation: os is for OS operations, not string formatting.
+
+- question: What is the difference between os.path and pathlib?
+  points: 7
+  right:
+  - answer: os.path uses strings and functions; pathlib uses object-oriented Path objects
+    explanation: pathlib provides a more modern, OOP approach to file paths than os.path.
+    links:
+    - https://docs.python.org/3/library/os.path.html
+    - https://docs.python.org/3/library/pathlib.html
+  wrong:
+  - answer: They are exactly the same
+    explanation: os.path is functional; pathlib is object-oriented.
+  - answer: pathlib only works on Linux
+    explanation: pathlib works on all platforms like os.path.
+  - answer: os.path is faster
+    explanation: While there may be speed differences, the key difference is API style.
+  - answer: pathlib is deprecated
+    explanation: pathlib is newer (3.4+) and recommended for modern code.
+  - answer: os.path only works with absolute paths
+    explanation: Both handle relative and absolute paths.
+
+- question: What does sys.argv contain?
+  points: 4
+  right:
+  - answer: Command-line arguments passed to the script
+    explanation: sys.argv is a list where [0] is the script name and [1:] are arguments.
+    links:
+    - https://docs.python.org/3/library/sys.html#sys.argv
+  wrong:
+  - answer: All system variables
+    explanation: sys.argv specifically contains command-line arguments.
+  - answer: The average of system values
+    explanation: argv stands for argument vector, not average.
+  - answer: Arguments for the sys module
+    explanation: sys.argv contains arguments to the Python script.
+  - answer: Array of global variables
+    explanation: sys.argv contains command-line arguments, not global variables.
+  - answer: The Python version number
+    explanation: That's sys.version; sys.argv has command-line arguments.
+
+- question: What is the difference between append() and extend() for lists?
+  points: 2
+  right:
+  - answer: append() adds one element; extend() adds multiple elements from an iterable
+    explanation: append() adds the whole object as one item; extend() adds each element individually.
+    links:
+    - https://docs.python.org/3/tutorial/datastructures.html#more-on-lists
+  wrong:
+  - answer: They do exactly the same thing
+    explanation: append() adds one item; extend() unpacks and adds multiple.
+  - answer: extend() makes the list longer
+    explanation: Both make the list longer, but differently.
+  - answer: append() is faster
+    explanation: The difference is behavior (one item vs multiple), not speed.
+  - answer: extend() only works with lists
+    explanation: extend() works with any iterable.
+  - answer: append() checks for duplicates
+    explanation: Neither checks duplicates; they differ in how items are added.
+
+- question: What does list.sort() return?
+  points: 2
+  right:
+  - answer: None (it sorts in-place)
+    explanation: sort() modifies the list in place and returns None.
+    links:
+    - https://docs.python.org/3/library/stdtypes.html#list.sort
+  wrong:
+  - answer: A new sorted list
+    explanation: That's what sorted() returns; sort() modifies in place.
+  - answer: The original list
+    explanation: It modifies the original but returns None.
+  - answer: True if sorting succeeded
+    explanation: sort() returns None, not a boolean.
+  - answer: The number of items sorted
+    explanation: sort() returns None, not a count.
+  - answer: The largest element
+    explanation: sort() returns None; max() returns the largest element.
+
+- question: What is the difference between list.sort() and sorted()?
+  points: 4
+  right:
+  - answer: list.sort() sorts in-place; sorted() returns a new sorted list
+    explanation: sort() modifies the original; sorted() creates a new list.
+    links:
+    - https://docs.python.org/3/library/stdtypes.html#list.sort
+    - https://docs.python.org/3/library/functions.html#sorted
+  wrong:
+  - answer: They are exactly the same
+    explanation: sort() modifies in place; sorted() returns a new list.
+  - answer: sorted() only works with numbers
+    explanation: Both work with any comparable types.
+  - answer: list.sort() is a function
+    explanation: sort() is a list method; sorted() is a function.
+  - answer: sorted() is faster
+    explanation: The difference is mutation vs creation, not speed.
+  - answer: list.sort() returns the sorted list
+    explanation: sort() returns None; sorted() returns the new list.
+
+- question: What does the reversed() function return?
+  points: 4
+  right:
+  - answer: An iterator that accesses elements in reverse
+    explanation: reversed() returns an iterator, not a new list.
+    links:
+    - https://docs.python.org/3/library/functions.html#reversed
+  wrong:
+  - answer: A new reversed list
+    explanation: reversed() returns an iterator; use list(reversed()) for a list.
+  - answer: None
+    explanation: reversed() returns an iterator, not None.
+  - answer: The original list modified
+    explanation: reversed() doesn't modify the original; it returns an iterator.
+  - answer: True if the list can be reversed
+    explanation: reversed() returns an iterator, not a boolean.
+  - answer: The last element
+    explanation: reversed() returns an iterator over all elements in reverse.
+
+- question: What is the purpose of virtual environments in Python?
+  points: 4
+  right:
+  - answer: Isolate project dependencies from system-wide packages
+    explanation: Virtual environments create isolated Python environments for different projects.
+    links:
+    - https://docs.python.org/3/library/venv.html
+  wrong:
+  - answer: Create virtual machines for Python
+    explanation: Virtual environments isolate Python packages, not creating VMs.
+  - answer: Speed up Python execution
+    explanation: Virtual environments are for dependency isolation, not performance.
+  - answer: Simulate different operating systems
+    explanation: Virtual environments isolate packages, not simulating OSes.
+  - answer: Create backups of Python code
+    explanation: Virtual environments manage dependencies, not backups.
+  - answer: Enable virtual reality programming
+    explanation: Virtual environments isolate dependencies, not related to VR.
+
+- question: What command creates a virtual environment?
+  points: 2
+  right:
+  - answer: python -m venv env_name
+    explanation: The venv module creates virtual environments.
+    links:
+    - https://docs.python.org/3/library/venv.html
+  wrong:
+  - answer: pip install virtualenv
+    explanation: This installs virtualenv package, but doesn't create an environment.
+  - answer: python create venv
+    explanation: The correct syntax is python -m venv.
+  - answer: virtualenv make
+    explanation: virtualenv uses different syntax; venv uses python -m venv.
+  - answer: python --virtual-environment
+    explanation: This is not valid Python syntax.
+  - answer: mkdir venv
+    explanation: This creates a directory, not a virtual environment.
+
+- question: What is pip?
+  points: 2
+  right:
+  - answer: Python's package installer
+    explanation: pip installs and manages Python packages from PyPI.
+    links:
+    - https://pip.pypa.io/
+  wrong:
+  - answer: Python's IDE
+    explanation: pip is a package installer, not an IDE.
+  - answer: A Python programming paradigm
+    explanation: pip is a tool, not a paradigm.
+  - answer: Python's interpreter
+    explanation: pip installs packages; the interpreter runs Python code.
+  - answer: A Python module for pipes
+    explanation: pip is a package installer, not related to Unix pipes.
+  - answer: A command to print output
+    explanation: That's print(); pip is a package manager.
+
+- question: What does requirements.txt typically contain?
+  points: 4
+  right:
+  - answer: List of Python packages and versions for a project
+    explanation: requirements.txt specifies project dependencies for pip install.
+    links:
+    - https://pip.pypa.io/en/stable/reference/requirements-file-format/
+  wrong:
+  - answer: Required Python version only
+    explanation: requirements.txt lists package dependencies, not just Python version.
+  - answer: System requirements like RAM and CPU
+    explanation: requirements.txt is for Python packages, not hardware requirements.
+  - answer: Text that must be included in the code
+    explanation: requirements.txt lists dependencies, not code content.
+  - answer: Required features list for the project
+    explanation: requirements.txt is for dependencies, not feature specifications.
+  - answer: Legal requirements and licenses
+    explanation: requirements.txt lists package dependencies, not legal requirements.
+
+- question: What is a namespace in Python?
+  points: 7
+  right:
+  - answer: A mapping from names to objects
+    explanation: Namespaces are containers holding names (identifiers) mapped to objects.
+    links:
+    - https://docs.python.org/3/tutorial/classes.html#python-scopes-and-namespaces
+  wrong:
+  - answer: A unique identifier for each variable
+    explanation: Namespace is the container of names, not individual identifiers.
+  - answer: The area where code is indented
+    explanation: That's indentation/scope; namespace is name-to-object mapping.
+  - answer: A module for handling names
+    explanation: Namespace is a concept, not a specific module.
+  - answer: Documentation about variable names
+    explanation: Namespace is name-to-object mapping, not documentation.
+  - answer: A tool for generating unique names
+    explanation: Namespace is a mapping container, not a name generator.
+
+- question: What does the dir() function do?
+  points: 4
+  right:
+  - answer: Returns a list of names in the current scope or object's attributes
+    explanation: dir() lists accessible attributes and methods of an object.
+    links:
+    - https://docs.python.org/3/library/functions.html#dir
+  wrong:
+  - answer: Changes the current directory
+    explanation: That's os.chdir(); dir() lists attributes.
+  - answer: Directs program flow
+    explanation: dir() lists names, it doesn't control flow.
+  - answer: Returns directory listing of files
+    explanation: That's os.listdir(); dir() lists object attributes.
+  - answer: Gives directions to find objects
+    explanation: dir() lists attributes, not providing directions.
+  - answer: Deletes items from memory
+    explanation: That's del; dir() lists attributes.
+
+- question: What is memoization?
+  points: 12
+  right:
+  - answer: Caching function results based on arguments to avoid recomputation
+    explanation: Memoization stores results of expensive function calls for reuse.
+    links:
+    - https://en.wikipedia.org/wiki/Memoization
+  wrong:
+  - answer: Writing memory to disk
+    explanation: Memoization caches function results, not writing to disk.
+  - answer: Creating memorable variable names
+    explanation: Memoization is a caching technique, not about naming.
+  - answer: Documenting code with memos
+    explanation: Memoization caches results, not documentation.
+  - answer: Sending reminder notifications
+    explanation: Memoization is an optimization technique, not notifications.
+  - answer: Memorizing code through repetition
+    explanation: Memoization is caching function results, not a learning technique.
+
+- question: What decorator is commonly used for memoization?
+  points: 12
+  right:
+  - answer: "@functools.lru_cache"
+    explanation: lru_cache decorates functions to cache results with a Least Recently Used policy.
+    links:
+    - https://docs.python.org/3/library/functools.html#functools.lru_cache
+  wrong:
+  - answer: "@cache"
+    explanation: It's @functools.lru_cache or @functools.cache (3.9+).
+  - answer: "@memoize"
+    explanation: While memoize exists in some libraries, Python's built-in is lru_cache.
+  - answer: "@remember"
+    explanation: Python uses lru_cache, not remember.
+  - answer: "@store"
+    explanation: Python uses lru_cache, not store.
+  - answer: "@save_results"
+    explanation: Python uses lru_cache, not save_results.
+
+- question: What is the difference between '==' and 'is' when comparing None?
+  points: 7
+  right:
+  - answer: Both work, but 'is None' is preferred for checking None
+    explanation: None is a singleton, so 'is' is more explicit and marginally faster.
+    links:
+    - https://docs.python.org/3/reference/expressions.html#comparisons
+  wrong:
+  - answer: Only == works with None
+    explanation: Both work, but 'is' is preferred.
+  - answer: They produce different results
+    explanation: Both return True for None, but 'is' is preferred.
+  - answer: Only 'is' works with None
+    explanation: Both work, but 'is' is idiomatic for None checks.
+  - answer: There is no difference
+    explanation: While both work for None, 'is' is preferred and slightly different conceptually.
+  - answer: '==' is faster
+    explanation: 'is' is actually faster for None checks.
+
+- question: What does the built-in function id() return?
+  points: 4
+  right:
+  - answer: The unique identity (memory address) of an object
+    explanation: id() returns an integer representing the object's identity.
+    links:
+    - https://docs.python.org/3/library/functions.html#id
+  wrong:
+  - answer: The identifier name of a variable
+    explanation: id() returns object identity, not variable names.
+  - answer: The index in a list
+    explanation: id() returns object identity, not list indices.
+  - answer: The identification type of object
+    explanation: That's type(); id() returns the identity.
+  - answer: A unique string identifier
+    explanation: id() returns an integer, not a string.
+  - answer: The ID attribute of an object
+    explanation: id() returns identity, not an ID attribute.
+
+- question: What is the Zen of Python?
+  points: 4
+  right:
+  - answer: A collection of guiding principles for Python design
+    explanation: The Zen of Python is 19-20 aphorisms about Python's design philosophy.
+    links:
+    - https://www.python.org/dev/peps/pep-0020/
+  wrong:
+  - answer: A meditation library for Python
+    explanation: The Zen of Python is design principles, not a meditation library.
+  - answer: The Python mascot
+    explanation: The mascot is a python snake; the Zen is design principles.
+  - answer: A debugging philosophy
+    explanation: While it influences debugging, it's broader design principles.
+  - answer: The Python documentation
+    explanation: The Zen is a specific set of principles, not the general docs.
+  - answer: A testing framework
+    explanation: The Zen is design philosophy, not a testing framework.
+
+- question: How do you access the Zen of Python?
+  points: 2
+  right:
+  - answer: import this
+    explanation: Importing the 'this' module displays the Zen of Python.
+    links:
+    - https://www.python.org/dev/peps/pep-0020/
+  wrong:
+  - answer: import zen
+    explanation: It's 'import this', not 'import zen'.
+  - answer: python --zen
+    explanation: This is not a valid command-line option.
+  - answer: help(zen)
+    explanation: The command is 'import this', not help(zen).
+  - answer: print(zen)
+    explanation: You need to 'import this' to see the Zen.
+  - answer: zen.show()
+    explanation: The command is 'import this'.
+
+- question: What does PEP stand for?
+  points: 2
+  right:
+  - answer: Python Enhancement Proposal
+    explanation: PEPs are design documents describing new features or processes for Python.
+    links:
+    - https://www.python.org/dev/peps/
+  wrong:
+  - answer: Python Execution Plan
+    explanation: PEP stands for Python Enhancement Proposal.
+  - answer: Python Error Protocol
+    explanation: PEP stands for Python Enhancement Proposal.
+  - answer: Python Extension Package
+    explanation: PEP stands for Python Enhancement Proposal.
+  - answer: Python Evaluation Process
+    explanation: PEP stands for Python Enhancement Proposal.
+  - answer: Python Efficiency Program
+    explanation: PEP stands for Python Enhancement Proposal.
+
+- question: What is PEP 8?
+  points: 4
+  right:
+  - answer: Python's style guide for code
+    explanation: PEP 8 provides conventions for writing readable Python code.
+    links:
+    - https://www.python.org/dev/peps/pep-0008/
+  wrong:
+  - answer: Python version 8
+    explanation: PEP 8 is a style guide, not a Python version.
+  - answer: A performance optimization technique
+    explanation: PEP 8 is about code style, not optimization.
+  - answer: The eighth Python module
+    explanation: PEP 8 is a style guide document, not a module.
+  - answer: A security protocol
+    explanation: PEP 8 is about coding style, not security.
+  - answer: The Python 8-bit compiler
+    explanation: PEP 8 is a style guide, not a compiler.
