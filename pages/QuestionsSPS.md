@@ -71,7 +71,7 @@ SUBJECT = SQL - Basic and Technology Agnostic
 CONSTRAINTS = For average high schoolers interested in the subject. Include questions pertinent to the minimal junior-level work environment or internship. Stick to the ANSI SQL:2023 (ISO/IEC 9075:2023) standard.
 
 You are an SUBJECT teacher. You wish to evaluate a new student to find out what level of knowledge the student knows about the subject so that you can recommend a course of studies.
-Create 100 questions of various levels of difficulty.
+Create 100 questions of various levels of difficulty; not esoteric or trivial questions but rather ones with market value and usefulness.
 Create more questions if you think that the basic 1-point questions have not all been addressed.
 Ensure that each question is not a conjunction of multiple unrelated questions. Keep them distinct. 
 Example: What is Mercury and what is Pluto?
@@ -94,6 +94,7 @@ Look at the question and the answers. Determine the number of points (1 to 20) t
 
 Use the following YAML template to format the output.
 Ensure that strings are properly escaped if words are double-quoted inside.
+Ensure that the "reason" does not reveal or provide a hint to the answer but explains why it ws chosen or exists.
 
 questions:
 - question: Which of the following are nice letters?

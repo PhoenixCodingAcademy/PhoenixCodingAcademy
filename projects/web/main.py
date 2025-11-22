@@ -138,6 +138,7 @@ def _exam():
   model.yamlFiles = [os.path.splitext(os.path.basename(x))[0] for x in glob.glob(os.path.join(tools.GetAncestorPath('data'), 'questions', '*.yaml')) if not os.path.basename(x).startswith('_')]
   model.yamlFiles.sort()
   model.questions = []
+  model.seed = random.randint(1, 999999999)
   return render_template('exams.html', model=model)
 
 
@@ -150,6 +151,16 @@ def _startexam():
   selectedYaml = data.get('selectedYaml', '')
   maxPoints = data.get('maxPoints', 50)
   maxDifficulty = data.get('maxDifficulty', 7)
+  seed = data.get('seed', None)
+  
+  # Generate random seed if not provided
+  if seed is None:
+    seed = random.randint(1, 999999)
+  else:
+    seed = int(seed)
+  
+  # Set the random seed for reproducibility
+  random.seed(seed)
   
   # Load the YAML file
   yamlPath = os.path.join(tools.GetAncestorPath('data'), 'questions', selectedYaml + '.yaml')
@@ -167,7 +178,7 @@ def _startexam():
   allQuestions = yamlData.get('questions', [])
   questions = [q for q in allQuestions if q.get('points', 1) <= maxDifficulty]
   
-  # Shuffle questions
+  # Shuffle questions (using the seeded random)
   random.shuffle(questions)
   
   # Select enough questions to reach maxPoints
@@ -221,7 +232,8 @@ def _startexam():
   return jsonify({
     'questions': selected,
     'totalPoints': totalPts,
-    'history': yamlData.get('history', [])
+    'history': yamlData.get('history', []),
+    'seed': seed
   })
 
 

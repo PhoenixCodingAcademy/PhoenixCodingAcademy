@@ -1,6 +1,6 @@
 questions:
 - question: What does SQL stand for?
-  reason: Understanding the basic acronym is fundamental to discussing database queries.
+  reason: Understanding basic terminology is fundamental to discussing databases professionally.
   points: 1
   right:
   - answer: Structured Query Language
@@ -20,7 +20,7 @@ questions:
     explanation: This is incorrect; the S stands for Structured, not System.
 
 - question: What is the primary purpose of SQL?
-  reason: Understanding SQL's main function helps students grasp its role in data management.
+  reason: Knowing what a technology is designed for helps understand when and how to use it.
   points: 1
   right:
   - answer: To manage and query data in relational databases
@@ -40,7 +40,7 @@ questions:
     explanation: While databases can encrypt data, SQL itself is not primarily an encryption tool.
 
 - question: Which of the following is a valid SQL statement type?
-  reason: Recognizing basic SQL statement types is essential for writing queries.
+  reason: Recognizing fundamental statement categories is essential for database work.
   points: 1
   right:
   - answer: SELECT
@@ -60,7 +60,7 @@ questions:
     explanation: PULL is not a SQL keyword; SELECT retrieves data.
 
 - question: What clause is used to filter rows in a SELECT statement?
-  reason: The WHERE clause is one of the most commonly used SQL features in any work environment.
+  reason: Data filtering is one of the most frequently performed operations in database queries.
   points: 1
   right:
   - answer: WHERE
@@ -80,7 +80,7 @@ questions:
     explanation: CONDITION is not a SQL keyword; WHERE is used for filtering.
 
 - question: What SQL keyword is used to retrieve unique values only?
-  reason: Understanding DISTINCT helps eliminate duplicate results, a common requirement in data analysis.
+  reason: Eliminating redundant results is a common requirement when analyzing data.
   points: 1
   right:
   - answer: DISTINCT
@@ -100,7 +100,7 @@ questions:
     explanation: NODUPLICATE is not a SQL keyword; DISTINCT is the correct term.
 
 - question: Which statement is used to add new rows to a table?
-  reason: INSERT is fundamental for adding data, a basic operation in any database work.
+  reason: Adding data is a fundamental operation in maintaining database content.
   points: 1
   right:
   - answer: INSERT
@@ -120,7 +120,7 @@ questions:
     explanation: WRITE is not a SQL keyword; INSERT adds new rows.
 
 - question: What statement is used to modify existing data in a table?
-  reason: UPDATE is essential for maintaining and correcting data in production environments.
+  reason: Changing existing records is a critical operation for maintaining accurate information.
   points: 1
   right:
   - answer: UPDATE
@@ -140,7 +140,7 @@ questions:
     explanation: SET is part of the UPDATE statement syntax, but UPDATE is the statement itself.
 
 - question: Which statement removes rows from a table?
-  reason: DELETE is critical for data management, and interns need to understand its power and risks.
+  reason: Removing data is an important but potentially dangerous database operation.
   points: 1
   right:
   - answer: DELETE
@@ -160,7 +160,7 @@ questions:
     explanation: ELIMINATE is not a SQL keyword; DELETE removes rows from tables.
 
 - question: What clause is used to sort the result set?
-  reason: Sorting results is a basic requirement for presenting data in a meaningful way.
+  reason: Presenting data in a meaningful sequence is important for readability and analysis.
   points: 1
   right:
   - answer: ORDER BY
@@ -180,7 +180,7 @@ questions:
     explanation: RANK is a window function, but ORDER BY is the clause for sorting.
 
 - question: What keyword specifies ascending sort order?
-  reason: Understanding sort direction is basic to controlling result presentation.
+  reason: Understanding directional sorting is basic to controlling how results are presented.
   points: 1
   right:
   - answer: ASC
@@ -200,7 +200,7 @@ questions:
     explanation: RISE is not a SQL keyword; ASC is used for ascending order.
 
 - question: What keyword specifies descending sort order?
-  reason: Descending sorts are frequently needed for finding top values or recent records.
+  reason: Sorting in reverse order is frequently needed for various reporting requirements.
   points: 1
   right:
   - answer: DESC
@@ -220,7 +220,7 @@ questions:
     explanation: BACKWARD is not a SQL keyword; DESC is used for descending order.
 
 - question: What clause groups rows that have the same values?
-  reason: GROUP BY is essential for aggregating data and creating summary reports.
+  reason: Aggregating data into categories is essential for summary reports.
   points: 2
   right:
   - answer: GROUP BY
@@ -240,7 +240,7 @@ questions:
     explanation: MERGE is a different SQL statement; GROUP BY groups rows.
 
 - question: Which clause filters groups after GROUP BY?
-  reason: Understanding HAVING vs WHERE is important for writing correct aggregate queries.
+  reason: Different types of filtering are needed at different stages of query processing.
   points: 2
   right:
   - answer: HAVING
@@ -260,7 +260,7 @@ questions:
     explanation: WHEN is part of CASE expressions; HAVING filters groups.
 
 - question: What function counts the number of rows?
-  reason: COUNT is one of the most frequently used aggregate functions in data analysis.
+  reason: Quantifying data is one of the most basic analytical operations.
   points: 1
   right:
   - answer: COUNT
@@ -280,7 +280,7 @@ questions:
     explanation: QUANTITY is not a SQL function; COUNT counts rows.
 
 - question: What function calculates the sum of values?
-  reason: SUM is essential for totaling numeric data in reports and analysis.
+  reason: Totaling numeric data is a fundamental mathematical operation in databases.
   points: 1
   right:
   - answer: SUM
@@ -300,7 +300,7 @@ questions:
     explanation: ACCUMULATE is not a SQL function; SUM calculates totals.
 
 - question: What function calculates the average of values?
-  reason: AVG is commonly used for statistical analysis and reporting in business contexts.
+  reason: Statistical measures are commonly needed in business reporting and analysis.
   points: 1
   right:
   - answer: AVG
@@ -320,7 +320,7 @@ questions:
     explanation: MIDDLE is not a SQL function; AVG calculates the average.
 
 - question: What function finds the maximum value?
-  reason: MAX is frequently needed for finding highest values in business and technical contexts.
+  reason: Finding extreme values in datasets is a common analytical requirement.
   points: 1
   right:
   - answer: MAX
@@ -340,7 +340,7 @@ questions:
     explanation: LARGEST is not a SQL function; MAX finds the maximum value.
 
 - question: What function finds the minimum value?
-  reason: MIN is used alongside MAX for range analysis and validation.
+  reason: Identifying the lowest values in data is important for range analysis.
   points: 1
   right:
   - answer: MIN
@@ -360,7 +360,7 @@ questions:
     explanation: SMALLEST is not a SQL function; MIN finds the minimum value.
 
 - question: What wildcard character represents any sequence of characters in LIKE patterns?
-  reason: Wildcards are essential for flexible text searching in WHERE clauses.
+  reason: Pattern matching with wildcards is essential for flexible text searching.
   points: 1
   right:
   - answer: "%"
@@ -380,7 +380,7 @@ questions:
     explanation: At sign is not a SQL wildcard; % is the correct wildcard.
 
 - question: What wildcard character represents a single character in LIKE patterns?
-  reason: Single-character wildcards enable precise pattern matching for data validation.
+  reason: Precise pattern matching requires wildcards with different specificity levels.
   points: 1
   right:
   - answer: "_"
@@ -400,7 +400,7 @@ questions:
     explanation: Caret is not a SQL wildcard character; _ matches a single character.
 
 - question: What keyword is used to test for NULL values?
-  reason: NULL handling is critical since NULL represents missing or unknown data differently than empty strings or zeros.
+  reason: Missing or unknown data requires special handling in database queries.
   points: 2
   right:
   - answer: IS NULL
@@ -420,7 +420,7 @@ questions:
     explanation: CONTAINS NULL is not valid SQL syntax; IS NULL tests for NULL values.
 
 - question: What keyword is used to test for non-NULL values?
-  reason: Testing for existing data is as important as testing for missing data in validation logic.
+  reason: Verifying that data exists is as important as checking for its absence.
   points: 2
   right:
   - answer: IS NOT NULL
@@ -440,7 +440,7 @@ questions:
     explanation: EXISTS is used for subqueries, not for testing NULL values; IS NOT NULL is correct.
 
 - question: What clause combines multiple tables in a query?
-  reason: JOINs are fundamental for working with normalized relational databases in any real-world application.
+  reason: Working with related data across multiple tables is fundamental to relational databases.
   points: 2
   right:
   - answer: JOIN
@@ -460,7 +460,7 @@ questions:
     explanation: ATTACH is not a standard SQL keyword for combining tables; JOIN is correct.
 
 - question: What type of JOIN returns all rows from the left table and matching rows from the right table?
-  reason: LEFT JOINs are commonly used to include all records from a primary table with optional related data.
+  reason: Different join types are suited for different data retrieval scenarios.
   points: 2
   right:
   - answer: LEFT JOIN (or LEFT OUTER JOIN)
@@ -480,7 +480,7 @@ questions:
     explanation: OUTER JOIN alone is ambiguous; LEFT OUTER JOIN is the specific type needed.
 
 - question: What type of JOIN returns only rows where there is a match in both tables?
-  reason: INNER JOINs are the most common type and understanding them is essential for basic data retrieval.
+  reason: Understanding different join behaviors is essential for accurate data retrieval.
   points: 2
   right:
   - answer: INNER JOIN
@@ -500,7 +500,7 @@ questions:
     explanation: MATCHED JOIN is not a SQL keyword; INNER JOIN returns matching rows.
 
 - question: What type of JOIN returns all rows from both tables?
-  reason: FULL JOINs are useful for finding all data including unmatched records from either table.
+  reason: Some analytical scenarios require viewing all data regardless of matching relationships.
   points: 2
   right:
   - answer: FULL JOIN (or FULL OUTER JOIN)
@@ -520,7 +520,7 @@ questions:
     explanation: DOUBLE JOIN is not a SQL keyword; FULL JOIN returns all rows from both tables.
 
 - question: What clause specifies the join condition?
-  reason: The ON clause defines the relationship between tables, critical for correct JOIN results.
+  reason: Defining how tables relate to each other is critical for accurate joins.
   points: 2
   right:
   - answer: ON
@@ -540,7 +540,7 @@ questions:
     explanation: WHEN is used in CASE expressions, not for join conditions.
 
 - question: What operator combines the results of two or more SELECT statements?
-  reason: UNION is important for combining data from multiple sources or queries.
+  reason: Merging data from multiple queries into one result set is often necessary.
   points: 2
   right:
   - answer: UNION
@@ -560,7 +560,7 @@ questions:
     explanation: CONCAT is a string function; UNION combines SELECT statement results.
 
 - question: What variant of UNION includes duplicate rows?
-  reason: Understanding UNION ALL prevents unintended duplicate removal and improves query performance.
+  reason: Performance and data completeness requirements may differ between scenarios.
   points: 2
   right:
   - answer: UNION ALL
@@ -580,7 +580,7 @@ questions:
     explanation: UNION COMPLETE is not valid SQL syntax; UNION ALL includes duplicates.
 
 - question: What statement creates a new table?
-  reason: CREATE TABLE is fundamental for defining database structure in any database project.
+  reason: Defining database structures is a fundamental skill for database work.
   points: 2
   right:
   - answer: CREATE TABLE
@@ -600,7 +600,7 @@ questions:
     explanation: INSERT adds rows to a table; CREATE TABLE creates a new table.
 
 - question: What statement removes a table from the database?
-  reason: DROP TABLE is powerful and potentially destructive, important to understand before working with production databases.
+  reason: Understanding destructive operations is important before working with production data.
   points: 2
   right:
   - answer: DROP TABLE
@@ -620,7 +620,7 @@ questions:
     explanation: CLEAR TABLE is not valid SQL syntax; DROP TABLE removes tables.
 
 - question: What statement modifies the structure of an existing table?
-  reason: ALTER TABLE is essential for maintaining and evolving database schemas over time.
+  reason: Database schemas often need to evolve as requirements change over time.
   points: 2
   right:
   - answer: ALTER TABLE
@@ -640,7 +640,7 @@ questions:
     explanation: RESHAPE TABLE is not valid SQL syntax; ALTER TABLE changes table structure.
 
 - question: What constraint ensures that a column cannot contain NULL values?
-  reason: NOT NULL is one of the most common constraints for ensuring data integrity.
+  reason: Enforcing data presence is a common data integrity requirement.
   points: 2
   right:
   - answer: NOT NULL
@@ -660,7 +660,7 @@ questions:
     explanation: FILLED is not a SQL constraint; NOT NULL ensures columns have values.
 
 - question: What constraint ensures that all values in a column are unique?
-  reason: UNIQUE constraints prevent duplicate data, important for business rules and data quality.
+  reason: Preventing duplicate data is important for maintaining data quality.
   points: 2
   right:
   - answer: UNIQUE
@@ -680,7 +680,7 @@ questions:
     explanation: EXCLUSIVE is not a SQL constraint; UNIQUE ensures all values are unique.
 
 - question: What constraint uniquely identifies each row in a table?
-  reason: PRIMARY KEY is fundamental to relational database design and table relationships.
+  reason: Every table in a well-designed database needs a way to identify individual records.
   points: 2
   right:
   - answer: PRIMARY KEY
@@ -700,7 +700,7 @@ questions:
     explanation: MASTER KEY is not a SQL constraint; PRIMARY KEY uniquely identifies rows.
 
 - question: What constraint creates a relationship between tables?
-  reason: FOREIGN KEY constraints enforce referential integrity, crucial for maintaining data consistency across tables.
+  reason: Maintaining consistent relationships between tables is critical in relational databases.
   points: 2
   right:
   - answer: FOREIGN KEY
@@ -720,7 +720,7 @@ questions:
     explanation: EXTERNAL KEY is not valid SQL syntax; FOREIGN KEY creates relationships.
 
 - question: What constraint limits the values that can be placed in a column?
-  reason: CHECK constraints enforce business rules at the database level, ensuring data validity.
+  reason: Business rules often need to be enforced at the database level.
   points: 2
   right:
   - answer: CHECK
@@ -740,7 +740,7 @@ questions:
     explanation: RULE exists in some SQL systems but CHECK is the standard constraint for value validation.
 
 - question: What provides a default value for a column when no value is specified?
-  reason: DEFAULT values improve data entry efficiency and ensure consistent data.
+  reason: Automating data entry can improve efficiency and consistency.
   points: 2
   right:
   - answer: DEFAULT
@@ -760,7 +760,7 @@ questions:
     explanation: FALLBACK is not a SQL keyword; DEFAULT specifies default values.
 
 - question: What keyword automatically generates unique numeric values for new rows?
-  reason: Auto-incrementing columns are commonly used for primary keys in many database systems.
+  reason: Generating unique identifiers automatically is a common database pattern.
   points: 2
   right:
   - answer: IDENTITY or AUTO_INCREMENT or SERIAL (depending on SQL dialect, but IDENTITY is SQL standard)
@@ -780,7 +780,7 @@ questions:
     explanation: GENERATED is part of syntax in some contexts, but IDENTITY is the standard for auto-increment.
 
 - question: What data type stores whole numbers?
-  reason: Understanding numeric types is fundamental for proper column definition and storage.
+  reason: Choosing appropriate data types is fundamental for proper column definition.
   points: 1
   right:
   - answer: INTEGER (or INT)
@@ -800,7 +800,7 @@ questions:
     explanation: COUNT is a function, not a data type; INTEGER stores whole numbers.
 
 - question: What data type stores decimal numbers?
-  reason: Decimal types are critical for financial calculations where precision matters.
+  reason: Precision matters when storing numeric data with fractional components.
   points: 1
   right:
   - answer: DECIMAL or NUMERIC
@@ -820,7 +820,7 @@ questions:
     explanation: POINT is not a SQL data type for decimals; DECIMAL is correct.
 
 - question: What data type stores fixed-length character strings?
-  reason: CHAR is important for storing codes and identifiers that have consistent length.
+  reason: Different string storage methods have different space and performance characteristics.
   points: 2
   right:
   - answer: CHAR or CHARACTER
@@ -840,7 +840,7 @@ questions:
     explanation: STATIC is not a SQL data type; CHAR stores fixed-length character strings.
 
 - question: What data type stores variable-length character strings?
-  reason: VARCHAR is the most commonly used string type for efficient storage of text data.
+  reason: Efficient storage of text data requires appropriate type selection.
   points: 2
   right:
   - answer: VARCHAR or CHARACTER VARYING
@@ -860,7 +860,7 @@ questions:
     explanation: DYNAMIC is not a SQL data type; VARCHAR stores variable-length character strings.
 
 - question: What data type stores date values?
-  reason: DATE type is essential for working with dates in business applications.
+  reason: Temporal data requires special data types for proper storage and manipulation.
   points: 1
   right:
   - answer: DATE
@@ -880,7 +880,7 @@ questions:
     explanation: TIME stores time of day only; DATE stores calendar dates.
 
 - question: What data type stores time values?
-  reason: TIME type is important for scheduling and time-based calculations.
+  reason: Separating time from date information may be necessary for certain applications.
   points: 1
   right:
   - answer: TIME
@@ -900,7 +900,7 @@ questions:
     explanation: DATETIME stores both date and time; TIME stores only time of day.
 
 - question: What data type stores both date and time?
-  reason: TIMESTAMP is critical for recording when events occur in applications.
+  reason: Tracking precise moments in time requires appropriate temporal data types.
   points: 2
   right:
   - answer: TIMESTAMP or DATETIME
@@ -920,7 +920,7 @@ questions:
     explanation: INSTANT is not a SQL data type; TIMESTAMP stores date and time values.
 
 - question: What data type stores true/false values?
-  reason: BOOLEAN type is important for storing binary state and logical conditions.
+  reason: Binary state information requires appropriate data type handling.
   points: 2
   right:
   - answer: BOOLEAN
@@ -940,7 +940,7 @@ questions:
     explanation: FLAG is not a SQL data type; BOOLEAN stores boolean values.
 
 - question: What data type stores large text data?
-  reason: TEXT/CLOB types are needed for storing documents, descriptions, and long-form content.
+  reason: Some applications need to store substantial amounts of text beyond normal field limits.
   points: 2
   right:
   - answer: TEXT or CLOB (Character Large Object)
@@ -960,7 +960,7 @@ questions:
     explanation: VARCHAR(MAX) is specific to some databases; TEXT/CLOB is the standard for large text.
 
 - question: What data type stores binary data like images or files?
-  reason: BLOB types are essential for storing multimedia and document files in databases.
+  reason: Non-text data such as multimedia files requires special storage handling.
   points: 2
   right:
   - answer: BLOB (Binary Large Object)
@@ -980,7 +980,7 @@ questions:
     explanation: RAW is used in some databases but BLOB is the standard for large binary objects.
 
 - question: What function converts a value to uppercase?
-  reason: UPPER is commonly used for case-insensitive comparisons and data standardization.
+  reason: Text normalization and comparison often require case manipulation.
   points: 1
   right:
   - answer: UPPER
@@ -1000,7 +1000,7 @@ questions:
     explanation: UPCASE is not a standard SQL function; UPPER is correct.
 
 - question: What function converts a value to lowercase?
-  reason: LOWER complements UPPER for text normalization and comparison operations.
+  reason: Text manipulation and standardization requires various case conversion operations.
   points: 1
   right:
   - answer: LOWER
@@ -1020,7 +1020,7 @@ questions:
     explanation: LCASE is used in some systems but LOWER is the SQL standard.
 
 - question: What function removes leading and trailing spaces?
-  reason: TRIM is essential for cleaning user input and standardizing text data.
+  reason: Data cleansing often requires removing extraneous whitespace from text.
   points: 2
   right:
   - answer: TRIM
@@ -1040,7 +1040,7 @@ questions:
     explanation: REDUCE is not a SQL function; TRIM removes spaces.
 
 - question: What function returns the length of a string?
-  reason: LENGTH is frequently used for validation and data quality checks.
+  reason: Measuring text data is useful for validation and analysis purposes.
   points: 1
   right:
   - answer: LENGTH or CHAR_LENGTH
@@ -1060,7 +1060,7 @@ questions:
     explanation: CHARACTERS is not a SQL function; LENGTH returns string length.
 
 - question: What function extracts a portion of a string?
-  reason: SUBSTRING is essential for parsing and manipulating text data.
+  reason: Parsing and manipulating text often requires extracting specific segments.
   points: 2
   right:
   - answer: SUBSTRING or SUBSTR
@@ -1080,7 +1080,7 @@ questions:
     explanation: SECTION is not a SQL function; SUBSTRING extracts parts of strings.
 
 - question: What function combines multiple strings together?
-  reason: String concatenation is fundamental for formatting output and creating composite values.
+  reason: Building composite text values from separate components is a common requirement.
   points: 2
   right:
   - answer: CONCAT or using the || operator
@@ -1100,7 +1100,7 @@ questions:
     explanation: ADD is not a string function; CONCAT or || combines strings.
 
 - question: What function rounds a numeric value to a specified number of decimal places?
-  reason: ROUND is critical for financial calculations and presenting readable numeric results.
+  reason: Numeric precision control is important for calculations and display formatting.
   points: 2
   right:
   - answer: ROUND
@@ -1120,7 +1120,7 @@ questions:
     explanation: TRUNCATE removes decimal places without rounding; ROUND rounds to nearest value.
 
 - question: What function returns the absolute value of a number?
-  reason: ABS is useful for distance calculations and ensuring positive values.
+  reason: Mathematical operations sometimes require working with magnitude regardless of sign.
   points: 2
   right:
   - answer: ABS
@@ -1140,7 +1140,7 @@ questions:
     explanation: PLUS is not a SQL function; ABS returns absolute values.
 
 - question: What function returns the current date?
-  reason: CURRENT_DATE is frequently used for timestamping records and date-based calculations.
+  reason: Accessing system date information is frequently needed in database operations.
   points: 2
   right:
   - answer: CURRENT_DATE
@@ -1160,7 +1160,7 @@ questions:
     explanation: SYSDATE is used in some databases but CURRENT_DATE is more standard SQL.
 
 - question: What function returns the current time?
-  reason: CURRENT_TIME is used for recording timestamps and time-based operations.
+  reason: System time information is often needed for various database operations.
   points: 2
   right:
   - answer: CURRENT_TIME
@@ -1180,7 +1180,7 @@ questions:
     explanation: SYSTIME is not a standard SQL function; CURRENT_TIME is correct.
 
 - question: What function returns both current date and time?
-  reason: CURRENT_TIMESTAMP is the most commonly used function for recording when events occur.
+  reason: Capturing precise temporal information is important for many database applications.
   points: 2
   right:
   - answer: CURRENT_TIMESTAMP
@@ -1200,7 +1200,7 @@ questions:
     explanation: SYSTIMESTAMP is used in some databases but CURRENT_TIMESTAMP is more standard.
 
 - question: What clause limits the number of rows returned by a query?
-  reason: LIMIT is essential for pagination and controlling query performance with large result sets.
+  reason: Controlling result set size is important for performance and pagination.
   points: 2
   right:
   - answer: LIMIT (or FETCH FIRST in standard SQL)
@@ -1220,7 +1220,7 @@ questions:
     explanation: CAP is not a SQL clause; LIMIT or FETCH FIRST limits rows returned.
 
 - question: What operator checks if a value exists in a list?
-  reason: IN is commonly used for filtering against multiple values efficiently.
+  reason: Testing membership in a set of values is a common filtering requirement.
   points: 2
   right:
   - answer: IN
@@ -1240,7 +1240,7 @@ questions:
     explanation: MEMBER is not a SQL operator; IN checks if a value exists in a list.
 
 - question: What operator checks if a value falls within a range?
-  reason: BETWEEN simplifies range queries and makes code more readable than using AND with comparison operators.
+  reason: Range comparisons are frequently needed for filtering numeric and date data.
   points: 2
   right:
   - answer: BETWEEN
@@ -1260,7 +1260,7 @@ questions:
     explanation: AMONG is not a SQL operator; BETWEEN checks if a value is within a range.
 
 - question: What operator performs pattern matching with wildcards?
-  reason: LIKE is essential for flexible text searches without requiring exact matches.
+  reason: Flexible text searching without exact matches is commonly needed in queries.
   points: 2
   right:
   - answer: LIKE
@@ -1280,7 +1280,7 @@ questions:
     explanation: FIND is not a SQL operator; LIKE performs pattern matching with wildcards.
 
 - question: What logical operator returns true if both conditions are true?
-  reason: AND is fundamental for combining multiple filtering conditions in WHERE clauses.
+  reason: Combining multiple conditions is fundamental to complex query logic.
   points: 1
   right:
   - answer: AND
@@ -1300,7 +1300,7 @@ questions:
     explanation: WITH is used for common table expressions; AND is the logical operator.
 
 - question: What logical operator returns true if at least one condition is true?
-  reason: OR enables flexible filtering where multiple alternatives are acceptable.
+  reason: Alternative conditions provide flexibility in query filtering logic.
   points: 1
   right:
   - answer: OR
@@ -1320,7 +1320,7 @@ questions:
     explanation: MAYBE is not a SQL operator; OR returns true if at least one condition is true.
 
 - question: What logical operator reverses the result of a condition?
-  reason: NOT is essential for expressing negative conditions and exclusions in queries.
+  reason: Negating conditions is necessary for expressing exclusions in queries.
   points: 1
   right:
   - answer: NOT
@@ -1340,7 +1340,7 @@ questions:
     explanation: FLIP is not a SQL operator; NOT reverses boolean conditions.
 
 - question: What does ACID stand for in database transactions?
-  reason: Understanding ACID properties is fundamental to database reliability in professional environments.
+  reason: Understanding transaction properties is fundamental to database reliability.
   points: 4
   right:
   - answer: Atomicity, Consistency, Isolation, Durability
@@ -1360,7 +1360,7 @@ questions:
     explanation: A stands for Atomicity, not Available.
 
 - question: What command begins a transaction?
-  reason: Understanding transaction control is critical for maintaining data integrity in multi-step operations.
+  reason: Grouping multiple operations together is important for data consistency.
   points: 4
   right:
   - answer: BEGIN TRANSACTION (or START TRANSACTION or BEGIN)
@@ -1380,7 +1380,7 @@ questions:
     explanation: NEW TRANSACTION is not valid SQL syntax; BEGIN or START TRANSACTION is correct.
 
 - question: What command permanently saves changes made in a transaction?
-  reason: COMMIT is essential for finalizing successful transactions in production systems.
+  reason: Finalizing database changes is a critical operation in transaction management.
   points: 4
   right:
   - answer: COMMIT
@@ -1400,7 +1400,7 @@ questions:
     explanation: CONFIRM is not a SQL command; COMMIT saves transaction changes.
 
 - question: What command undoes changes made in a transaction?
-  reason: ROLLBACK is critical for error recovery and maintaining data integrity when problems occur.
+  reason: Reverting operations when errors occur is essential for data integrity.
   points: 4
   right:
   - answer: ROLLBACK
@@ -1420,7 +1420,7 @@ questions:
     explanation: REVERSE is not a SQL command; ROLLBACK undoes transaction changes.
 
 - question: What is a view in SQL?
-  reason: Views are important for security, simplifying complex queries, and presenting data in different formats.
+  reason: Virtual representations of data can simplify complex queries and enhance security.
   points: 4
   right:
   - answer: A virtual table based on a SELECT query
@@ -1440,7 +1440,7 @@ questions:
     explanation: Views show current data from underlying tables, not snapshots (unless materialized).
 
 - question: What statement creates a view?
-  reason: Creating views is a common task for simplifying data access and implementing security.
+  reason: Defining reusable query structures is useful for simplifying data access.
   points: 4
   right:
   - answer: CREATE VIEW
@@ -1460,7 +1460,7 @@ questions:
     explanation: DEFINE VIEW is not valid SQL syntax; CREATE VIEW defines views.
 
 - question: What is an index in SQL?
-  reason: Indexes are critical for query performance, a key concern in production databases.
+  reason: Query performance optimization is a key concern in database management.
   points: 4
   right:
   - answer: A database structure that improves query performance by providing fast data lookup
@@ -1480,7 +1480,7 @@ questions:
     explanation: While unique indexes prevent duplicates, indexes primarily improve query performance.
 
 - question: What statement creates an index?
-  reason: Creating indexes is an important skill for database optimization in real applications.
+  reason: Database optimization requires understanding performance-enhancing structures.
   points: 4
   right:
   - answer: CREATE INDEX
@@ -1500,7 +1500,7 @@ questions:
     explanation: DEFINE INDEX is not valid SQL syntax; CREATE INDEX creates indexes.
 
 - question: What is a subquery?
-  reason: Subqueries are powerful tools for complex data retrieval commonly needed in business reporting.
+  reason: Complex data retrieval often requires nested query structures.
   points: 4
   right:
   - answer: A query nested inside another query
@@ -1520,7 +1520,7 @@ questions:
     explanation: Subqueries don't modify queries; they provide data to outer queries.
 
 - question: Where can a subquery be used?
-  reason: Understanding subquery placement helps in writing flexible and powerful queries.
+  reason: Nested queries provide flexibility in different parts of SQL statements.
   points: 4
   right:
   - answer: In SELECT, FROM, WHERE, or HAVING clauses
@@ -1540,7 +1540,7 @@ questions:
     explanation: While subqueries can be used with JOINs, they're not limited to JOIN conditions.
 
 - question: What is a correlated subquery?
-  reason: Correlated subqueries are more advanced but commonly needed for row-by-row comparisons.
+  reason: Advanced query patterns involve relationships between nested and outer queries.
   points: 7
   right:
   - answer: A subquery that references columns from the outer query
@@ -1560,7 +1560,7 @@ questions:
     explanation: A correlated subquery specifically references the outer query, not another subquery.
 
 - question: What keyword checks if a subquery returns any rows?
-  reason: EXISTS is efficient for checking existence without retrieving actual data.
+  reason: Testing for data existence without retrieving full results is often more efficient.
   points: 7
   right:
   - answer: EXISTS
@@ -1580,7 +1580,7 @@ questions:
     explanation: ANY is used differently with comparison operators; EXISTS checks if rows are returned.
 
 - question: What is a common table expression (CTE)?
-  reason: CTEs improve query readability and are increasingly used in modern SQL development.
+  reason: Modern SQL supports structures that improve query organization and readability.
   points: 7
   right:
   - answer: A temporary named result set defined using WITH clause
@@ -1600,7 +1600,7 @@ questions:
     explanation: CTEs are not constraints; they're named query results.
 
 - question: What keyword introduces a common table expression?
-  reason: WITH is the standard way to create CTEs for better query organization.
+  reason: SQL has specific syntax for defining temporary named result sets.
   points: 7
   right:
   - answer: WITH
@@ -1620,7 +1620,7 @@ questions:
     explanation: CTE is not a keyword; WITH is used to create CTEs.
 
 - question: What is a window function?
-  reason: Window functions are powerful for analytics and increasingly required in data analysis roles.
+  reason: Advanced analytical operations often require calculations across related row sets.
   points: 7
   right:
   - answer: A function that performs calculations across a set of rows related to the current row
@@ -1640,7 +1640,7 @@ questions:
     explanation: While window functions often use ORDER BY, they're for calculations across row sets, not just sorting.
 
 - question: What clause defines the window for a window function?
-  reason: Understanding OVER is essential for using window functions correctly.
+  reason: Window functions require specific syntax to define their operational scope.
   points: 7
   right:
   - answer: OVER
@@ -1660,7 +1660,7 @@ questions:
     explanation: GROUP BY is different from windows; OVER defines window function windows.
 
 - question: What window function assigns a unique sequential number to each row?
-  reason: ROW_NUMBER is commonly used for pagination and ranking in applications.
+  reason: Numbering rows sequentially is useful for pagination and data ordering.
   points: 7
   right:
   - answer: ROW_NUMBER()
@@ -1680,7 +1680,7 @@ questions:
     explanation: INDEX is not a window function; ROW_NUMBER() provides sequential numbering.
 
 - question: What window function assigns ranks with gaps for tied values?
-  reason: RANK is useful for competition-style rankings where ties receive the same rank.
+  reason: Different ranking methods handle ties in various ways for analytical purposes.
   points: 7
   right:
   - answer: RANK()
@@ -1700,7 +1700,7 @@ questions:
     explanation: SEQUENCE is not a window function; RANK() assigns ranks with gaps.
 
 - question: What window function assigns ranks without gaps for tied values?
-  reason: DENSE_RANK is useful when you need consecutive rank numbers despite ties.
+  reason: Ranking algorithms vary in how they handle equal values in sequences.
   points: 7
   right:
   - answer: DENSE_RANK()
@@ -1720,7 +1720,7 @@ questions:
     explanation: FULL_RANK is not a SQL function; DENSE_RANK() assigns ranks without gaps.
 
 - question: What clause in a window function divides rows into partitions?
-  reason: PARTITION BY is essential for calculating separate results for different groups.
+  reason: Window functions can operate independently on different subsets of data.
   points: 7
   right:
   - answer: PARTITION BY
@@ -1740,7 +1740,7 @@ questions:
     explanation: SEGMENT BY is not SQL syntax; PARTITION BY partitions window data.
 
 - question: What is the difference between WHERE and HAVING?
-  reason: Understanding this distinction is critical for writing correct queries with aggregates.
+  reason: SQL provides different filtering mechanisms at different stages of query execution.
   points: 4
   right:
   - answer: WHERE filters rows before grouping, HAVING filters groups after aggregation
@@ -1760,7 +1760,7 @@ questions:
     explanation: HAVING works with any data type in aggregate conditions; the key is it filters after grouping.
 
 - question: What is normalization in database design?
-  reason: Understanding normalization is fundamental for good database design in any project.
+  reason: Proper data organization is fundamental to effective database structure.
   points: 7
   right:
   - answer: The process of organizing data to reduce redundancy and improve integrity
@@ -1780,7 +1780,7 @@ questions:
     explanation: Normalization is about data organization to reduce redundancy, not naming conventions.
 
 - question: What is a primary key used for?
-  reason: Understanding primary key purpose is fundamental to relational database design.
+  reason: Every table needs a way to identify its individual records uniquely.
   points: 2
   right:
   - answer: To uniquely identify each row in a table
@@ -1800,7 +1800,7 @@ questions:
     explanation: While primary keys create indexes that help performance, their purpose is unique identification.
 
 - question: Can a table have multiple primary keys?
-  reason: Understanding primary key constraints helps avoid design errors.
+  reason: Understanding constraints on database structures prevents design errors.
   points: 2
   right:
   - answer: No, a table can have only one primary key (though it can be composite)
@@ -1820,7 +1820,7 @@ questions:
     explanation: The single primary key rule is standard across SQL systems.
 
 - question: What is referential integrity?
-  reason: Referential integrity is crucial for maintaining consistent relationships between tables.
+  reason: Maintaining consistency between related data is critical in relational databases.
   points: 7
   right:
   - answer: Ensuring foreign key values match primary key values in referenced tables
@@ -1840,7 +1840,7 @@ questions:
     explanation: Referential integrity maintains foreign key relationships, not row numbering.
 
 - question: Which of the following are valid aggregate functions?
-  reason: Understanding all aggregate functions helps in creating comprehensive reports and analyses.
+  reason: SQL provides various functions for summarizing and analyzing data.
   points: 4
   right:
   - answer: COUNT
@@ -1866,7 +1866,7 @@ questions:
     explanation: ACCUMULATE is not a SQL aggregate function; SUM accumulates values.
 
 - question: What does NULL represent in SQL?
-  reason: Understanding NULL is critical for correct data handling and query logic.
+  reason: Database systems need a way to represent the absence of data.
   points: 4
   right:
   - answer: Missing, unknown, or inapplicable data
@@ -1886,7 +1886,7 @@ questions:
     explanation: NULL represents absence of value, not necessarily an error.
 
 - question: What is the result of comparing anything to NULL using = or &lt;&gt;?
-  reason: Understanding NULL comparison behavior prevents common logical errors in queries.
+  reason: NULL values have special comparison behavior in SQL logic.
   points: 7
   right:
   - answer: NULL (unknown), not TRUE or FALSE
@@ -1906,7 +1906,7 @@ questions:
     explanation: NULL comparison behavior is standardized across SQL systems.
 
 - question: What is a composite key?
-  reason: Composite keys are common in junction tables and understanding them is important for database design.
+  reason: Sometimes multiple columns are needed together to uniquely identify records.
   points: 7
   right:
   - answer: A primary key consisting of multiple columns
@@ -1926,7 +1926,7 @@ questions:
     explanation: A composite key is a type of primary key using multiple columns, not optional.
 
 - question: What is the purpose of the DISTINCT keyword?
-  reason: DISTINCT is frequently used to remove duplicates from result sets.
+  reason: Result sets sometimes contain redundant information that needs elimination.
   points: 2
   right:
   - answer: To remove duplicate rows from query results
@@ -1946,7 +1946,7 @@ questions:
     explanation: DISTINCT removes duplicate rows, not separate columns.
 
 - question: What is a natural join?
-  reason: Understanding different join types helps in choosing the right approach for combining tables.
+  reason: SQL provides various methods for combining data from multiple tables.
   points: 7
   right:
   - answer: A join that automatically matches columns with the same name
@@ -1966,7 +1966,7 @@ questions:
     explanation: NATURAL JOIN doesn't use ON; it matches columns with same names automatically.
 
 - question: What is a self-join?
-  reason: Self-joins are useful for hierarchical data and comparing rows within the same table.
+  reason: Sometimes data relationships exist within a single table structure.
   points: 7
   right:
   - answer: A join of a table with itself
@@ -1986,7 +1986,7 @@ questions:
     explanation: Self-joins can use any columns for comparison, not just primary keys.
 
 - question: What does TRUNCATE TABLE do?
-  reason: TRUNCATE is faster than DELETE for removing all rows but has important differences.
+  reason: Different methods exist for removing data with varying performance characteristics.
   points: 7
   right:
   - answer: Removes all rows from a table quickly without logging individual deletions
@@ -2006,7 +2006,7 @@ questions:
     explanation: TRUNCATE removes all rows permanently, not archive them.
 
 - question: What is the difference between DELETE and TRUNCATE?
-  reason: Understanding these differences is important for data management and performance.
+  reason: Multiple operations can remove data but with different behaviors and implications.
   points: 7
   right:
   - answer: DELETE can use WHERE to remove specific rows and logs changes; TRUNCATE removes all rows quickly without detailed logging
@@ -2026,7 +2026,7 @@ questions:
     explanation: TRUNCATE works on tables, not views.
 
 - question: What is a stored procedure?
-  reason: Stored procedures are commonly used in applications for performance and security.
+  reason: Databases can store executable code for reuse and consistency.
   points: 7
   right:
   - answer: A saved collection of SQL statements that can be executed as a unit
@@ -2046,7 +2046,7 @@ questions:
     explanation: Stored procedures are saved SQL code that can be executed, not specifically for backups.
 
 - question: What is a trigger?
-  reason: Triggers are important for automating actions and maintaining business rules in databases.
+  reason: Databases can automatically respond to certain events with predefined actions.
   points: 12
   right:
   - answer: A stored procedure that automatically executes in response to specific events
@@ -2066,7 +2066,7 @@ questions:
     explanation: Triggers can enforce rules, but they're specifically automatic procedures responding to events.
 
 - question: What does UNION do differently than UNION ALL?
-  reason: Understanding the performance implications of UNION vs UNION ALL is important in production.
+  reason: Different set operations have different performance and data inclusion characteristics.
   points: 4
   right:
   - answer: UNION removes duplicates, UNION ALL keeps all rows including duplicates
@@ -2086,7 +2086,7 @@ questions:
     explanation: UNION removes duplicates; UNION ALL keeps all rows including duplicates.
 
 - question: What is INTERSECT used for?
-  reason: INTERSECT is useful for finding common elements between datasets.
+  reason: Set theory operations are useful for comparing and analyzing datasets.
   points: 7
   right:
   - answer: Returns only rows that appear in both query results
@@ -2106,7 +2106,7 @@ questions:
     explanation: CROSS JOIN creates a cartesian product; INTERSECT finds common rows.
 
 - question: What is EXCEPT (or MINUS) used for?
-  reason: EXCEPT helps find differences between datasets, useful for data comparison and auditing.
+  reason: Finding differences between datasets is important for data analysis and comparison.
   points: 7
   right:
   - answer: Returns rows from the first query that don't appear in the second query
@@ -2126,7 +2126,7 @@ questions:
     explanation: EXCEPT is a set operation, not error handling.
 
 - question: What is a materialized view?
-  reason: Materialized views are important for performance optimization with complex queries.
+  reason: Performance optimization sometimes requires trading freshness for speed.
   points: 12
   right:
   - answer: A view that stores the actual query results physically for faster access
@@ -2146,7 +2146,7 @@ questions:
     explanation: Materialized views are for performance, storing query results, not backing up views.
 
 - question: What is a sequence?
-  reason: Sequences are important for generating unique identifiers across multiple tables or systems.
+  reason: Databases often need to generate unique numeric identifiers systematically.
   points: 7
   right:
   - answer: A database object that generates unique sequential numbers
@@ -2166,7 +2166,7 @@ questions:
     explanation: Sequences generate unique numbers, not order records.
 
 - question: What does COALESCE function do?
-  reason: COALESCE is commonly used for handling NULL values in result sets.
+  reason: Handling missing values appropriately is important in data processing.
   points: 7
   right:
   - answer: Returns the first non-NULL value from a list of expressions
@@ -2186,7 +2186,7 @@ questions:
     explanation: COUNT ignores NULLs; COALESCE returns first non-NULL value.
 
 - question: What is the purpose of CASE expression?
-  reason: CASE enables conditional logic in SQL, essential for complex queries and reports.
+  reason: Conditional logic is often needed within SQL queries for flexible data manipulation.
   points: 4
   right:
   - answer: Provides conditional logic (if-then-else) within SQL statements
@@ -2206,7 +2206,7 @@ questions:
     explanation: While CASE can be used in error scenarios, it's primarily for conditional logic.
 
 - question: What are the two forms of CASE expression?
-  reason: Understanding both CASE forms helps in writing concise and appropriate conditional logic.
+  reason: SQL provides different syntaxes for conditional logic depending on the use case.
   points: 7
   right:
   - answer: Simple CASE (compares one expression to values) and Searched CASE (evaluates multiple conditions)
@@ -2226,7 +2226,7 @@ questions:
     explanation: CASE expression forms are Simple and Searched.
 
 - question: What is a cursor in SQL?
-  reason: Cursors are used for row-by-row processing, important in stored procedures and complex operations.
+  reason: Some operations require iterative processing of query results row by row.
   points: 12
   right:
   - answer: A database object that allows row-by-row processing of query results
@@ -2246,7 +2246,7 @@ questions:
     explanation: Cursors are for row-by-row processing, not indexing.
 
 - question: What does NULLIF function do?
-  reason: NULLIF is useful for converting specific values to NULL in queries.
+  reason: Converting specific values to NULL can be useful in data transformation scenarios.
   points: 7
   right:
   - answer: Returns NULL if two expressions are equal, otherwise returns the first expression
@@ -2266,7 +2266,7 @@ questions:
     explanation: NULLIF does the opposite—creates NULL from matching values.
 
 - question: What is a schema in SQL?
-  reason: Understanding schemas is important for organizing database objects in larger systems.
+  reason: Large databases benefit from organizational structures to manage objects logically.
   points: 7
   right:
   - answer: A logical container for database objects like tables, views, and procedures
@@ -2286,7 +2286,7 @@ questions:
     explanation: Schemas are containers for objects, not indexes.
 
 - question: What is the difference between CHAR and VARCHAR?
-  reason: Choosing the right string type affects storage efficiency and performance.
+  reason: Storage efficiency varies depending on the string data type chosen.
   points: 4
   right:
   - answer: CHAR stores fixed-length strings (pads with spaces), VARCHAR stores variable-length strings
@@ -2306,7 +2306,7 @@ questions:
     explanation: Maximum sizes vary by system; the key difference is fixed vs variable length.
 
 - question: What happens when you try to insert a duplicate value into a column with a UNIQUE constraint?
-  reason: Understanding constraint behavior is important for error handling and data quality.
+  reason: Database constraints enforce rules that affect how data modifications behave.
   points: 4
   right:
   - answer: The database raises an error and rejects the insertion
@@ -2326,7 +2326,7 @@ questions:
     explanation: UNIQUE constraints prevent duplicates; violations cause errors.
 
 - question: What is an execution plan?
-  reason: Understanding execution plans is essential for query optimization and performance tuning.
+  reason: Understanding how the database processes queries is important for optimization.
   points: 12
   right:
   - answer: A description of how the database engine will execute a query
@@ -2346,7 +2346,7 @@ questions:
     explanation: Execution plans show how individual queries execute, not their submission order.
 
 - question: What command is typically used to view an execution plan?
-  reason: Being able to view execution plans is a practical skill for query optimization.
+  reason: Analyzing query performance requires tools to examine execution strategies.
   points: 12
   right:
   - answer: EXPLAIN (or EXPLAIN PLAN in some systems)

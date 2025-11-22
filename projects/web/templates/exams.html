@@ -129,6 +129,12 @@
       </span>
     </div>
     <div>
+      <label for="random-seed"><strong>Random Seed:</strong></label>
+      <input id="random-seed" v-model.number="seed" type="number" min="1" max="999999999" 
+             style="width: 150px;" />
+      <span style="color: #666; font-size: 0.9em; margin-left: 5px;">(1-999999999 for reproducible tests)</span>
+    </div>
+    <div>
       <button type="button" @click="startExam" :disabled="!canStart">Start Exam</button>
     </div>
 
@@ -211,6 +217,7 @@ new Vue({
     studentName: localStorage.getItem('studentName') || '',
     maxPoints: parseInt(localStorage.getItem('maxPoints')) || 10,
     maxDifficulty: parseInt(localStorage.getItem('maxDifficulty')) || 20,
+    seed: {{ model.seed }},
     started: false,
     allQuestions: [],
     questions: [],
@@ -313,15 +320,19 @@ new Vue({
       this.examDate = new Date().toISOString().slice(0,10);
 
       // POST to API for exam generation
-      axios.post('/startexam', {
+      let requestData = {
         selectedYaml: this.selectedYaml,
         maxPoints: this.maxPoints,
-        maxDifficulty: this.maxDifficulty
-      })
+        maxDifficulty: this.maxDifficulty,
+        seed: this.seed
+      };
+      
+      axios.post('/startexam', requestData)
         .then(res => {
           this.questions = res.data.questions || [];
           this.totalPoints = res.data.totalPoints || 0;
           this.history = res.data.history || [];
+          this.seed = res.data.seed;  // Update seed to the one actually used
           this.answers = Array(this.questions.length).fill().map(()=>[]);
           this.started = true;
         })
