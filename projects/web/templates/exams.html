@@ -81,11 +81,21 @@
     </div>
     <div>
       <label for="max-points"><strong>Max Points:</strong></label>
-      <input id="max-points" v-model.number="maxPoints" type="number" min="1" max="200" required />
+      <input id="max-points" v-model.number="maxPoints" type="number" min="1" max="200" required 
+             :style="maxPointsInvalid ? 'border: 2px solid red;' : ''" />
+      <span style="color: #666; font-size: 0.9em; margin-left: 5px;">(Range: 1-200)</span>
+      <span v-if="maxPointsInvalid" style="color: red; font-size: 0.9em; margin-left: 10px;">
+        Must be between 1 and 200
+      </span>
     </div>
     <div>
       <label for="max-difficulty"><strong>Max difficult question:</strong></label>
-      <input id="max-difficulty" v-model.number="maxDifficulty" type="number" min="1" max="20" required />
+      <input id="max-difficulty" v-model.number="maxDifficulty" type="number" min="1" max="20" required 
+             :style="maxDifficultyInvalid ? 'border: 2px solid red;' : ''" />
+      <span style="color: #666; font-size: 0.9em; margin-left: 5px;">(Range: 1-20)</span>
+      <span v-if="maxDifficultyInvalid" style="color: red; font-size: 0.9em; margin-left: 10px;">
+        Must be between 1 and 20
+      </span>
     </div>
     <div>
       <button type="button" @click="startExam" :disabled="!canStart">Start Exam</button>
@@ -193,8 +203,16 @@ new Vue({
     }
   },
   computed: {
+    maxPointsInvalid() {
+      return this.maxPoints < 1 || this.maxPoints > 200 || isNaN(this.maxPoints);
+    },
+    maxDifficultyInvalid() {
+      return this.maxDifficulty < 1 || this.maxDifficulty > 20 || isNaN(this.maxDifficulty);
+    },
     canStart() {
-      return this.selectedYaml && this.studentName && this.maxPoints && this.maxDifficulty;
+      return this.selectedYaml && this.studentName && 
+             this.maxPoints && this.maxDifficulty &&
+             !this.maxPointsInvalid && !this.maxDifficultyInvalid;
     },
     readyToGrade() {
       if (!this.questions.length) return false;

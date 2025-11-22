@@ -1686,7 +1686,7 @@ questions:
   - answer: Learning with a small total dataset regardless of class distribution
     explanation: Few-shot specifically refers to few examples per class, not total dataset size.
   - answer: A photography-based learning technique using camera shots
-    explanation: "Shots" refers to training examples, not photographs.
+    explanation: '"Shots" refers to training examples, not photographs.'
   - answer: Training with reduced batch sizes to save memory
     explanation: This describes computational optimization, not few-shot learning.
   - answer: A trial-and-error learning approach with few attempts
