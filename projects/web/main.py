@@ -159,7 +159,9 @@ def _startexam():
   try:  
     yamlData = tools.readYaml(yamlPath)
   except Exception as e:
-    return jsonify({'error': f'Error reading YAML file "{selectedYaml}": {e.problem} at line {e.context_mark.line}'}), 500
+    print(e)
+    error = {'error': f'Error reading YAML file "{selectedYaml}": {e.problem} at line {e.context_mark.line}'}
+    return jsonify(error), 500
   
   # Filter questions by difficulty
   allQuestions = yamlData.get('questions', [])
@@ -486,5 +488,29 @@ def download(filename):
 
 
 
+def precheck():
+  """
+  Load all YAML files in the "questions" folder to catch any YAML parse errors early before starting.
+  """
+  questionsPath = os.path.join(tools.GetAncestorPath('data'), 'questions')
+  yamlFiles = glob.glob(os.path.join(questionsPath, '*.yaml'))
+
+  ok = True
+  for yamlFile in yamlFiles:
+    if os.path.basename(yamlFile).startswith('_'):
+      continue
+    
+    try:
+      tools.readYaml(yamlFile)
+      print(f"✓ Loaded: {os.path.basename(yamlFile)}")
+    except Exception as e:
+      print(f"✗ Error loading {os.path.basename(yamlFile)}: {e}")
+      ok = False
+
+  if not ok:
+    print("✗ Some YAML files could not be loaded. Please fix the errors and try again.")
+  return ok
+
 if __name__ == "__main__":
-  app.run(host="0.0.0.0")
+  if precheck():
+    app.run(host="0.0.0.0")

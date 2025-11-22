@@ -218,9 +218,9 @@ questions:
   wrong:
   - answer: function function_name() {}
     explanation: Python uses 'def', not 'function', and colons not braces.
-  - answer: func function_name():
+  - answer: "func function_name():"
     explanation: Python uses 'def', not 'func'.
-  - answer: define function_name():
+  - answer: "define function_name():"
     explanation: Python uses 'def', not 'define'.
   - answer: fn function_name() =>
     explanation: This is Rust-like syntax, not Python.
@@ -256,13 +256,13 @@ questions:
   wrong:
   - answer: for (int i = 0; i < 10; i++)
     explanation: This is C/Java syntax, not Python.
-  - answer: for item of sequence:
+  - answer: "for item of sequence:"
     explanation: Python uses 'in', not 'of' (though JavaScript uses 'of').
-  - answer: foreach item in sequence:
+  - answer: "foreach item in sequence:"
     explanation: Python uses 'for', not 'foreach'.
-  - answer: for item -> sequence:
+  - answer: "for item -> sequence:"
     explanation: Python uses 'in', not arrow syntax.
-  - answer: loop item in sequence:
+  - answer: "loop item in sequence:"
     explanation: Python uses 'for', not 'loop'.
 
 - question: How do you access the first element of a list called 'items'?
@@ -427,13 +427,13 @@ questions:
   wrong:
   - answer: class ClassName {}
     explanation: Python uses colons and indentation, not curly braces.
-  - answer: def class ClassName:
+  - answer: "def class ClassName:"
     explanation: Don't use 'def' with classes; 'class' is its own keyword.
-  - answer: public class ClassName:
+  - answer: "public class ClassName:"
     explanation: Python doesn't use access modifiers like 'public'.
-  - answer: create class ClassName:
+  - answer: "create class ClassName:"
     explanation: Python uses 'class', not 'create class'.
-  - answer: object ClassName:
+  - answer: "object ClassName:"
     explanation: Python uses 'class', not 'object' keyword.
 
 - question: What is the special method name for initializing a class instance?
@@ -638,11 +638,11 @@ questions:
     explanation: == checks values, 'is' checks object identity - different concepts.
   - answer: == is for numbers, 'is' is for strings
     explanation: Both work with any types, but serve different purposes.
-  - answer: 'is' is faster than ==
+  - answer: "'is' is faster than =="
     explanation: While 'is' may be faster, they serve different purposes.
   - answer: == checks type, 'is' checks value
     explanation: == checks value equality; 'is' checks object identity.
-  - answer: 'is' is the assignment operator
+  - answer: "'is' is the assignment operator"
     explanation: = is assignment; 'is' checks identity.
 
 - question: What does the enumerate() function do?
@@ -2034,8 +2034,8 @@ questions:
     explanation: Both work, but 'is' is idiomatic for None checks.
   - answer: There is no difference
     explanation: While both work for None, 'is' is preferred and slightly different conceptually.
-  - answer: '==' is faster
-    explanation: 'is' is actually faster for None checks.
+  - answer: "'==' is faster"
+    explanation: "'is' is actually faster for None checks."
 
 - question: What does the built-in function id() return?
   points: 4
