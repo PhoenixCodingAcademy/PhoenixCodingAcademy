@@ -134,9 +134,26 @@ def _course(id):
 
 @app.route('/exams')
 def _exam():
-  #request.args
   model = getModel('Exams')
+  model.yamlFiles = [os.path.basename(x) for x in glob.glob(os.path.join(tools.GetAncestorPath('data'), 'questions', '*.yaml')) if not os.path.basename(x).startswith('_')]
+  model.yamlFiles.sort()
+  model.questions = []
   return render_template('exams.html', model=model)
+
+
+@app.route('/gradeexam', methods=['POST'])
+def _gradeexam():
+  data = request.json
+  name = data.get('name', '')
+  maxPoints = data.get('maxPoints', 0)
+  maxDifficulty = data.get('maxDifficulty', 0)
+  history = data.get('history', [])
+  answers = data.get('answers', [])
+  score = 0
+  for answer in answers:
+    if answer.get('right', False):
+      score += answer.get('points', 0)
+  return jsonify({ 'results': { 'name': name, 'maxPoints': maxPoints, 'maxDifficulty': maxDifficulty, 'history': history, 'answers': answers, 'score': score }})
 
 
 @app.route('/feedback')

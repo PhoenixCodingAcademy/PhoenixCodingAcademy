@@ -3,6 +3,40 @@ DESCRIPTION: Requirements for the quiz engine.
 -->
 [TOC]
 
+From the "data/questions" folder, read all YAML file names that do not begin with an underscore.
+Create a dropdown list of these file names. 
+Under that list create these controls:
+* Name: a text box with place holder "Your full name; e.g. John Smith"
+* Max Points: a numeric text box with values 1 to 200 with default 50.
+* Max difficult question: a numeric text box with values 1 to 20 with default 7.
+* A "Start Exam" button.
+
+When the "Start Exam" button is pressed, read the corresponding YAML file.
+It will contain many questions.
+Begin with a "history" list of strings.
+Randomize the questions.
+Choose a number of questions that equal the Max Points, or be one question over.
+At the top of the quiz:
+  Print the student's name.
+  Print the current date and time YYYY-MM-DD.
+  Print the string "{N} questions for a total of {P} points".
+  For each row in the history list, print the row.
+
+For each question, choose randomly 5 answers (right or wrong). The set of answers can be all wrong answers.
+Randomize the answers.
+Print the question as H2 heading.
+For each answer print one row that begins with a checkbox, the answer, and the number of points for the question in parenthesis, e.g. " (10 pts)".
+
+Begin with the scroll bar at the top.
+We will need some method to mark each answer with a unique id that when submitted can be determined by the server if the answer represents a right answer or not.
+To do so, we make a string that is a hidden key constant. To that append the answer, then append "RIGHT" or "WRONG" to the string. The id is the question number, followed by a "dash", followed by the xxhash of the string, and becomes the id (or name) of the checkbox.
+
+At the end of the quiz, create a button called "Grade Quiz", which submits the entire form of answers to endpoint "/gradeexam".
+
+
+
+
+
 * Create an exam from a list of subjects, courses, or assignments. This is resolved into a set of item ids.
 * Pick a random seed number, perhaps based on the student's id and exam number.
 * For each id in ids:
