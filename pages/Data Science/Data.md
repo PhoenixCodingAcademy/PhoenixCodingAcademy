@@ -82,7 +82,7 @@ We organize our data into a database so we can access it quickly for our data sc
 * Each property is a column.
 * Each value is a cell.
 
-A database of tables might have these two tables:
+A database of tables might have these tables:
 
 ## People
 
@@ -111,7 +111,7 @@ A database of tables might have these two tables:
 | 2   | Spacely Space Sprockets   |
 
 
-## RelationsRelations
+## Relations
 
 | From | To  | Relationship |
 | ---- | --- | ------------ |
@@ -135,7 +135,11 @@ When the id of one table is used in another table, we say the two tables are rel
 
 ![](/static/images/20251116151745.png)
 
+In the diagram above:
+* Open arrows represent ISA relationships. An Employee is a Person. These are implemented as primary key to primary key relations.
+* Closed arrows represent HASA relationships. An employee has a company.
 
+RULE: You should never have cycles in your relationships; e.g. A points to B, and B points to A. These are called **many-to-many** relations but it is bad architecture design. Rather you should create a third table (called a bridge or crosswalk table) that relates A to B. Then C points to A and B instead. The **Relations** table is just that - a table that creates a many-to-many relation between people and people. A person can have multiple parents, and a parent can have multiple children.
 
 All databases give you the ability to select all rows from a table, join rows from different tables, filter the rows that are returned, print out the column names and values of the rows returned, add a new row, delete a row, update the value of a row/column.
 

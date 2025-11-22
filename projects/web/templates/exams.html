@@ -174,7 +174,7 @@
                    @change="answerChanged(qIdx, aIdx, ans.isNoneOfTheAbove)">
             [[ ans.answer ]]
           </label>
-          <span v-if="ans.links && ans.links.length" style="margin-left: 5px;">
+          <span v-if="showAnswers && ans.explanation && ans.links && ans.links.length" style="margin-left: 5px;">
             <a v-for="(link, linkIdx) in ans.links" :key="linkIdx" 
                :href="link" 
                target="_blank" 

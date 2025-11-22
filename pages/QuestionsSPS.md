@@ -67,7 +67,7 @@ REQUIREMENT: When the "Grade Quiz", "Try Again", or "Show Answers" button is pre
 REQUIREMENT: The "Question set" dropdown list should have the ability to type a string to filter the list. Typing each character invokes the filter. The string filters by matching any part of the string.
 ---
 
-SUBJECT = History - Colonial America and the Revolution
+SUBJECT = History - Basic Colonial America and the Revolution
 CONSTRAINTS = For average high schoolers interested in the subject. Include questions pertinent to the minimal junior-level work environment or internship. 
 
 You are an SUBJECT teacher. You wish to evaluate a new student to find out what level of knowledge the student knows about the subject so that you can recommend a course of studies.
