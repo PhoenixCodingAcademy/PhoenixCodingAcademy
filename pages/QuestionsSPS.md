@@ -62,6 +62,7 @@ At the end of the quiz, create a button called "Grade Quiz", which submits the e
 REQUIREMENT: Assuming that some questions were answered wrong, when the "Grade Quiz" button is pressed, highlight all questions (not the answers) in red to show that are wrong. Then change the "Grade Quiz" button to read "Try Again", and add a button "Show Answers" to the right. When the "Try Again" button is pressed, the test is re-evaluated. When the "Show Answers" button is pressed then Reveal All Answers, which means mark all incorrect answers in RED. Also show the explanation for all answers below each answer in a smaller font.
 At any point, if all questions were answered correctly, then then "Reveal All Answers.
 
+REQUIREMENT: When the "Grade Quiz", "Try Again", or "Show Answers" button is pressed, then record that event in the history list with the number of questions missed and the number of points scored. Always show the history at the top.
 ---
 
 SUBJECT = Python Programming
