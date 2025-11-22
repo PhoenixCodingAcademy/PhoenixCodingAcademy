@@ -67,8 +67,8 @@ REQUIREMENT: When the "Grade Quiz", "Try Again", or "Show Answers" button is pre
 REQUIREMENT: The "Question set" dropdown list should have the ability to type a string to filter the list. Typing each character invokes the filter. The string filters by matching any part of the string.
 ---
 
-SUBJECT = SQL - Basic and Technology Agnostic
-CONSTRAINTS = For average high schoolers interested in the subject. Include questions pertinent to the minimal junior-level work environment or internship. Stick to the ANSI SQL:2023 (ISO/IEC 9075:2023) standard.
+SUBJECT = Statistics - Basic
+CONSTRAINTS = For average high schoolers interested in the subject. Include questions pertinent to the minimal junior-level work environment or internship. 
 
 You are an SUBJECT teacher. You wish to evaluate a new student to find out what level of knowledge the student knows about the subject so that you can recommend a course of studies.
 Create 100 questions of various levels of difficulty; not esoteric or trivial questions but rather ones with market value and usefulness.

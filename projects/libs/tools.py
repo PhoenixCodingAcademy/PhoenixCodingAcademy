@@ -105,10 +105,10 @@ def readYaml(fn):
   See: https://docs.python.org/3/tutorial/datastructures.html#dictionaries
   '''
   dn = GetDataPath(fn)
-  with open(dn) as f:
-    data = yaml.safe_load(f)
-    subloadYaml(data)
-    return data
+  text = readDataFileWithUnicode(dn)
+  data = yaml.safe_load(text)
+  subloadYaml(data)
+  return data
 
 
 def WriteYaml(fn, obj):

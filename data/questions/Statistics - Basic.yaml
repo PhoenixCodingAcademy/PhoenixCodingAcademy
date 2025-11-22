@@ -1,0 +1,2016 @@
+questions:
+- question: What is the mean of a dataset?
+  reason: Understanding measures of central tendency is fundamental to statistical analysis in any work environment.
+  points: 1
+  right:
+  - answer: The sum of all values divided by the number of values
+    explanation: The mean is calculated by adding all values and dividing by the count of values.
+    links:
+    - https://en.wikipedia.org/wiki/Mean
+  wrong:
+  - answer: The middle value when data is ordered
+    explanation: This describes the median, not the mean.
+  - answer: The most frequently occurring value
+    explanation: This describes the mode, not the mean.
+  - answer: The difference between the largest and smallest values
+    explanation: This describes the range, not the mean.
+  - answer: The square root of the variance
+    explanation: This describes the standard deviation, not the mean.
+  - answer: The average of the first and last values
+    explanation: The mean considers all values, not just the first and last.
+
+- question: What is the median of a dataset?
+  reason: The median is a robust measure of central tendency used frequently in business and research settings.
+  points: 1
+  right:
+  - answer: The middle value when data is arranged in order
+    explanation: For odd-numbered datasets, it's the middle value; for even-numbered, it's the average of the two middle values.
+    links:
+    - https://en.wikipedia.org/wiki/Median
+  wrong:
+  - answer: The sum of all values divided by the count
+    explanation: This describes the mean, not the median.
+  - answer: The most common value in the dataset
+    explanation: This describes the mode, not the median.
+  - answer: The average of the highest and lowest values
+    explanation: This describes the midrange, not the median.
+  - answer: The value that appears exactly in the center of the frequency table
+    explanation: The median is based on ordered position, not frequency table position.
+  - answer: The weighted average of all data points
+    explanation: The median does not involve weighting or averaging all points.
+
+- question: What is the mode of a dataset?
+  reason: Mode is useful for identifying the most common outcome in categorical and numerical data.
+  points: 1
+  right:
+  - answer: The value that occurs most frequently
+    explanation: The mode is the most common value in a dataset.
+    links:
+    - https://en.wikipedia.org/wiki/Mode_(statistics)
+  wrong:
+  - answer: The middle value when arranged in order
+    explanation: This describes the median, not the mode.
+  - answer: The arithmetic average of all values
+    explanation: This describes the mean, not the mode.
+  - answer: The difference between maximum and minimum values
+    explanation: This describes the range, not the mode.
+  - answer: The value closest to the mean
+    explanation: The mode is based on frequency, not proximity to the mean.
+  - answer: The second most common value
+    explanation: The mode is the most common value, not the second most common.
+
+- question: What is the range of a dataset?
+  reason: Range is a simple measure of spread that is commonly reported in workplace data summaries.
+  points: 1
+  right:
+  - answer: The difference between the maximum and minimum values
+    explanation: Range = Maximum value - Minimum value.
+    links:
+    - https://en.wikipedia.org/wiki/Range_(statistics)
+  wrong:
+  - answer: The sum of the maximum and minimum values
+    explanation: Range is the difference, not the sum.
+  - answer: The average distance from the mean
+    explanation: This describes mean absolute deviation, not range.
+  - answer: The middle 50% of the data
+    explanation: This describes the interquartile range, not the range.
+  - answer: The square root of the variance
+    explanation: This describes the standard deviation, not the range.
+  - answer: The number of different values in the dataset
+    explanation: This describes the count of unique values, not the range.
+
+- question: What is variance?
+  reason: Variance is essential for understanding data dispersion in quality control and financial analysis.
+  points: 2
+  right:
+  - answer: The average of the squared differences from the mean
+    explanation: Variance measures how far data points are spread from the mean, using squared differences.
+    links:
+    - https://en.wikipedia.org/wiki/Variance
+  wrong:
+  - answer: The square root of the standard deviation
+    explanation: Standard deviation is the square root of variance, not the other way around.
+  - answer: The difference between the maximum and minimum values
+    explanation: This describes the range, not variance.
+  - answer: The average absolute difference from the mean
+    explanation: This describes mean absolute deviation, not variance.
+  - answer: The sum of all squared values
+    explanation: Variance uses squared differences from the mean, not squared values themselves.
+  - answer: The ratio of the standard deviation to the mean
+    explanation: This describes the coefficient of variation, not variance.
+
+- question: What is standard deviation?
+  reason: Standard deviation is the most commonly used measure of spread in professional data analysis.
+  points: 2
+  right:
+  - answer: The square root of the variance
+    explanation: Standard deviation is expressed in the same units as the original data and equals the square root of variance.
+    links:
+    - https://en.wikipedia.org/wiki/Standard_deviation
+  wrong:
+  - answer: The average distance from the median
+    explanation: Standard deviation measures distance from the mean, not the median.
+  - answer: The variance squared
+    explanation: Standard deviation is the square root of variance, not variance squared.
+  - answer: The range divided by 4
+    explanation: While sometimes approximated this way, this is not the definition of standard deviation.
+  - answer: The difference between the third and first quartiles
+    explanation: This describes the interquartile range, not standard deviation.
+  - answer: The average of all absolute differences between data points
+    explanation: This is not how standard deviation is calculated.
+
+- question: What does it mean when a dataset has a standard deviation of zero?
+  reason: Understanding extreme cases of variability helps in quality control and data validation.
+  points: 2
+  right:
+  - answer: All values in the dataset are identical
+    explanation: Zero standard deviation means there is no variation; all values are the same.
+    links:
+    - https://en.wikipedia.org/wiki/Standard_deviation
+  wrong:
+  - answer: The mean is zero
+    explanation: Standard deviation of zero refers to lack of variation, not the value of the mean.
+  - answer: The dataset contains only positive values
+    explanation: Standard deviation of zero relates to variation, not the sign of values.
+  - answer: The dataset is perfectly normally distributed
+    explanation: A normal distribution has positive standard deviation; zero means no distribution at all.
+  - answer: Half the values are above the mean and half below
+    explanation: This describes symmetry, not zero variation.
+  - answer: The data has no outliers
+    explanation: While true, this doesn't capture the complete meaning that all values are identical.
+
+- question: What is a percentile?
+  reason: Percentiles are used extensively in performance metrics, test scores, and salary benchmarks.
+  points: 1
+  right:
+  - answer: A value below which a given percentage of observations fall
+    explanation: The 75th percentile means 75% of the data falls below that value.
+    links:
+    - https://en.wikipedia.org/wiki/Percentile
+  wrong:
+  - answer: The percentage of observations that are outliers
+    explanation: Percentiles describe position in a distribution, not outlier identification.
+  - answer: A value that divides the data into 100 equal groups
+    explanation: This is somewhat close but imprecise; percentiles mark positions, not divisions into equal groups.
+  - answer: The probability of selecting a particular value
+    explanation: This relates to probability density, not percentiles.
+  - answer: The ratio of a value to the maximum value times 100
+    explanation: This is a percentage of maximum, not a percentile.
+  - answer: The number of standard deviations from the mean
+    explanation: This describes a z-score, not a percentile.
+
+- question: What is the interquartile range (IQR)?
+  reason: IQR is used in workplace settings to identify outliers and understand data spread without extreme value influence.
+  points: 2
+  right:
+  - answer: The difference between the third quartile (Q3) and first quartile (Q1)
+    explanation: IQR = Q3 - Q1, representing the middle 50% of the data.
+    links:
+    - https://en.wikipedia.org/wiki/Interquartile_range
+  wrong:
+  - answer: The difference between the maximum and minimum values
+    explanation: This describes the range, not the IQR.
+  - answer: The sum of the first and third quartiles
+    explanation: IQR is the difference, not the sum, of Q3 and Q1.
+  - answer: The average of all four quartiles
+    explanation: Quartiles are not averaged to find IQR.
+  - answer: The range of the middle third of the data
+    explanation: IQR represents the middle 50%, not the middle third.
+  - answer: The difference between the median and the mean
+    explanation: This is not how IQR is defined.
+
+- question: What is a quartile?
+  reason: Quartiles are fundamental for creating box plots and understanding data distribution in reports.
+  points: 1
+  right:
+  - answer: A value that divides the data into four equal parts
+    explanation: Q1, Q2 (median), and Q3 divide ordered data into four quarters.
+    links:
+    - https://en.wikipedia.org/wiki/Quartile
+  wrong:
+  - answer: A value that represents 25% of the total sum
+    explanation: Quartiles divide by count of observations, not by sum.
+  - answer: The mean of each quarter of the dataset
+    explanation: Quartiles are positional values, not means of quarters.
+  - answer: A value that appears exactly four times in the dataset
+    explanation: Quartiles are based on position, not frequency.
+  - answer: The fourth root of the dataset variance
+    explanation: This is mathematically nonsensical; quartiles are positional measures.
+  - answer: Any value within the interquartile range
+    explanation: Quartiles are specific values (Q1, Q2, Q3), not any value in a range.
+
+- question: What is a population in statistics?
+  reason: Distinguishing between population and sample is critical for proper data collection and inference in any field.
+  points: 1
+  right:
+  - answer: The complete set of all items or individuals of interest
+    explanation: A population includes every member of the group being studied.
+    links:
+    - https://en.wikipedia.org/wiki/Statistical_population
+  wrong:
+  - answer: A subset of data selected for analysis
+    explanation: This describes a sample, not a population.
+  - answer: The group of people living in a geographic area
+    explanation: While this is one meaning of population, in statistics it's broader than just people or geography.
+  - answer: The most common category in the dataset
+    explanation: This has no relation to the statistical definition of population.
+  - answer: The average size of groups in a study
+    explanation: Population refers to the entire group, not an average size.
+  - answer: The expected value of a random variable
+    explanation: This is a parameter, not the definition of population.
+
+- question: What is a sample in statistics?
+  reason: Understanding sampling is essential for conducting surveys and experiments in internships and entry-level positions.
+  points: 1
+  right:
+  - answer: A subset of the population selected for study
+    explanation: A sample is drawn from the population to make inferences about the whole.
+    links:
+    - https://en.wikipedia.org/wiki/Sample_(statistics)
+  wrong:
+  - answer: The complete set of all observations
+    explanation: This describes a population, not a sample.
+  - answer: The first 10% of data collected
+    explanation: A sample should be representative, not just the first portion collected.
+  - answer: The most typical members of a population
+    explanation: A good sample should represent all variation, not just typical members.
+  - answer: The experimental group in a study
+    explanation: This describes one group in an experiment, not the general concept of a sample.
+  - answer: Data collected from volunteers only
+    explanation: This describes a specific sampling method (convenience) but not what a sample is.
+
+- question: What is sampling bias?
+  reason: Recognizing bias is crucial for data quality assessment in business and research settings.
+  points: 2
+  right:
+  - answer: Systematic error introduced when the sample is not representative of the population
+    explanation: Bias occurs when sampling methods favor certain outcomes or groups over others.
+    links:
+    - https://en.wikipedia.org/wiki/Sampling_bias
+  wrong:
+  - answer: Random variation in sample statistics
+    explanation: This describes sampling error or variability, not bias.
+  - answer: The difference between the sample mean and sample median
+    explanation: This is not the definition of sampling bias.
+  - answer: Errors in data entry or measurement
+    explanation: These are measurement errors, not sampling bias.
+  - answer: When the sample size is too small
+    explanation: Small samples increase uncertainty but don't necessarily cause bias.
+  - answer: The natural variability in data
+    explanation: Natural variability is expected; bias is systematic, not random.
+
+- question: What is random sampling?
+  reason: Random sampling is the foundation of valid statistical inference used in quality control and market research.
+  points: 2
+  right:
+  - answer: A sampling method where every member of the population has an equal chance of being selected
+    explanation: Random sampling minimizes bias and allows for valid statistical inference.
+    links:
+    - https://en.wikipedia.org/wiki/Simple_random_sample
+  wrong:
+  - answer: Selecting subjects haphazardly or without a plan
+    explanation: Random sampling is systematic and planned, ensuring equal probability for all members.
+  - answer: Choosing the most convenient subjects available
+    explanation: This describes convenience sampling, not random sampling.
+  - answer: Selecting every tenth person from a list
+    explanation: This describes systematic sampling, which is not purely random.
+  - answer: Asking for volunteers from the population
+    explanation: This describes voluntary response sampling, which introduces bias.
+  - answer: Selecting subjects who match predetermined criteria
+    explanation: This describes purposive sampling, not random sampling.
+
+- question: What is a histogram?
+  reason: Histograms are essential visualization tools used in data analysis across all industries.
+  points: 1
+  right:
+  - answer: A graph showing the frequency distribution of continuous data using bars
+    explanation: Histograms display how data is distributed across intervals or bins.
+    links:
+    - https://en.wikipedia.org/wiki/Histogram
+  wrong:
+  - answer: A graph showing the relationship between two variables
+    explanation: This describes a scatter plot, not a histogram.
+  - answer: A graph showing data over time
+    explanation: This describes a time series plot or line graph, not a histogram.
+  - answer: A chart comparing categories with separate bars
+    explanation: This describes a bar chart for categorical data, though similar in appearance to histograms.
+  - answer: A circular graph showing proportions of a whole
+    explanation: This describes a pie chart, not a histogram.
+  - answer: A graph with a line connecting data points
+    explanation: This describes a line graph, not a histogram.
+
+- question: What is the difference between a bar chart and a histogram?
+  reason: Understanding when to use each chart type is important for proper data visualization in reports.
+  points: 2
+  right:
+  - answer: Bar charts display categorical data; histograms display continuous numerical data
+    explanation: Bar charts have gaps between bars (categories are separate); histograms have no gaps (continuous data).
+    links:
+    - https://en.wikipedia.org/wiki/Bar_chart
+    - https://en.wikipedia.org/wiki/Histogram
+  wrong:
+  - answer: Histograms can only have vertical bars; bar charts can be horizontal
+    explanation: Both can be oriented vertically or horizontally.
+  - answer: Bar charts show frequencies; histograms show percentages
+    explanation: Both can show frequencies or percentages.
+  - answer: Histograms always have equal-width bars; bar charts have variable widths
+    explanation: Bar charts typically have equal widths too; the key difference is categorical vs. continuous data.
+  - answer: Bar charts are for small datasets; histograms are for large datasets
+    explanation: Dataset size doesn't determine which to use; the data type does.
+  - answer: There is no real difference; the terms are interchangeable
+    explanation: They are distinct types of charts for different data types.
+
+- question: What is a box plot (box-and-whisker plot)?
+  reason: Box plots efficiently summarize distributions and are commonly used in quality control and comparative analysis.
+  points: 2
+  right:
+  - answer: A graph displaying the five-number summary and outliers of a dataset
+    explanation: Box plots show minimum, Q1, median, Q3, and maximum, making it easy to see distribution and outliers.
+    links:
+    - https://en.wikipedia.org/wiki/Box_plot
+  wrong:
+  - answer: A graph showing the frequency of each value in a dataset
+    explanation: This better describes a histogram or frequency plot.
+  - answer: A plot showing the relationship between two continuous variables
+    explanation: This describes a scatter plot, not a box plot.
+  - answer: A chart displaying only the mean and standard deviation
+    explanation: Box plots show quartiles and median, not mean and standard deviation.
+  - answer: A graph of data over time
+    explanation: This describes a time series plot, not a box plot.
+  - answer: A circular diagram divided into sectors
+    explanation: This describes a pie chart, not a box plot.
+
+- question: What does a scatter plot show?
+  reason: Scatter plots are fundamental for exploring relationships between variables in data analysis work.
+  points: 1
+  right:
+  - answer: The relationship between two quantitative variables
+    explanation: Each point represents a pair of values, helping visualize correlation and patterns.
+    links:
+    - https://en.wikipedia.org/wiki/Scatter_plot
+  wrong:
+  - answer: The frequency distribution of a single variable
+    explanation: This describes a histogram, not a scatter plot.
+  - answer: The change in a variable over time only
+    explanation: While scatter plots can show time relationships, they're not limited to time-based data.
+  - answer: Categories and their frequencies
+    explanation: This describes a bar chart, not a scatter plot.
+  - answer: The five-number summary of a dataset
+    explanation: This describes a box plot, not a scatter plot.
+  - answer: The proportion of each category in a whole
+    explanation: This describes a pie chart, not a scatter plot.
+
+- question: What is correlation?
+  reason: Understanding correlation is essential for identifying relationships in business data and research findings.
+  points: 2
+  right:
+  - answer: A measure of the strength and direction of the linear relationship between two variables
+    explanation: Correlation ranges from -1 to +1, indicating how closely two variables move together.
+    links:
+    - https://en.wikipedia.org/wiki/Correlation
+  wrong:
+  - answer: A measure of cause and effect between variables
+    explanation: Correlation does not imply causation; it only measures association.
+  - answer: The average difference between two variables
+    explanation: This is not how correlation is defined or measured.
+  - answer: The probability that two variables are related
+    explanation: Correlation measures strength of relationship, not probability.
+  - answer: The ratio of one variable to another
+    explanation: This describes a ratio or proportion, not correlation.
+  - answer: The degree to which one variable causes changes in another
+    explanation: Correlation shows association but not causation.
+
+- question: What does a correlation coefficient of +1 indicate?
+  reason: Interpreting correlation coefficients is necessary for understanding relationships in datasets.
+  points: 2
+  right:
+  - answer: A perfect positive linear relationship between two variables
+    explanation: When one variable increases, the other increases proportionally; all points lie exactly on a line with positive slope.
+    links:
+    - https://en.wikipedia.org/wiki/Pearson_correlation_coefficient
+  wrong:
+  - answer: No relationship between the variables
+    explanation: Zero correlation indicates no linear relationship, not +1.
+  - answer: A perfect negative linear relationship
+    explanation: This would be indicated by -1, not +1.
+  - answer: That one variable causes the other to increase
+    explanation: Correlation doesn't establish causation, only association.
+  - answer: That the variables have the same mean
+    explanation: Correlation measures relationship, not equality of means.
+  - answer: A weak positive relationship
+    explanation: +1 indicates a perfect, not weak, relationship.
+
+- question: What does a correlation coefficient of -1 indicate?
+  reason: Understanding negative correlation is important for analyzing inverse relationships in data.
+  points: 2
+  right:
+  - answer: A perfect negative linear relationship between two variables
+    explanation: When one variable increases, the other decreases proportionally; all points lie exactly on a line with negative slope.
+    links:
+    - https://en.wikipedia.org/wiki/Pearson_correlation_coefficient
+  wrong:
+  - answer: No relationship between the variables
+    explanation: Zero correlation indicates no linear relationship, not -1.
+  - answer: A perfect positive linear relationship
+    explanation: This would be indicated by +1, not -1.
+  - answer: That one variable causes the other to decrease
+    explanation: Correlation doesn't establish causation, only association.
+  - answer: That both variables always have negative values
+    explanation: The sign of correlation refers to the direction of relationship, not the sign of values.
+  - answer: A strong but imperfect negative relationship
+    explanation: -1 indicates a perfect, not just strong, negative relationship.
+
+- question: What does a correlation coefficient of 0 indicate?
+  reason: Recognizing when variables are independent is crucial for variable selection in analysis.
+  points: 2
+  right:
+  - answer: No linear relationship between the variables
+    explanation: The variables do not have a linear association, though they might have a non-linear relationship.
+    links:
+    - https://en.wikipedia.org/wiki/Pearson_correlation_coefficient
+  wrong:
+  - answer: A perfect positive relationship
+    explanation: This would be indicated by +1, not 0.
+  - answer: A perfect negative relationship
+    explanation: This would be indicated by -1, not 0.
+  - answer: That both variables equal zero
+    explanation: Zero correlation refers to lack of relationship, not the values of the variables.
+  - answer: That the variables must be completely unrelated in every way
+    explanation: Zero linear correlation doesn't rule out non-linear relationships.
+  - answer: That one variable causes no change in the other
+    explanation: While there's no linear association, correlation doesn't address causation.
+
+- question: Does correlation imply causation?
+  reason: This critical concept prevents misinterpretation of data relationships in reports and decision-making.
+  points: 2
+  right:
+  - answer: No, correlation does not imply causation
+    explanation: Two variables can be correlated due to coincidence, confounding variables, or reverse causation without one causing the other.
+    links:
+    - https://en.wikipedia.org/wiki/Correlation_does_not_imply_causation
+  wrong:
+  - answer: Yes, if the correlation is strong enough
+    explanation: Even perfect correlation doesn't establish causation.
+  - answer: Yes, if the correlation is positive
+    explanation: The direction of correlation has no bearing on whether causation exists.
+  - answer: Yes, in most practical cases
+    explanation: Correlation never implies causation without additional evidence from controlled experiments.
+  - answer: Yes, but only for correlations above 0.7
+    explanation: No threshold of correlation establishes causation.
+  - answer: Yes, when the sample size is large
+    explanation: Sample size affects precision but doesn't establish causation.
+
+- question: What is probability?
+  reason: Basic probability understanding is essential for risk assessment and decision-making in business contexts.
+  points: 1
+  right:
+  - answer: A number between 0 and 1 representing the likelihood of an event occurring
+    explanation: Probability of 0 means impossible, 1 means certain, and values in between indicate the degree of likelihood.
+    links:
+    - https://en.wikipedia.org/wiki/Probability
+  wrong:
+  - answer: The number of times an event has occurred in the past
+    explanation: This is frequency, not probability.
+  - answer: A percentage greater than 100%
+    explanation: Probability cannot exceed 1 (or 100%).
+  - answer: The ratio of favorable outcomes to unfavorable outcomes
+    explanation: This describes odds, not probability.
+  - answer: Always a whole number
+    explanation: Probability can be any value between 0 and 1, including fractions and decimals.
+  - answer: The expected value of an event
+    explanation: Expected value and probability are related but different concepts.
+
+- question: If you flip a fair coin, what is the probability of getting heads?
+  reason: Simple probability calculations are foundational for understanding more complex statistical concepts.
+  points: 1
+  right:
+  - answer: 0.5 or 1/2 or 50%
+    explanation: A fair coin has two equally likely outcomes, so P(heads) = 1/2.
+    links:
+    - https://en.wikipedia.org/wiki/Coin_flipping
+  wrong:
+  - answer: 0.25 or 1/4
+    explanation: This would be the probability if there were four equally likely outcomes.
+  - answer: 1 or 100%
+    explanation: This would mean heads is certain, which it isn't.
+  - answer: 0.75 or 3/4
+    explanation: This probability doesn't match the two equally likely outcomes.
+  - answer: It depends on the previous flip
+    explanation: Coin flips are independent; past flips don't affect future probabilities.
+  - answer: 1/3
+    explanation: There are only two outcomes for a coin flip, not three.
+
+- question: What does it mean for events to be independent?
+  reason: Independence is crucial for correctly calculating probabilities in quality control and risk analysis.
+  points: 2
+  right:
+  - answer: The occurrence of one event does not affect the probability of the other event
+    explanation: Independent events have no influence on each other; P(A and B) = P(A) × P(B).
+    links:
+    - https://en.wikipedia.org/wiki/Independence_(probability_theory)
+  wrong:
+  - answer: The events cannot occur at the same time
+    explanation: This describes mutually exclusive events, not independent events.
+  - answer: The events have equal probabilities
+    explanation: Independence is about influence, not about having equal probabilities.
+  - answer: The events must occur together
+    explanation: This would indicate dependence, not independence.
+  - answer: One event causes the other
+    explanation: Causation indicates dependence, not independence.
+  - answer: The events are unrelated to the experiment
+    explanation: Independent events are part of the experiment but don't influence each other.
+
+- question: What does it mean for events to be mutually exclusive?
+  reason: Understanding mutually exclusive events is important for properly structuring probability problems in analysis.
+  points: 2
+  right:
+  - answer: The events cannot occur at the same time
+    explanation: If one event occurs, the other cannot; P(A and B) = 0 for mutually exclusive events.
+    links:
+    - https://en.wikipedia.org/wiki/Mutual_exclusivity
+  wrong:
+  - answer: The events do not influence each other's probability
+    explanation: This describes independent events, not mutually exclusive events.
+  - answer: The events must both occur or both not occur
+    explanation: Mutually exclusive events cannot both occur.
+  - answer: The events have equal probability
+    explanation: Mutually exclusive events can have any probabilities.
+  - answer: One event causes the other not to occur
+    explanation: Mutual exclusivity is about logical impossibility of co-occurrence, not causation.
+  - answer: The events are independent
+    explanation: Mutually exclusive events are actually dependent (if one occurs, the other definitely doesn't).
+
+- question: What is the sum of all probabilities in a probability distribution?
+  reason: This fundamental rule is used to verify probability calculations and distributions in practical applications.
+  points: 1
+  right:
+  - answer: 1 (or 100%)
+    explanation: All possible outcomes together cover the entire sample space, so their probabilities must sum to 1.
+    links:
+    - https://en.wikipedia.org/wiki/Probability_distribution
+  wrong:
+  - answer: 0
+    explanation: If probabilities summed to 0, nothing could occur.
+  - answer: The number of possible outcomes
+    explanation: Individual probabilities sum to 1, regardless of the number of outcomes.
+  - answer: It varies depending on the situation
+    explanation: The sum always equals 1 for any valid probability distribution.
+  - answer: The mean of the distribution
+    explanation: The sum equals 1, which is usually not the mean of the distribution.
+  - answer: Infinity
+    explanation: Probabilities are bounded between 0 and 1, and their sum is always 1.
+
+- question: What is a normal distribution?
+  reason: The normal distribution is foundational for many statistical methods used in business and science.
+  points: 2
+  right:
+  - answer: A symmetric, bell-shaped probability distribution
+    explanation: Also called Gaussian distribution, it's characterized by its mean and standard deviation, with most data near the mean.
+    links:
+    - https://en.wikipedia.org/wiki/Normal_distribution
+  wrong:
+  - answer: A distribution where all values have equal probability
+    explanation: This describes a uniform distribution, not a normal distribution.
+  - answer: A distribution with two peaks
+    explanation: This describes a bimodal distribution, not a normal distribution.
+  - answer: A distribution that only applies to large datasets
+    explanation: Normal distribution is a theoretical model that can describe data of any size.
+  - answer: A skewed distribution with a long tail on one side
+    explanation: Normal distributions are symmetric, not skewed.
+  - answer: A distribution where outliers are impossible
+    explanation: Normal distributions can have outliers, though they're less probable in the tails.
+
+- question: What percentage of data falls within one standard deviation of the mean in a normal distribution?
+  reason: The empirical rule is used extensively for quality control, process monitoring, and interpreting standardized tests.
+  points: 2
+  right:
+  - answer: Approximately 68%
+    explanation: In a normal distribution, about 68% of data falls within μ ± 1σ.
+    links:
+    - https://en.wikipedia.org/wiki/68%E2%80%9395%E2%80%9399.7_rule
+  wrong:
+  - answer: Approximately 95%
+    explanation: This is the percentage within two standard deviations, not one.
+  - answer: Approximately 99.7%
+    explanation: This is the percentage within three standard deviations, not one.
+  - answer: Exactly 50%
+    explanation: 50% falls below the mean, but about 68% falls within one standard deviation of the mean.
+  - answer: Approximately 34%
+    explanation: This is the percentage between the mean and one standard deviation above (or below), not both sides.
+  - answer: 100%
+    explanation: Some data falls beyond one standard deviation in normal distributions.
+
+- question: What percentage of data falls within two standard deviations of the mean in a normal distribution?
+  reason: Understanding this helps in identifying unusual values and setting control limits in processes.
+  points: 2
+  right:
+  - answer: Approximately 95%
+    explanation: In a normal distribution, about 95% of data falls within μ ± 2σ.
+    links:
+    - https://en.wikipedia.org/wiki/68%E2%80%9395%E2%80%9399.7_rule
+  wrong:
+  - answer: Approximately 68%
+    explanation: This is the percentage within one standard deviation, not two.
+  - answer: Approximately 99.7%
+    explanation: This is the percentage within three standard deviations, not two.
+  - answer: Exactly 90%
+    explanation: The actual value is approximately 95%, not 90%.
+  - answer: Approximately 47.5%
+    explanation: This is the percentage between the mean and two standard deviations on one side only.
+  - answer: 100%
+    explanation: Some data falls beyond two standard deviations in normal distributions.
+
+- question: What is a z-score?
+  reason: Z-scores are used for standardizing data, comparing across different scales, and identifying outliers in analysis work.
+  points: 2
+  right:
+  - answer: The number of standard deviations a value is from the mean
+    explanation: Z-score = (value - mean) / standard deviation; it standardizes values for comparison.
+    links:
+    - https://en.wikipedia.org/wiki/Standard_score
+  wrong:
+  - answer: The probability of obtaining a particular value
+    explanation: This describes a probability or p-value, not a z-score.
+  - answer: The percentile rank of a value
+    explanation: While related, percentile and z-score are different measures.
+  - answer: The difference between a value and the median
+    explanation: Z-scores use the mean and standard deviation, not the median.
+  - answer: The squared difference from the mean
+    explanation: This is part of variance calculation, not a z-score.
+  - answer: The rank of a value in ordered data
+    explanation: This describes ordinal position, not a z-score.
+
+- question: What does a z-score of 0 indicate?
+  reason: Interpreting z-scores correctly is essential for standardized test interpretation and data comparison.
+  points: 1
+  right:
+  - answer: The value equals the mean
+    explanation: A z-score of 0 means the value is exactly at the mean, with zero standard deviations away.
+    links:
+    - https://en.wikipedia.org/wiki/Standard_score
+  wrong:
+  - answer: The value is impossible
+    explanation: Z-score of 0 is perfectly valid and indicates the value equals the mean.
+  - answer: The value is an outlier
+    explanation: Z-score of 0 indicates a central, typical value, not an outlier.
+  - answer: The value equals zero
+    explanation: Z-score of 0 means the value equals the mean, which may or may not be zero.
+  - answer: The standard deviation is zero
+    explanation: If standard deviation were zero, z-scores couldn't be calculated.
+  - answer: The value is at the minimum of the distribution
+    explanation: Z-score of 0 indicates the value is at the mean, not the minimum.
+
+- question: What is the Central Limit Theorem?
+  reason: This theorem justifies the use of normal distribution-based methods in practical applications with large samples.
+  points: 4
+  right:
+  - answer: The sampling distribution of the sample mean approaches a normal distribution as sample size increases, regardless of the population distribution
+    explanation: This fundamental theorem allows us to use normal distribution methods even when the population isn't normally distributed.
+    links:
+    - https://en.wikipedia.org/wiki/Central_limit_theorem
+  wrong:
+  - answer: All large datasets follow a normal distribution
+    explanation: The CLT is about sample means, not individual data points.
+  - answer: The mean of any sample equals the population mean
+    explanation: This describes unbiased estimation, not the Central Limit Theorem.
+  - answer: Larger samples always have smaller standard deviations
+    explanation: While sample size affects standard error, this isn't the Central Limit Theorem.
+  - answer: The population must be normally distributed for statistical inference
+    explanation: The CLT allows inference even when the population isn't normal.
+  - answer: Central values are more important than extreme values
+    explanation: This is not what the Central Limit Theorem states.
+
+- question: What is a confidence interval?
+  reason: Confidence intervals are reported in virtually all research and business analytics to quantify uncertainty.
+  points: 4
+  right:
+  - answer: A range of values that likely contains the true population parameter with a specified probability
+    explanation: For example, a 95% confidence interval means we're 95% confident the true parameter lies in that range.
+    links:
+    - https://en.wikipedia.org/wiki/Confidence_interval
+  wrong:
+  - answer: The range of all possible values in the dataset
+    explanation: This describes the data range, not a confidence interval.
+  - answer: The interval where exactly 95% of the data falls
+    explanation: Confidence intervals are about parameter estimates, not data distribution.
+  - answer: The margin of error in any measurement
+    explanation: While related to margin of error, this is incomplete and imprecise.
+  - answer: The range between Q1 and Q3
+    explanation: This describes the interquartile range, not a confidence interval.
+  - answer: The difference between the sample mean and population mean
+    explanation: This difference is unknown; confidence intervals estimate where the population parameter likely is.
+
+- question: What does a 95% confidence level mean?
+  reason: Correctly interpreting confidence levels prevents common misunderstandings in research and reporting.
+  points: 4
+  right:
+  - answer: If we repeated the sampling process many times, approximately 95% of the confidence intervals would contain the true population parameter
+    explanation: It refers to the long-run success rate of the method, not the probability for a specific interval.
+    links:
+    - https://en.wikipedia.org/wiki/Confidence_interval
+  wrong:
+  - answer: There is a 95% probability that the true parameter is in this specific interval
+    explanation: The parameter is fixed; the interval is random. We can't assign probability to a fixed parameter being in a specific interval.
+  - answer: 95% of the data falls within the confidence interval
+    explanation: Confidence intervals are about parameters, not data distribution.
+  - answer: The estimate is 95% accurate
+    explanation: Accuracy and confidence level are different concepts.
+  - answer: There is a 5% chance the result is due to random error
+    explanation: This is closer to the interpretation of a p-value, not a confidence level.
+  - answer: The sample represents 95% of the population
+    explanation: Confidence level refers to the method's reliability, not sample representation.
+
+- question: What is a hypothesis test?
+  reason: Hypothesis testing is the foundation of scientific research and data-driven decision making in business.
+  points: 4
+  right:
+  - answer: A statistical procedure to determine whether there is enough evidence to reject a claim about a population parameter
+    explanation: It uses sample data to decide between a null hypothesis and an alternative hypothesis.
+    links:
+    - https://en.wikipedia.org/wiki/Statistical_hypothesis_testing
+  wrong:
+  - answer: A method to prove that a hypothesis is true
+    explanation: Hypothesis tests provide evidence against null hypotheses but don't prove hypotheses true.
+  - answer: A way to calculate the exact value of a population parameter
+    explanation: Hypothesis tests assess claims; point estimates and confidence intervals estimate parameters.
+  - answer: The process of forming a research question
+    explanation: This is part of study design but not what a hypothesis test is.
+  - answer: A comparison of two sample means only
+    explanation: Hypothesis tests can be used for many types of parameters, not just comparing means.
+  - answer: The probability that the null hypothesis is true
+    explanation: Hypothesis tests don't provide the probability that hypotheses are true.
+
+- question: What is the null hypothesis?
+  reason: Understanding the null hypothesis is essential for properly setting up and interpreting any statistical test.
+  points: 2
+  right:
+  - answer: A statement of no effect or no difference that we seek to find evidence against
+    explanation: The null hypothesis (H₀) typically represents the status quo or a claim of no change.
+    links:
+    - https://en.wikipedia.org/wiki/Null_hypothesis
+  wrong:
+  - answer: The hypothesis we want to prove true
+    explanation: We seek evidence for the alternative hypothesis by rejecting the null.
+  - answer: A hypothesis that has been proven false
+    explanation: Null hypothesis is the starting assumption, not necessarily false.
+  - answer: The hypothesis with the highest probability
+    explanation: Probability isn't assigned to hypotheses in classical hypothesis testing.
+  - answer: An hypothesis that contains no variables
+    explanation: '"Null" refers to no effect, not no variables.'
+  - answer: The average of all possible hypotheses
+    explanation: This is nonsensical; null hypothesis is a specific claim about a parameter.
+
+- question: What is the alternative hypothesis?
+  reason: The alternative hypothesis represents the research question or claim being investigated in any study.
+  points: 2
+  right:
+  - answer: A statement of an effect or difference that we seek to find evidence for
+    explanation: The alternative hypothesis (H₁ or Hₐ) represents what researchers suspect or want to detect.
+    links:
+    - https://en.wikipedia.org/wiki/Alternative_hypothesis
+  wrong:
+  - answer: The hypothesis that is assumed to be true unless proven otherwise
+    explanation: This describes the null hypothesis, not the alternative hypothesis.
+  - answer: A backup hypothesis if the first one fails
+    explanation: '"Alternative" means the competing claim, not a backup option.'
+  - answer: Any hypothesis that has been previously rejected
+    explanation: Alternative hypothesis is defined relative to the null, not by past rejection.
+  - answer: The hypothesis with the lower probability
+    explanation: Classical hypothesis testing doesn't assign probabilities to hypotheses.
+  - answer: A hypothesis that requires no statistical testing
+    explanation: The alternative hypothesis is what we seek evidence for through testing.
+
+- question: What is a p-value?
+  reason: P-values are ubiquitous in research reports and must be understood to evaluate statistical claims properly.
+  points: 4
+  right:
+  - answer: The probability of obtaining results as extreme or more extreme than observed, assuming the null hypothesis is true
+    explanation: A small p-value suggests the data is unlikely under the null hypothesis, providing evidence against it.
+    links:
+    - https://en.wikipedia.org/wiki/P-value
+  wrong:
+  - answer: The probability that the null hypothesis is true
+    explanation: P-values don't provide the probability that hypotheses are true or false.
+  - answer: The probability that the results are due to chance alone
+    explanation: This is imprecise; p-values are calculated assuming the null hypothesis is true.
+  - answer: The probability of making a Type I error
+    explanation: This describes the significance level (α), not the p-value.
+  - answer: The probability that the alternative hypothesis is correct
+    explanation: P-values don't provide probabilities for hypotheses being correct.
+  - answer: The percentage of data that supports the conclusion
+    explanation: P-values are about probability of data under null hypothesis, not percentage of supporting data.
+
+- question: What is the typical significance level (α) used in hypothesis testing?
+  reason: Understanding significance levels is necessary for interpreting test results and making decisions based on them.
+  points: 2
+  right:
+  - answer: 0.05 (or 5%)
+    explanation: While arbitrary, α = 0.05 is the conventional threshold for rejecting the null hypothesis in many fields.
+    links:
+    - https://en.wikipedia.org/wiki/Statistical_significance
+  wrong:
+  - answer: 0.50 (or 50%)
+    explanation: This would be far too lenient a standard for statistical significance.
+  - answer: 0.95 (or 95%)
+    explanation: This is a common confidence level, not a significance level.
+  - answer: 0.01 (or 1%) always
+    explanation: While 0.01 is sometimes used for stricter standards, 0.05 is more typical.
+  - answer: 1.0 (or 100%)
+    explanation: This would mean never rejecting the null hypothesis.
+  - answer: It varies randomly for each test
+    explanation: The significance level is chosen before testing, not randomly.
+
+- question: If the p-value is less than the significance level (α), what do we do?
+  reason: This decision rule is fundamental to reaching conclusions in any hypothesis test.
+  points: 2
+  right:
+  - answer: Reject the null hypothesis
+    explanation: A p-value less than α indicates sufficient evidence against the null hypothesis.
+    links:
+    - https://en.wikipedia.org/wiki/Statistical_hypothesis_testing
+  wrong:
+  - answer: Accept the null hypothesis
+    explanation: We reject the null when p &lt; α, not accept it.
+  - answer: Fail to reject the alternative hypothesis
+    explanation: We don't "fail to reject" the alternative; we reject the null.
+  - answer: Reject the alternative hypothesis
+    explanation: When p &lt; α, we reject the null, which supports the alternative.
+  - answer: Increase the sample size
+    explanation: The decision to reject or not is based on the current test results.
+  - answer: Recalculate the test statistic
+    explanation: The test statistic is calculated once; we make a decision based on the p-value.
+
+- question: What is a Type I error?
+  reason: Understanding error types is crucial for assessing risks in quality control and medical testing decisions.
+  points: 4
+  right:
+  - answer: Rejecting the null hypothesis when it is actually true (false positive)
+    explanation: Type I error means concluding there's an effect when there isn't one. The probability of Type I error is α.
+    links:
+    - https://en.wikipedia.org/wiki/Type_I_and_type_II_errors
+  wrong:
+  - answer: Failing to reject the null hypothesis when it is false (false negative)
+    explanation: This describes a Type II error, not Type I.
+  - answer: Accepting the null hypothesis when it is true
+    explanation: This is a correct decision, not an error.
+  - answer: Calculating the wrong test statistic
+    explanation: This is a calculation error, not a Type I error.
+  - answer: Using the wrong significance level
+    explanation: This is a methodological choice, not a Type I error.
+  - answer: Collecting insufficient data
+    explanation: This affects power but doesn't define Type I error.
+
+- question: What is a Type II error?
+  reason: Type II errors represent missed opportunities to detect real effects, important in drug trials and quality control.
+  points: 4
+  right:
+  - answer: Failing to reject the null hypothesis when it is actually false (false negative)
+    explanation: Type II error means missing a real effect. The probability of Type II error is β.
+    links:
+    - https://en.wikipedia.org/wiki/Type_I_and_type_II_errors
+  wrong:
+  - answer: Rejecting the null hypothesis when it is true (false positive)
+    explanation: This describes a Type I error, not Type II.
+  - answer: Rejecting the null hypothesis when it is false
+    explanation: This is a correct decision, not an error.
+  - answer: Using an incorrect formula
+    explanation: This is a calculation error, not a Type II error.
+  - answer: Choosing the wrong test
+    explanation: This is a methodological issue, not a Type II error.
+  - answer: Having too large a sample size
+    explanation: Large samples reduce Type II error; they don't cause it.
+
+- question: What is statistical power?
+  reason: Power analysis is essential for designing studies that can detect meaningful effects in research and business contexts.
+  points: 4
+  right:
+  - answer: The probability of correctly rejecting the null hypothesis when it is false
+    explanation: Power = 1 - β, where β is the probability of Type II error. Higher power means better ability to detect real effects.
+    links:
+    - https://en.wikipedia.org/wiki/Power_(statistics)
+  wrong:
+  - answer: The probability of making a Type I error
+    explanation: This describes α (significance level), not power.
+  - answer: The strength of the effect being tested
+    explanation: This describes effect size, not statistical power.
+  - answer: The size of the sample
+    explanation: Sample size affects power, but isn't what power is.
+  - answer: The confidence level of the test
+    explanation: Confidence level and power are related but different concepts.
+  - answer: The probability that the null hypothesis is true
+    explanation: Classical hypothesis testing doesn't assign probabilities to hypotheses.
+
+- question: What is a t-test?
+  reason: T-tests are among the most common statistical tests used in research, quality control, and A/B testing.
+  points: 4
+  right:
+  - answer: A hypothesis test used to compare means when the population standard deviation is unknown
+    explanation: T-tests use the t-distribution and are appropriate for small samples or unknown population variance.
+    links:
+    - https://en.wikipedia.org/wiki/Student%27s_t-test
+  wrong:
+  - answer: A test used only for large samples
+    explanation: T-tests are particularly useful for small samples; large samples can use z-tests.
+  - answer: A test that requires knowing the population standard deviation
+    explanation: When population standard deviation is known, we use z-tests, not t-tests.
+  - answer: A test for categorical variables only
+    explanation: T-tests are for continuous numerical variables, not categorical ones.
+  - answer: A test that compares proportions
+    explanation: Proportions are typically tested with z-tests, not t-tests.
+  - answer: A non-parametric test
+    explanation: T-tests are parametric tests that assume approximate normality.
+
+- question: What assumption must be satisfied for a t-test to be valid?
+  reason: Checking assumptions ensures valid conclusions and is a critical skill in applied statistics work.
+  points: 4
+  right:
+  - answer: The data should be approximately normally distributed, especially for small samples
+    explanation: T-tests are robust to moderate departures from normality, especially with larger samples (n ≥ 30).
+    links:
+    - https://en.wikipedia.org/wiki/Student%27s_t-test
+  wrong:
+  - answer: The data must be exactly normally distributed
+    explanation: Exact normality isn't required; approximate normality is sufficient, especially with larger samples.
+  - answer: The population standard deviation must be known
+    explanation: T-tests are used specifically when population standard deviation is unknown.
+  - answer: The sample size must be greater than 100
+    explanation: T-tests work with any sample size, though they're particularly useful for smaller samples.
+  - answer: All data values must be positive
+    explanation: T-tests don't require positive values; normality is the key distributional assumption.
+  - answer: The data must be categorical
+    explanation: T-tests require continuous numerical data, not categorical data.
+
+- question: What is ANOVA?
+  reason: ANOVA is widely used in experiments and quality control to compare multiple groups simultaneously.
+  points: 7
+  right:
+  - answer: Analysis of Variance, a test used to compare means across three or more groups
+    explanation: ANOVA tests whether at least one group mean differs from the others by analyzing variance.
+    links:
+    - https://en.wikipedia.org/wiki/Analysis_of_variance
+  wrong:
+  - answer: A test to compare exactly two groups
+    explanation: For two groups, we use t-tests; ANOVA is for three or more groups.
+  - answer: A test for the relationship between two continuous variables
+    explanation: This describes correlation or regression, not ANOVA.
+  - answer: A non-parametric alternative to the t-test
+    explanation: ANOVA is parametric; non-parametric alternatives include Kruskal-Wallis test.
+  - answer: A method for calculating variance only
+    explanation: ANOVA uses variance to test differences in means, not just calculate variance.
+  - answer: A test that requires all groups to have equal sample sizes
+    explanation: While equal sizes are ideal, ANOVA can handle unequal group sizes.
+
+- question: What is a chi-square test used for?
+  reason: Chi-square tests are essential for analyzing categorical data in surveys, market research, and quality control.
+  points: 4
+  right:
+  - answer: Testing relationships or associations between categorical variables
+    explanation: Chi-square tests determine if observed frequencies differ significantly from expected frequencies.
+    links:
+    - https://en.wikipedia.org/wiki/Chi-squared_test
+  wrong:
+  - answer: Comparing means of continuous variables
+    explanation: T-tests or ANOVA are used for comparing means, not chi-square tests.
+  - answer: Testing correlation between continuous variables
+    explanation: Correlation tests or regression are used for continuous variables.
+  - answer: Calculating the standard deviation
+    explanation: Chi-square tests assess categorical relationships, not calculate standard deviation.
+  - answer: Determining if data is normally distributed only when n &lt; 30
+    explanation: While chi-square can test goodness of fit, sample size limitation isn't accurate.
+  - answer: Comparing a single mean to a known value
+    explanation: This requires a t-test or z-test, not a chi-square test.
+
+- question: What is linear regression?
+  reason: Linear regression is fundamental for prediction, forecasting, and understanding relationships in business analytics.
+  points: 4
+  right:
+  - answer: A method for modeling the linear relationship between a dependent variable and one or more independent variables
+    explanation: Regression finds the best-fitting line (or plane) to predict the dependent variable from independent variable(s).
+    links:
+    - https://en.wikipedia.org/wiki/Linear_regression
+  wrong:
+  - answer: A method only for testing hypotheses
+    explanation: Regression is primarily for prediction and modeling relationships, not just hypothesis testing.
+  - answer: A test for comparing group means
+    explanation: This describes ANOVA or t-tests, not regression.
+  - answer: A non-parametric method
+    explanation: Linear regression is a parametric method with assumptions about the error distribution.
+  - answer: A method that only works with categorical variables
+    explanation: Linear regression requires a continuous dependent variable and typically continuous predictors.
+  - answer: A way to prove causation between variables
+    explanation: Regression shows association; causation requires experimental design or additional evidence.
+
+- question: In simple linear regression, what does the slope represent?
+  reason: Interpreting regression coefficients is essential for making predictions and understanding relationships.
+  points: 4
+  right:
+  - answer: The change in the dependent variable for each unit increase in the independent variable
+    explanation: The slope (b₁) indicates how much Y changes when X increases by 1 unit.
+    links:
+    - https://en.wikipedia.org/wiki/Simple_linear_regression
+  wrong:
+  - answer: The value of the dependent variable when the independent variable is zero
+    explanation: This describes the intercept, not the slope.
+  - answer: The correlation between the variables
+    explanation: Slope and correlation are related but different; correlation is standardized.
+  - answer: The average value of the independent variable
+    explanation: The slope describes the relationship between variables, not the average of one.
+  - answer: The amount of error in the prediction
+    explanation: Prediction error is measured by residuals or standard error, not the slope.
+  - answer: The probability that the relationship is significant
+    explanation: This would be indicated by a p-value, not the slope itself.
+
+- question: In simple linear regression, what does the y-intercept represent?
+  reason: Understanding the intercept is necessary for making predictions and properly interpreting regression models.
+  points: 2
+  right:
+  - answer: The predicted value of the dependent variable when the independent variable equals zero
+    explanation: The intercept (b₀) is where the regression line crosses the y-axis at X = 0.
+    links:
+    - https://en.wikipedia.org/wiki/Simple_linear_regression
+  wrong:
+  - answer: The change in Y for each unit increase in X
+    explanation: This describes the slope, not the intercept.
+  - answer: The correlation between X and Y
+    explanation: Correlation is a separate measure, not the intercept.
+  - answer: The average value of Y
+    explanation: The intercept is the predicted Y when X = 0, which may differ from the average Y.
+  - answer: The standard error of the regression
+    explanation: Standard error measures variability around the line, not the intercept.
+  - answer: The minimum value of the dependent variable
+    explanation: The intercept is the predicted Y at X = 0, not the minimum Y value.
+
+- question: What is R-squared (R²) in regression?
+  reason: R-squared is reported in virtually all regression analyses to indicate how well the model explains the data.
+  points: 4
+  right:
+  - answer: The proportion of variance in the dependent variable explained by the independent variable(s)
+    explanation: R² ranges from 0 to 1; higher values indicate the model explains more of the variation in Y.
+    links:
+    - https://en.wikipedia.org/wiki/Coefficient_of_determination
+  wrong:
+  - answer: The correlation coefficient
+    explanation: R is correlation; R² is the squared correlation, representing explained variance.
+  - answer: The slope of the regression line
+    explanation: The slope is a separate parameter; R² measures goodness of fit.
+  - answer: The p-value of the regression
+    explanation: P-values test significance; R² measures explanatory power.
+  - answer: The standard error of the estimate
+    explanation: Standard error measures prediction accuracy; R² measures explained variance.
+  - answer: The probability that the model is correct
+    explanation: R² doesn't provide probability of correctness; it measures variance explained.
+
+- question: What does it mean if R² = 0.75 in a regression analysis?
+  reason: Interpreting R-squared helps assess whether a model is useful for prediction and decision-making.
+  points: 4
+  right:
+  - answer: 75% of the variance in the dependent variable is explained by the independent variable(s)
+    explanation: The model accounts for 75% of the variation in Y; 25% remains unexplained.
+    links:
+    - https://en.wikipedia.org/wiki/Coefficient_of_determination
+  wrong:
+  - answer: The model is 75% accurate
+    explanation: R² measures explained variance, not accuracy percentage.
+  - answer: 75% of predictions will be correct
+    explanation: R² doesn't indicate percentage of correct predictions.
+  - answer: The correlation is 0.75
+    explanation: The correlation is √0.75 ≈ 0.87, not 0.75.
+  - answer: There is a 75% chance the relationship is real
+    explanation: R² doesn't provide probability that the relationship is real; p-values do that.
+  - answer: The slope is 0.75
+    explanation: R² and slope are different parameters in regression.
+
+- question: What is a residual in regression analysis?
+  reason: Analyzing residuals is essential for checking model assumptions and identifying problems with the model.
+  points: 4
+  right:
+  - answer: The difference between an observed value and the predicted value
+    explanation: Residual = Observed Y - Predicted Y; residuals represent prediction errors.
+    links:
+    - https://en.wikipedia.org/wiki/Errors_and_residuals
+  wrong:
+  - answer: The slope of the regression line
+    explanation: The slope is a parameter of the model, not a residual.
+  - answer: The correlation between X and Y
+    explanation: Correlation is a separate measure of linear association.
+  - answer: The average value of the dependent variable
+    explanation: This is the mean of Y, not a residual.
+  - answer: The amount of variance explained
+    explanation: This is described by R², not residuals.
+  - answer: The intercept of the regression line
+    explanation: The intercept is a parameter, not a residual.
+
+- question: What is the purpose of a residual plot?
+  reason: Residual plots are diagnostic tools used to verify that regression assumptions are met before trusting results.
+  points: 7
+  right:
+  - answer: To check if the regression model assumptions are satisfied, particularly linearity and constant variance
+    explanation: Residual plots help identify patterns that indicate violations of regression assumptions.
+    links:
+    - https://en.wikipedia.org/wiki/Errors_and_residuals
+  wrong:
+  - answer: To calculate the correlation coefficient
+    explanation: Correlation is calculated from the data, not from residual plots.
+  - answer: To display the original data points
+    explanation: Scatter plots show original data; residual plots show prediction errors.
+  - answer: To determine the sample size needed
+    explanation: Sample size determination uses power analysis, not residual plots.
+  - answer: To prove causation
+    explanation: Residual plots help with model diagnostics, not establishing causation.
+  - answer: To calculate R-squared
+    explanation: R² is calculated from the model, not determined from residual plots.
+
+- question: What pattern in a residual plot indicates a good regression model?
+  reason: Recognizing good vs. problematic residual patterns is crucial for model validation in analytics work.
+  points: 7
+  right:
+  - answer: Random scatter with no apparent pattern around the horizontal line at zero
+    explanation: Random residuals indicate the model has captured the systematic relationship and assumptions are met.
+    links:
+    - https://en.wikipedia.org/wiki/Errors_and_residuals
+  wrong:
+  - answer: A clear upward or downward trend
+    explanation: Trends in residuals indicate the model hasn't captured the relationship properly.
+  - answer: A funnel or cone shape
+    explanation: This indicates non-constant variance (heteroscedasticity), violating assumptions.
+  - answer: A curved or U-shaped pattern
+    explanation: This indicates non-linearity that the linear model hasn't captured.
+  - answer: Several distinct groups or clusters
+    explanation: Clustering suggests missing categorical variables or other model issues.
+  - answer: Most residuals far from zero
+    explanation: Large residuals indicate poor predictions and a weak model.
+
+- question: What is multicollinearity in multiple regression?
+  reason: Detecting multicollinearity is important because it affects coefficient interpretation and model stability.
+  points: 7
+  right:
+  - answer: High correlation among independent variables, making it difficult to determine individual variable effects
+    explanation: Multicollinearity inflates standard errors and makes regression coefficients unstable and difficult to interpret.
+    links:
+    - https://en.wikipedia.org/wiki/Multicollinearity
+  wrong:
+  - answer: High correlation between the dependent and independent variables
+    explanation: This is desirable; multicollinearity refers to correlation among independent variables.
+  - answer: When the residuals are correlated with each other
+    explanation: This describes autocorrelation, not multicollinearity.
+  - answer: When the variance is not constant
+    explanation: This describes heteroscedasticity, not multicollinearity.
+  - answer: When outliers influence the regression line
+    explanation: This is about influential points, not multicollinearity.
+  - answer: When the relationship is non-linear
+    explanation: Non-linearity is a different issue from multicollinearity.
+
+- question: What is an outlier?
+  reason: Identifying outliers is crucial for data quality, fraud detection, and ensuring valid statistical analyses.
+  points: 2
+  right:
+  - answer: A data point that is significantly different from other observations
+    explanation: Outliers may be due to measurement error, data entry error, or genuine extreme values.
+    links:
+    - https://en.wikipedia.org/wiki/Outlier
+  wrong:
+  - answer: The median of the dataset
+    explanation: The median is a measure of central tendency, not an outlier.
+  - answer: Any value above the mean
+    explanation: Half the data is typically above the mean; these aren't necessarily outliers.
+  - answer: The most frequently occurring value
+    explanation: This describes the mode, not an outlier.
+  - answer: A value that proves the hypothesis false
+    explanation: Outliers are identified by their extreme position, not by hypothesis confirmation.
+  - answer: The difference between the maximum and minimum
+    explanation: This describes the range, not an outlier.
+
+- question: Which of the following methods can be used to detect outliers?
+  reason: Multiple methods for outlier detection are used in data cleaning and quality control processes.
+  points: 4
+  right:
+  - answer: Box plots showing points beyond the whiskers
+    explanation: Points beyond 1.5×IQR from the quartiles are typically considered outliers in box plots.
+    links:
+    - https://en.wikipedia.org/wiki/Box_plot
+  - answer: Z-scores with absolute values greater than 3
+    explanation: Values more than 3 standard deviations from the mean are often considered outliers.
+    links:
+    - https://en.wikipedia.org/wiki/Standard_score
+  - answer: Values below Q1 - 1.5×IQR or above Q3 + 1.5×IQR
+    explanation: This is the standard IQR method for identifying outliers.
+    links:
+    - https://en.wikipedia.org/wiki/Outlier
+  wrong:
+  - answer: Any value above the median
+    explanation: Half the data is above the median; these aren't outliers.
+  - answer: The five smallest and five largest values
+    explanation: Extreme values aren't automatically outliers without context.
+  - answer: All values outside the mean ± 1 standard deviation
+    explanation: This would include about 32% of the data in a normal distribution, too many to be outliers.
+
+- question: What is the difference between descriptive and inferential statistics?
+  reason: Understanding this distinction is fundamental to knowing which methods to apply in different situations.
+  points: 2
+  right:
+  - answer: Descriptive statistics summarize data; inferential statistics use samples to make conclusions about populations
+    explanation: Descriptive methods describe what is; inferential methods generalize from samples to populations.
+    links:
+    - https://en.wikipedia.org/wiki/Descriptive_statistics
+    - https://en.wikipedia.org/wiki/Statistical_inference
+  wrong:
+  - answer: Descriptive statistics are more advanced than inferential statistics
+    explanation: They serve different purposes; neither is more advanced than the other.
+  - answer: Inferential statistics don't require samples
+    explanation: Inferential statistics specifically use samples to make inferences about populations.
+  - answer: Descriptive statistics can only be used with large datasets
+    explanation: Descriptive statistics can be used with datasets of any size.
+  - answer: Inferential statistics provide exact population values
+    explanation: Inferential statistics provide estimates with uncertainty, not exact values.
+  - answer: There is no real difference; the terms are interchangeable
+    explanation: These are distinct branches of statistics with different purposes.
+
+- question: What is a contingency table?
+  reason: Contingency tables are widely used to summarize and analyze categorical data in market research and surveys.
+  points: 2
+  right:
+  - answer: A table showing the frequency distribution of two or more categorical variables
+    explanation: Also called a cross-tabulation, it displays how often combinations of categories occur together.
+    links:
+    - https://en.wikipedia.org/wiki/Contingency_table
+  wrong:
+  - answer: A table showing only continuous numerical data
+    explanation: Contingency tables are specifically for categorical data.
+  - answer: A table that must have exactly two rows and two columns
+    explanation: Contingency tables can have any number of rows and columns.
+  - answer: A table showing the mean and standard deviation
+    explanation: These summary statistics are for numerical data, not typically in contingency tables.
+  - answer: A table used only in regression analysis
+    explanation: Contingency tables are used with categorical data, often analyzed with chi-square tests.
+  - answer: A backup table in case the primary analysis fails
+    explanation: '"Contingency" refers to cross-classification of variables, not backup plans.'
+
+- question: What does it mean if two variables are independent?
+  reason: Independence is a key concept for proper probability calculations and understanding variable relationships.
+  points: 2
+  right:
+  - answer: Knowing the value of one variable provides no information about the other variable
+    explanation: For independent variables, P(A and B) = P(A) × P(B).
+    links:
+    - https://en.wikipedia.org/wiki/Independence_(probability_theory)
+  wrong:
+  - answer: The variables are not related to the research question
+    explanation: Independence refers to statistical relationship, not relevance to research.
+  - answer: One variable causes changes in the other
+    explanation: Causation indicates dependence, not independence.
+  - answer: The variables have the same mean
+    explanation: Independence is about relationship, not equality of means.
+  - answer: The variables must both be continuous
+    explanation: Independence applies to any type of variables, not just continuous ones.
+  - answer: The correlation between them is positive
+    explanation: Any non-zero correlation indicates dependence, not independence.
+
+- question: What is the law of large numbers?
+  reason: This law justifies using sample means to estimate population means and underlies much of statistical practice.
+  points: 4
+  right:
+  - answer: As sample size increases, the sample mean converges to the population mean
+    explanation: Larger samples provide more stable and accurate estimates of population parameters.
+    links:
+    - https://en.wikipedia.org/wiki/Law_of_large_numbers
+  wrong:
+  - answer: Large numbers are more important than small numbers in statistics
+    explanation: This is not what the law of large numbers means.
+  - answer: You always need at least 1000 observations
+    explanation: The law describes a trend with increasing n, not a specific threshold.
+  - answer: Larger populations require larger samples
+    explanation: While related to sampling, this doesn't define the law of large numbers.
+  - answer: The range increases with sample size
+    explanation: Actually, the sampling distribution's standard error decreases with larger samples.
+  - answer: Large datasets are always normally distributed
+    explanation: The law of large numbers is about sample means, not the distribution of data.
+
+- question: What is standard error?
+  reason: Standard error quantifies uncertainty in estimates and is essential for confidence intervals and hypothesis tests.
+  points: 4
+  right:
+  - answer: The standard deviation of the sampling distribution of a statistic
+    explanation: Standard error measures how much a sample statistic varies from sample to sample. SE = σ/√n for means.
+    links:
+    - https://en.wikipedia.org/wiki/Standard_error
+  wrong:
+  - answer: The probability of making an error
+    explanation: This relates to Type I and Type II error rates, not standard error.
+  - answer: The same as standard deviation
+    explanation: Standard error is the standard deviation of a sampling distribution, not of the data itself.
+  - answer: The difference between the sample mean and population mean
+    explanation: This is sampling error for a specific sample, not standard error.
+  - answer: The margin of error in any measurement
+    explanation: Margin of error is related to but not the same as standard error.
+  - answer: The range of the sample
+    explanation: Range is the spread of data; standard error is about variability of statistics.
+
+- question: How does sample size affect standard error?
+  reason: Understanding this relationship is crucial for study design and determining needed sample sizes.
+  points: 4
+  right:
+  - answer: Standard error decreases as sample size increases
+    explanation: Specifically, SE is inversely proportional to the square root of sample size (SE ∝ 1/√n).
+    links:
+    - https://en.wikipedia.org/wiki/Standard_error
+  wrong:
+  - answer: Standard error increases as sample size increases
+    explanation: Larger samples provide more precise estimates, so standard error decreases.
+  - answer: Standard error is unaffected by sample size
+    explanation: Sample size directly affects standard error through the formula SE = σ/√n.
+  - answer: Standard error equals sample size divided by 2
+    explanation: This is not how standard error is calculated.
+  - answer: Standard error only matters for small samples
+    explanation: Standard error is relevant for all sample sizes.
+  - answer: Sample size must equal standard error
+    explanation: These are different quantities measured in different units.
+
+- question: What is a frequency distribution?
+  reason: Frequency distributions are fundamental for organizing and understanding data in any analytical context.
+  points: 1
+  right:
+  - answer: A table or graph showing how often each value or range of values occurs in a dataset
+    explanation: Frequency distributions organize data to show patterns and the shape of the distribution.
+    links:
+    - https://en.wikipedia.org/wiki/Frequency_distribution
+  wrong:
+  - answer: A measure of how dispersed the data is
+    explanation: This describes measures of spread like variance or standard deviation.
+  - answer: The probability of each outcome
+    explanation: Frequency is count or proportion of occurrences, though related to probability.
+  - answer: The mean of the dataset
+    explanation: The mean is a single summary value, not a distribution.
+  - answer: Only applicable to continuous data
+    explanation: Frequency distributions work for both categorical and continuous data.
+  - answer: The relationship between two variables
+    explanation: This describes correlation or association, not frequency distribution of one variable.
+
+- question: What is a cumulative frequency?
+  reason: Cumulative frequencies are used to find percentiles and understand data distribution in quality control and grading.
+  points: 2
+  right:
+  - answer: The sum of frequencies up to and including a particular value or class
+    explanation: Cumulative frequency shows how many observations are at or below each value.
+    links:
+    - https://en.wikipedia.org/wiki/Frequency_distribution
+  wrong:
+  - answer: The total number of observations in the dataset
+    explanation: While the final cumulative frequency equals the total, cumulative frequency varies across values.
+  - answer: The frequency of the most common value
+    explanation: This describes the mode's frequency, not cumulative frequency.
+  - answer: The product of all frequencies
+    explanation: Cumulative frequency uses addition, not multiplication.
+  - answer: The average of all frequencies
+    explanation: Cumulative frequency is a running sum, not an average.
+  - answer: The difference between maximum and minimum frequencies
+    explanation: This is not how cumulative frequency is defined.
+
+- question: What is a relative frequency?
+  reason: Relative frequencies convert counts to proportions, enabling comparison across different-sized groups.
+  points: 2
+  right:
+  - answer: The proportion or percentage of observations in each category or class
+    explanation: Relative frequency = frequency / total number of observations, often expressed as a decimal or percentage.
+    links:
+    - https://en.wikipedia.org/wiki/Frequency_(statistics)
+  wrong:
+  - answer: The difference between the highest and lowest frequencies
+    explanation: This is not the definition of relative frequency.
+  - answer: How often values occur relative to the mean
+    explanation: Relative frequency is relative to the total count, not the mean.
+  - answer: The frequency multiplied by the class width
+    explanation: This is not how relative frequency is calculated.
+  - answer: Only used for continuous data
+    explanation: Relative frequency applies to both categorical and continuous data.
+  - answer: The rank order of frequencies
+    explanation: This describes ordering by frequency, not relative frequency itself.
+
+- question: What is skewness?
+  reason: Understanding skewness helps choose appropriate statistical methods and interpret data distributions correctly.
+  points: 4
+  right:
+  - answer: A measure of the asymmetry of a probability distribution
+    explanation: Positive skew has a long right tail; negative skew has a long left tail; zero skew is symmetric.
+    links:
+    - https://en.wikipedia.org/wiki/Skewness
+  wrong:
+  - answer: The difference between the mean and median
+    explanation: While related to skewness, this difference alone doesn't define it.
+  - answer: The probability of extreme values
+    explanation: This relates more to kurtosis and tail behavior than skewness specifically.
+  - answer: How spread out the data is
+    explanation: This describes dispersion (variance/standard deviation), not skewness.
+  - answer: The number of modes in the distribution
+    explanation: Number of modes relates to modality, not skewness.
+  - answer: Whether data is continuous or discrete
+    explanation: Skewness describes distribution shape, not data type.
+
+- question: In a positively skewed distribution, what is the typical relationship between mean, median, and mode?
+  reason: This relationship helps in choosing appropriate measures of central tendency for reporting.
+  points: 4
+  right:
+  - answer: Mean &gt; Median &gt; Mode
+    explanation: In positive (right) skew, the mean is pulled toward the long tail, making it largest.
+    links:
+    - https://en.wikipedia.org/wiki/Skewness
+  wrong:
+  - answer: Mean &lt; Median &lt; Mode
+    explanation: This describes negative (left) skew, not positive skew.
+  - answer: Mean = Median = Mode
+    explanation: This describes a symmetric distribution, not positive skew.
+  - answer: Mode &gt; Mean &gt; Median
+    explanation: This ordering doesn't match positive skew.
+  - answer: Median &gt; Mean &gt; Mode
+    explanation: This ordering doesn't match positive skew.
+  - answer: The relationship varies randomly
+    explanation: There is a predictable relationship for skewed distributions.
+
+- question: What is kurtosis?
+  reason: Kurtosis helps assess tail behavior and the likelihood of extreme values in risk management.
+  points: 7
+  right:
+  - answer: A measure of the heaviness of the tails of a distribution or the degree of peakedness
+    explanation: High kurtosis indicates heavy tails and more outliers; low kurtosis indicates light tails.
+    links:
+    - https://en.wikipedia.org/wiki/Kurtosis
+  wrong:
+  - answer: The same as skewness
+    explanation: Skewness measures asymmetry; kurtosis measures tail heaviness and peakedness.
+  - answer: The number of peaks in a distribution
+    explanation: Number of peaks relates to modality, not kurtosis.
+  - answer: The range of the data
+    explanation: Range measures spread; kurtosis measures shape characteristics.
+  - answer: The standard deviation squared
+    explanation: This is the definition of variance, not kurtosis.
+  - answer: How asymmetric the distribution is
+    explanation: Asymmetry is measured by skewness, not kurtosis.
+
+- question: What is a parameter?
+  reason: Distinguishing parameters from statistics is fundamental for proper statistical communication.
+  points: 2
+  right:
+  - answer: A numerical characteristic of a population
+    explanation: Parameters are fixed values (though usually unknown) like μ for population mean or σ for population standard deviation.
+    links:
+    - https://en.wikipedia.org/wiki/Statistical_parameter
+  wrong:
+  - answer: A numerical characteristic of a sample
+    explanation: This describes a statistic, not a parameter.
+  - answer: A variable in a study
+    explanation: Variables are what we measure; parameters are population characteristics.
+  - answer: The size of the sample
+    explanation: Sample size (n) is a count, not a parameter in the population sense.
+  - answer: Any number calculated from data
+    explanation: Numbers from samples are statistics; parameters describe populations.
+  - answer: A setting in statistical software
+    explanation: Software settings are not statistical parameters.
+
+- question: What is a statistic?
+  reason: Understanding statistics (as calculated values) is essential for reporting sample results correctly.
+  points: 2
+  right:
+  - answer: A numerical characteristic of a sample
+    explanation: Statistics are calculated from sample data, like x̄ for sample mean or s for sample standard deviation.
+    links:
+    - https://en.wikipedia.org/wiki/Statistic
+  wrong:
+  - answer: A numerical characteristic of a population
+    explanation: This describes a parameter, not a statistic.
+  - answer: Always equal to the population parameter
+    explanation: Statistics estimate parameters but typically differ due to sampling variability.
+  - answer: The name of the field of study
+    explanation: While "statistics" is the field name, "a statistic" is a calculated value from a sample.
+  - answer: A graph or chart
+    explanation: Graphs visualize data; statistics are numerical summaries.
+  - answer: The standard deviation of the population
+    explanation: Population standard deviation is a parameter, not a statistic.
+
+- question: What is the margin of error?
+  reason: Margin of error is reported in polls and surveys to communicate the precision of estimates.
+  points: 4
+  right:
+  - answer: The amount added and subtracted from a sample statistic to create a confidence interval
+    explanation: Margin of error = (critical value) × (standard error), often used in polls and surveys.
+    links:
+    - https://en.wikipedia.org/wiki/Margin_of_error
+  wrong:
+  - answer: The probability of making a Type I error
+    explanation: Type I error probability is α (significance level), not margin of error.
+  - answer: The difference between the sample mean and population mean
+    explanation: This is the sampling error for a specific sample, not the margin of error.
+  - answer: The standard deviation divided by 2
+    explanation: This is not how margin of error is calculated.
+  - answer: The range of the sample
+    explanation: Range measures data spread; margin of error quantifies estimate precision.
+  - answer: Always equal to 5%
+    explanation: Margin of error varies based on sample size, variability, and confidence level.
+
+- question: What does "statistically significant" mean?
+  reason: This term appears throughout research and must be understood to properly evaluate statistical claims.
+  points: 4
+  right:
+  - answer: The observed result is unlikely to have occurred by chance alone, assuming the null hypothesis is true
+    explanation: Statistical significance (typically p &lt; 0.05) suggests the effect is real, not due to random variation.
+    links:
+    - https://en.wikipedia.org/wiki/Statistical_significance
+  wrong:
+  - answer: The result is important or meaningful in practice
+    explanation: Statistical significance refers to probability, not practical importance (effect size matters for that).
+  - answer: The result proves the hypothesis is true
+    explanation: Statistical significance provides evidence against the null, but doesn't prove anything absolutely.
+  - answer: The sample size is large enough
+    explanation: While sample size affects power, statistical significance is about p-values and evidence.
+  - answer: The effect is large
+    explanation: Even small effects can be statistically significant with large samples.
+  - answer: There are no errors in the data
+    explanation: Statistical significance is about probability under the null hypothesis, not data quality.
+
+- question: What is effect size?
+  reason: Effect size measures practical significance and is crucial for interpreting whether findings matter in real-world contexts.
+  points: 7
+  right:
+  - answer: A measure of the magnitude or strength of a phenomenon or relationship
+    explanation: Effect size quantifies how large an effect is, independent of sample size, unlike p-values.
+    links:
+    - https://en.wikipedia.org/wiki/Effect_size
+  wrong:
+  - answer: The same as statistical significance
+    explanation: Statistical significance is about probability; effect size is about magnitude.
+  - answer: The p-value of a test
+    explanation: P-values and effect sizes are different; both provide important but distinct information.
+  - answer: The sample size needed
+    explanation: Sample size affects power but isn't what effect size measures.
+  - answer: The probability of Type I error
+    explanation: This is α (significance level), not effect size.
+  - answer: The margin of error
+    explanation: Margin of error relates to precision; effect size relates to magnitude.
+
+- question: What is a one-tailed test?
+  reason: Choosing between one-tailed and two-tailed tests affects the strength of evidence needed and must be justified.
+  points: 4
+  right:
+  - answer: A hypothesis test where the alternative hypothesis specifies a direction (greater than or less than)
+    explanation: One-tailed tests are more powerful for detecting effects in the specified direction but can't detect effects in the other direction.
+    links:
+    - https://en.wikipedia.org/wiki/One-_and_two-tailed_tests
+  wrong:
+  - answer: A test that uses only half the sample
+    explanation: '"One-tailed" refers to the alternative hypothesis direction, not sample use.'
+  - answer: A test that can only reject the null hypothesis
+    explanation: Both one-tailed and two-tailed tests can reject the null hypothesis.
+  - answer: A test where the mean is above zero
+    explanation: One-tailed refers to directionality in the alternative hypothesis, not the mean's value.
+  - answer: A less powerful test than a two-tailed test
+    explanation: One-tailed tests are more powerful in the specified direction but can't detect effects in the other direction.
+  - answer: A test only for categorical data
+    explanation: One-tailed tests can be used with various types of data and tests.
+
+- question: What is a two-tailed test?
+  reason: Two-tailed tests are the more conservative default and must be understood for proper hypothesis testing.
+  points: 4
+  right:
+  - answer: A hypothesis test where the alternative hypothesis does not specify a direction (simply "not equal to")
+    explanation: Two-tailed tests can detect effects in either direction but require stronger evidence than one-tailed tests.
+    links:
+    - https://en.wikipedia.org/wiki/One-_and_two-tailed_tests
+  wrong:
+  - answer: A test that uses the entire sample twice
+    explanation: '"Two-tailed" refers to testing both directions, not sample usage.'
+  - answer: A test that cannot reject the null hypothesis
+    explanation: Two-tailed tests can reject the null if evidence is sufficient.
+  - answer: A test only for comparing two groups
+    explanation: Two-tailed refers to directionality, not the number of groups.
+  - answer: A more powerful test than a one-tailed test
+    explanation: Two-tailed tests are less powerful in any specific direction but can detect effects either way.
+  - answer: A test only for continuous data
+    explanation: Two-tailed tests can be used with various types of data and tests.
+
+- question: What is a sampling distribution?
+  reason: Sampling distributions are the foundation of statistical inference and confidence intervals.
+  points: 7
+  right:
+  - answer: The probability distribution of a statistic (like the mean) across all possible samples of a given size
+    explanation: Sampling distributions show how statistics vary from sample to sample and are key to inference.
+    links:
+    - https://en.wikipedia.org/wiki/Sampling_distribution
+  wrong:
+  - answer: The distribution of data in a single sample
+    explanation: This is the sample distribution, not the sampling distribution.
+  - answer: The method used to select a sample
+    explanation: This describes a sampling method, not a sampling distribution.
+  - answer: The population distribution
+    explanation: The sampling distribution is the distribution of a statistic, not the population itself.
+  - answer: The distribution of errors in sampling
+    explanation: While related to sampling variability, this isn't the definition of sampling distribution.
+  - answer: A graph showing the sample size
+    explanation: Sampling distributions show how statistics vary, not sample sizes.
+
+- question: What is random error in statistics?
+  reason: Understanding random error helps distinguish it from bias and assess the reliability of measurements.
+  points: 4
+  right:
+  - answer: Unpredictable variation that occurs by chance in observations or measurements
+    explanation: Random error causes data to scatter around the true value, affecting precision but not accuracy.
+    links:
+    - https://en.wikipedia.org/wiki/Observational_error
+  wrong:
+  - answer: Systematic error that always affects measurements in the same direction
+    explanation: This describes systematic error or bias, not random error.
+  - answer: Mistakes in data entry
+    explanation: Data entry mistakes are errors but not what's meant by "random error" in statistics.
+  - answer: The standard deviation of the sample
+    explanation: Standard deviation measures variability, which includes but isn't the same as random error.
+  - answer: Error that can be completely eliminated with careful measurement
+    explanation: Random error is inherent and can be reduced but not eliminated.
+  - answer: The difference between a statistic and parameter
+    explanation: This is sampling error, which includes but isn't limited to random error.
+
+- question: What is systematic error (bias)?
+  reason: Identifying and minimizing bias is critical for data quality and valid conclusions in any study.
+  points: 4
+  right:
+  - answer: Consistent, predictable error that affects measurements in the same direction
+    explanation: Systematic error causes results to deviate from the true value in a consistent way, affecting accuracy.
+    links:
+    - https://en.wikipedia.org/wiki/Observational_error
+  wrong:
+  - answer: Unpredictable variation in measurements
+    explanation: This describes random error, not systematic error.
+  - answer: The standard error of a statistic
+    explanation: Standard error measures sampling variability, not systematic error.
+  - answer: Errors that cancel out when averaging
+    explanation: Random errors tend to cancel out; systematic errors do not.
+  - answer: The difference between two samples
+    explanation: Differences between samples involve sampling variability, not necessarily systematic error.
+  - answer: Error that increases with sample size
+    explanation: Systematic error is consistent regardless of sample size.
+
+- question: What is the purpose of randomization in an experiment?
+  reason: Randomization is fundamental to experimental design and causal inference in A/B testing and trials.
+  points: 4
+  right:
+  - answer: To control for confounding variables by distributing their effects equally across groups
+    explanation: Randomization ensures groups are comparable on average, strengthening causal conclusions.
+    links:
+    - https://en.wikipedia.org/wiki/Randomized_controlled_trial
+  wrong:
+  - answer: To make the experiment take less time
+    explanation: Randomization is about validity, not efficiency.
+  - answer: To ensure the sample is representative of the population
+    explanation: This is the purpose of random sampling, not randomization in experiments.
+  - answer: To increase the sample size
+    explanation: Randomization doesn't affect sample size.
+  - answer: To eliminate all random error
+    explanation: Randomization controls bias from confounding, but doesn't eliminate random error.
+  - answer: To make data analysis easier
+    explanation: Randomization is about validity and causal inference, not analytical convenience.
+
+- question: What is a confounding variable?
+  reason: Recognizing confounding is essential for proper study design and interpretation of observational data.
+  points: 7
+  right:
+  - answer: A variable that influences both the independent and dependent variables, potentially creating a spurious association
+    explanation: Confounders make it difficult to determine if the independent variable truly causes changes in the dependent variable.
+    links:
+    - https://en.wikipedia.org/wiki/Confounding
+  wrong:
+  - answer: A variable that is difficult to measure
+    explanation: Difficulty of measurement doesn't define a confounder.
+  - answer: The dependent variable
+    explanation: The dependent variable is the outcome being studied, not a confounder.
+  - answer: Any variable not included in the study
+    explanation: Not all excluded variables are confounders; confounders must relate to both other variables.
+  - answer: A variable measured with error
+    explanation: Measurement error is different from confounding.
+  - answer: The independent variable
+    explanation: The independent variable is the predictor, not a confounder.
+
+- question: What is an experiment in statistics?
+  reason: Understanding experimental design principles is crucial for establishing causation in research and business testing.
+  points: 2
+  right:
+  - answer: A study where researchers manipulate an independent variable and observe its effect on a dependent variable
+    explanation: Experiments allow causal conclusions because of researcher control and typically random assignment.
+    links:
+    - https://en.wikipedia.org/wiki/Experiment
+  wrong:
+  - answer: Any study that collects data
+    explanation: Data collection alone doesn't make a study an experiment; manipulation and control do.
+  - answer: A study that only observes without intervention
+    explanation: This describes an observational study, not an experiment.
+  - answer: Testing statistical software
+    explanation: This is a colloquial use of "experiment," not the statistical definition.
+  - answer: A study with a large sample size
+    explanation: Sample size doesn't determine if a study is an experiment.
+  - answer: Calculating descriptive statistics
+    explanation: This is data analysis, not experimental research.
+
+- question: What is an observational study?
+  reason: Most real-world data comes from observational studies, which require careful interpretation regarding causation.
+  points: 2
+  right:
+  - answer: A study where researchers observe and measure variables without manipulating them
+    explanation: Observational studies can identify associations but generally cannot establish causation due to potential confounding.
+    links:
+    - https://en.wikipedia.org/wiki/Observational_study
+  wrong:
+  - answer: A study where researchers control all variables
+    explanation: This describes an experiment, not an observational study.
+  - answer: A study that proves causation
+    explanation: Observational studies typically cannot establish causation as definitively as experiments.
+  - answer: Only useful for categorical data
+    explanation: Observational studies can involve any type of data.
+  - answer: A study conducted by watching people without their knowledge
+    explanation: While observation may be involved, the key is lack of manipulation, and ethics require informed consent.
+  - answer: Less valid than experimental studies in all cases
+    explanation: Observational studies have different strengths and are sometimes the only ethical or practical option.
+
+- question: What does "controlling for a variable" mean?
+  reason: Statistical control is essential for analyzing complex data and isolating effects in multiple regression and ANCOVA.
+  points: 7
+  right:
+  - answer: Accounting for the effects of a variable to isolate the relationship between other variables
+    explanation: Statistical techniques like multiple regression can control for confounders by including them in the model.
+    links:
+    - https://en.wikipedia.org/wiki/Controlling_for_a_variable
+  wrong:
+  - answer: Removing all observations with extreme values
+    explanation: This describes outlier removal, not controlling for a variable.
+  - answer: Keeping a variable constant in an experiment
+    explanation: This is experimental control, which is related but different from statistical control.
+  - answer: Calculating the mean of a variable
+    explanation: Calculating summaries is not controlling for a variable.
+  - answer: Ensuring the variable is normally distributed
+    explanation: Distribution checks are separate from controlling for variables.
+  - answer: Collecting more data on a variable
+    explanation: Data collection doesn't constitute controlling for a variable.
+
+- question: What is a paired t-test used for?
+  reason: Paired tests are common in before-after studies and matched designs in business and research settings.
+  points: 7
+  right:
+  - answer: Comparing means when the two samples are matched or dependent, such as before-and-after measurements on the same subjects
+    explanation: Paired t-tests account for correlation between measurements, increasing statistical power.
+    links:
+    - https://en.wikipedia.org/wiki/Student%27s_t-test#Dependent_t-test_for_paired_samples
+  wrong:
+  - answer: Comparing means of two independent groups
+    explanation: This requires an independent samples t-test, not a paired t-test.
+  - answer: Comparing more than two groups
+    explanation: This requires ANOVA, not a t-test.
+  - answer: Testing correlation between two variables
+    explanation: Correlation tests differ from paired t-tests.
+  - answer: Comparing proportions
+    explanation: Proportions typically use z-tests or chi-square tests.
+  - answer: Testing if the variance of two groups differs
+    explanation: This requires an F-test for equality of variances.
+
+- question: What is the difference between precision and accuracy?
+  reason: These concepts are fundamental for understanding measurement quality and interpreting results correctly.
+  points: 4
+  right:
+  - answer: Accuracy is closeness to the true value; precision is consistency of repeated measurements
+    explanation: You can be precise (consistent) but inaccurate (consistently wrong), or accurate on average but imprecise (variable).
+    links:
+    - https://en.wikipedia.org/wiki/Accuracy_and_precision
+  wrong:
+  - answer: Precision and accuracy mean the same thing
+    explanation: These are distinct concepts in measurement theory.
+  - answer: Accuracy applies to large samples; precision applies to small samples
+    explanation: Both concepts apply regardless of sample size.
+  - answer: Precision is more important than accuracy
+    explanation: Both are important; their relative importance depends on the context.
+  - answer: Accuracy is about random error; precision is about systematic error
+    explanation: This is backwards; accuracy relates to systematic error (bias), precision relates to random error.
+  - answer: Precision measures mean; accuracy measures standard deviation
+    explanation: These statistical measures relate to but don't define precision and accuracy.
+
+- question: What does it mean to say a test is "robust"?
+  reason: Robustness affects which statistical methods can be safely used when assumptions are not perfectly met.
+  points: 7
+  right:
+  - answer: The test performs well even when some of its assumptions are violated
+    explanation: Robust tests, like t-tests for reasonably large samples, give valid results despite moderate departures from assumptions.
+    links:
+    - https://en.wikipedia.org/wiki/Robust_statistics
+  wrong:
+  - answer: The test requires strict assumptions to be met
+    explanation: This is the opposite of robustness.
+  - answer: The test is always correct
+    explanation: No test is always correct; robustness means performance holds up under assumption violations.
+  - answer: The test has high power
+    explanation: Power and robustness are related but different properties.
+  - answer: The test works only with large samples
+    explanation: Robustness refers to assumption violations, not sample size requirements.
+  - answer: The test never makes Type I errors
+    explanation: No test completely eliminates errors; robustness is about maintaining valid error rates.
+
+- question: What is a non-parametric test?
+  reason: Non-parametric tests are important alternatives when data don't meet parametric test assumptions.
+  points: 7
+  right:
+  - answer: A statistical test that does not assume a specific distribution for the population
+    explanation: Non-parametric tests often use ranks rather than raw values and are useful when normality assumptions are violated.
+    links:
+    - https://en.wikipedia.org/wiki/Nonparametric_statistics
+  wrong:
+  - answer: A test that has no parameters
+    explanation: Non-parametric tests still have parameters; they don't assume a specific distributional form.
+  - answer: A test only for categorical data
+    explanation: Non-parametric tests can be used with various data types, including continuous data.
+  - answer: A less powerful test in all situations
+    explanation: Non-parametric tests may have less power when parametric assumptions are met but more power when they're violated.
+  - answer: A test that requires the population standard deviation
+    explanation: Non-parametric tests typically don't require population parameters.
+  - answer: The same as a parametric test
+    explanation: These are distinct classes of tests with different assumptions.
+
+- question: What is the Mann-Whitney U test?
+  reason: This non-parametric test is a practical alternative to t-tests when data are skewed or ordinal.
+  points: 7
+  right:
+  - answer: A non-parametric test for comparing two independent groups, used as an alternative to the independent t-test
+    explanation: The Mann-Whitney test compares distributions using ranks rather than assuming normality.
+    links:
+    - https://en.wikipedia.org/wiki/Mann%E2%80%93Whitney_U_test
+  wrong:
+  - answer: A parametric test assuming normality
+    explanation: Mann-Whitney is non-parametric and doesn't assume normality.
+  - answer: A test for paired samples
+    explanation: For paired samples, the Wilcoxon signed-rank test is used instead.
+  - answer: A test for comparing more than two groups
+    explanation: For more than two groups, the Kruskal-Wallis test is used.
+  - answer: Another name for the t-test
+    explanation: Mann-Whitney is a different test, though it addresses similar questions.
+  - answer: A test only for categorical data
+    explanation: Mann-Whitney is for ordinal or continuous data, not categorical data.
+
+- question: What is statistical inference?
+  reason: Understanding inference is the foundation of using sample data to draw broader conclusions.
+  points: 2
+  right:
+  - answer: The process of drawing conclusions about populations based on sample data
+    explanation: Inference includes estimation (confidence intervals) and hypothesis testing.
+    links:
+    - https://en.wikipedia.org/wiki/Statistical_inference
+  wrong:
+  - answer: Calculating descriptive statistics only
+    explanation: Descriptive statistics summarize data; inference goes beyond the sample to the population.
+  - answer: Proving hypotheses are true
+    explanation: Inference provides evidence and estimates with uncertainty, not proof.
+  - answer: Collecting data from a population
+    explanation: This is data collection; inference is drawing conclusions from the data.
+  - answer: Creating graphs and charts
+    explanation: Visualization is part of data analysis but not statistical inference per se.
+  - answer: Calculating the exact population parameter
+    explanation: Inference provides estimates with uncertainty, not exact values.
+
+- question: What is a point estimate?
+  reason: Point estimates are the foundation of statistical reporting and must be understood before learning about intervals.
+  points: 2
+  right:
+  - answer: A single value that serves as an estimate of a population parameter
+    explanation: Examples include using the sample mean x̄ to estimate μ, or sample proportion to estimate population proportion.
+    links:
+    - https://en.wikipedia.org/wiki/Point_estimation
+  wrong:
+  - answer: A range of plausible values for a parameter
+    explanation: This describes an interval estimate, not a point estimate.
+  - answer: The exact value of the population parameter
+    explanation: Point estimates are estimates that approximate but don't equal the true parameter.
+  - answer: The margin of error
+    explanation: Margin of error is used with point estimates to create intervals.
+  - answer: A dot on a scatter plot
+    explanation: This is a literal point on a graph, not a point estimate.
+  - answer: The standard error
+    explanation: Standard error measures uncertainty of an estimate; the point estimate is the value itself.
+
+- question: What is an interval estimate?
+  reason: Interval estimates communicate uncertainty and are more informative than point estimates alone.
+  points: 2
+  right:
+  - answer: A range of values that is likely to contain the population parameter
+    explanation: Confidence intervals are the most common type of interval estimate.
+    links:
+    - https://en.wikipedia.org/wiki/Interval_estimation
+  wrong:
+  - answer: A single best guess for a parameter
+    explanation: This describes a point estimate, not an interval estimate.
+  - answer: The range of the sample data
+    explanation: This is the data range, not an interval estimate for a parameter.
+  - answer: The interquartile range
+    explanation: IQR describes data spread, not uncertainty about a parameter.
+  - answer: The time period over which data was collected
+    explanation: This is a temporal interval, not a statistical interval estimate.
+  - answer: Always 95% of the data
+    explanation: Confidence intervals are about parameters, not percentages of data.
+
+- question: When would you use the median instead of the mean?
+  reason: Choosing appropriate measures of central tendency is crucial for accurate data summarization and reporting.
+  points: 4
+  right:
+  - answer: When the data is skewed or contains outliers
+    explanation: The median is resistant to extreme values, making it more representative of typical values in skewed distributions.
+    links:
+    - https://en.wikipedia.org/wiki/Median
+  - answer: When the data is ordinal
+    explanation: For ordinal data, the median is appropriate while the mean may not be meaningful.
+    links:
+    - https://en.wikipedia.org/wiki/Level_of_measurement
+  wrong:
+  - answer: Never; the mean is always better
+    explanation: The median is preferable in several situations, particularly with skewed data.
+  - answer: Only when the sample size is small
+    explanation: Sample size alone doesn't determine whether to use median or mean.
+  - answer: When you want to emphasize extreme values
+    explanation: The mean, not the median, is influenced by extreme values.
+  - answer: Only for categorical data
+    explanation: The median requires ordinal or higher measurement level, not categorical.
+  - answer: When calculating confidence intervals
+    explanation: Confidence intervals can be constructed for either mean or median, depending on the situation.
+
+- question: What information does a box plot provide?
+  reason: Box plots efficiently summarize multiple aspects of distributions and are widely used in comparative analysis.
+  points: 2
+  right:
+  - answer: Minimum, Q1, median, Q3, maximum, and outliers
+    explanation: Box plots display the five-number summary and identify potential outliers.
+    links:
+    - https://en.wikipedia.org/wiki/Box_plot
+  - answer: The shape of the distribution (symmetry or skewness)
+    explanation: Box plots reveal whether data is symmetric or skewed based on the position of the median within the box.
+    links:
+    - https://en.wikipedia.org/wiki/Box_plot
+  - answer: The spread of the middle 50% of the data (IQR)
+    explanation: The box itself represents the interquartile range.
+    links:
+    - https://en.wikipedia.org/wiki/Box_plot
+  wrong:
+  - answer: The mean and standard deviation
+    explanation: Traditional box plots show quartiles and median, not mean and standard deviation.
+  - answer: The frequency of each value
+    explanation: Histograms show frequencies; box plots show distributional summary.
+  - answer: The correlation between two variables
+    explanation: Scatter plots show correlations; box plots show distribution of one variable.
+
+- question: What is the purpose of a control group in an experiment?
+  reason: Control groups are fundamental to causal inference in experimental designs including A/B testing.
+  points: 4
+  right:
+  - answer: To provide a baseline for comparison to isolate the effect of the treatment
+    explanation: The control group doesn't receive the treatment, allowing researchers to see what happens without intervention.
+    links:
+    - https://en.wikipedia.org/wiki/Treatment_and_control_groups
+  wrong:
+  - answer: To control all variables in the experiment
+    explanation: The control group is a comparison group, not a method for controlling variables.
+  - answer: To increase the sample size
+    explanation: While control groups add participants, their purpose is comparison, not just increasing size.
+  - answer: To ensure the experiment is ethical
+    explanation: Ethics are important but aren't the primary purpose of control groups.
+  - answer: To eliminate random error
+    explanation: Control groups help isolate treatment effects but don't eliminate random error.
+  - answer: To replace randomization
+    explanation: Control groups and randomization serve different but complementary purposes.
+
+- question: What is a treatment group in an experiment?
+  reason: Understanding experimental structure is essential for designing and interpreting controlled studies.
+  points: 2
+  right:
+  - answer: The group that receives the intervention or condition being tested
+    explanation: The treatment group is exposed to the independent variable to observe its effect.
+    links:
+    - https://en.wikipedia.org/wiki/Treatment_and_control_groups
+  wrong:
+  - answer: The group that receives no intervention
+    explanation: This describes the control group, not the treatment group.
+  - answer: The group with medical conditions
+    explanation: '"Treatment" in experiments refers to any intervention, not just medical treatments.'
+  - answer: The group analyzed first
+    explanation: Order of analysis doesn't define treatment vs. control groups.
+  - answer: The smaller of the two groups
+    explanation: Group size doesn't determine which is treatment or control.
+  - answer: The group selected first
+    explanation: Selection order doesn't determine group designation.
+
+- question: What is replication in statistics?
+  reason: Replication strengthens evidence and is crucial for scientific validity and business decision-making.
+  points: 4
+  right:
+  - answer: Repeating a study or experiment to verify results
+    explanation: Replication helps confirm findings aren't due to chance or specific to one sample.
+    links:
+    - https://en.wikipedia.org/wiki/Replication_(statistics)
+  - answer: Having multiple measurements or observations within a study
+    explanation: Within-study replication (repeated measures) provides more precise estimates.
+    links:
+    - https://en.wikipedia.org/wiki/Replication_(statistics)
+  wrong:
+  - answer: Copying data from one spreadsheet to another
+    explanation: This is data duplication, not statistical replication.
+  - answer: Using the same statistical test multiple times
+    explanation: Multiple testing is different from replication of studies.
+  - answer: Plagiarizing research
+    explanation: Replication means repeating methods with new data, not plagiarism.
+  - answer: Always getting the same results
+    explanation: Replications won't give identical results due to sampling variability, but should show consistent patterns.

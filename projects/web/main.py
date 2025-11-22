@@ -520,11 +520,20 @@ def precheck():
       print(f"✓ Loaded: {os.path.basename(yamlFile)}")
     except Exception as e:
       print(f"✗ Error loading {os.path.basename(yamlFile)}: {e}")
+      import re
+      match = re.search(r'position (\d+)', str(e))
+      if match:
+        print(f"Position: {match.group(1)}")
+        text = tools.readDataFileWithUnicode(yamlFile)
+        print(f"{text[max(0, int(match.group(1))-20):int(match.group(1))+20]}")
       ok = False
 
   if not ok:
     print("✗ Some YAML files could not be loaded. Please fix the errors and try again.")
   return ok
+
+
+
 
 if __name__ == "__main__":
   if precheck():
