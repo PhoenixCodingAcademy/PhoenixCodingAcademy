@@ -159,12 +159,12 @@ new Vue({
   delimiters: ['[[', ']]'],
   data: {
     yamlFiles: yamlFiles,
-    selectedYaml: '',
+    selectedYaml: localStorage.getItem('selectedYaml') || '',
     searchText: '',
     dropdownOpen: false,
     studentName: localStorage.getItem('studentName') || '',
-    maxPoints: 50,
-    maxDifficulty: 7,
+    maxPoints: parseInt(localStorage.getItem('maxPoints')) || 50,
+    maxDifficulty: parseInt(localStorage.getItem('maxDifficulty')) || 7,
     started: false,
     allQuestions: [],
     questions: [],
@@ -179,8 +179,17 @@ new Vue({
     secret: 'exam_secret_key',  // For hashing IDs
   },
   watch: {
+    selectedYaml(newValue) {
+      localStorage.setItem('selectedYaml', newValue);
+    },
     studentName(newName) {
       localStorage.setItem('studentName', newName);
+    },
+    maxPoints(newValue) {
+      localStorage.setItem('maxPoints', newValue);
+    },
+    maxDifficulty(newValue) {
+      localStorage.setItem('maxDifficulty', newValue);
     }
   },
   computed: {
