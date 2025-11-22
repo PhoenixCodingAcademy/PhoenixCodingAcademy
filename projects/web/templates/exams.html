@@ -48,35 +48,40 @@
       </div>
       <hr>
       <div v-for="(q, qIdx) in questions" :key="'q-'+qIdx" style="margin-bottom:1.5em;">
-        <h3>Q[[ qIdx+1 ]]. [[ q.question ]] ([[ q.points ]] pts)</h3>
+        <h3 :style="isQuestionWrong(qIdx) ? 'color: red;' : ''">
+          Q[[ qIdx+1 ]]. [[ q.question ]] ([[ q.points ]] pts)
+        </h3>
         <div v-for="(ans, aIdx) in q.displayAnswers" :key="ans.uid">
-          <label>
+          <label :style="getAnswerStyle(qIdx, ans)">
             <input type="checkbox"
                    :id="ans.uid"
                    :name="'q-' + qIdx"
                    :value="ans.uid"
                    v-model="answers[qIdx]"
+                   :disabled="graded"
                    @change="answerChanged(qIdx, aIdx, ans.isNoneOfTheAbove)">
             [[ ans.answer ]]
           </label>
+          <div v-if="showAnswers && ans.explanation" style="margin-left: 30px; font-size: 0.9em; color: #666;">
+            [[ ans.explanation ]]
+          </div>
         </div>
       </div>
-      <button type="submit" :disabled="!readyToGrade">Grade Quiz</button>
+      <div v-if="!graded">
+        <button type="submit" :disabled="!readyToGrade">Grade Quiz</button>
+      </div>
+      <div v-else>
+        <button type="button" @click="tryAgain">Try Again</button>
+        <button type="button" @click="revealAnswers" style="margin-left: 10px;">Show Answers</button>
+      </div>
     </div>
   </form>
-  <div v-if="results">
+  <div v-if="results" style="margin-top: 2em;">
     <h3>Results</h3>
     <div>
       Name: [[ results.name ]]<br>
       Score: [[ results.score ]] / [[ results.maxPoints ]]<br>
-      Max Difficulty: [[ results.maxDifficulty ]]<br>
-      <div v-if="results.answers">
-        <div v-for="(ans, idx) in results.answers" :key="'result-'+idx">
-          <strong>Q[[ idx+1 ]]:</strong>
-          <span v-if="ans.right" style="color:green;">Right</span>
-          <span v-else style="color:red;">Wrong</span>
-        </div>
-      </div>
+      <span v-if="allCorrect" style="color: green; font-weight: bold;">Perfect Score! 🎉</span>
     </div>
   </div>
 </div>{% endraw %}
@@ -106,6 +111,8 @@ new Vue({
     examDate: '',
     totalPoints: 0,
     results: null,
+    graded: false,
+    showAnswers: false,
     secret: 'exam_secret_key',  // For hashing IDs
   },
   watch: {
@@ -121,6 +128,10 @@ new Vue({
       if (!this.questions.length) return false;
       // All questions must have at least one checked value
       return this.answers.length === this.questions.length && this.answers.every(arr => arr && arr.length > 0);
+    },
+    allCorrect() {
+      if (!this.results || !this.results.answers) return false;
+      return this.results.answers.every(a => a.right);
     }
   },
   methods: {
@@ -191,8 +202,12 @@ new Vue({
         let q = this.questions[qi];
         let selUids = this.answers[qi] || [];
         let selectedAnswers = q.displayAnswers.filter(a => selUids.includes(a.uid));
-        // We'll just say "right" if at least one selection is a correct answer, else wrong
-        let isRight = selectedAnswers.some(a => a.isRight);
+        // Check if all selected answers are correct AND all correct answers are selected
+        let selectedCorrect = selectedAnswers.filter(a => a.isRight);
+        let allCorrectAnswers = q.displayAnswers.filter(a => a.isRight);
+        let isRight = selectedCorrect.length > 0 && 
+                      selectedAnswers.length === selectedCorrect.length &&
+                      selectedCorrect.length === allCorrectAnswers.length;
         answerObjs.push({
           selected: selUids,
           right: isRight,
@@ -208,11 +223,43 @@ new Vue({
       })
       .then(res => {
         this.results = res.data.results || res.data;
-        this.started = false;
+        this.graded = true;
+        // If all correct, auto-reveal answers
+        if (this.allCorrect) {
+          this.showAnswers = true;
+        }
       })
       .catch(e => {
         alert("Error submitting exam: " + e);
       });
+    },
+    tryAgain() {
+      this.graded = false;
+      this.showAnswers = false;
+      this.results = null;
+    },
+    revealAnswers() {
+      this.showAnswers = true;
+    },
+    isQuestionWrong(qIdx) {
+      if (!this.graded || !this.results || !this.results.answers) return false;
+      return !this.results.answers[qIdx].right;
+    },
+    getAnswerStyle(qIdx, ans) {
+      if (!this.showAnswers) return '';
+      
+      let selUids = this.answers[qIdx] || [];
+      let isSelected = selUids.includes(ans.uid);
+      
+      // Show wrong answers in red if they were selected
+      if (isSelected && !ans.isRight) {
+        return 'color: red; font-weight: bold;';
+      }
+      // Show correct answers in green when revealing
+      if (ans.isRight) {
+        return 'color: green; font-weight: bold;';
+      }
+      return '';
     }
   },
   mounted() {
