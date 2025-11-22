@@ -63,6 +63,8 @@ REQUIREMENT: Assuming that some questions were answered wrong, when the "Grade Q
 At any point, if all questions were answered correctly, then then "Reveal All Answers.
 
 REQUIREMENT: When the "Grade Quiz", "Try Again", or "Show Answers" button is pressed, then record that event in the history list with the number of questions missed and the number of points scored. Always show the history at the top.
+
+REQUIREMENT: The "Question set" dropdown list should have the ability to type a string to filter the list. Typing each character invokes the filter. The string filters by matching any part of the string.
 ---
 
 SUBJECT = Python Programming

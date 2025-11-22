@@ -52,7 +52,7 @@
       </div>
       <hr>
       <div v-for="(q, qIdx) in questions" :key="'q-'+qIdx" style="margin-bottom:1.5em;">
-        <h3 :style="isQuestionWrong(qIdx) ? 'color: red;' : ''">
+        <h3 :style="getQuestionStyle(qIdx)">
           Q[[ qIdx+1 ]]. [[ q.question ]] ([[ q.points ]] pts)
         </h3>
         <div v-for="(ans, aIdx) in q.displayAnswers" :key="ans.uid">
@@ -75,8 +75,8 @@
         <button type="submit" :disabled="!readyToGrade">Grade Quiz</button>
       </div>
       <div v-else>
-        <button type="button" @click.prevent="tryAgain">Try Again</button>
-        <button type="button" @click.prevent="revealAnswers" style="margin-left: 10px;">Show Answers</button>
+        <button type="button" @click.prevent="tryAgain" v-if="!allCorrect">Try Again</button>
+        <button type="button" @click.prevent="revealAnswers" v-if="!showAnswers" :style="allCorrect ? '' : 'margin-left: 10px;'">Show Answers</button>
       </div>
     </div>
   </form>
@@ -270,24 +270,45 @@ new Vue({
       
       this.showAnswers = true;
     },
-    isQuestionWrong(qIdx) {
-      if (!this.graded || !this.results || !this.results.answers) return false;
-      return !this.results.answers[qIdx].right;
+    getQuestionStyle(qIdx) {
+      if (!this.graded || !this.results || !this.results.answers) return '';
+      
+      // Green if correct, red if wrong
+      if (this.results.answers[qIdx].right) {
+        return 'color: green;';
+      } else {
+        return 'color: red;';
+      }
     },
     getAnswerStyle(qIdx, ans) {
-      if (!this.showAnswers) return '';
-      
       let selUids = this.answers[qIdx] || [];
       let isSelected = selUids.includes(ans.uid);
       
-      // Show wrong answers in red if they were selected
-      if (isSelected && !ans.isRight) {
-        return 'color: red; font-weight: bold;';
+      // After grading, highlight selected answers
+      if (this.graded && !this.showAnswers) {
+        // Just show what was selected without revealing correctness yet
+        if (isSelected) {
+          // Check if this question was answered correctly
+          let isQuestionCorrect = this.results && this.results.answers && this.results.answers[qIdx].right;
+          if (isQuestionCorrect) {
+            return 'color: green; font-weight: bold;';
+          }
+        }
+        return '';
       }
-      // Show correct answers in green when revealing
-      if (ans.isRight) {
-        return 'color: green; font-weight: bold;';
+      
+      // When showing answers, reveal all correct/incorrect
+      if (this.showAnswers) {
+        // Show wrong answers in red if they were selected
+        if (isSelected && !ans.isRight) {
+          return 'color: red; font-weight: bold;';
+        }
+        // Show correct answers in green when revealing
+        if (ans.isRight) {
+          return 'color: green; font-weight: bold;';
+        }
       }
+      
       return '';
     }
   },
