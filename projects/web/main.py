@@ -200,10 +200,13 @@ def _startexam():
     random.shuffle(allAnswers)
     five = allAnswers[:5]
     
-    # Add "None of the above"
+    # Check if any of the selected 5 answers are correct
+    hasCorrectAnswer = any(a.get('isRight', False) for a in five)
+    
+    # Add "None of the above" - it's correct only if there are no correct answers in the list
     five.append({
       'answer': 'None of the above',
-      'isRight': False,
+      'isRight': not hasCorrectAnswer,
       'isNoneOfTheAbove': True
     })
     
