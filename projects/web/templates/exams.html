@@ -8,16 +8,72 @@
     text-align: right;
     margin-right: 10px;
   }
+  
+  .searchable-dropdown {
+    position: relative;
+    display: inline-block;
+    width: 300px;
+  }
+  
+  .searchable-dropdown input {
+    width: 100%;
+    padding: 5px;
+    box-sizing: border-box;
+  }
+  
+  .dropdown-list {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    max-height: 200px;
+    overflow-y: auto;
+    background: white;
+    border: 1px solid #ccc;
+    border-top: none;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+  }
+  
+  .dropdown-item {
+    padding: 8px 12px;
+    cursor: pointer;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .dropdown-item:hover {
+    background-color: #f0f0f0;
+  }
+  
+  .dropdown-item.selected {
+    background-color: #e3f2fd;
+    font-weight: bold;
+  }
 </style>
 
 {% raw %}<div id="exam-app">
   <form id="exam-form" @submit.prevent="gradeExam">
     <div>
       <label for="yaml-select"><strong>Question set:</strong></label>
-      <select id="yaml-select" v-model="selectedYaml" @change="resetExam">
-        <option disabled selected value="">-- Select a question set --</option>
-        <option v-for="file in yamlFiles" :key="file" :value="file">[[ file ]]</option>
-      </select>
+      <div class="searchable-dropdown">
+        <input 
+          type="text" 
+          v-model="searchText"
+          @focus="dropdownOpen = true"
+          @blur="handleBlur"
+          :placeholder="selectedYaml || 'Type to search...'"
+        />
+        <div v-if="dropdownOpen && filteredYamlFiles.length" class="dropdown-list">
+          <div 
+            v-for="file in filteredYamlFiles" 
+            :key="file" 
+            :class="['dropdown-item', {selected: file === selectedYaml}]"
+            @mousedown="selectFile(file)"
+          >
+            [[ file ]]
+          </div>
+        </div>
+      </div>
     </div>
     <div>
       <label for="name"><strong>Name:</strong></label>
@@ -104,6 +160,8 @@ new Vue({
   data: {
     yamlFiles: yamlFiles,
     selectedYaml: '',
+    searchText: '',
+    dropdownOpen: false,
     studentName: localStorage.getItem('studentName') || '',
     maxPoints: 50,
     maxDifficulty: 7,
@@ -137,6 +195,13 @@ new Vue({
     allCorrect() {
       if (!this.results || !this.results.answers) return false;
       return this.results.answers.every(a => a.right);
+    },
+    filteredYamlFiles() {
+      if (!this.searchText) {
+        return this.yamlFiles;
+      }
+      const search = this.searchText.toLowerCase();
+      return this.yamlFiles.filter(file => file.toLowerCase().includes(search));
     }
   },
   methods: {
@@ -158,6 +223,19 @@ new Vue({
       if (!this.selectedYaml && this.yamlFiles.length) {
         this.selectedYaml = this.yamlFiles[0];
       }
+    },
+    selectFile(file) {
+      this.selectedYaml = file;
+      this.searchText = '';
+      this.dropdownOpen = false;
+      this.resetExam();
+    },
+    handleBlur() {
+      // Delay to allow click event to fire
+      setTimeout(() => {
+        this.dropdownOpen = false;
+        this.searchText = '';
+      }, 200);
     },
     startExam() {
       if (!this.canStart) return;
