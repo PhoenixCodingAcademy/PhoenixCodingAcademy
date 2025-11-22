@@ -136,6 +136,7 @@ When the id of one table is used in another table, we say the two tables are rel
 ![](/static/images/20251116151745.png)
 
 In the diagram above:
+
 * Open arrows represent ISA relationships. An Employee is a Person. These are implemented as primary key to primary key relations.
 * Closed arrows represent HASA relationships. An employee has a company.
 
