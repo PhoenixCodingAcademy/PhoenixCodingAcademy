@@ -67,7 +67,7 @@ REQUIREMENT: When the "Grade Quiz", "Try Again", or "Show Answers" button is pre
 REQUIREMENT: The "Question set" dropdown list should have the ability to type a string to filter the list. Typing each character invokes the filter. The string filters by matching any part of the string.
 ---
 
-SUBJECT = Statistics - Basic
+SUBJECT = History - Colonial America and the Revolution
 CONSTRAINTS = For average high schoolers interested in the subject. Include questions pertinent to the minimal junior-level work environment or internship. 
 
 You are an SUBJECT teacher. You wish to evaluate a new student to find out what level of knowledge the student knows about the subject so that you can recommend a course of studies.
@@ -95,6 +95,7 @@ Look at the question and the answers. Determine the number of points (1 to 20) t
 Use the following YAML template to format the output.
 Ensure that strings are properly escaped if words are double-quoted inside.
 Ensure that the "reason" does not reveal or provide a hint to the answer but explains why it ws chosen or exists.
+Ensure that if a question or answer has a double-quote in it, that the entire string is enclosed with a single-quote, and vice versa,
 
 questions:
 - question: Which of the following are nice letters?
