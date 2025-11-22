@@ -67,10 +67,12 @@ REQUIREMENT: When the "Grade Quiz", "Try Again", or "Show Answers" button is pre
 REQUIREMENT: The "Question set" dropdown list should have the ability to type a string to filter the list. Typing each character invokes the filter. The string filters by matching any part of the string.
 ---
 
-SUBJECT = Data Science - General and Technology Agnostic
+SUBJECT = SQL - Basic and Technology Agnostic
+CONSTRAINTS = For average high schoolers interested in the subject. Include questions pertinent to the minimal junior-level work environment or internship. Stick to the ANSI SQL:2023 (ISO/IEC 9075:2023) standard.
 
 You are an SUBJECT teacher. You wish to evaluate a new student to find out what level of knowledge the student knows about the subject so that you can recommend a course of studies.
 Create 100 questions of various levels of difficulty.
+Create more questions if you think that the basic 1-point questions have not all been addressed.
 Ensure that each question is not a conjunction of multiple unrelated questions. Keep them distinct. 
 Example: What is Mercury and what is Pluto?
 If it makes sense to ask multiple questions that are related in context, then do so.
@@ -95,6 +97,7 @@ Ensure that strings are properly escaped if words are double-quoted inside.
 
 questions:
 - question: Which of the following are nice letters?
+  reason: It is important in the industry to know which letters are nice and which one's aren't because it shows you understand the markets.
   points: 12
   right:
   - answer: A

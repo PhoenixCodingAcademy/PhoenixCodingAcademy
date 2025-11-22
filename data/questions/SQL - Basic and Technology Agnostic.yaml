@@ -1,0 +1,2366 @@
+questions:
+- question: What does SQL stand for?
+  reason: Understanding the basic acronym is fundamental to discussing database queries.
+  points: 1
+  right:
+  - answer: Structured Query Language
+    explanation: SQL stands for Structured Query Language, a standardized language for managing and querying relational databases.
+    links:
+    - https://en.wikipedia.org/wiki/SQL
+  wrong:
+  - answer: Standard Question Language
+    explanation: This is incorrect; SQL is about queries, not questions, and uses "Structured" not "Standard".
+  - answer: Simple Query Logic
+    explanation: This is incorrect; SQL stands for Structured Query Language.
+  - answer: Sequential Query Language
+    explanation: This is incorrect; the S stands for Structured, not Sequential.
+  - answer: Structured Question Library
+    explanation: This is incorrect; SQL is a language, not a library, and deals with queries, not questions.
+  - answer: System Query Language
+    explanation: This is incorrect; the S stands for Structured, not System.
+
+- question: What is the primary purpose of SQL?
+  reason: Understanding SQL's main function helps students grasp its role in data management.
+  points: 1
+  right:
+  - answer: To manage and query data in relational databases
+    explanation: SQL is designed specifically for managing and querying data stored in relational database systems.
+    links:
+    - https://en.wikipedia.org/wiki/SQL
+  wrong:
+  - answer: To create web pages
+    explanation: Web pages are created with HTML, CSS, and JavaScript, not SQL.
+  - answer: To compile programming code
+    explanation: SQL is not a compiler; it's a query language for databases.
+  - answer: To design user interfaces
+    explanation: User interfaces are designed with different tools; SQL works with data, not UI design.
+  - answer: To manage network connections
+    explanation: Network management requires different tools; SQL is for database operations.
+  - answer: To encrypt files
+    explanation: While databases can encrypt data, SQL itself is not primarily an encryption tool.
+
+- question: Which of the following is a valid SQL statement type?
+  reason: Recognizing basic SQL statement types is essential for writing queries.
+  points: 1
+  right:
+  - answer: SELECT
+    explanation: SELECT is used to retrieve data from database tables.
+    links:
+    - https://en.wikipedia.org/wiki/Select_(SQL)
+  wrong:
+  - answer: FETCH
+    explanation: While FETCH exists in some SQL contexts (cursors), it's not a primary statement type like SELECT, INSERT, UPDATE, DELETE.
+  - answer: RETRIEVE
+    explanation: RETRIEVE is not a standard SQL keyword; SELECT is used instead.
+  - answer: GET
+    explanation: GET is not a SQL keyword; SELECT is the correct term.
+  - answer: EXTRACT
+    explanation: EXTRACT is a function for date/time parts, not a statement type.
+  - answer: PULL
+    explanation: PULL is not a SQL keyword; SELECT retrieves data.
+
+- question: What clause is used to filter rows in a SELECT statement?
+  reason: The WHERE clause is one of the most commonly used SQL features in any work environment.
+  points: 1
+  right:
+  - answer: WHERE
+    explanation: The WHERE clause filters rows based on specified conditions.
+    links:
+    - https://en.wikipedia.org/wiki/Where_(SQL)
+  wrong:
+  - answer: FILTER
+    explanation: FILTER is used with aggregate functions in some contexts, but WHERE filters rows in a SELECT statement.
+  - answer: IF
+    explanation: IF is used for conditional logic in procedural SQL, not for filtering rows in SELECT.
+  - answer: WHEN
+    explanation: WHEN is part of CASE expressions, not the clause for filtering rows.
+  - answer: HAVING
+    explanation: HAVING filters groups after GROUP BY, but WHERE filters individual rows.
+  - answer: CONDITION
+    explanation: CONDITION is not a SQL keyword; WHERE is used for filtering.
+
+- question: What SQL keyword is used to retrieve unique values only?
+  reason: Understanding DISTINCT helps eliminate duplicate results, a common requirement in data analysis.
+  points: 1
+  right:
+  - answer: DISTINCT
+    explanation: DISTINCT removes duplicate rows from the result set.
+    links:
+    - https://en.wikipedia.org/wiki/Select_(SQL)
+  wrong:
+  - answer: UNIQUE
+    explanation: UNIQUE is a constraint, not a keyword for retrieving unique values in SELECT.
+  - answer: SINGLE
+    explanation: SINGLE is not a SQL keyword for this purpose.
+  - answer: DIFFERENT
+    explanation: DIFFERENT is not a SQL keyword; DISTINCT is correct.
+  - answer: EXCLUSIVE
+    explanation: EXCLUSIVE is not a SQL keyword for retrieving unique values.
+  - answer: NODUPLICATE
+    explanation: NODUPLICATE is not a SQL keyword; DISTINCT is the correct term.
+
+- question: Which statement is used to add new rows to a table?
+  reason: INSERT is fundamental for adding data, a basic operation in any database work.
+  points: 1
+  right:
+  - answer: INSERT
+    explanation: INSERT (or INSERT INTO) adds new rows to a table.
+    links:
+    - https://en.wikipedia.org/wiki/Insert_(SQL)
+  wrong:
+  - answer: ADD
+    explanation: ADD is used with ALTER TABLE to add columns, not to insert rows.
+  - answer: CREATE
+    explanation: CREATE is used to create database objects like tables, not to insert rows.
+  - answer: APPEND
+    explanation: APPEND is not a standard SQL keyword; INSERT is used instead.
+  - answer: PUT
+    explanation: PUT is not a SQL keyword; INSERT is the correct statement.
+  - answer: WRITE
+    explanation: WRITE is not a SQL keyword; INSERT adds new rows.
+
+- question: What statement is used to modify existing data in a table?
+  reason: UPDATE is essential for maintaining and correcting data in production environments.
+  points: 1
+  right:
+  - answer: UPDATE
+    explanation: UPDATE modifies existing rows in a table based on specified conditions.
+    links:
+    - https://en.wikipedia.org/wiki/Update_(SQL)
+  wrong:
+  - answer: MODIFY
+    explanation: MODIFY is used in some contexts with ALTER TABLE, but UPDATE changes existing data.
+  - answer: CHANGE
+    explanation: CHANGE is not a standard SQL statement; UPDATE is correct.
+  - answer: EDIT
+    explanation: EDIT is not a SQL keyword; UPDATE modifies data.
+  - answer: ALTER
+    explanation: ALTER is used to change table structure, not data; UPDATE changes data.
+  - answer: SET
+    explanation: SET is part of the UPDATE statement syntax, but UPDATE is the statement itself.
+
+- question: Which statement removes rows from a table?
+  reason: DELETE is critical for data management, and interns need to understand its power and risks.
+  points: 1
+  right:
+  - answer: DELETE
+    explanation: DELETE removes rows from a table based on specified conditions.
+    links:
+    - https://en.wikipedia.org/wiki/Delete_(SQL)
+  wrong:
+  - answer: REMOVE
+    explanation: REMOVE is not a standard SQL keyword; DELETE is correct.
+  - answer: DROP
+    explanation: DROP deletes entire database objects (tables, databases), not individual rows.
+  - answer: ERASE
+    explanation: ERASE is not a SQL keyword; DELETE removes rows.
+  - answer: CLEAR
+    explanation: CLEAR is not a SQL keyword; DELETE is used to remove rows.
+  - answer: ELIMINATE
+    explanation: ELIMINATE is not a SQL keyword; DELETE removes rows from tables.
+
+- question: What clause is used to sort the result set?
+  reason: Sorting results is a basic requirement for presenting data in a meaningful way.
+  points: 1
+  right:
+  - answer: ORDER BY
+    explanation: ORDER BY sorts the result set by one or more columns in ascending or descending order.
+    links:
+    - https://en.wikipedia.org/wiki/Order_by
+  wrong:
+  - answer: SORT BY
+    explanation: SORT BY is not standard SQL; ORDER BY is the correct clause.
+  - answer: ARRANGE BY
+    explanation: ARRANGE BY is not a SQL keyword; ORDER BY sorts results.
+  - answer: ORGANIZE BY
+    explanation: ORGANIZE BY is not a SQL keyword; ORDER BY is correct.
+  - answer: SEQUENCE BY
+    explanation: SEQUENCE BY is not a SQL keyword; ORDER BY sorts the result set.
+  - answer: RANK BY
+    explanation: RANK is a window function, but ORDER BY is the clause for sorting.
+
+- question: What keyword specifies ascending sort order?
+  reason: Understanding sort direction is basic to controlling result presentation.
+  points: 1
+  right:
+  - answer: ASC
+    explanation: ASC specifies ascending order (default behavior in most systems).
+    links:
+    - https://en.wikipedia.org/wiki/Order_by
+  wrong:
+  - answer: UP
+    explanation: UP is not a SQL keyword; ASC specifies ascending order.
+  - answer: ASCENDING
+    explanation: While logical, the abbreviation ASC is the standard keyword, not ASCENDING.
+  - answer: FORWARD
+    explanation: FORWARD is not a SQL sort keyword; ASC is correct.
+  - answer: INCREASE
+    explanation: INCREASE is not a SQL keyword; ASC specifies ascending order.
+  - answer: RISE
+    explanation: RISE is not a SQL keyword; ASC is used for ascending order.
+
+- question: What keyword specifies descending sort order?
+  reason: Descending sorts are frequently needed for finding top values or recent records.
+  points: 1
+  right:
+  - answer: DESC
+    explanation: DESC specifies descending order (highest to lowest).
+    links:
+    - https://en.wikipedia.org/wiki/Order_by
+  wrong:
+  - answer: DOWN
+    explanation: DOWN is not a SQL keyword; DESC specifies descending order.
+  - answer: DESCENDING
+    explanation: While logical, the abbreviation DESC is the standard keyword, not DESCENDING.
+  - answer: REVERSE
+    explanation: REVERSE is not a standard SQL sort keyword; DESC is correct.
+  - answer: DECREASE
+    explanation: DECREASE is not a SQL keyword; DESC specifies descending order.
+  - answer: BACKWARD
+    explanation: BACKWARD is not a SQL keyword; DESC is used for descending order.
+
+- question: What clause groups rows that have the same values?
+  reason: GROUP BY is essential for aggregating data and creating summary reports.
+  points: 2
+  right:
+  - answer: GROUP BY
+    explanation: GROUP BY groups rows with the same values in specified columns for aggregate operations.
+    links:
+    - https://en.wikipedia.org/wiki/Group_by_(SQL)
+  wrong:
+  - answer: COMBINE BY
+    explanation: COMBINE BY is not a SQL keyword; GROUP BY is correct.
+  - answer: AGGREGATE BY
+    explanation: AGGREGATE BY is not a SQL keyword; GROUP BY groups rows for aggregation.
+  - answer: CLUSTER BY
+    explanation: CLUSTER BY exists in some SQL dialects for different purposes, but GROUP BY is the standard for grouping.
+  - answer: COLLECT BY
+    explanation: COLLECT BY is not a SQL keyword; GROUP BY is the correct clause.
+  - answer: MERGE BY
+    explanation: MERGE is a different SQL statement; GROUP BY groups rows.
+
+- question: Which clause filters groups after GROUP BY?
+  reason: Understanding HAVING vs WHERE is important for writing correct aggregate queries.
+  points: 2
+  right:
+  - answer: HAVING
+    explanation: HAVING filters groups after aggregation, while WHERE filters rows before grouping.
+    links:
+    - https://en.wikipedia.org/wiki/Having_(SQL)
+  wrong:
+  - answer: WHERE
+    explanation: WHERE filters individual rows before grouping, not groups after aggregation.
+  - answer: FILTER
+    explanation: FILTER is used differently in SQL; HAVING filters groups after GROUP BY.
+  - answer: GROUP WHERE
+    explanation: GROUP WHERE is not valid SQL syntax; HAVING is the correct clause.
+  - answer: IF
+    explanation: IF is not used for filtering groups; HAVING is the correct clause.
+  - answer: WHEN
+    explanation: WHEN is part of CASE expressions; HAVING filters groups.
+
+- question: What function counts the number of rows?
+  reason: COUNT is one of the most frequently used aggregate functions in data analysis.
+  points: 1
+  right:
+  - answer: COUNT
+    explanation: COUNT returns the number of rows that match specified criteria.
+    links:
+    - https://en.wikipedia.org/wiki/Count_(SQL)
+  wrong:
+  - answer: NUMBER
+    explanation: NUMBER is not a SQL aggregate function; COUNT is correct.
+  - answer: TOTAL
+    explanation: TOTAL is not a standard SQL function; COUNT counts rows.
+  - answer: ROWS
+    explanation: ROWS is not a function; COUNT is used to count rows.
+  - answer: SIZE
+    explanation: SIZE is not a SQL aggregate function; COUNT is correct.
+  - answer: QUANTITY
+    explanation: QUANTITY is not a SQL function; COUNT counts rows.
+
+- question: What function calculates the sum of values?
+  reason: SUM is essential for totaling numeric data in reports and analysis.
+  points: 1
+  right:
+  - answer: SUM
+    explanation: SUM calculates the total of numeric values in a column.
+    links:
+    - https://en.wikipedia.org/wiki/Aggregate_function
+  wrong:
+  - answer: TOTAL
+    explanation: TOTAL is not a standard SQL function; SUM is correct.
+  - answer: ADD
+    explanation: ADD is not a SQL aggregate function; SUM calculates totals.
+  - answer: PLUS
+    explanation: PLUS is not a SQL function; SUM calculates the sum of values.
+  - answer: ADDITION
+    explanation: ADDITION is not a SQL function; SUM is the correct aggregate function.
+  - answer: ACCUMULATE
+    explanation: ACCUMULATE is not a SQL function; SUM calculates totals.
+
+- question: What function calculates the average of values?
+  reason: AVG is commonly used for statistical analysis and reporting in business contexts.
+  points: 1
+  right:
+  - answer: AVG
+    explanation: AVG calculates the arithmetic mean of numeric values in a column.
+    links:
+    - https://en.wikipedia.org/wiki/Aggregate_function
+  wrong:
+  - answer: AVERAGE
+    explanation: While logical, the abbreviation AVG is the standard function name, not AVERAGE.
+  - answer: MEAN
+    explanation: MEAN is not a standard SQL function; AVG is correct.
+  - answer: MEDIAN
+    explanation: MEDIAN is a different statistical measure; AVG calculates the arithmetic mean.
+  - answer: CENTER
+    explanation: CENTER is not a SQL function; AVG calculates averages.
+  - answer: MIDDLE
+    explanation: MIDDLE is not a SQL function; AVG calculates the average.
+
+- question: What function finds the maximum value?
+  reason: MAX is frequently needed for finding highest values in business and technical contexts.
+  points: 1
+  right:
+  - answer: MAX
+    explanation: MAX returns the highest value in a column.
+    links:
+    - https://en.wikipedia.org/wiki/Aggregate_function
+  wrong:
+  - answer: MAXIMUM
+    explanation: While logical, the abbreviation MAX is the standard function name, not MAXIMUM.
+  - answer: HIGHEST
+    explanation: HIGHEST is not a SQL function; MAX finds the maximum value.
+  - answer: TOP
+    explanation: TOP is used differently in some SQL dialects; MAX finds the maximum value.
+  - answer: GREATEST
+    explanation: GREATEST compares multiple expressions; MAX is an aggregate function for finding the maximum in a column.
+  - answer: LARGEST
+    explanation: LARGEST is not a SQL function; MAX finds the maximum value.
+
+- question: What function finds the minimum value?
+  reason: MIN is used alongside MAX for range analysis and validation.
+  points: 1
+  right:
+  - answer: MIN
+    explanation: MIN returns the lowest value in a column.
+    links:
+    - https://en.wikipedia.org/wiki/Aggregate_function
+  wrong:
+  - answer: MINIMUM
+    explanation: While logical, the abbreviation MIN is the standard function name, not MINIMUM.
+  - answer: LOWEST
+    explanation: LOWEST is not a SQL function; MIN finds the minimum value.
+  - answer: BOTTOM
+    explanation: BOTTOM is not a SQL function; MIN finds the minimum value.
+  - answer: LEAST
+    explanation: LEAST compares multiple expressions; MIN is an aggregate function for finding the minimum in a column.
+  - answer: SMALLEST
+    explanation: SMALLEST is not a SQL function; MIN finds the minimum value.
+
+- question: What wildcard character represents any sequence of characters in LIKE patterns?
+  reason: Wildcards are essential for flexible text searching in WHERE clauses.
+  points: 1
+  right:
+  - answer: "%"
+    explanation: The percent sign (%) matches zero or more characters in LIKE patterns.
+    links:
+    - https://en.wikipedia.org/wiki/SQL_syntax#LIKE
+  wrong:
+  - answer: "*"
+    explanation: Asterisk is used in some systems, but % is the SQL standard wildcard.
+  - answer: "?"
+    explanation: Question mark is not the SQL standard for any sequence; % is correct.
+  - answer: "#"
+    explanation: Hash is not a SQL wildcard character; % matches any sequence.
+  - answer: "&amp;"
+    explanation: Ampersand is not a SQL wildcard; % represents any sequence of characters.
+  - answer: "@"
+    explanation: At sign is not a SQL wildcard; % is the correct wildcard.
+
+- question: What wildcard character represents a single character in LIKE patterns?
+  reason: Single-character wildcards enable precise pattern matching for data validation.
+  points: 1
+  right:
+  - answer: "_"
+    explanation: The underscore (_) matches exactly one character in LIKE patterns.
+    links:
+    - https://en.wikipedia.org/wiki/SQL_syntax#LIKE
+  wrong:
+  - answer: "?"
+    explanation: Question mark is used in some systems, but _ is the SQL standard.
+  - answer: "."
+    explanation: Period is not the SQL standard single-character wildcard; _ is correct.
+  - answer: "#"
+    explanation: Hash is not a SQL wildcard; _ represents a single character.
+  - answer: "*"
+    explanation: Asterisk is not the single-character wildcard; _ is correct.
+  - answer: "^"
+    explanation: Caret is not a SQL wildcard character; _ matches a single character.
+
+- question: What keyword is used to test for NULL values?
+  reason: NULL handling is critical since NULL represents missing or unknown data differently than empty strings or zeros.
+  points: 2
+  right:
+  - answer: IS NULL
+    explanation: IS NULL tests whether a value is NULL; you cannot use = NULL.
+    links:
+    - https://en.wikipedia.org/wiki/Null_(SQL)
+  wrong:
+  - answer: "= NULL"
+    explanation: Using = NULL does not work correctly; IS NULL is the proper syntax.
+  - answer: EQUALS NULL
+    explanation: EQUALS NULL is not valid SQL syntax; IS NULL is correct.
+  - answer: NULL
+    explanation: NULL alone is not a comparison operator; IS NULL tests for NULL values.
+  - answer: HAS NULL
+    explanation: HAS NULL is not valid SQL syntax; IS NULL is correct.
+  - answer: CONTAINS NULL
+    explanation: CONTAINS NULL is not valid SQL syntax; IS NULL tests for NULL values.
+
+- question: What keyword is used to test for non-NULL values?
+  reason: Testing for existing data is as important as testing for missing data in validation logic.
+  points: 2
+  right:
+  - answer: IS NOT NULL
+    explanation: IS NOT NULL tests whether a value is not NULL.
+    links:
+    - https://en.wikipedia.org/wiki/Null_(SQL)
+  wrong:
+  - answer: "&lt;&gt; NULL"
+    explanation: Using &lt;&gt; NULL does not work correctly; IS NOT NULL is the proper syntax.
+  - answer: NOT NULL
+    explanation: NOT NULL is a constraint when creating columns, but IS NOT NULL tests values.
+  - answer: "!= NULL"
+    explanation: Using != NULL does not work correctly; IS NOT NULL is the proper syntax.
+  - answer: HAS VALUE
+    explanation: HAS VALUE is not valid SQL syntax; IS NOT NULL is correct.
+  - answer: EXISTS
+    explanation: EXISTS is used for subqueries, not for testing NULL values; IS NOT NULL is correct.
+
+- question: What clause combines multiple tables in a query?
+  reason: JOINs are fundamental for working with normalized relational databases in any real-world application.
+  points: 2
+  right:
+  - answer: JOIN
+    explanation: JOIN combines rows from two or more tables based on related columns.
+    links:
+    - https://en.wikipedia.org/wiki/Join_(SQL)
+  wrong:
+  - answer: MERGE
+    explanation: MERGE is a different SQL statement for upsert operations; JOIN combines tables.
+  - answer: COMBINE
+    explanation: COMBINE is not a SQL keyword; JOIN combines tables.
+  - answer: CONNECT
+    explanation: CONNECT is used in hierarchical queries in some dialects, but JOIN combines tables.
+  - answer: LINK
+    explanation: LINK is not a SQL keyword; JOIN combines tables in queries.
+  - answer: ATTACH
+    explanation: ATTACH is not a standard SQL keyword for combining tables; JOIN is correct.
+
+- question: What type of JOIN returns all rows from the left table and matching rows from the right table?
+  reason: LEFT JOINs are commonly used to include all records from a primary table with optional related data.
+  points: 2
+  right:
+  - answer: LEFT JOIN (or LEFT OUTER JOIN)
+    explanation: LEFT JOIN returns all rows from the left table and matching rows from the right; non-matching right rows appear as NULL.
+    links:
+    - https://en.wikipedia.org/wiki/Join_(SQL)#Left_outer_join
+  wrong:
+  - answer: RIGHT JOIN
+    explanation: RIGHT JOIN returns all rows from the right table, not the left.
+  - answer: INNER JOIN
+    explanation: INNER JOIN only returns matching rows from both tables, not all left rows.
+  - answer: FULL JOIN
+    explanation: FULL JOIN returns all rows from both tables, not just all from the left.
+  - answer: CROSS JOIN
+    explanation: CROSS JOIN returns the cartesian product of both tables, not all left rows with matches.
+  - answer: OUTER JOIN
+    explanation: OUTER JOIN alone is ambiguous; LEFT OUTER JOIN is the specific type needed.
+
+- question: What type of JOIN returns only rows where there is a match in both tables?
+  reason: INNER JOINs are the most common type and understanding them is essential for basic data retrieval.
+  points: 2
+  right:
+  - answer: INNER JOIN
+    explanation: INNER JOIN returns only rows where there is a match in both tables.
+    links:
+    - https://en.wikipedia.org/wiki/Join_(SQL)#Inner_join
+  wrong:
+  - answer: LEFT JOIN
+    explanation: LEFT JOIN returns all left rows plus matches, not only matching rows.
+  - answer: RIGHT JOIN
+    explanation: RIGHT JOIN returns all right rows plus matches, not only matching rows.
+  - answer: FULL JOIN
+    explanation: FULL JOIN returns all rows from both tables, including non-matching rows.
+  - answer: CROSS JOIN
+    explanation: CROSS JOIN returns the cartesian product, not just matching rows.
+  - answer: MATCHED JOIN
+    explanation: MATCHED JOIN is not a SQL keyword; INNER JOIN returns matching rows.
+
+- question: What type of JOIN returns all rows from both tables?
+  reason: FULL JOINs are useful for finding all data including unmatched records from either table.
+  points: 2
+  right:
+  - answer: FULL JOIN (or FULL OUTER JOIN)
+    explanation: FULL JOIN returns all rows from both tables, with NULLs where there are no matches.
+    links:
+    - https://en.wikipedia.org/wiki/Join_(SQL)#Full_outer_join
+  wrong:
+  - answer: COMPLETE JOIN
+    explanation: COMPLETE JOIN is not a SQL keyword; FULL OUTER JOIN is correct.
+  - answer: TOTAL JOIN
+    explanation: TOTAL JOIN is not a SQL keyword; FULL JOIN returns all rows from both tables.
+  - answer: ALL JOIN
+    explanation: ALL JOIN is not a SQL keyword; FULL OUTER JOIN is correct.
+  - answer: INNER JOIN
+    explanation: INNER JOIN only returns matching rows, not all rows from both tables.
+  - answer: DOUBLE JOIN
+    explanation: DOUBLE JOIN is not a SQL keyword; FULL JOIN returns all rows from both tables.
+
+- question: What clause specifies the join condition?
+  reason: The ON clause defines the relationship between tables, critical for correct JOIN results.
+  points: 2
+  right:
+  - answer: ON
+    explanation: ON specifies the condition that determines how tables are joined.
+    links:
+    - https://en.wikipedia.org/wiki/Join_(SQL)
+  wrong:
+  - answer: WHERE
+    explanation: WHERE can filter joined results but ON specifies the join condition itself.
+  - answer: USING
+    explanation: USING is an alternative syntax when join columns have the same name, but ON is more general.
+  - answer: WITH
+    explanation: WITH is used for common table expressions, not join conditions.
+  - answer: BY
+    explanation: BY is not used for join conditions; ON is correct.
+  - answer: WHEN
+    explanation: WHEN is used in CASE expressions, not for join conditions.
+
+- question: What operator combines the results of two or more SELECT statements?
+  reason: UNION is important for combining data from multiple sources or queries.
+  points: 2
+  right:
+  - answer: UNION
+    explanation: UNION combines the results of multiple SELECT statements and removes duplicates by default.
+    links:
+    - https://en.wikipedia.org/wiki/Set_operations_(SQL)#UNION
+  wrong:
+  - answer: COMBINE
+    explanation: COMBINE is not a SQL operator; UNION combines SELECT results.
+  - answer: MERGE
+    explanation: MERGE is a different statement for upsert operations; UNION combines SELECT results.
+  - answer: JOIN
+    explanation: JOIN combines tables horizontally (columns); UNION combines queries vertically (rows).
+  - answer: APPEND
+    explanation: APPEND is not a SQL operator; UNION combines SELECT results.
+  - answer: CONCAT
+    explanation: CONCAT is a string function; UNION combines SELECT statement results.
+
+- question: What variant of UNION includes duplicate rows?
+  reason: Understanding UNION ALL prevents unintended duplicate removal and improves query performance.
+  points: 2
+  right:
+  - answer: UNION ALL
+    explanation: UNION ALL combines results without removing duplicates, which is faster than UNION.
+    links:
+    - https://en.wikipedia.org/wiki/Set_operations_(SQL)#UNION
+  wrong:
+  - answer: UNION DUPLICATE
+    explanation: UNION DUPLICATE is not valid SQL syntax; UNION ALL includes duplicates.
+  - answer: UNION KEEP
+    explanation: UNION KEEP is not valid SQL syntax; UNION ALL includes duplicates.
+  - answer: UNION WITH DUPLICATES
+    explanation: UNION WITH DUPLICATES is not valid SQL syntax; UNION ALL is correct.
+  - answer: FULL UNION
+    explanation: FULL UNION is not valid SQL syntax; UNION ALL includes duplicates.
+  - answer: UNION COMPLETE
+    explanation: UNION COMPLETE is not valid SQL syntax; UNION ALL includes duplicates.
+
+- question: What statement creates a new table?
+  reason: CREATE TABLE is fundamental for defining database structure in any database project.
+  points: 2
+  right:
+  - answer: CREATE TABLE
+    explanation: CREATE TABLE defines a new table with specified columns and data types.
+    links:
+    - https://en.wikipedia.org/wiki/Create_(SQL)
+  wrong:
+  - answer: MAKE TABLE
+    explanation: MAKE TABLE is not valid SQL syntax; CREATE TABLE is correct.
+  - answer: NEW TABLE
+    explanation: NEW TABLE is not valid SQL syntax; CREATE TABLE is correct.
+  - answer: BUILD TABLE
+    explanation: BUILD TABLE is not valid SQL syntax; CREATE TABLE is correct.
+  - answer: ADD TABLE
+    explanation: ADD TABLE is not valid SQL syntax; CREATE TABLE is correct.
+  - answer: INSERT TABLE
+    explanation: INSERT adds rows to a table; CREATE TABLE creates a new table.
+
+- question: What statement removes a table from the database?
+  reason: DROP TABLE is powerful and potentially destructive, important to understand before working with production databases.
+  points: 2
+  right:
+  - answer: DROP TABLE
+    explanation: DROP TABLE permanently removes a table and all its data from the database.
+    links:
+    - https://en.wikipedia.org/wiki/Data_definition_language#DROP
+  wrong:
+  - answer: DELETE TABLE
+    explanation: DELETE removes rows from a table; DROP TABLE removes the entire table structure.
+  - answer: REMOVE TABLE
+    explanation: REMOVE TABLE is not valid SQL syntax; DROP TABLE is correct.
+  - answer: DESTROY TABLE
+    explanation: DESTROY TABLE is not valid SQL syntax; DROP TABLE is correct.
+  - answer: ERASE TABLE
+    explanation: ERASE TABLE is not valid SQL syntax; DROP TABLE removes tables.
+  - answer: CLEAR TABLE
+    explanation: CLEAR TABLE is not valid SQL syntax; DROP TABLE removes tables.
+
+- question: What statement modifies the structure of an existing table?
+  reason: ALTER TABLE is essential for maintaining and evolving database schemas over time.
+  points: 2
+  right:
+  - answer: ALTER TABLE
+    explanation: ALTER TABLE changes the structure of an existing table (add/drop columns, modify constraints, etc.).
+    links:
+    - https://en.wikipedia.org/wiki/Alter_(SQL)
+  wrong:
+  - answer: MODIFY TABLE
+    explanation: MODIFY is sometimes used within ALTER TABLE, but ALTER TABLE is the statement.
+  - answer: CHANGE TABLE
+    explanation: CHANGE TABLE is not valid SQL syntax; ALTER TABLE is correct.
+  - answer: UPDATE TABLE
+    explanation: UPDATE changes data in rows; ALTER TABLE changes table structure.
+  - answer: EDIT TABLE
+    explanation: EDIT TABLE is not valid SQL syntax; ALTER TABLE modifies table structure.
+  - answer: RESHAPE TABLE
+    explanation: RESHAPE TABLE is not valid SQL syntax; ALTER TABLE changes table structure.
+
+- question: What constraint ensures that a column cannot contain NULL values?
+  reason: NOT NULL is one of the most common constraints for ensuring data integrity.
+  points: 2
+  right:
+  - answer: NOT NULL
+    explanation: NOT NULL constraint requires that a column always contains a value.
+    links:
+    - https://en.wikipedia.org/wiki/Unique_key#NOT_NULL
+  wrong:
+  - answer: REQUIRED
+    explanation: REQUIRED is not a SQL constraint; NOT NULL enforces non-null values.
+  - answer: MANDATORY
+    explanation: MANDATORY is not a SQL constraint; NOT NULL is correct.
+  - answer: MUST EXIST
+    explanation: MUST EXIST is not a SQL constraint; NOT NULL enforces non-null values.
+  - answer: NO NULL
+    explanation: NO NULL is not valid SQL syntax; NOT NULL is the correct constraint.
+  - answer: FILLED
+    explanation: FILLED is not a SQL constraint; NOT NULL ensures columns have values.
+
+- question: What constraint ensures that all values in a column are unique?
+  reason: UNIQUE constraints prevent duplicate data, important for business rules and data quality.
+  points: 2
+  right:
+  - answer: UNIQUE
+    explanation: UNIQUE constraint ensures all values in a column (or combination of columns) are different.
+    links:
+    - https://en.wikipedia.org/wiki/Unique_key
+  wrong:
+  - answer: DISTINCT
+    explanation: DISTINCT is used in queries to remove duplicates; UNIQUE is a constraint.
+  - answer: DIFFERENT
+    explanation: DIFFERENT is not a SQL constraint; UNIQUE ensures uniqueness.
+  - answer: NO DUPLICATES
+    explanation: NO DUPLICATES is not valid SQL syntax; UNIQUE is the correct constraint.
+  - answer: SINGLE
+    explanation: SINGLE is not a SQL constraint; UNIQUE prevents duplicate values.
+  - answer: EXCLUSIVE
+    explanation: EXCLUSIVE is not a SQL constraint; UNIQUE ensures all values are unique.
+
+- question: What constraint uniquely identifies each row in a table?
+  reason: PRIMARY KEY is fundamental to relational database design and table relationships.
+  points: 2
+  right:
+  - answer: PRIMARY KEY
+    explanation: PRIMARY KEY uniquely identifies each row and automatically enforces NOT NULL and UNIQUE.
+    links:
+    - https://en.wikipedia.org/wiki/Primary_key
+  wrong:
+  - answer: UNIQUE KEY
+    explanation: UNIQUE KEY ensures uniqueness but allows NULLs; PRIMARY KEY is the unique row identifier.
+  - answer: IDENTIFIER
+    explanation: IDENTIFIER is not a SQL constraint; PRIMARY KEY identifies rows uniquely.
+  - answer: MAIN KEY
+    explanation: MAIN KEY is not valid SQL syntax; PRIMARY KEY is correct.
+  - answer: ROW ID
+    explanation: ROW ID might exist as an implicit column in some systems, but PRIMARY KEY is the constraint.
+  - answer: MASTER KEY
+    explanation: MASTER KEY is not a SQL constraint; PRIMARY KEY uniquely identifies rows.
+
+- question: What constraint creates a relationship between tables?
+  reason: FOREIGN KEY constraints enforce referential integrity, crucial for maintaining data consistency across tables.
+  points: 2
+  right:
+  - answer: FOREIGN KEY
+    explanation: FOREIGN KEY creates a link between tables by referencing the PRIMARY KEY of another table.
+    links:
+    - https://en.wikipedia.org/wiki/Foreign_key
+  wrong:
+  - answer: REFERENCE KEY
+    explanation: REFERENCE KEY is not the correct term; FOREIGN KEY creates relationships.
+  - answer: LINK KEY
+    explanation: LINK KEY is not a SQL constraint; FOREIGN KEY creates table relationships.
+  - answer: RELATION KEY
+    explanation: RELATION KEY is not valid SQL syntax; FOREIGN KEY is correct.
+  - answer: SECONDARY KEY
+    explanation: SECONDARY KEY is not a SQL term; FOREIGN KEY references other tables.
+  - answer: EXTERNAL KEY
+    explanation: EXTERNAL KEY is not valid SQL syntax; FOREIGN KEY creates relationships.
+
+- question: What constraint limits the values that can be placed in a column?
+  reason: CHECK constraints enforce business rules at the database level, ensuring data validity.
+  points: 2
+  right:
+  - answer: CHECK
+    explanation: CHECK constraint specifies a condition that values in a column must satisfy.
+    links:
+    - https://en.wikipedia.org/wiki/Check_constraint
+  wrong:
+  - answer: VALIDATE
+    explanation: VALIDATE is not a SQL constraint; CHECK limits column values.
+  - answer: RESTRICT
+    explanation: RESTRICT is used in foreign key actions, not as a column value constraint.
+  - answer: LIMIT
+    explanation: LIMIT is used in queries to restrict rows returned; CHECK constrains column values.
+  - answer: CONDITION
+    explanation: CONDITION is not a SQL constraint; CHECK enforces value conditions.
+  - answer: RULE
+    explanation: RULE exists in some SQL systems but CHECK is the standard constraint for value validation.
+
+- question: What provides a default value for a column when no value is specified?
+  reason: DEFAULT values improve data entry efficiency and ensure consistent data.
+  points: 2
+  right:
+  - answer: DEFAULT
+    explanation: DEFAULT specifies a value to use when no value is provided during INSERT.
+    links:
+    - https://en.wikipedia.org/wiki/Default_(SQL)
+  wrong:
+  - answer: INITIAL
+    explanation: INITIAL is not a SQL keyword for default values; DEFAULT is correct.
+  - answer: PRESET
+    explanation: PRESET is not a SQL keyword; DEFAULT provides default values.
+  - answer: AUTOMATIC
+    explanation: AUTOMATIC is not a SQL keyword; DEFAULT specifies default values.
+  - answer: STANDARD
+    explanation: STANDARD is not a SQL keyword; DEFAULT provides default column values.
+  - answer: FALLBACK
+    explanation: FALLBACK is not a SQL keyword; DEFAULT specifies default values.
+
+- question: What keyword automatically generates unique numeric values for new rows?
+  reason: Auto-incrementing columns are commonly used for primary keys in many database systems.
+  points: 2
+  right:
+  - answer: IDENTITY or AUTO_INCREMENT or SERIAL (depending on SQL dialect, but IDENTITY is SQL standard)
+    explanation: IDENTITY generates sequential unique numbers automatically; implementation varies by database system.
+    links:
+    - https://en.wikipedia.org/wiki/Surrogate_key
+  wrong:
+  - answer: AUTOMATIC
+    explanation: AUTOMATIC is not a SQL keyword for auto-incrementing; IDENTITY is the standard.
+  - answer: SEQUENCE
+    explanation: SEQUENCE is a separate database object in standard SQL, not a column property.
+  - answer: INCREMENT
+    explanation: INCREMENT alone is not valid syntax; IDENTITY or AUTO_INCREMENT is used.
+  - answer: AUTONUMBER
+    explanation: AUTONUMBER is used in some systems like Access, but IDENTITY is the SQL standard.
+  - answer: GENERATE
+    explanation: GENERATED is part of syntax in some contexts, but IDENTITY is the standard for auto-increment.
+
+- question: What data type stores whole numbers?
+  reason: Understanding numeric types is fundamental for proper column definition and storage.
+  points: 1
+  right:
+  - answer: INTEGER (or INT)
+    explanation: INTEGER stores whole numbers without decimal points.
+    links:
+    - https://en.wikipedia.org/wiki/SQL#Data_types
+  wrong:
+  - answer: NUMBER
+    explanation: NUMBER is used in some databases but INTEGER or INT is more standard.
+  - answer: WHOLE
+    explanation: WHOLE is not a SQL data type; INTEGER stores whole numbers.
+  - answer: DIGIT
+    explanation: DIGIT is not a SQL data type; INTEGER is correct.
+  - answer: NUMERIC
+    explanation: NUMERIC typically allows decimal places; INTEGER is for whole numbers specifically.
+  - answer: COUNT
+    explanation: COUNT is a function, not a data type; INTEGER stores whole numbers.
+
+- question: What data type stores decimal numbers?
+  reason: Decimal types are critical for financial calculations where precision matters.
+  points: 1
+  right:
+  - answer: DECIMAL or NUMERIC
+    explanation: DECIMAL/NUMERIC stores exact decimal numbers with specified precision and scale.
+    links:
+    - https://en.wikipedia.org/wiki/SQL#Data_types
+  wrong:
+  - answer: FLOAT
+    explanation: FLOAT stores approximate decimal numbers; DECIMAL stores exact decimal values.
+  - answer: REAL
+    explanation: REAL is an approximate numeric type; DECIMAL is exact.
+  - answer: NUMBER
+    explanation: NUMBER is used in some databases but DECIMAL/NUMERIC is more standard.
+  - answer: FRACTIONAL
+    explanation: FRACTIONAL is not a SQL data type; DECIMAL stores decimal numbers.
+  - answer: POINT
+    explanation: POINT is not a SQL data type for decimals; DECIMAL is correct.
+
+- question: What data type stores fixed-length character strings?
+  reason: CHAR is important for storing codes and identifiers that have consistent length.
+  points: 2
+  right:
+  - answer: CHAR or CHARACTER
+    explanation: CHAR stores fixed-length character strings, padding with spaces if needed.
+    links:
+    - https://en.wikipedia.org/wiki/SQL#Data_types
+  wrong:
+  - answer: STRING
+    explanation: STRING is not a standard SQL data type; CHAR is correct for fixed-length.
+  - answer: FIXED
+    explanation: FIXED is not a SQL data type; CHAR stores fixed-length strings.
+  - answer: TEXT
+    explanation: TEXT typically stores variable-length or large strings; CHAR is fixed-length.
+  - answer: FIXEDCHAR
+    explanation: FIXEDCHAR is not standard SQL syntax; CHAR is correct.
+  - answer: STATIC
+    explanation: STATIC is not a SQL data type; CHAR stores fixed-length character strings.
+
+- question: What data type stores variable-length character strings?
+  reason: VARCHAR is the most commonly used string type for efficient storage of text data.
+  points: 2
+  right:
+  - answer: VARCHAR or CHARACTER VARYING
+    explanation: VARCHAR stores variable-length character strings up to a specified maximum length.
+    links:
+    - https://en.wikipedia.org/wiki/SQL#Data_types
+  wrong:
+  - answer: STRING
+    explanation: STRING is not a standard SQL data type; VARCHAR is correct.
+  - answer: TEXT
+    explanation: TEXT typically stores very large strings; VARCHAR is for variable-length with a limit.
+  - answer: VARTEXT
+    explanation: VARTEXT is not a standard SQL data type; VARCHAR is correct.
+  - answer: VARIABLE
+    explanation: VARIABLE is not a SQL data type; VARCHAR stores variable-length strings.
+  - answer: DYNAMIC
+    explanation: DYNAMIC is not a SQL data type; VARCHAR stores variable-length character strings.
+
+- question: What data type stores date values?
+  reason: DATE type is essential for working with dates in business applications.
+  points: 1
+  right:
+  - answer: DATE
+    explanation: DATE stores calendar dates (year, month, day) without time information.
+    links:
+    - https://en.wikipedia.org/wiki/SQL#Data_types
+  wrong:
+  - answer: DATETIME
+    explanation: DATETIME stores both date and time; DATE stores only the date.
+  - answer: CALENDAR
+    explanation: CALENDAR is not a SQL data type; DATE stores date values.
+  - answer: DAY
+    explanation: DAY is not a SQL data type; DATE stores complete date values.
+  - answer: DATEVALUE
+    explanation: DATEVALUE is not a standard SQL data type; DATE is correct.
+  - answer: TIME
+    explanation: TIME stores time of day only; DATE stores calendar dates.
+
+- question: What data type stores time values?
+  reason: TIME type is important for scheduling and time-based calculations.
+  points: 1
+  right:
+  - answer: TIME
+    explanation: TIME stores time of day (hours, minutes, seconds) without date information.
+    links:
+    - https://en.wikipedia.org/wiki/SQL#Data_types
+  wrong:
+  - answer: CLOCK
+    explanation: CLOCK is not a SQL data type; TIME stores time values.
+  - answer: HOUR
+    explanation: HOUR is not a SQL data type; TIME stores complete time values.
+  - answer: DURATION
+    explanation: DURATION is not a standard SQL data type; TIME stores time of day.
+  - answer: TIMEVALUE
+    explanation: TIMEVALUE is not a standard SQL data type; TIME is correct.
+  - answer: DATETIME
+    explanation: DATETIME stores both date and time; TIME stores only time of day.
+
+- question: What data type stores both date and time?
+  reason: TIMESTAMP is critical for recording when events occur in applications.
+  points: 2
+  right:
+  - answer: TIMESTAMP or DATETIME
+    explanation: TIMESTAMP stores both date and time information, often including time zone.
+    links:
+    - https://en.wikipedia.org/wiki/SQL#Data_types
+  wrong:
+  - answer: DATETIME2
+    explanation: DATETIME2 is specific to some databases; TIMESTAMP is more standard.
+  - answer: FULLDATETIME
+    explanation: FULLDATETIME is not a standard SQL data type; TIMESTAMP is correct.
+  - answer: DATEANDTIME
+    explanation: DATEANDTIME is not valid SQL syntax; TIMESTAMP or DATETIME is correct.
+  - answer: MOMENT
+    explanation: MOMENT is not a SQL data type; TIMESTAMP stores date and time.
+  - answer: INSTANT
+    explanation: INSTANT is not a SQL data type; TIMESTAMP stores date and time values.
+
+- question: What data type stores true/false values?
+  reason: BOOLEAN type is important for storing binary state and logical conditions.
+  points: 2
+  right:
+  - answer: BOOLEAN
+    explanation: BOOLEAN stores true or false values (some systems use BIT or TINYINT instead).
+    links:
+    - https://en.wikipedia.org/wiki/SQL#Data_types
+  wrong:
+  - answer: BIT
+    explanation: BIT is used in some databases for boolean values, but BOOLEAN is the SQL standard.
+  - answer: LOGICAL
+    explanation: LOGICAL is not a SQL data type; BOOLEAN stores true/false values.
+  - answer: TRUEFALSE
+    explanation: TRUEFALSE is not a SQL data type; BOOLEAN is correct.
+  - answer: BINARY
+    explanation: BINARY stores binary data; BOOLEAN stores true/false values.
+  - answer: FLAG
+    explanation: FLAG is not a SQL data type; BOOLEAN stores boolean values.
+
+- question: What data type stores large text data?
+  reason: TEXT/CLOB types are needed for storing documents, descriptions, and long-form content.
+  points: 2
+  right:
+  - answer: TEXT or CLOB (Character Large Object)
+    explanation: TEXT/CLOB stores very large character strings beyond VARCHAR limits.
+    links:
+    - https://en.wikipedia.org/wiki/SQL#Data_types
+  wrong:
+  - answer: LONGTEXT
+    explanation: LONGTEXT is used in some databases but TEXT or CLOB is more standard.
+  - answer: BIGTEXT
+    explanation: BIGTEXT is not a standard SQL data type; TEXT or CLOB is correct.
+  - answer: MEMO
+    explanation: MEMO is used in some databases like Access, but TEXT/CLOB is more standard.
+  - answer: DOCUMENT
+    explanation: DOCUMENT is not a SQL data type; TEXT or CLOB stores large text.
+  - answer: VARCHAR(MAX)
+    explanation: VARCHAR(MAX) is specific to some databases; TEXT/CLOB is the standard for large text.
+
+- question: What data type stores binary data like images or files?
+  reason: BLOB types are essential for storing multimedia and document files in databases.
+  points: 2
+  right:
+  - answer: BLOB (Binary Large Object)
+    explanation: BLOB stores large binary data such as images, videos, or files.
+    links:
+    - https://en.wikipedia.org/wiki/SQL#Data_types
+  wrong:
+  - answer: BINARY
+    explanation: BINARY stores fixed-length binary data; BLOB stores large binary objects.
+  - answer: FILE
+    explanation: FILE is not a SQL data type; BLOB stores binary file data.
+  - answer: IMAGE
+    explanation: IMAGE is used in some databases but BLOB is more standard for binary data.
+  - answer: BYTES
+    explanation: BYTES is not a standard SQL data type; BLOB stores binary data.
+  - answer: RAW
+    explanation: RAW is used in some databases but BLOB is the standard for large binary objects.
+
+- question: What function converts a value to uppercase?
+  reason: UPPER is commonly used for case-insensitive comparisons and data standardization.
+  points: 1
+  right:
+  - answer: UPPER
+    explanation: UPPER converts all characters in a string to uppercase.
+    links:
+    - https://en.wikipedia.org/wiki/SQL#String_functions
+  wrong:
+  - answer: UPPERCASE
+    explanation: UPPERCASE is not a standard SQL function; UPPER is correct.
+  - answer: TOUPPER
+    explanation: TOUPPER is not a SQL function; UPPER converts to uppercase.
+  - answer: CAPS
+    explanation: CAPS is not a SQL function; UPPER converts strings to uppercase.
+  - answer: CAPITALIZE
+    explanation: CAPITALIZE is not a SQL function; UPPER converts to uppercase.
+  - answer: UPCASE
+    explanation: UPCASE is not a standard SQL function; UPPER is correct.
+
+- question: What function converts a value to lowercase?
+  reason: LOWER complements UPPER for text normalization and comparison operations.
+  points: 1
+  right:
+  - answer: LOWER
+    explanation: LOWER converts all characters in a string to lowercase.
+    links:
+    - https://en.wikipedia.org/wiki/SQL#String_functions
+  wrong:
+  - answer: LOWERCASE
+    explanation: LOWERCASE is not a standard SQL function; LOWER is correct.
+  - answer: TOLOWER
+    explanation: TOLOWER is not a SQL function; LOWER converts to lowercase.
+  - answer: DOWNCASE
+    explanation: DOWNCASE is not a SQL function; LOWER converts strings to lowercase.
+  - answer: SMALL
+    explanation: SMALL is not a SQL function; LOWER converts to lowercase.
+  - answer: LCASE
+    explanation: LCASE is used in some systems but LOWER is the SQL standard.
+
+- question: What function removes leading and trailing spaces?
+  reason: TRIM is essential for cleaning user input and standardizing text data.
+  points: 2
+  right:
+  - answer: TRIM
+    explanation: TRIM removes spaces (or specified characters) from the beginning and end of a string.
+    links:
+    - https://en.wikipedia.org/wiki/SQL#String_functions
+  wrong:
+  - answer: STRIP
+    explanation: STRIP is not a standard SQL function; TRIM removes spaces.
+  - answer: CLEAN
+    explanation: CLEAN is not a SQL function; TRIM removes leading and trailing spaces.
+  - answer: REMOVE
+    explanation: REMOVE is not a SQL function; TRIM removes spaces from string ends.
+  - answer: CUT
+    explanation: CUT is not a SQL function; TRIM removes leading and trailing spaces.
+  - answer: REDUCE
+    explanation: REDUCE is not a SQL function; TRIM removes spaces.
+
+- question: What function returns the length of a string?
+  reason: LENGTH is frequently used for validation and data quality checks.
+  points: 1
+  right:
+  - answer: LENGTH or CHAR_LENGTH
+    explanation: LENGTH returns the number of characters in a string.
+    links:
+    - https://en.wikipedia.org/wiki/SQL#String_functions
+  wrong:
+  - answer: SIZE
+    explanation: SIZE is not a standard SQL string function; LENGTH is correct.
+  - answer: COUNT
+    explanation: COUNT is an aggregate function for rows; LENGTH measures string length.
+  - answer: LEN
+    explanation: LEN is used in some databases but LENGTH is more standard SQL.
+  - answer: STRLEN
+    explanation: STRLEN is not a SQL function; LENGTH or CHAR_LENGTH is correct.
+  - answer: CHARACTERS
+    explanation: CHARACTERS is not a SQL function; LENGTH returns string length.
+
+- question: What function extracts a portion of a string?
+  reason: SUBSTRING is essential for parsing and manipulating text data.
+  points: 2
+  right:
+  - answer: SUBSTRING or SUBSTR
+    explanation: SUBSTRING extracts a portion of a string from a specified position for a specified length.
+    links:
+    - https://en.wikipedia.org/wiki/SQL#String_functions
+  wrong:
+  - answer: EXTRACT
+    explanation: EXTRACT is used for date/time components; SUBSTRING extracts string portions.
+  - answer: SLICE
+    explanation: SLICE is not a SQL function; SUBSTRING extracts string portions.
+  - answer: MID
+    explanation: MID is used in some systems but SUBSTRING is the SQL standard.
+  - answer: PART
+    explanation: PART is not a SQL function; SUBSTRING extracts string portions.
+  - answer: SECTION
+    explanation: SECTION is not a SQL function; SUBSTRING extracts parts of strings.
+
+- question: What function combines multiple strings together?
+  reason: String concatenation is fundamental for formatting output and creating composite values.
+  points: 2
+  right:
+  - answer: CONCAT or using the || operator
+    explanation: CONCAT combines multiple strings into one; the || operator is also standard SQL for concatenation.
+    links:
+    - https://en.wikipedia.org/wiki/SQL#String_functions
+  wrong:
+  - answer: COMBINE
+    explanation: COMBINE is not a SQL function; CONCAT combines strings.
+  - answer: MERGE
+    explanation: MERGE is a different SQL statement; CONCAT combines strings.
+  - answer: JOIN
+    explanation: JOIN combines tables; CONCAT combines strings.
+  - answer: APPEND
+    explanation: APPEND is not a SQL function; CONCAT combines strings.
+  - answer: ADD
+    explanation: ADD is not a string function; CONCAT or || combines strings.
+
+- question: What function rounds a numeric value to a specified number of decimal places?
+  reason: ROUND is critical for financial calculations and presenting readable numeric results.
+  points: 2
+  right:
+  - answer: ROUND
+    explanation: ROUND rounds a number to a specified number of decimal places.
+    links:
+    - https://en.wikipedia.org/wiki/SQL#Numeric_functions
+  wrong:
+  - answer: DECIMAL
+    explanation: DECIMAL is a data type; ROUND is the function for rounding.
+  - answer: APPROXIMATE
+    explanation: APPROXIMATE is not a SQL function; ROUND rounds numbers.
+  - answer: REDUCE
+    explanation: REDUCE is not a SQL function; ROUND rounds numeric values.
+  - answer: TRIM
+    explanation: TRIM removes spaces from strings; ROUND rounds numbers.
+  - answer: TRUNCATE
+    explanation: TRUNCATE removes decimal places without rounding; ROUND rounds to nearest value.
+
+- question: What function returns the absolute value of a number?
+  reason: ABS is useful for distance calculations and ensuring positive values.
+  points: 2
+  right:
+  - answer: ABS
+    explanation: ABS returns the absolute (positive) value of a number.
+    links:
+    - https://en.wikipedia.org/wiki/SQL#Numeric_functions
+  wrong:
+  - answer: ABSOLUTE
+    explanation: ABSOLUTE is not a SQL function; ABS returns absolute values.
+  - answer: POSITIVE
+    explanation: POSITIVE is not a SQL function; ABS returns absolute values.
+  - answer: MAGNITUDE
+    explanation: MAGNITUDE is not a SQL function; ABS returns absolute values.
+  - answer: UNSIGNED
+    explanation: UNSIGNED is a data type modifier; ABS returns absolute values.
+  - answer: PLUS
+    explanation: PLUS is not a SQL function; ABS returns absolute values.
+
+- question: What function returns the current date?
+  reason: CURRENT_DATE is frequently used for timestamping records and date-based calculations.
+  points: 2
+  right:
+  - answer: CURRENT_DATE
+    explanation: CURRENT_DATE returns the current date from the database server.
+    links:
+    - https://en.wikipedia.org/wiki/SQL#Date_and_time_functions
+  wrong:
+  - answer: TODAY
+    explanation: TODAY is not a standard SQL function; CURRENT_DATE is correct.
+  - answer: NOW
+    explanation: NOW typically returns date and time; CURRENT_DATE returns only the date.
+  - answer: GETDATE
+    explanation: GETDATE is used in some databases but CURRENT_DATE is the SQL standard.
+  - answer: DATE
+    explanation: DATE can be a data type or function to extract date, but CURRENT_DATE returns current date.
+  - answer: SYSDATE
+    explanation: SYSDATE is used in some databases but CURRENT_DATE is more standard SQL.
+
+- question: What function returns the current time?
+  reason: CURRENT_TIME is used for recording timestamps and time-based operations.
+  points: 2
+  right:
+  - answer: CURRENT_TIME
+    explanation: CURRENT_TIME returns the current time from the database server.
+    links:
+    - https://en.wikipedia.org/wiki/SQL#Date_and_time_functions
+  wrong:
+  - answer: NOW
+    explanation: NOW typically returns date and time together; CURRENT_TIME returns only time.
+  - answer: TIMEOFDAY
+    explanation: TIMEOFDAY is not a standard SQL function; CURRENT_TIME is correct.
+  - answer: GETTIME
+    explanation: GETTIME is not a standard SQL function; CURRENT_TIME is correct.
+  - answer: CLOCK
+    explanation: CLOCK is not a SQL function; CURRENT_TIME returns current time.
+  - answer: SYSTIME
+    explanation: SYSTIME is not a standard SQL function; CURRENT_TIME is correct.
+
+- question: What function returns both current date and time?
+  reason: CURRENT_TIMESTAMP is the most commonly used function for recording when events occur.
+  points: 2
+  right:
+  - answer: CURRENT_TIMESTAMP
+    explanation: CURRENT_TIMESTAMP returns the current date and time from the database server.
+    links:
+    - https://en.wikipedia.org/wiki/SQL#Date_and_time_functions
+  wrong:
+  - answer: NOW
+    explanation: NOW is used in some databases but CURRENT_TIMESTAMP is the SQL standard.
+  - answer: DATETIME
+    explanation: DATETIME is a data type; CURRENT_TIMESTAMP returns current date and time.
+  - answer: GETDATETIME
+    explanation: GETDATETIME is not a standard SQL function; CURRENT_TIMESTAMP is correct.
+  - answer: TODAY
+    explanation: TODAY would suggest only date; CURRENT_TIMESTAMP returns date and time.
+  - answer: SYSTIMESTAMP
+    explanation: SYSTIMESTAMP is used in some databases but CURRENT_TIMESTAMP is more standard.
+
+- question: What clause limits the number of rows returned by a query?
+  reason: LIMIT is essential for pagination and controlling query performance with large result sets.
+  points: 2
+  right:
+  - answer: LIMIT (or FETCH FIRST in standard SQL)
+    explanation: LIMIT restricts the number of rows returned; FETCH FIRST is the SQL standard syntax.
+    links:
+    - https://en.wikipedia.org/wiki/Select_(SQL)#Limiting_result_rows
+  wrong:
+  - answer: TOP
+    explanation: TOP is used in some databases but LIMIT or FETCH FIRST is more standard.
+  - answer: MAXIMUM
+    explanation: MAXIMUM is not a SQL clause; LIMIT or FETCH FIRST restricts rows.
+  - answer: RESTRICT
+    explanation: RESTRICT is used in foreign key actions; LIMIT restricts result rows.
+  - answer: COUNT
+    explanation: COUNT is an aggregate function; LIMIT restricts the number of rows returned.
+  - answer: CAP
+    explanation: CAP is not a SQL clause; LIMIT or FETCH FIRST limits rows returned.
+
+- question: What operator checks if a value exists in a list?
+  reason: IN is commonly used for filtering against multiple values efficiently.
+  points: 2
+  right:
+  - answer: IN
+    explanation: IN checks if a value matches any value in a specified list or subquery result.
+    links:
+    - https://en.wikipedia.org/wiki/SQL_syntax#IN
+  wrong:
+  - answer: EXISTS
+    explanation: EXISTS checks if a subquery returns any rows; IN checks value membership.
+  - answer: CONTAINS
+    explanation: CONTAINS is not a standard SQL operator for list membership; IN is correct.
+  - answer: WITHIN
+    explanation: WITHIN is not a SQL operator; IN checks if a value is in a list.
+  - answer: AMONG
+    explanation: AMONG is not a SQL operator; IN checks list membership.
+  - answer: MEMBER
+    explanation: MEMBER is not a SQL operator; IN checks if a value exists in a list.
+
+- question: What operator checks if a value falls within a range?
+  reason: BETWEEN simplifies range queries and makes code more readable than using AND with comparison operators.
+  points: 2
+  right:
+  - answer: BETWEEN
+    explanation: BETWEEN checks if a value falls within a specified range (inclusive).
+    links:
+    - https://en.wikipedia.org/wiki/SQL_syntax#BETWEEN
+  wrong:
+  - answer: WITHIN
+    explanation: WITHIN is not a standard SQL operator; BETWEEN checks ranges.
+  - answer: RANGE
+    explanation: RANGE is not a SQL operator; BETWEEN checks if values fall within a range.
+  - answer: FROM TO
+    explanation: FROM TO is not valid SQL syntax; BETWEEN is correct.
+  - answer: INSIDE
+    explanation: INSIDE is not a SQL operator; BETWEEN checks range membership.
+  - answer: AMONG
+    explanation: AMONG is not a SQL operator; BETWEEN checks if a value is within a range.
+
+- question: What operator performs pattern matching with wildcards?
+  reason: LIKE is essential for flexible text searches without requiring exact matches.
+  points: 2
+  right:
+  - answer: LIKE
+    explanation: LIKE performs pattern matching using wildcards (% and _).
+    links:
+    - https://en.wikipedia.org/wiki/SQL_syntax#LIKE
+  wrong:
+  - answer: MATCH
+    explanation: MATCH is not a standard SQL operator; LIKE performs pattern matching.
+  - answer: CONTAINS
+    explanation: CONTAINS is used differently in some databases; LIKE is standard for pattern matching.
+  - answer: SIMILAR
+    explanation: SIMILAR TO exists in SQL for regex, but LIKE is for basic pattern matching.
+  - answer: PATTERN
+    explanation: PATTERN is not a SQL operator; LIKE performs pattern matching.
+  - answer: FIND
+    explanation: FIND is not a SQL operator; LIKE performs pattern matching with wildcards.
+
+- question: What logical operator returns true if both conditions are true?
+  reason: AND is fundamental for combining multiple filtering conditions in WHERE clauses.
+  points: 1
+  right:
+  - answer: AND
+    explanation: AND returns true only if both conditions are true.
+    links:
+    - https://en.wikipedia.org/wiki/SQL_syntax#Logical_operators
+  wrong:
+  - answer: BOTH
+    explanation: BOTH is not a SQL logical operator; AND requires both conditions true.
+  - answer: ALL
+    explanation: ALL is used differently in SQL; AND is the logical operator for both conditions.
+  - answer: ALSO
+    explanation: ALSO is not a SQL operator; AND combines conditions that must both be true.
+  - answer: PLUS
+    explanation: PLUS is not a logical operator; AND returns true if both conditions are true.
+  - answer: WITH
+    explanation: WITH is used for common table expressions; AND is the logical operator.
+
+- question: What logical operator returns true if at least one condition is true?
+  reason: OR enables flexible filtering where multiple alternatives are acceptable.
+  points: 1
+  right:
+  - answer: OR
+    explanation: OR returns true if at least one of the conditions is true.
+    links:
+    - https://en.wikipedia.org/wiki/SQL_syntax#Logical_operators
+  wrong:
+  - answer: EITHER
+    explanation: EITHER is not a SQL logical operator; OR returns true for any true condition.
+  - answer: ANY
+    explanation: ANY is used differently in SQL; OR is the logical operator for alternative conditions.
+  - answer: SOME
+    explanation: SOME is used differently in SQL; OR returns true if any condition is true.
+  - answer: ALTERNATIVE
+    explanation: ALTERNATIVE is not a SQL operator; OR allows alternative conditions.
+  - answer: MAYBE
+    explanation: MAYBE is not a SQL operator; OR returns true if at least one condition is true.
+
+- question: What logical operator reverses the result of a condition?
+  reason: NOT is essential for expressing negative conditions and exclusions in queries.
+  points: 1
+  right:
+  - answer: NOT
+    explanation: NOT reverses a boolean condition (true becomes false, false becomes true).
+    links:
+    - https://en.wikipedia.org/wiki/SQL_syntax#Logical_operators
+  wrong:
+  - answer: REVERSE
+    explanation: REVERSE is not a logical operator; NOT negates conditions.
+  - answer: OPPOSITE
+    explanation: OPPOSITE is not a SQL operator; NOT reverses condition results.
+  - answer: NEGATE
+    explanation: NEGATE is not a SQL operator; NOT reverses boolean values.
+  - answer: INVERT
+    explanation: INVERT is not a SQL operator; NOT reverses condition results.
+  - answer: FLIP
+    explanation: FLIP is not a SQL operator; NOT reverses boolean conditions.
+
+- question: What does ACID stand for in database transactions?
+  reason: Understanding ACID properties is fundamental to database reliability in professional environments.
+  points: 4
+  right:
+  - answer: Atomicity, Consistency, Isolation, Durability
+    explanation: ACID defines the key properties that guarantee reliable transaction processing in databases.
+    links:
+    - https://en.wikipedia.org/wiki/ACID
+  wrong:
+  - answer: Automatic, Consistent, Isolated, Durable
+    explanation: The A stands for Atomicity, not Automatic.
+  - answer: Atomicity, Concurrent, Isolated, Distributed
+    explanation: C stands for Consistency, not Concurrent, and D is Durability, not Distributed.
+  - answer: Automated, Consistency, Integration, Durability
+    explanation: A is Atomicity and I is Isolation, not Automated and Integration.
+  - answer: Atomicity, Consistency, Independent, Database
+    explanation: I stands for Isolation and D for Durability, not Independent and Database.
+  - answer: Available, Consistent, Isolated, Durable
+    explanation: A stands for Atomicity, not Available.
+
+- question: What command begins a transaction?
+  reason: Understanding transaction control is critical for maintaining data integrity in multi-step operations.
+  points: 4
+  right:
+  - answer: BEGIN TRANSACTION (or START TRANSACTION or BEGIN)
+    explanation: BEGIN TRANSACTION starts a new transaction, grouping multiple statements together.
+    links:
+    - https://en.wikipedia.org/wiki/Database_transaction
+  wrong:
+  - answer: START
+    explanation: START alone is incomplete; START TRANSACTION is the full command.
+  - answer: INIT TRANSACTION
+    explanation: INIT TRANSACTION is not valid SQL syntax; BEGIN TRANSACTION is correct.
+  - answer: OPEN TRANSACTION
+    explanation: OPEN TRANSACTION is not valid SQL syntax; BEGIN TRANSACTION starts transactions.
+  - answer: CREATE TRANSACTION
+    explanation: CREATE TRANSACTION is not valid SQL syntax; BEGIN TRANSACTION is correct.
+  - answer: NEW TRANSACTION
+    explanation: NEW TRANSACTION is not valid SQL syntax; BEGIN or START TRANSACTION is correct.
+
+- question: What command permanently saves changes made in a transaction?
+  reason: COMMIT is essential for finalizing successful transactions in production systems.
+  points: 4
+  right:
+  - answer: COMMIT
+    explanation: COMMIT makes all changes in the current transaction permanent.
+    links:
+    - https://en.wikipedia.org/wiki/Commit_(data_management)
+  wrong:
+  - answer: SAVE
+    explanation: SAVE is not the transaction command; COMMIT permanently saves changes.
+  - answer: FINISH
+    explanation: FINISH is not a SQL command; COMMIT saves transaction changes.
+  - answer: COMPLETE
+    explanation: COMPLETE is not a SQL command; COMMIT finalizes transactions.
+  - answer: APPLY
+    explanation: APPLY is not a SQL command; COMMIT makes transaction changes permanent.
+  - answer: CONFIRM
+    explanation: CONFIRM is not a SQL command; COMMIT saves transaction changes.
+
+- question: What command undoes changes made in a transaction?
+  reason: ROLLBACK is critical for error recovery and maintaining data integrity when problems occur.
+  points: 4
+  right:
+  - answer: ROLLBACK
+    explanation: ROLLBACK undoes all changes made in the current transaction.
+    links:
+    - https://en.wikipedia.org/wiki/Rollback_(data_management)
+  wrong:
+  - answer: UNDO
+    explanation: UNDO is not a SQL transaction command; ROLLBACK undoes changes.
+  - answer: REVERT
+    explanation: REVERT is not a standard SQL command; ROLLBACK undoes transaction changes.
+  - answer: CANCEL
+    explanation: CANCEL is not a SQL command; ROLLBACK undoes transaction changes.
+  - answer: ABORT
+    explanation: ABORT is not a standard SQL command; ROLLBACK undoes transactions.
+  - answer: REVERSE
+    explanation: REVERSE is not a SQL command; ROLLBACK undoes transaction changes.
+
+- question: What is a view in SQL?
+  reason: Views are important for security, simplifying complex queries, and presenting data in different formats.
+  points: 4
+  right:
+  - answer: A virtual table based on a SELECT query
+    explanation: A view is a stored query that appears as a table but doesn't store data itself.
+    links:
+    - https://en.wikipedia.org/wiki/View_(SQL)
+  wrong:
+  - answer: A physical copy of table data
+    explanation: Views don't store data physically; they're virtual tables based on queries.
+  - answer: A backup of a table
+    explanation: Views are not backups; they're virtual representations based on queries.
+  - answer: A compressed version of a table
+    explanation: Views don't compress data; they're query-based virtual tables.
+  - answer: A report generated from data
+    explanation: While views can be used for reports, they're fundamentally virtual tables based on SELECT queries.
+  - answer: A snapshot of data at a point in time
+    explanation: Views show current data from underlying tables, not snapshots (unless materialized).
+
+- question: What statement creates a view?
+  reason: Creating views is a common task for simplifying data access and implementing security.
+  points: 4
+  right:
+  - answer: CREATE VIEW
+    explanation: CREATE VIEW defines a new view based on a SELECT statement.
+    links:
+    - https://en.wikipedia.org/wiki/View_(SQL)
+  wrong:
+  - answer: MAKE VIEW
+    explanation: MAKE VIEW is not valid SQL syntax; CREATE VIEW is correct.
+  - answer: NEW VIEW
+    explanation: NEW VIEW is not valid SQL syntax; CREATE VIEW creates views.
+  - answer: BUILD VIEW
+    explanation: BUILD VIEW is not valid SQL syntax; CREATE VIEW is correct.
+  - answer: ADD VIEW
+    explanation: ADD VIEW is not valid SQL syntax; CREATE VIEW creates views.
+  - answer: DEFINE VIEW
+    explanation: DEFINE VIEW is not valid SQL syntax; CREATE VIEW defines views.
+
+- question: What is an index in SQL?
+  reason: Indexes are critical for query performance, a key concern in production databases.
+  points: 4
+  right:
+  - answer: A database structure that improves query performance by providing fast data lookup
+    explanation: An index creates a data structure that allows quick location of rows based on column values.
+    links:
+    - https://en.wikipedia.org/wiki/Database_index
+  wrong:
+  - answer: A counter that tracks the number of rows
+    explanation: An index is not a counter; it's a structure for fast data retrieval.
+  - answer: A backup of table data
+    explanation: Indexes are not backups; they're structures to speed up queries.
+  - answer: A sorted copy of an entire table
+    explanation: Indexes contain keys and pointers, not complete copies of tables.
+  - answer: A list of all column names
+    explanation: Indexes are not lists of columns; they're structures for fast data lookup.
+  - answer: A constraint that prevents duplicates
+    explanation: While unique indexes prevent duplicates, indexes primarily improve query performance.
+
+- question: What statement creates an index?
+  reason: Creating indexes is an important skill for database optimization in real applications.
+  points: 4
+  right:
+  - answer: CREATE INDEX
+    explanation: CREATE INDEX creates an index on one or more columns of a table.
+    links:
+    - https://en.wikipedia.org/wiki/Database_index
+  wrong:
+  - answer: MAKE INDEX
+    explanation: MAKE INDEX is not valid SQL syntax; CREATE INDEX is correct.
+  - answer: ADD INDEX
+    explanation: ADD INDEX is sometimes used in ALTER TABLE, but CREATE INDEX is the standalone statement.
+  - answer: BUILD INDEX
+    explanation: BUILD INDEX is not valid SQL syntax; CREATE INDEX creates indexes.
+  - answer: NEW INDEX
+    explanation: NEW INDEX is not valid SQL syntax; CREATE INDEX is correct.
+  - answer: DEFINE INDEX
+    explanation: DEFINE INDEX is not valid SQL syntax; CREATE INDEX creates indexes.
+
+- question: What is a subquery?
+  reason: Subqueries are powerful tools for complex data retrieval commonly needed in business reporting.
+  points: 4
+  right:
+  - answer: A query nested inside another query
+    explanation: A subquery is a SELECT statement embedded within another SQL statement.
+    links:
+    - https://en.wikipedia.org/wiki/SQL_syntax#Subqueries
+  wrong:
+  - answer: A query that runs after the main query
+    explanation: Subqueries run as part of the main query evaluation, not after it.
+  - answer: A backup query that runs if the main query fails
+    explanation: Subqueries are not backup queries; they're nested queries for complex logic.
+  - answer: A query that creates a temporary table
+    explanation: While subqueries can be used with temporary tables, they're fundamentally nested queries.
+  - answer: A partial query that's incomplete
+    explanation: Subqueries are complete SELECT statements nested within other statements.
+  - answer: A query that modifies another query
+    explanation: Subqueries don't modify queries; they provide data to outer queries.
+
+- question: Where can a subquery be used?
+  reason: Understanding subquery placement helps in writing flexible and powerful queries.
+  points: 4
+  right:
+  - answer: In SELECT, FROM, WHERE, or HAVING clauses
+    explanation: Subqueries can appear in multiple parts of a SQL statement depending on the need.
+    links:
+    - https://en.wikipedia.org/wiki/SQL_syntax#Subqueries
+  - answer: Only in WHERE clauses
+    explanation: Subqueries can be used in SELECT, FROM, WHERE, and HAVING clauses, not just WHERE.
+  wrong:
+  - answer: Only in SELECT clauses
+    explanation: Subqueries can appear in multiple clauses, not just SELECT.
+  - answer: Only in FROM clauses
+    explanation: Subqueries can be used in multiple clauses, not just FROM.
+  - answer: Only at the beginning of a query
+    explanation: Subqueries can be placed in various clauses throughout a query.
+  - answer: Only in JOIN conditions
+    explanation: While subqueries can be used with JOINs, they're not limited to JOIN conditions.
+
+- question: What is a correlated subquery?
+  reason: Correlated subqueries are more advanced but commonly needed for row-by-row comparisons.
+  points: 7
+  right:
+  - answer: A subquery that references columns from the outer query
+    explanation: A correlated subquery is evaluated once for each row processed by the outer query.
+    links:
+    - https://en.wikipedia.org/wiki/SQL_syntax#Correlated_subqueries
+  wrong:
+  - answer: A subquery that is executed first
+    explanation: All subqueries execute as part of query evaluation; correlation refers to outer query references.
+  - answer: A subquery that returns multiple rows
+    explanation: Correlation refers to referencing outer query columns, not the number of rows returned.
+  - answer: A subquery that uses JOIN
+    explanation: Correlation refers to referencing outer query columns, not using JOINs.
+  - answer: A subquery that appears in multiple places
+    explanation: Correlation refers to referencing outer query columns, not query placement.
+  - answer: Two subqueries that work together
+    explanation: A correlated subquery specifically references the outer query, not another subquery.
+
+- question: What keyword checks if a subquery returns any rows?
+  reason: EXISTS is efficient for checking existence without retrieving actual data.
+  points: 7
+  right:
+  - answer: EXISTS
+    explanation: EXISTS returns true if the subquery returns at least one row.
+    links:
+    - https://en.wikipedia.org/wiki/SQL_syntax#EXISTS
+  wrong:
+  - answer: HAS ROWS
+    explanation: HAS ROWS is not a SQL keyword; EXISTS checks if subqueries return rows.
+  - answer: CONTAINS
+    explanation: CONTAINS is not used for subquery existence; EXISTS is correct.
+  - answer: FOUND
+    explanation: FOUND is not a SQL keyword for subqueries; EXISTS checks for rows.
+  - answer: RETURNS
+    explanation: RETURNS is not a SQL keyword for checking subquery results; EXISTS is correct.
+  - answer: ANY
+    explanation: ANY is used differently with comparison operators; EXISTS checks if rows are returned.
+
+- question: What is a common table expression (CTE)?
+  reason: CTEs improve query readability and are increasingly used in modern SQL development.
+  points: 7
+  right:
+  - answer: A temporary named result set defined using WITH clause
+    explanation: CTEs provide a way to name and reuse subqueries within a single statement.
+    links:
+    - https://en.wikipedia.org/wiki/Hierarchical_and_recursive_queries_in_SQL#Common_table_expression
+  wrong:
+  - answer: A permanent table stored in the database
+    explanation: CTEs are temporary and exist only for the duration of a query.
+  - answer: A type of index
+    explanation: CTEs are named result sets, not indexes.
+  - answer: A view that can be modified
+    explanation: CTEs are not views; they're temporary named result sets in a query.
+  - answer: A stored procedure
+    explanation: CTEs are not procedures; they're temporary named result sets.
+  - answer: A type of constraint
+    explanation: CTEs are not constraints; they're named query results.
+
+- question: What keyword introduces a common table expression?
+  reason: WITH is the standard way to create CTEs for better query organization.
+  points: 7
+  right:
+  - answer: WITH
+    explanation: WITH defines one or more CTEs before the main query.
+    links:
+    - https://en.wikipedia.org/wiki/Hierarchical_and_recursive_queries_in_SQL#Common_table_expression
+  wrong:
+  - answer: USING
+    explanation: USING is used in JOIN syntax; WITH defines CTEs.
+  - answer: AS
+    explanation: AS is used to name columns or tables; WITH introduces CTEs.
+  - answer: DEFINE
+    explanation: DEFINE is not a SQL keyword; WITH introduces CTEs.
+  - answer: TEMPORARY
+    explanation: TEMPORARY is used with CREATE TABLE; WITH introduces CTEs.
+  - answer: CTE
+    explanation: CTE is not a keyword; WITH is used to create CTEs.
+
+- question: What is a window function?
+  reason: Window functions are powerful for analytics and increasingly required in data analysis roles.
+  points: 7
+  right:
+  - answer: A function that performs calculations across a set of rows related to the current row
+    explanation: Window functions operate on a "window" of rows without grouping them into a single output row.
+    links:
+    - https://en.wikipedia.org/wiki/SQL_window_function
+  wrong:
+  - answer: A function that opens database connections
+    explanation: Window functions perform calculations across row sets, not connection management.
+  - answer: A function that creates popup displays
+    explanation: Window functions are for SQL calculations, not user interface windows.
+  - answer: A function that filters data
+    explanation: While window functions can be used with filtering, they're fundamentally for calculations across row sets.
+  - answer: A function that groups data
+    explanation: Window functions work across rows without grouping them like GROUP BY does.
+  - answer: A function that sorts results
+    explanation: While window functions often use ORDER BY, they're for calculations across row sets, not just sorting.
+
+- question: What clause defines the window for a window function?
+  reason: Understanding OVER is essential for using window functions correctly.
+  points: 7
+  right:
+  - answer: OVER
+    explanation: OVER defines the window (set of rows) for a window function to operate on.
+    links:
+    - https://en.wikipedia.org/wiki/SQL_window_function
+  wrong:
+  - answer: WINDOW
+    explanation: WINDOW can define named windows but OVER applies window functions.
+  - answer: ACROSS
+    explanation: ACROSS is not a SQL keyword; OVER defines window function windows.
+  - answer: WITHIN
+    explanation: WITHIN is not the keyword for window functions; OVER is correct.
+  - answer: RANGE
+    explanation: RANGE can be used within window specifications but OVER defines the window.
+  - answer: GROUP
+    explanation: GROUP BY is different from windows; OVER defines window function windows.
+
+- question: What window function assigns a unique sequential number to each row?
+  reason: ROW_NUMBER is commonly used for pagination and ranking in applications.
+  points: 7
+  right:
+  - answer: ROW_NUMBER()
+    explanation: ROW_NUMBER assigns a unique number to each row within a window, starting at 1.
+    links:
+    - https://en.wikipedia.org/wiki/SQL_window_function
+  wrong:
+  - answer: NUMBER_ROWS()
+    explanation: NUMBER_ROWS is not a SQL function; ROW_NUMBER() assigns sequential numbers.
+  - answer: SEQUENCE()
+    explanation: SEQUENCE is not a window function; ROW_NUMBER() assigns row numbers.
+  - answer: COUNT_ROWS()
+    explanation: COUNT_ROWS is not a function; ROW_NUMBER() numbers rows sequentially.
+  - answer: LINE_NUMBER()
+    explanation: LINE_NUMBER is not a SQL function; ROW_NUMBER() assigns row numbers.
+  - answer: INDEX()
+    explanation: INDEX is not a window function; ROW_NUMBER() provides sequential numbering.
+
+- question: What window function assigns ranks with gaps for tied values?
+  reason: RANK is useful for competition-style rankings where ties receive the same rank.
+  points: 7
+  right:
+  - answer: RANK()
+    explanation: RANK assigns ranks with gaps when there are ties (1, 2, 2, 4).
+    links:
+    - https://en.wikipedia.org/wiki/SQL_window_function
+  wrong:
+  - answer: RANKING()
+    explanation: RANKING is not a SQL function; RANK() assigns ranks with gaps.
+  - answer: POSITION()
+    explanation: POSITION is a string function; RANK() assigns ranks to rows.
+  - answer: ORDER()
+    explanation: ORDER is not a function; RANK() assigns ranks with gaps for ties.
+  - answer: GRADE()
+    explanation: GRADE is not a SQL function; RANK() assigns ranks.
+  - answer: SEQUENCE()
+    explanation: SEQUENCE is not a window function; RANK() assigns ranks with gaps.
+
+- question: What window function assigns ranks without gaps for tied values?
+  reason: DENSE_RANK is useful when you need consecutive rank numbers despite ties.
+  points: 7
+  right:
+  - answer: DENSE_RANK()
+    explanation: DENSE_RANK assigns ranks without gaps when there are ties (1, 2, 2, 3).
+    links:
+    - https://en.wikipedia.org/wiki/SQL_window_function
+  wrong:
+  - answer: TIGHT_RANK()
+    explanation: TIGHT_RANK is not a SQL function; DENSE_RANK() assigns ranks without gaps.
+  - answer: COMPACT_RANK()
+    explanation: COMPACT_RANK is not a SQL function; DENSE_RANK() assigns consecutive ranks.
+  - answer: CONTINUOUS_RANK()
+    explanation: CONTINUOUS_RANK is not a SQL function; DENSE_RANK() assigns ranks without gaps.
+  - answer: SOLID_RANK()
+    explanation: SOLID_RANK is not a SQL function; DENSE_RANK() provides consecutive ranks.
+  - answer: FULL_RANK()
+    explanation: FULL_RANK is not a SQL function; DENSE_RANK() assigns ranks without gaps.
+
+- question: What clause in a window function divides rows into partitions?
+  reason: PARTITION BY is essential for calculating separate results for different groups.
+  points: 7
+  right:
+  - answer: PARTITION BY
+    explanation: PARTITION BY divides rows into groups for separate window function calculations.
+    links:
+    - https://en.wikipedia.org/wiki/SQL_window_function
+  wrong:
+  - answer: GROUP BY
+    explanation: GROUP BY is different; PARTITION BY divides windows for window functions.
+  - answer: DIVIDE BY
+    explanation: DIVIDE BY is not SQL syntax; PARTITION BY divides window function data.
+  - answer: SPLIT BY
+    explanation: SPLIT BY is not SQL syntax; PARTITION BY partitions windows.
+  - answer: SECTION BY
+    explanation: SECTION BY is not SQL syntax; PARTITION BY divides rows for window functions.
+  - answer: SEGMENT BY
+    explanation: SEGMENT BY is not SQL syntax; PARTITION BY partitions window data.
+
+- question: What is the difference between WHERE and HAVING?
+  reason: Understanding this distinction is critical for writing correct queries with aggregates.
+  points: 4
+  right:
+  - answer: WHERE filters rows before grouping, HAVING filters groups after aggregation
+    explanation: WHERE operates on individual rows before GROUP BY; HAVING operates on grouped results.
+    links:
+    - https://en.wikipedia.org/wiki/Having_(SQL)
+  wrong:
+  - answer: WHERE is faster than HAVING
+    explanation: While WHERE can be more efficient, the key difference is when they operate (before vs after grouping).
+  - answer: HAVING is used with views, WHERE with tables
+    explanation: Both can be used with tables and views; the difference is pre- vs post-aggregation filtering.
+  - answer: WHERE filters columns, HAVING filters rows
+    explanation: WHERE filters rows before grouping; HAVING filters groups after aggregation.
+  - answer: They are interchangeable
+    explanation: They are not interchangeable; WHERE filters before grouping, HAVING after.
+  - answer: HAVING is only for numeric data
+    explanation: HAVING works with any data type in aggregate conditions; the key is it filters after grouping.
+
+- question: What is normalization in database design?
+  reason: Understanding normalization is fundamental for good database design in any project.
+  points: 7
+  right:
+  - answer: The process of organizing data to reduce redundancy and improve integrity
+    explanation: Normalization structures data into related tables to minimize duplication and anomalies.
+    links:
+    - https://en.wikipedia.org/wiki/Database_normalization
+  wrong:
+  - answer: The process of converting all data to uppercase
+    explanation: Normalization is about database structure, not text formatting.
+  - answer: The process of making all columns the same data type
+    explanation: Normalization is about organizing data into tables, not standardizing data types.
+  - answer: The process of removing all NULL values
+    explanation: Normalization addresses data organization and redundancy, not NULL handling.
+  - answer: The process of combining all tables into one
+    explanation: Normalization typically splits data into multiple tables, not combines them.
+  - answer: The process of alphabetizing table names
+    explanation: Normalization is about data organization to reduce redundancy, not naming conventions.
+
+- question: What is a primary key used for?
+  reason: Understanding primary key purpose is fundamental to relational database design.
+  points: 2
+  right:
+  - answer: To uniquely identify each row in a table
+    explanation: A primary key ensures each row has a unique identifier and cannot be NULL.
+    links:
+    - https://en.wikipedia.org/wiki/Primary_key
+  wrong:
+  - answer: To sort the table data
+    explanation: While primary keys may create indexes, their purpose is unique identification, not sorting.
+  - answer: To encrypt sensitive data
+    explanation: Primary keys identify rows; they don't provide encryption.
+  - answer: To establish the first column in a table
+    explanation: Primary keys identify rows uniquely; they don't have to be the first column.
+  - answer: To count the number of rows
+    explanation: Primary keys identify rows uniquely, not count them.
+  - answer: To speed up all queries
+    explanation: While primary keys create indexes that help performance, their purpose is unique identification.
+
+- question: Can a table have multiple primary keys?
+  reason: Understanding primary key constraints helps avoid design errors.
+  points: 2
+  right:
+  - answer: No, a table can have only one primary key (though it can be composite)
+    explanation: A table has one primary key, which may consist of multiple columns (composite key).
+    links:
+    - https://en.wikipedia.org/wiki/Primary_key
+  wrong:
+  - answer: Yes, a table can have unlimited primary keys
+    explanation: A table can have only one primary key, though it can consist of multiple columns.
+  - answer: Yes, but only if they're in different columns
+    explanation: A table has one primary key; it may be composite but it's still one key.
+  - answer: Yes, one for each row
+    explanation: A primary key identifies rows; a table has one primary key definition.
+  - answer: Yes, but only up to three
+    explanation: A table can have only one primary key, regardless of column count.
+  - answer: It depends on the database system
+    explanation: The single primary key rule is standard across SQL systems.
+
+- question: What is referential integrity?
+  reason: Referential integrity is crucial for maintaining consistent relationships between tables.
+  points: 7
+  right:
+  - answer: Ensuring foreign key values match primary key values in referenced tables
+    explanation: Referential integrity maintains consistency between related tables through key relationships.
+    links:
+    - https://en.wikipedia.org/wiki/Referential_integrity
+  wrong:
+  - answer: Ensuring all columns have values
+    explanation: Referential integrity is about key relationships, not NULL prevention.
+  - answer: Ensuring table names are unique
+    explanation: Referential integrity maintains relationships between tables, not naming.
+  - answer: Ensuring all data is encrypted
+    explanation: Referential integrity is about relationship consistency, not encryption.
+  - answer: Ensuring queries return correct results
+    explanation: Referential integrity maintains data relationships, not query correctness.
+  - answer: Ensuring all rows are numbered sequentially
+    explanation: Referential integrity maintains foreign key relationships, not row numbering.
+
+- question: Which of the following are valid aggregate functions?
+  reason: Understanding all aggregate functions helps in creating comprehensive reports and analyses.
+  points: 4
+  right:
+  - answer: COUNT
+    explanation: COUNT is an aggregate function that counts rows.
+  - answer: SUM
+    explanation: SUM is an aggregate function that totals numeric values.
+  - answer: AVG
+    explanation: AVG is an aggregate function that calculates averages.
+  - answer: MAX
+    explanation: MAX is an aggregate function that finds maximum values.
+  - answer: MIN
+    explanation: MIN is an aggregate function that finds minimum values.
+  wrong:
+  - answer: TOTAL
+    explanation: TOTAL is not a standard SQL aggregate function; SUM calculates totals.
+  - answer: CALCULATE
+    explanation: CALCULATE is not a SQL aggregate function.
+  - answer: AGGREGATE
+    explanation: AGGREGATE is not itself a function; it's a category of functions.
+  - answer: COMPUTE
+    explanation: COMPUTE is not a standard SQL aggregate function.
+  - answer: ACCUMULATE
+    explanation: ACCUMULATE is not a SQL aggregate function; SUM accumulates values.
+
+- question: What does NULL represent in SQL?
+  reason: Understanding NULL is critical for correct data handling and query logic.
+  points: 4
+  right:
+  - answer: Missing, unknown, or inapplicable data
+    explanation: NULL represents the absence of a value, distinct from zero or empty string.
+    links:
+    - https://en.wikipedia.org/wiki/Null_(SQL)
+  wrong:
+  - answer: The number zero
+    explanation: NULL is not zero; it represents absence of value, while zero is a value.
+  - answer: An empty string
+    explanation: NULL is not an empty string; they are different concepts.
+  - answer: A space character
+    explanation: NULL is not a space; it represents absence of value.
+  - answer: The word "NULL"
+    explanation: NULL is not the string "NULL"; it's a special marker for missing data.
+  - answer: An error in the data
+    explanation: NULL represents absence of value, not necessarily an error.
+
+- question: What is the result of comparing anything to NULL using = or &lt;&gt;?
+  reason: Understanding NULL comparison behavior prevents common logical errors in queries.
+  points: 7
+  right:
+  - answer: NULL (unknown), not TRUE or FALSE
+    explanation: NULL comparisons result in NULL because NULL represents unknown; use IS NULL instead.
+    links:
+    - https://en.wikipedia.org/wiki/Null_(SQL)
+  wrong:
+  - answer: Always FALSE
+    explanation: NULL comparisons return NULL (unknown), not FALSE.
+  - answer: Always TRUE
+    explanation: NULL comparisons return NULL (unknown), not TRUE.
+  - answer: An error
+    explanation: NULL comparisons don't error; they return NULL (unknown).
+  - answer: Zero
+    explanation: NULL comparisons return NULL, not zero.
+  - answer: It depends on the database system
+    explanation: NULL comparison behavior is standardized across SQL systems.
+
+- question: What is a composite key?
+  reason: Composite keys are common in junction tables and understanding them is important for database design.
+  points: 7
+  right:
+  - answer: A primary key consisting of multiple columns
+    explanation: A composite key uses two or more columns together to uniquely identify rows.
+    links:
+    - https://en.wikipedia.org/wiki/Composite_key
+  wrong:
+  - answer: A key made of concatenated strings
+    explanation: A composite key uses multiple columns, not concatenated values in one column.
+  - answer: Multiple primary keys on one table
+    explanation: A table has one primary key; a composite key is that one key using multiple columns.
+  - answer: A foreign key referencing multiple tables
+    explanation: A composite key is a multi-column primary key, not about foreign key references.
+  - answer: A key that contains encrypted data
+    explanation: Composite keys use multiple columns for identification, not encryption.
+  - answer: An optional primary key
+    explanation: A composite key is a type of primary key using multiple columns, not optional.
+
+- question: What is the purpose of the DISTINCT keyword?
+  reason: DISTINCT is frequently used to remove duplicates from result sets.
+  points: 2
+  right:
+  - answer: To remove duplicate rows from query results
+    explanation: DISTINCT returns only unique rows from the result set.
+    links:
+    - https://en.wikipedia.org/wiki/Select_(SQL)
+  wrong:
+  - answer: To make queries run faster
+    explanation: DISTINCT removes duplicates; it may actually slow queries as it requires comparison.
+  - answer: To sort the results
+    explanation: DISTINCT removes duplicates; ORDER BY sorts results.
+  - answer: To highlight different values
+    explanation: DISTINCT removes duplicate rows, not highlight them.
+  - answer: To count unique values
+    explanation: DISTINCT removes duplicates; COUNT(DISTINCT column) counts unique values.
+  - answer: To separate columns
+    explanation: DISTINCT removes duplicate rows, not separate columns.
+
+- question: What is a natural join?
+  reason: Understanding different join types helps in choosing the right approach for combining tables.
+  points: 7
+  right:
+  - answer: A join that automatically matches columns with the same name
+    explanation: NATURAL JOIN joins tables based on all columns with identical names.
+    links:
+    - https://en.wikipedia.org/wiki/Join_(SQL)#Natural_join
+  wrong:
+  - answer: A join without any conditions
+    explanation: NATURAL JOIN has implicit conditions based on matching column names.
+  - answer: The default type of join
+    explanation: INNER JOIN is typically the default; NATURAL JOIN is explicitly specified.
+  - answer: A join that only works with numeric columns
+    explanation: NATURAL JOIN works with any data type in matching column names.
+  - answer: A join that preserves all rows
+    explanation: NATURAL JOIN is similar to INNER JOIN; it doesn't preserve all rows like OUTER JOIN.
+  - answer: A join using the ON clause
+    explanation: NATURAL JOIN doesn't use ON; it matches columns with same names automatically.
+
+- question: What is a self-join?
+  reason: Self-joins are useful for hierarchical data and comparing rows within the same table.
+  points: 7
+  right:
+  - answer: A join of a table with itself
+    explanation: Self-joins join a table to itself, typically using table aliases to distinguish instances.
+    links:
+    - https://en.wikipedia.org/wiki/Join_(SQL)#Self-join
+  wrong:
+  - answer: A join that only returns identical rows
+    explanation: Self-joins can compare any rows from a table with itself, not just identical ones.
+  - answer: A join that doesn't require a condition
+    explanation: Self-joins require join conditions like other joins.
+  - answer: A join that automatically creates a backup
+    explanation: Self-joins compare table rows with itself, not create backups.
+  - answer: An invalid join operation
+    explanation: Self-joins are valid and useful for hierarchical or comparative queries.
+  - answer: A join that works only with primary keys
+    explanation: Self-joins can use any columns for comparison, not just primary keys.
+
+- question: What does TRUNCATE TABLE do?
+  reason: TRUNCATE is faster than DELETE for removing all rows but has important differences.
+  points: 7
+  right:
+  - answer: Removes all rows from a table quickly without logging individual deletions
+    explanation: TRUNCATE removes all data but is faster than DELETE and may not be rollbackable in all systems.
+    links:
+    - https://en.wikipedia.org/wiki/Truncate_(SQL)
+  wrong:
+  - answer: Removes the table structure
+    explanation: TRUNCATE removes all rows but keeps the table structure; DROP removes the table.
+  - answer: Compresses the table data
+    explanation: TRUNCATE removes all rows, not compress them.
+  - answer: Removes only duplicate rows
+    explanation: TRUNCATE removes all rows, not just duplicates.
+  - answer: Cuts off text that's too long
+    explanation: TRUNCATE removes all table rows; truncating strings is different.
+  - answer: Archives old data
+    explanation: TRUNCATE removes all rows permanently, not archive them.
+
+- question: What is the difference between DELETE and TRUNCATE?
+  reason: Understanding these differences is important for data management and performance.
+  points: 7
+  right:
+  - answer: DELETE can use WHERE to remove specific rows and logs changes; TRUNCATE removes all rows quickly without detailed logging
+    explanation: DELETE is DML with row-by-row logging; TRUNCATE is DDL that's faster but removes all rows.
+    links:
+    - https://en.wikipedia.org/wiki/Truncate_(SQL)
+  wrong:
+  - answer: They are exactly the same
+    explanation: DELETE and TRUNCATE have significant differences in behavior and performance.
+  - answer: DELETE is faster than TRUNCATE
+    explanation: TRUNCATE is typically much faster than DELETE for removing all rows.
+  - answer: TRUNCATE can use WHERE clause
+    explanation: TRUNCATE removes all rows; only DELETE can use WHERE for specific rows.
+  - answer: DELETE removes the table structure
+    explanation: Neither removes table structure; both remove data (DROP removes structure).
+  - answer: TRUNCATE works only on views
+    explanation: TRUNCATE works on tables, not views.
+
+- question: What is a stored procedure?
+  reason: Stored procedures are commonly used in applications for performance and security.
+  points: 7
+  right:
+  - answer: A saved collection of SQL statements that can be executed as a unit
+    explanation: Stored procedures encapsulate SQL logic that can be called by name with parameters.
+    links:
+    - https://en.wikipedia.org/wiki/Stored_procedure
+  wrong:
+  - answer: A temporary query result
+    explanation: Stored procedures are saved SQL code, not temporary results.
+  - answer: A type of index
+    explanation: Stored procedures are executable SQL code, not indexes.
+  - answer: A backup of table data
+    explanation: Stored procedures are SQL code collections, not backups.
+  - answer: A special type of view
+    explanation: Stored procedures are executable code; views are saved queries.
+  - answer: An automated backup process
+    explanation: Stored procedures are saved SQL code that can be executed, not specifically for backups.
+
+- question: What is a trigger?
+  reason: Triggers are important for automating actions and maintaining business rules in databases.
+  points: 12
+  right:
+  - answer: A stored procedure that automatically executes in response to specific events
+    explanation: Triggers fire automatically when INSERT, UPDATE, or DELETE operations occur on a table.
+    links:
+    - https://en.wikipedia.org/wiki/Database_trigger
+  wrong:
+  - answer: A button that starts a query
+    explanation: Triggers are automatic database responses to data changes, not manual buttons.
+  - answer: A scheduled task
+    explanation: Triggers respond to data events, not scheduled times (though scheduled jobs exist separately).
+  - answer: A type of index
+    explanation: Triggers are automatic procedures, not indexes.
+  - answer: A warning message
+    explanation: Triggers execute code automatically, not display messages (though they could include messages).
+  - answer: A data validation rule
+    explanation: Triggers can enforce rules, but they're specifically automatic procedures responding to events.
+
+- question: What does UNION do differently than UNION ALL?
+  reason: Understanding the performance implications of UNION vs UNION ALL is important in production.
+  points: 4
+  right:
+  - answer: UNION removes duplicates, UNION ALL keeps all rows including duplicates
+    explanation: UNION performs de-duplication which is slower; UNION ALL is faster but includes duplicates.
+    links:
+    - https://en.wikipedia.org/wiki/Set_operations_(SQL)#UNION
+  wrong:
+  - answer: UNION is faster than UNION ALL
+    explanation: UNION ALL is faster because it doesn't check for duplicates.
+  - answer: UNION requires identical column names
+    explanation: Both require compatible columns; the difference is duplicate handling.
+  - answer: UNION works with more than two queries
+    explanation: Both can combine multiple queries; the difference is duplicate handling.
+  - answer: They are exactly the same
+    explanation: UNION removes duplicates; UNION ALL keeps all rows.
+  - answer: UNION ALL removes duplicates
+    explanation: UNION removes duplicates; UNION ALL keeps all rows including duplicates.
+
+- question: What is INTERSECT used for?
+  reason: INTERSECT is useful for finding common elements between datasets.
+  points: 7
+  right:
+  - answer: Returns only rows that appear in both query results
+    explanation: INTERSECT returns the common rows from two SELECT statements.
+    links:
+    - https://en.wikipedia.org/wiki/Set_operations_(SQL)#INTERSECT
+  wrong:
+  - answer: Combines all rows from both queries
+    explanation: UNION combines all rows; INTERSECT returns only common rows.
+  - answer: Removes duplicates from a single query
+    explanation: DISTINCT removes duplicates from one query; INTERSECT finds common rows between queries.
+  - answer: Joins two tables
+    explanation: JOIN combines columns from tables; INTERSECT finds common rows between queries.
+  - answer: Deletes rows that appear in both tables
+    explanation: INTERSECT returns common rows, not delete them.
+  - answer: Creates a cross product
+    explanation: CROSS JOIN creates a cartesian product; INTERSECT finds common rows.
+
+- question: What is EXCEPT (or MINUS) used for?
+  reason: EXCEPT helps find differences between datasets, useful for data comparison and auditing.
+  points: 7
+  right:
+  - answer: Returns rows from the first query that don't appear in the second query
+    explanation: EXCEPT (or MINUS in some systems) returns rows unique to the first query.
+    links:
+    - https://en.wikipedia.org/wiki/Set_operations_(SQL)#EXCEPT
+  wrong:
+  - answer: Subtracts numeric values
+    explanation: The minus operator (-) subtracts numbers; EXCEPT compares query results.
+  - answer: Removes NULL values
+    explanation: EXCEPT finds differences between queries, not remove NULLs.
+  - answer: Excludes specific columns
+    explanation: EXCEPT compares entire result rows, not exclude columns.
+  - answer: Deletes rows from a table
+    explanation: DELETE removes rows; EXCEPT returns differences between query results.
+  - answer: Handles exception errors
+    explanation: EXCEPT is a set operation, not error handling.
+
+- question: What is a materialized view?
+  reason: Materialized views are important for performance optimization with complex queries.
+  points: 12
+  right:
+  - answer: A view that stores the actual query results physically for faster access
+    explanation: Materialized views cache query results, requiring refresh but providing faster reads than regular views.
+    links:
+    - https://en.wikipedia.org/wiki/Materialized_view
+  wrong:
+  - answer: A view made of physical materials
+    explanation: '"Materialized" means data is physically stored, not made of physical materials.'
+  - answer: A view that cannot be modified
+    explanation: Regular views also can't typically be modified; materialized views store results physically.
+  - answer: A temporary view
+    explanation: Materialized views are persistent; they store query results physically.
+  - answer: A view that automatically updates instantly
+    explanation: Materialized views require explicit refresh; regular views always show current data.
+  - answer: A backup of a regular view
+    explanation: Materialized views are for performance, storing query results, not backing up views.
+
+- question: What is a sequence?
+  reason: Sequences are important for generating unique identifiers across multiple tables or systems.
+  points: 7
+  right:
+  - answer: A database object that generates unique sequential numbers
+    explanation: Sequences provide number generation independent of tables, useful for IDs across multiple tables.
+    links:
+    - https://en.wikipedia.org/wiki/Sequence_(database)
+  wrong:
+  - answer: An ordered series of queries
+    explanation: A sequence generates numbers, not execute queries.
+  - answer: A type of index
+    explanation: Sequences are number generators, not indexes.
+  - answer: A sorted column
+    explanation: Sequences generate numbers independently, not sort columns.
+  - answer: A series of related tables
+    explanation: Sequences generate numbers, not relate tables.
+  - answer: A chronological order of records
+    explanation: Sequences generate unique numbers, not order records.
+
+- question: What does COALESCE function do?
+  reason: COALESCE is commonly used for handling NULL values in result sets.
+  points: 7
+  right:
+  - answer: Returns the first non-NULL value from a list of expressions
+    explanation: COALESCE evaluates arguments left to right and returns the first non-NULL value.
+    links:
+    - https://en.wikipedia.org/wiki/Null_(SQL)#COALESCE
+  wrong:
+  - answer: Combines multiple columns into one
+    explanation: CONCAT combines strings; COALESCE returns first non-NULL value.
+  - answer: Removes NULL values from a table
+    explanation: COALESCE returns non-NULL values from expressions, not remove NULLs from tables.
+  - answer: Merges tables together
+    explanation: JOIN or UNION merge tables; COALESCE handles NULL values.
+  - answer: Converts all values to NULL
+    explanation: COALESCE does the opposite—returns non-NULL values.
+  - answer: Counts non-NULL values
+    explanation: COUNT ignores NULLs; COALESCE returns first non-NULL value.
+
+- question: What is the purpose of CASE expression?
+  reason: CASE enables conditional logic in SQL, essential for complex queries and reports.
+  points: 4
+  right:
+  - answer: Provides conditional logic (if-then-else) within SQL statements
+    explanation: CASE evaluates conditions and returns different values based on results.
+    links:
+    - https://en.wikipedia.org/wiki/Case_(SQL)
+  wrong:
+  - answer: Changes text to uppercase or lowercase
+    explanation: UPPER and LOWER change case; CASE provides conditional logic.
+  - answer: Creates a new database case-sensitivity setting
+    explanation: CASE provides conditional logic, not control case sensitivity settings.
+  - answer: Groups similar data together
+    explanation: GROUP BY groups data; CASE provides conditional logic.
+  - answer: Switches between databases
+    explanation: CASE provides conditional logic within queries, not switch databases.
+  - answer: Handles error cases
+    explanation: While CASE can be used in error scenarios, it's primarily for conditional logic.
+
+- question: What are the two forms of CASE expression?
+  reason: Understanding both CASE forms helps in writing concise and appropriate conditional logic.
+  points: 7
+  right:
+  - answer: Simple CASE (compares one expression to values) and Searched CASE (evaluates multiple conditions)
+    explanation: Simple CASE compares one expression; Searched CASE evaluates separate boolean conditions.
+    links:
+    - https://en.wikipedia.org/wiki/Case_(SQL)
+  wrong:
+  - answer: UPPER CASE and lower case
+    explanation: The CASE expression forms are Simple and Searched, not text case.
+  - answer: TRUE CASE and FALSE CASE
+    explanation: CASE forms are Simple and Searched, not TRUE and FALSE.
+  - answer: WHEN CASE and THEN CASE
+    explanation: WHEN and THEN are keywords within CASE; the forms are Simple and Searched.
+  - answer: IF CASE and ELSE CASE
+    explanation: CASE forms are Simple and Searched, not IF and ELSE.
+  - answer: PRIMARY CASE and SECONDARY CASE
+    explanation: CASE expression forms are Simple and Searched.
+
+- question: What is a cursor in SQL?
+  reason: Cursors are used for row-by-row processing, important in stored procedures and complex operations.
+  points: 12
+  right:
+  - answer: A database object that allows row-by-row processing of query results
+    explanation: Cursors enable procedural processing of result sets one row at a time.
+    links:
+    - https://en.wikipedia.org/wiki/Cursor_(databases)
+  wrong:
+  - answer: The mouse pointer in database tools
+    explanation: A cursor is a database object for row processing, not a mouse pointer.
+  - answer: The current row highlighted in a result
+    explanation: While cursors track position, they're specifically objects for row-by-row processing.
+  - answer: A blinking text indicator
+    explanation: A cursor is a database object for iterating through rows, not a text indicator.
+  - answer: A pointer to a table
+    explanation: Cursors iterate through query results, not simply point to tables.
+  - answer: An index on a table
+    explanation: Cursors are for row-by-row processing, not indexing.
+
+- question: What does NULLIF function do?
+  reason: NULLIF is useful for converting specific values to NULL in queries.
+  points: 7
+  right:
+  - answer: Returns NULL if two expressions are equal, otherwise returns the first expression
+    explanation: NULLIF compares two values and returns NULL if they match, else returns the first value.
+    links:
+    - https://en.wikipedia.org/wiki/Null_(SQL)#NULLIF
+  wrong:
+  - answer: Converts NULL to a specific value
+    explanation: COALESCE converts NULL to values; NULLIF converts matching values to NULL.
+  - answer: Removes NULL values from results
+    explanation: NULLIF creates NULLs when values match, not remove them.
+  - answer: Tests if a value is NULL
+    explanation: IS NULL tests for NULL; NULLIF returns NULL if values match.
+  - answer: Counts NULL values
+    explanation: NULLIF converts matching values to NULL, not count them.
+  - answer: Replaces NULL with zero
+    explanation: NULLIF does the opposite—creates NULL from matching values.
+
+- question: What is a schema in SQL?
+  reason: Understanding schemas is important for organizing database objects in larger systems.
+  points: 7
+  right:
+  - answer: A logical container for database objects like tables, views, and procedures
+    explanation: Schemas organize database objects into namespaces, often for security or organization.
+    links:
+    - https://en.wikipedia.org/wiki/Database_schema
+  wrong:
+  - answer: A diagram of table relationships
+    explanation: While schema diagrams exist, a schema is a container for database objects.
+  - answer: A backup of database structure
+    explanation: Schemas are organizational containers, not backups.
+  - answer: A template for creating tables
+    explanation: Schemas contain objects; templates are different concepts.
+  - answer: The physical storage location
+    explanation: Schemas are logical containers; physical storage is separate.
+  - answer: A type of index
+    explanation: Schemas are containers for objects, not indexes.
+
+- question: What is the difference between CHAR and VARCHAR?
+  reason: Choosing the right string type affects storage efficiency and performance.
+  points: 4
+  right:
+  - answer: CHAR stores fixed-length strings (pads with spaces), VARCHAR stores variable-length strings
+    explanation: CHAR uses fixed space; VARCHAR uses only needed space plus length indicator.
+    links:
+    - https://en.wikipedia.org/wiki/SQL#Data_types
+  wrong:
+  - answer: CHAR is for single characters, VARCHAR for multiple
+    explanation: Both can store multiple characters; the difference is fixed vs variable length.
+  - answer: VARCHAR is faster than CHAR
+    explanation: Performance depends on use case; the key difference is storage (fixed vs variable).
+  - answer: CHAR cannot store spaces
+    explanation: CHAR can store spaces; it pads to fixed length with spaces.
+  - answer: They are exactly the same
+    explanation: CHAR is fixed-length; VARCHAR is variable-length.
+  - answer: VARCHAR has a smaller maximum size
+    explanation: Maximum sizes vary by system; the key difference is fixed vs variable length.
+
+- question: What happens when you try to insert a duplicate value into a column with a UNIQUE constraint?
+  reason: Understanding constraint behavior is important for error handling and data quality.
+  points: 4
+  right:
+  - answer: The database raises an error and rejects the insertion
+    explanation: UNIQUE constraints prevent duplicate values; violations cause errors.
+    links:
+    - https://en.wikipedia.org/wiki/Unique_key
+  wrong:
+  - answer: The database automatically modifies the value to make it unique
+    explanation: Databases don't automatically modify values; UNIQUE violations cause errors.
+  - answer: The old value is replaced with the new one
+    explanation: INSERT doesn't replace; it adds rows. UNIQUE violations cause errors.
+  - answer: The duplicate is allowed but flagged
+    explanation: UNIQUE constraints prevent duplicates; violations cause errors.
+  - answer: The second value is stored with a warning
+    explanation: UNIQUE constraints prevent duplicates completely; violations cause errors.
+  - answer: Both values are kept in the database
+    explanation: UNIQUE constraints prevent duplicates; violations cause errors.
+
+- question: What is an execution plan?
+  reason: Understanding execution plans is essential for query optimization and performance tuning.
+  points: 12
+  right:
+  - answer: A description of how the database engine will execute a query
+    explanation: Execution plans show the steps, operations, and access methods the database will use.
+    links:
+    - https://en.wikipedia.org/wiki/Query_plan
+  wrong:
+  - answer: A schedule for when queries will run
+    explanation: Execution plans describe how queries execute, not when they're scheduled.
+  - answer: A backup of query results
+    explanation: Execution plans describe query execution steps, not back up results.
+  - answer: The SQL code of a stored procedure
+    explanation: Execution plans show how the database executes queries, not the SQL code itself.
+  - answer: A list of all tables in the database
+    explanation: Execution plans describe query execution strategy, not list all tables.
+  - answer: The order queries were submitted
+    explanation: Execution plans show how individual queries execute, not their submission order.
+
+- question: What command is typically used to view an execution plan?
+  reason: Being able to view execution plans is a practical skill for query optimization.
+  points: 12
+  right:
+  - answer: EXPLAIN (or EXPLAIN PLAN in some systems)
+    explanation: EXPLAIN shows the execution plan without running the query, helping identify performance issues.
+    links:
+    - https://en.wikipedia.org/wiki/Query_plan
+  wrong:
+  - answer: SHOW PLAN
+    explanation: SHOW PLAN exists in some systems but EXPLAIN is more standard SQL.
+  - answer: DISPLAY EXECUTION
+    explanation: DISPLAY EXECUTION is not standard SQL; EXPLAIN shows execution plans.
+  - answer: VIEW PLAN
+    explanation: VIEW PLAN is not standard SQL; EXPLAIN displays execution plans.
+  - answer: DESCRIBE QUERY
+    explanation: DESCRIBE shows table structure; EXPLAIN shows execution plans.
+  - answer: ANALYZE QUERY
+    explanation: While ANALYZE exists in some contexts, EXPLAIN is standard for viewing execution plans.
