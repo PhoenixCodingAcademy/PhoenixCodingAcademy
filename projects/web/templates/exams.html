@@ -75,8 +75,8 @@
         <button type="submit" :disabled="!readyToGrade">Grade Quiz</button>
       </div>
       <div v-else>
-        <button type="button" @click="tryAgain">Try Again</button>
-        <button type="button" @click="revealAnswers" style="margin-left: 10px;">Show Answers</button>
+        <button type="button" @click.prevent="tryAgain">Try Again</button>
+        <button type="button" @click.prevent="revealAnswers" style="margin-left: 10px;">Show Answers</button>
       </div>
     </div>
   </form>
@@ -251,13 +251,16 @@ new Vue({
       });
     },
     tryAgain() {
-      let timestamp = new Date().toLocaleTimeString();
-      let score = this.results ? this.results.score : 0;
-      this.sessionHistory.push(`${timestamp} - Try Again: Resetting quiz to reattempt`);
-      
+      // Reset state first
       this.graded = false;
       this.showAnswers = false;
-      this.results = null;
+      
+      // Add to history
+      let timestamp = new Date().toLocaleTimeString();
+      this.sessionHistory.push(`${timestamp} - Try Again: Resetting quiz to reattempt`);
+      
+      // Don't clear results yet so we can still see the score
+      // But the checkboxes will be re-enabled and grading view hidden
     },
     revealAnswers() {
       let timestamp = new Date().toLocaleTimeString();
