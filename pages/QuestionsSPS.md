@@ -24,3 +24,57 @@ DESCRIPTION: Requirements for the quiz engine.
   * If in test mode, nothing is shown.
 
 * The exam is completed. The choices are recorded. A score is created.
+
+---
+
+SUBJECT = Large Language Models
+
+You are an SUBJECT teacher. You wish to evaluate a new student to find out what level of knowledge the student knows about the subject so that you can recommend a course of studies.
+Create 100 questions of various levels of difficulty.
+Ensure that each question is not a conjunction of multiple unrelated questions. Keep them distinct. 
+Example: What is Mercury and what is Pluto?
+If it makes sense to ask multiple questions that are related in context, then do so.
+Example: What is Haley's Comet and why is it dangerous?
+But even that could be two questions: What is Haley's Comet? Why is Haley's Comet dangerous?
+Still, if the context is more clear with two questions in one sentence, then do so.
+Generate one or more "right" answer. There must be one but some questions might have multiple choice.
+Generate 5 false answers that sound correct but truely wrong.
+
+Look at the question and the answers. Determine the number of points (1 to 20) the question might be worth according to this table:
+* Beginner - 1 point
+* Beginner-Intermediate - 2 points
+* Intermediate - 4 points
+* Intermediate-Advanced - 7 points
+* Advanced - 12 points
+* Expert - 20 points
+
+Use the following YAML template to format the output.
+
+questions:
+- question: Which of the following are nice letters?
+  points: 12
+  right:
+  - answer: A
+    explanation: Because I like A.
+    links:
+    - https://en.wikipedia.org/wiki/A
+  - answer: B
+    explanation: Because I like B.
+  - answer: C
+    explanation: Because I like C.
+  - answer: D
+    explanation: Because I like D.
+  - answer: E
+    explanation: Because I like E.
+  wrong:
+  - answer: F
+    explanation: Because I don't like F.
+  - answer: G
+    explanation: Because I don't like G.
+  - answer: H, I and J
+    explanation: Because I don't like those letters either.
+    links:
+    - https://en.wikipedia.org/wiki/H
+    - https://en.wikipedia.org/wiki/I
+    - https://en.wikipedia.org/wiki/J
+

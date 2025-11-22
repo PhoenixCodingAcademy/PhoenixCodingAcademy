@@ -1,24 +1,19 @@
 questions:
-- id: test1
+- id: 1
   question: Which of the following are nice letters?
   right:
   - answer: A
-    explanation: |
-      Because I like A.
+    explanation: Because I like A.
     links:
     - https://en.wikipedia.org/wiki/A
   - answer: B
-    explanation: |
-      Because I like B.
+    explanation: Because I like B.
   - answer: C
-    explanation: |
-      Because I like C.
+    explanation: Because I like C.
   - answer: D
-    explanation: |
-      Because I like D.
+    explanation: Because I like D.
   - answer: E
-    explanation: |
-      Because I like E.
+    explanation: Because I like E.
   wrong:
   - answer: F
     explanation: Because I don't like F.

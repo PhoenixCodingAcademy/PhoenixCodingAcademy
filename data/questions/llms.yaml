@@ -1,0 +1,1844 @@
+category: LLMs
+questions:
+- question: What does LLM stand for?
+  points: 1
+  right:
+  - answer: Large Language Model
+    explanation: LLM is the standard acronym for Large Language Model, referring to neural networks trained on vast amounts of text data.
+    links:
+    - https://en.wikipedia.org/wiki/Large_language_model
+  wrong:
+  - answer: Linear Learning Machine
+    explanation: This is not the correct term; it sounds technical but doesn't relate to language models.
+  - answer: Linguistic Logic Module
+    explanation: While it mentions linguistics, this is not the correct acronym.
+  - answer: Large Learning Matrix
+    explanation: This combines words associated with AI but is not the correct term.
+  - answer: Language Linking Model
+    explanation: This sounds plausible but is incorrect terminology.
+  - answer: Layered Language Mechanism
+    explanation: This uses related words but is not the standard acronym.
+
+- question: What type of neural network architecture are most modern LLMs based on?
+  points: 2
+  right:
+  - answer: Transformer
+    explanation: The Transformer architecture, introduced in 2017, is the foundation for most modern LLMs like GPT, BERT, and others.
+    links:
+    - https://en.wikipedia.org/wiki/Transformer_(machine_learning_model)
+  wrong:
+  - answer: Convolutional Neural Network (CNN)
+    explanation: CNNs are primarily used for image processing, not language modeling.
+  - answer: Recurrent Neural Network (RNN)
+    explanation: While RNNs were used for earlier language models, they are not the basis for modern LLMs.
+  - answer: Perceptron
+    explanation: Perceptrons are simple neural network units, not architectures for LLMs.
+  - answer: Autoencoder
+    explanation: Autoencoders are used for dimensionality reduction, not as the primary architecture for LLMs.
+  - answer: Boltzmann Machine
+    explanation: Boltzmann Machines are generative models but not used for modern LLMs.
+
+- question: What is the primary task LLMs are trained on?
+  points: 1
+  right:
+  - answer: Next token prediction (or next word prediction)
+    explanation: LLMs are trained to predict the next token in a sequence, which enables them to generate coherent text.
+    links:
+    - https://en.wikipedia.org/wiki/Language_model
+  wrong:
+  - answer: Image classification
+    explanation: This is a computer vision task, not related to language models.
+  - answer: Sentiment scoring
+    explanation: While LLMs can do sentiment analysis, it's not their primary training task.
+  - answer: Translation optimization
+    explanation: Translation is a downstream task, not the primary training objective.
+  - answer: Speech recognition
+    explanation: This is an audio processing task, not the primary training task for LLMs.
+  - answer: Named entity labeling
+    explanation: This is a specific NLP task, not the foundational training objective.
+
+- question: What does GPT stand for?
+  points: 1
+  right:
+  - answer: Generative Pre-trained Transformer
+    explanation: GPT stands for Generative Pre-trained Transformer, representing the model's ability to generate text after pre-training.
+    links:
+    - https://en.wikipedia.org/wiki/Generative_pre-trained_transformer
+  wrong:
+  - answer: General Purpose Transformer
+    explanation: While GPT models are versatile, this is not what the acronym stands for.
+  - answer: Guided Prediction Technology
+    explanation: This sounds technical but is not the correct expansion.
+  - answer: Global Processing Transformer
+    explanation: This is not the correct acronym expansion.
+  - answer: Generative Probabilistic Text
+    explanation: While related to text generation, this is not the correct acronym.
+  - answer: Gradual Pre-training Technique
+    explanation: This sounds plausible but is incorrect.
+
+- question: What is a token in the context of LLMs?
+  points: 2
+  right:
+  - answer: A basic unit of text that the model processes, which can be a word, part of a word, or character
+    explanation: Tokens are the fundamental units that LLMs work with, created through tokenization processes like BPE or WordPiece.
+    links:
+    - https://en.wikipedia.org/wiki/Lexical_analysis#Tokenization
+  wrong:
+  - answer: A security credential for API access
+    explanation: While "token" is used in authentication, this is not the meaning in LLM context.
+  - answer: A memory allocation unit in the neural network
+    explanation: This is not how tokens are defined in language models.
+  - answer: A synonym for a neural network layer
+    explanation: Tokens and layers are completely different concepts in neural networks.
+  - answer: A placeholder for missing data in training
+    explanation: This is not the definition of a token in LLM terminology.
+  - answer: A checkpoint saved during model training
+    explanation: Checkpoints and tokens are different concepts in machine learning.
+
+- question: What is the attention mechanism in Transformers?
+  points: 4
+  right:
+  - answer: A mechanism that allows the model to focus on different parts of the input sequence when processing each token
+    explanation: Attention mechanisms enable models to weigh the importance of different tokens in relation to each other, which is fundamental to Transformer architecture.
+    links:
+    - https://en.wikipedia.org/wiki/Attention_(machine_learning)
+  wrong:
+  - answer: A way to monitor which users are accessing the model
+    explanation: This describes user tracking, not the attention mechanism in neural networks.
+  - answer: A method to compress the model size during deployment
+    explanation: Model compression is unrelated to the attention mechanism.
+  - answer: A technique for detecting errors in training data
+    explanation: Error detection is not what the attention mechanism does.
+  - answer: A scheduling algorithm for parallel processing
+    explanation: While Transformers can be parallelized, attention is not a scheduling mechanism.
+  - answer: A memory management system for storing gradients
+    explanation: This describes a different aspect of training, not the attention mechanism.
+
+- question: What does BERT stand for?
+  points: 1
+  right:
+  - answer: Bidirectional Encoder Representations from Transformers
+    explanation: BERT is a Transformer-based model that reads text bidirectionally to create contextual representations.
+    links:
+    - https://en.wikipedia.org/wiki/BERT_(language_model)
+  wrong:
+  - answer: Binary Encoded Representation Technique
+    explanation: This sounds technical but is not the correct acronym.
+  - answer: Backward Error Reduction Transformer
+    explanation: This is not what BERT stands for.
+  - answer: Baseline Extraction and Retrieval Technology
+    explanation: This is incorrect terminology.
+  - answer: Batch Encoded Recursive Transformer
+    explanation: While it uses some correct words, this is not the right acronym.
+  - answer: Bilateral Embedding and Representation Tool
+    explanation: This sounds plausible but is incorrect.
+
+- question: What is the difference between autoregressive and masked language modeling?
+  points: 4
+  right:
+  - answer: Autoregressive models predict the next token given previous tokens, while masked models predict missing tokens given surrounding context
+    explanation: GPT uses autoregressive modeling (left-to-right), while BERT uses masked language modeling (bidirectional context).
+    links:
+    - https://en.wikipedia.org/wiki/Language_model
+  wrong:
+  - answer: Autoregressive models are faster but less accurate than masked models
+    explanation: Speed and accuracy differences exist but this doesn't define the fundamental difference.
+  - answer: Masked models can only work with images, autoregressive with text
+    explanation: Both approaches are used for text; this is completely incorrect.
+  - answer: Autoregressive models require more training data than masked models
+    explanation: Data requirements are not the defining difference between these approaches.
+  - answer: Masked models use recurrent layers while autoregressive models don't
+    explanation: Both can be implemented with Transformers; this is not the key difference.
+  - answer: Autoregressive models predict backwards while masked models predict forwards
+    explanation: This reverses and mischaracterizes both approaches.
+
+- question: What is fine-tuning in the context of LLMs?
+  points: 2
+  right:
+  - answer: Training a pre-trained model on a specific task or dataset to adapt it for particular use cases
+    explanation: Fine-tuning involves continuing training on a specialized dataset after initial pre-training on general data.
+    links:
+    - https://en.wikipedia.org/wiki/Transfer_learning
+  wrong:
+  - answer: Adjusting the font size and formatting of model outputs
+    explanation: This describes text formatting, not model training.
+  - answer: Removing unnecessary parameters to reduce model size
+    explanation: This describes pruning or compression, not fine-tuning.
+  - answer: Debugging errors in the model's code implementation
+    explanation: This is software debugging, not fine-tuning.
+  - answer: Optimizing hardware settings for faster inference
+    explanation: This is hardware optimization, not model fine-tuning.
+  - answer: Translating the model to work in different programming languages
+    explanation: This is code translation, not fine-tuning.
+
+- question: What is prompt engineering?
+  points: 2
+  right:
+  - answer: The practice of designing and optimizing input prompts to get desired outputs from LLMs
+    explanation: Prompt engineering involves crafting effective instructions and context to guide LLM behavior and outputs.
+    links:
+    - https://en.wikipedia.org/wiki/Prompt_engineering
+  wrong:
+  - answer: The process of building the physical infrastructure for training models
+    explanation: This describes hardware engineering, not prompt engineering.
+  - answer: A technique for compressing prompts to save tokens
+    explanation: While token efficiency matters, this is not what prompt engineering means.
+  - answer: The method of encrypting sensitive prompts for security
+    explanation: This describes security practices, not prompt engineering.
+  - answer: A programming language specifically designed for AI systems
+    explanation: Prompt engineering is not a programming language.
+  - answer: The architecture design phase before building a neural network
+    explanation: This describes model architecture design, not prompt engineering.
+
+- question: What is zero-shot learning in LLMs?
+  points: 2
+  right:
+  - answer: The ability of a model to perform a task without any task-specific training examples
+    explanation: Zero-shot learning means the model can understand and execute tasks purely from instructions, without seeing examples.
+    links:
+    - https://en.wikipedia.org/wiki/Zero-shot_learning
+  wrong:
+  - answer: A technique where the model outputs nothing for unknown inputs
+    explanation: This misinterprets "zero" to mean no output rather than no examples.
+  - answer: Training a model with zero data by using synthetic generation
+    explanation: Zero-shot refers to task performance, not training data generation.
+  - answer: A method to reduce model parameters to zero for compression
+    explanation: This describes extreme pruning, not zero-shot learning.
+  - answer: Running inference with zero computational cost
+    explanation: Zero-shot doesn't refer to computational requirements.
+  - answer: A security feature that prevents unauthorized model access
+    explanation: This has nothing to do with zero-shot learning capabilities.
+
+- question: What is few-shot learning?
+  points: 2
+  right:
+  - answer: The ability of a model to perform a task given only a few examples in the prompt
+    explanation: Few-shot learning involves providing a small number of examples within the prompt to demonstrate the desired task.
+    links:
+    - https://en.wikipedia.org/wiki/Few-shot_learning
+  wrong:
+  - answer: Training a model for only a few epochs to save time
+    explanation: This describes abbreviated training, not few-shot learning.
+  - answer: A technique that only works with image classification tasks
+    explanation: Few-shot learning applies to many domains, not just images.
+  - answer: Using a small model with few parameters for faster inference
+    explanation: This describes model size, not few-shot learning.
+  - answer: A method where the model makes only a few predictions per query
+    explanation: This misinterprets "few-shot" to mean limited outputs.
+  - answer: Running the model on a small number of servers
+    explanation: This describes infrastructure scaling, not few-shot learning.
+
+- question: What is temperature in the context of LLM text generation?
+  points: 2
+  right:
+  - answer: A parameter that controls the randomness of the model's output, with higher values producing more random text
+    explanation: Temperature scales the logits before sampling, affecting the diversity and creativity of generated text.
+    links:
+    - https://en.wikipedia.org/wiki/Softmax_function
+  wrong:
+  - answer: The operating temperature of the GPU running the model
+    explanation: This describes hardware temperature, not the generation parameter.
+  - answer: A measure of how long the model has been training
+    explanation: Training duration is unrelated to the temperature parameter.
+  - answer: The emotional tone or sentiment of the generated text
+    explanation: Temperature affects randomness, not emotional content.
+  - answer: The speed at which tokens are generated per second
+    explanation: This describes inference speed, not the temperature parameter.
+  - answer: A security setting that limits model access during high load
+    explanation: This has nothing to do with the temperature generation parameter.
+
+- question: What is perplexity in language modeling?
+  points: 4
+  right:
+  - answer: A metric that measures how well a language model predicts a sample, with lower values indicating better performance
+    explanation: Perplexity is the exponentiated average negative log-likelihood, representing how "surprised" the model is by the text.
+    links:
+    - https://en.wikipedia.org/wiki/Perplexity
+  wrong:
+  - answer: A measure of how confused users are when interacting with the model
+    explanation: This interprets perplexity as user confusion rather than a technical metric.
+  - answer: The number of different topics the model can discuss
+    explanation: This describes model versatility, not the perplexity metric.
+  - answer: A count of grammatical errors in the generated text
+    explanation: Perplexity doesn't count errors; it measures prediction quality.
+  - answer: The computational complexity of running the model
+    explanation: This describes computational requirements, not perplexity.
+  - answer: A security metric indicating vulnerability to prompt injection
+    explanation: Perplexity is not a security metric.
+
+- question: What is tokenization?
+  points: 2
+  right:
+  - answer: The process of breaking text into smaller units (tokens) that the model can process
+    explanation: Tokenization converts raw text into sequences of tokens using algorithms like BPE, WordPiece, or SentencePiece.
+    links:
+    - https://en.wikipedia.org/wiki/Lexical_analysis#Tokenization
+  wrong:
+  - answer: Creating cryptocurrency rewards for model training contributions
+    explanation: This describes blockchain tokens, not text tokenization.
+  - answer: Encrypting text for secure transmission to the model
+    explanation: This describes encryption, not tokenization.
+  - answer: Assigning unique IDs to different users of the model
+    explanation: This describes user identification, not text tokenization.
+  - answer: Converting text to speech for audio applications
+    explanation: This describes text-to-speech, not tokenization.
+  - answer: Removing sensitive information from training data
+    explanation: This describes data anonymization, not tokenization.
+
+- question: What is the context window of an LLM?
+  points: 2
+  right:
+  - answer: The maximum number of tokens the model can process at once as input and output
+    explanation: The context window defines the model's memory span, limiting how much text it can consider simultaneously.
+    links:
+    - https://en.wikipedia.org/wiki/Large_language_model
+  wrong:
+  - answer: The graphical interface used to interact with the model
+    explanation: This describes a user interface, not the context window.
+  - answer: The time period during which the model was trained
+    explanation: This describes training duration, not context window.
+  - answer: The physical window of opportunity to submit queries during peak hours
+    explanation: This misinterprets "window" as a time period for access.
+  - answer: The range of topics the model can discuss effectively
+    explanation: This describes model capabilities, not the technical context window.
+  - answer: The number of users who can access the model simultaneously
+    explanation: This describes concurrent access, not context window.
+
+- question: What is the purpose of the softmax function in LLMs?
+  points: 4
+  right:
+  - answer: To convert the model's output logits into a probability distribution over possible next tokens
+    explanation: Softmax normalizes logits into probabilities that sum to 1, enabling probabilistic token selection.
+    links:
+    - https://en.wikipedia.org/wiki/Softmax_function
+  wrong:
+  - answer: To make the model's responses more polite and gentle
+    explanation: This misinterprets "soft" as referring to tone rather than mathematical operation.
+  - answer: To reduce the computational cost of matrix multiplications
+    explanation: Softmax is for normalization, not computational optimization.
+  - answer: To filter out inappropriate content from outputs
+    explanation: Content filtering is separate from the softmax function.
+  - answer: To compress the model size for deployment
+    explanation: Softmax is not a compression technique.
+  - answer: To schedule tasks across multiple processing units
+    explanation: Softmax is a mathematical function, not a scheduling algorithm.
+
+- question: What is an embedding in the context of LLMs?
+  points: 2
+  right:
+  - answer: A dense vector representation of a token or word that captures its semantic meaning
+    explanation: Embeddings map discrete tokens to continuous vector spaces where similar meanings have similar representations.
+    links:
+    - https://en.wikipedia.org/wiki/Word_embedding
+  wrong:
+  - answer: The process of inserting the model into a hardware device
+    explanation: This describes hardware integration, not vector embeddings.
+  - answer: A technique for hiding secret messages in model outputs
+    explanation: This describes steganography, not embeddings.
+  - answer: The compression ratio achieved during model quantization
+    explanation: This describes compression metrics, not embeddings.
+  - answer: A method for copying model weights to backup storage
+    explanation: This describes data backup, not embeddings.
+  - answer: The legal authorization to use copyrighted training data
+    explanation: This describes licensing, not embeddings.
+
+- question: What does RLHF stand for?
+  points: 2
+  right:
+  - answer: Reinforcement Learning from Human Feedback
+    explanation: RLHF is a technique used to align LLM behavior with human preferences using reward models trained on human feedback.
+    links:
+    - https://en.wikipedia.org/wiki/Reinforcement_learning_from_human_feedback
+  wrong:
+  - answer: Recursive Learning with Hidden Factors
+    explanation: This sounds technical but is not the correct acronym.
+  - answer: Rapid Language Handling Framework
+    explanation: This is incorrect terminology.
+  - answer: Refined Linguistic Hierarchy Function
+    explanation: This is not what RLHF stands for.
+  - answer: Real-time Learning with High Frequency
+    explanation: This is not the correct expansion.
+  - answer: Reliable Language Hosting Facility
+    explanation: This misinterprets the acronym completely.
+
+- question: What is hallucination in LLMs?
+  points: 2
+  right:
+  - answer: When a model generates information that sounds plausible but is factually incorrect or fabricated
+    explanation: Hallucinations occur when models confidently produce false information, a significant challenge in LLM deployment.
+    links:
+    - https://en.wikipedia.org/wiki/Hallucination_(artificial_intelligence)
+  wrong:
+  - answer: A visual artifact that appears when rendering model outputs
+    explanation: This describes graphics issues, not LLM hallucination.
+  - answer: The model's ability to imagine creative scenarios
+    explanation: While related to generation, this doesn't capture the problematic nature of hallucinations.
+  - answer: A security vulnerability where hackers see private training data
+    explanation: This describes data leakage, not hallucination.
+  - answer: When the model experiences computational errors due to hardware failure
+    explanation: This describes hardware errors, not hallucination.
+  - answer: The phenomenon where users perceive the model as more intelligent than it is
+    explanation: This describes human perception, not the model's hallucination behavior.
+
+- question: What is transfer learning in the context of LLMs?
+  points: 2
+  right:
+  - answer: Using knowledge gained from pre-training on one task to improve performance on different but related tasks
+    explanation: Transfer learning is fundamental to LLMs, allowing general language knowledge to be adapted to specific applications.
+    links:
+    - https://en.wikipedia.org/wiki/Transfer_learning
+  wrong:
+  - answer: Moving a trained model from one server to another
+    explanation: This describes model deployment, not transfer learning.
+  - answer: Translating the model's outputs between different languages
+    explanation: This describes translation, not transfer learning.
+  - answer: Converting a model from one framework to another (e.g., PyTorch to TensorFlow)
+    explanation: This describes model conversion, not transfer learning.
+  - answer: Transferring ownership of the model to a different organization
+    explanation: This describes legal transfer, not transfer learning.
+  - answer: Copying model parameters to backup storage
+    explanation: This describes data backup, not transfer learning.
+
+- question: What is the vanishing gradient problem?
+  points: 4
+  right:
+  - answer: When gradients become extremely small during backpropagation, preventing effective learning in deep networks
+    explanation: Vanishing gradients were a major problem in early deep networks, particularly RNNs, largely solved by Transformer architecture.
+    links:
+    - https://en.wikipedia.org/wiki/Vanishing_gradient_problem
+  wrong:
+  - answer: When the model gradually forgets its training over time
+    explanation: This describes catastrophic forgetting, not vanishing gradients.
+  - answer: When gradients are stolen by hackers during training
+    explanation: This describes a security breach, not the vanishing gradient problem.
+  - answer: When the model's output quality decreases with longer inputs
+    explanation: This might be a symptom but doesn't define vanishing gradients.
+  - answer: When training data gradually disappears from storage
+    explanation: This describes data loss, not vanishing gradients.
+  - answer: When the learning rate automatically decreases to zero
+    explanation: This describes learning rate scheduling, not vanishing gradients.
+
+- question: What is the difference between pre-training and fine-tuning?
+  points: 2
+  right:
+  - answer: Pre-training is initial training on large general datasets, while fine-tuning adapts the model to specific tasks or domains
+    explanation: Pre-training builds general language understanding, and fine-tuning specializes it for particular applications.
+    links:
+    - https://en.wikipedia.org/wiki/Transfer_learning
+  wrong:
+  - answer: Pre-training is faster but less accurate than fine-tuning
+    explanation: Pre-training is actually much longer; this doesn't capture the fundamental difference.
+  - answer: Pre-training uses images while fine-tuning uses text
+    explanation: Both stages use text for LLMs; this is incorrect.
+  - answer: Pre-training is done by users while fine-tuning is done by developers
+    explanation: Both are typically done by model developers, not users.
+  - answer: Pre-training requires GPUs while fine-tuning can use CPUs
+    explanation: Hardware requirements don't define the difference between these concepts.
+  - answer: Pre-training is optional while fine-tuning is mandatory
+    explanation: Actually, pre-training is essential while fine-tuning is often optional.
+
+- question: What is beam search in text generation?
+  points: 4
+  right:
+  - answer: A decoding strategy that explores multiple possible sequences simultaneously, keeping the top-k most promising candidates
+    explanation: Beam search balances exploration and exploitation by maintaining several hypotheses, often producing higher quality outputs than greedy search.
+    links:
+    - https://en.wikipedia.org/wiki/Beam_search
+  wrong:
+  - answer: A method for scanning training data for errors before use
+    explanation: This describes data validation, not beam search decoding.
+  - answer: A technique for projecting model outputs onto a screen
+    explanation: This misinterprets "beam" as a light projection.
+  - answer: A security scan to detect malicious prompts
+    explanation: This describes security scanning, not beam search.
+  - answer: A parallel processing method for faster training
+    explanation: While beam search involves parallelism, this doesn't capture its purpose.
+  - answer: A way to search through model architecture options
+    explanation: This describes neural architecture search, not beam search for generation.
+
+- question: What is the purpose of layer normalization in Transformers?
+  points: 4
+  right:
+  - answer: To stabilize training by normalizing activations across features, reducing internal covariate shift
+    explanation: Layer normalization helps maintain stable gradients and faster convergence by normalizing within each layer.
+    links:
+    - https://en.wikipedia.org/wiki/Normalization_(machine_learning)
+  wrong:
+  - answer: To ensure each layer has the same number of parameters
+    explanation: This describes architectural constraints, not layer normalization.
+  - answer: To prevent layers from accessing unauthorized data
+    explanation: This describes security controls, not layer normalization.
+  - answer: To organize layers in a hierarchical structure
+    explanation: This describes architecture design, not normalization.
+  - answer: To compress layers for smaller model size
+    explanation: This describes model compression, not layer normalization.
+  - answer: To normalize the text output to proper grammar
+    explanation: Layer normalization works on internal activations, not text output.
+
+- question: What is the role of positional encoding in Transformers?
+  points: 4
+  right:
+  - answer: To provide information about the position of tokens in the sequence, since Transformers don't inherently capture order
+    explanation: Unlike RNNs, Transformers process tokens in parallel, so positional encodings are added to give the model information about token positions.
+    links:
+    - https://en.wikipedia.org/wiki/Transformer_(machine_learning_model)
+  wrong:
+  - answer: To encode the geographical location where the model is deployed
+    explanation: This misinterprets "positional" as geographical rather than sequential position.
+  - answer: To specify the correct position for punctuation marks
+    explanation: This describes grammar rules, not positional encoding.
+  - answer: To determine the optimal position for model parameters in memory
+    explanation: This describes memory management, not positional encoding.
+  - answer: To encode the social position or rank of entities mentioned in text
+    explanation: This misunderstands what positional encoding represents.
+  - answer: To position the output text in the correct format
+    explanation: This describes formatting, not the technical positional encoding mechanism.
+
+- question: What is catastrophic forgetting?
+  points: 4
+  right:
+  - answer: When a neural network loses previously learned information upon learning new information
+    explanation: Catastrophic forgetting occurs when fine-tuning on new data causes the model to lose performance on previously learned tasks.
+    links:
+    - https://en.wikipedia.org/wiki/Catastrophic_interference
+  wrong:
+  - answer: When users forget their passwords to access the model
+    explanation: This describes user authentication issues, not catastrophic forgetting.
+  - answer: When training data is accidentally deleted from storage
+    explanation: This describes data loss, not catastrophic forgetting.
+  - answer: When the model outputs become increasingly worse over time
+    explanation: This might be a symptom but doesn't define catastrophic forgetting.
+  - answer: When a model fails catastrophically due to hardware errors
+    explanation: This describes hardware failure, not catastrophic forgetting.
+  - answer: When the model forgets to include important details in outputs
+    explanation: This describes output quality issues, not the technical phenomenon of catastrophic forgetting.
+
+- question: What is the difference between encoder-only, decoder-only, and encoder-decoder models?
+  points: 4
+  right:
+  - answer: Encoder-only models (like BERT) process input bidirectionally for understanding; decoder-only models (like GPT) generate text autoregressively; encoder-decoder models (like T5) use both for tasks like translation
+    explanation: These architectures are suited for different tasks - understanding, generation, and sequence-to-sequence transformation respectively.
+    links:
+    - https://en.wikipedia.org/wiki/Transformer_(machine_learning_model)
+  wrong:
+  - answer: Encoder models are smaller, decoder models are larger, and encoder-decoder models are medium-sized
+    explanation: Size is not what distinguishes these architectures.
+  - answer: Encoder models handle text, decoder models handle images, and encoder-decoder models handle both
+    explanation: All three architectures can be used for text; this is incorrect.
+  - answer: The difference is only in the programming language used to implement them
+    explanation: Implementation language doesn't define these architectural differences.
+  - answer: Encoder models run on CPUs, decoder models on GPUs, and encoder-decoder models on TPUs
+    explanation: Hardware requirements don't define these architectural types.
+  - answer: Encoder models are open-source, decoder models are proprietary, and encoder-decoder models are hybrid
+    explanation: Licensing doesn't define these architectural differences.
+
+- question: What is top-k sampling in text generation?
+  points: 4
+  right:
+  - answer: A decoding strategy where the model samples from only the k most likely next tokens
+    explanation: Top-k sampling limits the sampling pool to the most probable tokens, reducing the chance of selecting unlikely tokens while maintaining diversity.
+    links:
+    - https://en.wikipedia.org/wiki/Top-k_sampling
+  wrong:
+  - answer: A method to select the k best training examples
+    explanation: This describes data selection, not a generation strategy.
+  - answer: Choosing the k most important model parameters
+    explanation: This describes parameter selection, not top-k sampling.
+  - answer: Testing the model with k different prompts
+    explanation: This describes evaluation methodology, not top-k sampling.
+  - answer: Sampling data from the k top-performing models
+    explanation: This describes model ensembling, not top-k sampling.
+  - answer: Selecting k random tokens from the vocabulary
+    explanation: Top-k sampling selects the most likely tokens, not random ones.
+
+- question: What is top-p (nucleus) sampling?
+  points: 4
+  right:
+  - answer: A decoding strategy where the model samples from the smallest set of tokens whose cumulative probability exceeds p
+    explanation: Top-p sampling dynamically adjusts the number of candidates based on their probability mass, providing adaptive diversity control.
+    links:
+    - https://en.wikipedia.org/wiki/Top-p_sampling
+  wrong:
+  - answer: A method to select the p percentage of best training data
+    explanation: This describes data selection, not nucleus sampling.
+  - answer: Sampling from the top p layers of the neural network
+    explanation: This misinterprets p as referring to layers rather than probability.
+  - answer: A technique to reduce model size by p percent
+    explanation: This describes model compression, not top-p sampling.
+  - answer: Testing the model's performance on p different tasks
+    explanation: This describes evaluation, not top-p sampling.
+  - answer: Selecting tokens with probability exactly equal to p
+    explanation: Top-p uses cumulative probability, not exact probability matching.
+
+- question: What is model quantization?
+  points: 4
+  right:
+  - answer: Reducing the precision of model weights (e.g., from 32-bit to 8-bit) to decrease model size and improve inference speed
+    explanation: Quantization trades some accuracy for significant reductions in memory and computational requirements.
+    links:
+    - https://en.wikipedia.org/wiki/Quantization_(machine_learning)
+  wrong:
+  - answer: Measuring the quantity of data needed to train the model
+    explanation: This describes data requirements estimation, not quantization.
+  - answer: Dividing the model into quantum computing operations
+    explanation: This misinterprets "quant" as relating to quantum computing.
+  - answer: Counting the number of parameters in the model
+    explanation: This describes parameter counting, not quantization.
+  - answer: Converting continuous text into discrete tokens
+    explanation: This describes tokenization, not quantization.
+  - answer: Measuring the quality of model outputs
+    explanation: This describes evaluation metrics, not quantization.
+
+- question: What is knowledge distillation?
+  points: 4
+  right:
+  - answer: Training a smaller "student" model to mimic a larger "teacher" model, transferring knowledge while reducing model size
+    explanation: Distillation allows smaller models to achieve performance closer to larger models by learning from their outputs.
+    links:
+    - https://en.wikipedia.org/wiki/Knowledge_distillation
+  wrong:
+  - answer: Extracting key facts from text using the model
+    explanation: This describes information extraction, not knowledge distillation.
+  - answer: Filtering out incorrect information from training data
+    explanation: This describes data cleaning, not knowledge distillation.
+  - answer: Condensing the model's outputs to shorter summaries
+    explanation: This describes text summarization, not knowledge distillation.
+  - answer: Removing redundant parameters from the model
+    explanation: This describes pruning, not knowledge distillation.
+  - answer: Converting implicit knowledge to explicit rules
+    explanation: This describes knowledge representation, not knowledge distillation.
+
+- question: What is a self-attention mechanism?
+  points: 4
+  right:
+  - answer: An attention mechanism where tokens in a sequence attend to each other to capture relationships and dependencies
+    explanation: Self-attention allows each token to consider all other tokens in the sequence, enabling the model to capture long-range dependencies.
+    links:
+    - https://en.wikipedia.org/wiki/Attention_(machine_learning)
+  wrong:
+  - answer: A mechanism where the model monitors its own performance
+    explanation: This describes self-monitoring, not self-attention.
+  - answer: When the model focuses on protecting itself from adversarial attacks
+    explanation: This describes security mechanisms, not self-attention.
+  - answer: A technique where the model improves itself without human intervention
+    explanation: This describes self-improvement, not the self-attention mechanism.
+  - answer: When attention is paid only to the current token being processed
+    explanation: This is the opposite of self-attention, which considers all tokens.
+  - answer: A meditation technique for improving model focus
+    explanation: This comically misinterprets "attention" as mindfulness.
+
+- question: What is cross-attention?
+  points: 4
+  right:
+  - answer: An attention mechanism where tokens from one sequence attend to tokens from another sequence
+    explanation: Cross-attention is used in encoder-decoder models, allowing the decoder to focus on relevant parts of the encoder's output.
+    links:
+    - https://en.wikipedia.org/wiki/Attention_(machine_learning)
+  wrong:
+  - answer: When two models pay attention to each other's outputs
+    explanation: This describes model interaction, not the cross-attention mechanism.
+  - answer: A technique for detecting contradictions in model outputs
+    explanation: This describes consistency checking, not cross-attention.
+  - answer: Attention that crosses multiple programming languages
+    explanation: This misinterprets "cross" as relating to programming languages.
+  - answer: When the model becomes angry or cross during training
+    explanation: This comically misinterprets "cross" as an emotion.
+  - answer: A security feature that prevents unauthorized cross-model access
+    explanation: This describes access control, not cross-attention.
+
+- question: What is multi-head attention?
+  points: 4
+  right:
+  - answer: Running multiple attention mechanisms in parallel, each learning different aspects of relationships between tokens
+    explanation: Multi-head attention allows the model to attend to information from different representation subspaces simultaneously.
+    links:
+    - https://en.wikipedia.org/wiki/Attention_(machine_learning)
+  wrong:
+  - answer: Training multiple models simultaneously with different attention patterns
+    explanation: This describes ensemble training, not multi-head attention within a single model.
+  - answer: Attention mechanism designed for multi-user scenarios
+    explanation: This misinterprets "multi-head" as relating to multiple users.
+  - answer: A method for processing multiple languages simultaneously
+    explanation: While multi-head attention helps with various tasks, this isn't its definition.
+  - answer: Attention that requires multiple servers to compute
+    explanation: This describes distributed computing, not multi-head attention architecture.
+  - answer: When the model has multiple decision-making centers
+    explanation: This vaguely describes architecture but doesn't capture multi-head attention specifically.
+
+- question: What is the role of the feedforward layer in Transformers?
+  points: 4
+  right:
+  - answer: To apply non-linear transformations to each position independently, adding computational depth after attention
+    explanation: Feedforward layers consist of two linear transformations with activation functions, processing each position separately.
+    links:
+    - https://en.wikipedia.org/wiki/Transformer_(machine_learning_model)
+  wrong:
+  - answer: To feed training data forward through the model during training
+    explanation: This describes forward propagation generally, not the specific feedforward layer.
+  - answer: To provide feedback to users about model performance
+    explanation: This describes user feedback systems, not feedforward layers.
+  - answer: To forward model outputs to downstream applications
+    explanation: This describes output routing, not feedforward layers.
+  - answer: To move information from earlier to later layers
+    explanation: This vaguely describes information flow but doesn't explain feedforward layers specifically.
+  - answer: To feed the model with forward-looking predictions
+    explanation: This misinterprets the purpose of feedforward layers.
+
+- question: What is gradient descent?
+  points: 2
+  right:
+  - answer: An optimization algorithm that iteratively adjusts model parameters in the direction that minimizes the loss function
+    explanation: Gradient descent uses the gradient of the loss with respect to parameters to update them toward better performance.
+    links:
+    - https://en.wikipedia.org/wiki/Gradient_descent
+  wrong:
+  - answer: When model performance gradually decreases over time
+    explanation: This describes model degradation, not gradient descent.
+  - answer: A technique for gradually reducing model size
+    explanation: This describes model compression strategies, not gradient descent.
+  - answer: The process of descending from advanced to beginner difficulty levels
+    explanation: This misinterprets "descent" as difficulty reduction.
+  - answer: A method for downloading gradients from cloud storage
+    explanation: This comically misinterprets "descent" as downloading.
+  - answer: When gradients flow downward through the network layers
+    explanation: While gradients do flow through layers, this doesn't define gradient descent optimization.
+
+- question: What is backpropagation?
+  points: 2
+  right:
+  - answer: The algorithm for computing gradients of the loss function with respect to model parameters by applying the chain rule
+    explanation: Backpropagation efficiently calculates gradients by propagating errors backward through the network from output to input.
+    links:
+    - https://en.wikipedia.org/wiki/Backpropagation
+  wrong:
+  - answer: The process of backing up model parameters during training
+    explanation: This describes data backup, not backpropagation.
+  - answer: Propagating user feedback back to model developers
+    explanation: This describes feedback loops, not the backpropagation algorithm.
+  - answer: Reversing the model's predictions when they're incorrect
+    explanation: This describes error correction, not backpropagation.
+  - answer: A technique for undoing recent model updates
+    explanation: This describes rollback procedures, not backpropagation.
+  - answer: Sending model outputs back to the input layer
+    explanation: While "back" is directionally correct, this doesn't define backpropagation properly.
+
+- question: What is overfitting in machine learning?
+  points: 2
+  right:
+  - answer: When a model learns the training data too well, including noise, and performs poorly on new unseen data
+    explanation: Overfitting occurs when models have low training error but high validation error due to memorizing rather than generalizing.
+    links:
+    - https://en.wikipedia.org/wiki/Overfitting
+  wrong:
+  - answer: When a model is too large to fit in available memory
+    explanation: This describes memory constraints, not overfitting.
+  - answer: When training takes too long and exceeds time limits
+    explanation: This describes training duration issues, not overfitting.
+  - answer: When the model outputs are too lengthy for the application
+    explanation: This describes output length issues, not overfitting.
+  - answer: When too many parameters are fitted simultaneously
+    explanation: While related to model complexity, this doesn't define overfitting.
+  - answer: When the model is over-optimized for speed
+    explanation: This describes optimization for inference speed, not overfitting.
+
+- question: What is underfitting in machine learning?
+  points: 2
+  right:
+  - answer: When a model is too simple to capture the underlying patterns in the data, performing poorly on both training and test data
+    explanation: Underfitting occurs when models lack sufficient capacity or training to learn the true relationships in the data.
+    links:
+    - https://en.wikipedia.org/wiki/Overfitting
+  wrong:
+  - answer: When the model doesn't fit in the available hardware
+    explanation: This describes hardware compatibility, not underfitting.
+  - answer: When training data is insufficient in quantity
+    explanation: While related, insufficient data is a cause, not the definition of underfitting.
+  - answer: When the model outputs are too short
+    explanation: This describes output length, not underfitting.
+  - answer: When model parameters are below the recommended count
+    explanation: This vaguely relates to model capacity but doesn't define underfitting.
+  - answer: When the model fails to meet user expectations
+    explanation: This describes user dissatisfaction, not the technical concept of underfitting.
+
+- question: What is a learning rate?
+  points: 2
+  right:
+  - answer: A hyperparameter that controls how much model parameters are adjusted during each optimization step
+    explanation: The learning rate determines the step size in gradient descent; too large causes instability, too small causes slow convergence.
+    links:
+    - https://en.wikipedia.org/wiki/Learning_rate
+  wrong:
+  - answer: The speed at which the model learns human languages
+    explanation: This misinterprets learning rate as a measure of language acquisition.
+  - answer: How quickly users can learn to use the model
+    explanation: This describes user learning, not the optimization hyperparameter.
+  - answer: The frequency of training updates per second
+    explanation: This describes training throughput, not learning rate.
+  - answer: A pricing tier for model API access
+    explanation: This misinterprets "rate" as a pricing term.
+  - answer: The percentage of training data learned per epoch
+    explanation: This misunderstands what learning rate controls.
+
+- question: What is a hyperparameter?
+  points: 2
+  right:
+  - answer: A configuration variable set before training that controls the learning process but is not learned from data
+    explanation: Hyperparameters like learning rate, batch size, and number of layers are set by practitioners, unlike model parameters learned during training.
+    links:
+    - https://en.wikipedia.org/wiki/Hyperparameter_(machine_learning)
+  wrong:
+  - answer: A parameter with extremely high values
+    explanation: "Hyper" doesn't mean large values; this misinterprets the prefix.
+  - answer: An advanced parameter only experts can adjust
+    explanation: While hyperparameters require expertise, this doesn't define what they are.
+  - answer: A parameter that controls hyperlinks in model outputs
+    explanation: This comically misinterprets "hyper" as relating to hyperlinks.
+  - answer: The most important parameter in the model
+    explanation: "Hyper" doesn't indicate importance level.
+  - answer: A parameter used in hyperspace for quantum computing
+    explanation: This misrelates "hyper" to quantum computing concepts.
+
+- question: What is batch size in neural network training?
+  points: 2
+  right:
+  - answer: The number of training examples processed together in one forward/backward pass before updating parameters
+    explanation: Batch size affects training speed, memory usage, and convergence properties; larger batches are faster but require more memory.
+    links:
+    - https://en.wikipedia.org/wiki/Stochastic_gradient_descent
+  wrong:
+  - answer: The size of the data storage batch on disk
+    explanation: This describes storage organization, not the training batch size.
+  - answer: The number of models trained in one batch job
+    explanation: This describes batch job processing, not batch size in training.
+  - answer: The maximum size of output the model can generate
+    explanation: This describes output length limits, not batch size.
+  - answer: The quantity of batches required to complete training
+    explanation: This describes the total number of batches, not batch size.
+  - answer: The size of the cooking batch when preparing training data
+    explanation: This comically misinterprets "batch" as cooking terminology.
+
+- question: What is an epoch in neural network training?
+  points: 1
+  right:
+  - answer: One complete pass through the entire training dataset
+    explanation: Training typically involves multiple epochs, with the model seeing each training example multiple times to learn effectively.
+    links:
+    - https://en.wikipedia.org/wiki/Training,_validation,_and_test_sets
+  wrong:
+  - answer: A historical time period represented in the training data
+    explanation: This misinterprets "epoch" as a historical era.
+  - answer: The amount of time training takes
+    explanation: This describes training duration, not what an epoch is.
+  - answer: A major version update of the model
+    explanation: This describes versioning, not training epochs.
+  - answer: The moment when the model achieves peak performance
+    explanation: This describes an optimal point, not the definition of epoch.
+  - answer: A checkpoint saved during training
+    explanation: This describes model checkpointing, not an epoch.
+
+- question: What is the difference between validation and test sets?
+  points: 2
+  right:
+  - answer: Validation sets are used during training to tune hyperparameters and monitor performance; test sets are held out completely to evaluate final performance
+    explanation: Validation guides development decisions, while test sets provide unbiased performance estimates on truly unseen data.
+    links:
+    - https://en.wikipedia.org/wiki/Training,_validation,_and_test_sets
+  wrong:
+  - answer: Validation sets are larger than test sets
+    explanation: Size differences may exist but don't define the fundamental distinction.
+  - answer: Validation sets contain easier examples than test sets
+    explanation: Difficulty level is not what distinguishes these sets.
+  - answer: Validation sets are for validating user inputs, test sets for testing outputs
+    explanation: This describes different validation concepts, not dataset splits.
+  - answer: Validation sets are used during inference, test sets during training
+    explanation: This reverses their actual uses.
+  - answer: Validation and test sets are the same thing with different names
+    explanation: They serve distinct purposes and should not be confused.
+
+- question: What is dropout in neural networks?
+  points: 4
+  right:
+  - answer: A regularization technique that randomly deactivates neurons during training to prevent overfitting
+    explanation: Dropout forces the network to learn redundant representations, improving generalization by preventing co-adaptation of neurons.
+    links:
+    - https://en.wikipedia.org/wiki/Dropout_(neural_networks)
+  wrong:
+  - answer: When neurons permanently stop working due to hardware failure
+    explanation: This describes hardware failure, not the dropout technique.
+  - answer: The percentage of students who dropout of AI courses
+    explanation: This comically misinterprets dropout as education attrition.
+  - answer: Removing entire layers from the model architecture
+    explanation: This describes layer removal, not dropout regularization.
+  - answer: When training stops prematurely due to errors
+    explanation: This describes training interruption, not dropout.
+  - answer: Excluding low-quality data samples from training
+    explanation: This describes data filtering, not dropout.
+
+- question: What is the purpose of an activation function?
+  points: 2
+  right:
+  - answer: To introduce non-linearity into neural networks, enabling them to learn complex patterns
+    explanation: Without activation functions, neural networks would only learn linear transformations regardless of depth.
+    links:
+    - https://en.wikipedia.org/wiki/Activation_function
+  wrong:
+  - answer: To activate the model when it receives a query
+    explanation: This describes model invocation, not activation functions.
+  - answer: To turn on specific neurons when needed
+    explanation: This vaguely relates but doesn't capture the mathematical purpose.
+  - answer: To activate user accounts for model access
+    explanation: This describes user authentication, not activation functions.
+  - answer: To determine which functions in the code are currently active
+    explanation: This describes code execution, not neural network activation functions.
+  - answer: To activate the learning process during training
+    explanation: This vaguely describes training but not the specific role of activation functions.
+
+- question: What is ReLU?
+  points: 2
+  right:
+  - answer: Rectified Linear Unit, an activation function that outputs the input if positive, otherwise zero
+    explanation: ReLU is defined as f(x) = max(0, x) and is widely used due to its simplicity and effectiveness in avoiding vanishing gradients.
+    links:
+    - https://en.wikipedia.org/wiki/Rectifier_(neural_networks)
+  wrong:
+  - answer: Reinforced Learning Unit for neural network reinforcement
+    explanation: This incorrectly expands the acronym and misunderstands its purpose.
+  - answer: Recursive Evaluation Logic Unit for processing sequences
+    explanation: This is not what ReLU stands for or does.
+  - answer: Real-time Learning Update mechanism
+    explanation: This is incorrect terminology.
+  - answer: Regularized Linear Unification for model optimization
+    explanation: This is not the correct expansion or function.
+  - answer: Remote Execution Logic Unit for distributed computing
+    explanation: This completely misinterprets what ReLU is.
+
+- question: What is the attention score in the attention mechanism?
+  points: 4
+  right:
+  - answer: A value representing how much focus a token should place on another token, computed from query-key similarity
+    explanation: Attention scores are calculated by comparing query and key vectors, then normalized with softmax to weight the values.
+    links:
+    - https://en.wikipedia.org/wiki/Attention_(machine_learning)
+  wrong:
+  - answer: A grade given to the model based on how well it pays attention
+    explanation: This interprets "score" as an evaluation metric rather than a computational value.
+  - answer: The number of tokens the model can attend to simultaneously
+    explanation: This describes attention capacity, not attention scores.
+  - answer: A metric measuring user attention when reading model outputs
+    explanation: This describes human attention, not the attention mechanism.
+  - answer: The importance ranking of different attention heads
+    explanation: This describes head importance, not attention scores between tokens.
+  - answer: A security score indicating attention to safety protocols
+    explanation: This relates to security, not the attention mechanism.
+
+- question: What is the purpose of the [CLS] token in BERT?
+  points: 4
+  right:
+  - answer: A special token whose final hidden state is used as the aggregate sequence representation for classification tasks
+    explanation: The [CLS] token, placed at the beginning of sequences, learns to capture sentence-level information useful for classification.
+    links:
+    - https://en.wikipedia.org/wiki/BERT_(language_model)
+  wrong:
+  - answer: A token that clears the model's memory between inputs
+    explanation: [CLS] doesn't clear memory; this misinterprets its purpose.
+  - answer: A classification label assigned by the model
+    explanation: [CLS] is an input token, not an output label.
+  - answer: A command-line syntax token for model configuration
+    explanation: This misinterprets [CLS] as programming syntax.
+  - answer: A closing bracket token for formatting outputs
+    explanation: This confuses [CLS] with punctuation or formatting.
+  - answer: A token marking classified or secret information
+    explanation: This relates to information security, not BERT's architecture.
+
+- question: What is the purpose of the [SEP] token in BERT?
+  points: 4
+  right:
+  - answer: A special token used to separate different segments or sentences in the input sequence
+    explanation: [SEP] tokens mark boundaries between segments, enabling BERT to process sentence pairs for tasks like question answering.
+    links:
+    - https://en.wikipedia.org/wiki/BERT_(language_model)
+  wrong:
+  - answer: A token that separates training data from validation data
+    explanation: [SEP] is used within inputs, not to separate datasets.
+  - answer: A token marking the end of model training
+    explanation: This describes training termination, not the [SEP] token.
+  - answer: A separator used in the model's code implementation
+    explanation: [SEP] is a data token, not a programming construct.
+  - answer: A token for September in temporal data
+    explanation: This comically misinterprets [SEP] as an abbreviation for September.
+  - answer: A security token separating authorized from unauthorized users
+    explanation: This relates to access control, not BERT's token types.
+
+- question: What is masked language modeling?
+  points: 2
+  right:
+  - answer: A training objective where some tokens are masked and the model learns to predict them from surrounding context
+    explanation: BERT uses masked language modeling to learn bidirectional representations by predicting randomly masked tokens.
+    links:
+    - https://en.wikipedia.org/wiki/BERT_(language_model)
+  wrong:
+  - answer: Using masks to protect sensitive information in language models
+    explanation: This describes data privacy, not the masked language modeling objective.
+  - answer: Modeling human language while wearing a mask
+    explanation: This comically interprets "masked" literally.
+  - answer: Creating language models that hide their internal workings
+    explanation: This describes model opacity, not masked language modeling.
+  - answer: Training models to detect masked or fake language
+    explanation: This describes fake detection, not the training objective.
+  - answer: Removing inappropriate language from model outputs
+    explanation: This describes content filtering, not masked language modeling.
+
+- question: What is causal language modeling?
+  points: 4
+  right:
+  - answer: A training objective where the model predicts the next token based only on previous tokens, enforcing left-to-right directionality
+    explanation: Causal (autoregressive) modeling is used in GPT models, where each token can only attend to previous tokens, not future ones.
+    links:
+    - https://en.wikipedia.org/wiki/Autoregressive_model
+  wrong:
+  - answer: Modeling causal relationships between events mentioned in text
+    explanation: While models can learn some causality, this doesn't define causal language modeling.
+  - answer: Training models to determine cause and effect in sentences
+    explanation: This describes causal reasoning, not the causal language modeling objective.
+  - answer: A modeling approach that emphasizes casual, informal language
+    explanation: This confuses "causal" with "casual" language style.
+  - answer: Modeling language that causes specific user reactions
+    explanation: This misinterprets what "causal" means in this context.
+  - answer: Training models using only carefully validated causal data
+    explanation: This describes data quality, not causal language modeling.
+
+- question: What is next sentence prediction?
+  points: 4
+  right:
+  - answer: A training objective where the model learns to predict whether one sentence follows another in the original text
+    explanation: Next sentence prediction was originally used in BERT to help the model understand sentence relationships, though later work questioned its necessity.
+    links:
+    - https://en.wikipedia.org/wiki/BERT_(language_model)
+  wrong:
+  - answer: Predicting what sentence will come next in a conversation
+    explanation: While related, this describes conversational AI, not the specific training objective.
+  - answer: Forecasting which sentence users will type next
+    explanation: This describes predictive text, not the training task.
+  - answer: Predicting the next sentence in a time series
+    explanation: This misapplies "next" to temporal sequences rather than text sequences.
+  - answer: Determining which sentence will be most popular next
+    explanation: This describes trend prediction, not next sentence prediction.
+  - answer: Scheduling which sentence to process next during training
+    explanation: This describes processing order, not the training objective.
+
+- question: What is instruction tuning?
+  points: 4
+  right:
+  - answer: Fine-tuning a model on a diverse set of tasks framed as instructions to improve its ability to follow commands
+    explanation: Instruction tuning trains models on many tasks expressed as natural language instructions, improving zero-shot task performance.
+    links:
+    - https://en.wikipedia.org/wiki/Prompt_engineering
+  wrong:
+  - answer: Tuning the instructions given to model developers
+    explanation: This describes developer guidance, not model training.
+  - answer: Adjusting the model's instruction manual for users
+    explanation: This describes documentation, not instruction tuning.
+  - answer: Fine-tuning hardware instructions for optimal performance
+    explanation: This describes hardware optimization, not instruction tuning.
+  - answer: Teaching the model to write better instructions
+    explanation: While models can generate instructions, this doesn't define instruction tuning.
+  - answer: Tuning the musical instructions in audio models
+    explanation: This misapplies instruction tuning to audio domain.
+
+- question: What is chain-of-thought prompting?
+  points: 4
+  right:
+  - answer: A prompting technique where the model is encouraged to break down reasoning into intermediate steps
+    explanation: Chain-of-thought prompting improves performance on complex reasoning tasks by having models explicitly show their reasoning process.
+    links:
+    - https://en.wikipedia.org/wiki/Prompt_engineering
+  wrong:
+  - answer: Linking multiple model outputs together in a sequence
+    explanation: This describes output chaining, not chain-of-thought prompting.
+  - answer: A technique for creating supply chains with AI
+    explanation: This misinterprets "chain" in a business logistics context.
+  - answer: Prompting models to think about blockchain technology
+    explanation: This confuses "chain" with blockchain.
+  - answer: Connecting multiple models in a chain for better performance
+    explanation: This describes model ensembling, not chain-of-thought prompting.
+  - answer: A security technique to prevent prompt injection chains
+    explanation: This relates to security, not chain-of-thought reasoning.
+
+- question: What is in-context learning?
+  points: 4
+  right:
+  - answer: The ability of LLMs to learn new tasks from examples provided in the prompt without parameter updates
+    explanation: In-context learning allows models to adapt to new tasks at inference time by conditioning on examples, without requiring fine-tuning.
+    links:
+    - https://en.wikipedia.org/wiki/Few-shot_learning
+  wrong:
+  - answer: Learning that occurs within a specific cultural context
+    explanation: This interprets "context" as cultural rather than prompt context.
+  - answer: Training models with contextual information included
+    explanation: This vaguely describes training data but not in-context learning.
+  - answer: Learning that happens in real-time during conversations
+    explanation: While related to inference-time behavior, this doesn't capture the essence of in-context learning.
+  - answer: Educating users about the context in which to use models
+    explanation: This describes user education, not in-context learning.
+  - answer: Learning constrained to specific application contexts
+    explanation: This describes domain specialization, not in-context learning.
+
+- question: What is parameter-efficient fine-tuning?
+  points: 7
+  right:
+  - answer: Techniques that fine-tune only a small subset of parameters while keeping most of the model frozen, reducing computational costs
+    explanation: Methods like LoRA, adapters, and prompt tuning update far fewer parameters than full fine-tuning, making adaptation more accessible.
+    links:
+    - https://en.wikipedia.org/wiki/Transfer_learning
+  wrong:
+  - answer: Fine-tuning that focuses on making parameters more efficient
+    explanation: This misunderstands what "parameter-efficient" means in this context.
+  - answer: Optimizing hyperparameters for computational efficiency
+    explanation: This describes hyperparameter optimization, not parameter-efficient fine-tuning.
+  - answer: Fine-tuning with fewer training examples
+    explanation: This describes data efficiency, not parameter efficiency.
+  - answer: Removing unnecessary parameters before fine-tuning
+    explanation: This describes pruning, not parameter-efficient fine-tuning methods.
+  - answer: Fine-tuning that completes in less time
+    explanation: While it may be faster, time efficiency doesn't define parameter-efficient fine-tuning.
+
+- question: What is LoRA (Low-Rank Adaptation)?
+  points: 7
+  right:
+  - answer: A parameter-efficient fine-tuning method that adds trainable low-rank matrices to model layers while keeping original weights frozen
+    explanation: LoRA decomposes weight updates into low-rank matrices, drastically reducing the number of trainable parameters during fine-tuning.
+    links:
+    - https://arxiv.org/abs/2106.09685
+  wrong:
+  - answer: A technique for reducing the rank or hierarchy of model administrators
+    explanation: This comically misinterprets "rank" in an organizational context.
+  - answer: Low-Resource Adaptation for models with limited compute
+    explanation: While LoRA is resource-efficient, this isn't the correct acronym expansion.
+  - answer: A method for adapting models to low-rank languages
+    explanation: This misinterprets "low-rank" as relating to language status.
+  - answer: A compression technique that removes low-importance parameters
+    explanation: LoRA adds parameters for adaptation, not removes them.
+  - answer: An adaptation method specific to the LoRA wireless protocol
+    explanation: This confuses LoRA with the unrelated wireless communication technology.
+
+- question: What is prompt injection?
+  points: 4
+  right:
+  - answer: A security vulnerability where malicious instructions are inserted into prompts to manipulate model behavior
+    explanation: Prompt injection attacks attempt to override system instructions or extract information by carefully crafted user inputs.
+    links:
+    - https://en.wikipedia.org/wiki/Prompt_injection
+  wrong:
+  - answer: The process of inserting prompts into the training data
+    explanation: This describes data augmentation, not the security vulnerability.
+  - answer: A medical procedure for injecting prompts into patients
+    explanation: This comically interprets "injection" literally in a medical context.
+  - answer: Inserting additional prompts to improve model performance
+    explanation: This describes prompt optimization, not the security attack.
+  - answer: A technique for injecting creativity into model outputs
+    explanation: This misunderstands prompt injection as a positive feature.
+  - answer: The API method for submitting prompts to the model
+    explanation: This describes the normal prompt submission process, not an attack.
+
+- question: What is model alignment?
+  points: 4
+  right:
+  - answer: The process of ensuring AI systems behave in accordance with human values and intentions
+    explanation: Alignment involves techniques like RLHF to make models helpful, harmless, and honest, addressing safety concerns.
+    links:
+    - https://en.wikipedia.org/wiki/AI_alignment
+  wrong:
+  - answer: Physically aligning model servers in data centers
+    explanation: This interprets "alignment" as physical arrangement.
+  - answer: Making sure model outputs are text-aligned or justified
+    explanation: This describes text formatting, not AI alignment.
+  - answer: Aligning multiple models to work together
+    explanation: This describes model coordination, not value alignment.
+  - answer: Synchronizing model updates across distributed systems
+    explanation: This describes system synchronization, not AI alignment.
+  - answer: Aligning the model's training schedule with business timelines
+    explanation: This describes project management, not AI alignment.
+
+- question: What is the reward model in RLHF?
+  points: 7
+  right:
+  - answer: A model trained on human preference data to predict which outputs humans would prefer, used to guide reinforcement learning
+    explanation: The reward model scores different model outputs, providing the reward signal for optimizing the policy model via reinforcement learning.
+    links:
+    - https://en.wikipedia.org/wiki/Reinforcement_learning_from_human_feedback
+  wrong:
+  - answer: A system that rewards users for providing good prompts
+    explanation: This describes a user incentive system, not the reward model in RLHF.
+  - answer: A financial model for calculating rewards to model trainers
+    explanation: This describes compensation, not the technical reward model.
+  - answer: A model that generates rewards or prizes for users
+    explanation: This misunderstands the purpose of reward models in RL.
+  - answer: A database tracking rewards earned during training
+    explanation: This describes record-keeping, not the reward model.
+  - answer: A model for predicting stock market rewards
+    explanation: This misapplies reward models to finance.
+
+- question: What is Constitutional AI?
+  points: 7
+  right:
+  - answer: An approach to AI alignment where models are trained to follow a set of principles or "constitution" through self-critique and revision
+    explanation: Constitutional AI uses the model itself to critique and revise outputs according to specified principles, reducing reliance on human feedback.
+    links:
+    - https://www.anthropic.com/index/constitutional-ai-harmlessness-from-ai-feedback
+  wrong:
+  - answer: AI systems designed to interpret constitutional law
+    explanation: This interprets "constitutional" as relating to legal documents.
+  - answer: AI models built following constitutional rights and freedoms
+    explanation: While related to ethics, this doesn't define Constitutional AI specifically.
+  - answer: The constitutional framework governing AI development
+    explanation: This describes regulatory frameworks, not the technical approach.
+  - answer: AI systems with built-in health constitution monitoring
+    explanation: This misinterprets "constitution" as physical health.
+  - answer: Models trained on constitutional documents from various countries
+    explanation: This describes specialized training data, not Constitutional AI.
+
+- question: What is retrieval-augmented generation (RAG)?
+  points: 7
+  right:
+  - answer: A technique that combines LLMs with information retrieval, allowing models to access external knowledge to ground their responses
+    explanation: RAG retrieves relevant documents from a knowledge base and incorporates them into the generation process, reducing hallucinations.
+    links:
+    - https://en.wikipedia.org/wiki/Retrieval-augmented_generation
+  wrong:
+  - answer: A method for retrieving augmented reality content using AI
+    explanation: This confuses "augmented generation" with augmented reality.
+  - answer: Generating retrieval queries automatically for search engines
+    explanation: This describes query generation, not RAG architecture.
+  - answer: Retrieving previously generated content for reuse
+    explanation: This describes caching, not the RAG technique.
+  - answer: Augmenting training data with retrieved examples
+    explanation: This describes data augmentation, not RAG inference.
+  - answer: A technique for generating realistic rags and textiles with AI
+    explanation: This comically misinterprets "RAG" as relating to fabric.
+
+- question: What is the difference between extractive and abstractive summarization?
+  points: 4
+  right:
+  - answer: Extractive summarization selects existing sentences from the source, while abstractive summarization generates new sentences to convey the meaning
+    explanation: Extractive methods copy text verbatim, while abstractive methods paraphrase and synthesize, which LLMs excel at.
+    links:
+    - https://en.wikipedia.org/wiki/Automatic_summarization
+  wrong:
+  - answer: Extractive is faster, abstractive is more accurate
+    explanation: Performance characteristics differ but don't define the fundamental difference.
+  - answer: Extractive works with text, abstractive works with images
+    explanation: Both work with text; this is incorrect.
+  - answer: Extractive summarization is done by humans, abstractive by AI
+    explanation: Both can be done by humans or AI; this doesn't define the distinction.
+  - answer: Extractive removes content, abstractive adds content
+    explanation: Both reduce content; this misunderstands their approaches.
+  - answer: Extractive is for academic papers, abstractive is for news
+    explanation: Both can be applied to any text type; this is incorrect.
+
+- question: What is semantic similarity?
+  points: 4
+  right:
+  - answer: A measure of how similar two pieces of text are in meaning, regardless of their exact wording
+    explanation: Semantic similarity uses embeddings to compare meaning, enabling tasks like paraphrase detection and semantic search.
+    links:
+    - https://en.wikipedia.org/wiki/Semantic_similarity
+  wrong:
+  - answer: How similar two texts are in structure and grammar
+    explanation: This describes syntactic similarity, not semantic similarity.
+  - answer: The percentage of identical words between two texts
+    explanation: This measures lexical overlap, not semantic meaning.
+  - answer: How similarly two models perform on the same task
+    explanation: This describes model performance comparison, not semantic similarity.
+  - answer: The similarity of file formats between two documents
+    explanation: This describes format compatibility, not semantic similarity.
+  - answer: How similar the training data is between two models
+    explanation: This describes data overlap, not semantic similarity of text.
+
+- question: What is named entity recognition (NER)?
+  points: 2
+  right:
+  - answer: Identifying and classifying named entities (people, organizations, locations, etc.) in text
+    explanation: NER is a fundamental NLP task that LLMs can perform, often without fine-tuning, by recognizing and categorizing proper nouns.
+    links:
+    - https://en.wikipedia.org/wiki/Named-entity_recognition
+  wrong:
+  - answer: Recognizing famous people mentioned in text
+    explanation: This is too narrow; NER includes organizations, locations, and more.
+  - answer: Identifying entities that have names versus those that don't
+    explanation: This misunderstands what "named entity" means.
+  - answer: A security feature that recognizes authorized entity names
+    explanation: This relates to authentication, not NER.
+  - answer: Recognizing when entities are properly named in text
+    explanation: This misinterprets NER as checking naming correctness.
+  - answer: Identifying naming conventions used in code entities
+    explanation: This describes code analysis, not NER in natural language.
+
+- question: What is sentiment analysis?
+  points: 2
+  right:
+  - answer: Determining the emotional tone or opinion expressed in text (positive, negative, neutral)
+    explanation: Sentiment analysis classifies the attitude or emotion conveyed in text, useful for understanding opinions and feedback.
+    links:
+    - https://en.wikipedia.org/wiki/Sentiment_analysis
+  wrong:
+  - answer: Analyzing the sentimental value of items mentioned in text
+    explanation: This misinterprets "sentiment" as emotional attachment to objects.
+  - answer: Detecting whether text is emotional or logical
+    explanation: This oversimplifies and mischaracterizes sentiment analysis.
+  - answer: Analyzing the feelings of the person who wrote the model
+    explanation: This misattributes sentiment to the model creator, not the text.
+  - answer: A psychological analysis of model users
+    explanation: This describes user profiling, not text sentiment analysis.
+  - answer: Measuring how sentimental or nostalgic text content is
+    explanation: This focuses only on one emotional dimension, missing the broader scope.
+
+- question: What is coreference resolution?
+  points: 4
+  right:
+  - answer: Identifying which words or phrases in text refer to the same entity
+    explanation: Coreference resolution links pronouns and other references to their antecedents, crucial for understanding text coherence.
+    links:
+    - https://en.wikipedia.org/wiki/Coreference
+  wrong:
+  - answer: Resolving conflicts in collaborative document editing
+    explanation: This interprets "resolution" as conflict resolution.
+  - answer: Determining the resolution quality of text rendering
+    explanation: This misinterprets "resolution" as display quality.
+  - answer: Finding the core features that need resolution
+    explanation: This vaguely misunderstands the term.
+  - answer: Resolving references in bibliographies and citations
+    explanation: This describes citation processing, not coreference resolution.
+  - answer: Determining which core team resolves model issues
+    explanation: This relates to team management, not coreference resolution.
+
+- question: What is dependency parsing?
+  points: 4
+  right:
+  - answer: Analyzing the grammatical structure of a sentence by identifying relationships between words
+    explanation: Dependency parsing creates a tree structure showing which words modify or depend on others, revealing syntactic relationships.
+    links:
+    - https://en.wikipedia.org/wiki/Dependency_grammar
+  wrong:
+  - answer: Parsing the dependencies listed in software package managers
+    explanation: This describes software dependency management, not linguistic parsing.
+  - answer: Analyzing which parts of text depend on context
+    explanation: This vaguely relates to context but doesn't define dependency parsing.
+  - answer: Determining dependencies between different models
+    explanation: This describes model relationships, not dependency parsing.
+  - answer: Parsing text to identify dependent clauses only
+    explanation: This is too narrow and misunderstands dependency parsing.
+  - answer: Analyzing codependency relationships described in text
+    explanation: This misapplies dependency to psychology rather than grammar.
+
+- question: What is machine translation?
+  points: 1
+  right:
+  - answer: Automatically translating text from one language to another using computational methods
+    explanation: Machine translation is a classic NLP task that modern LLMs can perform well, especially with multilingual training.
+    links:
+    - https://en.wikipedia.org/wiki/Machine_translation
+  wrong:
+  - answer: Translating machine code to assembly language
+    explanation: This describes code compilation, not language translation.
+  - answer: Translation performed by machines rather than humans
+    explanation: While literally true, this doesn't capture what the field encompasses.
+  - answer: Translating technical manuals for machines
+    explanation: This describes a specific application, not the general concept.
+  - answer: Converting machine-readable formats to human-readable ones
+    explanation: This describes data formatting, not language translation.
+  - answer: Teaching machines to translate physical objects
+    explanation: This comically misunderstands translation as physical movement.
+
+- question: What is text classification?
+  points: 2
+  right:
+  - answer: Assigning predefined categories or labels to text documents or passages
+    explanation: Text classification includes tasks like spam detection, topic categorization, and sentiment analysis, which LLMs can perform effectively.
+    links:
+    - https://en.wikipedia.org/wiki/Document_classification
+  wrong:
+  - answer: Classifying text as classified or unclassified information
+    explanation: This relates to information security, not text classification tasks.
+  - answer: Organizing text files into folders on a computer
+    explanation: This describes file management, not text classification.
+  - answer: Determining the classification system used in a library
+    explanation: This relates to library science, not NLP text classification.
+  - answer: Classifying different fonts and typefaces in text
+    explanation: This describes typography, not content-based classification.
+  - answer: Creating a class hierarchy for object-oriented text processing
+    explanation: This describes programming, not text classification.
+
+- question: What is question answering in NLP?
+  points: 2
+  right:
+  - answer: The task of automatically providing answers to questions posed in natural language
+    explanation: Question answering can be extractive (selecting from text) or generative (creating answers), both capabilities of modern LLMs.
+    links:
+    - https://en.wikipedia.org/wiki/Question_answering
+  wrong:
+  - answer: Answering questions about natural language processing itself
+    explanation: This is too narrow; QA applies to any domain.
+  - answer: Teaching models to ask questions rather than answer them
+    explanation: This reverses the task direction.
+  - answer: Creating FAQs automatically from documentation
+    explanation: This describes FAQ generation, a related but distinct task.
+  - answer: Answering multiple choice questions only
+    explanation: QA includes open-ended questions, not just multiple choice.
+  - answer: A quality assurance process for NLP systems
+    explanation: This interprets "QA" as quality assurance, not question answering.
+
+- question: What is the curse of dimensionality?
+  points: 7
+  right:
+  - answer: The phenomenon where data becomes increasingly sparse in high-dimensional spaces, making learning more difficult
+    explanation: As dimensionality increases, the volume of space increases exponentially, requiring exponentially more data to maintain density.
+    links:
+    - https://en.wikipedia.org/wiki/Curse_of_dimensionality
+  wrong:
+  - answer: A superstition about bad luck when using too many dimensions
+    explanation: This comically interprets "curse" literally.
+  - answer: The problem of dimensional analysis in physics applied to AI
+    explanation: This confuses dimensional analysis with the curse of dimensionality.
+  - answer: When models become cursed with too many parameters
+    explanation: While related to complexity, this doesn't properly define the concept.
+  - answer: The difficulty of visualizing more than three dimensions
+    explanation: Visualization is a symptom, not the fundamental problem.
+  - answer: A curse placed on high-dimensional data in folklore
+    explanation: This treats the technical term as actual folklore.
+
+- question: What is model pruning?
+  points: 4
+  right:
+  - answer: Removing unnecessary or redundant parameters from a neural network to reduce its size while maintaining performance
+    explanation: Pruning can remove individual weights, neurons, or entire layers based on their importance, enabling more efficient models.
+    links:
+    - https://en.wikipedia.org/wiki/Pruning_(artificial_intelligence)
+  wrong:
+  - answer: Trimming training data like pruning a tree
+    explanation: This describes data reduction, not model pruning.
+  - answer: Removing models that are outdated or unnecessary
+    explanation: This describes model lifecycle management, not pruning.
+  - answer: Cutting off model outputs that are too long
+    explanation: This describes output truncation, not parameter pruning.
+  - answer: Gardening techniques applied to model training
+    explanation: This comically takes the pruning metaphor literally.
+  - answer: Removing users who misuse the model
+    explanation: This describes user management, not model pruning.
+
+- question: What is model distillation temperature?
+  points: 7
+  right:
+  - answer: A parameter in knowledge distillation that softens the teacher model's probability distribution, helping the student learn better
+    explanation: Higher distillation temperature creates softer probability distributions, revealing more information about the teacher's learned similarities.
+    links:
+    - https://en.wikipedia.org/wiki/Knowledge_distillation
+  wrong:
+  - answer: The temperature at which model distillation must occur
+    explanation: This interprets temperature as a physical parameter.
+  - answer: How hot the GPU gets during distillation training
+    explanation: This confuses the hyperparameter with hardware temperature.
+  - answer: The emotional warmth in teacher-student model relationships
+    explanation: This comically anthropomorphizes the distillation process.
+  - answer: A measure of how distilled or concentrated the model is
+    explanation: This misunderstands temperature's role in distillation.
+  - answer: The boiling point of model parameters during compression
+    explanation: This extends the chemistry metaphor too literally.
+
+- question: What is the exploration-exploitation tradeoff?
+  points: 4
+  right:
+  - answer: The balance between trying new actions (exploration) and choosing known good actions (exploitation) in reinforcement learning
+    explanation: This tradeoff is fundamental in RL and relevant to RLHF, affecting how models balance trying diverse outputs versus optimizing for known preferences.
+    links:
+    - https://en.wikipedia.org/wiki/Multi-armed_bandit
+  wrong:
+  - answer: Trading off exploring new features versus exploiting existing models
+    explanation: This vaguely relates to development but misunderstands the technical concept.
+  - answer: Balancing data exploration versus commercial exploitation
+    explanation: This interprets exploitation in a business ethics context.
+  - answer: The tradeoff between exploring code versus exploiting vulnerabilities
+    explanation: This misapplies the terms to software security.
+  - answer: Exploring new research versus exploiting existing knowledge
+    explanation: While metaphorically related, this doesn't define the RL concept.
+  - answer: The ethical balance between exploration and exploitation in AI
+    explanation: This interprets the terms ethically rather than technically.
+
+- question: What is a generative adversarial network (GAN)?
+  points: 4
+  right:
+  - answer: A framework where two networks (generator and discriminator) compete, with the generator learning to create realistic data
+    explanation: Though GANs are mainly used for images, the adversarial training concept has influenced some language model training approaches.
+    links:
+    - https://en.wikipedia.org/wiki/Generative_adversarial_network
+  wrong:
+  - answer: A network that generates adversarial attacks against models
+    explanation: This describes adversarial attack generation, not GAN architecture.
+  - answer: A network of adversaries competing in generation tasks
+    explanation: This loosely relates but misunderstands the architecture.
+  - answer: A general adversarial network for all purposes
+    explanation: This misexpands the acronym and misunderstands the concept.
+  - answer: A network that adversarially blocks content generation
+    explanation: This reverses the purpose of GANs.
+  - answer: A generative network that handles adversarial situations
+    explanation: This vaguely relates but doesn't capture the architecture.
+
+- question: What is model interpretability?
+  points: 4
+  right:
+  - answer: The degree to which humans can understand and explain how a model makes its decisions
+    explanation: Interpretability is crucial for trust and debugging, but large neural networks like LLMs are often considered "black boxes" with limited interpretability.
+    links:
+    - https://en.wikipedia.org/wiki/Explainable_artificial_intelligence
+  wrong:
+  - answer: Whether a model can interpret multiple languages
+    explanation: This confuses interpretability with multilingual capability.
+  - answer: How well the model interprets user intentions
+    explanation: This describes intent recognition, not model interpretability.
+  - answer: The model's ability to interpret code or data formats
+    explanation: This describes parsing capability, not interpretability.
+  - answer: Whether interpreters are needed to run the model
+    explanation: This confuses interpretability with programming language types.
+  - answer: How models interpret ambiguous instructions
+    explanation: This describes ambiguity resolution, not interpretability.
+
+- question: What is adversarial training?
+  points: 7
+  right:
+  - answer: Training models on adversarial examples (intentionally perturbed inputs) to make them more robust
+    explanation: Adversarial training helps models resist manipulation by exposing them to worst-case inputs during training.
+    links:
+    - https://en.wikipedia.org/wiki/Adversarial_machine_learning
+  wrong:
+  - answer: Training models in adversarial or competitive environments
+    explanation: While vaguely related, this doesn't capture the technical meaning.
+  - answer: Training that occurs when team members have adversarial relationships
+    explanation: This misinterprets adversarial in an interpersonal context.
+  - answer: Using adversarial networks (GANs) for all training
+    explanation: Adversarial training is broader than just GANs.
+  - answer: Training models to be adversarial toward users
+    explanation: This comically reverses the purpose.
+  - answer: A competitive training regime where models face off
+    explanation: This misunderstands adversarial training as model competition.
+
+- question: What is the cold start problem?
+  points: 4
+  right:
+  - answer: The challenge of making predictions for new users or items without historical data
+    explanation: In recommendation systems and some LLM applications, the cold start problem refers to limited information for personalization.
+    links:
+    - https://en.wikipedia.org/wiki/Cold_start_(recommender_systems)
+  wrong:
+  - answer: When models fail to start due to cold hardware temperatures
+    explanation: This interprets "cold start" literally regarding temperature.
+  - answer: The problem of starting model training from scratch
+    explanation: This describes training initialization but not the cold start problem.
+  - answer: Difficulty starting the model without warming it up first
+    explanation: This misunderstands what "cold start" means.
+  - answer: When models are cold or unfriendly when first deployed
+    explanation: This comically interprets "cold" as personality.
+  - answer: Starting model inference without pre-loading data
+    explanation: This vaguely relates to initialization but misses the concept.
+
+- question: What is gradient clipping?
+  points: 4
+  right:
+  - answer: A technique to prevent exploding gradients by limiting their maximum magnitude during training
+    explanation: Gradient clipping caps gradient values or norms, preventing unstable training from very large gradient updates.
+    links:
+    - https://en.wikipedia.org/wiki/Gradient_clipping
+  wrong:
+  - answer: Cutting off gradients that are too small to matter
+    explanation: This describes a form of sparsification, not gradient clipping.
+  - answer: Clipping gradients to save memory during training
+    explanation: Memory saving is a side effect, not the primary purpose.
+  - answer: A video editing technique for gradient backgrounds
+    explanation: This comically misinterprets "clipping" in a multimedia context.
+  - answer: Attaching gradients to clipboards for later use
+    explanation: This absurdly literalizes "clipping."
+  - answer: Removing gradients associated with clipped words
+    explanation: This confuses gradient clipping with text processing.
+
+- question: What is the attention mask in Transformers?
+  points: 7
+  right:
+  - answer: A matrix that controls which positions in the sequence each token is allowed to attend to
+    explanation: Attention masks prevent attending to padding tokens and enforce causality in decoder models by blocking future positions.
+    links:
+    - https://en.wikipedia.org/wiki/Attention_(machine_learning)
+  wrong:
+  - answer: A mask that users wear to pay attention during model training
+    explanation: This comically literalizes "mask" as physical equipment.
+  - answer: A privacy feature that masks which tokens receive attention
+    explanation: This misinterprets masking as a privacy mechanism.
+  - answer: A filter that removes distracting tokens from inputs
+    explanation: This vaguely relates but misunderstands the technical mechanism.
+  - answer: The mask token used in masked language modeling
+    explanation: This confuses the attention mask with [MASK] tokens in BERT.
+  - answer: A security measure masking attention patterns from users
+    explanation: This relates to security rather than the architectural component.
+
+- question: What is the bias-variance tradeoff?
+  points: 4
+  right:
+  - answer: The tradeoff between a model's bias (underfitting) and variance (overfitting) in achieving good generalization
+    explanation: Finding the right model complexity balances bias (too simple) and variance (too complex) to minimize total error on new data.
+    links:
+    - https://en.wikipedia.org/wiki/Bias%E2%80%93variance_tradeoff
+  wrong:
+  - answer: Trading off social bias versus statistical variance in models
+    explanation: This confuses statistical bias with social bias.
+  - answer: The balance between biased and varied training data
+    explanation: This misapplies the terms to data characteristics.
+  - answer: Trading off model bias against output variety
+    explanation: This loosely relates but doesn't capture the statistical concept.
+  - answer: The tradeoff between biased developers and varied users
+    explanation: This misinterprets the terms in a social context.
+  - answer: Balancing bias correction versus variance maximization
+    explanation: This misunderstands the optimization goal.
+
+- question: What is curriculum learning?
+  points: 7
+  right:
+  - answer: Training models by gradually increasing task difficulty, starting with easier examples and progressing to harder ones
+    explanation: Curriculum learning mimics human education, potentially leading to faster convergence and better final performance.
+    links:
+    - https://en.wikipedia.org/wiki/Curriculum_learning
+  wrong:
+  - answer: Learning based on standard academic curricula
+    explanation: This interprets curriculum too literally as school subjects.
+  - answer: Training models on educational curriculum documents
+    explanation: This describes domain-specific training, not curriculum learning.
+  - answer: Designing curricula for teaching people about models
+    explanation: This describes educational program design, not the training technique.
+  - answer: Learning that follows a strict curriculum order
+    explanation: While order matters, this doesn't capture the difficulty progression concept.
+  - answer: Teaching models the curriculum vitae format
+    explanation: This comically confuses curriculum with CV/resume.
+
+- question: What is continual learning (lifelong learning)?
+  points: 7
+  right:
+  - answer: The ability to learn new tasks continuously while retaining knowledge of previous tasks
+    explanation: Continual learning addresses catastrophic forgetting, enabling models to accumulate knowledge over time like humans do.
+    links:
+    - https://en.wikipedia.org/wiki/Continual_learning
+  wrong:
+  - answer: Learning that continues indefinitely without stopping
+    explanation: While ongoing, this doesn't capture the multi-task retention aspect.
+  - answer: Professional development for AI practitioners
+    explanation: This interprets lifelong learning as human career development.
+  - answer: Models that keep learning from user interactions forever
+    explanation: This vaguely relates but misses the catastrophic forgetting challenge.
+  - answer: Training that never reaches convergence
+    explanation: This describes non-convergent training, not continual learning.
+  - answer: Learning throughout the model's operational lifetime
+    explanation: While related, this doesn't capture the task retention aspect.
+
+- question: What is meta-learning?
+  points: 7
+  right:
+  - answer: Learning how to learn, where models are trained to quickly adapt to new tasks with minimal data
+    explanation: Meta-learning (learning to learn) enables models to leverage experience from multiple tasks to learn new tasks more efficiently.
+    links:
+    - https://en.wikipedia.org/wiki/Meta_learning_(computer_science)
+  wrong:
+  - answer: Learning about learning theories and education
+    explanation: This interprets meta-learning as studying pedagogy.
+  - answer: High-level or abstract learning above regular learning
+    explanation: While "meta" suggests this, it doesn't capture the technical meaning.
+  - answer: Learning from metadata rather than actual data
+    explanation: This misapplies "meta" to metadata.
+  - answer: Self-aware learning where models know they're learning
+    explanation: This anthropomorphizes and misunderstands meta-learning.
+  - answer: Learning about the Meta company's AI systems
+    explanation: This confuses the technical term with the company name.
+
+- question: What is model scaling?
+  points: 4
+  right:
+  - answer: Increasing model size (parameters, layers, training data) to improve performance
+    explanation: Scaling laws suggest that larger models trained on more data generally perform better, driving the development of increasingly large LLMs.
+    links:
+    - https://en.wikipedia.org/wiki/Large_language_model
+  wrong:
+  - answer: Scaling the output size to fit different screen resolutions
+    explanation: This describes display scaling, not model scaling.
+  - answer: Adjusting models to handle different scales of measurement
+    explanation: This describes unit conversion, not model scaling.
+  - answer: Scaling model deployment across multiple servers
+    explanation: This describes horizontal scaling of infrastructure, not model size scaling.
+  - answer: Weighing or measuring models using scales
+    explanation: This comically literalizes "scaling" as physical measurement.
+  - answer: Teaching models about musical scales
+    explanation: This misapplies scaling to music theory.
+
+- question: What are emergent abilities in LLMs?
+  points: 7
+  right:
+  - answer: Capabilities that appear suddenly in larger models but are not present in smaller versions trained the same way
+    explanation: Emergent abilities like arithmetic or few-shot learning appear at certain scale thresholds, though the concept remains debated.
+    links:
+    - https://en.wikipedia.org/wiki/Emergence
+  wrong:
+  - answer: Emergency abilities that activate when models encounter errors
+    explanation: This confuses "emergent" with "emergency."
+  - answer: Abilities that emerge during deployment rather than training
+    explanation: This misunderstands when emergence occurs.
+  - answer: New abilities added by developers after deployment
+    explanation: This describes feature updates, not emergent abilities.
+  - answer: Abilities that emerge from user interactions over time
+    explanation: This describes learning from usage, not scale-dependent emergence.
+  - answer: Emerging trends in model capabilities
+    explanation: This interprets "emergent" as trending rather than the technical phenomenon.
+
+- question: What is the difference between bidirectional and unidirectional models?
+  points: 4
+  right:
+  - answer: Bidirectional models can attend to both past and future context, while unidirectional models only attend to past context
+    explanation: BERT is bidirectional (seeing full context), while GPT is unidirectional (left-to-right only), affecting their strengths for different tasks.
+    links:
+    - https://en.wikipedia.org/wiki/BERT_(language_model)
+  wrong:
+  - answer: Bidirectional models work in two directions simultaneously
+    explanation: While vaguely true, this doesn't explain what that means practically.
+  - answer: Bidirectional models support two languages, unidirectional only one
+    explanation: This confuses directionality with multilingual capability.
+  - answer: Bidirectional models can be fine-tuned either way
+    explanation: This misunderstands what directionality refers to.
+  - answer: Unidirectional models only output in one direction
+    explanation: This relates to output but doesn't capture attention directionality.
+  - answer: Bidirectional models are trained on bidirectional text
+    explanation: This misunderstands that directionality is architectural, not data-based.
+
+- question: What is vocabulary size in tokenization?
+  points: 2
+  right:
+  - answer: The total number of unique tokens the model can recognize and generate
+    explanation: Vocabulary size affects model size and language coverage; larger vocabularies handle more words but increase parameters and memory.
+    links:
+    - https://en.wikipedia.org/wiki/Vocabulary
+  wrong:
+  - answer: The size of words in the vocabulary
+    explanation: This interprets "size" as word length rather than count.
+  - answer: The physical size of the vocabulary file on disk
+    explanation: This describes file size, not vocabulary size.
+  - answer: How large the model's vocabulary knowledge is
+    explanation: While related, this vaguely describes capability rather than the technical metric.
+  - answer: The number of languages in the model's vocabulary
+    explanation: This confuses vocabulary size with language count.
+  - answer: The reading level of vocabulary the model uses
+    explanation: This describes vocabulary difficulty, not size.
+
+- question: What is byte-pair encoding (BPE)?
+  points: 7
+  right:
+  - answer: A tokenization algorithm that iteratively merges the most frequent pairs of bytes or characters to build a vocabulary
+    explanation: BPE creates subword tokens, balancing vocabulary size with the ability to handle rare words and misspellings through decomposition.
+    links:
+    - https://en.wikipedia.org/wiki/Byte_pair_encoding
+  wrong:
+  - answer: Encoding data in pairs of bytes for compression
+    explanation: While BPE relates to compression, this doesn't describe the tokenization algorithm.
+  - answer: A method for pairing similar bytes together
+    explanation: This vaguely relates but misses the iterative merging process.
+  - answer: Encoding text as byte pairs for faster processing
+    explanation: This oversimplifies and misses the vocabulary building aspect.
+  - answer: A paired encoding scheme for redundancy
+    explanation: This misunderstands BPE's purpose.
+  - answer: Encoding that requires bytes to work in pairs only
+    explanation: This literalizes "pair" incorrectly.
+
+- question: What is WordPiece tokenization?
+  points: 7
+  right:
+  - answer: A subword tokenization algorithm similar to BPE but using a language model likelihood criterion for merging
+    explanation: WordPiece, used in BERT, builds vocabulary by maximizing the likelihood of the training data, creating meaningful subword units.
+    links:
+    - https://en.wikipedia.org/wiki/WordPiece
+  wrong:
+  - answer: Breaking words into pieces randomly for tokenization
+    explanation: This misunderstands the algorithmic approach of WordPiece.
+  - answer: A method that treats each word as a separate piece
+    explanation: This describes word-level tokenization, not WordPiece.
+  - answer: Tokenization that creates word-sized pieces
+    explanation: This misunderstands that WordPiece creates subword pieces.
+  - answer: Combining word and character pieces together
+    explanation: While loosely related, this doesn't describe the algorithm.
+  - answer: Piece-by-piece word assembly during generation
+    explanation: This vaguely relates to generation but doesn't define WordPiece.
+
+- question: What is SentencePiece?
+  points: 7
+  right:
+  - answer: A language-independent tokenization library that treats text as a sequence of Unicode characters and learns subword units
+    explanation: SentencePiece works directly on raw text without pre-tokenization, making it suitable for languages without clear word boundaries.
+    links:
+    - https://github.com/google/sentencepiece
+  wrong:
+  - answer: Breaking text into sentence-sized pieces for processing
+    explanation: Despite the name, SentencePiece creates subword tokens, not sentences.
+  - answer: A method for parsing sentence structure
+    explanation: This describes syntactic parsing, not tokenization.
+  - answer: Tokenization that preserves complete sentences
+    explanation: This misunderstands that SentencePiece works at the subword level.
+  - answer: Creating pieces of sentences for summarization
+    explanation: This describes sentence segmentation or summarization, not tokenization.
+  - answer: A sentence-level encoding scheme
+    explanation: Despite its name, it works on subwords, not sentences.
+
+- question: What is the logit in neural networks?
+  points: 4
+  right:
+  - answer: The raw, unnormalized output scores from the final layer before applying softmax or other activation
+    explanation: Logits represent the model's confidence in different options; they're transformed into probabilities via softmax for sampling.
+    links:
+    - https://en.wikipedia.org/wiki/Logit
+  wrong:
+  - answer: A small unit of logic in the network
+    explanation: This misinterprets "logit" as a diminutive of "logic."
+  - answer: The logarithm of the network's output
+    explanation: While etymologically related to logarithms, this doesn't define what logits are.
+  - answer: A logging unit for tracking model behavior
+    explanation: This confuses "logit" with "log" for logging.
+  - answer: An iteration in the training loop
+    explanation: This confuses logits with training iterations.
+  - answer: The logical unit that processes inputs
+    explanation: This vaguely misinterprets logit as a logical component.
+
+- question: What is the difference between greedy decoding and sampling?
+  points: 4
+  right:
+  - answer: Greedy decoding always selects the highest probability token, while sampling randomly selects tokens based on their probabilities
+    explanation: Greedy decoding is deterministic and repetitive; sampling introduces randomness and diversity, controlled by temperature.
+    links:
+    - https://en.wikipedia.org/wiki/Greedy_algorithm
+  wrong:
+  - answer: Greedy decoding is faster than sampling
+    explanation: Speed differences exist but don't define the fundamental difference.
+  - answer: Greedy decoding uses greed, sampling uses fairness
+    explanation: This anthropomorphizes and misunderstands the algorithms.
+  - answer: Greedy decoding takes more tokens, sampling takes fewer
+    explanation: Both generate similar numbers of tokens; this is incorrect.
+  - answer: Greedy decoding works on code, sampling works on text
+    explanation: Both can be used for any generation task.
+  - answer: Greedy decoding is more ethical than sampling
+    explanation: Ethics doesn't distinguish these technical approaches.
+
+- question: What is early stopping in training?
+  points: 2
+  right:
+  - answer: Halting training when validation performance stops improving to prevent overfitting
+    explanation: Early stopping monitors validation metrics and stops training before the model memorizes training data, serving as regularization.
+    links:
+    - https://en.wikipedia.org/wiki/Early_stopping
+  wrong:
+  - answer: Stopping training early to save time and resources
+    explanation: While this saves resources, it's not the primary purpose of early stopping.
+  - answer: A technique for stopping generation before completion
+    explanation: This describes output truncation, not training early stopping.
+  - answer: Stopping training at the beginning of each epoch
+    explanation: This would prevent any learning; it misunderstands "early."
+  - answer: Terminating models that show early signs of failure
+    explanation: This describes error handling, not early stopping.
+  - answer: Stopping training before it becomes too late
+    explanation: This vaguely relates but doesn't capture the overfitting prevention purpose.
