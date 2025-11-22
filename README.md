@@ -73,6 +73,8 @@ When you take a practice test, you are asked a series of questions. Each questio
 If all are correct, then check all the boxes.
 If none are correct, then check no boxes.
 
+This site has implemented this. See the [Exams](/exams) menu item.
+
 Example:
 ```text
 Which of the following are colors:

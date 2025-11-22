@@ -1,0 +1,1807 @@
+questions:
+- question: What does the term "data science" generally refer to?
+  points: 1
+  right:
+  - answer: An interdisciplinary field that uses scientific methods, algorithms, and systems to extract knowledge from data
+    explanation: Data science combines statistics, mathematics, programming, and domain expertise to analyze and interpret complex data.
+    links:
+    - https://en.wikipedia.org/wiki/Data_science
+  wrong:
+  - answer: A branch of computer science focused solely on database management
+    explanation: Data science is much broader than just database management.
+  - answer: The study of how to build computer hardware for data storage
+    explanation: This describes computer engineering, not data science.
+  - answer: A marketing term for traditional statistics with no real distinction
+    explanation: Data science incorporates statistics but also includes machine learning, programming, and other disciplines.
+  - answer: The science of creating data visualizations only
+    explanation: Visualization is one aspect of data science, but not its entirety.
+  - answer: A field exclusively focused on artificial intelligence research
+    explanation: AI is a component of data science, but data science encompasses much more.
+
+- question: What is a dataset?
+  points: 1
+  right:
+  - answer: A collection of data, typically organized in a structured format like tables or files
+    explanation: Datasets are fundamental units in data science, containing observations and variables for analysis.
+    links:
+    - https://en.wikipedia.org/wiki/Data_set
+  wrong:
+  - answer: A single data point or observation
+    explanation: A dataset contains multiple data points, not just one.
+  - answer: Only data that comes from databases
+    explanation: Datasets can come from many sources including files, APIs, sensors, etc.
+  - answer: A type of database management system
+    explanation: A dataset is the data itself, not the system that manages it.
+  - answer: Data that has already been analyzed and visualized
+    explanation: A dataset is the raw or processed data before or during analysis.
+  - answer: A programming language for data analysis
+    explanation: A dataset is data, not a programming language.
+
+- question: What is the difference between structured and unstructured data?
+  points: 2
+  right:
+  - answer: Structured data is organized in a predefined format (like tables), while unstructured data lacks a predefined structure (like text, images, videos)
+    explanation: Structured data fits into rows and columns, while unstructured data requires more complex processing to extract information.
+    links:
+    - https://en.wikipedia.org/wiki/Unstructured_data
+  wrong:
+  - answer: Structured data is always numeric, unstructured data is always text
+    explanation: Structured data can include text (like categorical variables), and unstructured data includes many formats.
+  - answer: Structured data is stored on hard drives, unstructured data is stored in the cloud
+    explanation: Both types can be stored in various locations.
+  - answer: Structured data is small in size, unstructured data is always large
+    explanation: Size is not the defining characteristic of these data types.
+  - answer: Structured data requires machine learning to analyze, unstructured data does not
+    explanation: Actually, the opposite is often true - unstructured data typically requires more advanced techniques.
+  - answer: There is no real difference; they are the same thing
+    explanation: These are distinctly different types of data with different processing requirements.
+
+- question: What does ETL stand for in data processing?
+  points: 2
+  right:
+  - answer: Extract, Transform, Load
+    explanation: ETL is a process that extracts data from sources, transforms it into a usable format, and loads it into a destination system.
+    links:
+    - https://en.wikipedia.org/wiki/Extract,_transform,_load
+  wrong:
+  - answer: Evaluate, Test, Launch
+    explanation: This sounds like a software development process, not a data processing term.
+  - answer: Encode, Translate, Link
+    explanation: These are not the correct terms for ETL.
+  - answer: Entry, Transfer, Library
+    explanation: This is not the correct expansion of ETL.
+  - answer: Estimate, Train, Learn
+    explanation: These sound like machine learning terms, not ETL.
+  - answer: Execute, Terminate, Log
+    explanation: These sound like system operations, not data processing stages.
+
+- question: What is a data pipeline?
+  points: 2
+  right:
+  - answer: A series of automated data processing steps that move data from source to destination
+    explanation: Data pipelines automate the flow of data through various transformation and processing stages.
+    links:
+    - https://en.wikipedia.org/wiki/Pipeline_(computing)
+  wrong:
+  - answer: A physical cable that connects databases to servers
+    explanation: A data pipeline is a logical concept, not physical infrastructure.
+  - answer: A type of database indexing technique
+    explanation: This describes a database feature, not a data processing workflow.
+  - answer: A visualization tool for showing data trends over time
+    explanation: This describes a charting concept, not a data processing architecture.
+  - answer: A programming language specifically designed for data analysis
+    explanation: A data pipeline is a system architecture concept, not a language.
+  - answer: A security protocol for encrypting data in transit
+    explanation: This describes a security measure, not a data processing workflow.
+
+- question: What is the purpose of data cleaning?
+  points: 1
+  right:
+  - answer: To identify and correct errors, inconsistencies, and inaccuracies in data to improve its quality
+    explanation: Data cleaning is essential for ensuring analysis results are reliable and accurate.
+    links:
+    - https://en.wikipedia.org/wiki/Data_cleansing
+  wrong:
+  - answer: To delete all data that looks unusual or different
+    explanation: Cleaning involves careful assessment, not automatic deletion of unusual values.
+  - answer: To compress data to save storage space
+    explanation: This describes data compression, not cleaning.
+  - answer: To encrypt sensitive data for security purposes
+    explanation: This describes data security, not cleaning.
+  - answer: To convert all data into a single data type
+    explanation: Cleaning maintains appropriate data types while fixing errors.
+  - answer: To remove all duplicate rows regardless of context
+    explanation: Duplicates should be evaluated carefully; some may be legitimate.
+
+- question: What is a feature in machine learning and data science?
+  points: 2
+  right:
+  - answer: An individual measurable property or characteristic of the data being observed
+    explanation: Features are also called variables, attributes, or predictors and are used as inputs for models.
+    links:
+    - https://en.wikipedia.org/wiki/Feature_(machine_learning)
+  wrong:
+  - answer: A bug or error in the dataset that needs to be fixed
+    explanation: This describes a data quality issue, not a feature.
+  - answer: A special type of machine learning algorithm
+    explanation: Features are inputs to algorithms, not algorithms themselves.
+  - answer: The final output or prediction of a model
+    explanation: This describes the target variable or prediction, not a feature.
+  - answer: A visualization technique for displaying data
+    explanation: This describes a charting method, not a data attribute.
+  - answer: A premium functionality that requires paid software
+    explanation: This describes a software licensing concept, not a data science term.
+
+- question: What is the difference between a population and a sample in statistics?
+  points: 2
+  right:
+  - answer: A population is the entire group being studied, while a sample is a subset of the population
+    explanation: Samples are used to make inferences about populations when it's impractical to study every member.
+    links:
+    - https://en.wikipedia.org/wiki/Statistical_population
+    - https://en.wikipedia.org/wiki/Sampling_(statistics)
+  wrong:
+  - answer: A population is always larger than 1000 observations, a sample is smaller
+    explanation: The distinction is conceptual, not based on arbitrary size thresholds.
+  - answer: A population refers to people only, a sample can be any type of data
+    explanation: Both terms apply to any group of observations, not just people.
+  - answer: There is no real difference; the terms are interchangeable
+    explanation: These are distinct concepts in statistical inference.
+  - answer: A population is theoretical data, a sample is real collected data
+    explanation: Both can be actual data; the population is the complete group of interest.
+  - answer: A sample is always randomly selected, a population never is
+    explanation: Random selection is a sampling method, not a defining characteristic.
+
+- question: What does it mean for data to be "biased"?
+  points: 2
+  right:
+  - answer: The data systematically misrepresents the population or phenomenon being studied due to flawed collection, sampling, or measurement
+    explanation: Bias can lead to incorrect conclusions and unfair outcomes in analysis and models.
+    links:
+    - https://en.wikipedia.org/wiki/Bias_(statistics)
+  wrong:
+  - answer: The data contains only positive or only negative values
+    explanation: This describes the range of values, not statistical bias.
+  - answer: The data has been intentionally manipulated by researchers with bad intentions
+    explanation: Bias can be unintentional and often results from methodology issues.
+  - answer: The data is stored in a format that favors one programming language over another
+    explanation: This describes a technical format issue, not statistical bias.
+  - answer: The data is too small to be useful for analysis
+    explanation: Sample size is different from bias; small samples can be unbiased.
+  - answer: The data contains outliers that need to be removed
+    explanation: Outliers are extreme values; bias is a systematic error in representation.
+
+- question: What is overfitting in machine learning?
+  points: 4
+  right:
+  - answer: When a model learns the training data too well, including its noise and peculiarities, resulting in poor performance on new data
+    explanation: Overfitted models have high training accuracy but low generalization ability.
+    links:
+    - https://en.wikipedia.org/wiki/Overfitting
+  wrong:
+  - answer: When a model is too simple and cannot capture the patterns in the data
+    explanation: This describes underfitting, the opposite of overfitting.
+  - answer: When the training process takes too long to complete
+    explanation: Training time is not related to overfitting.
+  - answer: When a model is too large to fit in computer memory
+    explanation: This is a technical resource issue, not overfitting.
+  - answer: When there is too much data for the model to process effectively
+    explanation: More data typically helps prevent overfitting, not causes it.
+  - answer: When the model achieves 100% accuracy on both training and test data
+    explanation: This would be ideal (if possible); overfitting shows high training accuracy but low test accuracy.
+
+- question: What is the purpose of splitting data into training and testing sets?
+  points: 2
+  right:
+  - answer: To evaluate model performance on unseen data and assess how well it generalizes beyond the training data
+    explanation: This helps detect overfitting and provides an honest assessment of model performance.
+    links:
+    - https://en.wikipedia.org/wiki/Training,_validation,_and_test_sets
+  wrong:
+  - answer: To make the data processing faster by working with smaller datasets
+    explanation: The purpose is validation, not computational efficiency.
+  - answer: To ensure that both datasets have exactly the same statistical properties
+    explanation: They should be similar but are used for different purposes.
+  - answer: To create backups in case one dataset gets corrupted
+    explanation: This is a data management issue, not a modeling practice.
+  - answer: To train multiple different models simultaneously on different data
+    explanation: Training set is for building the model; test set is for evaluation only.
+  - answer: To comply with data privacy regulations that require data separation
+    explanation: This is not a privacy requirement but a best practice for model validation.
+
+- question: What is a confusion matrix?
+  points: 4
+  right:
+  - answer: A table that visualizes the performance of a classification model by showing true positives, false positives, true negatives, and false negatives
+    explanation: Confusion matrices help assess classification accuracy and identify specific types of errors.
+    links:
+    - https://en.wikipedia.org/wiki/Confusion_matrix
+  wrong:
+  - answer: A visualization tool that shows which features are most confusing for a model to learn
+    explanation: This is not what a confusion matrix represents.
+  - answer: A debugging tool that identifies errors in data preprocessing code
+    explanation: This describes a software debugging concept, not a model evaluation tool.
+  - answer: A matrix operation used in neural network training
+    explanation: While matrices are used in neural networks, a confusion matrix is an evaluation tool.
+  - answer: A statistical test for determining if data distributions are significantly different
+    explanation: This describes hypothesis testing, not a confusion matrix.
+  - answer: A type of correlation matrix that shows relationships between confounding variables
+    explanation: This mixes concepts; a confusion matrix evaluates classification results.
+
+- question: What is cross-validation?
+  points: 4
+  right:
+  - answer: A technique that divides data into multiple folds, training and testing on different combinations to assess model performance more reliably
+    explanation: Cross-validation provides a more robust estimate of model performance than a single train-test split.
+    links:
+    - https://en.wikipedia.org/wiki/Cross-validation_(statistics)
+  wrong:
+  - answer: A method of checking if two datasets contain the same information
+    explanation: This describes data comparison, not model validation.
+  - answer: A technique for validating data entry by having two people enter the same data
+    explanation: This describes a data quality process, not a modeling technique.
+  - answer: A way to test if results from one study can be replicated in another study
+    explanation: This describes research replication, not cross-validation.
+  - answer: A programming technique for checking if code produces expected outputs
+    explanation: This describes software testing, not model validation.
+  - answer: A security measure that requires two forms of authentication
+    explanation: This describes two-factor authentication, not cross-validation.
+
+- question: What is a histogram?
+  points: 1
+  right:
+  - answer: A graphical representation showing the distribution of numerical data using bins or intervals
+    explanation: Histograms help visualize the frequency or count of values within specified ranges.
+    links:
+    - https://en.wikipedia.org/wiki/Histogram
+  wrong:
+  - answer: A type of machine learning algorithm for classification
+    explanation: A histogram is a visualization, not an algorithm.
+  - answer: A statistical test for comparing two datasets
+    explanation: This describes a hypothesis test, not a visualization.
+  - answer: A table showing the correlation between multiple variables
+    explanation: This describes a correlation matrix, not a histogram.
+  - answer: A time series plot showing data over historical periods
+    explanation: While both are visualizations, a histogram shows distribution, not time trends.
+  - answer: A database storage structure for organizing large amounts of data
+    explanation: This describes database architecture, not a data visualization.
+
+- question: What is the mean of a dataset?
+  points: 1
+  right:
+  - answer: The average value calculated by summing all values and dividing by the number of observations
+    explanation: The mean is a measure of central tendency that represents the typical value in a dataset.
+    links:
+    - https://en.wikipedia.org/wiki/Mean
+  wrong:
+  - answer: The middle value when data is sorted in order
+    explanation: This describes the median, not the mean.
+  - answer: The most frequently occurring value in the dataset
+    explanation: This describes the mode, not the mean.
+  - answer: The difference between the maximum and minimum values
+    explanation: This describes the range, not the mean.
+  - answer: The value that appears exactly in the center of the data visualization
+    explanation: This is not a precise statistical definition.
+  - answer: The sum of all values in the dataset
+    explanation: This is the total or sum, not the mean which requires division by count.
+
+- question: What is the median of a dataset?
+  points: 1
+  right:
+  - answer: The middle value when all observations are arranged in order, or the average of the two middle values for even-sized datasets
+    explanation: The median is less sensitive to outliers than the mean and represents the 50th percentile.
+    links:
+    - https://en.wikipedia.org/wiki/Median
+  wrong:
+  - answer: The average of all values in the dataset
+    explanation: This describes the mean, not the median.
+  - answer: The most common value in the dataset
+    explanation: This describes the mode, not the median.
+  - answer: The value that divides the dataset into four equal parts
+    explanation: This describes quartiles, not the median specifically.
+  - answer: The arithmetic mean of the minimum and maximum values
+    explanation: This is the midrange, not the median.
+  - answer: The value with the highest frequency in the distribution
+    explanation: This describes the mode, not the median.
+
+- question: What is standard deviation?
+  points: 2
+  right:
+  - answer: A measure of the amount of variation or dispersion in a dataset, calculated as the square root of the variance
+    explanation: Standard deviation quantifies how spread out values are from the mean.
+    links:
+    - https://en.wikipedia.org/wiki/Standard_deviation
+  wrong:
+  - answer: The difference between the maximum and minimum values
+    explanation: This describes the range, not standard deviation.
+  - answer: The average distance between consecutive data points
+    explanation: This is not the definition of standard deviation.
+  - answer: The percentage of data points that fall within the mean value
+    explanation: This is not how standard deviation is defined.
+  - answer: The number of outliers in a dataset
+    explanation: Standard deviation measures spread, not outlier count.
+  - answer: The median absolute difference from the mean
+    explanation: This is closer to mean absolute deviation, not standard deviation.
+
+- question: What is correlation?
+  points: 2
+  right:
+  - answer: A statistical measure that describes the strength and direction of the relationship between two variables
+    explanation: Correlation coefficients typically range from -1 to +1, indicating negative to positive relationships.
+    links:
+    - https://en.wikipedia.org/wiki/Correlation
+  wrong:
+  - answer: The proof that one variable causes changes in another variable
+    explanation: Correlation does not imply causation.
+  - answer: The process of cleaning data by removing related observations
+    explanation: This is not what correlation means in statistics.
+  - answer: A technique for combining multiple datasets into one
+    explanation: This describes data merging or joining, not correlation.
+  - answer: The percentage of variance explained by a single variable
+    explanation: This is closer to R-squared in regression, not correlation itself.
+  - answer: A method for predicting future values based on past patterns
+    explanation: This describes forecasting, not correlation.
+
+- question: What is the difference between correlation and causation?
+  points: 2
+  right:
+  - answer: Correlation indicates that two variables are related or move together, while causation means one variable directly causes changes in another
+    explanation: Correlation can exist without causation; proving causation requires experimental or rigorous analytical methods.
+    links:
+    - https://en.wikipedia.org/wiki/Correlation_does_not_imply_causation
+  wrong:
+  - answer: Correlation applies to numerical data, causation applies to categorical data
+    explanation: Both concepts can apply to various types of data.
+  - answer: Correlation is always weaker than causation in statistical strength
+    explanation: These are different concepts, not degrees of the same thing.
+  - answer: Causation is measured with correlation coefficients, correlation is not
+    explanation: Correlation coefficients measure correlation, not causation.
+  - answer: There is no difference; they mean the same thing
+    explanation: These are fundamentally different concepts.
+  - answer: Correlation can be negative, causation is always positive
+    explanation: This is incorrect; causation can also have negative effects.
+
+- question: What is a p-value in hypothesis testing?
+  points: 4
+  right:
+  - answer: The probability of obtaining results at least as extreme as those observed, assuming the null hypothesis is true
+    explanation: Lower p-values suggest stronger evidence against the null hypothesis.
+    links:
+    - https://en.wikipedia.org/wiki/P-value
+  wrong:
+  - answer: The probability that the null hypothesis is true
+    explanation: P-value is not the probability of the hypothesis itself.
+  - answer: The percentage of variance explained by the model
+    explanation: This describes R-squared, not p-value.
+  - answer: The power of a statistical test to detect an effect
+    explanation: This describes statistical power, not p-value.
+  - answer: The confidence level of a statistical test
+    explanation: Confidence level is related but different; p-value is evidence against the null.
+  - answer: The probability of making a Type I error
+    explanation: The significance level (alpha) is the threshold for Type I error, not the p-value itself.
+
+- question: What is a null hypothesis?
+  points: 2
+  right:
+  - answer: A default statement that there is no effect, no difference, or no relationship between variables being tested
+    explanation: The null hypothesis is what we attempt to reject through statistical testing.
+    links:
+    - https://en.wikipedia.org/wiki/Null_hypothesis
+  wrong:
+  - answer: A hypothesis that has been proven to be false
+    explanation: The null hypothesis is a starting assumption, not a proven statement.
+  - answer: A hypothesis that contains missing or null values in the data
+    explanation: This confuses null values in data with the statistical concept.
+  - answer: The primary hypothesis that researchers want to prove true
+    explanation: This describes the alternative hypothesis, not the null.
+  - answer: A hypothesis that cannot be tested statistically
+    explanation: Null hypotheses are specifically designed to be testable.
+  - answer: A mathematical statement that always equals zero
+    explanation: While null hypotheses often involve zero effect, this is oversimplified.
+
+- question: What is regression analysis?
+  points: 2
+  right:
+  - answer: A statistical method for modeling and analyzing the relationship between a dependent variable and one or more independent variables
+    explanation: Regression is used for prediction, inference, and understanding relationships between variables.
+    links:
+    - https://en.wikipedia.org/wiki/Regression_analysis
+  wrong:
+  - answer: A technique for removing outliers from datasets
+    explanation: This describes data cleaning, not regression analysis.
+  - answer: A method for going back to previous versions of data
+    explanation: This describes version control, not regression analysis.
+  - answer: A type of clustering algorithm that groups similar observations
+    explanation: This describes clustering, not regression.
+  - answer: A testing procedure to ensure model performance doesn't decline over time
+    explanation: This describes model monitoring, not regression analysis.
+  - answer: A mathematical operation that reverses the effects of other operations
+    explanation: This describes inverse operations, not statistical regression.
+
+- question: What is the difference between supervised and unsupervised learning?
+  points: 2
+  right:
+  - answer: Supervised learning uses labeled data with known outputs to train models, while unsupervised learning finds patterns in unlabeled data without predefined outputs
+    explanation: Supervised learning includes classification and regression; unsupervised includes clustering and dimensionality reduction.
+    links:
+    - https://en.wikipedia.org/wiki/Supervised_learning
+    - https://en.wikipedia.org/wiki/Unsupervised_learning
+  wrong:
+  - answer: Supervised learning requires human monitoring during training, unsupervised runs automatically
+    explanation: Both can run automatically; the difference is in the training data structure.
+  - answer: Supervised learning is always more accurate than unsupervised learning
+    explanation: Accuracy depends on the problem and data, not the learning paradigm.
+  - answer: Supervised learning works only with numerical data, unsupervised works with categorical data
+    explanation: Both paradigms can work with various data types.
+  - answer: Supervised learning is used only for classification, unsupervised only for regression
+    explanation: This incorrectly categorizes the problem types each paradigm addresses.
+  - answer: Unsupervised learning always requires more data than supervised learning
+    explanation: Data requirements depend on the specific problem, not the learning paradigm.
+
+- question: What is classification in machine learning?
+  points: 2
+  right:
+  - answer: A supervised learning task where the goal is to predict discrete categories or labels for new observations
+    explanation: Classification models learn from labeled examples to assign new instances to predefined classes.
+    links:
+    - https://en.wikipedia.org/wiki/Statistical_classification
+  wrong:
+  - answer: The process of organizing data into folders and directories
+    explanation: This describes file organization, not machine learning classification.
+  - answer: An unsupervised learning technique for grouping similar data points
+    explanation: This describes clustering, not classification.
+  - answer: A method for identifying and removing misclassified data from datasets
+    explanation: This describes data validation, not the classification task itself.
+  - answer: The process of determining which features are most important
+    explanation: This describes feature importance or selection, not classification.
+  - answer: A technique for converting continuous values into categories
+    explanation: This describes discretization or binning, not the classification task.
+
+- question: What is clustering?
+  points: 2
+  right:
+  - answer: An unsupervised learning technique that groups similar data points together based on their characteristics without predefined labels
+    explanation: Clustering discovers natural groupings in data and is useful for exploration and pattern discovery.
+    links:
+    - https://en.wikipedia.org/wiki/Cluster_analysis
+  wrong:
+  - answer: A supervised learning method for predicting categorical outcomes
+    explanation: This describes classification, not clustering.
+  - answer: A technique for combining multiple models into one
+    explanation: This describes ensemble methods, not clustering.
+  - answer: A data storage method that groups related data on the same disk sectors
+    explanation: This describes physical data storage optimization, not machine learning clustering.
+  - answer: The process of identifying outliers in a dataset
+    explanation: While clustering can help identify outliers, this is not its primary purpose.
+  - answer: A method for reducing the dimensionality of high-dimensional data
+    explanation: This describes dimensionality reduction, though clustering can be used in conjunction with it.
+
+- question: What is dimensionality reduction?
+  points: 4
+  right:
+  - answer: The process of reducing the number of features or variables in a dataset while preserving important information
+    explanation: Dimensionality reduction helps visualize high-dimensional data and can improve model performance by reducing noise.
+    links:
+    - https://en.wikipedia.org/wiki/Dimensionality_reduction
+  wrong:
+  - answer: The process of deleting rows from a dataset to make it smaller
+    explanation: This describes row filtering, not dimensionality reduction which works on features.
+  - answer: A technique for compressing data files to save storage space
+    explanation: This describes file compression, not statistical dimensionality reduction.
+  - answer: The removal of all correlated variables from a dataset
+    explanation: Dimensionality reduction is more sophisticated than simple removal of correlated features.
+  - answer: A method for converting high-resolution images to lower resolution
+    explanation: While related, this is image processing, not the general statistical concept.
+  - answer: The process of simplifying mathematical equations
+    explanation: This describes mathematical simplification, not data science dimensionality reduction.
+
+- question: What is feature engineering?
+  points: 4
+  right:
+  - answer: The process of creating new features or modifying existing ones to improve model performance and better represent the underlying problem
+    explanation: Feature engineering uses domain knowledge and creativity to extract meaningful information from raw data.
+    links:
+    - https://en.wikipedia.org/wiki/Feature_engineering
+  wrong:
+  - answer: The automatic removal of irrelevant features from a dataset
+    explanation: This describes feature selection, which is related but different from engineering.
+  - answer: A software engineering practice for building data processing pipelines
+    explanation: This describes software development, not feature creation for models.
+  - answer: The process of normalizing all features to the same scale
+    explanation: This describes feature scaling, one aspect of preprocessing.
+  - answer: A technique for encrypting sensitive features for privacy
+    explanation: This describes data security, not feature engineering.
+  - answer: The design of physical features in hardware that processes data
+    explanation: This describes hardware engineering, not data science feature engineering.
+
+- question: What is normalization in data preprocessing?
+  points: 2
+  right:
+  - answer: The process of scaling numerical features to a standard range, typically [0,1], to ensure features contribute equally to analysis
+    explanation: Normalization prevents features with larger ranges from dominating the model.
+    links:
+    - https://en.wikipedia.org/wiki/Normalization_(statistics)
+  wrong:
+  - answer: The process of converting all data to a normal distribution
+    explanation: This would be normalizing distribution shape, not the typical scaling referred to as normalization.
+  - answer: The removal of abnormal or unusual data points
+    explanation: This describes outlier removal, not normalization.
+  - answer: The process of organizing data into standard database tables
+    explanation: This describes database normalization, a different concept from feature scaling.
+  - answer: Converting all text to lowercase and removing special characters
+    explanation: This describes text preprocessing, not numerical normalization.
+  - answer: Ensuring all data files follow the same format standards
+    explanation: This describes data standardization in a file format sense, not statistical normalization.
+
+- question: What is standardization in data preprocessing?
+  points: 2
+  right:
+  - answer: The process of transforming features to have zero mean and unit variance, typically using z-score transformation
+    explanation: Standardization centers data around zero and scales by standard deviation, useful for many algorithms.
+    links:
+    - https://en.wikipedia.org/wiki/Standard_score
+  wrong:
+  - answer: The process of converting all data to standard units like meters or kilograms
+    explanation: While unit conversion may be part of preprocessing, standardization specifically refers to statistical transformation.
+  - answer: Ensuring all team members follow the same coding practices
+    explanation: This describes coding standards, not data standardization.
+  - answer: The removal of data that doesn't meet quality standards
+    explanation: This describes data quality filtering, not standardization.
+  - answer: Converting all categorical variables to numerical format
+    explanation: This describes encoding, not standardization.
+  - answer: Scaling all features to the range [0, 1]
+    explanation: This describes normalization, not standardization.
+
+- question: What is one-hot encoding?
+  points: 2
+  right:
+  - answer: A technique that converts categorical variables into binary vectors, with one element set to 1 and others to 0, representing each category
+    explanation: One-hot encoding allows categorical data to be used in algorithms that require numerical input.
+    links:
+    - https://en.wikipedia.org/wiki/One-hot
+  wrong:
+  - answer: A method for encrypting data with a single-use password
+    explanation: This describes security encryption, not categorical encoding.
+  - answer: A technique for compressing data by removing redundant information
+    explanation: This describes data compression, not categorical encoding.
+  - answer: The process of converting all variables to binary (0 or 1) format
+    explanation: One-hot encoding is specific to categorical variables, not all variables.
+  - answer: A feature scaling method that sets the maximum value to 1
+    explanation: This describes a type of normalization, not one-hot encoding.
+  - answer: A programming technique where code is executed only once
+    explanation: This describes code execution, not data encoding.
+
+- question: What is a decision tree?
+  points: 2
+  right:
+  - answer: A supervised learning model that makes predictions by learning decision rules from features, structured as a tree with nodes representing decisions and leaves representing outcomes
+    explanation: Decision trees are interpretable models used for both classification and regression.
+    links:
+    - https://en.wikipedia.org/wiki/Decision_tree_learning
+  wrong:
+  - answer: A visualization tool that shows all possible outcomes of business decisions
+    explanation: While decision trees can be used in business analysis, this describes decision analysis, not the machine learning model.
+  - answer: An organizational chart showing the hierarchy of a data science team
+    explanation: This describes an organizational structure, not a machine learning model.
+  - answer: A flowchart documenting the steps in a data processing pipeline
+    explanation: This describes process documentation, not a predictive model.
+  - answer: A type of neural network with tree-like connections
+    explanation: Decision trees and neural networks are different model architectures.
+  - answer: A data structure used to efficiently store hierarchical data in databases
+    explanation: This describes database tree structures, not machine learning decision trees.
+
+- question: What is a random forest?
+  points: 4
+  right:
+  - answer: An ensemble learning method that creates multiple decision trees and combines their predictions through voting or averaging
+    explanation: Random forests reduce overfitting and improve accuracy by aggregating predictions from many trees trained on different data subsets.
+    links:
+    - https://en.wikipedia.org/wiki/Random_forest
+  wrong:
+  - answer: A technique for randomly selecting features from a dataset
+    explanation: Random feature selection is part of random forest methodology, but not its definition.
+  - answer: A method for generating synthetic data with random properties
+    explanation: This describes data generation, not the random forest algorithm.
+  - answer: A collection of unrelated machine learning models
+    explanation: Random forest specifically uses decision trees, not arbitrary models.
+  - answer: A database indexing strategy that uses random access patterns
+    explanation: This describes database technology, not machine learning.
+  - answer: An algorithm for randomly splitting data into training and testing sets
+    explanation: This describes data splitting, not the random forest model.
+
+- question: What is gradient descent?
+  points: 4
+  right:
+  - answer: An optimization algorithm that iteratively adjusts model parameters in the direction of steepest descent to minimize a loss function
+    explanation: Gradient descent is fundamental to training many machine learning models, especially neural networks.
+    links:
+    - https://en.wikipedia.org/wiki/Gradient_descent
+  wrong:
+  - answer: A technique for gradually reducing the amount of training data
+    explanation: This is not what gradient descent refers to.
+  - answer: A method for detecting when model performance is declining
+    explanation: This describes model monitoring, not an optimization algorithm.
+  - answer: A data preprocessing step that removes gradual trends from time series
+    explanation: This describes detrending, not gradient descent.
+  - answer: A technique for smoothing sharp transitions in data visualizations
+    explanation: This describes visual design, not an optimization algorithm.
+  - answer: An algorithm for navigating down through hierarchical data structures
+    explanation: This describes tree traversal, not the gradient descent optimization method.
+
+- question: What is a learning rate in machine learning?
+  points: 4
+  right:
+  - answer: A hyperparameter that controls the size of steps taken during optimization, determining how quickly a model adjusts its parameters
+    explanation: The learning rate affects training speed and convergence; too high causes instability, too low causes slow training.
+    links:
+    - https://en.wikipedia.org/wiki/Learning_rate
+  wrong:
+  - answer: The speed at which a model processes training data measured in samples per second
+    explanation: This describes computational throughput, not the learning rate hyperparameter.
+  - answer: The percentage of data a model learns correctly during training
+    explanation: This describes accuracy, not learning rate.
+  - answer: The rate at which new data becomes available for model training
+    explanation: This describes data arrival rate, not the learning rate parameter.
+  - answer: How quickly humans can learn to use a machine learning model
+    explanation: This describes user experience, not a model parameter.
+  - answer: The frequency at which the model is retrained with new data
+    explanation: This describes retraining schedule, not learning rate.
+
+- question: What is a neural network?
+  points: 2
+  right:
+  - answer: A machine learning model inspired by biological neural networks, consisting of interconnected nodes (neurons) organized in layers that process and transform input data
+    explanation: Neural networks can learn complex patterns and are the foundation of deep learning.
+    links:
+    - https://en.wikipedia.org/wiki/Artificial_neural_network
+  wrong:
+  - answer: A physical network of computers connected to perform distributed computing
+    explanation: This describes computer networking, not the machine learning concept.
+  - answer: A database structure that stores relationships between data points
+    explanation: This describes graph databases, not neural networks.
+  - answer: A visualization of how different features correlate with each other
+    explanation: This describes correlation networks, not neural networks.
+  - answer: A biological model used to study how human brains learn
+    explanation: While neural networks are inspired by biology, they are computational models, not biological ones.
+  - answer: A security system that monitors network traffic for anomalies
+    explanation: This describes network security, not neural network models.
+
+- question: What is deep learning?
+  points: 2
+  right:
+  - answer: A subset of machine learning using neural networks with multiple hidden layers to learn hierarchical representations of data
+    explanation: Deep learning has achieved breakthrough performance in computer vision, natural language processing, and other domains.
+    links:
+    - https://en.wikipedia.org/wiki/Deep_learning
+  wrong:
+  - answer: A technique for analyzing data stored in very deep database structures
+    explanation: This is not what deep learning refers to.
+  - answer: Advanced statistical analysis that goes deeper than basic statistics
+    explanation: This oversimplifies and mischaracterizes deep learning.
+  - answer: Machine learning that requires extensive domain expertise to understand
+    explanation: Depth refers to network architecture, not complexity of understanding.
+  - answer: A learning method that requires longer training times than other approaches
+    explanation: While deep learning can take time to train, this is not its defining characteristic.
+  - answer: The final stage of learning after basic and intermediate learning
+    explanation: Deep learning is not a stage but a specific approach using deep neural networks.
+
+- question: What is a convolutional neural network (CNN)?
+  points: 4
+  right:
+  - answer: A type of neural network specialized for processing grid-like data such as images, using convolutional layers that detect spatial patterns
+    explanation: CNNs use filters to learn hierarchical features like edges, textures, and complex objects.
+    links:
+    - https://en.wikipedia.org/wiki/Convolutional_neural_network
+  wrong:
+  - answer: A neural network that combines predictions from multiple models
+    explanation: This describes ensemble methods, not CNNs.
+  - answer: A network architecture where all neurons are connected to all other neurons
+    explanation: This describes fully connected layers, not the convolutional architecture.
+  - answer: A neural network specifically designed for processing text and language
+    explanation: This better describes recurrent or transformer networks, not CNNs.
+  - answer: A technique for converting images into numerical representations
+    explanation: This describes image encoding, not the CNN architecture itself.
+  - answer: A neural network that performs convolution operations on the loss function
+    explanation: Convolutions are applied to the input data, not the loss function.
+
+- question: What is a recurrent neural network (RNN)?
+  points: 4
+  right:
+  - answer: A type of neural network designed for sequential data, where connections between nodes form cycles allowing information to persist across time steps
+    explanation: RNNs are used for tasks like language modeling, speech recognition, and time series prediction.
+    links:
+    - https://en.wikipedia.org/wiki/Recurrent_neural_network
+  wrong:
+  - answer: A neural network that repeatedly processes the same data until convergence
+    explanation: This describes iterative training, not the RNN architecture.
+  - answer: A network that can be reused for multiple different tasks
+    explanation: This describes transfer learning, not RNNs specifically.
+  - answer: A neural network where training occurs in recurring cycles or epochs
+    explanation: All neural networks train in epochs; this doesn't define RNNs.
+  - answer: A network architecture that recurs or returns to previous layers
+    explanation: RNNs have recurrent connections across time, not backward connections through layers.
+  - answer: A neural network designed to process circular or periodic patterns
+    explanation: While RNNs can handle periodic data, this oversimplifies their architecture and purpose.
+
+- question: What is transfer learning?
+  points: 4
+  right:
+  - answer: A technique where a model trained on one task is reused as a starting point for a different but related task
+    explanation: Transfer learning leverages knowledge from large datasets to improve performance on tasks with limited data.
+    links:
+    - https://en.wikipedia.org/wiki/Transfer_learning
+  wrong:
+  - answer: The process of moving trained models from one computer to another
+    explanation: This describes model deployment, not transfer learning.
+  - answer: A method for converting models from one programming language to another
+    explanation: This describes model conversion, not transfer learning.
+  - answer: A technique for transferring data between different databases
+    explanation: This describes data migration, not transfer learning.
+  - answer: The ability of a model to automatically learn new tasks without retraining
+    explanation: Transfer learning requires some retraining or fine-tuning on the new task.
+  - answer: A learning method that transfers knowledge from human experts to models
+    explanation: This describes knowledge engineering, not transfer learning.
+
+- question: What is natural language processing (NLP)?
+  points: 2
+  right:
+  - answer: A field of AI focused on enabling computers to understand, interpret, and generate human language
+    explanation: NLP encompasses tasks like sentiment analysis, machine translation, text classification, and question answering.
+    links:
+    - https://en.wikipedia.org/wiki/Natural_language_processing
+  wrong:
+  - answer: A programming language specifically designed for processing text data
+    explanation: NLP is a field of study, not a programming language.
+  - answer: The study of how humans naturally learn programming languages
+    explanation: This would be about human learning, not computational language processing.
+  - answer: A technique for optimizing the performance of language-specific code
+    explanation: This describes code optimization, not NLP.
+  - answer: The process of translating technical documentation into plain language
+    explanation: While related to language, this describes technical writing, not the NLP field.
+  - answer: A method for processing audio and speech signals
+    explanation: This describes speech processing, which overlaps with but is distinct from NLP.
+
+- question: What is sentiment analysis?
+  points: 2
+  right:
+  - answer: The computational task of identifying and extracting subjective information, particularly determining whether text expresses positive, negative, or neutral opinions
+    explanation: Sentiment analysis is used in social media monitoring, customer feedback analysis, and market research.
+    links:
+    - https://en.wikipedia.org/wiki/Sentiment_analysis
+  wrong:
+  - answer: A statistical method for analyzing the sensitivity of models to input changes
+    explanation: This describes sensitivity analysis, not sentiment analysis.
+  - answer: A technique for detecting emotional states from facial expressions
+    explanation: This describes emotion recognition from images, not text sentiment analysis.
+  - answer: The process of analyzing customer demographics and preferences
+    explanation: This describes market segmentation, not sentiment analysis.
+  - answer: A method for measuring how strongly variables correlate with each other
+    explanation: This describes correlation analysis, not sentiment analysis.
+  - answer: A psychological assessment tool for understanding human emotions
+    explanation: Sentiment analysis is computational text analysis, not a psychological assessment.
+
+- question: What is a time series?
+  points: 2
+  right:
+  - answer: A sequence of data points indexed in temporal order, typically measured at successive points in time
+    explanation: Time series analysis is used for forecasting, trend detection, and understanding temporal patterns.
+    links:
+    - https://en.wikipedia.org/wiki/Time_series
+  wrong:
+  - answer: A collection of data organized by importance rather than chronology
+    explanation: Time series are specifically organized by time, not importance.
+  - answer: Data that measures how long processes take to complete
+    explanation: This describes duration measurements, not a time series dataset.
+  - answer: A sequence of events in a database transaction log
+    explanation: While transaction logs have temporal elements, this doesn't define time series analysis.
+  - answer: Historical records stored for compliance and auditing purposes
+    explanation: This describes archival data, not specifically time series.
+  - answer: A programming concept for handling date and time objects
+    explanation: This describes datetime programming, not time series data.
+
+- question: What is forecasting in data science?
+  points: 2
+  right:
+  - answer: The process of making predictions about future values based on historical patterns and trends in time series data
+    explanation: Forecasting is used in demand planning, financial prediction, weather forecasting, and resource allocation.
+    links:
+    - https://en.wikipedia.org/wiki/Forecasting
+  wrong:
+  - answer: The process of estimating missing values in historical data
+    explanation: This describes imputation, not forecasting.
+  - answer: A technique for predicting which model will perform best on a dataset
+    explanation: This describes model selection, not time series forecasting.
+  - answer: The practice of making business plans for future quarters
+    explanation: While forecasts inform business planning, this describes strategy, not the analytical technique.
+  - answer: A method for identifying patterns that will emerge in data
+    explanation: Forecasting predicts values, not necessarily new patterns.
+  - answer: The process of extrapolating current trends indefinitely into the future
+    explanation: Good forecasting considers multiple factors and uncertainty, not just simple extrapolation.
+
+- question: What is an outlier?
+  points: 1
+  right:
+  - answer: A data point that differs significantly from other observations, lying far outside the typical range of the dataset
+    explanation: Outliers can result from measurement error, data entry errors, or genuine rare events.
+    links:
+    - https://en.wikipedia.org/wiki/Outlier
+  wrong:
+  - answer: Any data point that falls outside the mean value
+    explanation: Most data points differ from the mean; outliers are extreme deviations.
+  - answer: A missing or null value in the dataset
+    explanation: This describes missing data, not outliers.
+  - answer: A data point that belongs to a different dataset
+    explanation: Outliers are part of the dataset but have unusual values.
+  - answer: The first or last observation in a sorted dataset
+    explanation: Extreme values are not necessarily outliers; outliers are unusually far from the distribution.
+  - answer: A data point that was collected using different methods
+    explanation: Methodology differences don't define outliers; unusual values do.
+
+- question: What is missing data imputation?
+  points: 2
+  right:
+  - answer: The process of filling in missing values in a dataset using statistical methods or learned patterns from available data
+    explanation: Common imputation methods include mean/median substitution, regression imputation, and multiple imputation.
+    links:
+    - https://en.wikipedia.org/wiki/Imputation_(statistics)
+  wrong:
+  - answer: The removal of all rows containing missing values
+    explanation: This describes deletion, not imputation.
+  - answer: A legal requirement to report all missing data to authorities
+    explanation: This has nothing to do with statistical imputation.
+  - answer: The process of identifying why data is missing
+    explanation: This is analysis of missingness patterns, not imputation.
+  - answer: A technique for preventing data from becoming missing in the first place
+    explanation: This describes data quality management, not imputation of already-missing data.
+  - answer: The conversion of missing values to zero
+    explanation: This is one crude approach but not the definition of imputation.
+
+- question: What is A/B testing?
+  points: 2
+  right:
+  - answer: A controlled experiment comparing two versions (A and B) to determine which performs better on a specific metric
+    explanation: A/B testing is widely used in product development, marketing, and web optimization to make data-driven decisions.
+    links:
+    - https://en.wikipedia.org/wiki/A/B_testing
+  wrong:
+  - answer: A debugging technique that compares actual outputs to expected outputs
+    explanation: This describes software testing, not A/B testing.
+  - answer: A method for testing if two datasets are statistically identical
+    explanation: This describes statistical comparison tests, not A/B testing methodology.
+  - answer: The process of validating data quality by checking two independent sources
+    explanation: This describes data validation, not A/B testing.
+  - answer: A technique for comparing the performance of two different machine learning models
+    explanation: While models can be compared, A/B testing specifically refers to controlled experiments with users or observations.
+  - answer: An educational assessment method with two different test versions
+    explanation: While similar in name, this describes test administration, not the experimental method.
+
+- question: What is a hyperparameter?
+  points: 4
+  right:
+  - answer: A configuration setting that is set before training begins and controls the learning process, rather than being learned from data
+    explanation: Examples include learning rate, number of layers, and regularization strength. Hyperparameters are tuned to optimize model performance.
+    links:
+    - https://en.wikipedia.org/wiki/Hyperparameter_(machine_learning)
+  wrong:
+  - answer: A parameter that has exceptionally high values compared to others
+    explanation: The "hyper" prefix refers to being above/external to the model, not value magnitude.
+  - answer: The most important parameter in a model
+    explanation: Hyperparameters are external settings, not necessarily the most important.
+  - answer: A parameter that is automatically optimized during training
+    explanation: Parameters are learned during training; hyperparameters are set before training.
+  - answer: A variable that controls how much data is used for training
+    explanation: While batch size is a hyperparameter, this doesn't define what hyperparameters are.
+  - answer: A parameter used only in neural networks and not in other models
+    explanation: All machine learning models have hyperparameters, not just neural networks.
+
+- question: What is cross-entropy loss?
+  points: 7
+  right:
+  - answer: A loss function commonly used for classification tasks that measures the difference between predicted probability distributions and true labels
+    explanation: Cross-entropy penalizes confident wrong predictions heavily and is the standard loss for multi-class classification.
+    links:
+    - https://en.wikipedia.org/wiki/Cross_entropy
+  wrong:
+  - answer: A measure of how entropic or random the data is across different datasets
+    explanation: This misunderstands the concept; cross-entropy is a loss function, not a data property measure.
+  - answer: A technique for combining information from multiple models
+    explanation: This describes ensemble methods, not a loss function.
+  - answer: The error rate calculated by cross-validation
+    explanation: This describes validation error, not the cross-entropy loss function.
+  - answer: A metric for measuring the complexity of decision boundaries
+    explanation: This is not what cross-entropy loss measures.
+  - answer: A measure of how much information is lost when compressing data
+    explanation: This relates to information theory entropy but not specifically cross-entropy loss in machine learning.
+
+- question: What is regularization in machine learning?
+  points: 4
+  right:
+  - answer: A technique that adds a penalty term to the loss function to prevent overfitting by constraining model complexity
+    explanation: Common regularization methods include L1 (Lasso), L2 (Ridge), and dropout for neural networks.
+    links:
+    - https://en.wikipedia.org/wiki/Regularization_(mathematics)
+  wrong:
+  - answer: The process of normalizing features to a standard scale
+    explanation: This describes feature scaling, not regularization.
+  - answer: A method for making irregular patterns in data more regular
+    explanation: This misunderstands regularization; it constrains models, not data patterns.
+  - answer: The enforcement of business rules and regulations on data
+    explanation: This describes regulatory compliance, not statistical regularization.
+  - answer: A technique for ensuring training happens at regular time intervals
+    explanation: This describes scheduling, not regularization.
+  - answer: The process of removing irregularities and anomalies from data
+    explanation: This describes data cleaning, not model regularization.
+
+- question: What is the bias-variance tradeoff?
+  points: 7
+  right:
+  - answer: The fundamental tension where reducing bias (underfitting) tends to increase variance (overfitting) and vice versa, requiring balance for optimal model performance
+    explanation: Understanding this tradeoff is crucial for model selection and tuning to achieve good generalization.
+    links:
+    - https://en.wikipedia.org/wiki/Bias%E2%80%93variance_tradeoff
+  wrong:
+  - answer: The choice between using biased data or data with high variance
+    explanation: This confuses data properties with model properties.
+  - answer: A statistical test to determine if data is biased or has high variance
+    explanation: The tradeoff is about model behavior, not a statistical test.
+  - answer: The requirement to choose between model accuracy and computational speed
+    explanation: This describes a different tradeoff between performance and efficiency.
+  - answer: The balance between collecting more training data versus more testing data
+    explanation: This describes data splitting decisions, not the bias-variance tradeoff.
+  - answer: The choice between simple biased models and complex unbiased models
+    explanation: This oversimplifies the tradeoff, which involves both bias and variance in all models.
+
+- question: What is precision in classification evaluation?
+  points: 2
+  right:
+  - answer: The proportion of positive predictions that are actually correct, calculated as true positives divided by all positive predictions
+    explanation: Precision answers "of all instances we predicted as positive, how many were actually positive?"
+    links:
+    - https://en.wikipedia.org/wiki/Precision_and_recall
+  wrong:
+  - answer: The overall accuracy of a model across all predictions
+    explanation: This describes overall accuracy, not precision specifically.
+  - answer: The number of decimal places used in numerical predictions
+    explanation: This describes numerical precision in computing, not the classification metric.
+  - answer: How precisely the model can identify the exact class boundaries
+    explanation: This is not the definition of precision in classification.
+  - answer: The proportion of actual positives that were correctly identified
+    explanation: This describes recall, not precision.
+  - answer: The percentage of predictions made with high confidence
+    explanation: This describes prediction confidence, not the precision metric.
+
+- question: What is recall in classification evaluation?
+  points: 2
+  right:
+  - answer: The proportion of actual positive cases that were correctly identified, calculated as true positives divided by all actual positives
+    explanation: Recall answers "of all actual positive instances, how many did we correctly identify?"
+    links:
+    - https://en.wikipedia.org/wiki/Precision_and_recall
+  wrong:
+  - answer: The proportion of positive predictions that are actually correct
+    explanation: This describes precision, not recall.
+  - answer: The ability of a model to remember training data patterns
+    explanation: This describes memorization, not the recall metric.
+  - answer: How well a model generalizes to new data
+    explanation: This describes generalization ability, not recall specifically.
+  - answer: The percentage of the dataset that the model uses for training
+    explanation: This describes training set size, not the recall metric.
+  - answer: The proportion of predictions that can be recalled or retrieved from memory
+    explanation: This misinterprets recall as a memory concept rather than a classification metric.
+
+- question: What is the F1 score?
+  points: 4
+  right:
+  - answer: The harmonic mean of precision and recall, providing a single metric that balances both measures
+    explanation: F1 score is useful when you need to balance precision and recall and ranges from 0 to 1.
+    links:
+    - https://en.wikipedia.org/wiki/F-score
+  wrong:
+  - answer: The first feature in a ranked list of important features
+    explanation: This misinterprets F1 as a feature identifier rather than a metric.
+  - answer: The arithmetic mean of all evaluation metrics
+    explanation: F1 specifically combines precision and recall using harmonic mean, not all metrics.
+  - answer: A score indicating how well a model performs on the first iteration
+    explanation: This is not what F1 score represents.
+  - answer: The ratio of false positives to false negatives
+    explanation: F1 score combines true positives with false positives and false negatives differently.
+  - answer: The primary metric used only in Formula 1 racing analytics
+    explanation: F1 score is a general machine learning metric, not specific to racing.
+
+- question: What is ROC curve?
+  points: 4
+  right:
+  - answer: A Receiver Operating Characteristic curve that plots true positive rate against false positive rate at various classification thresholds
+    explanation: ROC curves help evaluate classifier performance across different threshold settings and calculate AUC.
+    links:
+    - https://en.wikipedia.org/wiki/Receiver_operating_characteristic
+  wrong:
+  - answer: A visualization showing how model accuracy changes over training epochs
+    explanation: This describes a training curve, not an ROC curve.
+  - answer: A curve showing the relationship between two variables in regression
+    explanation: This describes a regression line or scatter plot, not an ROC curve.
+  - answer: A graphical representation of the rate of change in predictions
+    explanation: This is not what ROC curves represent.
+  - answer: A chart showing how quickly a model processes data
+    explanation: This would describe performance profiling, not an ROC curve.
+  - answer: A curve that displays the cumulative distribution of prediction errors
+    explanation: This describes an error distribution, not an ROC curve.
+
+- question: What is AUC in model evaluation?
+  points: 4
+  right:
+  - answer: Area Under the Curve, typically referring to the area under the ROC curve, measuring a classifier's ability to distinguish between classes
+    explanation: AUC ranges from 0 to 1, where 1 indicates perfect classification and 0.5 indicates random guessing.
+    links:
+    - https://en.wikipedia.org/wiki/Receiver_operating_characteristic#Area_under_the_curve
+  wrong:
+  - answer: Average User Confidence in model predictions
+    explanation: This is not what AUC stands for or measures.
+  - answer: Adjusted Uncertainty Coefficient for statistical testing
+    explanation: This is not the correct definition of AUC.
+  - answer: Automated Update Cycle for model retraining
+    explanation: This is not what AUC refers to in model evaluation.
+  - answer: Algorithm Utilization Cost in computational resources
+    explanation: This is not the meaning of AUC in machine learning.
+  - answer: The total area of all confusion matrices combined
+    explanation: AUC specifically relates to the ROC curve, not confusion matrices.
+
+- question: What is ensemble learning?
+  points: 4
+  right:
+  - answer: A technique that combines multiple models to produce better predictions than any single model alone
+    explanation: Ensemble methods include bagging, boosting, and stacking, often improving accuracy and robustness.
+    links:
+    - https://en.wikipedia.org/wiki/Ensemble_learning
+  wrong:
+  - answer: A method for training multiple models simultaneously on different computers
+    explanation: This describes distributed training, not ensemble learning.
+  - answer: The practice of having multiple data scientists work on the same problem
+    explanation: This describes team collaboration, not an algorithmic technique.
+  - answer: A technique for combining multiple datasets into one large dataset
+    explanation: This describes data merging, not ensemble learning.
+  - answer: A learning method where models teach each other iteratively
+    explanation: This is not how ensemble learning works.
+  - answer: The process of selecting the single best model from many candidates
+    explanation: Ensemble learning combines multiple models rather than selecting one.
+
+- question: What is boosting in ensemble learning?
+  points: 7
+  right:
+  - answer: An ensemble technique that sequentially trains models where each new model focuses on correcting errors made by previous models
+    explanation: Boosting algorithms like AdaBoost, Gradient Boosting, and XGBoost are powerful methods that often win competitions.
+    links:
+    - https://en.wikipedia.org/wiki/Boosting_(machine_learning)
+  wrong:
+  - answer: A technique for artificially increasing the size of training data
+    explanation: This describes data augmentation, not boosting.
+  - answer: A method for speeding up model training through optimization
+    explanation: This describes computational optimization, not the boosting algorithm.
+  - answer: The process of improving model performance by adding more features
+    explanation: This describes feature engineering, not boosting.
+  - answer: A marketing strategy to increase adoption of machine learning models
+    explanation: Boosting is a technical algorithm, not a marketing strategy.
+  - answer: A preprocessing step that normalizes data to boost signal strength
+    explanation: This describes signal processing or normalization, not boosting.
+
+- question: What is bagging in ensemble learning?
+  points: 7
+  right:
+  - answer: Bootstrap Aggregating - an ensemble technique that trains multiple models on different random subsets of data and averages their predictions
+    explanation: Bagging reduces variance and helps prevent overfitting, with Random Forest being a popular bagging method.
+    links:
+    - https://en.wikipedia.org/wiki/Bootstrap_aggregating
+  wrong:
+  - answer: A method for collecting and storing training data efficiently
+    explanation: This describes data management, not the bagging algorithm.
+  - answer: A technique for packaging models for deployment
+    explanation: This describes model deployment, not bagging.
+  - answer: The process of grouping similar data points together
+    explanation: This describes clustering, not bagging.
+  - answer: A method for compressing model files to reduce storage
+    explanation: This describes model compression, not bagging.
+  - answer: A technique for removing outliers by putting them in separate bags
+    explanation: This is not what bagging refers to in machine learning.
+
+- question: What is feature selection?
+  points: 2
+  right:
+  - answer: The process of identifying and selecting the most relevant features from a dataset to improve model performance and reduce complexity
+    explanation: Feature selection can improve accuracy, reduce overfitting, and decrease training time.
+    links:
+    - https://en.wikipedia.org/wiki/Feature_selection
+  wrong:
+  - answer: The manual process of choosing which columns to include when creating a dataset
+    explanation: While related, feature selection is more systematic and algorithmic than simple manual selection.
+  - answer: A technique for creating new features from existing ones
+    explanation: This describes feature engineering, not feature selection.
+  - answer: The process of selecting which model features to use during deployment
+    explanation: This confuses software features with data features.
+  - answer: A method for choosing the best machine learning algorithm
+    explanation: This describes model selection, not feature selection.
+  - answer: The selection of random features for each decision tree split
+    explanation: This describes a specific technique in random forests, not general feature selection.
+
+- question: What is k-fold cross-validation?
+  points: 4
+  right:
+  - answer: A validation technique that divides data into k equal parts, training on k-1 folds and testing on the remaining fold, repeating k times
+    explanation: K-fold CV provides a more reliable performance estimate than a single train-test split by using all data for both training and testing.
+    links:
+    - https://en.wikipedia.org/wiki/Cross-validation_(statistics)#k-fold_cross-validation
+  wrong:
+  - answer: A method for folding or compressing data k times to save space
+    explanation: This describes data compression, not cross-validation.
+  - answer: A technique that requires k different machine learning algorithms
+    explanation: K-fold refers to data splitting, not number of algorithms.
+  - answer: A validation method that runs models k times to ensure consistency
+    explanation: While models are run k times, this misses the key aspect of different data splits.
+  - answer: A process for validating that all k features are properly encoded
+    explanation: This describes feature validation, not k-fold cross-validation.
+  - answer: A technique for splitting data into k categories based on target values
+    explanation: This describes stratification, though it can be combined with k-fold CV.
+
+- question: What is the purpose of a validation set?
+  points: 2
+  right:
+  - answer: A separate dataset used during model development to tune hyperparameters and make model selection decisions without touching the test set
+    explanation: Validation sets help prevent information leakage from the test set during model development.
+    links:
+    - https://en.wikipedia.org/wiki/Training,_validation,_and_test_sets
+  wrong:
+  - answer: A dataset used to check if the original data was collected correctly
+    explanation: This describes data quality validation, not the validation set in modeling.
+  - answer: The final dataset used to report model performance to stakeholders
+    explanation: This describes the test set, not the validation set.
+  - answer: A backup copy of the training data in case of data loss
+    explanation: This describes data backup, not a validation set.
+  - answer: A dataset containing only validated and verified correct predictions
+    explanation: This misunderstands the purpose of validation sets.
+  - answer: Data used to validate that the model code has no bugs
+    explanation: This describes software testing, not the validation set purpose.
+
+- question: What is batch processing in machine learning?
+  points: 2
+  right:
+  - answer: Processing data in groups (batches) rather than one sample at a time, improving computational efficiency during training
+    explanation: Batch size is a hyperparameter that affects training speed, memory usage, and model convergence.
+    links:
+    - https://en.wikipedia.org/wiki/Batch_processing
+  wrong:
+  - answer: A legacy data processing system that runs at scheduled times
+    explanation: While batch jobs exist, this doesn't define batch processing in machine learning.
+  - answer: Processing all data at once rather than in real-time
+    explanation: This describes offline vs. online processing, not batch processing specifically.
+  - answer: A technique for processing data in production factories
+    explanation: This describes manufacturing, not machine learning batch processing.
+  - answer: The final processing step that happens after training is complete
+    explanation: Batch processing occurs during training, not as a final step.
+  - answer: Processing data that comes in batches or groups naturally
+    explanation: Batch processing is about how we choose to process data, not how it arrives.
+
+- question: What is the difference between online and batch learning?
+  points: 4
+  right:
+  - answer: Online learning updates the model incrementally with each new data point, while batch learning trains on all data at once
+    explanation: Online learning is useful for streaming data and large datasets that don't fit in memory, while batch learning is simpler but requires all data upfront.
+    links:
+    - https://en.wikipedia.org/wiki/Online_machine_learning
+  wrong:
+  - answer: Online learning uses internet-connected models, batch learning uses offline models
+    explanation: This confuses network connectivity with learning paradigms.
+  - answer: Online learning is faster, batch learning is more accurate
+    explanation: This is an oversimplification; each has different tradeoffs depending on the context.
+  - answer: Online learning processes data in real-time, batch learning always takes hours
+    explanation: Processing time depends on scale and resources, not inherently on the learning type.
+  - answer: Batch learning can only be done with structured data, online learning works with any data
+    explanation: Both paradigms can work with various data types.
+  - answer: Online learning requires less data than batch learning
+    explanation: Data requirements depend on the problem, not the learning paradigm.
+
+- question: What is model interpretability?
+  points: 4
+  right:
+  - answer: The degree to which a human can understand and explain how a model makes its predictions
+    explanation: Interpretability is important for trust, debugging, regulatory compliance, and gaining insights from models.
+    links:
+    - https://en.wikipedia.org/wiki/Explainable_artificial_intelligence
+  wrong:
+  - answer: The ability of a model to interpret natural language inputs
+    explanation: This describes natural language understanding, not model interpretability.
+  - answer: How easily a model's code can be read by other programmers
+    explanation: This describes code readability, not model interpretability.
+  - answer: The capacity of a model to translate between different languages
+    explanation: This describes machine translation, not interpretability.
+  - answer: How accurately a model can parse and understand input data
+    explanation: This describes input processing, not interpretability of model decisions.
+  - answer: The speed at which humans can understand model outputs
+    explanation: Interpretability is about the possibility of understanding, not the speed.
+
+- question: What is SHAP (SHapley Additive exPlanations)?
+  points: 7
+  right:
+  - answer: A method for explaining individual predictions by computing the contribution of each feature based on game theory concepts
+    explanation: SHAP values provide consistent and theoretically sound feature importance measures for any machine learning model.
+    links:
+    - https://en.wikipedia.org/wiki/Shapley_value
+  wrong:
+  - answer: A new type of neural network architecture for text processing
+    explanation: SHAP is an explanation method, not a model architecture.
+  - answer: A data preprocessing technique that shapes data for optimal model performance
+    explanation: This is not what SHAP refers to.
+  - answer: A software tool for sharing machine learning models between teams
+    explanation: This describes model sharing tools, not SHAP.
+  - answer: A statistical test for determining if predictions are significantly accurate
+    explanation: SHAP explains predictions, it doesn't test accuracy.
+  - answer: An algorithm for automatically hyperparameter tuning
+    explanation: SHAP is for model explanation, not hyperparameter optimization.
+
+- question: What is data leakage in machine learning?
+  points: 4
+  right:
+  - answer: When information from outside the training dataset is used to create the model, leading to overly optimistic performance estimates
+    explanation: Data leakage often occurs through improper data splitting, target leakage, or including future information that wouldn't be available at prediction time.
+    links:
+    - https://en.wikipedia.org/wiki/Leakage_(machine_learning)
+  wrong:
+  - answer: When training data is accidentally deleted or lost
+    explanation: This describes data loss, not leakage.
+  - answer: When private or sensitive data is exposed to unauthorized users
+    explanation: This describes a security breach, not the machine learning concept of data leakage.
+  - answer: When data slowly corrupts over time during storage
+    explanation: This describes data degradation, not leakage.
+  - answer: When some features have missing values that need to be filled
+    explanation: This describes missing data, not leakage.
+  - answer: When the model outputs training data it has memorized
+    explanation: This is closer to overfitting or memorization, though related to leakage.
+
+- question: What is the purpose of data versioning?
+  points: 2
+  right:
+  - answer: To track changes in datasets over time, enabling reproducibility and the ability to revert to previous data states
+    explanation: Data versioning is crucial for experiment tracking, collaboration, and maintaining data lineage.
+    links:
+    - https://en.wikipedia.org/wiki/Data_version_control
+  wrong:
+  - answer: To create multiple versions of a model for different use cases
+    explanation: This describes model versioning, not data versioning.
+  - answer: To convert data between different format versions
+    explanation: This describes data format migration, not versioning.
+  - answer: To assign version numbers to software that processes data
+    explanation: This describes software versioning, not data versioning.
+  - answer: To check which version of programming languages were used
+    explanation: This describes dependency management, not data versioning.
+  - answer: To validate that all data meets the latest quality standards
+    explanation: This describes data validation, not versioning.
+
+- question: What is MLOps?
+  points: 4
+  right:
+  - answer: Machine Learning Operations - practices that combine ML, DevOps, and Data Engineering to deploy and maintain ML systems in production reliably
+    explanation: MLOps includes model versioning, monitoring, continuous training, and automated deployment pipelines.
+    links:
+    - https://en.wikipedia.org/wiki/MLOps
+  wrong:
+  - answer: A set of mathematical operations specific to machine learning algorithms
+    explanation: MLOps refers to operational practices, not mathematical operations.
+  - answer: A programming language designed for ML development
+    explanation: MLOps is a set of practices, not a programming language.
+  - answer: A type of operation performed during model training
+    explanation: MLOps is about production systems, not training operations.
+  - answer: A certification for machine learning practitioners
+    explanation: While certifications exist, MLOps is a practice area, not a certification.
+  - answer: A suite of tools sold by a specific vendor
+    explanation: MLOps is a general practice that can be implemented with various tools.
+
+- question: What is model drift?
+  points: 4
+  right:
+  - answer: The degradation of model performance over time as the statistical properties of the production data change relative to training data
+    explanation: Model drift requires monitoring and periodic retraining to maintain performance in production.
+    links:
+    - https://en.wikipedia.org/wiki/Concept_drift
+  wrong:
+  - answer: The gradual loss of model parameters due to memory corruption
+    explanation: This describes technical errors, not statistical drift.
+  - answer: When a model slowly moves through iterations during training
+    explanation: This describes the training process, not production drift.
+  - answer: The tendency of neural networks to forget earlier training examples
+    explanation: This describes catastrophic forgetting, different from model drift.
+  - answer: When model predictions become randomly distributed over time
+    explanation: Drift is systematic change in data distribution, not random variation in predictions.
+  - answer: The physical movement of model files across different servers
+    explanation: This describes file transfer, not statistical drift.
+
+- question: What is a baseline model?
+  points: 2
+  right:
+  - answer: A simple, often naive model used as a reference point to evaluate whether more complex models provide meaningful improvement
+    explanation: Baselines help determine if sophisticated approaches are justified and can be simple heuristics or basic algorithms.
+    links:
+    - https://en.wikipedia.org/wiki/Baseline_(configuration_management)
+  wrong:
+  - answer: The first model ever created in a project
+    explanation: While the first model might serve as a baseline, the baseline is specifically a simple reference model.
+  - answer: The model with the best performance that all others try to beat
+    explanation: This would be the best model, not the baseline which is typically simple.
+  - answer: A model trained on the complete, unfiltered dataset
+    explanation: Baselines are about simplicity, not about using all data.
+  - answer: The production model currently deployed and serving predictions
+    explanation: This describes the current production model, not necessarily the baseline.
+  - answer: A model that predicts the base or ground truth values
+    explanation: This misunderstands the purpose of baseline models.
+
+- question: What is AutoML?
+  points: 4
+  right:
+  - answer: Automated Machine Learning - the process of automating the end-to-end process of applying machine learning, including model selection and hyperparameter tuning
+    explanation: AutoML democratizes ML by reducing the need for extensive expertise and speeds up model development.
+    links:
+    - https://en.wikipedia.org/wiki/Automated_machine_learning
+  wrong:
+  - answer: A programming language specifically for machine learning automation
+    explanation: AutoML refers to automated processes and tools, not a programming language.
+  - answer: Artificial Understanding Through Machine Learning, a new AI paradigm
+    explanation: This is not what AutoML stands for or means.
+  - answer: The process of automatically generating training data
+    explanation: AutoML automates model building, not data generation.
+  - answer: A certification for automated testing of ML models
+    explanation: AutoML is a technology area, not a certification.
+  - answer: A specific algorithm that automatically learns without any human input
+    explanation: AutoML refers to automating the ML pipeline, not fully autonomous learning.
+
+- question: What is the curse of dimensionality?
+  points: 7
+  right:
+  - answer: The phenomenon where analysis becomes exponentially more difficult as the number of features increases, due to data becoming sparse in high-dimensional space
+    explanation: High dimensionality can cause distance metrics to become meaningless, require exponentially more data, and increase computational complexity.
+    links:
+    - https://en.wikipedia.org/wiki/Curse_of_dimensionality
+  wrong:
+  - answer: A problem where too many dimensions make data visualizations unreadable
+    explanation: While related, this oversimplifies the statistical and computational challenges.
+  - answer: When adding more features always makes models worse
+    explanation: The curse is about the challenges of high dimensions, not that features always hurt.
+  - answer: A security vulnerability in high-dimensional databases
+    explanation: This is not related to the curse of dimensionality.
+  - answer: The difficulty of naming and keeping track of many features
+    explanation: This is a practical issue but not the curse of dimensionality.
+  - answer: When models become too complex due to excessive feature engineering
+    explanation: This describes potential overfitting but misses the core statistical concept.
+
+- question: What is principal component analysis (PCA)?
+  points: 4
+  right:
+  - answer: A dimensionality reduction technique that transforms data into a new coordinate system where the greatest variances lie on the first coordinates (principal components)
+    explanation: PCA identifies orthogonal directions of maximum variance, useful for visualization and removing correlated features.
+    links:
+    - https://en.wikipedia.org/wiki/Principal_component_analysis
+  wrong:
+  - answer: A method for identifying the most important features by ranking them
+    explanation: While PCA relates to importance, it creates new features rather than ranking existing ones.
+  - answer: A clustering algorithm that finds the primary clusters in data
+    explanation: PCA is dimensionality reduction, not a clustering method.
+  - answer: A technique for analyzing the main components of software systems
+    explanation: This describes software architecture analysis, not PCA.
+  - answer: An algorithm for finding the principal or primary data points
+    explanation: PCA finds principal directions/components, not primary data points.
+  - answer: A statistical test for determining which components are significant
+    explanation: PCA is a transformation technique, not a hypothesis test.
+
+- question: What is anomaly detection?
+  points: 2
+  right:
+  - answer: The identification of rare items, events, or observations that differ significantly from the majority of the data
+    explanation: Anomaly detection is used in fraud detection, system health monitoring, and quality control.
+    links:
+    - https://en.wikipedia.org/wiki/Anomaly_detection
+  wrong:
+  - answer: The process of removing all unusual data before analysis
+    explanation: Anomaly detection identifies anomalies; removal is a separate decision.
+  - answer: A technique for detecting errors in model code
+    explanation: This describes software debugging, not anomaly detection in data.
+  - answer: The identification of incorrect labels in supervised learning
+    explanation: This describes label noise detection, a specific type of anomaly detection.
+  - answer: A method for finding features that don't correlate with the target
+    explanation: This describes feature relevance analysis, not anomaly detection.
+  - answer: The detection of when models are performing abnormally well
+    explanation: Anomaly detection focuses on data anomalies, not model performance.
+
+- question: What is a recommendation system?
+  points: 2
+  right:
+  - answer: A system that predicts user preferences and suggests items (products, content, etc.) that users are likely to be interested in
+    explanation: Recommendation systems use collaborative filtering, content-based filtering, or hybrid approaches.
+    links:
+    - https://en.wikipedia.org/wiki/Recommender_system
+  wrong:
+  - answer: A system that provides recommendations on which ML algorithm to use
+    explanation: This describes AutoML model selection, not recommendation systems.
+  - answer: An expert system that recommends best practices for data science
+    explanation: This describes a knowledge system, not a recommendation system.
+  - answer: A quality control system that recommends data for removal
+    explanation: This describes data quality tools, not recommendation systems.
+  - answer: A system that suggests optimal hyperparameters for models
+    explanation: This describes hyperparameter optimization, not recommendation systems.
+  - answer: An automated system for recommending team members for projects
+    explanation: While similar in concept, recommendation systems typically refer to product/content recommendations.
+
+- question: What is collaborative filtering?
+  points: 4
+  right:
+  - answer: A recommendation technique that makes predictions based on the preferences and behaviors of similar users or items
+    explanation: Collaborative filtering can be user-based (finding similar users) or item-based (finding similar items).
+    links:
+    - https://en.wikipedia.org/wiki/Collaborative_filtering
+  wrong:
+  - answer: A data cleaning technique where multiple analysts review data together
+    explanation: This describes collaborative data review, not the recommendation technique.
+  - answer: A method for filtering out noise by combining multiple data sources
+    explanation: This describes data fusion, not collaborative filtering.
+  - answer: A security feature that requires multiple approvals for data access
+    explanation: This describes access control, not collaborative filtering.
+  - answer: A technique where multiple models collaborate to make predictions
+    explanation: This describes ensemble learning, not collaborative filtering.
+  - answer: A preprocessing step that filters data collaboratively across teams
+    explanation: This describes teamwork processes, not the collaborative filtering algorithm.
+
+- question: What is matrix factorization?
+  points: 7
+  right:
+  - answer: A technique that decomposes a matrix into the product of two or more matrices, often used in recommendation systems to discover latent features
+    explanation: Matrix factorization methods like SVD are powerful for collaborative filtering and dimensionality reduction.
+    links:
+    - https://en.wikipedia.org/wiki/Matrix_factorization_(recommender_systems)
+  wrong:
+  - answer: A mathematical operation that calculates the factors of matrix dimensions
+    explanation: This describes arithmetic factorization of numbers, not matrix factorization.
+  - answer: A technique for converting matrices into factor form for analysis
+    explanation: This is too vague and doesn't capture what matrix factorization does.
+  - answer: A method for identifying which features were used to create a matrix
+    explanation: This misunderstands matrix factorization's purpose.
+  - answer: The process of splitting large matrices into smaller ones for processing
+    explanation: This describes matrix partitioning, not factorization.
+  - answer: A technique for testing if a matrix is prime or composite
+    explanation: This confuses number theory concepts with matrix operations.
+
+- question: What is reinforcement learning?
+  points: 4
+  right:
+  - answer: A learning paradigm where an agent learns to make decisions by performing actions in an environment and receiving rewards or penalties
+    explanation: Reinforcement learning is used in robotics, game playing, autonomous vehicles, and resource management.
+    links:
+    - https://en.wikipedia.org/wiki/Reinforcement_learning
+  wrong:
+  - answer: A technique for strengthening weak signals in noisy data
+    explanation: This describes signal processing, not reinforcement learning.
+  - answer: A method for reinforcing model architecture with additional layers
+    explanation: This describes architecture design, not reinforcement learning.
+  - answer: The practice of repeatedly training a model until it improves
+    explanation: While training involves iteration, this doesn't define reinforcement learning's agent-environment-reward paradigm.
+  - answer: A psychological technique applied to improve model performance
+    explanation: This misunderstands reinforcement learning as human psychology rather than machine learning.
+  - answer: A process where correct predictions are reinforced by updating weights
+    explanation: This partially describes backpropagation in supervised learning, not reinforcement learning.
+
+- question: What is Q-learning?
+  points: 7
+  right:
+  - answer: A model-free reinforcement learning algorithm that learns the value of taking actions in states to maximize cumulative reward
+    explanation: Q-learning uses a Q-table or Q-function to estimate optimal action values without requiring a model of the environment.
+    links:
+    - https://en.wikipedia.org/wiki/Q-learning
+  wrong:
+  - answer: A learning algorithm specifically for processing queues of data
+    explanation: Q-learning refers to Q-values (action-values), not data queues.
+  - answer: A quality control learning system for detecting defects
+    explanation: This misinterprets Q as quality rather than the Q-function in RL.
+  - answer: A quick learning algorithm that trains models faster than others
+    explanation: Q-learning is not about speed but about learning optimal policies.
+  - answer: A questioning-based learning system that asks for labels
+    explanation: This describes active learning, not Q-learning.
+  - answer: The first in a series of learning algorithms (Q, R, S learning)
+    explanation: There is no such series; Q refers to the Q-function.
+
+- question: What is the Markov Decision Process (MDP)?
+  points: 7
+  right:
+  - answer: A mathematical framework for modeling decision-making where outcomes are partly random and partly controlled by a decision maker
+    explanation: MDPs formalize reinforcement learning problems with states, actions, transition probabilities, and rewards.
+    links:
+    - https://en.wikipedia.org/wiki/Markov_decision_process
+  wrong:
+  - answer: A decision tree variant named after mathematician Andrey Markov
+    explanation: While named after Markov, MDPs are not decision trees.
+  - answer: A process for making decisions using mark-based scoring systems
+    explanation: This is not what MDP refers to.
+  - answer: A manufacturing decision process for production optimization
+    explanation: While MDPs could model manufacturing, this misunderstands the framework.
+  - answer: A multi-dimensional projection technique for visualization
+    explanation: This describes dimensionality reduction, not MDPs.
+  - answer: A method for deciding which model to deploy in production
+    explanation: This describes model selection, not the MDP framework.
+
+- question: What is a generative model?
+  points: 4
+  right:
+  - answer: A model that learns the underlying distribution of data and can generate new samples similar to the training data
+    explanation: Generative models include GANs, VAEs, and other architectures that can create new data instances.
+    links:
+    - https://en.wikipedia.org/wiki/Generative_model
+  wrong:
+  - answer: A model that generates predictions for classification tasks
+    explanation: This describes predictive models generally, not specifically generative models.
+  - answer: A model-generating tool that automatically creates machine learning models
+    explanation: This describes AutoML, not generative models.
+  - answer: A general-purpose model that works across many different tasks
+    explanation: This describes multi-task or transfer learning models, not generative models.
+  - answer: The first generation of a model before improvements are made
+    explanation: This describes versioning, not generative modeling.
+  - answer: A model that generates feature importance rankings
+    explanation: This describes feature importance analysis, not generative models.
+
+- question: What is a Generative Adversarial Network (GAN)?
+  points: 7
+  right:
+  - answer: A framework with two neural networks - a generator that creates fake data and a discriminator that tries to distinguish real from fake - trained adversarially
+    explanation: GANs can generate realistic images, audio, and other data types through the competitive training process.
+    links:
+    - https://en.wikipedia.org/wiki/Generative_adversarial_network
+  wrong:
+  - answer: A network of adversarial examples used to test model robustness
+    explanation: This describes adversarial testing, not GANs.
+  - answer: A general adversarial network for cybersecurity
+    explanation: GANs are generative models, not security systems.
+  - answer: A network architecture that uses adversarial loss functions
+    explanation: While GANs use adversarial training, this doesn't fully define them.
+  - answer: An aggressive neural network that competes with other models
+    explanation: This misunderstands the adversarial relationship between generator and discriminator.
+  - answer: A guarantee against network failures in distributed systems
+    explanation: This describes system reliability, not GANs.
+
+- question: What is data augmentation?
+  points: 2
+  right:
+  - answer: Techniques that artificially expand training datasets by creating modified versions of existing data through transformations
+    explanation: Common in image processing (rotation, flipping, cropping) and helps prevent overfitting by increasing data diversity.
+    links:
+    - https://en.wikipedia.org/wiki/Data_augmentation
+  wrong:
+  - answer: The process of adding external data from additional sources
+    explanation: This describes data collection or integration, not augmentation.
+  - answer: Improving data quality by filling in missing values
+    explanation: This describes imputation, not augmentation.
+  - answer: Adding more features through feature engineering
+    explanation: This is feature engineering, not data augmentation.
+  - answer: Increasing the size of data storage systems
+    explanation: This describes storage expansion, not data augmentation.
+  - answer: Enhancing data with manual annotations from experts
+    explanation: This describes data labeling, not augmentation.
+
+- question: What is label noise in supervised learning?
+  points: 4
+  right:
+  - answer: Incorrect or inconsistent labels in training data that can degrade model performance and lead to learning wrong patterns
+    explanation: Label noise can result from human error, ambiguous cases, or automatic labeling systems, requiring noise-robust methods.
+    links:
+    - https://en.wikipedia.org/wiki/Noisy_label
+  wrong:
+  - answer: Random variations in numerical target values
+    explanation: This describes target variance, not label noise which is about incorrect labels.
+  - answer: Missing labels in the training dataset
+    explanation: This describes missing data, not noisy labels.
+  - answer: Labels that are too verbose or contain unnecessary information
+    explanation: This describes label formatting issues, not noise.
+  - answer: Statistical noise in the features used for prediction
+    explanation: This describes feature noise, not label noise.
+  - answer: Uncertainty in model predictions for labeled data
+    explanation: This describes prediction uncertainty, not label noise in training data.
+
+- question: What is active learning?
+  points: 7
+  right:
+  - answer: A learning paradigm where the model can query for labels on specific unlabeled instances that it believes will be most informative
+    explanation: Active learning reduces labeling costs by strategically selecting which instances to label, maximizing learning efficiency.
+    links:
+    - https://en.wikipedia.org/wiki/Active_learning_(machine_learning)
+  wrong:
+  - answer: A learning approach where models are constantly updated in production
+    explanation: This describes online learning or continuous learning, not active learning.
+  - answer: A hands-on teaching method for training data scientists
+    explanation: This describes educational pedagogy, not the machine learning technique.
+  - answer: Learning that occurs during active production hours
+    explanation: This describes timing, not the active learning paradigm.
+  - answer: A type of reinforcement learning where the agent is very active
+    explanation: Active learning is about label querying in supervised learning, not RL.
+  - answer: Learning where all neurons in the network are actively used
+    explanation: This describes network utilization, not active learning.
+
+- question: What is semi-supervised learning?
+  points: 4
+  right:
+  - answer: A learning paradigm that uses both labeled and unlabeled data, typically with a small amount of labeled data and a large amount of unlabeled data
+    explanation: Semi-supervised learning leverages unlabeled data to improve model performance when labels are expensive or time-consuming to obtain.
+    links:
+    - https://en.wikipedia.org/wiki/Semi-supervised_learning
+  wrong:
+  - answer: A learning method that is partially supervised by humans and partially automated
+    explanation: This describes human-in-the-loop systems, not semi-supervised learning.
+  - answer: Learning that uses supervision for some features but not others
+    explanation: Semi-supervised refers to labels on examples, not on features.
+  - answer: A partially completed supervised learning project
+    explanation: This describes project status, not a learning paradigm.
+  - answer: Learning where supervision is provided intermittently during training
+    explanation: This misunderstands the role of labeled/unlabeled data in semi-supervised learning.
+  - answer: A method that combines supervised and unsupervised algorithms sequentially
+    explanation: While semi-supervised learning can use both paradigms, this doesn't define it.
+
+- question: What is knowledge distillation?
+  points: 7
+  right:
+  - answer: A technique where a smaller student model is trained to mimic the behavior of a larger, more complex teacher model
+    explanation: Knowledge distillation creates efficient models that maintain much of the teacher's performance while being faster and smaller.
+    links:
+    - https://en.wikipedia.org/wiki/Knowledge_distillation
+  wrong:
+  - answer: The process of extracting key insights from trained models
+    explanation: This describes model interpretation, not knowledge distillation.
+  - answer: A method for removing redundant knowledge from datasets
+    explanation: This describes data reduction, not knowledge distillation.
+  - answer: The purification of training data to remove noise
+    explanation: This describes data cleaning, not knowledge distillation.
+  - answer: A technique for concentrating important features
+    explanation: This is vague and doesn't capture knowledge distillation's essence.
+  - answer: The process of documenting model knowledge for stakeholders
+    explanation: This describes documentation, not the machine learning technique.
+
+- question: What is federated learning?
+  points: 7
+  right:
+  - answer: A machine learning approach where models are trained across decentralized devices holding local data samples, without exchanging raw data
+    explanation: Federated learning enables privacy-preserving collaborative learning, useful when data cannot be centralized due to privacy, bandwidth, or regulatory constraints.
+    links:
+    - https://en.wikipedia.org/wiki/Federated_learning
+  wrong:
+  - answer: A learning method for federal government applications
+    explanation: Federated refers to distributed architecture, not government federation.
+  - answer: Learning algorithms that work with federated databases
+    explanation: This describes database systems, not the federated learning paradigm.
+  - answer: A collaborative approach where multiple institutions share all their data
+    explanation: Federated learning specifically avoids sharing raw data.
+  - answer: A type of ensemble learning that federates multiple models
+    explanation: This describes model federation, not the federated learning paradigm.
+  - answer: Learning that follows federal regulations and compliance standards
+    explanation: While federated learning can help with compliance, this doesn't define it.
+
+- question: What is few-shot learning?
+  points: 7
+  right:
+  - answer: A learning paradigm where models learn to recognize new classes from only a few training examples per class
+    explanation: Few-shot learning is important for scenarios where collecting large labeled datasets is impractical, using meta-learning or transfer learning approaches.
+    links:
+    - https://en.wikipedia.org/wiki/Few-shot_learning
+  wrong:
+  - answer: A rapid training technique that completes in just a few iterations
+    explanation: This describes fast training, not few-shot learning.
+  - answer: Learning with a small total dataset regardless of class distribution
+    explanation: Few-shot specifically refers to few examples per class, not total dataset size.
+  - answer: A photography-based learning technique using camera shots
+    explanation: "Shots" refers to training examples, not photographs.
+  - answer: Training with reduced batch sizes to save memory
+    explanation: This describes computational optimization, not few-shot learning.
+  - answer: A trial-and-error learning approach with few attempts
+    explanation: This misunderstands the few-shot learning paradigm.
+
+- question: What is zero-shot learning?
+  points: 7
+  right:
+  - answer: A learning paradigm where models can recognize classes they have never seen during training, using auxiliary information like class descriptions
+    explanation: Zero-shot learning enables generalization to entirely new categories by leveraging semantic relationships and attributes.
+    links:
+    - https://en.wikipedia.org/wiki/Zero-shot_learning
+  wrong:
+  - answer: Learning that requires zero training examples
+    explanation: Zero-shot still requires training, just not on the target classes.
+  - answer: A model that makes predictions without any learning phase
+    explanation: Zero-shot models still learn from training data, just not the target classes.
+  - answer: Learning with zero initialization of model parameters
+    explanation: This describes weight initialization, not zero-shot learning.
+  - answer: A technique that achieves zero error on training data
+    explanation: This describes perfect fitting, not zero-shot learning.
+  - answer: Learning without any human supervision or labels
+    explanation: This describes unsupervised learning, not zero-shot learning.
+
+- question: What is continual learning (also called lifelong learning)?
+  points: 7
+  right:
+  - answer: A learning paradigm where models continuously learn from a stream of data over time while retaining previously learned knowledge without catastrophic forgetting
+    explanation: Continual learning addresses the challenge of learning new tasks without forgetting old ones, important for adaptive systems.
+    links:
+    - https://en.wikipedia.org/wiki/Continual_learning
+  wrong:
+  - answer: Learning that never stops and runs indefinitely
+    explanation: While continual learning is ongoing, this oversimplifies the concept.
+  - answer: A philosophy of continuous improvement in data science practice
+    explanation: This describes professional development, not the machine learning paradigm.
+  - answer: Models that are continuously monitored in production
+    explanation: This describes monitoring, not continual learning.
+  - answer: The practice of retraining models regularly on schedule
+    explanation: This describes periodic retraining, not the continual learning paradigm.
+  - answer: Learning that continues until perfect accuracy is achieved
+    explanation: This misunderstands continual learning's focus on sequential task learning.
+
+- question: What is the exploration-exploitation tradeoff?
+  points: 7
+  right:
+  - answer: The dilemma in reinforcement learning between trying new actions to discover their rewards (exploration) versus choosing known good actions (exploitation)
+    explanation: Balancing exploration and exploitation is fundamental to reinforcement learning and multi-armed bandit problems.
+    links:
+    - https://en.wikipedia.org/wiki/Multi-armed_bandit
+  wrong:
+  - answer: The choice between exploring data thoroughly versus exploiting it for insights
+    explanation: While thematically related, this doesn't define the RL concept.
+  - answer: The balance between exploratory data analysis and model exploitation
+    explanation: This describes data science workflow, not the RL tradeoff.
+  - answer: The tension between discovering new features versus exploiting known ones
+    explanation: This is about feature engineering, not the RL exploration-exploitation tradeoff.
+  - answer: The decision between exploring multiple models versus exploiting the best one
+    explanation: This is about model selection, not the RL concept.
+  - answer: The tradeoff between computational exploration time and result exploitation
+    explanation: This describes computational efficiency, not the RL dilemma.
+
+- question: What is a policy in reinforcement learning?
+  points: 4
+  right:
+  - answer: A strategy or mapping from states to actions that determines what action an agent should take in each state
+    explanation: Policies can be deterministic (one action per state) or stochastic (probability distribution over actions), and learning optimal policies is the goal of many RL algorithms.
+    links:
+    - https://en.wikipedia.org/wiki/Reinforcement_learning#Policy
+  wrong:
+  - answer: The set of rules governing data privacy in machine learning
+    explanation: This describes data governance policies, not RL policies.
+  - answer: A documented guideline for model development and deployment
+    explanation: This describes organizational policies, not RL policies.
+  - answer: The loss function used to train reinforcement learning models
+    explanation: This describes the objective function, not the policy.
+  - answer: A quality control policy for ensuring data integrity
+    explanation: This describes data policies, not RL policies.
+  - answer: The algorithm used to update model parameters
+    explanation: This describes the learning algorithm, not the policy being learned.
+
+- question: What is the reward function in reinforcement learning?
+  points: 4
+  right:
+  - answer: A function that provides feedback to the agent by assigning numerical rewards or penalties for taking actions in specific states
+    explanation: The reward function defines the task objective and guides the agent toward desired behaviors.
+    links:
+    - https://en.wikipedia.org/wiki/Reinforcement_learning#Reward_function
+  wrong:
+  - answer: A bonus paid to data scientists for achieving good model performance
+    explanation: This describes employee compensation, not RL reward functions.
+  - answer: The evaluation metric used to assess model quality
+    explanation: While related, evaluation metrics are different from RL reward functions that guide learning.
+  - answer: A function that rewards the model with more training data
+    explanation: This misunderstands what rewards are in RL.
+  - answer: The mathematical function that calculates model predictions
+    explanation: This describes the prediction function, not the reward function.
+  - answer: A feature that indicates how rewarding each data point is
+    explanation: Rewards are feedback for actions, not properties of data points.
+
+- question: What is the difference between model accuracy and model precision?
+  points: 2
+  right:
+  - answer: Accuracy measures overall correctness (all correct predictions divided by total predictions), while precision measures correctness of positive predictions only (true positives divided by all positive predictions)
+    explanation: Both are useful but precision is specifically important when false positives are costly.
+    links:
+    - https://en.wikipedia.org/wiki/Precision_and_recall
+  wrong:
+  - answer: Accuracy is for classification, precision is for regression
+    explanation: Both terms apply to classification; regression uses different metrics.
+  - answer: Accuracy is approximate, precision is exact
+    explanation: Both are specific mathematical measures, not degrees of exactness.
+  - answer: There is no difference; they are synonyms
+    explanation: These are distinct evaluation metrics with different meanings.
+  - answer: Accuracy uses integers, precision uses decimals
+    explanation: Both can be expressed as decimals or percentages.
+  - answer: Precision is accuracy rounded to a specific number of decimal places
+    explanation: This confuses numerical precision with the classification metric.
