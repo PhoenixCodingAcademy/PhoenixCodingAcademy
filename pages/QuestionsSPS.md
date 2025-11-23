@@ -65,6 +65,10 @@ At any point, if all questions were answered correctly, then then "Reveal All An
 REQUIREMENT: When the "Grade Quiz", "Try Again", or "Show Answers" button is pressed, then record that event in the history list with the number of questions missed and the number of points scored. Always show the history at the top.
 
 REQUIREMENT: The "Question set" dropdown list should have the ability to type a string to filter the list. Typing each character invokes the filter. The string filters by matching any part of the string.
+
+REQUIREMENT: If the user changes the "Random seed" then mark that in the history as "Random Seed changed". Only add it one time if changed.
+
+REQUIREMENT: When a quiz is graded, create or append to the file "quizlog.yaml
 ---
 
 SUBJECT = History - Basic Colonial America and the Revolution
@@ -85,12 +89,30 @@ Generate 5 false answers that sound correct but truely wrong.
 Consider some questions can be in the form "Which of the following are true statements?" or "Which of the following are false statements?" Then have multiple true answers mixed with false answers.
 
 Look at the question and the answers. Determine the number of points (1 to 20) the question might be worth according to this table:
-* Beginner - 1 point
-* Beginner-Intermediate - 2 points
-* Intermediate - 4 points
-* Intermediate-Advanced - 7 points
-* Advanced - 12 points
-* Expert - 20 points
+
+| Proficiency Level | Point Value | Suggested Grade-Level Band | Rationale for Progression |
+| --- | --- | --- | --- |
+| Beginner | 1 | Elementary (Grades 5-6) | Basic introduction to the subject; foundational concepts. |
+| Beginner-Intermediate | 2 | Middle School (Grades 7-8) | Solid grasp of basics; can handle simple, multi-step problems. |
+| Transitioning | 3 | High School Freshman (Grade 9) | Navigating higher-level conceptual organization and complexity. |
+| Intermediate | 4 | High School Sophomore (Grade 10) | Mastery of core curriculum; comfortable with standard analysis. |
+|  | 5 | Early High School Advanced | Beginning to apply concepts creatively; minor synthesis required. |
+|  | 6 | Mid-High School Advanced | Consistent performance in challenging material; strong application. |
+| Intermediate-Advanced | 7 | High School Junior (Grade 11) | Ready for AP/IB level introductory content; capable of independent thought. |
+|  | 8 | High School Senior (Grade 12) | Proficient in complex synthesis; ready for college-level critical thinking. |
+|  | 9 | Advanced High School | Demonstrated readiness for first-year college coursework (e.g., successful AP exam score). |
+|  | 10 | College Freshman | Successfully navigating college-level assignments; strong foundational research skills. |
+| Advanced | 11 | College Sophomore | Comfortable with subject-specific theory; deeper analytical capacity. |
+|  | 12 | College Junior | Mastery of disciplinary methods; ready for advanced elective topics. |
+|  | 13 | Upper-Level College | Excels in specialized coursework; capable of independent project management. |
+|  | 14 | High-Level College | Demonstrates potential for original academic work or advanced problem-solving. |
+|  | 15 | Entry-Level Graduate | Possesses necessary knowledge to begin specialized research or intense study. |
+|  | 16 | Graduate Level I | Can critically evaluate current literature; strong contribution to discussion. |
+|  | 17 | Graduate Level II | Capable of designing and executing small-scale original research projects. |
+|  | 18 | Pre-Expert/Specialist | Deep, comprehensive understanding of a sub-discipline; near-professional capacity. |
+|  | 19 | Near-Expert | Recognition as highly competent specialist; capable of mentoring others. |
+| Expert | 20 | Graduate/Professional | World-class knowledge; capable of leading original research or defining industry best practices. |
+
 
 Use the following YAML template to format the output.
 Ensure that strings are properly escaped if words are double-quoted inside.

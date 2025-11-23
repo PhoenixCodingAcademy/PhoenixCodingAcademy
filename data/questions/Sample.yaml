@@ -1,0 +1,44 @@
+questions:
+- question: Which of the following are colors?
+  points: 2
+  right:
+  - answer: Red
+    explanation: Red is a color.
+    links:
+    - https://en.wikipedia.org/wiki/Red
+  - answer: Blue
+    explanation: Red is a color.
+    links:
+    - https://en.wikipedia.org/wiki/Red
+  - answer: Green
+    explanation: Red is a color.
+    links:
+    - https://en.wikipedia.org/wiki/Red
+  - answer: Yellow
+    explanation: Red is a color.
+    links:
+    - https://en.wikipedia.org/wiki/Red
+  - answer: Purple
+    explanation: Red is a color.
+    links:
+    - https://en.wikipedia.org/wiki/Red
+  wrong:
+  - answer: Car
+    explanation: Car is not a color.
+  - answer: Bird
+    explanation: Bird is not a color.
+  - answer: Dog
+    explanation: Dog is not a color.
+  - answer: Cat
+    explanation: Cat is not a color.
+  - answer: Fish
+    explanation: Fish is not a color.
+
+- question: Is an orange orange?
+  points: 1
+  right:
+  - answer: Yes
+    explanation: An orange is an orange.
+  wrong:
+  - answer: No
+    explanation: An orange is not an orange.

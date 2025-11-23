@@ -223,7 +223,7 @@ def _startexam():
     
     # Generate UIDs
     for ansIdx, a in enumerate(five):
-      hashStr = secret + a.get('answer', '') + ('RIGHT' if a.get('isRight', False) else 'WRONG')
+      hashStr = f"{secret}-{a.get('answer', '')}-{'RIGHT' if a.get('isRight', False) else 'WRONG'}"
       hashObj = hashlib.md5(hashStr.encode())
       a['uid'] = f"{idx}-{hashObj.hexdigest()[:8]}"
     
@@ -245,10 +245,62 @@ def _gradeexam():
   maxDifficulty = data.get('maxDifficulty', 0)
   history = data.get('history', [])
   answers = data.get('answers', [])
+  questions = data.get('questions', [])
   score = 0
   for answer in answers:
     if answer.get('right', False):
       score += answer.get('points', 0)
+
+  # Build questions array with full details
+  questionLog = []
+  print(f"DEBUG: Received {len(questions)} questions")
+  for idx, q in enumerate(questions):
+    print(f"DEBUG: Question {idx}: {q.get('question', 'NO QUESTION')}")
+    print(f"DEBUG: DisplayAnswers: {len(q.get('displayAnswers', []))} answers")
+    answerData = answers[idx] if idx < len(answers) else {}
+    selectedUids = answerData.get('selected', [])
+    
+    # Build answer list with whether user correctly handled each answer
+    answerList = []
+    for ans in q.get('displayAnswers', []):
+      answerIsCorrect = ans.get('isRight', False)
+      userSelected = ans.get('uid', '') in selectedUids
+      # User is correct if: (selected a correct answer) OR (didn't select a wrong answer)
+      userHandledCorrectly = (userSelected and answerIsCorrect) or (not userSelected and not answerIsCorrect)
+      
+      answerList.append({
+        'answer': ans.get('answer', ''),
+        'isRight': answerIsCorrect,
+        'selected': userSelected,
+        'correct': userHandledCorrectly
+      })
+    
+    questionLog.append({
+      'question': q.get('question', ''),
+      'points': q.get('points', 0),
+      'right': answerData.get('right', False),
+      'answers': answerList
+    })
+  print(f"DEBUG: Built {len(questionLog)} questions for log")
+
+  # Create a YAML list object with one element:
+  quizlog = {
+    'name': name,
+    'maxDifficulty': maxDifficulty,
+    'maxPoints': maxPoints,
+    'history': history,
+    'score': score,
+    'questions': questionLog
+  }
+
+  # Convert quizlog to a YAML string
+  quizlogYaml = yaml.dump([quizlog])
+
+  # Append quizlogYaml to the file "quizlog.yaml"
+  quizlogPath = os.path.join(tools.GetAncestorPath('reports'), 'quizlog.yaml')
+  with open(quizlogPath, 'a') as f:
+    f.write(quizlogYaml)
+
   return jsonify({ 'results': { 'name': name, 'maxPoints': maxPoints, 'maxDifficulty': maxDifficulty, 'history': history, 'answers': answers, 'score': score }})
 
 

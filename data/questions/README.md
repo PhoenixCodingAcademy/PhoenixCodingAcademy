@@ -5,7 +5,8 @@ Each file my be named `{id}.yaml`, where `{id}` is the item id of a subject, cou
 
 > "But wait! These answers are all in public Git Hub where everyone can see them. I could just memorize the answers!"
 
-You can read the story of Bruce Campbell below if you want to know my rebuttal to your observation.
+You can read the story of [Bruce Campbell](/pages/quiz.md) if you want to know my rebuttal to your observation.
+
 
 # Bruce Campbell
 Let me tell you a story. When I was in High School, our computer science/physics teacher (Bruce Campbell, at Villa Park HS) did a similar thing, but he had all the questions and answers in a text file on his protected account on an [HP3000 mainframe computer](https://en.wikipedia.org/wiki/HP_3000) at Santa Ana College. Yes, I'm aging myself. We all had user accounts and could run the test-taking practice exams, where it would ask us 20 random questions, and score us at the end. Campbell said that our final physics exam would be 20 random questions from a set of 500. Everyone would get a random different test, so you should run this practice test many times to see what you know.

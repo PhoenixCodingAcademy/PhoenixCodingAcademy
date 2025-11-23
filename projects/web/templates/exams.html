@@ -83,6 +83,9 @@
 </style>
 
 {% raw %}<div id="exam-app">
+  <h1>Quiz Generator</h1>
+  <p><a href="/pages/Quiz.md">About this quiz generator</a>
+  </p>
   <form id="exam-form" @submit.prevent="gradeExam">
     <div>
       <label for="yaml-select"><strong>Question set:</strong></label>
@@ -239,6 +242,9 @@ new Vue({
     showAnswers: false,
     hoveredQuestion: null,
     secret: 'exam_secret_key',  // For hashing IDs
+    seedChangeFromUser: false,
+    seedChangeLogged: false,
+    initialSeed: {{ model.seed }}
   },
   watch: {
     selectedYaml(newValue) {
@@ -252,6 +258,14 @@ new Vue({
     },
     maxDifficulty(newValue) {
       localStorage.setItem('maxDifficulty', newValue);
+    },
+    seed(newValue, oldValue) {
+      // Only log once if this is a user change (not initial load or server update)
+      if (this.seedChangeFromUser && !this.seedChangeLogged && oldValue !== undefined && newValue !== oldValue && newValue !== this.initialSeed) {
+        let timestamp = new Date().toLocaleTimeString();
+        this.sessionHistory.push(`${timestamp} - Random Seed changed`);
+        this.seedChangeLogged = true;
+      }
     }
   },
   computed: {
@@ -340,7 +354,12 @@ new Vue({
           this.questions = res.data.questions || [];
           this.totalPoints = res.data.totalPoints || 0;
           this.history = res.data.history || [];
+          // Temporarily disable seed change tracking for server update
+          this.seedChangeFromUser = false;
           this.seed = res.data.seed;  // Update seed to the one actually used
+          this.$nextTick(() => {
+            this.seedChangeFromUser = true;
+          });
           this.answers = Array(this.questions.length).fill().map(()=>[]);
           this.started = true;
         })
@@ -379,7 +398,7 @@ new Vue({
         let isRight = selectedCorrect.length > 0 && 
                       selectedAnswers.length === selectedCorrect.length &&
                       selectedCorrect.length === allCorrectAnswers.length;
-        answerObjs.push({
+                      answerObjs.push({
           selected: selUids,
           right: isRight,
           points: q.points
@@ -389,8 +408,9 @@ new Vue({
         name: this.studentName,
         maxPoints: this.totalPoints,
         maxDifficulty: this.maxDifficulty,
-        history: this.history,
-        answers: answerObjs
+        history: this.sessionHistory,
+        answers: answerObjs,
+        questions: this.questions
       })
       .then(res => {
         this.results = res.data.results || res.data;
@@ -481,6 +501,10 @@ new Vue({
   },
   mounted() {
     this.initYamlSelection();
+    // Enable seed change tracking after initial load
+    this.$nextTick(() => {
+      this.seedChangeFromUser = true;
+    });
   }
 });
 </script>
