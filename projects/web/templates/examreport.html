@@ -1,6 +1,247 @@
 {% extends 'base.html' %}
 {% block content %}
 
+<style>
+  .report-container {
+    display: flex;
+    height: 100vh;
+  }
+  
+  .sidebar {
+    width: 200px;
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-right: 1px solid #ddd;
+  }
+  
+  .sidebar h3 {
+    margin-top: 0;
+    color: #333;
+  }
+  
+  .sidebar ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .sidebar li {
+    margin: 10px 0;
+  }
+  
+  .sidebar a {
+    text-decoration: none;
+    color: #0066cc;
+    font-weight: 500;
+    padding: 8px 12px;
+    display: block;
+    border-radius: 4px;
+  }
+  
+  .sidebar a:hover, .sidebar a.active {
+    background-color: #e3f2fd;
+  }
+  
+  .content {
+    flex: 1;
+    padding: 30px;
+    overflow-y: auto;
+  }
+  
+  .report-section {
+    display: none;
+  }
+  
+  .report-section.active {
+    display: block;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  th, td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+  }
+  
+  th {
+    background-color: #f5f5f5;
+    font-weight: bold;
+  }
+  
+  tr:hover {
+    background-color: #f9f9f9;
+  }
+  
+  .grade-A { color: #2e7d32; font-weight: bold; }
+  .grade-B { color: #1976d2; font-weight: bold; }
+  .grade-C { color: #f57c00; font-weight: bold; }
+  .grade-D { color: #d32f2f; font-weight: bold; }
+  .grade-F { color: #c62828; font-weight: bold; }
+</style>
 
+<div class="report-container">
+  <div class="sidebar">
+    <h3>Reports</h3>
+    <ul>
+      <li><a href="#quizzes" class="report-link active" onclick="showReport('quizzes'); return false;">Quizzes</a></li>
+      <li><a href="#assessments" class="report-link" onclick="showReport('assessments'); return false;">Assessments</a></li>
+    </ul>
+  </div>
+  
+  <div class="content">
+    <div id="quizzes" class="report-section active">
+      <h2>Quizzes Report</h2>
+      <p>Summary of all quizzes and how many times each was taken.</p>
+      <table>
+        <thead>
+          <tr>
+            <th>Quiz</th>
+            <th>Assessments</th>
+          </tr>
+        </thead>
+        <tbody id="quizzes-tbody">
+        </tbody>
+      </table>
+    </div>
+    
+    <div id="assessments" class="report-section">
+      <h2>Assessments Report</h2>
+      <p>Detailed assessment results by student and quiz.</p>
+      <table>
+        <thead>
+          <tr>
+            <th>Student</th>
+            <th>Quiz</th>
+            <th>Assessments</th>
+            <th>Max Points</th>
+            <th>Points</th>
+            <th>Grade</th>
+          </tr>
+        </thead>
+        <tbody id="assessments-tbody">
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+<script>
+// Quiz log data from server
+const quizlog = {{ model.quizlog|tojson }};
+
+// Function to calculate grade
+function calculateGrade(points, maxPoints) {
+  if (maxPoints === 0) return 'N/A';
+  const percentage = (points / maxPoints) * 100;
+  if (percentage >= 90) return 'A';
+  if (percentage >= 80) return 'B';
+  if (percentage >= 70) return 'C';
+  if (percentage >= 60) return 'D';
+  return 'F';
+}
+
+// Generate Quizzes Report
+function generateQuizzesReport() {
+  const quizCounts = {};
+  
+  // Count assessments per quiz
+  quizlog.forEach(entry => {
+    const quiz = entry.quiz || 'Unknown';
+    quizCounts[quiz] = (quizCounts[quiz] || 0) + 1;
+  });
+  
+  // Sort by quiz name
+  const sortedQuizzes = Object.keys(quizCounts).sort();
+  
+  // Build table
+  const tbody = document.getElementById('quizzes-tbody');
+  tbody.innerHTML = '';
+  
+  sortedQuizzes.forEach(quiz => {
+    const row = tbody.insertRow();
+    row.insertCell(0).textContent = quiz;
+    row.insertCell(1).textContent = quizCounts[quiz];
+  });
+}
+
+// Generate Assessments Report
+function generateAssessmentsReport() {
+  const assessmentData = {};
+  
+  // Aggregate data by student/quiz combination
+  quizlog.forEach(entry => {
+    const student = entry.student || 'Unknown';
+    const quiz = entry.quiz || 'Unknown';
+    const key = `${student}|${quiz}`;
+    
+    if (!assessmentData[key]) {
+      assessmentData[key] = {
+        student: student,
+        quiz: quiz,
+        count: 0,
+        totalMaxPoints: 0,
+        totalPoints: 0
+      };
+    }
+    
+    assessmentData[key].count += 1;
+    assessmentData[key].totalMaxPoints += entry.maxPoints || 0;
+    assessmentData[key].totalPoints += entry.score || 0;
+  });
+  
+  // Convert to array and sort
+  const assessments = Object.values(assessmentData).sort((a, b) => {
+    if (a.student !== b.student) return a.student.localeCompare(b.student);
+    return a.quiz.localeCompare(b.quiz);
+  });
+  
+  // Build table
+  const tbody = document.getElementById('assessments-tbody');
+  tbody.innerHTML = '';
+  
+  assessments.forEach(data => {
+    const row = tbody.insertRow();
+    row.insertCell(0).textContent = data.student;
+    row.insertCell(1).textContent = data.quiz;
+    row.insertCell(2).textContent = data.count;
+    row.insertCell(3).textContent = data.totalMaxPoints;
+    row.insertCell(4).textContent = data.totalPoints;
+    
+    const grade = calculateGrade(data.totalPoints, data.totalMaxPoints);
+    const gradeCell = row.insertCell(5);
+    gradeCell.textContent = grade;
+    gradeCell.className = `grade-${grade}`;
+  });
+}
+
+// Show specific report
+function showReport(reportId) {
+  // Hide all reports
+  document.querySelectorAll('.report-section').forEach(section => {
+    section.classList.remove('active');
+  });
+  
+  // Remove active class from all links
+  document.querySelectorAll('.report-link').forEach(link => {
+    link.classList.remove('active');
+  });
+  
+  // Show selected report
+  document.getElementById(reportId).classList.add('active');
+  
+  // Add active class to clicked link
+  event.target.classList.add('active');
+}
+
+// Generate reports on page load
+document.addEventListener('DOMContentLoaded', function() {
+  generateQuizzesReport();
+  generateAssessmentsReport();
+});
+</script>
 
 {% endblock %}

@@ -73,7 +73,17 @@ REQUIREMENT: When a quiz is graded, create or append to the file "quizlog.yaml
 
 REQUIREMENT: Modify this examreport.html template to show various statistics based on the quizlog.yaml file. Various reports should be a navbar to the left that you can click on to generate the report. The model.quizlog will contain all the data as defined in the quizlog YAML file. Reports should be:
 * Quizzes - Show a table with one quiz per row, sorted by quiz name. Columns are: 
-  * "Assessments" that show the total number of times the quiz was taken. This will be the sum of all 
+  * "Assessments" that show the total number of times the quiz was taken. This will be the sum of all records grouped by "quiz".
+* Assessments - Show a table with one row per unique student/quiz. Columns are:
+  * "Student" The student name.
+  * "Quiz" The quiz name.
+  * "Assessments" that show the total number of times the student took that quiz. 
+  * "Max Points" the total of all the points for all questions shown to the student.
+  * "Points" the total of all the points the student got.
+  * "Grade" - "A" for 90% to 100%, "B" for 80% upto 90%, etc.
+
+
+All tables should be sortable.
 ---
 
 SUBJECT = History - Basic Colonial America and the Revolution

@@ -1,6 +1,6 @@
 # Overview
  
-This application generates quizzes. 
+This application generates quizzes. See [Exam Report](/examreport) for statistics.
 
 **USE CASES:** Students can use it for testing one's knowledge. Teachers might use it to evaluate a students understanding of a subject, or to give out "extra" credit to ambitious students. 
 

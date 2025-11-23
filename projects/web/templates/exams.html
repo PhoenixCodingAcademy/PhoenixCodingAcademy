@@ -406,6 +406,7 @@ new Vue({
       }
       axios.post('/gradeexam', {
         name: this.studentName,
+        quiz: this.selectedYaml,
         maxPoints: this.totalPoints,
         maxDifficulty: this.maxDifficulty,
         history: this.sessionHistory,

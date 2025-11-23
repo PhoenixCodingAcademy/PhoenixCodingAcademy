@@ -237,10 +237,29 @@ def _startexam():
   })
 
 
+@app.route('/examreport')
+def _examreport():
+  model = getModel('Exam Report')
+  
+  # Load quizlog.yaml
+  quizlogPath = os.path.join(tools.GetAncestorPath('reports'), 'quizlog.yaml')
+  try:
+    if os.path.exists(quizlogPath):
+      model.quizlog = tools.readYaml(quizlogPath)
+    else:
+      model.quizlog = []
+  except Exception as e:
+    print(f"Error reading quizlog: {e}")
+    model.quizlog = []
+  
+  return render_template('examreport.html', model=model)
+
+
 @app.route('/gradeexam', methods=['POST'])
 def _gradeexam():
   data = request.json
   name = data.get('name', '')
+  quiz = data.get('quiz', '')
   maxPoints = data.get('maxPoints', 0)
   maxDifficulty = data.get('maxDifficulty', 0)
   history = data.get('history', [])
@@ -286,7 +305,8 @@ def _gradeexam():
   # Create a YAML list object with one element:
   from datetime import datetime
   quizlog = {
-    'name': name,
+    'student': name,
+    'quiz': quiz,
     'maxDifficulty': maxDifficulty,
     'maxPoints': maxPoints,
     'history': history,
@@ -304,13 +324,6 @@ def _gradeexam():
     f.write(quizlogYaml)
 
   return jsonify({ 'results': { 'name': name, 'maxPoints': maxPoints, 'maxDifficulty': maxDifficulty, 'history': history, 'answers': answers, 'score': score }})
-
-
-@app.route('/examreport')
-def _examreport():
-  model = getModel('Exam Report')
-  model.quizlog = tools.readYaml(os.path.join(tools.GetAncestorPath('reports'), 'quizlog.yaml'))
-  return render_template('examreport.html', model=model)
 
 
 @app.route('/feedback')
