@@ -41,6 +41,96 @@ Questions are assigned to this general point system:
 |  | 19 | Near-Expert | Recognition as highly competent specialist; capable of mentoring others. |
 | Expert | 20 | Graduate/Professional | World-class knowledge; capable of leading original research or defining industry best practices. |
 
+# Reports
+
+All tests are stored in the /reports/quizlog.yaml file as a list of objects.
+
+Example of an object.
+```yaml
+- history:
+  - 12:46:37 PM - Random Seed changed
+  maxDifficulty: 3
+  maxPoints: 3
+  name: Rob Howard
+  questions:
+  - answers:
+    - answer: false
+      correct: true
+      isRight: false
+      selected: false
+    - answer: true
+      correct: true
+      isRight: true
+      selected: true
+    - answer: None of the above
+      correct: true
+      isRight: false
+      selected: false
+    points: 1
+    question: Is an orange orange?
+    right: true
+  - answers:
+    - answer: Cat
+      correct: true
+      isRight: false
+      selected: false
+    - answer: Green
+      correct: true
+      isRight: true
+      selected: true
+    - answer: Red
+      correct: true
+      isRight: true
+      selected: true
+    - answer: Fish
+      correct: false
+      isRight: false
+      selected: true
+    - answer: Car
+      correct: true
+      isRight: false
+      selected: false
+    - answer: None of the above
+      correct: true
+      isRight: false
+      selected: false
+    points: 2
+    question: Which of the following are colors?
+    right: false
+```
+
+Good question! Let me explain the difference:
+
+## `isRight` (Answer Property)
+This is a **property of the answer itself** - whether the answer is inherently correct according to the question bank.
+
+- Static, comes from the YAML file
+- **Example**: For "What is 2+2?"
+  - "4" has `isRight: true`
+  - "5" has `isRight: false`
+
+## `correct` (User Behavior)
+This is whether the **USER correctly handled** this particular answer choice.
+
+- Dynamic, based on user's selection
+- **Logic**:
+  - ✅ Answer is correct AND user selected it → `correct: true`
+  - ✅ Answer is wrong AND user did NOT select it → `correct: true`
+  - ❌ Answer is correct AND user did NOT select it → `correct: false` (missed it)
+  - ❌ Answer is wrong AND user selected it → `correct: false` (wrong choice)
+
+## Example:
+Question: "Which are primary colors?"
+
+- Answer: "Red" → `isRight: true`, user selected → `correct: true` ✅
+- Answer: "Blue" → `isRight: true`, user didn't select → `correct: false` ❌ (missed)
+- Answer: "Orange" → `isRight: false`, user didn't select → `correct: true` ✅
+- Answer: "Purple" → `isRight: false`, user selected → `correct: false` ❌ (wrong)
+
+**In summary**: `isRight` = "Is this answer objectively correct?" | `correct` = "Did the user handle this answer correctly?"
+
+
+
 # Bruce Campbell
 Let me tell you a story. When I was in High School, our computer science/physics teacher (Bruce Campbell, at Villa Park HS) did a similar thing, but he had all the questions and answers in a text file on his protected account on an [HP3000 mainframe computer](https://en.wikipedia.org/wiki/HP_3000) at Santa Ana College. Yes, I'm aging myself. We all had user accounts and could run the test-taking practice exams, where it would ask us 20 random questions, and score us at the end. Campbell said that our final physics exam would be 20 random questions from a set of 500. Everyone would get a random different test, so you should run this practice test many times to see what you know.
 
