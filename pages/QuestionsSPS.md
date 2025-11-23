@@ -69,6 +69,11 @@ REQUIREMENT: The "Question set" dropdown list should have the ability to type a 
 REQUIREMENT: If the user changes the "Random seed" then mark that in the history as "Random Seed changed". Only add it one time if changed.
 
 REQUIREMENT: When a quiz is graded, create or append to the file "quizlog.yaml
+
+
+REQUIREMENT: Modify this examreport.html template to show various statistics based on the quizlog.yaml file. Various reports should be a navbar to the left that you can click on to generate the report. The model.quizlog will contain all the data as defined in the quizlog YAML file. Reports should be:
+* Quizzes - Show a table with one quiz per row, sorted by quiz name. Columns are: 
+  * "Assessments" that show the total number of times the quiz was taken. This will be the sum of all 
 ---
 
 SUBJECT = History - Basic Colonial America and the Revolution

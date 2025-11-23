@@ -284,12 +284,14 @@ def _gradeexam():
   print(f"DEBUG: Built {len(questionLog)} questions for log")
 
   # Create a YAML list object with one element:
+  from datetime import datetime
   quizlog = {
     'name': name,
     'maxDifficulty': maxDifficulty,
     'maxPoints': maxPoints,
     'history': history,
     'score': score,
+    'takenOn': datetime.now().strftime('%Y-%m-%d %H:%M:%S'),
     'questions': questionLog
   }
 
@@ -302,6 +304,13 @@ def _gradeexam():
     f.write(quizlogYaml)
 
   return jsonify({ 'results': { 'name': name, 'maxPoints': maxPoints, 'maxDifficulty': maxDifficulty, 'history': history, 'answers': answers, 'score': score }})
+
+
+@app.route('/examreport')
+def _examreport():
+  model = getModel('Exam Report')
+  model.quizlog = tools.readYaml(os.path.join(tools.GetAncestorPath('reports'), 'quizlog.yaml'))
+  return render_template('examreport.html', model=model)
 
 
 @app.route('/feedback')
