@@ -86,7 +86,7 @@ REQUIREMENT: Modify this examreport.html template to show various statistics bas
 All tables should be sortable.
 ---
 
-SUBJECT = History - Basic Colonial America and the Revolution
+SUBJECT = History - 20th Century (Senior High School)
 CONSTRAINTS = For average high schoolers interested in the subject. Include questions pertinent to the minimal junior-level work environment or internship. 
 
 You are an SUBJECT teacher. You wish to evaluate a new student to find out what level of knowledge the student knows about the subject so that you can recommend a course of studies.

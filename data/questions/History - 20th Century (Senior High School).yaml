@@ -1,0 +1,1717 @@
+questions:
+- question: What year did World War I begin?
+  reason: Understanding the timeline of major 20th century conflicts is fundamental to historical literacy and appears in museum, archival, and educational work.
+  points: 1
+  right:
+  - answer: 1914
+    explanation: World War I began in 1914 following the assassination of Archduke Franz Ferdinand.
+    links:
+    - https://en.wikipedia.org/wiki/World_War_I
+  wrong:
+  - answer: 1912
+    explanation: This predates the start of WWI by two years.
+  - answer: 1916
+    explanation: This is two years after WWI had already begun.
+  - answer: 1918
+    explanation: This is the year WWI ended, not began.
+  - answer: 1939
+    explanation: This is when World War II began, not World War I.
+  - answer: 1917
+    explanation: This is when the United States entered WWI, not when it began.
+
+- question: What year did World War I end?
+  reason: Knowing the endpoint of major conflicts is essential for understanding historical periodization in academic and professional settings.
+  points: 1
+  right:
+  - answer: 1918
+    explanation: World War I ended on November 11, 1918 with the armistice.
+    links:
+    - https://en.wikipedia.org/wiki/Armistice_of_11_November_1918
+  wrong:
+  - answer: 1917
+    explanation: The war was still actively being fought in 1917.
+  - answer: 1919
+    explanation: While the Treaty of Versailles was signed in 1919, the armistice ending combat was 1918.
+  - answer: 1920
+    explanation: This is after the war had already concluded.
+  - answer: 1916
+    explanation: The war was at its height in 1916, not ending.
+  - answer: 1914
+    explanation: This is when the war began, not ended.
+
+- question: What year did World War II begin?
+  reason: WWII is the most significant event of the 20th century and foundational knowledge for any history-related position.
+  points: 1
+  right:
+  - answer: 1939
+    explanation: World War II began on September 1, 1939 with Germany's invasion of Poland.
+    links:
+    - https://en.wikipedia.org/wiki/World_War_II
+  wrong:
+  - answer: 1941
+    explanation: This is when the United States entered WWII, not when it began.
+  - answer: 1937
+    explanation: While Japan invaded China in 1937, the global conflict began in 1939.
+  - answer: 1940
+    explanation: The war had already begun by this time.
+  - answer: 1938
+    explanation: This year saw the Munich Agreement but the war had not yet started.
+  - answer: 1945
+    explanation: This is when WWII ended, not began.
+
+- question: What year did World War II end?
+  reason: Understanding the conclusion of WWII is critical for comprehending post-war developments in any historical documentation work.
+  points: 1
+  right:
+  - answer: 1945
+    explanation: World War II ended in 1945, with Germany surrendering in May and Japan in August.
+    links:
+    - https://en.wikipedia.org/wiki/End_of_World_War_II_in_Europe
+    - https://en.wikipedia.org/wiki/Surrender_of_Japan
+  wrong:
+  - answer: 1944
+    explanation: The war was still being actively fought in 1944.
+  - answer: 1946
+    explanation: The war had already ended by 1946.
+  - answer: 1943
+    explanation: The war was far from over in 1943.
+  - answer: 1947
+    explanation: This is two years after the war ended.
+  - answer: 1939
+    explanation: This is when WWII began, not ended.
+
+- question: Who was the President of the United States during most of World War II?
+  reason: Identifying key political leaders is essential for understanding decision-making in historical contexts, relevant to policy research and museum curation.
+  points: 2
+  right:
+  - answer: Franklin D. Roosevelt
+    explanation: FDR led the United States through most of WWII until his death in April 1945.
+    links:
+    - https://en.wikipedia.org/wiki/Franklin_D._Roosevelt
+  wrong:
+  - answer: Harry S. Truman
+    explanation: Truman became president near the end of WWII after FDR's death.
+  - answer: Woodrow Wilson
+    explanation: Wilson was president during WWI, not WWII.
+  - answer: Dwight D. Eisenhower
+    explanation: Eisenhower was a general during WWII but became president later.
+  - answer: Herbert Hoover
+    explanation: Hoover's presidency ended before WWII began.
+  - answer: Theodore Roosevelt
+    explanation: Theodore Roosevelt died in 1919, long before WWII.
+
+- question: Who was the Prime Minister of Great Britain during most of World War II?
+  reason: Churchill is a central figure in WWII narratives, essential knowledge for anyone working with 20th century British or European historical materials.
+  points: 2
+  right:
+  - answer: Winston Churchill
+    explanation: Churchill served as Prime Minister from 1940-1945, leading Britain through most of WWII.
+    links:
+    - https://en.wikipedia.org/wiki/Winston_Churchill
+  wrong:
+  - answer: Neville Chamberlain
+    explanation: Chamberlain was PM at the start of WWII but resigned in 1940.
+  - answer: Clement Attlee
+    explanation: Attlee became PM after Churchill in 1945, near the war's end.
+  - answer: Stanley Baldwin
+    explanation: Baldwin served as PM before WWII began.
+  - answer: Margaret Thatcher
+    explanation: Thatcher served as PM decades after WWII.
+  - answer: Anthony Eden
+    explanation: Eden became PM in the 1950s, after WWII.
+
+- question: What was the Cold War?
+  reason: The Cold War framework is essential for understanding post-WWII history and appears constantly in archival work and historical interpretation.
+  points: 3
+  right:
+  - answer: A period of geopolitical tension between the United States and Soviet Union from approximately 1947 to 1991
+    explanation: The Cold War was characterized by ideological conflict, proxy wars, and nuclear arms race without direct military conflict between the superpowers.
+    links:
+    - https://en.wikipedia.org/wiki/Cold_War
+  wrong:
+  - answer: A military conflict fought in Arctic regions during the 1950s
+    explanation: The term "cold" refers to the lack of direct hot warfare, not temperature.
+  - answer: A war between NATO and the Warsaw Pact that lasted from 1960-1970
+    explanation: While these alliances existed, they never fought a direct war against each other.
+  - answer: The period of economic depression following World War II
+    explanation: This confuses the Cold War with economic conditions.
+  - answer: A naval conflict in the Atlantic Ocean during the 1980s
+    explanation: The Cold War was not a specific naval conflict but a global geopolitical tension.
+  - answer: The war in Korea that created a communist north and democratic south
+    explanation: The Korean War was part of the Cold War, not synonymous with it.
+
+- question: What was the Holocaust?
+  reason: Understanding the Holocaust is morally and professionally essential for anyone working in history, education, or museum settings dealing with 20th century events.
+  points: 3
+  right:
+  - answer: The systematic genocide of six million Jews and millions of others by Nazi Germany during World War II
+    explanation: The Holocaust was the deliberate, state-sponsored persecution and murder of Jews and other groups by the Nazi regime.
+    links:
+    - https://en.wikipedia.org/wiki/The_Holocaust
+  wrong:
+  - answer: The bombing of German cities by Allied forces during WWII
+    explanation: This describes Allied bombing campaigns, not the Holocaust.
+  - answer: The invasion of Poland that started World War II
+    explanation: While the invasion began WWII, it is not the Holocaust.
+  - answer: The nuclear bombing of Hiroshima and Nagasaki
+    explanation: These were atomic bombings in Japan, not the Holocaust.
+  - answer: The German annexation of Austria in 1938
+    explanation: This was the Anschluss, a separate event from the Holocaust.
+  - answer: The trench warfare conditions on the Western Front in WWI
+    explanation: This describes WWI conditions, not the Holocaust in WWII.
+
+- question: What was the Treaty of Versailles?
+  reason: The Treaty of Versailles shaped interwar Europe and is fundamental to understanding WWII causes, essential for research and interpretation work.
+  points: 3
+  right:
+  - answer: The 1919 peace treaty that formally ended World War I and imposed harsh terms on Germany
+    explanation: The Treaty of Versailles ended WWI, required German territorial concessions, military restrictions, and reparations payments.
+    links:
+    - https://en.wikipedia.org/wiki/Treaty_of_Versailles
+  wrong:
+  - answer: The treaty that ended World War II in Europe
+    explanation: WWII was ended by different agreements, not Versailles.
+  - answer: The agreement that created the League of Nations after WWII
+    explanation: The League was created after WWI, and the UN was created after WWII.
+  - answer: The treaty between France and Germany that prevented World War I
+    explanation: No such preventive treaty existed; Versailles came after WWI.
+  - answer: The naval arms limitation treaty of the 1920s
+    explanation: This describes the Washington Naval Treaty, not Versailles.
+  - answer: The peace agreement that divided Germany after World War II
+    explanation: Post-WWII agreements like Potsdam divided Germany, not Versailles.
+
+- question: What was the Great Depression?
+  reason: The Great Depression profoundly affected global politics and economics, crucial context for understanding the 1930s in professional historical work.
+  points: 2
+  right:
+  - answer: A severe worldwide economic downturn that began in 1929 and lasted through much of the 1930s
+    explanation: The Great Depression was marked by massive unemployment, poverty, and economic collapse starting with the 1929 stock market crash.
+    links:
+    - https://en.wikipedia.org/wiki/Great_Depression
+  wrong:
+  - answer: The economic recession that followed World War II
+    explanation: The post-WWII period saw economic growth, not depression.
+  - answer: A period of political instability in Europe during the 1950s
+    explanation: This timeframe is incorrect and mischaracterizes the Depression.
+  - answer: The economic crisis caused by the oil embargo of 1973
+    explanation: This was a different crisis decades after the Great Depression.
+  - answer: The period of hyperinflation in Germany during the 1940s
+    explanation: German hyperinflation occurred in the 1920s, before the Depression.
+  - answer: An agricultural crisis limited to the United States
+    explanation: The Great Depression was global, not limited to the US or agriculture.
+
+- question: What event triggered the start of World War I?
+  reason: Understanding the immediate cause of WWI demonstrates knowledge of how major conflicts begin, relevant to conflict analysis in historical work.
+  points: 3
+  right:
+  - answer: The assassination of Archduke Franz Ferdinand of Austria in Sarajevo
+    explanation: The assassination on June 28, 1914 triggered a chain of alliance commitments that led to WWI.
+    links:
+    - https://en.wikipedia.org/wiki/Assassination_of_Archduke_Franz_Ferdinand
+  wrong:
+  - answer: The sinking of the Lusitania
+    explanation: This event happened during WWI and brought the US closer to entering, but did not start the war.
+  - answer: The German invasion of Belgium
+    explanation: This was a consequence of the war starting, not the trigger.
+  - answer: The Russian Revolution
+    explanation: The Revolution occurred during WWI, not before it.
+  - answer: The Treaty of Versailles
+    explanation: This treaty ended WWI, it did not start it.
+  - answer: The annexation of Bosnia by Austria-Hungary
+    explanation: While this created tensions, it occurred in 1908, years before WWI began.
+
+- question: What was D-Day?
+  reason: D-Day is one of the most significant military operations in history, frequently referenced in museums, documentaries, and historical education.
+  points: 3
+  right:
+  - answer: The Allied invasion of Normandy, France on June 6, 1944
+    explanation: D-Day was the largest amphibious invasion in history, opening a western front against Nazi Germany.
+    links:
+    - https://en.wikipedia.org/wiki/Normandy_landings
+  wrong:
+  - answer: The day Germany surrendered in World War II
+    explanation: German surrender occurred in May 1945, not D-Day.
+  - answer: The bombing of Pearl Harbor
+    explanation: Pearl Harbor was December 7, 1941, not D-Day.
+  - answer: The Battle of Stalingrad
+    explanation: Stalingrad was a separate major battle on the Eastern Front.
+  - answer: The dropping of the atomic bomb on Hiroshima
+    explanation: The atomic bombing occurred in August 1945, not D-Day.
+  - answer: The liberation of Paris from German occupation
+    explanation: Paris was liberated in August 1944, after D-Day.
+
+- question: What was the Manhattan Project?
+  reason: The Manhattan Project represents a pivotal moment in science, warfare, and ethics, essential knowledge for understanding the nuclear age.
+  points: 4
+  right:
+  - answer: The secret U.S. program to develop the atomic bomb during World War II
+    explanation: The Manhattan Project successfully developed the first nuclear weapons, used against Japan in 1945.
+    links:
+    - https://en.wikipedia.org/wiki/Manhattan_Project
+  wrong:
+  - answer: The plan to rebuild New York City after World War II
+    explanation: This is not related to the Manhattan Project's actual purpose.
+  - answer: The D-Day invasion planning operation
+    explanation: D-Day planning was separate from the Manhattan Project.
+  - answer: A program to develop radar technology
+    explanation: While important, radar development was not the Manhattan Project.
+  - answer: The Marshall Plan for European reconstruction
+    explanation: The Marshall Plan was post-war economic aid, not the Manhattan Project.
+  - answer: The project to decode German Enigma messages
+    explanation: This describes codebreaking efforts like Ultra, not the Manhattan Project.
+
+- question: What was the Marshall Plan?
+  reason: The Marshall Plan shaped post-war European recovery and Cold War dynamics, important for understanding international aid and diplomacy.
+  points: 4
+  right:
+  - answer: A U.S. program providing economic aid to help rebuild Western European economies after World War II
+    explanation: The Marshall Plan provided over \$12 billion in aid from 1948-1952 to prevent economic collapse and communist expansion.
+    links:
+    - https://en.wikipedia.org/wiki/Marshall_Plan
+  wrong:
+  - answer: The military strategy for D-Day invasion
+    explanation: This was not the Marshall Plan but operational planning for Normandy.
+  - answer: The plan to divide Germany after World War II
+    explanation: German division was handled by other agreements, not the Marshall Plan.
+  - answer: A program to resettle Holocaust survivors
+    explanation: While important, refugee resettlement was not the Marshall Plan's focus.
+  - answer: The Soviet plan for Eastern European reconstruction
+    explanation: The Marshall Plan was American; Soviets rejected it and created their own programs.
+  - answer: The plan to create the United Nations
+    explanation: UN creation was separate from the Marshall Plan's economic focus.
+
+- question: What was the Cuban Missile Crisis?
+  reason: The Cuban Missile Crisis represents the Cold War's most dangerous moment, essential for understanding nuclear diplomacy and crisis management.
+  points: 5
+  right:
+  - answer: A 1962 confrontation between the United States and Soviet Union over Soviet nuclear missiles in Cuba
+    explanation: The 13-day crisis brought the world closest to nuclear war and ended with Soviet missile withdrawal.
+    links:
+    - https://en.wikipedia.org/wiki/Cuban_Missile_Crisis
+  wrong:
+  - answer: The failed U.S. invasion of Cuba at the Bay of Pigs
+    explanation: The Bay of Pigs occurred in 1961, before the Missile Crisis.
+  - answer: The revolution that brought Fidel Castro to power
+    explanation: Castro's revolution was in 1959, separate from the Missile Crisis.
+  - answer: A naval blockade of Soviet ports during the Cold War
+    explanation: The blockade was of Cuba, not Soviet ports.
+  - answer: The assassination attempt on Fidel Castro by the CIA
+    explanation: While CIA plots existed, this was not the Missile Crisis.
+  - answer: A conflict over U.S. missile installations in Turkey
+    explanation: While Turkey was part of negotiations, the crisis centered on Cuba.
+
+- question: What was the Berlin Wall?
+  reason: The Berlin Wall symbolizes Cold War division and its fall marks a major turning point, crucial for anyone working with Cold War era materials.
+  points: 3
+  right:
+  - answer: A barrier built by East Germany in 1961 to separate East and West Berlin, preventing East Germans from fleeing to the West
+    explanation: The Berlin Wall stood from 1961-1989 as the most visible symbol of the Iron Curtain dividing communist and democratic Europe.
+    links:
+    - https://en.wikipedia.org/wiki/Berlin_Wall
+  wrong:
+  - answer: A defensive fortification built to protect Berlin from Soviet invasion
+    explanation: The wall was built by the communist East to keep people in, not out.
+  - answer: The border between East and West Germany
+    explanation: While related, the wall specifically divided Berlin, not all of Germany.
+  - answer: A wall built after World War II to protect against future invasions
+    explanation: The wall was built in 1961, 16 years after WWII, for political control.
+  - answer: A memorial to those who died in World War II
+    explanation: The wall was a political barrier, not a memorial.
+  - answer: A structure built by the Allies to contain Soviet expansion
+    explanation: The wall was built by communist East Germany, not the Western Allies.
+
+- question: What year did the Berlin Wall fall?
+  reason: The fall of the Berlin Wall marks the symbolic end of the Cold War, a pivotal date in modern history frequently referenced in historical work.
+  points: 2
+  right:
+  - answer: 1989
+    explanation: The Berlin Wall fell on November 9, 1989, leading to German reunification in 1990.
+    links:
+    - https://en.wikipedia.org/wiki/Fall_of_the_Berlin_Wall
+  wrong:
+  - answer: 1991
+    explanation: This is when the Soviet Union dissolved, after the wall had fallen.
+  - answer: 1987
+    explanation: The wall still stood in 1987, though Reagan gave his famous speech that year.
+  - answer: 1985
+    explanation: The wall was still firmly in place in 1985.
+  - answer: 1990
+    explanation: While German reunification occurred in 1990, the wall fell in 1989.
+  - answer: 1961
+    explanation: This is when the wall was built, not when it fell.
+
+- question: What was the Vietnam War primarily about?
+  reason: Understanding the Vietnam War's causes is essential for comprehending Cold War conflicts and U.S. foreign policy debates that persist today.
+  points: 5
+  right:
+  - answer: A Cold War conflict where the U.S. supported South Vietnam against communist North Vietnam and the Viet Cong
+    explanation: The Vietnam War was fought from 1955-1975 as part of the larger Cold War struggle against communist expansion.
+    links:
+    - https://en.wikipedia.org/wiki/Vietnam_War
+  wrong:
+  - answer: A war for Vietnamese independence from France
+    explanation: This describes the First Indochina War (1946-1954), before major U.S. involvement.
+  - answer: A conflict between Vietnam and China over border disputes
+    explanation: While later Sino-Vietnamese conflicts occurred, this does not describe the Vietnam War.
+  - answer: A civil war unrelated to international Cold War politics
+    explanation: The war was deeply tied to Cold War superpower competition.
+  - answer: A war to reunify Korea under democratic rule
+    explanation: This confuses the Vietnam War with the Korean War.
+  - answer: A conflict over control of Southeast Asian oil resources
+    explanation: While resources played a role, the primary issue was ideological and Cold War-related.
+
+- question: What was the Korean War?
+  reason: The Korean War established the template for Cold War proxy conflicts and shaped East Asian geopolitics that remain relevant today.
+  points: 4
+  right:
+  - answer: A war from 1950-1953 between North Korea (supported by China and USSR) and South Korea (supported by UN forces, primarily the U.S.)
+    explanation: The Korean War ended in armistice with Korea remaining divided at approximately the 38th parallel.
+    links:
+    - https://en.wikipedia.org/wiki/Korean_War
+  wrong:
+  - answer: A conflict between Korea and Japan over territorial claims
+    explanation: This does not describe the Korean War of 1950-1953.
+  - answer: The war that established Korean independence from China
+    explanation: Korea's status was not about independence from China during this conflict.
+  - answer: A civil war that resulted in unified communist Korea
+    explanation: Korea remained divided, not unified under communism.
+  - answer: A war between the U.S. and Soviet Union fought on Korean soil
+    explanation: While the superpowers supported opposing sides, they did not directly fight each other.
+  - answer: The conflict that ended with complete UN victory in 1953
+    explanation: The war ended in stalemate and armistice, not decisive UN victory.
+
+- question: Who was Adolf Hitler?
+  reason: Hitler is central to understanding WWII, totalitarianism, and genocide, essential knowledge for any position dealing with 20th century history.
+  points: 2
+  right:
+  - answer: The leader of Nazi Germany from 1934-1945 who started World War II and perpetrated the Holocaust
+    explanation: Hitler was the dictator whose aggressive expansionism and genocidal policies shaped WWII.
+    links:
+    - https://en.wikipedia.org/wiki/Adolf_Hitler
+  wrong:
+  - answer: The Prime Minister of Italy who allied with Germany in WWII
+    explanation: This describes Benito Mussolini, not Hitler.
+  - answer: The Soviet leader during World War II
+    explanation: Joseph Stalin led the Soviet Union, not Hitler.
+  - answer: The German general who commanded forces in North Africa
+    explanation: This better describes Erwin Rommel, not Hitler's role.
+  - answer: The Kaiser of Germany during World War I
+    explanation: Wilhelm II was Kaiser during WWI; Hitler led during WWII.
+  - answer: The Austrian diplomat who prevented World War I
+    explanation: Hitler was not a diplomat and did not prevent any wars.
+
+- question: Who was Joseph Stalin?
+  reason: Stalin's role in WWII, the Cold War, and Soviet totalitarianism makes him essential knowledge for understanding 20th century history.
+  points: 3
+  right:
+  - answer: The leader of the Soviet Union from the mid-1920s until 1953
+    explanation: Stalin industrialized the USSR, led it through WWII, and initiated the Cold War while conducting massive political purges.
+    links:
+    - https://en.wikipedia.org/wiki/Joseph_Stalin
+  wrong:
+  - answer: The first leader of communist Russia after the 1917 Revolution
+    explanation: Lenin was the first Soviet leader; Stalin came to power later.
+  - answer: The Russian Tsar overthrown in 1917
+    explanation: Nicholas II was the Tsar; Stalin was a communist leader.
+  - answer: The Soviet general who defended Stalingrad
+    explanation: Various generals commanded at Stalingrad; Stalin was the national leader.
+  - answer: The last leader of the Soviet Union before its collapse
+    explanation: Mikhail Gorbachev was the last Soviet leader; Stalin died in 1953.
+  - answer: The leader of communist China during the Cold War
+    explanation: Mao Zedong led China; Stalin led the Soviet Union.
+
+- question: Who was Mao Zedong?
+  reason: Mao's role in creating communist China and shaping Cold War Asia is essential for understanding 20th century geopolitics.
+  points: 4
+  right:
+  - answer: The leader of communist China from 1949 until his death in 1976
+    explanation: Mao led the Chinese Communist Party to victory in 1949 and ruled China through major campaigns like the Great Leap Forward and Cultural Revolution.
+    links:
+    - https://en.wikipedia.org/wiki/Mao_Zedong
+  wrong:
+  - answer: The nationalist Chinese leader who fled to Taiwan
+    explanation: This describes Chiang Kai-shek, Mao's opponent.
+  - answer: The Japanese emperor during World War II
+    explanation: Emperor Hirohito led Japan; Mao led Chinese communists.
+  - answer: The leader of North Korea during the Korean War
+    explanation: Kim Il-sung led North Korea; Mao led China.
+  - answer: The Tibetan spiritual leader during the 1950s
+    explanation: This refers to the Dalai Lama, not Mao.
+  - answer: The leader who modernized China in the 1980s
+    explanation: Deng Xiaoping led reforms in the 1980s; Mao died in 1976.
+
+- question: What was Pearl Harbor?
+  reason: Pearl Harbor is the event that brought the U.S. into WWII, a pivotal moment in American and world history frequently discussed in historical contexts.
+  points: 3
+  right:
+  - answer: The December 7, 1941 surprise Japanese attack on the U.S. naval base in Hawaii that brought America into World War II
+    explanation: The attack killed over 2,400 Americans and prompted the U.S. declaration of war against Japan.
+    links:
+    - https://en.wikipedia.org/wiki/Attack_on_Pearl_Harbor
+  wrong:
+  - answer: A battle in the Pacific where the U.S. defeated Japan in 1942
+    explanation: While battles followed, Pearl Harbor was the initial surprise attack.
+  - answer: The site where Japan surrendered to end World War II
+    explanation: Japan surrendered aboard the USS Missouri in Tokyo Bay, not Pearl Harbor.
+  - answer: A U.S. military base in the Philippines captured by Japan
+    explanation: This describes events in the Philippines, not Pearl Harbor.
+  - answer: The location of the atomic bomb testing in the Pacific
+    explanation: Atomic tests occurred at other Pacific locations, not Pearl Harbor.
+  - answer: The first major U.S. naval victory over Japan
+    explanation: Pearl Harbor was a devastating defeat for the U.S., not a victory.
+
+- question: What was the Iron Curtain?
+  reason: Churchill's Iron Curtain concept frames the entire Cold War division of Europe, essential metaphor in historical analysis and interpretation.
+  points: 4
+  right:
+  - answer: The political and ideological boundary dividing Soviet-controlled Eastern Europe from Western Europe during the Cold War
+    explanation: Coined by Churchill in 1946, the Iron Curtain described the division between communist and democratic Europe.
+    links:
+    - https://en.wikipedia.org/wiki/Iron_Curtain
+  wrong:
+  - answer: An actual physical barrier built across Europe by the Soviets
+    explanation: It was a metaphor for political division, not a literal barrier.
+  - answer: The name of the Berlin Wall before it was constructed
+    explanation: The Iron Curtain was a broader concept than just the Berlin Wall.
+  - answer: A defensive line built during World War II
+    explanation: The term refers to post-WWII Cold War divisions.
+  - answer: The border fortifications between NATO and Warsaw Pact nations
+    explanation: While related, it was primarily a metaphor for ideological division.
+  - answer: A Soviet military strategy for defending against Western invasion
+    explanation: It described political division, not a military defensive strategy.
+
+- question: What was the Space Race?
+  reason: The Space Race represents Cold War technological competition and prestige, relevant to understanding science policy and international rivalry.
+  points: 4
+  right:
+  - answer: The Cold War competition between the United States and Soviet Union for supremacy in spaceflight capability
+    explanation: The Space Race included satellite launches, manned missions, and culminated in the U.S. moon landing in 1969.
+    links:
+    - https://en.wikipedia.org/wiki/Space_Race
+  wrong:
+  - answer: A NASCAR racing competition sponsored by NASA
+    explanation: This completely misunderstands the Space Race concept.
+  - answer: The competition between private companies to commercialize space
+    explanation: This describes modern space commercialization, not the Cold War Space Race.
+  - answer: A military conflict fought over control of orbital weapons platforms
+    explanation: While military aspects existed, the Space Race was primarily about prestige and capability.
+  - answer: The race to develop intercontinental ballistic missiles
+    explanation: While related, the Space Race focused on space exploration achievements.
+  - answer: A propaganda campaign by the U.S. to claim space belonged to America
+    explanation: The Space Race was about competitive achievement, not territorial claims.
+
+- question: What was Sputnik?
+  reason: Sputnik shocked the West and launched the Space Race, a pivotal moment in Cold War competition and science education.
+  points: 3
+  right:
+  - answer: The first artificial satellite launched into orbit by the Soviet Union in 1957
+    explanation: Sputnik's successful launch demonstrated Soviet technological capability and sparked the Space Race.
+    links:
+    - https://en.wikipedia.org/wiki/Sputnik_1
+  wrong:
+  - answer: The first American satellite to orbit Earth
+    explanation: Sputnik was Soviet; Explorer 1 was the first American satellite.
+  - answer: The Soviet spacecraft that first landed on the Moon
+    explanation: The Soviet Union never achieved a manned moon landing.
+  - answer: A nuclear missile developed by the USSR
+    explanation: Sputnik was a satellite, not a missile.
+  - answer: The first dog sent into space by the Soviets
+    explanation: Laika was the dog sent to space; Sputnik was the satellite.
+  - answer: The name of the Soviet space program
+    explanation: Sputnik was a specific satellite, not the name of the entire program.
+
+- question: Who was the first human in space?
+  reason: This milestone in space history represents Soviet achievement and Cold War competition, frequently referenced in historical and educational contexts.
+  points: 3
+  right:
+  - answer: Yuri Gagarin
+    explanation: Soviet cosmonaut Yuri Gagarin became the first human in space on April 12, 1961.
+    links:
+    - https://en.wikipedia.org/wiki/Yuri_Gagarin
+  wrong:
+  - answer: Neil Armstrong
+    explanation: Armstrong was first on the Moon, not first in space.
+  - answer: Alan Shepard
+    explanation: Shepard was the first American in space, but Gagarin preceded him.
+  - answer: John Glenn
+    explanation: Glenn was the first American to orbit Earth, but not first in space overall.
+  - answer: Buzz Aldrin
+    explanation: Aldrin was the second person on the Moon, not first in space.
+  - answer: Valentina Tereshkova
+    explanation: Tereshkova was the first woman in space, but not the first human overall.
+
+- question: Who was the first person to walk on the Moon?
+  reason: The moon landing is one of humanity's greatest achievements and a defining Cold War moment, essential cultural and historical knowledge.
+  points: 2
+  right:
+  - answer: Neil Armstrong
+    explanation: American astronaut Neil Armstrong took the first steps on the Moon on July 20, 1969 during the Apollo 11 mission.
+    links:
+    - https://en.wikipedia.org/wiki/Neil_Armstrong
+  wrong:
+  - answer: Buzz Aldrin
+    explanation: Aldrin was the second person on the Moon, joining Armstrong shortly after.
+  - answer: Yuri Gagarin
+    explanation: Gagarin was first in space but never went to the Moon.
+  - answer: John Glenn
+    explanation: Glenn orbited Earth but did not go to the Moon.
+  - answer: Michael Collins
+    explanation: Collins was on Apollo 11 but remained in orbit, never landing on the Moon.
+  - answer: Alan Shepard
+    explanation: Shepard walked on the Moon during Apollo 14, but Armstrong was first.
+
+- question: What was the League of Nations?
+  reason: The League of Nations represents early international cooperation efforts and its failure helps explain WWII, important for understanding international organizations.
+  points: 4
+  right:
+  - answer: An international organization established after World War I to maintain world peace, predecessor to the United Nations
+    explanation: The League was founded in 1920 but ultimately failed to prevent World War II, disbanding in 1946.
+    links:
+    - https://en.wikipedia.org/wiki/League_of_Nations
+  wrong:
+  - answer: The alliance system that drew Europe into World War I
+    explanation: Pre-WWI alliances were different from the post-war League.
+  - answer: Another name for the United Nations
+    explanation: The UN replaced the League but they are different organizations.
+  - answer: The alliance of Western democracies during the Cold War
+    explanation: This describes NATO, not the League of Nations.
+  - answer: The organization that governed Germany after World War I
+    explanation: Allied powers governed post-WWI Germany, not the League directly.
+  - answer: A sports organization for international competition
+    explanation: The League was a political organization, not related to sports.
+
+- question: What was the United Nations created to do?
+  reason: The UN is the primary international organization today, and understanding its origins is essential for anyone working in international relations or history.
+  points: 3
+  right:
+  - answer: To maintain international peace and security and promote cooperation among nations
+    explanation: The UN was founded in 1945 after WWII to prevent future world wars and address global issues.
+    links:
+    - https://en.wikipedia.org/wiki/United_Nations
+  wrong:
+  - answer: To serve as a world government with authority over all nations
+    explanation: The UN is a forum for cooperation, not a world government.
+  - answer: To promote capitalism over communism during the Cold War
+    explanation: The UN included both capitalist and communist nations.
+  - answer: To provide economic aid only to European countries
+    explanation: The UN has global scope, and the Marshall Plan handled European aid.
+  - answer: To coordinate military alliances against the Soviet Union
+    explanation: NATO served this purpose, not the UN.
+  - answer: To enforce the Treaty of Versailles provisions
+    explanation: The UN was created after WWII, while Versailles followed WWI.
+
+- question: What was the Bolshevik Revolution?
+  reason: The Russian Revolution created the Soviet state and shaped 20th century ideology, essential for understanding communism's impact.
+  points: 5
+  right:
+  - answer: The 1917 revolution in Russia that overthrew the Provisional Government and brought the Bolsheviks (communists) to power
+    explanation: The October Revolution led by Lenin established the first communist state, eventually becoming the Soviet Union.
+    links:
+    - https://en.wikipedia.org/wiki/October_Revolution
+  wrong:
+  - answer: The 1905 uprising that overthrew the Tsar
+    explanation: The 1905 Revolution failed; the Tsar was overthrown in 1917.
+  - answer: The peasant rebellion that established democracy in Russia
+    explanation: The Bolshevik Revolution established communism, not democracy.
+  - answer: The revolution that ended the Soviet Union in 1991
+    explanation: The Soviet Union's end was decades after the Bolshevik Revolution.
+  - answer: A failed communist uprising in Germany after WWI
+    explanation: This describes different events; the Bolshevik Revolution succeeded in Russia.
+  - answer: The nationalist movement that created independent Ukraine
+    explanation: The Bolshevik Revolution was Russian, not Ukrainian nationalist.
+
+- question: What was the Great Leap Forward?
+  reason: Mao's Great Leap Forward had catastrophic consequences and represents the dangers of extreme ideology, important for understanding Chinese history.
+  points: 6
+  right:
+  - answer: Mao Zedong's disastrous economic and social campaign in China (1958-1962) that caused mass famine
+    explanation: The Great Leap Forward aimed to rapidly industrialize China but resulted in an estimated 15-45 million deaths from famine.
+    links:
+    - https://en.wikipedia.org/wiki/Great_Leap_Forward
+  wrong:
+  - answer: China's successful economic modernization program of the 1980s
+    explanation: This describes Deng Xiaoping's reforms, not Mao's Great Leap Forward.
+  - answer: The Chinese Cultural Revolution
+    explanation: The Cultural Revolution (1966-1976) was a separate later campaign by Mao.
+  - answer: China's development of nuclear weapons
+    explanation: While China developed nuclear weapons, this was not the Great Leap Forward.
+  - answer: The communist takeover of China in 1949
+    explanation: This was the Chinese Civil War conclusion, before the Great Leap Forward.
+  - answer: A military modernization program in communist China
+    explanation: The Great Leap Forward focused on economic and social transformation, not military.
+
+- question: What was the Cultural Revolution in China?
+  reason: The Cultural Revolution shaped modern China and represents extreme ideological campaigns, important for understanding 20th century totalitarianism.
+  points: 6
+  right:
+  - answer: A violent socio-political movement in China (1966-1976) launched by Mao to reassert his authority and eliminate "bourgeois" elements
+    explanation: The Cultural Revolution caused massive social upheaval, destruction of cultural heritage, and millions of deaths or persecutions.
+    links:
+    - https://en.wikipedia.org/wiki/Cultural_Revolution
+  wrong:
+  - answer: A period of artistic flourishing and cultural development in China
+    explanation: The Cultural Revolution actually destroyed much cultural heritage.
+  - answer: China's opening to the West in the 1970s
+    explanation: Nixon's visit occurred during the Cultural Revolution but was separate from it.
+  - answer: The modernization reforms that transformed China's economy
+    explanation: Economic reforms came after the Cultural Revolution ended.
+  - answer: The movement that established communism in China
+    explanation: Communism was established in 1949; the Cultural Revolution came later.
+  - answer: A democratic reform movement crushed by the government
+    explanation: The Cultural Revolution was a top-down campaign by Mao, not a democratic movement.
+
+- question: What was the Tiananmen Square incident of 1989?
+  reason: Tiananmen represents the limits of political reform in China and remains a sensitive topic, important for understanding modern Chinese politics.
+  points: 7
+  right:
+  - answer: A pro-democracy protest movement in Beijing that was violently suppressed by the Chinese government
+    explanation: Student-led protests in spring 1989 were crushed by military force, with casualties in the hundreds or thousands.
+    links:
+    - https://en.wikipedia.org/wiki/1989_Tiananmen_Square_protests_and_massacre
+  wrong:
+  - answer: A celebration of communist victory in China's civil war
+    explanation: This mischaracterizes the protests as a celebration.
+  - answer: A successful democratic revolution that transformed China
+    explanation: The protests were suppressed, not successful.
+  - answer: The location where Mao declared the People's Republic
+    explanation: While Mao did speak there in 1949, this describes 1989 protests.
+  - answer: A border conflict between China and the Soviet Union
+    explanation: Sino-Soviet border conflicts were different events from Tiananmen.
+  - answer: An economic reform announcement by Deng Xiaoping
+    explanation: While Deng led China, Tiananmen involved protest suppression, not reform announcements.
+
+- question: What was apartheid?
+  reason: Apartheid in South Africa represents institutionalized racism and its eventual dismantling shows the power of resistance, essential 20th century history.
+  points: 5
+  right:
+  - answer: The system of racial segregation and white minority rule in South Africa from 1948-1994
+    explanation: Apartheid legally enforced racial discrimination until ended through internal resistance and international pressure.
+    links:
+    - https://en.wikipedia.org/wiki/Apartheid
+  wrong:
+  - answer: The civil rights movement in the United States
+    explanation: This was a separate movement against segregation in America.
+  - answer: Racial segregation in Brazil during the 20th century
+    explanation: While Brazil had racial issues, apartheid specifically refers to South Africa.
+  - answer: The Holocaust in Nazi Germany
+    explanation: These were different systems of oppression in different contexts.
+  - answer: Colonial rule by European powers in Africa
+    explanation: While related to colonialism, apartheid was a specific post-colonial South African system.
+  - answer: Ethnic conflict in Rwanda during the 1990s
+    explanation: The Rwandan genocide was a different tragedy from South African apartheid.
+
+- question: Who was Nelson Mandela?
+  reason: Mandela's struggle against apartheid and transition to democracy makes him one of the most significant figures of the late 20th century.
+  points: 4
+  right:
+  - answer: The South African anti-apartheid revolutionary who became the country's first Black president (1994-1999)
+    explanation: Mandela spent 27 years in prison before leading South Africa's transition to democracy and becoming president.
+    links:
+    - https://en.wikipedia.org/wiki/Nelson_Mandela
+  wrong:
+  - answer: The leader of the civil rights movement in the United States
+    explanation: This better describes Martin Luther King Jr., not Mandela.
+  - answer: The first president of independent Zimbabwe
+    explanation: Robert Mugabe led Zimbabwe; Mandela led South Africa.
+  - answer: The leader who maintained apartheid in South Africa
+    explanation: Mandela fought against apartheid, not for it.
+  - answer: A freedom fighter in Kenya's independence movement
+    explanation: This describes figures like Jomo Kenyatta, not Mandela.
+  - answer: The United Nations Secretary-General from Africa
+    explanation: While Africans have served as UN Secretary-General, Mandela was South Africa's president.
+
+- question: What was the Suez Crisis?
+  reason: The Suez Crisis marked the end of European imperial dominance and rise of superpower influence, important for understanding decolonization.
+  points: 7
+  right:
+  - answer: The 1956 conflict when Britain, France, and Israel invaded Egypt after it nationalized the Suez Canal, ended by U.S. and Soviet pressure
+    explanation: The crisis demonstrated declining European power and rising U.S.-Soviet influence in international affairs.
+    links:
+    - https://en.wikipedia.org/wiki/Suez_Crisis
+  wrong:
+  - answer: The conflict that led to the construction of the Suez Canal
+    explanation: The canal was built in the 1860s; the crisis occurred in 1956.
+  - answer: A Cold War confrontation between superpowers in the Middle East
+    explanation: While Cold War-related, the invaders were European powers and Israel, not superpowers.
+  - answer: The war that created the state of Israel in 1948
+    explanation: Israeli independence occurred in 1948; the Suez Crisis was in 1956.
+  - answer: An Arab-Israeli war over control of Jerusalem
+    explanation: While Israel was involved, the crisis centered on the Suez Canal.
+  - answer: The Six-Day War of 1967
+    explanation: The Six-Day War was a different conflict that occurred later.
+
+- question: What was the Six-Day War?
+  reason: The Six-Day War reshaped Middle Eastern borders and remains central to ongoing conflicts, important for understanding the region's modern history.
+  points: 6
+  right:
+  - answer: The 1967 war between Israel and neighboring Arab states (Egypt, Jordan, Syria) that resulted in Israeli territorial gains
+    explanation: Israel captured the Sinai, Gaza, West Bank, and Golan Heights in a swift military victory.
+    links:
+    - https://en.wikipedia.org/wiki/Six-Day_War
+  wrong:
+  - answer: The 1948 Arab-Israeli War that followed Israeli independence
+    explanation: This was a different earlier conflict.
+  - answer: The 1973 Yom Kippur War
+    explanation: This was a later war in 1973, not 1967.
+  - answer: The Lebanese Civil War
+    explanation: Lebanon's civil war was a different conflict.
+  - answer: The Suez Crisis of 1956
+    explanation: The Suez Crisis preceded the Six-Day War by 11 years.
+  - answer: The Gulf War of 1991
+    explanation: The Gulf War was decades later and involved different parties.
+
+- question: What was the Iranian Revolution?
+  reason: The Iranian Revolution transformed Middle Eastern politics and U.S.-Iran relations, essential for understanding modern Middle East conflicts.
+  points: 6
+  right:
+  - answer: The 1979 revolution that overthrew the Shah and established an Islamic Republic under Ayatollah Khomeini
+    explanation: The revolution replaced the pro-Western monarchy with an anti-Western theocratic government.
+    links:
+    - https://en.wikipedia.org/wiki/Iranian_Revolution
+  wrong:
+  - answer: The coup that installed the Shah in power in 1953
+    explanation: This earlier coup supported the Shah; the 1979 revolution overthrew him.
+  - answer: The Iran-Iraq War of the 1980s
+    explanation: The war followed the revolution but was a separate event.
+  - answer: A failed democratic uprising crushed by the Shah
+    explanation: The revolution succeeded in overthrowing the Shah.
+  - answer: A communist revolution supported by the Soviet Union
+    explanation: The revolution was Islamic, not communist.
+  - answer: The Arab Spring protests of 2011
+    explanation: The Arab Spring was decades later and in different countries.
+
+- question: What was the Gulf War?
+  reason: The Gulf War marked post-Cold War U.S. military dominance and Middle East intervention patterns still relevant today.
+  points: 5
+  right:
+  - answer: The 1991 war in which a U.S.-led coalition expelled Iraqi forces from Kuwait after Iraq's 1990 invasion
+    explanation: The war demonstrated U.S. military superiority and established patterns for future Middle East interventions.
+    links:
+    - https://en.wikipedia.org/wiki/Gulf_War
+  wrong:
+  - answer: The 2003 U.S. invasion of Iraq
+    explanation: This was the Iraq War, a different conflict 12 years later.
+  - answer: The Iran-Iraq War of 1980-1988
+    explanation: This was a different war between Iran and Iraq.
+  - answer: The conflict that overthrew Saddam Hussein
+    explanation: Hussein remained in power after the Gulf War; he was overthrown in 2003.
+  - answer: A civil war within Iraq
+    explanation: The Gulf War was an international conflict, not Iraqi civil war.
+  - answer: The war that created the state of Israel
+    explanation: Israeli independence was in 1948, unrelated to the 1991 Gulf War.
+
+- question: What was the Iran-Iraq War?
+  reason: This brutal conflict shaped Middle Eastern politics and military tactics, important for understanding regional dynamics and modern warfare.
+  points: 6
+  right:
+  - answer: An eight-year war (1980-1988) between Iran and Iraq that resulted in hundreds of thousands of casualties and no clear victor
+    explanation: The war began with Iraq's invasion of Iran and featured trench warfare, chemical weapons, and attacks on civilian populations.
+    links:
+    - https://en.wikipedia.org/wiki/Iran%E2%80%93Iraq_War
+  wrong:
+  - answer: The 1991 Gulf War when Iraq invaded Kuwait
+    explanation: This was a different conflict involving different parties.
+  - answer: A civil war within Iran after the 1979 revolution
+    explanation: This was an interstate war, not a civil war.
+  - answer: A conflict between Iran and the United States
+    explanation: While tensions existed, this was a war between Iran and Iraq.
+  - answer: The war that overthrew the Shah of Iran
+    explanation: The Iranian Revolution overthrew the Shah; this war came after.
+  - answer: A proxy war entirely between the U.S. and Soviet Union
+    explanation: While superpowers were involved, Iran and Iraq were the primary combatants.
+
+- question: What was the Bay of Pigs invasion?
+  reason: The Bay of Pigs failure shaped U.S.-Cuban relations and Cold War policy, important for understanding Kennedy administration and Cold War conflicts.
+  points: 6
+  right:
+  - answer: A failed 1961 CIA-sponsored invasion of Cuba by Cuban exiles attempting to overthrow Fidel Castro
+    explanation: The botched invasion was a major embarrassment for the Kennedy administration and pushed Cuba closer to the Soviet Union.
+    links:
+    - https://en.wikipedia.org/wiki/Bay_of_Pigs_Invasion
+  wrong:
+  - answer: The Cuban Missile Crisis of 1962
+    explanation: This was a different event that occurred the following year.
+  - answer: A successful U.S. military operation in Cuba
+    explanation: The invasion failed completely.
+  - answer: The revolution that brought Castro to power
+    explanation: Castro's revolution was in 1959; Bay of Pigs was a failed attempt to overthrow him.
+  - answer: The U.S. naval blockade during the Cuban Missile Crisis
+    explanation: This was part of the Missile Crisis, not the Bay of Pigs.
+  - answer: A battle in the Spanish-American War
+    explanation: That war occurred in 1898, decades before the Bay of Pigs.
+
+- question: What was the Yom Kippur War?
+  reason: This war led to major shifts in Middle Eastern politics and U.S. policy, important for understanding regional conflicts and oil politics.
+  points: 6
+  right:
+  - answer: The 1973 war when Egypt and Syria launched a surprise attack on Israel on Yom Kippur (the Jewish Day of Atonement)
+    explanation: Though initially successful, Arab forces were eventually pushed back, but the war led to eventual Egyptian-Israeli peace.
+    links:
+    - https://en.wikipedia.org/wiki/Yom_Kippur_War
+  wrong:
+  - answer: The Six-Day War of 1967
+    explanation: This was an earlier different war.
+  - answer: The 1948 war following Israeli independence
+    explanation: This was the first Arab-Israeli war, 25 years before Yom Kippur.
+  - answer: The Lebanese Civil War
+    explanation: Lebanon's civil war was a separate conflict.
+  - answer: The Gulf War of 1991
+    explanation: This was a different war involving Iraq and Kuwait.
+  - answer: The Suez Crisis of 1956
+    explanation: This was a different earlier Middle Eastern conflict.
+
+- question: What was the Watergate scandal?
+  reason: Watergate represents presidential accountability and investigative journalism's role, essential for understanding American political history.
+  points: 5
+  right:
+  - answer: A political scandal involving President Nixon's administration covering up a break-in, leading to Nixon's 1974 resignation
+    explanation: The Watergate Hotel break-in and subsequent cover-up exposed abuse of power and led to the only presidential resignation in U.S. history.
+    links:
+    - https://en.wikipedia.org/wiki/Watergate_scandal
+  wrong:
+  - answer: A scandal involving President Clinton's impeachment
+    explanation: Clinton's impeachment was over different matters in the 1990s.
+  - answer: The assassination of President Kennedy
+    explanation: Kennedy's assassination was a different event in 1963.
+  - answer: A spy scandal during the Cold War
+    explanation: While it involved illegal activities, Watergate was about domestic political misconduct.
+  - answer: A scandal involving Iran-Contra arms deals
+    explanation: Iran-Contra was a different scandal in the 1980s during Reagan's presidency.
+  - answer: The Pentagon Papers leak about the Vietnam War
+    explanation: While related to the era, the Pentagon Papers were separate from Watergate.
+
+- question: What was the Iran-Contra affair?
+  reason: Iran-Contra involved illegal arms sales and constitutional questions, important for understanding executive power and Reagan-era foreign policy.
+  points: 7
+  right:
+  - answer: A 1980s scandal where Reagan administration officials secretly sold arms to Iran and used proceeds to fund Nicaraguan Contra rebels
+    explanation: The affair violated arms embargoes and congressional restrictions, leading to investigations and convictions.
+    links:
+    - https://en.wikipedia.org/wiki/Iran%E2%80%93Contra_affair
+  wrong:
+  - answer: The Watergate scandal of the 1970s
+    explanation: Watergate was a different scandal involving Nixon.
+  - answer: The Bay of Pigs invasion of Cuba
+    explanation: The Bay of Pigs was an earlier different event.
+  - answer: A scandal involving secret payments to North Korea
+    explanation: The affair involved Iran and Nicaragua, not North Korea.
+  - answer: The scandal that led to Clinton's impeachment
+    explanation: Clinton's impeachment involved different matters.
+  - answer: A Cold War spy ring discovered in the 1950s
+    explanation: Iran-Contra occurred in the 1980s and involved arms sales, not espionage.
+
+- question: What was the Camp David Accords?
+  reason: The Camp David Accords represent a rare Middle East peace achievement, important for understanding diplomacy and regional politics.
+  points: 6
+  right:
+  - answer: The 1978 peace agreements between Israel and Egypt negotiated at Camp David with U.S. President Carter's mediation
+    explanation: The accords led to the Egypt-Israel Peace Treaty, the first between Israel and an Arab nation.
+    links:
+    - https://en.wikipedia.org/wiki/Camp_David_Accords
+  wrong:
+  - answer: The agreement that ended the Six-Day War
+    explanation: No such peace agreement immediately followed the Six-Day War.
+  - answer: The treaty that created the state of Israel
+    explanation: Israeli independence was declared in 1948, 30 years before Camp David.
+  - answer: An agreement between Israel and Palestine
+    explanation: Camp David was between Israel and Egypt, not Palestine.
+  - answer: The Oslo Accords of the 1990s
+    explanation: The Oslo Accords were later different agreements involving Israel and Palestinians.
+  - answer: A military alliance agreement during the Cold War
+    explanation: Camp David Accords were peace agreements, not military alliances.
+
+- question: What was the Rwandan Genocide?
+  reason: The Rwandan Genocide represents international failure to prevent mass atrocity, essential for understanding humanitarian intervention debates.
+  points: 7
+  right:
+  - answer: The 1994 mass slaughter of Tutsis and moderate Hutus by Hutu extremists in Rwanda, killing approximately 800,000 people in 100 days
+    explanation: The genocide occurred while the international community failed to intervene effectively.
+    links:
+    - https://en.wikipedia.org/wiki/Rwandan_genocide
+  wrong:
+  - answer: Ethnic cleansing in Yugoslavia during the 1990s
+    explanation: Yugoslav wars were separate conflicts, though contemporaneous.
+  - answer: The Darfur conflict in Sudan
+    explanation: Darfur's crisis occurred later in the 2000s.
+  - answer: Apartheid violence in South Africa
+    explanation: While South Africa had violence, this was not the Rwandan Genocide.
+  - answer: Genocide in Cambodia under the Khmer Rouge
+    explanation: Cambodia's genocide occurred in the 1970s, not 1994.
+  - answer: Civil war in Somalia during the 1990s
+    explanation: Somalia had a civil war but this was not the Rwandan Genocide.
+
+- question: What was the Khmer Rouge?
+  reason: The Khmer Rouge's genocidal regime represents extreme ideological violence, important for understanding 20th century totalitarianism.
+  points: 7
+  right:
+  - answer: The communist regime led by Pol Pot that ruled Cambodia (1975-1979) and killed an estimated 1.7-2 million people
+    explanation: The Khmer Rouge's radical program emptied cities, abolished money, and targeted intellectuals and minorities.
+    links:
+    - https://en.wikipedia.org/wiki/Khmer_Rouge
+  wrong:
+  - answer: A Vietnamese resistance movement during the Vietnam War
+    explanation: The Khmer Rouge was Cambodian, not Vietnamese.
+  - answer: The Chinese Cultural Revolution
+    explanation: This was Mao's campaign in China, different from Cambodia's Khmer Rouge.
+  - answer: A French colonial administration in Southeast Asia
+    explanation: The Khmer Rouge was an anti-colonial communist movement.
+  - answer: The government that currently rules Cambodia
+    explanation: The Khmer Rouge was overthrown in 1979 and is no longer in power.
+  - answer: A Laotian communist organization
+    explanation: The Khmer Rouge was Cambodian, not Laotian.
+
+- question: What was the Yugoslav Wars?
+  reason: The Yugoslav Wars involved ethnic cleansing and challenged post-Cold War Europe, important for understanding nationalism and humanitarian intervention.
+  points: 7
+  right:
+  - answer: A series of ethnic conflicts and wars (1991-2001) following the breakup of Yugoslavia into separate nations
+    explanation: The wars involved Slovenia, Croatia, Bosnia, Kosovo and others, featuring ethnic cleansing and NATO intervention.
+    links:
+    - https://en.wikipedia.org/wiki/Yugoslav_Wars
+  wrong:
+  - answer: The Cold War conflict between Yugoslavia and the Soviet Union
+    explanation: While Yugoslavia had tensions with USSR, this describes different conflicts.
+  - answer: The Rwandan Genocide
+    explanation: Rwanda's genocide was in Africa, separate from Yugoslav conflicts.
+  - answer: The revolution that created Yugoslavia after WWI
+    explanation: Yugoslavia's creation followed WWI; these wars involved its dissolution.
+  - answer: A civil war during World War II
+    explanation: WWII saw Yugoslav conflicts, but the Yugoslav Wars refer to 1990s events.
+  - answer: The Greek civil war of the 1940s
+    explanation: Greece's civil war was separate from Yugoslav Wars.
+
+- question: What was the Helsinki Accords?
+  reason: The Helsinki Accords advanced human rights discourse during the Cold War, important for understanding détente and international norms.
+  points: 8
+  right:
+  - answer: The 1975 agreement signed by 35 nations including the U.S. and USSR that recognized European borders and committed to human rights
+    explanation: The accords legitimized Cold War borders but provided human rights activists in Eastern Europe with tools for advocacy.
+    links:
+    - https://en.wikipedia.org/wiki/Helsinki_Accords
+  wrong:
+  - answer: The treaty that ended World War II in Europe
+    explanation: WWII ended in 1945, 30 years before Helsinki.
+  - answer: The agreement that created NATO
+    explanation: NATO was established in 1949, not at Helsinki.
+  - answer: The treaty that reunified Germany
+    explanation: German reunification occurred in 1990, different from Helsinki.
+  - answer: The Warsaw Pact formation agreement
+    explanation: The Warsaw Pact was created in 1955, separate from Helsinki.
+  - answer: The Strategic Arms Limitation Treaty
+    explanation: SALT was a different set of arms control agreements.
+
+- question: What was Glasnost?
+  reason: Glasnost was key to Soviet reform and collapse, essential for understanding the Cold War's end and transition from communism.
+  points: 6
+  right:
+  - answer: Gorbachev's policy of openness and transparency in the Soviet Union during the 1980s
+    explanation: Glasnost allowed greater freedom of information and expression, contributing to the USSR's eventual collapse.
+    links:
+    - https://en.wikipedia.org/wiki/Glasnost
+  wrong:
+  - answer: The Soviet military doctrine during the Cold War
+    explanation: Glasnost was a reform policy, not military doctrine.
+  - answer: The secret police organization in the Soviet Union
+    explanation: The secret police was the KGB, not Glasnost.
+  - answer: Stalin's policy of industrialization
+    explanation: Stalin's policies predated Glasnost by decades.
+  - answer: The Soviet nuclear weapons program
+    explanation: Glasnost was a transparency policy, not a weapons program.
+  - answer: Another name for the Berlin Wall
+    explanation: The Berlin Wall was a physical barrier, not a policy.
+
+- question: What was Perestroika?
+  reason: Perestroika's economic restructuring was central to Soviet reform attempts, important for understanding planned economy transitions.
+  points: 6
+  right:
+  - answer: Gorbachev's policy of economic restructuring in the Soviet Union during the 1980s
+    explanation: Perestroika attempted to reform the Soviet economy but contributed to the system's collapse.
+    links:
+    - https://en.wikipedia.org/wiki/Perestroika
+  wrong:
+  - answer: The policy of political repression under Stalin
+    explanation: Stalin's repression predated Gorbachev's reforms by decades.
+  - answer: The Soviet space program
+    explanation: The space program existed separately from Perestroika reforms.
+  - answer: A military alliance of communist nations
+    explanation: This describes the Warsaw Pact, not Perestroika.
+  - answer: The policy of openness and transparency
+    explanation: This describes Glasnost; Perestroika focused on economic restructuring.
+  - answer: The Soviet invasion of Afghanistan
+    explanation: The Afghanistan invasion was a military action, not an economic policy.
+
+- question: When did the Soviet Union collapse?
+  reason: The Soviet collapse marks the Cold War's definitive end and a major historical turning point, essential chronological knowledge.
+  points: 3
+  right:
+  - answer: 1991
+    explanation: The Soviet Union formally dissolved on December 26, 1991, ending the Cold War.
+    links:
+    - https://en.wikipedia.org/wiki/Dissolution_of_the_Soviet_Union
+  wrong:
+  - answer: 1989
+    explanation: While the Berlin Wall fell in 1989, the USSR lasted two more years.
+  - answer: 1985
+    explanation: This is when Gorbachev came to power, not when the USSR collapsed.
+  - answer: 1993
+    explanation: The USSR had already collapsed by 1993.
+  - answer: 1987
+    explanation: The USSR was still functioning in 1987.
+  - answer: 1945
+    explanation: This is when WWII ended; the USSR lasted another 46 years.
+
+- question: What was the Warsaw Pact?
+  reason: The Warsaw Pact was the Soviet-led military alliance opposing NATO, essential for understanding Cold War military structures.
+  points: 4
+  right:
+  - answer: The military alliance of Soviet Union and Eastern European communist states formed in 1955 to counter NATO
+    explanation: The Warsaw Pact dissolved in 1991 as communist governments fell in Eastern Europe.
+    links:
+    - https://en.wikipedia.org/wiki/Warsaw_Pact
+  wrong:
+  - answer: The treaty that ended World War II
+    explanation: WWII ended in 1945; the Warsaw Pact was formed in 1955.
+  - answer: Another name for NATO
+    explanation: NATO was the opposing Western alliance, not the same as the Warsaw Pact.
+  - answer: An economic trade agreement
+    explanation: The Warsaw Pact was a military alliance, not primarily economic.
+  - answer: The alliance that won World War I
+    explanation: WWI ended decades before the Warsaw Pact was formed.
+  - answer: A peace treaty between Poland and Germany
+    explanation: The Warsaw Pact was a multilateral military alliance, not a bilateral peace treaty.
+
+- question: What was NATO created for?
+  reason: NATO remains the primary Western military alliance, and understanding its origins is essential for international relations and security studies.
+  points: 4
+  right:
+  - answer: To provide collective defense against Soviet aggression and maintain security in North Atlantic region
+    explanation: NATO was formed in 1949 based on collective defense principle (Article 5) that an attack on one is an attack on all.
+    links:
+    - https://en.wikipedia.org/wiki/NATO
+  wrong:
+  - answer: To coordinate the Marshall Plan economic aid
+    explanation: The Marshall Plan was separate from NATO's military mission.
+  - answer: To govern occupied Germany after World War II
+    explanation: Occupation governance was separate from NATO's formation.
+  - answer: To fight against Nazi Germany in World War II
+    explanation: NATO was formed after WWII ended.
+  - answer: To promote trade between Western nations
+    explanation: NATO's purpose was military defense, not trade.
+  - answer: To replace the United Nations
+    explanation: NATO was a regional alliance, not a replacement for the UN.
+
+- question: What was the Truman Doctrine?
+  reason: The Truman Doctrine established U.S. Cold War containment policy, fundamental for understanding American foreign policy framework.
+  points: 6
+  right:
+  - answer: The 1947 policy declaring U.S. support for nations threatened by Soviet expansion or communist insurgency
+    explanation: Truman's doctrine established the containment strategy that guided U.S. foreign policy throughout the Cold War.
+    links:
+    - https://en.wikipedia.org/wiki/Truman_Doctrine
+  wrong:
+  - answer: The policy of nuclear deterrence through mutually assured destruction
+    explanation: MAD was a different nuclear strategy concept.
+  - answer: The decision to use atomic bombs on Japan
+    explanation: That decision preceded the Truman Doctrine by two years.
+  - answer: The Marshall Plan for European economic recovery
+    explanation: While related, the Marshall Plan was distinct from the Truman Doctrine.
+  - answer: The policy of isolationism before World War II
+    explanation: The Truman Doctrine represented interventionism, opposite of isolationism.
+  - answer: The doctrine of preemptive military strikes
+    explanation: Containment differed from preemptive strike doctrine.
+
+- question: What was McCarthyism?
+  reason: McCarthyism represents domestic Cold War paranoia and civil liberties violations, important for understanding political extremism and due process.
+  points: 5
+  right:
+  - answer: The practice of making accusations of communist subversion without proper evidence, named after Senator Joseph McCarthy in the 1950s
+    explanation: McCarthyism created a climate of fear through unfounded accusations, blacklists, and congressional hearings that violated civil liberties.
+    links:
+    - https://en.wikipedia.org/wiki/McCarthyism
+  wrong:
+  - answer: A diplomatic strategy for negotiating with the Soviet Union
+    explanation: McCarthyism was domestic anti-communist hysteria, not diplomatic strategy.
+  - answer: A legislative reform movement in Congress
+    explanation: It was characterized by witch hunts, not reforms.
+  - answer: A Supreme Court ruling on civil rights
+    explanation: McCarthyism was a political phenomenon, not a court ruling.
+  - answer: A military strategy during the Korean War
+    explanation: McCarthyism was domestic politics, not military strategy.
+  - answer: An economic policy to combat inflation
+    explanation: McCarthyism dealt with alleged communist infiltration, not economics.
+
+- question: What was the domino theory?
+  reason: The domino theory justified U.S. intervention in Vietnam and elsewhere, essential for understanding Cold War foreign policy rationale.
+  points: 5
+  right:
+  - answer: The Cold War belief that if one nation fell to communism, neighboring nations would also fall like dominoes
+    explanation: This theory justified U.S. intervention in Vietnam and other regions to prevent communist expansion.
+    links:
+    - https://en.wikipedia.org/wiki/Domino_theory
+  wrong:
+  - answer: An economic theory about developing nations
+    explanation: The domino theory was geopolitical, not economic.
+  - answer: A military strategy for conventional warfare
+    explanation: It was a geopolitical concept, not a military tactic.
+  - answer: A theory about nuclear weapons proliferation
+    explanation: The domino theory specifically concerned communist expansion.
+  - answer: Stalin's theory of socialist development
+    explanation: The domino theory was Western anti-communist thinking, not Soviet.
+  - answer: A game theory approach to Cold War negotiations
+    explanation: While metaphorical, it was a geopolitical concept, not formal game theory.
+
+- question: What was the significance of the 1960 U-2 incident?
+  reason: The U-2 incident derailed détente efforts and revealed spy technology, important for understanding Cold War intelligence and diplomacy.
+  points: 7
+  right:
+  - answer: The shooting down of an American U-2 spy plane over Soviet territory, capturing pilot Gary Powers and derailing a summit
+    explanation: The incident embarrassed the Eisenhower administration and ended hopes for improved U.S.-Soviet relations.
+    links:
+    - https://en.wikipedia.org/wiki/1960_U-2_incident
+  wrong:
+  - answer: A failed Soviet satellite launch
+    explanation: This involved an American aircraft, not a Soviet satellite.
+  - answer: The Bay of Pigs invasion planning
+    explanation: The Bay of Pigs was a different event involving Cuba.
+  - answer: The Berlin airlift operation
+    explanation: The Berlin airlift occurred in 1948-49, not 1960.
+  - answer: A nuclear weapons test gone wrong
+    explanation: The U-2 was a reconnaissance aircraft incident, not a weapons test.
+  - answer: The defection of a Soviet pilot to the West
+    explanation: It was an American pilot captured by Soviets, not a defection.
+
+- question: What was détente?
+  reason: Détente represented Cold War thaw and arms control efforts, important for understanding superpower diplomacy and conflict de-escalation.
+  points: 6
+  right:
+  - answer: The easing of Cold War tensions between the U.S. and Soviet Union during the 1970s
+    explanation: Détente featured arms control agreements, trade expansion, and diplomatic cooperation despite ongoing rivalry.
+    links:
+    - https://en.wikipedia.org/wiki/D%C3%A9tente
+  wrong:
+  - answer: The Soviet policy of invading neighboring countries
+    explanation: This contradicts détente's goal of reducing tensions.
+  - answer: The hardline anti-communist policy of the 1950s
+    explanation: This describes earlier Cold War policies, not 1970s détente.
+  - answer: The collapse of the Soviet Union
+    explanation: Soviet collapse occurred later, after détente had ended.
+  - answer: Another name for the Warsaw Pact
+    explanation: Détente was a diplomatic approach, not a military alliance.
+  - answer: The U.S. policy of containing communism through military force
+    explanation: Détente emphasized diplomacy over military confrontation.
+
+- question: What were the Strategic Arms Limitation Talks (SALT)?
+  reason: SALT represents Cold War arms control efforts, important for understanding nuclear diplomacy and verification issues.
+  points: 7
+  right:
+  - answer: Negotiations between the U.S. and Soviet Union to limit nuclear weapons during the Cold War, resulting in SALT I (1972) and SALT II (1979)
+    explanation: SALT aimed to restrain the nuclear arms race through negotiated limits on strategic weapons systems.
+    links:
+    - https://en.wikipedia.org/wiki/Strategic_Arms_Limitation_Talks
+  wrong:
+  - answer: Talks that ended the Cold War in 1991
+    explanation: Different negotiations handled the Cold War's end.
+  - answer: Negotiations to remove missiles from Cuba
+    explanation: The Cuban Missile Crisis was resolved separately, before SALT.
+  - answer: Trade negotiations between the superpowers
+    explanation: SALT focused on nuclear arms, not trade.
+  - answer: The meetings that created NATO
+    explanation: NATO was created in 1949, before SALT negotiations.
+  - answer: Talks to divide Berlin after World War II
+    explanation: Berlin's division was settled after WWII, before SALT.
+
+- question: What was the Prague Spring?
+  reason: Prague Spring represents resistance to Soviet control and brutal suppression, important for understanding Eastern European opposition movements.
+  points: 7
+  right:
+  - answer: The 1968 period of political liberalization in Czechoslovakia that was crushed by Soviet-led Warsaw Pact invasion
+    explanation: Alexander Dubček's reforms toward "socialism with a human face" were ended by military intervention.
+    links:
+    - https://en.wikipedia.org/wiki/Prague_Spring
+  wrong:
+  - answer: The Velvet Revolution that ended communism in Czechoslovakia
+    explanation: The Velvet Revolution occurred in 1989, different from Prague Spring.
+  - answer: A workers' uprising in East Germany
+    explanation: East German uprisings were separate events from Prague Spring.
+  - answer: The Hungarian Revolution of 1956
+    explanation: Hungary's revolution preceded Prague Spring by 12 years.
+  - answer: The Solidarity movement in Poland
+    explanation: Solidarity emerged in Poland in 1980, not Czechoslovakia in 1968.
+  - answer: The fall of the Berlin Wall
+    explanation: The Berlin Wall fell in 1989, over 20 years after Prague Spring.
+
+- question: What was the Hungarian Revolution of 1956?
+  reason: The Hungarian Revolution showed both resistance to Soviet control and its brutal suppression, important for understanding Cold War Eastern Europe.
+  points: 7
+  right:
+  - answer: A nationwide revolt against Soviet-imposed communist policies in Hungary that was crushed by Soviet military intervention
+    explanation: The revolution briefly succeeded in removing Hungarian communists before Soviet tanks restored control.
+    links:
+    - https://en.wikipedia.org/wiki/Hungarian_Revolution_of_1956
+  wrong:
+  - answer: The Prague Spring of 1968
+    explanation: Prague Spring occurred in Czechoslovakia 12 years later.
+  - answer: The Solidarity movement in Poland
+    explanation: Solidarity was a Polish movement in the 1980s.
+  - answer: The revolution that ended communism in Hungary
+    explanation: Communism in Hungary ended peacefully in 1989, not 1956.
+  - answer: An uprising in East Germany
+    explanation: East Germany had separate uprisings from Hungary.
+  - answer: The Velvet Revolution in Czechoslovakia
+    explanation: The Velvet Revolution was in 1989, not Hungary in 1956.
+
+- question: What was Solidarity?
+  reason: Solidarity was the first independent labor union in a Soviet bloc nation and key to ending Polish communism, important for understanding peaceful transitions.
+  points: 6
+  right:
+  - answer: The Polish independent trade union movement founded in 1980 that challenged communist rule and helped end communism in Poland
+    explanation: Led by Lech Wałęsa, Solidarity represented millions of workers and eventually negotiated Poland's transition to democracy.
+    links:
+    - https://en.wikipedia.org/wiki/Solidarity_(Polish_trade_union)
+  wrong:
+  - answer: A Soviet labor organization
+    explanation: Solidarity was Polish and anti-Soviet.
+  - answer: The Hungarian Revolution of 1956
+    explanation: This was a different uprising in Hungary decades earlier.
+  - answer: A military alliance of communist nations
+    explanation: Solidarity was a labor union opposing communism, not supporting it.
+  - answer: The Prague Spring movement
+    explanation: Prague Spring occurred in Czechoslovakia in 1968.
+  - answer: An economic policy under communism
+    explanation: Solidarity was an opposition movement, not a government policy.
+
+- question: What was the Velvet Revolution?
+  reason: The Velvet Revolution represents peaceful transition from communism, important for understanding non-violent political change.
+  points: 6
+  right:
+  - answer: The peaceful 1989 transition from communist rule to democracy in Czechoslovakia
+    explanation: The "velvet" description emphasizes the non-violent nature of the revolution led by dissidents like Václav Havel.
+    links:
+    - https://en.wikipedia.org/wiki/Velvet_Revolution
+  wrong:
+  - answer: The Prague Spring of 1968
+    explanation: Prague Spring was crushed; the Velvet Revolution succeeded 21 years later.
+  - answer: The Hungarian Revolution of 1956
+    explanation: Hungary's revolution was in 1956 and violently suppressed.
+  - answer: The Polish Solidarity movement
+    explanation: Solidarity was Polish; the Velvet Revolution was Czechoslovak.
+  - answer: The fall of the Berlin Wall
+    explanation: The Berlin Wall was in Germany; this was Czechoslovakia.
+  - answer: The Romanian Revolution of 1989
+    explanation: Romania's revolution was violent, not "velvet."
+
+- question: What was significant about the 1980 election of Ronald Reagan?
+  reason: Reagan's presidency marked a shift toward conservative policies and aggressive Cold War stance, important for understanding 1980s politics.
+  points: 5
+  right:
+  - answer: Reagan represented a conservative shift in U.S. politics and adopted a more confrontational approach toward the Soviet Union
+    explanation: Reagan's presidency featured tax cuts, deregulation, increased military spending, and rhetoric calling the USSR an "evil empire."
+    links:
+    - https://en.wikipedia.org/wiki/Ronald_Reagan
+  wrong:
+  - answer: It marked the first time a Democrat won after Nixon
+    explanation: Reagan was Republican, not Democrat.
+  - answer: It ended the Cold War immediately
+    explanation: The Cold War continued throughout most of Reagan's presidency.
+  - answer: It represented continuity with Carter's policies
+    explanation: Reagan significantly changed direction from Carter.
+  - answer: Reagan negotiated the SALT I treaty
+    explanation: SALT I was signed by Nixon in 1972, before Reagan's presidency.
+  - answer: It established détente with the Soviet Union
+    explanation: Reagan initially took a harder line than détente policies.
+
+- question: What was the Strategic Defense Initiative (SDI)?
+  reason: SDI represented ambitious missile defense concepts and fed the arms race, important for understanding nuclear strategy debates.
+  points: 7
+  right:
+  - answer: Reagan's proposed space-based missile defense system to protect against nuclear attack, nicknamed "Star Wars"
+    explanation: Though never fully implemented, SDI was controversial and pressured Soviet military spending.
+    links:
+    - https://en.wikipedia.org/wiki/Strategic_Defense_Initiative
+  wrong:
+  - answer: The Manhattan Project to develop atomic weapons
+    explanation: The Manhattan Project was WWII-era, decades before SDI.
+  - answer: A Soviet program to build a space station
+    explanation: SDI was an American program, not Soviet.
+  - answer: The Apollo program to land on the Moon
+    explanation: Apollo was a space exploration program, not missile defense.
+  - answer: An arms limitation treaty
+    explanation: SDI was a weapons program, not an arms control agreement.
+  - answer: A conventional weapons modernization program
+    explanation: SDI focused on missile defense technology, not conventional weapons.
+
+- question: What was the Tet Offensive?
+  reason: The Tet Offensive turned American public opinion against the Vietnam War, crucial for understanding the war's political impact.
+  points: 6
+  right:
+  - answer: A major 1968 North Vietnamese and Viet Cong military campaign that shocked Americans despite being a tactical defeat for communist forces
+    explanation: The Tet Offensive's scale contradicted official optimism and eroded U.S. public support for the war.
+    links:
+    - https://en.wikipedia.org/wiki/Tet_Offensive
+  wrong:
+  - answer: The final offensive that ended the Vietnam War
+    explanation: The war continued for seven more years after Tet.
+  - answer: A failed American invasion of North Vietnam
+    explanation: Tet was a communist offensive, not an American invasion.
+  - answer: The military operation that defeated France in Vietnam
+    explanation: France's defeat at Dien Bien Phu was in 1954, before U.S. involvement.
+  - answer: A peace agreement ending the war
+    explanation: Tet was a military offensive, not a peace agreement.
+  - answer: The first major battle of the Vietnam War
+    explanation: The war had been ongoing before Tet in 1968.
+
+- question: What was the My Lai Massacre?
+  reason: My Lai represents war crimes in Vietnam and raises questions about military conduct and justice, important for understanding war's moral dimensions.
+  points: 7
+  right:
+  - answer: The 1968 mass killing of unarmed South Vietnamese civilians by U.S. soldiers, one of the Vietnam War's most infamous atrocities
+    explanation: U.S. Army personnel killed between 347-504 civilians, leading to war crimes trials and intensified anti-war sentiment.
+    links:
+    - https://en.wikipedia.org/wiki/My_Lai_Massacre
+  wrong:
+  - answer: A North Vietnamese attack on American forces
+    explanation: My Lai involved Americans killing Vietnamese civilians.
+  - answer: The Tet Offensive
+    explanation: While both occurred in 1968, they were separate events.
+  - answer: A battle where U.S. forces were defeated
+    explanation: My Lai was a massacre of civilians, not a battle.
+  - answer: A prisoner of war camp in North Vietnam
+    explanation: My Lai was a South Vietnamese village where a massacre occurred.
+  - answer: The event that started the Vietnam War
+    explanation: The war began years before My Lai.
+
+- question: What was the Paris Peace Accords?
+  reason: The Paris Accords formally ended direct U.S. involvement in Vietnam, important for understanding the war's conclusion and aftermath.
+  points: 6
+  right:
+  - answer: The 1973 agreement that ended direct U.S. military involvement in the Vietnam War
+    explanation: The accords arranged for U.S. troop withdrawal, though fighting between Vietnamese forces continued until 1975.
+    links:
+    - https://en.wikipedia.org/wiki/Paris_Peace_Accords
+  wrong:
+  - answer: The treaty that divided Vietnam at the 17th parallel
+    explanation: Vietnam was divided by the 1954 Geneva Accords, not Paris.
+  - answer: The agreement that reunified Vietnam
+    explanation: Reunification occurred through military victory in 1975, not treaty.
+  - answer: The treaty ending World War II in Asia
+    explanation: WWII ended in 1945, decades before the Paris Accords.
+  - answer: The agreement creating South Vietnam
+    explanation: South Vietnam was created earlier; Paris dealt with ending the war.
+  - answer: The Camp David Accords
+    explanation: Camp David involved Israel and Egypt, not Vietnam.
+
+- question: What was significant about the fall of Saigon?
+  reason: Saigon's fall marked communist victory in Vietnam and became an iconic image of American defeat, important for understanding the war's legacy.
+  points: 5
+  right:
+  - answer: The April 30, 1975 capture of South Vietnam's capital by North Vietnamese forces, ending the Vietnam War with communist victory
+    explanation: Iconic images of helicopter evacuations from the U.S. embassy symbolized American withdrawal and defeat.
+    links:
+    - https://en.wikipedia.org/wiki/Fall_of_Saigon
+  wrong:
+  - answer: A major American military victory in Vietnam
+    explanation: The fall of Saigon was a communist victory and American defeat.
+  - answer: The event that brought the U.S. into the Vietnam War
+    explanation: U.S. involvement began years before Saigon fell.
+  - answer: The signing of the Paris Peace Accords
+    explanation: The Paris Accords were signed in 1973; Saigon fell in 1975.
+  - answer: The Tet Offensive
+    explanation: The Tet Offensive was in 1968, seven years before Saigon fell.
+  - answer: A massacre of civilians
+    explanation: While tragic, the fall of Saigon was a military defeat, not primarily about civilian casualties.
+
+- question: What was Reaganomics?
+  reason: Reaganomics shaped U.S. economic policy debates that continue today, important for understanding modern conservative economic theory.
+  points: 5
+  right:
+  - answer: President Reagan's economic policies featuring tax cuts, deregulation, and reduced government spending (except military)
+    explanation: Based on supply-side economics, Reaganomics promised growth through reduced taxes and regulations, though it increased deficits.
+    links:
+    - https://en.wikipedia.org/wiki/Reaganomics
+  wrong:
+  - answer: FDR's New Deal programs
+    explanation: The New Deal was decades earlier and involved more government intervention.
+  - answer: Nixon's wage and price controls
+    explanation: This describes Nixon's policies, not Reagan's approach.
+  - answer: The Marshall Plan for European recovery
+    explanation: The Marshall Plan was post-WWII foreign aid, not Reagan's domestic policy.
+  - answer: Socialist economic policies
+    explanation: Reaganomics promoted free-market capitalism, not socialism.
+  - answer: Keynesian deficit spending during recession
+    explanation: Reaganomics rejected traditional Keynesian approaches.
+
+- question: What was the Iran hostage crisis?
+  reason: The hostage crisis dominated U.S. politics, damaged Carter, and shaped U.S.-Iran relations still relevant today.
+  points: 5
+  right:
+  - answer: The 1979-1981 seizure of the U.S. embassy in Tehran by Iranian revolutionaries who held 52 Americans hostage for 444 days
+    explanation: The crisis humiliated the Carter administration and contributed to Reagan's 1980 election victory.
+    links:
+    - https://en.wikipedia.org/wiki/Iran_hostage_crisis
+  wrong:
+  - answer: The Iranian Revolution of 1979
+    explanation: While related, the revolution and hostage crisis were distinct events.
+  - answer: The Iran-Contra affair
+    explanation: Iran-Contra was a different 1980s scandal.
+  - answer: The Iran-Iraq War
+    explanation: This was a separate war between Iran and Iraq.
+  - answer: A failed rescue operation in Vietnam
+    explanation: The failed rescue attempt was in Iran, not Vietnam.
+  - answer: The Gulf War of 1991
+    explanation: The Gulf War involved Iraq and Kuwait, not Iran.
+
+- question: What was the significance of the 1973 oil crisis?
+  reason: The oil crisis reshaped global economics and energy policy, important for understanding modern energy politics and Middle East influence.
+  points: 6
+  right:
+  - answer: Arab oil producers embargoed oil to nations supporting Israel in the Yom Kippur War, causing economic disruption and highlighting oil dependency
+    explanation: The crisis caused gas shortages, inflation, and demonstrated OPEC's economic power and Western vulnerability.
+    links:
+    - https://en.wikipedia.org/wiki/1973_oil_crisis
+  wrong:
+  - answer: The discovery of North Sea oil
+    explanation: While North Sea oil became important, the crisis involved an embargo.
+  - answer: The Iranian Revolution's impact on oil
+    explanation: The Iranian Revolution occurred in 1979, a different oil disruption.
+  - answer: The Gulf War's effect on oil prices
+    explanation: The Gulf War occurred in 1991, not 1973.
+  - answer: The nationalization of Soviet oil fields
+    explanation: Soviet oil was already nationalized; the crisis involved Arab producers.
+  - answer: An environmental disaster from an oil spill
+    explanation: The 1973 crisis was an embargo, not an environmental disaster.
+
+- question: What was the Bretton Woods system?
+  reason: Bretton Woods established post-WWII economic order and international financial institutions, essential for understanding global economics.
+  points: 8
+  right:
+  - answer: The 1944 international monetary system establishing fixed exchange rates tied to the U.S. dollar and creating the IMF and World Bank
+    explanation: The system governed global finance until 1971 when Nixon ended dollar-gold convertibility.
+    links:
+    - https://en.wikipedia.org/wiki/Bretton_Woods_system
+  wrong:
+  - answer: The Marshall Plan for European recovery
+    explanation: The Marshall Plan was related but distinct from Bretton Woods institutions.
+  - answer: The creation of the European Union
+    explanation: The EU developed later from different European integration efforts.
+  - answer: The treaty ending World War II
+    explanation: Bretton Woods concerned post-war economic order, not peace treaties.
+  - answer: A system of international military alliances
+    explanation: Bretton Woods was economic, not military.
+  - answer: The creation of the United Nations
+    explanation: While contemporaneous, the UN was separate from Bretton Woods.
+
+- question: What was the Bandung Conference?
+  reason: Bandung represented Non-Aligned Movement origins and post-colonial solidarity, important for understanding Third World politics.
+  points: 8
+  right:
+  - answer: The 1955 conference of newly independent Asian and African nations promoting solidarity and non-alignment in the Cold War
+    explanation: Led by leaders like Nehru, Nasser, and Sukarno, Bandung asserted Third World nations' right to independence from both superpowers.
+    links:
+    - https://en.wikipedia.org/wiki/Bandung_Conference
+  wrong:
+  - answer: The conference that created NATO
+    explanation: NATO was created in 1949 by Western nations, not at Bandung.
+  - answer: A meeting of communist nations
+    explanation: Bandung nations sought non-alignment, not communist solidarity.
+  - answer: The peace conference ending the Vietnam War
+    explanation: The Vietnam War's peace talks occurred decades later.
+  - answer: A conference on nuclear weapons
+    explanation: While discussed, Bandung's focus was broader Third World solidarity.
+  - answer: The summit that ended the Cold War
+    explanation: The Cold War continued for decades after Bandung.
+
+- question: What was Mau Mau?
+  reason: Mau Mau represents anti-colonial resistance in Kenya, important for understanding decolonization violence and British imperial decline.
+  points: 7
+  right:
+  - answer: A Kenyan independence movement and uprising (1952-1960) against British colonial rule
+    explanation: The Mau Mau rebellion involved guerrilla warfare and British counterinsurgency, leading eventually to Kenyan independence in 1963.
+    links:
+    - https://en.wikipedia.org/wiki/Mau_Mau_Uprising
+  wrong:
+  - answer: A South African anti-apartheid organization
+    explanation: Mau Mau was Kenyan, not South African.
+  - answer: The Rwandan genocide perpetrators
+    explanation: The Rwandan genocide occurred decades later with different actors.
+  - answer: A Nigerian independence movement
+    explanation: Mau Mau was specifically Kenyan.
+  - answer: An Algerian revolutionary group
+    explanation: Algeria had different independence movements.
+  - answer: The organization led by Nelson Mandela
+    explanation: Mandela led the ANC in South Africa, not Mau Mau in Kenya.
+
+- question: What was the Algerian War of Independence?
+  reason: Algeria's brutal independence struggle reshaped French politics and exemplified decolonization violence, important for understanding post-colonial transitions.
+  points: 7
+  right:
+  - answer: The 1954-1962 war between Algerian nationalists and France that ended French colonial rule
+    explanation: The war featured guerrilla warfare, terrorism, and torture, nearly causing civil war in France before Algerian independence in 1962.
+    links:
+    - https://en.wikipedia.org/wiki/Algerian_War
+  wrong:
+  - answer: The Suez Crisis
+    explanation: While involving France, the Suez Crisis was a different 1956 conflict.
+  - answer: The Moroccan independence movement
+    explanation: Morocco gained independence separately from Algeria.
+  - answer: A conflict during World War II
+    explanation: The war occurred after WWII, during decolonization.
+  - answer: The French Revolution
+    explanation: The French Revolution was in the 18th century, not 20th.
+  - answer: The Vietnam War
+    explanation: While France fought in Vietnam earlier, this was Algeria.
+
+- question: What was the Suez Canal crisis's impact on European imperialism?
+  reason: Suez marked the definitive end of British and French imperial power, a turning point in understanding global power shifts.
+  points: 8
+  right:
+  - answer: The crisis demonstrated that Britain and France could no longer act as imperial powers without U.S. approval, marking the end of European imperial dominance
+    explanation: U.S. and Soviet opposition forced British and French withdrawal, showing American superpower status and European decline.
+    links:
+    - https://en.wikipedia.org/wiki/Suez_Crisis
+  wrong:
+  - answer: It strengthened European colonial control in Africa
+    explanation: The opposite occurred; Suez accelerated decolonization.
+  - answer: It led to renewed European cooperation in imperialism
+    explanation: The crisis humiliated European powers and showed their limitations.
+  - answer: It had no significant impact on European power
+    explanation: Suez was a watershed moment demonstrating European imperial decline.
+  - answer: It resulted in European control of Middle East oil
+    explanation: The crisis showed European inability to control Middle East resources.
+  - answer: It led to the creation of European colonial federations
+    explanation: Decolonization accelerated after Suez, not colonial consolidation.
+
+- question: What was the Brussels Treaty Organization and how did it relate to NATO?
+  reason: Understanding NATO's precursor shows evolution of Western defense cooperation, relevant to international security studies.
+  points: 9
+  right:
+  - answer: The 1948 Western European defense alliance that served as a precursor to NATO, which was formed in 1949 with U.S. and Canadian participation
+    explanation: The Brussels Treaty (Britain, France, Benelux) provided the foundation for expanded transatlantic alliance.
+    links:
+    - https://en.wikipedia.org/wiki/Treaty_of_Brussels
+  wrong:
+  - answer: Another name for NATO
+    explanation: The Brussels Treaty preceded and was distinct from NATO.
+  - answer: The Warsaw Pact's original name
+    explanation: The Warsaw Pact was the Soviet-led opposing alliance.
+  - answer: An economic organization like the EU
+    explanation: The Brussels Treaty was military defense, not primarily economic.
+  - answer: A peace treaty ending World War II
+    explanation: The treaty was about post-war defense cooperation.
+  - answer: The treaty that created the United Nations
+    explanation: The UN was created by different agreements.
+
+- question: What was the significance of Nixon's 1972 visit to China?
+  reason: Nixon in China transformed Cold War dynamics and opened U.S.-China relations, a pivotal diplomatic breakthrough with lasting consequences.
+  points: 7
+  right:
+  - answer: The visit opened diplomatic relations between the U.S. and communist China after decades of hostility, exploiting the Sino-Soviet split
+    explanation: Nixon's visit began normalization, played China against USSR, and fundamentally altered Cold War alignments.
+    links:
+    - https://en.wikipedia.org/wiki/1972_Nixon_visit_to_China
+  wrong:
+  - answer: It ended the Korean War
+    explanation: The Korean War ended in 1953, nearly 20 years before Nixon's visit.
+  - answer: It resolved the Taiwan question
+    explanation: Taiwan's status remained unresolved despite the visit.
+  - answer: It allied China with the Soviet Union
+    explanation: The visit exploited Sino-Soviet tensions, not promoted unity.
+  - answer: It led to Chinese democratization
+    explanation: China remained communist; the visit concerned diplomatic relations.
+  - answer: It marked the beginning of the Cold War
+    explanation: The Cold War began decades earlier; this was a late Cold War shift.
+
+- question: Which of the following were true about the atomic bombings of Hiroshima and Nagasaki?
+  reason: Understanding multiple aspects of the atomic bombings is essential for grasping their historical significance and ongoing debates.
+  points: 6
+  right:
+  - answer: They occurred in August 1945
+    explanation: Hiroshima was bombed August 6 and Nagasaki August 9, 1945.
+    links:
+    - https://en.wikipedia.org/wiki/Atomic_bombings_of_Hiroshima_and_Nagasaki
+  - answer: They led to Japan's surrender
+    explanation: Japan surrendered on August 15, 1945, shortly after the bombings.
+  - answer: They remain controversial regarding military necessity
+    explanation: Historians still debate whether the bombings were necessary to end the war.
+  - answer: They killed over 100,000 people immediately
+    explanation: Combined immediate deaths exceeded 100,000, with many more dying later.
+  wrong:
+  - answer: They occurred before Germany's surrender
+    explanation: Germany surrendered in May 1945; the bombings occurred in August.
+  - answer: They were dropped on military bases only
+    explanation: Both were cities with large civilian populations.
+
+- question: Which of the following were major turning points in World War II?
+  reason: Identifying multiple turning points demonstrates comprehensive understanding of WWII's progression, essential for historical analysis.
+  points: 7
+  right:
+  - answer: The Battle of Stalingrad
+    explanation: The Soviet victory at Stalingrad (1942-43) marked Germany's first major defeat and beginning of retreat.
+    links:
+    - https://en.wikipedia.org/wiki/Battle_of_Stalingrad
+  - answer: The Battle of Midway
+    explanation: The U.S. victory at Midway (1942) shifted Pacific War momentum against Japan.
+    links:
+    - https://en.wikipedia.org/wiki/Battle_of_Midway
+  - answer: D-Day invasion
+    explanation: The Normandy invasion (1944) opened the western front against Germany.
+  - answer: Pearl Harbor attack
+    explanation: Pearl Harbor (1941) brought the U.S. into the war, changing its scale and outcome.
+  wrong:
+  - answer: The Battle of Gettysburg
+    explanation: Gettysburg was a Civil War battle, not WWII.
+  - answer: The Treaty of Versailles
+    explanation: Versailles ended WWI, not WWII.
+
+- question: Which of the following were characteristics of the Cold War?
+  reason: Understanding Cold War's multiple dimensions is essential for comprehensive historical knowledge and analysis of the period.
+  points: 6
+  right:
+  - answer: Ideological conflict between capitalism and communism
+    explanation: The Cold War centered on fundamental disagreements between democratic capitalism and Soviet communism.
+  - answer: Nuclear arms race
+    explanation: Both superpowers developed massive nuclear arsenals creating mutual assured destruction.
+  - answer: Proxy wars fought in third countries
+    explanation: Superpowers avoided direct conflict but fought through proxies in Korea, Vietnam, Afghanistan, etc.
+  - answer: Competition in space exploration
+    explanation: The Space Race was a major arena of Cold War competition.
+  wrong:
+  - answer: Direct military combat between the U.S. and Soviet Union
+    explanation: The superpowers never fought each other directly, hence "cold" war.
+  - answer: Alliance between China and the Soviet Union throughout
+    explanation: The Sino-Soviet split divided communist powers.
+
+- question: Which of the following were true about the Marshall Plan?
+  reason: Understanding the Marshall Plan's multiple aspects shows comprehension of post-war reconstruction and Cold War strategy.
+  points: 7
+  right:
+  - answer: It provided economic aid to Western European countries
+    explanation: The plan delivered over \$12 billion to rebuild European economies.
+  - answer: It was offered to Eastern European countries but rejected due to Soviet pressure
+    explanation: Stalin forced Eastern European nations to reject the aid.
+  - answer: It helped prevent communist expansion in Western Europe
+    explanation: Economic recovery reduced communist parties' appeal in countries like France and Italy.
+  - answer: It was named after Secretary of State George Marshall
+    explanation: Marshall proposed the plan in a 1947 Harvard speech.
+  wrong:
+  - answer: It was a military alliance against the Soviet Union
+    explanation: The Marshall Plan was economic aid; NATO was the military alliance.
+  - answer: It rebuilt Japan's economy
+    explanation: Japan received separate U.S. aid, not Marshall Plan funds.
+
+- question: Which of the following were factors in the Soviet Union's collapse?
+  reason: Understanding multiple causes of Soviet collapse demonstrates sophisticated analysis of complex historical events.
+  points: 8
+  right:
+  - answer: Economic stagnation and inefficiency
+    explanation: The Soviet planned economy could not compete with Western productivity.
+  - answer: The Afghanistan War's costs and failure
+    explanation: The decade-long war (1979-89) drained resources and morale.
+  - answer: Gorbachev's reforms (glasnost and perestroika) that unleashed forces he couldn't control
+    explanation: Reforms intended to save the system instead accelerated its collapse.
+  - answer: Nationalist movements in Soviet republics
+    explanation: Baltic states and others sought independence as central control weakened.
+  wrong:
+  - answer: A successful military coup by hardliners
+    explanation: A 1991 coup attempt failed and actually hastened collapse.
+  - answer: Invasion by NATO forces
+    explanation: The USSR collapsed internally without external military pressure.
