@@ -1,0 +1,2479 @@
+
+questions:
+- question: Who created the Python programming language?
+  reason: Python is one of the most widely used languages in the industry, especially for beginners and in data science roles.
+  points: 1
+  right:
+  - answer: Guido van Rossum
+    explanation: Guido van Rossum created Python in 1991 and was its Benevolent Dictator For Life until 2018.
+    links:
+    - https://en.wikipedia.org/wiki/Guido_van_Rossum
+  wrong:
+  - answer: Linus Torvalds
+    explanation: Linus Torvalds created Linux and Git, not Python.
+  - answer: James Gosling
+    explanation: James Gosling created Java, not Python.
+  - answer: Bjarne Stroustrup
+    explanation: Bjarne Stroustrup created C++, not Python.
+  - answer: Dennis Ritchie
+    explanation: Dennis Ritchie created the C programming language, not Python.
+  - answer: Brendan Eich
+    explanation: Brendan Eich created JavaScript, not Python.
+
+- question: What programming language did Dennis Ritchie create?
+  reason: The C language is foundational to modern computing and understanding its origins is essential for computer science history.
+  points: 2
+  right:
+  - answer: C
+    explanation: Dennis Ritchie created the C programming language at Bell Labs in the early 1970s.
+    links:
+    - https://en.wikipedia.org/wiki/Dennis_Ritchie
+    - https://en.wikipedia.org/wiki/C_(programming_language)
+  wrong:
+  - answer: C++
+    explanation: C++ was created by Bjarne Stroustrup, not Dennis Ritchie.
+  - answer: C#
+    explanation: C# was created by Microsoft's Anders Hejlsberg, not Dennis Ritchie.
+  - answer: Objective-C
+    explanation: Objective-C was created by Brad Cox and Tom Love, not Dennis Ritchie.
+  - answer: Java
+    explanation: Java was created by James Gosling at Sun Microsystems, not Dennis Ritchie.
+  - answer: Pascal
+    explanation: Pascal was created by Niklaus Wirth, not Dennis Ritchie.
+
+- question: Who is credited with creating the World Wide Web?
+  reason: Understanding the origins of the web is fundamental to anyone working in technology today.
+  points: 1
+  right:
+  - answer: Tim Berners-Lee
+    explanation: Tim Berners-Lee invented the World Wide Web in 1989 while working at CERN.
+    links:
+    - https://en.wikipedia.org/wiki/Tim_Berners-Lee
+  wrong:
+  - answer: Bill Gates
+    explanation: Bill Gates co-founded Microsoft but did not invent the World Wide Web.
+  - answer: Steve Jobs
+    explanation: Steve Jobs co-founded Apple but did not invent the World Wide Web.
+  - answer: Marc Andreessen
+    explanation: Marc Andreessen co-created the Mosaic web browser but did not invent the World Wide Web itself.
+  - answer: Vint Cerf
+    explanation: Vint Cerf is known as one of the fathers of the Internet (TCP/IP), not the World Wide Web.
+  - answer: Al Gore
+    explanation: Al Gore supported internet legislation but did not invent the World Wide Web.
+
+- question: What company did Bill Gates and Paul Allen co-found?
+  reason: Microsoft is one of the largest technology companies and its history is relevant to understanding the software industry.
+  points: 1
+  right:
+  - answer: Microsoft
+    explanation: Bill Gates and Paul Allen founded Microsoft in 1975.
+    links:
+    - https://en.wikipedia.org/wiki/Microsoft
+  wrong:
+  - answer: Apple
+    explanation: Apple was founded by Steve Jobs, Steve Wozniak, and Ronald Wayne.
+  - answer: IBM
+    explanation: IBM was founded in 1911, long before Gates and Allen were born.
+  - answer: Intel
+    explanation: Intel was founded by Gordon Moore and Robert Noyce.
+  - answer: Oracle
+    explanation: Oracle was founded by Larry Ellison, Bob Miner, and Ed Oates.
+  - answer: Google
+    explanation: Google was founded by Larry Page and Sergey Brin.
+
+- question: Who created the Linux operating system kernel?
+  reason: Linux is widely used in servers, mobile devices, and cloud infrastructure, making its creator important to know.
+  points: 1
+  right:
+  - answer: Linus Torvalds
+    explanation: Linus Torvalds created the Linux kernel in 1991 as a student at the University of Helsinki.
+    links:
+    - https://en.wikipedia.org/wiki/Linus_Torvalds
+  wrong:
+  - answer: Richard Stallman
+    explanation: Richard Stallman founded the GNU Project and Free Software Foundation but did not create Linux.
+  - answer: Andrew Tanenbaum
+    explanation: Andrew Tanenbaum created MINIX, which inspired Linux, but did not create Linux itself.
+  - answer: Ken Thompson
+    explanation: Ken Thompson co-created Unix but not Linux.
+  - answer: Dennis Ritchie
+    explanation: Dennis Ritchie co-created Unix and the C language but not Linux.
+  - answer: Bill Joy
+    explanation: Bill Joy was a founder of Sun Microsystems and created the vi editor but not Linux.
+
+- question: What programming language did Bjarne Stroustrup create?
+  reason: C++ is widely used in systems programming, game development, and high-performance applications.
+  points: 2
+  right:
+  - answer: C++
+    explanation: Bjarne Stroustrup created C++ at Bell Labs starting in 1979 as an extension of C.
+    links:
+    - https://en.wikipedia.org/wiki/Bjarne_Stroustrup
+  wrong:
+  - answer: C
+    explanation: C was created by Dennis Ritchie, not Bjarne Stroustrup.
+  - answer: C#
+    explanation: C# was created by Anders Hejlsberg at Microsoft, not Bjarne Stroustrup.
+  - answer: Java
+    explanation: Java was created by James Gosling at Sun Microsystems, not Bjarne Stroustrup.
+  - answer: Objective-C
+    explanation: Objective-C was created by Brad Cox and Tom Love, not Bjarne Stroustrup.
+  - answer: D
+    explanation: D was created by Walter Bright, not Bjarne Stroustrup.
+
+- question: Who created JavaScript?
+  reason: JavaScript is essential for web development and is one of the most commonly used languages in the industry.
+  points: 2
+  right:
+  - answer: Brendan Eich
+    explanation: Brendan Eich created JavaScript in 1995 in just 10 days while working at Netscape.
+    links:
+    - https://en.wikipedia.org/wiki/Brendan_Eich
+  wrong:
+  - answer: Tim Berners-Lee
+    explanation: Tim Berners-Lee invented the World Wide Web but not JavaScript.
+  - answer: James Gosling
+    explanation: James Gosling created Java, which despite the name similarity, is unrelated to JavaScript.
+  - answer: Guido van Rossum
+    explanation: Guido van Rossum created Python, not JavaScript.
+  - answer: Larry Wall
+    explanation: Larry Wall created Perl, not JavaScript.
+  - answer: Rasmus Lerdorf
+    explanation: Rasmus Lerdorf created PHP, not JavaScript.
+
+- question: What company did Steve Jobs, Steve Wozniak, and Ronald Wayne co-found?
+  reason: Apple is one of the most valuable companies in the world and its founding story is important tech history.
+  points: 1
+  right:
+  - answer: Apple
+    explanation: Apple was founded in 1976 by Steve Jobs, Steve Wozniak, and Ronald Wayne.
+    links:
+    - https://en.wikipedia.org/wiki/Apple_Inc.
+  wrong:
+  - answer: Microsoft
+    explanation: Microsoft was founded by Bill Gates and Paul Allen.
+  - answer: NeXT
+    explanation: NeXT was founded later by Steve Jobs after leaving Apple, not with Wozniak and Wayne.
+  - answer: Pixar
+    explanation: Pixar was acquired and funded by Steve Jobs but not founded by him with Wozniak and Wayne.
+  - answer: Atari
+    explanation: Atari was founded by Nolan Bushnell and Ted Dabney; Jobs worked there but did not found it.
+  - answer: Intel
+    explanation: Intel was founded by Gordon Moore and Robert Noyce.
+
+- question: Who created the Java programming language?
+  reason: Java is widely used in enterprise applications, Android development, and web services.
+  points: 2
+  right:
+  - answer: James Gosling
+    explanation: James Gosling created Java at Sun Microsystems in 1995.
+    links:
+    - https://en.wikipedia.org/wiki/James_Gosling
+  wrong:
+  - answer: Brendan Eich
+    explanation: Brendan Eich created JavaScript, not Java.
+  - answer: Guido van Rossum
+    explanation: Guido van Rossum created Python, not Java.
+  - answer: Dennis Ritchie
+    explanation: Dennis Ritchie created C, not Java.
+  - answer: Bjarne Stroustrup
+    explanation: Bjarne Stroustrup created C++, not Java.
+  - answer: Anders Hejlsberg
+    explanation: Anders Hejlsberg created C# and TypeScript, not Java.
+
+- question: What version control system did Linus Torvalds create?
+  reason: Git is the most widely used version control system in software development and essential for collaborative work.
+  points: 3
+  right:
+  - answer: Git
+    explanation: Linus Torvalds created Git in 2005 to manage Linux kernel development.
+    links:
+    - https://en.wikipedia.org/wiki/Git
+  wrong:
+  - answer: SVN (Subversion)
+    explanation: SVN was created by CollabNet, not Linus Torvalds.
+  - answer: Mercurial
+    explanation: Mercurial was created by Matt Mackall, not Linus Torvalds.
+  - answer: CVS
+    explanation: CVS was created by Dick Grune, not Linus Torvalds.
+  - answer: Perforce
+    explanation: Perforce was created by Perforce Software, not Linus Torvalds.
+  - answer: Bazaar
+    explanation: Bazaar was created by Canonical, not Linus Torvalds.
+
+- question: In what year was the first iPhone released?
+  reason: The iPhone revolutionized mobile computing and its release date is a significant milestone in tech history.
+  points: 2
+  right:
+  - answer: 2007
+    explanation: Apple released the first iPhone on June 29, 2007.
+    links:
+    - https://en.wikipedia.org/wiki/IPhone_(1st_generation)
+  wrong:
+  - answer: 2005
+    explanation: The iPhone was not released until 2007.
+  - answer: 2006
+    explanation: The iPhone was announced in January 2007 but released later that year.
+  - answer: 2008
+    explanation: This was the year the iPhone 3G was released, not the original iPhone.
+  - answer: 2004
+    explanation: The iPhone was not released until 2007.
+  - answer: 2009
+    explanation: This was the year the iPhone 3GS was released, not the original iPhone.
+
+- question: Who founded Facebook?
+  reason: Facebook (now Meta) is one of the largest social media platforms and understanding its founding is relevant to social media and tech entrepreneurship.
+  points: 1
+  right:
+  - answer: Mark Zuckerberg
+    explanation: Mark Zuckerberg founded Facebook in 2004 while a student at Harvard University.
+    links:
+    - https://en.wikipedia.org/wiki/Mark_Zuckerberg
+  wrong:
+  - answer: Jack Dorsey
+    explanation: Jack Dorsey co-founded Twitter, not Facebook.
+  - answer: Evan Spiegel
+    explanation: Evan Spiegel co-founded Snapchat, not Facebook.
+  - answer: Kevin Systrom
+    explanation: Kevin Systrom co-founded Instagram, which was later acquired by Facebook.
+  - answer: Reid Hoffman
+    explanation: Reid Hoffman co-founded LinkedIn, not Facebook.
+  - answer: Steve Chen
+    explanation: Steve Chen co-founded YouTube, not Facebook.
+
+- question: What programming language did Larry Wall create?
+  reason: Perl has been important in system administration, web development, and text processing.
+  points: 3
+  right:
+  - answer: Perl
+    explanation: Larry Wall created Perl in 1987, originally for text manipulation and reporting.
+    links:
+    - https://en.wikipedia.org/wiki/Larry_Wall
+  wrong:
+  - answer: Python
+    explanation: Python was created by Guido van Rossum, not Larry Wall.
+  - answer: Ruby
+    explanation: Ruby was created by Yukihiro Matsumoto, not Larry Wall.
+  - answer: PHP
+    explanation: PHP was created by Rasmus Lerdorf, not Larry Wall.
+  - answer: Tcl
+    explanation: Tcl was created by John Ousterhout, not Larry Wall.
+  - answer: Lua
+    explanation: Lua was created by Roberto Ierusalimschy, Luiz Henrique de Figueiredo, and Waldemar Celes.
+
+- question: Who created the Ruby programming language?
+  reason: Ruby and Ruby on Rails are widely used in web development and startups.
+  points: 3
+  right:
+  - answer: Yukihiro Matsumoto (Matz)
+    explanation: Yukihiro Matsumoto created Ruby in the mid-1990s in Japan.
+    links:
+    - https://en.wikipedia.org/wiki/Yukihiro_Matsumoto
+  wrong:
+  - answer: Larry Wall
+    explanation: Larry Wall created Perl, not Ruby.
+  - answer: Guido van Rossum
+    explanation: Guido van Rossum created Python, not Ruby.
+  - answer: Rasmus Lerdorf
+    explanation: Rasmus Lerdorf created PHP, not Ruby.
+  - answer: David Heinemeier Hansson
+    explanation: David Heinemeier Hansson created Ruby on Rails framework, not the Ruby language itself.
+  - answer: James Gosling
+    explanation: James Gosling created Java, not Ruby.
+
+- question: What company did Larry Page and Sergey Brin co-found?
+  reason: Google is one of the most influential tech companies and understanding its founding is important for tech history.
+  points: 1
+  right:
+  - answer: Google
+    explanation: Larry Page and Sergey Brin founded Google in 1998 while PhD students at Stanford.
+    links:
+    - https://en.wikipedia.org/wiki/Google
+  wrong:
+  - answer: Yahoo
+    explanation: Yahoo was founded by Jerry Yang and David Filo, not Page and Brin.
+  - answer: Microsoft
+    explanation: Microsoft was founded by Bill Gates and Paul Allen.
+  - answer: Facebook
+    explanation: Facebook was founded by Mark Zuckerberg.
+  - answer: Amazon
+    explanation: Amazon was founded by Jeff Bezos.
+  - answer: Apple
+    explanation: Apple was founded by Steve Jobs, Steve Wozniak, and Ronald Wayne.
+
+- question: Who created the C# programming language?
+  reason: C# is widely used in enterprise software development, especially with .NET framework.
+  points: 3
+  right:
+  - answer: Anders Hejlsberg
+    explanation: Anders Hejlsberg created C# at Microsoft in the early 2000s as part of the .NET initiative.
+    links:
+    - https://en.wikipedia.org/wiki/Anders_Hejlsberg
+  wrong:
+  - answer: James Gosling
+    explanation: James Gosling created Java, not C#.
+  - answer: Bjarne Stroustrup
+    explanation: Bjarne Stroustrup created C++, not C#.
+  - answer: Dennis Ritchie
+    explanation: Dennis Ritchie created C, not C#.
+  - answer: Bill Gates
+    explanation: Bill Gates co-founded Microsoft but did not create C#.
+  - answer: Don Syme
+    explanation: Don Syme created F#, not C#.
+
+- question: What operating system did Ken Thompson and Dennis Ritchie create at Bell Labs?
+  reason: Unix is foundational to modern operating systems including Linux, macOS, and BSD variants.
+  points: 3
+  right:
+  - answer: Unix
+    explanation: Ken Thompson and Dennis Ritchie created Unix at Bell Labs in the early 1970s.
+    links:
+    - https://en.wikipedia.org/wiki/Unix
+  wrong:
+  - answer: Linux
+    explanation: Linux was created by Linus Torvalds, inspired by Unix but not the same system.
+  - answer: MS-DOS
+    explanation: MS-DOS was developed by Microsoft, not by Thompson and Ritchie.
+  - answer: Windows
+    explanation: Windows was developed by Microsoft, not by Thompson and Ritchie.
+  - answer: macOS
+    explanation: macOS was developed by Apple, though it is Unix-based.
+  - answer: BSD
+    explanation: BSD was developed at UC Berkeley based on Unix, but not by Thompson and Ritchie directly.
+
+- question: Who founded Amazon?
+  reason: Amazon is one of the largest e-commerce and cloud computing companies, making its founder important to know.
+  points: 1
+  right:
+  - answer: Jeff Bezos
+    explanation: Jeff Bezos founded Amazon in 1994 as an online bookstore.
+    links:
+    - https://en.wikipedia.org/wiki/Jeff_Bezos
+  wrong:
+  - answer: Bill Gates
+    explanation: Bill Gates co-founded Microsoft, not Amazon.
+  - answer: Larry Ellison
+    explanation: Larry Ellison co-founded Oracle, not Amazon.
+  - answer: Marc Benioff
+    explanation: Marc Benioff founded Salesforce, not Amazon.
+  - answer: Steve Jobs
+    explanation: Steve Jobs co-founded Apple, not Amazon.
+  - answer: Elon Musk
+    explanation: Elon Musk founded Tesla and SpaceX but not Amazon.
+
+- question: What was the first widely used web browser with a graphical user interface?
+  reason: Understanding the evolution of web browsers is important for web development history.
+  points: 4
+  right:
+  - answer: Mosaic
+    explanation: Mosaic, released in 1993, was the first widely used graphical web browser, created by Marc Andreessen and Eric Bina at NCSA.
+    links:
+    - https://en.wikipedia.org/wiki/Mosaic_(web_browser)
+  wrong:
+  - answer: Internet Explorer
+    explanation: Internet Explorer came later in 1995, after Mosaic.
+  - answer: Netscape Navigator
+    explanation: Netscape Navigator came after Mosaic in 1994, though it was created by some of the same people.
+  - answer: Firefox
+    explanation: Firefox was released much later in 2004.
+  - answer: Chrome
+    explanation: Chrome was released in 2008, much later than Mosaic.
+  - answer: Safari
+    explanation: Safari was released in 2003, much later than Mosaic.
+
+- question: Who created the PHP programming language?
+  reason: PHP is widely used for web development and powers many websites including WordPress sites.
+  points: 3
+  right:
+  - answer: Rasmus Lerdorf
+    explanation: Rasmus Lerdorf created PHP in 1994, originally as Personal Home Page Tools.
+    links:
+    - https://en.wikipedia.org/wiki/Rasmus_Lerdorf
+  wrong:
+  - answer: Brendan Eich
+    explanation: Brendan Eich created JavaScript, not PHP.
+  - answer: Larry Wall
+    explanation: Larry Wall created Perl, not PHP.
+  - answer: Guido van Rossum
+    explanation: Guido van Rossum created Python, not PHP.
+  - answer: Yukihiro Matsumoto
+    explanation: Yukihiro Matsumoto created Ruby, not PHP.
+  - answer: James Gosling
+    explanation: James Gosling created Java, not PHP.
+
+- question: What does IBM stand for?
+  reason: IBM has been a major player in computing history and understanding its name is basic tech history knowledge.
+  points: 1
+  right:
+  - answer: International Business Machines
+    explanation: IBM stands for International Business Machines, founded in 1911.
+    links:
+    - https://en.wikipedia.org/wiki/IBM
+  wrong:
+  - answer: Internet Business Machines
+    explanation: IBM was founded in 1911, long before the internet existed.
+  - answer: International Binary Machines
+    explanation: IBM stands for International Business Machines, not Binary Machines.
+  - answer: Integrated Business Machines
+    explanation: IBM stands for International Business Machines, not Integrated Business Machines.
+  - answer: International Business Mechanics
+    explanation: IBM stands for International Business Machines, not Mechanics.
+  - answer: Intelligent Business Machines
+    explanation: IBM stands for International Business Machines, not Intelligent Business Machines.
+
+- question: Who co-founded Apple Computer with Steve Jobs and Steve Wozniak?
+  reason: While often overlooked, the third co-founder played a role in Apple's founding story.
+  points: 4
+  right:
+  - answer: Ronald Wayne
+    explanation: Ronald Wayne was the third co-founder of Apple in 1976 but sold his 10% stake after just 12 days.
+    links:
+    - https://en.wikipedia.org/wiki/Ronald_Wayne
+  wrong:
+  - answer: Mike Markkula
+    explanation: Mike Markkula was an early investor and employee but not an original co-founder.
+  - answer: John Sculley
+    explanation: John Sculley was CEO of Apple in the 1980s but not a co-founder.
+  - answer: Bill Gates
+    explanation: Bill Gates co-founded Microsoft, not Apple.
+  - answer: Tim Cook
+    explanation: Tim Cook is the current CEO but joined Apple much later in 1998.
+  - answer: Jony Ive
+    explanation: Jony Ive was Apple's chief designer but not a co-founder.
+
+- question: What programming language was created specifically for teaching programming concepts and named after a mathematician?
+  reason: Understanding programming language history and educational languages is valuable for computer science education.
+  points: 4
+  right:
+  - answer: Pascal
+    explanation: Pascal was created by Niklaus Wirth in 1970 and named after mathematician Blaise Pascal.
+    links:
+    - https://en.wikipedia.org/wiki/Pascal_(programming_language)
+  wrong:
+  - answer: Ada
+    explanation: While Ada is named after Ada Lovelace and used in education, Pascal was more specifically designed for teaching.
+  - answer: BASIC
+    explanation: BASIC was designed for beginners but not named after a mathematician.
+  - answer: Logo
+    explanation: Logo was designed for education but not named after a mathematician.
+  - answer: Python
+    explanation: Python was named after Monty Python, not a mathematician.
+  - answer: Haskell
+    explanation: Haskell is named after Haskell Curry but was not primarily designed for teaching beginners.
+
+- question: Who created the MySQL database management system?
+  reason: MySQL is widely used in web applications and understanding its origins is relevant for database work.
+  points: 4
+  right:
+  - answer: Michael Widenius and David Axmark
+    explanation: MySQL was created by Michael Widenius, David Axmark, and Allan Larsson at MySQL AB in 1995.
+    links:
+    - https://en.wikipedia.org/wiki/MySQL
+  wrong:
+  - answer: Larry Ellison
+    explanation: Larry Ellison co-founded Oracle Corporation, not MySQL.
+  - answer: Michael Stonebraker
+    explanation: Michael Stonebraker created Ingres and PostgreSQL, not MySQL.
+  - answer: Edgar F. Codd
+    explanation: Edgar F. Codd developed the relational model but did not create MySQL.
+  - answer: Jim Gray
+    explanation: Jim Gray was a database pioneer but did not create MySQL.
+  - answer: Donald Chamberlin
+    explanation: Donald Chamberlin co-created SQL language but not MySQL specifically.
+
+- question: What was the name of the first commercially successful personal computer produced by Apple?
+  reason: Understanding the history of personal computers is important for tech history and product development.
+  points: 3
+  right:
+  - answer: Apple II
+    explanation: The Apple II, released in 1977, was Apple's first commercially successful personal computer.
+    links:
+    - https://en.wikipedia.org/wiki/Apple_II
+  wrong:
+  - answer: Apple I
+    explanation: The Apple I was the first Apple computer but was not commercially successful, with only about 200 made.
+  - answer: Macintosh
+    explanation: The Macintosh came later in 1984.
+  - answer: Lisa
+    explanation: The Lisa came out in 1983 but was not commercially successful due to its high price.
+  - answer: iMac
+    explanation: The iMac was released much later in 1998.
+  - answer: Apple III
+    explanation: The Apple III was released in 1980 but was not as successful as the Apple II.
+
+- question: Who created the PostgreSQL database system?
+  reason: PostgreSQL is an important open-source database used in many enterprise applications.
+  points: 5
+  right:
+  - answer: Michael Stonebraker
+    explanation: PostgreSQL evolved from the POSTGRES project created by Michael Stonebraker at UC Berkeley in 1986.
+    links:
+    - https://en.wikipedia.org/wiki/PostgreSQL
+  wrong:
+  - answer: Michael Widenius
+    explanation: Michael Widenius created MySQL, not PostgreSQL.
+  - answer: Larry Ellison
+    explanation: Larry Ellison co-founded Oracle, not PostgreSQL.
+  - answer: Edgar F. Codd
+    explanation: Edgar F. Codd developed the relational model but did not create PostgreSQL.
+  - answer: Jim Gray
+    explanation: Jim Gray was a database pioneer but did not create PostgreSQL.
+  - answer: Donald Chamberlin
+    explanation: Donald Chamberlin co-created SQL but not PostgreSQL.
+
+- question: What company did Jack Dorsey co-found that became a major social media platform?
+  reason: Understanding social media platforms and their founders is relevant for modern tech literacy.
+  points: 2
+  right:
+  - answer: Twitter
+    explanation: Jack Dorsey co-founded Twitter in 2006 along with Noah Glass, Biz Stone, and Evan Williams.
+    links:
+    - https://en.wikipedia.org/wiki/Jack_Dorsey
+  wrong:
+  - answer: Facebook
+    explanation: Facebook was founded by Mark Zuckerberg, not Jack Dorsey.
+  - answer: Instagram
+    explanation: Instagram was founded by Kevin Systrom and Mike Krieger, not Jack Dorsey.
+  - answer: Snapchat
+    explanation: Snapchat was founded by Evan Spiegel, Bobby Murphy, and Reggie Brown, not Jack Dorsey.
+  - answer: LinkedIn
+    explanation: LinkedIn was founded by Reid Hoffman and others, not Jack Dorsey.
+  - answer: Pinterest
+    explanation: Pinterest was founded by Ben Silbermann, Paul Sciarra, and Evan Sharp, not Jack Dorsey.
+
+- question: What was the first electronic general-purpose computer?
+  reason: Understanding early computing history provides context for modern computer development.
+  points: 5
+  right:
+  - answer: ENIAC
+    explanation: ENIAC (Electronic Numerical Integrator and Computer) was completed in 1945 and is widely considered the first electronic general-purpose computer.
+    links:
+    - https://en.wikipedia.org/wiki/ENIAC
+  wrong:
+  - answer: UNIVAC
+    explanation: UNIVAC came later in 1951 as the first commercial computer.
+  - answer: IBM 701
+    explanation: IBM 701 was released in 1952, after ENIAC.
+  - answer: Colossus
+    explanation: Colossus was earlier (1943) but was special-purpose, designed for code-breaking.
+  - answer: ABC (Atanasoff-Berry Computer)
+    explanation: ABC was an earlier electronic computer but was not general-purpose.
+  - answer: Harvard Mark I
+    explanation: Harvard Mark I was electromechanical, not fully electronic.
+
+- question: Who created the Rust programming language?
+  reason: Rust is increasingly important in systems programming and is used by major tech companies.
+  points: 5
+  right:
+  - answer: Graydon Hoare
+    explanation: Graydon Hoare created Rust as a personal project in 2006, which was later sponsored by Mozilla.
+    links:
+    - https://en.wikipedia.org/wiki/Rust_(programming_language)
+  wrong:
+  - answer: Linus Torvalds
+    explanation: Linus Torvalds created Linux and Git, not Rust.
+  - answer: Bjarne Stroustrup
+    explanation: Bjarne Stroustrup created C++, not Rust.
+  - answer: Dennis Ritchie
+    explanation: Dennis Ritchie created C, not Rust.
+  - answer: Ken Thompson
+    explanation: Ken Thompson co-created Unix and later worked on Go, but not Rust.
+  - answer: Rob Pike
+    explanation: Rob Pike worked on Go at Google, not Rust.
+
+- question: What programming language did John McCarthy create?
+  reason: Understanding the history of artificial intelligence and functional programming languages is important.
+  points: 6
+  right:
+  - answer: LISP
+    explanation: John McCarthy created LISP in 1958, one of the oldest programming languages still in use and important for AI research.
+    links:
+    - https://en.wikipedia.org/wiki/John_McCarthy_(computer_scientist)
+  wrong:
+  - answer: Prolog
+    explanation: Prolog was created by Alain Colmerauer and Philippe Roussel, not John McCarthy.
+  - answer: Scheme
+    explanation: Scheme was created by Guy L. Steele and Gerald Jay Sussman as a dialect of LISP.
+  - answer: Smalltalk
+    explanation: Smalltalk was created by Alan Kay and others at Xerox PARC.
+  - answer: ML
+    explanation: ML was created by Robin Milner, not John McCarthy.
+  - answer: Haskell
+    explanation: Haskell was created by a committee of researchers, not John McCarthy.
+
+- question: Who co-created the Unix operating system with Dennis Ritchie?
+  reason: Unix history is foundational to understanding modern operating systems.
+  points: 3
+  right:
+  - answer: Ken Thompson
+    explanation: Ken Thompson and Dennis Ritchie created Unix together at Bell Labs in the early 1970s.
+    links:
+    - https://en.wikipedia.org/wiki/Ken_Thompson
+  wrong:
+  - answer: Brian Kernighan
+    explanation: Brian Kernighan contributed significantly to Unix but was not a co-creator.
+  - answer: Linus Torvalds
+    explanation: Linus Torvalds created Linux, inspired by Unix but decades later.
+  - answer: Richard Stallman
+    explanation: Richard Stallman founded the GNU Project but did not create Unix.
+  - answer: Bill Joy
+    explanation: Bill Joy contributed to BSD Unix but did not create the original Unix.
+  - answer: Andrew Tanenbaum
+    explanation: Andrew Tanenbaum created MINIX, which was Unix-like but not Unix itself.
+
+- question: What does the acronym "SQL" stand for?
+  reason: SQL is fundamental to database work and understanding its meaning is essential for any developer.
+  points: 2
+  right:
+  - answer: Structured Query Language
+    explanation: SQL stands for Structured Query Language, used for managing relational databases.
+    links:
+    - https://en.wikipedia.org/wiki/SQL
+  wrong:
+  - answer: Standard Query Language
+    explanation: SQL stands for Structured Query Language, not Standard.
+  - answer: Sequential Query Language
+    explanation: SQL stands for Structured Query Language, not Sequential.
+  - answer: System Query Language
+    explanation: SQL stands for Structured Query Language, not System.
+  - answer: Simple Query Language
+    explanation: SQL stands for Structured Query Language, not Simple.
+  - answer: Secure Query Language
+    explanation: SQL stands for Structured Query Language, not Secure.
+
+- question: Who created the Go programming language?
+  reason: Go is widely used at Google and in cloud infrastructure, making it relevant for modern development.
+  points: 4
+  right:
+  - answer: Robert Griesemer, Rob Pike, and Ken Thompson
+    explanation: Go was created at Google in 2007 by Robert Griesemer, Rob Pike, and Ken Thompson.
+    links:
+    - https://en.wikipedia.org/wiki/Go_(programming_language)
+  wrong:
+  - answer: Linus Torvalds
+    explanation: Linus Torvalds created Linux and Git, not Go.
+  - answer: Guido van Rossum
+    explanation: Guido van Rossum created Python, not Go.
+  - answer: Larry Page and Sergey Brin
+    explanation: Page and Brin founded Google but did not create Go.
+  - answer: Dennis Ritchie
+    explanation: Dennis Ritchie created C but passed away before Go was created.
+  - answer: Bjarne Stroustrup
+    explanation: Bjarne Stroustrup created C++, not Go.
+
+- question: What was the first version control system widely used before Git?
+  reason: Understanding version control history is important for software development workflow knowledge.
+  points: 4
+  right:
+  - answer: CVS (Concurrent Versions System)
+    explanation: CVS, created in 1986, was one of the first widely used version control systems.
+    links:
+    - https://en.wikipedia.org/wiki/Concurrent_Versions_System
+  - answer: RCS (Revision Control System)
+    explanation: RCS, created in 1982, was an early version control system that predated CVS.
+  wrong:
+  - answer: Git
+    explanation: Git was created in 2005, much later than CVS and RCS.
+  - answer: Subversion (SVN)
+    explanation: SVN was created in 2000 to replace CVS, so it came after.
+  - answer: Mercurial
+    explanation: Mercurial was created around the same time as Git in 2005.
+  - answer: Perforce
+    explanation: Perforce was created in 1995, after CVS was already widely used.
+
+- question: Who founded Oracle Corporation?
+  reason: Oracle is a major database and enterprise software company, making its founder important to know.
+  points: 3
+  right:
+  - answer: Larry Ellison
+    explanation: Larry Ellison co-founded Oracle Corporation in 1977 with Bob Miner and Ed Oates.
+    links:
+    - https://en.wikipedia.org/wiki/Larry_Ellison
+  wrong:
+  - answer: Bill Gates
+    explanation: Bill Gates co-founded Microsoft, not Oracle.
+  - answer: Steve Jobs
+    explanation: Steve Jobs co-founded Apple, not Oracle.
+  - answer: Michael Dell
+    explanation: Michael Dell founded Dell Technologies, not Oracle.
+  - answer: Jeff Bezos
+    explanation: Jeff Bezos founded Amazon, not Oracle.
+  - answer: Marc Benioff
+    explanation: Marc Benioff founded Salesforce after working at Oracle but did not found Oracle itself.
+
+- question: What does the acronym "HTML" stand for?
+  reason: HTML is fundamental to web development and every developer should know what it stands for.
+  points: 1
+  right:
+  - answer: HyperText Markup Language
+    explanation: HTML stands for HyperText Markup Language, the standard markup language for web pages.
+    links:
+    - https://en.wikipedia.org/wiki/HTML
+  wrong:
+  - answer: HyperText Modeling Language
+    explanation: HTML stands for HyperText Markup Language, not Modeling.
+  - answer: HighText Markup Language
+    explanation: HTML stands for HyperText Markup Language, not HighText.
+  - answer: HyperText Making Language
+    explanation: HTML stands for HyperText Markup Language, not Making.
+  - answer: HyperTool Markup Language
+    explanation: HTML stands for HyperText Markup Language, not HyperTool.
+  - answer: HyperText Management Language
+    explanation: HTML stands for HyperText Markup Language, not Management.
+
+- question: Who created the Swift programming language?
+  reason: Swift is the primary language for iOS and macOS development, making it important for mobile developers.
+  points: 4
+  right:
+  - answer: Chris Lattner
+    explanation: Chris Lattner created Swift at Apple, which was released in 2014.
+    links:
+    - https://en.wikipedia.org/wiki/Chris_Lattner
+  wrong:
+  - answer: Steve Jobs
+    explanation: Steve Jobs was CEO of Apple but did not create Swift.
+  - answer: Tim Cook
+    explanation: Tim Cook is CEO of Apple but did not create Swift.
+  - answer: Guido van Rossum
+    explanation: Guido van Rossum created Python, not Swift.
+  - answer: Anders Hejlsberg
+    explanation: Anders Hejlsberg created C# and TypeScript, not Swift.
+  - answer: James Gosling
+    explanation: James Gosling created Java, not Swift.
+
+- question: What does "API" stand for?
+  reason: APIs are fundamental to modern software development and integration.
+  points: 2
+  right:
+  - answer: Application Programming Interface
+    explanation: API stands for Application Programming Interface, a set of protocols for building software.
+    links:
+    - https://en.wikipedia.org/wiki/API
+  wrong:
+  - answer: Application Program Integration
+    explanation: API stands for Application Programming Interface, not Integration.
+  - answer: Advanced Programming Interface
+    explanation: API stands for Application Programming Interface, not Advanced.
+  - answer: Application Process Interface
+    explanation: API stands for Application Programming Interface, not Process.
+  - answer: Automated Programming Interface
+    explanation: API stands for Application Programming Interface, not Automated.
+  - answer: Application Protocol Interface
+    explanation: API stands for Application Programming Interface, not Protocol.
+
+- question: Who created the Scala programming language?
+  reason: Scala is used in big data processing and combines object-oriented and functional programming.
+  points: 6
+  right:
+  - answer: Martin Odersky
+    explanation: Martin Odersky created Scala in 2004, combining object-oriented and functional programming paradigms.
+    links:
+    - https://en.wikipedia.org/wiki/Martin_Odersky
+  wrong:
+  - answer: James Gosling
+    explanation: James Gosling created Java, not Scala.
+  - answer: Yukihiro Matsumoto
+    explanation: Yukihiro Matsumoto created Ruby, not Scala.
+  - answer: Guido van Rossum
+    explanation: Guido van Rossum created Python, not Scala.
+  - answer: Anders Hejlsberg
+    explanation: Anders Hejlsberg created C# and TypeScript, not Scala.
+  - answer: Rich Hickey
+    explanation: Rich Hickey created Clojure, not Scala.
+
+- question: What company developed the Android operating system?
+  reason: Android is the most widely used mobile operating system, making its origin important to understand.
+  points: 2
+  right:
+  - answer: Android Inc. (later acquired by Google)
+    explanation: Android was originally developed by Android Inc., founded by Andy Rubin and others in 2003, and acquired by Google in 2005.
+    links:
+    - https://en.wikipedia.org/wiki/Android_(operating_system)
+  wrong:
+  - answer: Google (originally)
+    explanation: Google acquired Android Inc. but did not originally develop it.
+  - answer: Apple
+    explanation: Apple developed iOS, not Android.
+  - answer: Microsoft
+    explanation: Microsoft developed Windows Phone, not Android.
+  - answer: Samsung
+    explanation: Samsung uses Android but did not develop it.
+  - answer: Motorola
+    explanation: Motorola uses Android but did not develop it.
+
+- question: Who founded Tesla Motors?
+  reason: Tesla has revolutionized electric vehicles and its founding story is important for understanding tech entrepreneurship, though Elon Musk is not the founder.
+  points: 5
+  right:
+  - answer: Martin Eberhard and Marc Tarpenning
+    explanation: Martin Eberhard and Marc Tarpenning founded Tesla Motors in 2003; Elon Musk was an early investor and later became CEO.
+    links:
+    - https://en.wikipedia.org/wiki/Tesla,_Inc.
+  wrong:
+  - answer: Elon Musk
+    explanation: Elon Musk was an early investor and became CEO but was not a founder, despite later legal settlements allowing him to use the title.
+  - answer: JB Straubel
+    explanation: JB Straubel was an early employee and co-founder by some accounts but not the original founder.
+  - answer: Jeff Bezos
+    explanation: Jeff Bezos founded Amazon, not Tesla.
+  - answer: Larry Page
+    explanation: Larry Page co-founded Google, not Tesla.
+  - answer: Henry Ford
+    explanation: Henry Ford founded Ford Motor Company over a century earlier.
+
+- question: What does "IDE" stand for in software development?
+  reason: IDEs are essential tools for software development and understanding the term is fundamental.
+  points: 2
+  right:
+  - answer: Integrated Development Environment
+    explanation: IDE stands for Integrated Development Environment, software for building applications.
+    links:
+    - https://en.wikipedia.org/wiki/Integrated_development_environment
+  wrong:
+  - answer: Interactive Development Environment
+    explanation: IDE stands for Integrated Development Environment, not Interactive.
+  - answer: Internal Development Environment
+    explanation: IDE stands for Integrated Development Environment, not Internal.
+  - answer: Intelligent Development Environment
+    explanation: IDE stands for Integrated Development Environment, not Intelligent.
+  - answer: Interface Development Environment
+    explanation: IDE stands for Integrated Development Environment, not Interface.
+  - answer: Independent Development Environment
+    explanation: IDE stands for Integrated Development Environment, not Independent.
+
+- question: Who created the Kotlin programming language?
+  reason: Kotlin is now the preferred language for Android development and is growing in enterprise use.
+  points: 5
+  right:
+  - answer: JetBrains
+    explanation: Kotlin was created by JetBrains in 2011 and officially released in 2016.
+    links:
+    - https://en.wikipedia.org/wiki/Kotlin_(programming_language)
+  wrong:
+  - answer: Google
+    explanation: Google endorsed Kotlin for Android but did not create it.
+  - answer: Oracle
+    explanation: Oracle owns Java but did not create Kotlin.
+  - answer: Microsoft
+    explanation: Microsoft created C# and TypeScript, not Kotlin.
+  - answer: Apple
+    explanation: Apple created Swift, not Kotlin.
+  - answer: Mozilla
+    explanation: Mozilla sponsored Rust, not Kotlin.
+
+- question: What was the original name of the company that became Google?
+  reason: Understanding Google's origin story provides insight into tech company evolution and naming.
+  points: 5
+  right:
+  - answer: BackRub
+    explanation: Larry Page and Sergey Brin originally named their search engine BackRub before renaming it Google in 1997.
+    links:
+    - https://en.wikipedia.org/wiki/History_of_Google
+  wrong:
+  - answer: SearchPro
+    explanation: Google was originally called BackRub, not SearchPro.
+  - answer: WebCrawler
+    explanation: WebCrawler was a different search engine, not Google's original name.
+  - answer: PageRank
+    explanation: PageRank was the algorithm name, not the company or search engine name.
+  - answer: Stanford Search
+    explanation: While developed at Stanford, it was called BackRub, not Stanford Search.
+  - answer: AltaVista
+    explanation: AltaVista was a competing search engine, not Google's original name.
+
+- question: Who created the TypeScript programming language?
+  reason: TypeScript has become essential for large-scale JavaScript development and is widely used in enterprise applications.
+  points: 4
+  right:
+  - answer: Anders Hejlsberg
+    explanation: Anders Hejlsberg created TypeScript at Microsoft, first released in 2012.
+    links:
+    - https://en.wikipedia.org/wiki/TypeScript
+  wrong:
+  - answer: Brendan Eich
+    explanation: Brendan Eich created JavaScript, not TypeScript.
+  - answer: Ryan Dahl
+    explanation: Ryan Dahl created Node.js, not TypeScript.
+  - answer: Douglas Crockford
+    explanation: Douglas Crockford popularized JSON and wrote about JavaScript but did not create TypeScript.
+  - answer: Guido van Rossum
+    explanation: Guido van Rossum created Python, not TypeScript.
+  - answer: James Gosling
+    explanation: James Gosling created Java, not TypeScript.
+
+- question: What company did Elon Musk co-found that became PayPal?
+  reason: Understanding the history of online payments and Elon Musk's entrepreneurial background is relevant to tech history.
+  points: 4
+  right:
+  - answer: X.com
+    explanation: Elon Musk co-founded X.com in 1999, which merged with Confinity to become PayPal.
+    links:
+    - https://en.wikipedia.org/wiki/PayPal
+  wrong:
+  - answer: PayPal
+    explanation: PayPal was the result of a merger; Musk originally founded X.com.
+  - answer: Confinity
+    explanation: Confinity was founded by Peter Thiel and Max Levchin, which merged with Musk's X.com.
+  - answer: Tesla
+    explanation: Musk joined Tesla as an investor, not a founder, and this was later than X.com.
+  - answer: SpaceX
+    explanation: Musk founded SpaceX after the PayPal acquisition.
+  - answer: Zip2
+    explanation: Musk co-founded Zip2 before X.com, but Zip2 did not become PayPal.
+
+- question: Who created the Node.js runtime environment?
+  reason: Node.js revolutionized JavaScript development by bringing it to the server-side and is widely used in modern web development.
+  points: 4
+  right:
+  - answer: Ryan Dahl
+    explanation: Ryan Dahl created Node.js in 2009, enabling JavaScript to run outside the browser.
+    links:
+    - https://en.wikipedia.org/wiki/Node.js
+  wrong:
+  - answer: Brendan Eich
+    explanation: Brendan Eich created JavaScript but not Node.js.
+  - answer: Douglas Crockford
+    explanation: Douglas Crockford contributed to JavaScript development but did not create Node.js.
+  - answer: Guido van Rossum
+    explanation: Guido van Rossum created Python, not Node.js.
+  - answer: James Gosling
+    explanation: James Gosling created Java, not Node.js.
+  - answer: Anders Hejlsberg
+    explanation: Anders Hejlsberg created TypeScript, not Node.js.
+
+- question: What does "CSS" stand for?
+  reason: CSS is fundamental to web development alongside HTML and JavaScript.
+  points: 1
+  right:
+  - answer: Cascading Style Sheets
+    explanation: CSS stands for Cascading Style Sheets, used for styling web pages.
+    links:
+    - https://en.wikipedia.org/wiki/CSS
+  wrong:
+  - answer: Computer Style Sheets
+    explanation: CSS stands for Cascading Style Sheets, not Computer.
+  - answer: Creative Style Sheets
+    explanation: CSS stands for Cascading Style Sheets, not Creative.
+  - answer: Colorful Style Sheets
+    explanation: CSS stands for Cascading Style Sheets, not Colorful.
+  - answer: Cascading System Sheets
+    explanation: CSS stands for Cascading Style Sheets, not System.
+  - answer: Central Style Sheets
+    explanation: CSS stands for Cascading Style Sheets, not Central.
+
+- question: Who founded Netflix?
+  reason: Netflix revolutionized content streaming and understanding its founding is relevant to tech disruption.
+  points: 3
+  right:
+  - answer: Reed Hastings and Marc Randolph
+    explanation: Reed Hastings and Marc Randolph founded Netflix in 1997 as a DVD rental service.
+    links:
+    - https://en.wikipedia.org/wiki/Netflix
+  wrong:
+  - answer: Jeff Bezos
+    explanation: Jeff Bezos founded Amazon, which later competed with Netflix in streaming.
+  - answer: Steve Jobs
+    explanation: Steve Jobs founded Apple, which later created Apple TV+ to compete with Netflix.
+  - answer: Mark Zuckerberg
+    explanation: Mark Zuckerberg founded Facebook, not Netflix.
+  - answer: Larry Page
+    explanation: Larry Page co-founded Google, not Netflix.
+  - answer: Jack Dorsey
+    explanation: Jack Dorsey co-founded Twitter, not Netflix.
+
+- question: What was the first computer virus that spread widely in the wild?
+  reason: Understanding cybersecurity history is important for modern security practices.
+  points: 6
+  right:
+  - answer: Creeper
+    explanation: Creeper, created in 1971, is considered the first computer virus, though the Brain virus (1986) or Morris Worm (1988) are often cited as first widespread viruses.
+    links:
+    - https://en.wikipedia.org/wiki/Creeper_(program)
+  - answer: Brain
+    explanation: Brain, created in 1986, is considered the first widespread PC virus.
+  wrong:
+  - answer: ILOVEYOU
+    explanation: ILOVEYOU was a major virus from 2000 but not the first.
+  - answer: Melissa
+    explanation: Melissa was a virus from 1999 but not the first.
+  - answer: Code Red
+    explanation: Code Red was a worm from 2001 but not the first virus.
+  - answer: WannaCry
+    explanation: WannaCry was ransomware from 2017, not the first virus.
+
+- question: Who created the Clojure programming language?
+  reason: Clojure is a functional programming language that runs on the JVM and is used in enterprise applications.
+  points: 7
+  right:
+  - answer: Rich Hickey
+    explanation: Rich Hickey created Clojure in 2007 as a functional LISP dialect for the JVM.
+    links:
+    - https://en.wikipedia.org/wiki/Clojure
+  wrong:
+  - answer: Martin Odersky
+    explanation: Martin Odersky created Scala, not Clojure.
+  - answer: John McCarthy
+    explanation: John McCarthy created LISP, which influenced Clojure, but not Clojure itself.
+  - answer: James Gosling
+    explanation: James Gosling created Java, not Clojure.
+  - answer: Anders Hejlsberg
+    explanation: Anders Hejlsberg created C# and TypeScript, not Clojure.
+  - answer: Yukihiro Matsumoto
+    explanation: Yukihiro Matsumoto created Ruby, not Clojure.
+
+- question: What does "HTTP" stand for?
+  reason: HTTP is the foundation of web communication and essential knowledge for web developers.
+  points: 2
+  right:
+  - answer: HyperText Transfer Protocol
+    explanation: HTTP stands for HyperText Transfer Protocol, the protocol for transmitting web pages.
+    links:
+    - https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol
+  wrong:
+  - answer: HyperText Transmission Protocol
+    explanation: HTTP stands for HyperText Transfer Protocol, not Transmission.
+  - answer: HighText Transfer Protocol
+    explanation: HTTP stands for HyperText Transfer Protocol, not HighText.
+  - answer: HyperText Transport Protocol
+    explanation: HTTP stands for HyperText Transfer Protocol, not Transport (though similar).
+  - answer: HyperTool Transfer Protocol
+    explanation: HTTP stands for HyperText Transfer Protocol, not HyperTool.
+  - answer: HyperText Technical Protocol
+    explanation: HTTP stands for HyperText Transfer Protocol, not Technical.
+
+- question: Who founded Salesforce?
+  reason: Salesforce pioneered cloud-based CRM and understanding its founding is relevant to SaaS history.
+  points: 4
+  right:
+  - answer: Marc Benioff
+    explanation: Marc Benioff founded Salesforce in 1999, pioneering cloud-based customer relationship management.
+    links:
+    - https://en.wikipedia.org/wiki/Marc_Benioff
+  wrong:
+  - answer: Larry Ellison
+    explanation: Larry Ellison founded Oracle; Benioff worked at Oracle before founding Salesforce.
+  - answer: Bill Gates
+    explanation: Bill Gates co-founded Microsoft, not Salesforce.
+  - answer: Jeff Bezos
+    explanation: Jeff Bezos founded Amazon, not Salesforce.
+  - answer: Steve Jobs
+    explanation: Steve Jobs co-founded Apple, not Salesforce.
+  - answer: Michael Dell
+    explanation: Michael Dell founded Dell Technologies, not Salesforce.
+
+- question: What was the first social networking website to reach widespread popularity?
+  reason: Understanding social media history provides context for modern platform development.
+  points: 4
+  right:
+  - answer: Friendster
+    explanation: Friendster, launched in 2002, was one of the first social networks to gain widespread popularity before MySpace and Facebook.
+    links:
+    - https://en.wikipedia.org/wiki/Friendster
+  - answer: Six Degrees
+    explanation: Six Degrees, launched in 1997, was actually the first recognizable social network but had less widespread impact than Friendster.
+  wrong:
+  - answer: Facebook
+    explanation: Facebook came later in 2004 after Friendster and MySpace.
+  - answer: MySpace
+    explanation: MySpace launched in 2003, after Friendster.
+  - answer: Twitter
+    explanation: Twitter launched in 2006, after several other social networks.
+  - answer: LinkedIn
+    explanation: LinkedIn launched in 2003 for professional networking but Friendster came first for general social networking.
+
+- question: Who created the Django web framework?
+  reason: Django is a popular Python web framework used in many web applications and startups.
+  points: 5
+  right:
+  - answer: Adrian Holovaty and Simon Willison
+    explanation: Django was created by Adrian Holovaty and Simon Willison in 2003 at the Lawrence Journal-World newspaper.
+    links:
+    - https://en.wikipedia.org/wiki/Django_(web_framework)
+  wrong:
+  - answer: Guido van Rossum
+    explanation: Guido van Rossum created Python but not Django.
+  - answer: David Heinemeier Hansson
+    explanation: David Heinemeier Hansson created Ruby on Rails, not Django.
+  - answer: Taylor Otwell
+    explanation: Taylor Otwell created Laravel for PHP, not Django.
+  - answer: Evan You
+    explanation: Evan You created Vue.js, not Django.
+  - answer: Ryan Dahl
+    explanation: Ryan Dahl created Node.js, not Django.
+
+- question: What does "GPU" stand for?
+  reason: GPUs are essential for graphics, gaming, and increasingly for AI/machine learning workloads.
+  points: 2
+  right:
+  - answer: Graphics Processing Unit
+    explanation: GPU stands for Graphics Processing Unit, specialized hardware for rendering graphics and parallel processing.
+    links:
+    - https://en.wikipedia.org/wiki/Graphics_processing_unit
+  wrong:
+  - answer: General Processing Unit
+    explanation: GPU stands for Graphics Processing Unit, not General.
+  - answer: Graphical Program Unit
+    explanation: GPU stands for Graphics Processing Unit, not Program.
+  - answer: Gaming Processing Unit
+    explanation: GPU stands for Graphics Processing Unit, not Gaming.
+  - answer: Graphics Performance Unit
+    explanation: GPU stands for Graphics Processing Unit, not Performance.
+  - answer: Global Processing Unit
+    explanation: GPU stands for Graphics Processing Unit, not Global.
+
+- question: Who founded Nvidia?
+  reason: Nvidia is a leader in GPU technology and AI hardware, making its founding relevant to modern computing.
+  points: 5
+  right:
+  - answer: Jensen Huang, Chris Malachowsky, and Curtis Priem
+    explanation: Nvidia was founded in 1993 by Jensen Huang, Chris Malachowsky, and Curtis Priem.
+    links:
+    - https://en.wikipedia.org/wiki/Nvidia
+  wrong:
+  - answer: Gordon Moore
+    explanation: Gordon Moore co-founded Intel, not Nvidia.
+  - answer: Steve Jobs
+    explanation: Steve Jobs co-founded Apple, not Nvidia.
+  - answer: Bill Gates
+    explanation: Bill Gates co-founded Microsoft, not Nvidia.
+  - answer: Larry Page
+    explanation: Larry Page co-founded Google, not Nvidia.
+  - answer: Michael Dell
+    explanation: Michael Dell founded Dell, not Nvidia.
+
+- question: What does "RAM" stand for?
+  reason: RAM is fundamental computer hardware and understanding the term is essential for anyone in technology.
+  points: 1
+  right:
+  - answer: Random Access Memory
+    explanation: RAM stands for Random Access Memory, the primary memory for running programs.
+    links:
+    - https://en.wikipedia.org/wiki/Random-access_memory
+  wrong:
+  - answer: Rapid Access Memory
+    explanation: RAM stands for Random Access Memory, not Rapid.
+  - answer: Read Access Memory
+    explanation: RAM stands for Random Access Memory, not Read.
+  - answer: Random Application Memory
+    explanation: RAM stands for Random Access Memory, not Application.
+  - answer: Ready Access Memory
+    explanation: RAM stands for Random Access Memory, not Ready.
+  - answer: Real Access Memory
+    explanation: RAM stands for Random Access Memory, not Real.
+
+- question: Who created the Ruby on Rails web framework?
+  reason: Rails revolutionized web development and understanding its creator is important for web development history.
+  points: 4
+  right:
+  - answer: David Heinemeier Hansson
+    explanation: David Heinemeier Hansson created Ruby on Rails in 2004 while working on Basecamp.
+    links:
+    - https://en.wikipedia.org/wiki/Ruby_on_Rails
+  wrong:
+  - answer: Yukihiro Matsumoto
+    explanation: Yukihiro Matsumoto created Ruby language but not Rails.
+  - answer: Adrian Holovaty
+    explanation: Adrian Holovaty co-created Django for Python, not Rails.
+  - answer: Taylor Otwell
+    explanation: Taylor Otwell created Laravel for PHP, not Rails.
+  - answer: Ryan Dahl
+    explanation: Ryan Dahl created Node.js, not Rails.
+  - answer: Guido van Rossum
+    explanation: Guido van Rossum created Python, not Rails.
+
+- question: What company did Steve Ballmer serve as CEO of for 14 years?
+  reason: Understanding Microsoft's leadership history is relevant to computing industry knowledge.
+  points: 3
+  right:
+  - answer: Microsoft
+    explanation: Steve Ballmer was CEO of Microsoft from 2000 to 2014, succeeding Bill Gates.
+    links:
+    - https://en.wikipedia.org/wiki/Steve_Ballmer
+  wrong:
+  - answer: Apple
+    explanation: Steve Jobs and Tim Cook were CEOs of Apple, not Steve Ballmer.
+  - answer: Google
+    explanation: Larry Page, Eric Schmidt, and Sundar Pichai have been CEOs of Google, not Ballmer.
+  - answer: Oracle
+    explanation: Larry Ellison was CEO of Oracle, not Steve Ballmer.
+  - answer: IBM
+    explanation: Various executives led IBM, but not Steve Ballmer.
+  - answer: Intel
+    explanation: Steve Ballmer was not CEO of Intel.
+
+- question: What does "CPU" stand for?
+  reason: The CPU is the brain of the computer and understanding this term is fundamental.
+  points: 1
+  right:
+  - answer: Central Processing Unit
+    explanation: CPU stands for Central Processing Unit, the primary component that executes instructions.
+    links:
+    - https://en.wikipedia.org/wiki/Central_processing_unit
+  wrong:
+  - answer: Computer Processing Unit
+    explanation: CPU stands for Central Processing Unit, not Computer.
+  - answer: Central Program Unit
+    explanation: CPU stands for Central Processing Unit, not Program.
+  - answer: Core Processing Unit
+    explanation: CPU stands for Central Processing Unit, not Core.
+  - answer: Central Performance Unit
+    explanation: CPU stands for Central Processing Unit, not Performance.
+  - answer: Computational Processing Unit
+    explanation: CPU stands for Central Processing Unit, not Computational.
+
+- question: Who created the MongoDB database?
+  reason: MongoDB is a widely used NoSQL database and understanding its origins is relevant for database work.
+  points: 5
+  right:
+  - answer: Dwight Merriman, Eliot Horowitz, and Kevin Ryan
+    explanation: MongoDB was created by Dwight Merriman, Eliot Horowitz, and Kevin Ryan at 10gen (later MongoDB Inc.) in 2007.
+    links:
+    - https://en.wikipedia.org/wiki/MongoDB
+  wrong:
+  - answer: Michael Widenius
+    explanation: Michael Widenius created MySQL, not MongoDB.
+  - answer: Larry Ellison
+    explanation: Larry Ellison co-founded Oracle, not MongoDB.
+  - answer: Michael Stonebraker
+    explanation: Michael Stonebraker created PostgreSQL and other databases, not MongoDB.
+  - answer: Salvatore Sanfilippo
+    explanation: Salvatore Sanfilippo created Redis, not MongoDB.
+  - answer: Brad Fitzpatrick
+    explanation: Brad Fitzpatrick created Memcached, not MongoDB.
+
+- question: What programming language was originally called Oak?
+  reason: Understanding the history of Java's development provides context for its design decisions.
+  points: 5
+  right:
+  - answer: Java
+    explanation: Java was originally called Oak when James Gosling created it at Sun Microsystems in 1991, renamed to Java in 1995.
+    links:
+    - https://en.wikipedia.org/wiki/Java_(programming_language)
+  wrong:
+  - answer: JavaScript
+    explanation: JavaScript was originally called Mocha and LiveScript, not Oak.
+  - answer: C++
+    explanation: C++ was called "C with Classes" before being renamed, not Oak.
+  - answer: Python
+    explanation: Python was never called Oak.
+  - answer: Ruby
+    explanation: Ruby was never called Oak.
+  - answer: Kotlin
+    explanation: Kotlin was never called Oak.
+
+- question: Who founded SpaceX?
+  reason: SpaceX has revolutionized space technology and its founder is a major figure in technology.
+  points: 2
+  right:
+  - answer: Elon Musk
+    explanation: Elon Musk founded SpaceX (Space Exploration Technologies Corp.) in 2002.
+    links:
+    - https://en.wikipedia.org/wiki/SpaceX
+  wrong:
+  - answer: Jeff Bezos
+    explanation: Jeff Bezos founded Blue Origin, not SpaceX.
+  - answer: Richard Branson
+    explanation: Richard Branson founded Virgin Galactic, not SpaceX.
+  - answer: Larry Page
+    explanation: Larry Page co-founded Google, not SpaceX.
+  - answer: Peter Thiel
+    explanation: Peter Thiel co-founded PayPal but not SpaceX.
+  - answer: Steve Jobs
+    explanation: Steve Jobs co-founded Apple, not SpaceX.
+
+- question: What does "JSON" stand for?
+  reason: JSON is the most common data interchange format in modern web development.
+  points: 3
+  right:
+  - answer: JavaScript Object Notation
+    explanation: JSON stands for JavaScript Object Notation, a lightweight data interchange format.
+    links:
+    - https://en.wikipedia.org/wiki/JSON
+  wrong:
+  - answer: Java Standard Object Notation
+    explanation: JSON stands for JavaScript Object Notation, not Java Standard.
+  - answer: JavaScript Online Notation
+    explanation: JSON stands for JavaScript Object Notation, not Online.
+  - answer: Joint Standard Object Notation
+    explanation: JSON stands for JavaScript Object Notation, not Joint Standard.
+  - answer: JavaScript Operational Notation
+    explanation: JSON stands for JavaScript Object Notation, not Operational.
+  - answer: Java Simple Object Notation
+    explanation: JSON stands for JavaScript Object Notation, not Java Simple.
+
+- question: Who created the Redis database?
+  reason: Redis is widely used for caching and real-time applications, making its creator relevant to know.
+  points: 6
+  right:
+  - answer: Salvatore Sanfilippo
+    explanation: Salvatore Sanfilippo (antirez) created Redis in 2009.
+    links:
+    - https://en.wikipedia.org/wiki/Redis
+  wrong:
+  - answer: Dwight Merriman
+    explanation: Dwight Merriman co-created MongoDB, not Redis.
+  - answer: Michael Widenius
+    explanation: Michael Widenius created MySQL, not Redis.
+  - answer: Brad Fitzpatrick
+    explanation: Brad Fitzpatrick created Memcached, not Redis.
+  - answer: Michael Stonebraker
+    explanation: Michael Stonebraker created PostgreSQL, not Redis.
+  - answer: Larry Ellison
+    explanation: Larry Ellison co-founded Oracle, not Redis.
+
+- question: What was the first graphical web browser to achieve widespread use?
+  reason: Understanding browser history is important for web development context.
+  points: 4
+  right:
+  - answer: NCSA Mosaic
+    explanation: NCSA Mosaic, released in 1993, was the first graphical web browser to achieve widespread popularity.
+    links:
+    - https://en.wikipedia.org/wiki/Mosaic_(web_browser)
+  wrong:
+  - answer: Netscape Navigator
+    explanation: Netscape Navigator came after Mosaic in 1994, though it became more popular.
+  - answer: Internet Explorer
+    explanation: Internet Explorer was released in 1995, after Mosaic.
+  - answer: Opera
+    explanation: Opera was released in 1995, after Mosaic.
+  - answer: Firefox
+    explanation: Firefox was released in 2004, much later than Mosaic.
+  - answer: Chrome
+    explanation: Chrome was released in 2008, much later than Mosaic.
+
+- question: Who created the Haskell programming language?
+  reason: Haskell is an influential functional programming language used in academia and some industries.
+  points: 7
+  right:
+  - answer: A committee of researchers led by Paul Hudak, John Hughes, and others
+    explanation: Haskell was created by a committee of researchers in 1990 to consolidate functional programming languages.
+    links:
+    - https://en.wikipedia.org/wiki/Haskell_(programming_language)
+  wrong:
+  - answer: John McCarthy
+    explanation: John McCarthy created LISP, not Haskell.
+  - answer: Martin Odersky
+    explanation: Martin Odersky created Scala, not Haskell.
+  - answer: Rich Hickey
+    explanation: Rich Hickey created Clojure, not Haskell.
+  - answer: Simon Peyton Jones alone
+    explanation: Simon Peyton Jones was a major contributor but Haskell was created by a committee.
+  - answer: Philip Wadler
+    explanation: Philip Wadler contributed to Haskell but was part of a committee, not the sole creator.
+
+- question: What does "BIOS" stand for?
+  reason: BIOS is fundamental computer firmware and understanding the term is important for system-level knowledge.
+  points: 3
+  right:
+  - answer: Basic Input/Output System
+    explanation: BIOS stands for Basic Input/Output System, firmware that initializes hardware during booting.
+    links:
+    - https://en.wikipedia.org/wiki/BIOS
+  wrong:
+  - answer: Binary Input/Output System
+    explanation: BIOS stands for Basic Input/Output System, not Binary.
+  - answer: Boot Input/Output System
+    explanation: BIOS stands for Basic Input/Output System, not Boot.
+  - answer: Basic Integrated Operating System
+    explanation: BIOS stands for Basic Input/Output System, not Integrated Operating.
+  - answer: Basic Internal Operating System
+    explanation: BIOS stands for Basic Input/Output System, not Internal Operating.
+  - answer: Base Input/Output System
+    explanation: BIOS stands for Basic Input/Output System, not Base.
+
+- question: Who founded Intel Corporation?
+  reason: Intel has been fundamental to the development of microprocessors and computer architecture.
+  points: 4
+  right:
+  - answer: Gordon Moore and Robert Noyce
+    explanation: Intel was founded in 1968 by Gordon Moore and Robert Noyce, along with Andrew Grove who joined shortly after.
+    links:
+    - https://en.wikipedia.org/wiki/Intel
+  wrong:
+  - answer: Bill Gates and Paul Allen
+    explanation: Gates and Allen founded Microsoft, not Intel.
+  - answer: Steve Jobs and Steve Wozniak
+    explanation: Jobs and Wozniak founded Apple, not Intel.
+  - answer: Andy Grove alone
+    explanation: Andy Grove joined Intel early and became CEO but was not a founder.
+  - answer: Jensen Huang
+    explanation: Jensen Huang co-founded Nvidia, not Intel.
+  - answer: Jack Kilby
+    explanation: Jack Kilby invented the integrated circuit at Texas Instruments but did not found Intel.
+
+- question: What does "URL" stand for?
+  reason: URLs are fundamental to web navigation and every web developer should know this.
+  points: 2
+  right:
+  - answer: Uniform Resource Locator
+    explanation: URL stands for Uniform Resource Locator, the address of a resource on the internet.
+    links:
+    - https://en.wikipedia.org/wiki/URL
+  wrong:
+  - answer: Universal Resource Locator
+    explanation: URL stands for Uniform Resource Locator, not Universal.
+  - answer: Unique Resource Locator
+    explanation: URL stands for Uniform Resource Locator, not Unique.
+  - answer: United Resource Locator
+    explanation: URL stands for Uniform Resource Locator, not United.
+  - answer: Uniform Reference Locator
+    explanation: URL stands for Uniform Resource Locator, not Reference.
+  - answer: Universal Reference Locator
+    explanation: URL stands for Uniform Resource Locator, not Universal Reference.
+
+- question: Who created the Erlang programming language?
+  reason: Erlang is important for telecommunications and distributed systems, particularly in high-availability applications.
+  points: 7
+  right:
+  - answer: Joe Armstrong, Robert Virding, and Mike Williams
+    explanation: Erlang was created at Ericsson in 1986 by Joe Armstrong, Robert Virding, and Mike Williams for telecommunications systems.
+    links:
+    - https://en.wikipedia.org/wiki/Erlang_(programming_language)
+  wrong:
+  - answer: Yukihiro Matsumoto
+    explanation: Yukihiro Matsumoto created Ruby, not Erlang.
+  - answer: José Valim
+    explanation: José Valim created Elixir, which runs on the Erlang VM, but not Erlang itself.
+  - answer: Rich Hickey
+    explanation: Rich Hickey created Clojure, not Erlang.
+  - answer: Martin Odersky
+    explanation: Martin Odersky created Scala, not Erlang.
+  - answer: Guido van Rossum
+    explanation: Guido van Rossum created Python, not Erlang.
+
+- question: What company originally developed the Macintosh computer?
+  reason: The Macintosh revolutionized personal computing with its GUI, making its origins important to know.
+  points: 2
+  right:
+  - answer: Apple
+    explanation: Apple developed and released the Macintosh computer in 1984.
+    links:
+    - https://en.wikipedia.org/wiki/Macintosh
+  wrong:
+  - answer: IBM
+    explanation: IBM developed the IBM PC, not the Macintosh.
+  - answer: Microsoft
+    explanation: Microsoft developed software but not the Macintosh hardware.
+  - answer: Xerox
+    explanation: Xerox PARC influenced the Macintosh but Apple developed it.
+  - answer: Commodore
+    explanation: Commodore developed the Commodore 64 and Amiga, not the Macintosh.
+  - answer: Atari
+    explanation: Atari developed gaming systems and computers but not the Macintosh.
+
+- question: Who created the Elixir programming language?
+  reason: Elixir is growing in popularity for scalable web applications and distributed systems.
+  points: 6
+  right:
+  - answer: José Valim
+    explanation: José Valim created Elixir in 2011, building on the Erlang VM for better developer productivity.
+    links:
+    - https://en.wikipedia.org/wiki/Elixir_(programming_language)
+  wrong:
+  - answer: Joe Armstrong
+    explanation: Joe Armstrong created Erlang, which Elixir runs on, but not Elixir itself.
+  - answer: Yukihiro Matsumoto
+    explanation: Yukihiro Matsumoto created Ruby, not Elixir.
+  - answer: Rich Hickey
+    explanation: Rich Hickey created Clojure, not Elixir.
+  - answer: David Heinemeier Hansson
+    explanation: David Heinemeier Hansson created Ruby on Rails, not Elixir.
+  - answer: Chris Lattner
+    explanation: Chris Lattner created Swift, not Elixir.
+
+- question: What does "DNS" stand for?
+  reason: DNS is fundamental to internet infrastructure and how web addresses work.
+  points: 3
+  right:
+  - answer: Domain Name System
+    explanation: DNS stands for Domain Name System, which translates domain names to IP addresses.
+    links:
+    - https://en.wikipedia.org/wiki/Domain_Name_System
+  wrong:
+  - answer: Domain Network System
+    explanation: DNS stands for Domain Name System, not Network.
+  - answer: Digital Name System
+    explanation: DNS stands for Domain Name System, not Digital.
+  - answer: Domain Naming System
+    explanation: DNS stands for Domain Name System, not Naming (though close in meaning).
+  - answer: Dynamic Name System
+    explanation: DNS stands for Domain Name System, not Dynamic.
+  - answer: Distributed Name System
+    explanation: DNS stands for Domain Name System, not Distributed (though it is distributed).
+
+- question: Who created the Vim text editor?
+  reason: Vim is widely used by developers and system administrators for text editing.
+  points: 5
+  right:
+  - answer: Bram Moolenaar
+    explanation: Bram Moolenaar created Vim in 1991 as an improved version of Vi.
+    links:
+    - https://en.wikipedia.org/wiki/Vim_(text_editor)
+  wrong:
+  - answer: Bill Joy
+    explanation: Bill Joy created the original Vi editor, which Vim improved upon.
+  - answer: Richard Stallman
+    explanation: Richard Stallman created Emacs, not Vim.
+  - answer: Linus Torvalds
+    explanation: Linus Torvalds created Linux and Git, not Vim.
+  - answer: Ken Thompson
+    explanation: Ken Thompson co-created Unix but not Vim.
+  - answer: Dennis Ritchie
+    explanation: Dennis Ritchie created C but not Vim.
+
+- question: What was the original code name for Windows 95?
+  reason: Understanding Microsoft's product history provides context for operating system development.
+  points: 6
+  right:
+  - answer: Chicago
+    explanation: Windows 95 was code-named Chicago during its development at Microsoft.
+    links:
+    - https://en.wikipedia.org/wiki/Windows_95
+  wrong:
+  - answer: Longhorn
+    explanation: Longhorn was the code name for Windows Vista, not Windows 95.
+  - answer: Whistler
+    explanation: Whistler was the code name for Windows XP, not Windows 95.
+  - answer: Vienna
+    explanation: Vienna was never an official Windows code name.
+  - answer: Memphis
+    explanation: Memphis was the code name for Windows 98, not Windows 95.
+  - answer: Seattle
+    explanation: Seattle was not the code name for Windows 95.
+
+- question: Who created the Lua programming language?
+  reason: Lua is widely used in game development and embedded systems.
+  points: 6
+  right:
+  - answer: Roberto Ierusalimschy, Luiz Henrique de Figueiredo, and Waldemar Celes
+    explanation: Lua was created in 1993 at PUC-Rio in Brazil by Roberto Ierusalimschy, Luiz Henrique de Figueiredo, and Waldemar Celes.
+    links:
+    - https://en.wikipedia.org/wiki/Lua_(programming_language)
+  wrong:
+  - answer: Yukihiro Matsumoto
+    explanation: Yukihiro Matsumoto created Ruby, not Lua.
+  - answer: Guido van Rossum
+    explanation: Guido van Rossum created Python, not Lua.
+  - answer: Larry Wall
+    explanation: Larry Wall created Perl, not Lua.
+  - answer: James Gosling
+    explanation: James Gosling created Java, not Lua.
+  - answer: John Romero
+    explanation: John Romero co-created Doom, which used Lua-like scripting, but did not create Lua.
+
+- question: What does "FTP" stand for?
+  reason: FTP is a common protocol for file transfer and understanding it is important for web development.
+  points: 3
+  right:
+  - answer: File Transfer Protocol
+    explanation: FTP stands for File Transfer Protocol, used for transferring files between computers.
+    links:
+    - https://en.wikipedia.org/wiki/File_Transfer_Protocol
+  wrong:
+  - answer: Fast Transfer Protocol
+    explanation: FTP stands for File Transfer Protocol, not Fast.
+  - answer: File Transmission Protocol
+    explanation: FTP stands for File Transfer Protocol, not Transmission.
+  - answer: Folder Transfer Protocol
+    explanation: FTP stands for File Transfer Protocol, not Folder.
+  - answer: Full Transfer Protocol
+    explanation: FTP stands for File Transfer Protocol, not Full.
+  - answer: File Transport Protocol
+    explanation: FTP stands for File Transfer Protocol, not Transport (though similar).
+
+- question: Who founded AMD (Advanced Micro Devices)?
+  reason: AMD is a major competitor to Intel in processor manufacturing and its history is important.
+  points: 6
+  right:
+  - answer: Jerry Sanders and seven co-founders
+    explanation: AMD was founded in 1969 by Jerry Sanders III along with seven co-founders from Fairchild Semiconductor.
+    links:
+    - https://en.wikipedia.org/wiki/AMD
+  wrong:
+  - answer: Gordon Moore
+    explanation: Gordon Moore co-founded Intel, not AMD.
+  - answer: Steve Jobs
+    explanation: Steve Jobs co-founded Apple, not AMD.
+  - answer: Jensen Huang
+    explanation: Jensen Huang co-founded Nvidia, not AMD.
+  - answer: Bill Gates
+    explanation: Bill Gates co-founded Microsoft, not AMD.
+  - answer: Michael Dell
+    explanation: Michael Dell founded Dell, not AMD.
+
+- question: What programming language did Alan Kay and his team create at Xerox PARC?
+  reason: Smalltalk was influential in the development of object-oriented programming and GUI design.
+  points: 7
+  right:
+  - answer: Smalltalk
+    explanation: Alan Kay and his team at Xerox PARC created Smalltalk in the 1970s, pioneering object-oriented programming.
+    links:
+    - https://en.wikipedia.org/wiki/Smalltalk
+  wrong:
+  - answer: LISP
+    explanation: LISP was created by John McCarthy, not Alan Kay.
+  - answer: Simula
+    explanation: Simula was created by Ole-Johan Dahl and Kristen Nygaard, not Alan Kay.
+  - answer: C++
+    explanation: C++ was created by Bjarne Stroustrup, not Alan Kay.
+  - answer: Objective-C
+    explanation: Objective-C was created by Brad Cox and Tom Love, influenced by Smalltalk but not created by Kay.
+  - answer: Java
+    explanation: Java was created by James Gosling, not Alan Kay.
+
+- question: What does "SSH" stand for?
+  reason: SSH is essential for secure remote server access and is used daily by developers and system administrators.
+  points: 3
+  right:
+  - answer: Secure Shell
+    explanation: SSH stands for Secure Shell, a protocol for secure remote login and command execution.
+    links:
+    - https://en.wikipedia.org/wiki/Secure_Shell
+  wrong:
+  - answer: Secure Socket Host
+    explanation: SSH stands for Secure Shell, not Socket Host.
+  - answer: System Security Host
+    explanation: SSH stands for Secure Shell, not System Security Host.
+  - answer: Secure Server Host
+    explanation: SSH stands for Secure Shell, not Server Host.
+  - answer: Safe Shell
+    explanation: SSH stands for Secure Shell, not Safe Shell.
+  - answer: System Shell
+    explanation: SSH stands for Secure Shell, not System Shell.
+
+- question: Who created the Prolog programming language?
+  reason: Prolog is important in artificial intelligence and logic programming.
+  points: 7
+  right:
+  - answer: Alain Colmerauer and Philippe Roussel
+    explanation: Prolog was created in 1972 by Alain Colmerauer and Philippe Roussel at the University of Marseille.
+    links:
+    - https://en.wikipedia.org/wiki/Prolog
+  wrong:
+  - answer: John McCarthy
+    explanation: John McCarthy created LISP, not Prolog.
+  - answer: Marvin Minsky
+    explanation: Marvin Minsky was an AI pioneer but did not create Prolog.
+  - answer: Alan Turing
+    explanation: Alan Turing developed foundational computing concepts but Prolog came much later.
+  - answer: Claude Shannon
+    explanation: Claude Shannon was a pioneer in information theory but did not create Prolog.
+  - answer: Herbert Simon
+    explanation: Herbert Simon contributed to AI but did not create Prolog.
+
+- question: What company developed the Photoshop image editing software?
+  reason: Photoshop is industry-standard software and understanding its origin is relevant to digital media.
+  points: 3
+  right:
+  - answer: Adobe Systems
+    explanation: Photoshop was originally created by Thomas and John Knoll and was acquired and developed by Adobe Systems starting in 1988.
+    links:
+    - https://en.wikipedia.org/wiki/Adobe_Photoshop
+  wrong:
+  - answer: Microsoft
+    explanation: Microsoft develops different software; Adobe develops Photoshop.
+  - answer: Apple
+    explanation: Apple develops different software; Adobe develops Photoshop.
+  - answer: Corel
+    explanation: Corel develops CorelDRAW and PaintShop Pro, not Photoshop.
+  - answer: Autodesk
+    explanation: Autodesk develops AutoCAD and other design software, not Photoshop.
+  - answer: GIMP Foundation
+    explanation: GIMP Foundation develops GIMP as an alternative to Photoshop.
+
+- question: Who created the Fortran programming language?
+  reason: Fortran was one of the first high-level programming languages and is still used in scientific computing.
+  points: 6
+  right:
+  - answer: John Backus and his team at IBM
+    explanation: John Backus led the team at IBM that created Fortran (FORmula TRANslation) in the 1950s.
+    links:
+    - https://en.wikipedia.org/wiki/Fortran
+  wrong:
+  - answer: Grace Hopper
+    explanation: Grace Hopper developed COBOL, not Fortran.
+  - answer: John McCarthy
+    explanation: John McCarthy created LISP, not Fortran.
+  - answer: Dennis Ritchie
+    explanation: Dennis Ritchie created C, not Fortran.
+  - answer: Niklaus Wirth
+    explanation: Niklaus Wirth created Pascal, not Fortran.
+  - answer: Alan Turing
+    explanation: Alan Turing's work predated Fortran and he did not create it.
+
+- question: What does "VPN" stand for?
+  reason: VPNs are important for security and privacy, making the term relevant for anyone in technology.
+  points: 3
+  right:
+  - answer: Virtual Private Network
+    explanation: VPN stands for Virtual Private Network, which creates secure connections over the internet.
+    links:
+    - https://en.wikipedia.org/wiki/Virtual_private_network
+  wrong:
+  - answer: Virtual Public Network
+    explanation: VPN stands for Virtual Private Network, not Public.
+  - answer: Verified Private Network
+    explanation: VPN stands for Virtual Private Network, not Verified.
+  - answer: Virtual Protected Network
+    explanation: VPN stands for Virtual Private Network, not Protected.
+  - answer: Validated Private Network
+    explanation: VPN stands for Virtual Private Network, not Validated.
+  - answer: Variable Private Network
+    explanation: VPN stands for Virtual Private Network, not Variable.
+
+- question: Who created the COBOL programming language?
+  reason: COBOL is historically significant and still used in legacy systems, particularly in banking and government.
+  points: 6
+  right:
+  - answer: Grace Hopper and the CODASYL committee
+    explanation: Grace Hopper was instrumental in developing COBOL in 1959 along with the CODASYL committee.
+    links:
+    - https://en.wikipedia.org/wiki/COBOL
+  wrong:
+  - answer: John Backus
+    explanation: John Backus led the team that created Fortran, not COBOL.
+  - answer: John McCarthy
+    explanation: John McCarthy created LISP, not COBOL.
+  - answer: Alan Turing
+    explanation: Alan Turing's work predated COBOL and he did not create it.
+  - answer: Dennis Ritchie
+    explanation: Dennis Ritchie created C, not COBOL.
+  - answer: Ken Thompson
+    explanation: Ken Thompson co-created Unix, not COBOL.
+
+- question: What was the first computer to defeat a world chess champion in a match?
+  reason: Understanding AI milestones is important for the history of artificial intelligence and computing.
+  points: 5
+  right:
+  - answer: Deep Blue
+    explanation: Deep Blue, developed by IBM, defeated world chess champion Garry Kasparov in 1997.
+    links:
+    - https://en.wikipedia.org/wiki/Deep_Blue_(chess_computer)
+  wrong:
+  - answer: Watson
+    explanation: Watson competed in Jeopardy! but Deep Blue was the chess champion defeater.
+  - answer: AlphaGo
+    explanation: AlphaGo defeated the world Go champion but Deep Blue was first to defeat a chess champion.
+  - answer: Blue Gene
+    explanation: Blue Gene was a supercomputer for scientific computing, not chess.
+  - answer: HAL 9000
+    explanation: HAL 9000 is a fictional computer from "2001: A Space Odyssey."
+  - answer: Stockfish
+    explanation: Stockfish is a modern chess engine but Deep Blue was the first to defeat a world champion.
+
+- question: Who founded LinkedIn?
+  reason: LinkedIn is the largest professional networking platform and understanding its founding is relevant to social media history.
+  points: 3
+  right:
+  - answer: Reid Hoffman
+    explanation: Reid Hoffman founded LinkedIn in 2002 along with several co-founders including Allen Blue, Konstantin Guericke, Eric Ly, and Jean-Luc Vaillant.
+    links:
+    - https://en.wikipedia.org/wiki/Reid_Hoffman
+  wrong:
+  - answer: Mark Zuckerberg
+    explanation: Mark Zuckerberg founded Facebook, not LinkedIn.
+  - answer: Jack Dorsey
+    explanation: Jack Dorsey co-founded Twitter, not LinkedIn.
+  - answer: Jeff Weiner
+    explanation: Jeff Weiner was CEO of LinkedIn but not a founder.
+  - answer: Marc Benioff
+    explanation: Marc Benioff founded Salesforce, not LinkedIn.
+  - answer: Steve Chen
+    explanation: Steve Chen co-founded YouTube, not LinkedIn.
+
+- question: What does "XML" stand for?
+  reason: XML is widely used for data representation and configuration files in software development.
+  points: 3
+  right:
+  - answer: eXtensible Markup Language
+    explanation: XML stands for eXtensible Markup Language, used for storing and transporting data.
+    links:
+    - https://en.wikipedia.org/wiki/XML
+  wrong:
+  - answer: eXternal Markup Language
+    explanation: XML stands for eXtensible Markup Language, not eXternal.
+  - answer: eXecutable Markup Language
+    explanation: XML stands for eXtensible Markup Language, not eXecutable.
+  - answer: eXtended Markup Language
+    explanation: XML stands for eXtensible Markup Language, not eXtended.
+  - answer: eXtra Markup Language
+    explanation: XML stands for eXtensible Markup Language, not eXtra.
+  - answer: eXperimental Markup Language
+    explanation: XML stands for eXtensible Markup Language, not eXperimental.
+
+- question: Who created the Docker containerization platform?
+  reason: Docker revolutionized software deployment and is essential knowledge for modern DevOps.
+  points: 5
+  right:
+  - answer: Solomon Hykes
+    explanation: Solomon Hykes created Docker at dotCloud (later Docker Inc.) and released it as open source in 2013.
+    links:
+    - https://en.wikipedia.org/wiki/Docker_(software)
+  wrong:
+  - answer: Linus Torvalds
+    explanation: Linus Torvalds created Linux, which Docker uses, but not Docker itself.
+  - answer: Craig McLuckie
+    explanation: Craig McLuckie co-created Kubernetes, which works with Docker but is separate.
+  - answer: Mitchell Hashimoto
+    explanation: Mitchell Hashimoto created Vagrant and co-founded HashiCorp, but not Docker.
+  - answer: Travis CI
+    explanation: Travis CI is a continuous integration service, not related to Docker's creation.
+  - answer: Adrian Mouat
+    explanation: Adrian Mouat writes about Docker but did not create it.
+
+- question: What was the first popular spreadsheet program for personal computers?
+  reason: Understanding the history of productivity software provides context for modern office applications.
+  points: 5
+  right:
+  - answer: VisiCalc
+    explanation: VisiCalc, released in 1979, was the first spreadsheet program for personal computers and ran on the Apple II.
+    links:
+    - https://en.wikipedia.org/wiki/VisiCalc
+  wrong:
+  - answer: Microsoft Excel
+    explanation: Excel came later in 1985, after VisiCalc and Lotus 1-2-3.
+  - answer: Lotus 1-2-3
+    explanation: Lotus 1-2-3 came in 1983, after VisiCalc but before Excel's dominance.
+  - answer: Google Sheets
+    explanation: Google Sheets is a modern web-based spreadsheet, much later than VisiCalc.
+  - answer: Quattro Pro
+    explanation: Quattro Pro was released in 1989, after VisiCalc.
+  - answer: AppleWorks
+    explanation: AppleWorks came later in 1984, after VisiCalc.
+
+- question: Who created the Memcached caching system?
+  reason: Memcached is widely used for performance optimization in web applications.
+  points: 6
+  right:
+  - answer: Brad Fitzpatrick
+    explanation: Brad Fitzpatrick created Memcached in 2003 while working on LiveJournal.
+    links:
+    - https://en.wikipedia.org/wiki/Memcached
+  wrong:
+  - answer: Salvatore Sanfilippo
+    explanation: Salvatore Sanfilippo created Redis, not Memcached.
+  - answer: Dwight Merriman
+    explanation: Dwight Merriman co-created MongoDB, not Memcached.
+  - answer: Ryan Dahl
+    explanation: Ryan Dahl created Node.js, not Memcached.
+  - answer: Solomon Hykes
+    explanation: Solomon Hykes created Docker, not Memcached.
+  - answer: Mitchell Hashimoto
+    explanation: Mitchell Hashimoto co-founded HashiCorp but did not create Memcached.
+
+- question: What does "IoT" stand for?
+  reason: IoT is a growing field in technology connecting physical devices to the internet.
+  points: 3
+  right:
+  - answer: Internet of Things
+    explanation: IoT stands for Internet of Things, referring to connected physical devices that can exchange data.
+    links:
+    - https://en.wikipedia.org/wiki/Internet_of_things
+  wrong:
+  - answer: Internet of Technology
+    explanation: IoT stands for Internet of Things, not Technology.
+  - answer: Integration of Things
+    explanation: IoT stands for Internet of Things, not Integration.
+  - answer: Interface of Things
+    explanation: IoT stands for Internet of Things, not Interface.
+  - answer: Intelligent of Things
+    explanation: IoT stands for Internet of Things, not Intelligent.
+  - answer: Interactive of Things
+    explanation: IoT stands for Internet of Things, not Interactive.
+
+- question: Who created the Terraform infrastructure-as-code tool?
+  reason: Terraform is widely used in cloud infrastructure management and DevOps.
+  points: 6
+  right:
+  - answer: Mitchell Hashimoto at HashiCorp
+    explanation: Mitchell Hashimoto created Terraform at HashiCorp, releasing it in 2014.
+    links:
+    - https://en.wikipedia.org/wiki/Terraform_(software)
+  wrong:
+  - answer: Solomon Hykes
+    explanation: Solomon Hykes created Docker, not Terraform.
+  - answer: Linus Torvalds
+    explanation: Linus Torvalds created Linux and Git, not Terraform.
+  - answer: Adrian Cockroft
+    explanation: Adrian Cockroft was Netflix's cloud architect but did not create Terraform.
+  - answer: Kelsey Hightower
+    explanation: Kelsey Hightower is a Kubernetes advocate but did not create Terraform.
+  - answer: Sam Newman
+    explanation: Sam Newman writes about microservices but did not create Terraform.
+
+- question: What company developed the first commercially successful video game console?
+  reason: Understanding gaming history is relevant to the broader history of interactive computing and entertainment technology.
+  points: 5
+  right:
+  - answer: Atari (with the Atari 2600)
+    explanation: Atari's 2600, released in 1977, was the first commercially successful home video game console, though the Magnavox Odyssey came first.
+    links:
+    - https://en.wikipedia.org/wiki/Atari_2600
+  wrong:
+  - answer: Nintendo
+    explanation: Nintendo's NES was very successful but came later in 1983.
+  - answer: Sony
+    explanation: Sony's PlayStation came much later in 1994.
+  - answer: Microsoft
+    explanation: Microsoft's Xbox came even later in 2001.
+  - answer: Sega
+    explanation: Sega's successful consoles came in the 1980s, after Atari's success.
+  - answer: Magnavox
+    explanation: Magnavox Odyssey was the first home console (1972) but the Atari 2600 was more commercially successful.
+
+- question: Who created the React JavaScript library?
+  reason: React is one of the most popular frontend frameworks and essential for modern web development.
+  points: 4
+  right:
+  - answer: Jordan Walke at Facebook
+    explanation: Jordan Walke created React at Facebook, which was released as open source in 2013.
+    links:
+    - https://en.wikipedia.org/wiki/React_(JavaScript_library)
+  wrong:
+  - answer: Evan You
+    explanation: Evan You created Vue.js, not React.
+  - answer: Ryan Dahl
+    explanation: Ryan Dahl created Node.js, not React.
+  - answer: Brendan Eich
+    explanation: Brendan Eich created JavaScript but not React.
+  - answer: Douglas Crockford
+    explanation: Douglas Crockford contributed to JavaScript development but did not create React.
+  - answer: John Resig
+    explanation: John Resig created jQuery, not React.
+
+- question: What does "SaaS" stand for?
+  reason: SaaS is a dominant business model in modern software and understanding the term is important.
+  points: 3
+  right:
+  - answer: Software as a Service
+    explanation: SaaS stands for Software as a Service, where software is hosted centrally and accessed via the internet.
+    links:
+    - https://en.wikipedia.org/wiki/Software_as_a_service
+  wrong:
+  - answer: System as a Service
+    explanation: SaaS stands for Software as a Service, not System.
+  - answer: Security as a Service
+    explanation: Security as a Service exists (SECaaS) but SaaS stands for Software as a Service.
+  - answer: Server as a Service
+    explanation: SaaS stands for Software as a Service, not Server.
+  - answer: Storage as a Service
+    explanation: Storage as a Service exists (STaaS) but SaaS stands for Software as a Service.
+  - answer: Solution as a Service
+    explanation: SaaS stands for Software as a Service, not Solution.
+
+- question: Who created the Vue.js JavaScript framework?
+  reason: Vue.js is a popular frontend framework alternative to React and Angular.
+  points: 5
+  right:
+  - answer: Evan You
+    explanation: Evan You created Vue.js in 2014 after working at Google on AngularJS.
+    links:
+    - https://en.wikipedia.org/wiki/Vue.js
+  wrong:
+  - answer: Jordan Walke
+    explanation: Jordan Walke created React at Facebook, not Vue.js.
+  - answer: Ryan Dahl
+    explanation: Ryan Dahl created Node.js, not Vue.js.
+  - answer: Miško Hevery
+    explanation: Miško Hevery created AngularJS at Google, not Vue.js.
+  - answer: Brendan Eich
+    explanation: Brendan Eich created JavaScript but not Vue.js.
+  - answer: Douglas Crockford
+    explanation: Douglas Crockford contributed to JavaScript but did not create Vue.js.
+
+- question: What was the name of the first iPhone operating system before it was called iOS?
+  reason: Understanding Apple's product naming history is relevant to mobile development.
+  points: 5
+  right:
+  - answer: iPhone OS
+    explanation: The operating system was originally called iPhone OS from 2007 to 2010, when it was renamed iOS.
+    links:
+    - https://en.wikipedia.org/wiki/IOS
+  wrong:
+  - answer: Apple OS
+    explanation: The iPhone's OS was called iPhone OS, not Apple OS.
+  - answer: Mobile OS X
+    explanation: While based on OS X, it was called iPhone OS initially.
+  - answer: iPhoneOS (one word)
+    explanation: It was iPhone OS (two words) not iPhoneOS.
+  - answer: Safari OS
+    explanation: Safari is the browser; the OS was called iPhone OS.
+  - answer: iOS from the beginning
+    explanation: It was called iPhone OS initially and renamed to iOS in 2010.
+
+- question: Who created the Angular JavaScript framework?
+  reason: Angular is a major frontend framework used in enterprise applications.
+  points: 5
+  right:
+  - answer: Miško Hevery and Adam Abrons at Google
+    explanation: Miško Hevery and Adam Abrons created AngularJS at Google in 2010.
+    links:
+    - https://en.wikipedia.org/wiki/AngularJS
+  wrong:
+  - answer: Jordan Walke
+    explanation: Jordan Walke created React at Facebook, not Angular.
+  - answer: Evan You
+    explanation: Evan You created Vue.js, not Angular.
+  - answer: Ryan Dahl
+    explanation: Ryan Dahl created Node.js, not Angular.
+  - answer: Brendan Eich
+    explanation: Brendan Eich created JavaScript but not Angular.
+  - answer: Douglas Crockford
+    explanation: Douglas Crockford contributed to JavaScript but did not create Angular.
+
+- question: What does "REST" stand for in web architecture?
+  reason: REST is a fundamental architectural style for web APIs and essential knowledge for web developers.
+  points: 4
+  right:
+  - answer: Representational State Transfer
+    explanation: REST stands for Representational State Transfer, an architectural style for designing networked applications.
+    links:
+    - https://en.wikipedia.org/wiki/Representational_state_transfer
+  wrong:
+  - answer: Remote State Transfer
+    explanation: REST stands for Representational State Transfer, not Remote.
+  - answer: Reliable State Transfer
+    explanation: REST stands for Representational State Transfer, not Reliable.
+  - answer: Resource State Transfer
+    explanation: REST stands for Representational State Transfer, not Resource.
+  - answer: Request State Transfer
+    explanation: REST stands for Representational State Transfer, not Request.
+  - answer: Responsive State Transfer
+    explanation: REST stands for Representational State Transfer, not Responsive.
+
+- question: Who created the jQuery JavaScript library?
+  reason: jQuery was hugely influential in web development and understanding its history provides context for modern frameworks.
+  points: 4
+  right:
+  - answer: John Resig
+    explanation: John Resig created jQuery in 2006 to simplify JavaScript programming.
+    links:
+    - https://en.wikipedia.org/wiki/JQuery
+  wrong:
+  - answer: Brendan Eich
+    explanation: Brendan Eich created JavaScript but not jQuery.
+  - answer: Douglas Crockford
+    explanation: Douglas Crockford contributed to JavaScript but did not create jQuery.
+  - answer: Ryan Dahl
+    explanation: Ryan Dahl created Node.js, not jQuery.
+  - answer: Jordan Walke
+    explanation: Jordan Walke created React, not jQuery.
+  - answer: Evan You
+    explanation: Evan You created Vue.js, not jQuery.
+
+- question: What company acquired GitHub in 2018?
+  reason: Understanding major tech acquisitions is relevant to industry knowledge and career decisions.
+  points: 3
+  right:
+  - answer: Microsoft
+    explanation: Microsoft acquired GitHub for $7.5 billion in 2018.
+    links:
+    - https://en.wikipedia.org/wiki/GitHub
+  wrong:
+  - answer: Google
+    explanation: Google did not acquire GitHub; Microsoft did.
+  - answer: Amazon
+    explanation: Amazon did not acquire GitHub; Microsoft did.
+  - answer: Facebook
+    explanation: Facebook did not acquire GitHub; Microsoft did.
+  - answer: Apple
+    explanation: Apple did not acquire GitHub; Microsoft did.
+  - answer: Oracle
+    explanation: Oracle did not acquire GitHub; Microsoft did.
+
+- question: Who created the Kubernetes container orchestration system?
+  reason: Kubernetes is essential for modern cloud infrastructure and container management.
+  points: 6
+  right:
+  - answer: Joe Beda, Brendan Burns, and Craig McLuckie at Google
+    explanation: Kubernetes was created by Joe Beda, Brendan Burns, and Craig McLuckie at Google in 2014, based on Google's Borg system.
+    links:
+    - https://en.wikipedia.org/wiki/Kubernetes
+  wrong:
+  - answer: Solomon Hykes
+    explanation: Solomon Hykes created Docker, not Kubernetes.
+  - answer: Mitchell Hashimoto
+    explanation: Mitchell Hashimoto created Terraform and other HashiCorp tools, not Kubernetes.
+  - answer: Linus Torvalds
+    explanation: Linus Torvalds created Linux, which Kubernetes uses, but not Kubernetes itself.
+  - answer: Adrian Cockroft
+    explanation: Adrian Cockroft was Netflix's cloud architect but did not create Kubernetes.
+  - answer: Kelsey Hightower
+    explanation: Kelsey Hightower is a prominent Kubernetes advocate but did not create it.
+
+- question: What does "MVP" stand for in product development?
+  reason: MVP is a key concept in agile development and startup culture.
+  points: 3
+  right:
+  - answer: Minimum Viable Product
+    explanation: MVP stands for Minimum Viable Product, the version with just enough features to satisfy early customers.
+    links:
+    - https://en.wikipedia.org/wiki/Minimum_viable_product
+  wrong:
+  - answer: Most Valuable Product
+    explanation: MVP stands for Minimum Viable Product, not Most Valuable.
+  - answer: Maximum Value Product
+    explanation: MVP stands for Minimum Viable Product, not Maximum Value.
+  - answer: Minimum Value Product
+    explanation: MVP stands for Minimum Viable Product, not Minimum Value.
+  - answer: Most Viable Product
+    explanation: MVP stands for Minimum Viable Product, not Most Viable.
+  - answer: Minimum Version Product
+    explanation: MVP stands for Minimum Viable Product, not Minimum Version.
+
+- question: Who created the Bootstrap CSS framework?
+  reason: Bootstrap is widely used for responsive web design and frontend development.
+  points: 4
+  right:
+  - answer: Mark Otto and Jacob Thornton at Twitter
+    explanation: Mark Otto and Jacob Thornton created Bootstrap at Twitter in 2010, originally called Twitter Blueprint.
+    links:
+    - https://en.wikipedia.org/wiki/Bootstrap_(front-end_framework)
+  wrong:
+  - answer: Chris Coyier
+    explanation: Chris Coyier created CSS-Tricks and other resources but not Bootstrap.
+  - answer: Jordan Walke
+    explanation: Jordan Walke created React, not Bootstrap.
+  - answer: Evan You
+    explanation: Evan You created Vue.js, not Bootstrap.
+  - answer: John Resig
+    explanation: John Resig created jQuery, not Bootstrap.
+  - answer: Ryan Dahl
+    explanation: Ryan Dahl created Node.js, not Bootstrap.
+
+- question: What was the first computer to use a graphical user interface (GUI) in a commercial product?
+  reason: Understanding the evolution of user interfaces is important for UX and design history.
+  points: 7
+  right:
+  - answer: Xerox Star (Xerox 8010)
+    explanation: The Xerox Star, released in 1981, was the first commercial computer to feature a GUI, though the Alto preceded it in research.
+    links:
+    - https://en.wikipedia.org/wiki/Xerox_Star
+  wrong:
+  - answer: Apple Macintosh
+    explanation: The Macintosh came later in 1984, though it popularized the GUI.
+  - answer: Apple Lisa
+    explanation: The Lisa came in 1983, after the Xerox Star but before the Macintosh.
+  - answer: IBM PC
+    explanation: The original IBM PC used a command-line interface, not a GUI.
+  - answer: Commodore Amiga
+    explanation: The Amiga came in 1985, after the Xerox Star and Macintosh.
+  - answer: Atari ST
+    explanation: The Atari ST came in 1985, after earlier GUI systems.
+
+- question: Who created the Laravel PHP framework?
+  reason: Laravel is the most popular PHP framework and widely used in web development.
+  points: 5
+  right:
+  - answer: Taylor Otwell
+    explanation: Taylor Otwell created Laravel in 2011 as an alternative to CodeIgniter.
+    links:
+    - https://en.wikipedia.org/wiki/Laravel
+  wrong:
+  - answer: Rasmus Lerdorf
+    explanation: Rasmus Lerdorf created PHP but not Laravel.
+  - answer: David Heinemeier Hansson
+    explanation: David Heinemeier Hansson created Ruby on Rails, not Laravel.
+  - answer: Adrian Holovaty
+    explanation: Adrian Holovaty co-created Django, not Laravel.
+  - answer: Fabien Potencier
+    explanation: Fabien Potencier created Symfony, another PHP framework, not Laravel.
+  - answer: Ryan Dahl
+    explanation: Ryan Dahl created Node.js, not Laravel.
+
+- question: What company did Anders Hejlsberg work for when he created Turbo Pascal?
+  reason: Turbo Pascal was revolutionary for making fast, affordable development tools accessible to programmers in the 1980s.
+  points: 6
+  right:
+  - answer: Borland
+    explanation: Anders Hejlsberg was the chief architect of Turbo Pascal at Borland, which became one of the most popular development tools of the 1980s.
+    links:
+    - https://en.wikipedia.org/wiki/Turbo_Pascal
+    - https://en.wikipedia.org/wiki/Borland
+  wrong:
+  - answer: Microsoft
+    explanation: Hejlsberg joined Microsoft later but created Turbo Pascal at Borland.
+  - answer: Apple
+    explanation: Hejlsberg did not work for Apple when creating Turbo Pascal.
+  - answer: IBM
+    explanation: Hejlsberg did not work for IBM when creating Turbo Pascal.
+  - answer: Digital Research
+    explanation: Digital Research made other development tools but Turbo Pascal was a Borland product.
+  - answer: Lotus Development
+    explanation: Lotus made spreadsheet software, not Turbo Pascal.
+
+- question: Which programming language did Anders Hejlsberg create at Borland before joining Microsoft?
+  reason: Understanding Hejlsberg's progression from Turbo Pascal to Delphi to C# shows the evolution of modern programming languages.
+  points: 6
+  right:
+  - answer: Delphi (Object Pascal)
+    explanation: Anders Hejlsberg was the chief architect of Delphi at Borland in 1995, an object-oriented version of Pascal with a rapid application development environment.
+    links:
+    - https://en.wikipedia.org/wiki/Delphi_(software)
+  wrong:
+  - answer: Turbo C
+    explanation: Turbo C was a Borland product but was not primarily created by Hejlsberg.
+  - answer: C++Builder
+    explanation: C++Builder came after Delphi and was based on the same IDE framework, but Delphi was the language Hejlsberg created.
+  - answer: JBuilder
+    explanation: JBuilder was a Java IDE from Borland but not created by Hejlsberg.
+  - answer: Visual Basic
+    explanation: Visual Basic was a Microsoft product, not created by Hejlsberg at Borland.
+  - answer: Kylix
+    explanation: Kylix was a Linux version of Delphi that came later.
+
+- question: What was revolutionary about Turbo Pascal when it was released in 1983?
+  reason: Understanding what made Turbo Pascal successful provides insight into software development tool evolution and market disruption.
+  points: 7
+  right:
+  - answer: It was extremely fast and affordable compared to competitors
+    explanation: Turbo Pascal compiled programs much faster than competitors and cost only $49.95 compared to hundreds of dollars for other compilers, revolutionizing the development tools market.
+    links:
+    - https://en.wikipedia.org/wiki/Turbo_Pascal
+  - answer: It included an integrated development environment (IDE)
+    explanation: Turbo Pascal was one of the first to combine editor, compiler, and debugger in one integrated environment, making development much easier.
+  wrong:
+  - answer: It was the first Pascal compiler ever made
+    explanation: Pascal compilers existed before, but Turbo Pascal was revolutionary for its speed and affordability.
+  - answer: It was free and open source
+    explanation: Turbo Pascal was commercial software, not free or open source, though it was very affordable.
+  - answer: It only ran on Apple computers
+    explanation: Turbo Pascal initially ran on CP/M and later DOS, not exclusively on Apple computers.
+  - answer: It was the first object-oriented language
+    explanation: Turbo Pascal was procedural; object-oriented features came later with Turbo Pascal 5.5 and Delphi.
+
+- question: Which of the following programming languages or tools did Anders Hejlsberg create or lead the development of?
+  reason: Anders Hejlsberg has been instrumental in creating several major programming languages and understanding his contributions is important for language design history.
+  points: 5
+  right:
+  - answer: Turbo Pascal
+    explanation: Hejlsberg was the chief architect of Turbo Pascal at Borland in the 1980s.
+  - answer: Delphi
+    explanation: Hejlsberg led the creation of Delphi at Borland in 1995.
+  - answer: C#
+    explanation: Hejlsberg created C# at Microsoft in the early 2000s.
+  - answer: TypeScript
+    explanation: Hejlsberg created TypeScript at Microsoft, first released in 2012.
+  wrong:
+  - answer: Java
+    explanation: Java was created by James Gosling at Sun Microsystems, not by Hejlsberg.
+  - answer: Visual Basic
+    explanation: Visual Basic was created by a team at Microsoft but not led by Hejlsberg.
+
+- question: What company founded by Philippe Kahn became famous for Turbo Pascal and other development tools?
+  reason: Borland was a major force in development tools in the 1980s and 1990s and understanding its history is relevant to software development evolution.
+  points: 5
+  right:
+  - answer: Borland
+    explanation: Philippe Kahn founded Borland in 1983, which became famous for Turbo Pascal, Turbo C, Delphi, and other development tools.
+    links:
+    - https://en.wikipedia.org/wiki/Borland
+  wrong:
+  - answer: Microsoft
+    explanation: Microsoft was founded by Bill Gates and Paul Allen, not Philippe Kahn.
+  - answer: Lotus Development
+    explanation: Lotus was founded by Mitch Kapor, not Philippe Kahn.
+  - answer: Digital Research
+    explanation: Digital Research was founded by Gary Kildall, not Philippe Kahn.
+  - answer: Ashton-Tate
+    explanation: Ashton-Tate was a different software company known for dBase.
+  - answer: Novell
+    explanation: Novell was a networking company, not founded by Philippe Kahn.
+
+- question: What was the original price of Turbo Pascal when it was first released in 1983?
+  reason: The disruptive pricing of Turbo Pascal changed the software development tools market and is a key part of tech business history.
+  points: 6
+  right:
+  - answer: $49.95
+    explanation: Turbo Pascal was priced at just $49.95, compared to competitors that cost hundreds of dollars, making professional development tools accessible to many more programmers.
+    links:
+    - https://en.wikipedia.org/wiki/Turbo_Pascal
+  wrong:
+  - answer: $199.95
+    explanation: This was closer to competitor pricing; Turbo Pascal was much cheaper at $49.95.
+  - answer: $9.95
+    explanation: While extremely affordable, Turbo Pascal cost $49.95, not $9.95.
+  - answer: $499.95
+    explanation: This was typical of competitor pricing; Turbo Pascal disrupted the market at $49.95.
+  - answer: $149.95
+    explanation: Turbo Pascal was more disruptively priced at $49.95.
+  - answer: Free
+    explanation: Turbo Pascal was commercial software priced at $49.95, not free.
+
+- question: Which Microsoft .NET language did Anders Hejlsberg lead the design of after joining Microsoft from Borland?
+  reason: Understanding the connection between Hejlsberg's work at Borland and Microsoft shows the evolution of modern programming languages.
+  points: 4
+  right:
+  - answer: C#
+    explanation: After joining Microsoft in 1996, Anders Hejlsberg led the design and development of C# as part of the .NET initiative.
+    links:
+    - https://en.wikipedia.org/wiki/Anders_Hejlsberg
+  wrong:
+  - answer: Visual Basic .NET
+    explanation: While part of .NET, Visual Basic .NET was not primarily designed by Hejlsberg.
+  - answer: F#
+    explanation: F# was created by Don Syme, not Anders Hejlsberg.
+  - answer: J#
+    explanation: J# was a different .NET language for Java developers, not primarily created by Hejlsberg.
+  - answer: Managed C++
+    explanation: Managed C++ was an extension of C++ for .NET, not created by Hejlsberg.
+  - answer: IronPython
+    explanation: IronPython is a .NET implementation of Python, not created by Hejlsberg.
+
+- question: What was the name of Borland's object-oriented rapid application development environment released in 1995?
+  reason: Delphi was influential in RAD development and competed directly with Visual Basic, representing an important era in software development tools.
+  points: 5
+  right:
+  - answer: Delphi
+    explanation: Borland Delphi was released in 1995 as an object-oriented Pascal RAD environment, competing with Visual Basic.
+    links:
+    - https://en.wikipedia.org/wiki/Delphi_(software)
+  wrong:
+  - answer: Turbo Pascal
+    explanation: Turbo Pascal preceded Delphi and was not object-oriented initially.
+  - answer: C++Builder
+    explanation: C++Builder was Borland's C++ RAD tool, released after Delphi in 1997.
+  - answer: JBuilder
+    explanation: JBuilder was Borland's Java development environment, released in 1997.
+  - answer: Kylix
+    explanation: Kylix was the Linux version of Delphi, released much later in 2001.
+  - answer: ObjectPascal
+    explanation: Object Pascal was the language, but Delphi was the complete development environment.
+
+- question: What operating system did the original Turbo Pascal run on?
+  reason: Understanding the platforms that early development tools ran on provides context for computing history in the 1980s.
+  points: 5
+  right:
+  - answer: CP/M
+    explanation: The original Turbo Pascal was released for CP/M in 1983, before being ported to DOS.
+    links:
+    - https://en.wikipedia.org/wiki/Turbo_Pascal
+  - answer: DOS
+    explanation: Turbo Pascal was quickly ported to DOS and became hugely popular on that platform as well.
+  wrong:
+  - answer: Windows
+    explanation: Windows versions came later; the original ran on CP/M and early versions on DOS.
+  - answer: Unix
+    explanation: Turbo Pascal primarily targeted CP/M and DOS, not Unix.
+  - answer: Mac OS
+    explanation: Turbo Pascal did not originally run on Mac OS.
+  - answer: Linux
+    explanation: Linux didn't exist when Turbo Pascal was first released in 1983.
+
+- question: Who created the Julia programming language?
+  reason: Julia is increasingly important for scientific computing, data science, and high-performance numerical analysis.
+  points: 5
+  right:
+  - answer: Jeff Bezanson, Stefan Karpinski, Viral B. Shah, and Alan Edelman
+    explanation: Julia was created by Jeff Bezanson, Stefan Karpinski, Viral B. Shah, and Alan Edelman, who started working on it in 2009 at MIT.
+    links:
+    - https://en.wikipedia.org/wiki/Julia_(programming_language)
+  wrong:
+  - answer: Guido van Rossum
+    explanation: Guido van Rossum created Python, not Julia.
+  - answer: Yukihiro Matsumoto
+    explanation: Yukihiro Matsumoto created Ruby, not Julia.
+  - answer: John McCarthy
+    explanation: John McCarthy created LISP, not Julia.
+  - answer: Dennis Ritchie
+    explanation: Dennis Ritchie created C, not Julia.
+  - answer: Bjarne Stroustrup
+    explanation: Bjarne Stroustrup created C++, not Julia.
+
+- question: In what year was the Julia programming language first publicly released?
+  reason: Understanding when Julia emerged helps contextualize its role in modern scientific computing and data science.
+  points: 6
+  right:
+  - answer: 2012
+    explanation: Julia was first publicly released in February 2012, though development began in 2009. Version 1.0 was released in 2018.
+    links:
+    - https://en.wikipedia.org/wiki/Julia_(programming_language)
+  wrong:
+  - answer: 2009
+    explanation: 2009 was when development started, but the public release was in 2012.
+  - answer: 2015
+    explanation: Julia was publicly released earlier in 2012.
+  - answer: 2018
+    explanation: 2018 was when Julia 1.0 was released, but the initial public release was in 2012.
+  - answer: 2010
+    explanation: Julia was publicly released in 2012, not 2010.
+  - answer: 2020
+    explanation: Julia was publicly released much earlier in 2012.
+
+- question: What problem was Julia specifically designed to solve in scientific computing?
+  reason: Understanding Julia's design goals provides insight into its strengths and why it was created when Python and MATLAB already existed.
+  points: 7
+  right:
+  - answer: The two-language problem (combining ease of use with high performance)
+    explanation: Julia was designed to solve the "two-language problem" where scientists prototype in easy languages like Python or MATLAB but must rewrite in C/Fortran for performance.
+    links:
+    - https://en.wikipedia.org/wiki/Julia_(programming_language)
+  - answer: Providing both high-level syntax and low-level performance
+    explanation: Julia aims to be as easy to use as Python or R while achieving performance comparable to C or Fortran.
+  wrong:
+  - answer: Creating a better web development framework
+    explanation: Julia was designed for scientific computing and numerical analysis, not primarily for web development.
+  - answer: Replacing JavaScript in web browsers
+    explanation: Julia was not designed for browser-based scripting.
+  - answer: Improving mobile app development
+    explanation: Julia was designed for scientific computing, not mobile development.
+  - answer: Making database queries easier
+    explanation: Julia was not primarily designed for database management.
+
+- question: Which programming languages most influenced Julia's design?
+  reason: Understanding Julia's influences helps developers see its design philosophy and how it fits into the programming language ecosystem.
+  points: 8
+  right:
+  - answer: Python (for syntax and ease of use)
+    explanation: Julia's syntax was influenced by Python's readability and ease of use.
+  - answer: MATLAB (for numerical computing features)
+    explanation: Julia adopted many concepts from MATLAB for numerical and scientific computing.
+  - answer: Lisp (for metaprogramming and macros)
+    explanation: Julia's powerful metaprogramming capabilities were influenced by Lisp.
+  - answer: Ruby (for general elegance and productivity)
+    explanation: Julia borrowed some design philosophy from Ruby regarding developer productivity.
+  wrong:
+  - answer: Java (for object-oriented features)
+    explanation: While Julia supports multiple dispatch, it wasn't primarily influenced by Java's OOP model.
+  - answer: JavaScript (for asynchronous programming)
+    explanation: Julia was not primarily influenced by JavaScript's async model.
+
+- question: What university was Julia developed at?
+  reason: Understanding the academic origins of Julia provides context for its focus on scientific computing and research applications.
+  points: 5
+  right:
+  - answer: MIT (Massachusetts Institute of Technology)
+    explanation: Julia was created at MIT, where Alan Edelman is a professor and the others were associated with MIT's computational research.
+    links:
+    - https://en.wikipedia.org/wiki/Julia_(programming_language)
+  wrong:
+  - answer: Stanford University
+    explanation: Julia was developed at MIT, not Stanford.
+  - answer: UC Berkeley
+    explanation: Julia was developed at MIT, not UC Berkeley.
+  - answer: Carnegie Mellon University
+    explanation: Julia was developed at MIT, not Carnegie Mellon.
+  - answer: Harvard University
+    explanation: Julia was developed at MIT, not Harvard.
+  - answer: California Institute of Technology
+    explanation: Julia was developed at MIT, not Caltech.
+
+- question: What unique feature does Julia use instead of traditional object-oriented inheritance?
+  reason: Understanding Julia's type system and dispatch mechanism is important for appreciating its design innovations in language architecture.
+  points: 8
+  right:
+  - answer: Multiple dispatch
+    explanation: Julia uses multiple dispatch, where function behavior is determined by the types of all arguments, not just the first one as in traditional OOP.
+    links:
+    - https://en.wikipedia.org/wiki/Julia_(programming_language)
+  wrong:
+  - answer: Single inheritance
+    explanation: Julia does not use traditional class-based inheritance; it uses multiple dispatch.
+  - answer: Prototype-based inheritance
+    explanation: Julia does not use prototype-based inheritance like JavaScript; it uses multiple dispatch.
+  - answer: Interface-based programming
+    explanation: While Julia has abstract types, its key feature is multiple dispatch, not interface-based programming.
+  - answer: Aspect-oriented programming
+    explanation: Julia's key distinguishing feature is multiple dispatch, not aspect-oriented programming.
+  - answer: Functional composition only
+    explanation: While Julia supports functional programming, its distinguishing feature is multiple dispatch.

@@ -26,6 +26,8 @@
     * [Project Board](https://github.com/orgs/PhoenixCodingAcademy/projects/2/views/1)
 
 
+
+
 # Summary Goals
 * Learn by teaching. Help create class content and tests.
 * Learn collaborative application development through Git.

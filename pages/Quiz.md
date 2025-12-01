@@ -130,11 +130,13 @@ Question: "Which are primary colors?"
 **In summary**: `isRight` = "Is this answer objectively correct?" | `correct` = "Did the user handle this answer correctly?"
 
 
+
+
 # Prompt
 The following LLM prompt can be used to generate a quiz of 100 questions that can become a YAML file in this set.
 
 ```
-SUBJECT = History - 20th Century (Senior High School)
+SUBJECT = Computer Science History - questions about popular figures who created which languages or software or computers, or when applications were created.
 CONSTRAINTS = For average high schoolers interested in the subject. Include questions pertinent to the minimal junior-level work environment or internship. 
 
 You are an SUBJECT teacher. You wish to evaluate a new student to find out what level of knowledge the student knows about the subject so that you can recommend a course of studies.
@@ -229,3 +231,4 @@ Come test day, all the students got perfect answers on the test. And here's what
 Well, let's just say that the snickering stopped and was instantly replaced with awesome respect.
 
 This strategy of making the test answers available to everyone up front is honoring the spirit of Bruce Campbell.
+
