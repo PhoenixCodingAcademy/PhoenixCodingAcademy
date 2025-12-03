@@ -49,7 +49,7 @@ for fp in glob.glob(os.path.join(data, '**/*.md'), recursive=True):
   if 'ai' in fp:
     pass
   fn = fp[len(data) + 1:]
-  text = libs.tools.readDataFile(fp)
+  text = libs.tools.readText(fp)
   fn = fn.replace('\\', '/') # Url
   index(f"/pages/{fn}", text)
   fileTypes['pages'] = fileTypes['pages'] + 1

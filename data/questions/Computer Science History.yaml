@@ -1757,7 +1757,7 @@ questions:
   - answer: Blue Gene
     explanation: Blue Gene was a supercomputer for scientific computing, not chess.
   - answer: HAL 9000
-    explanation: HAL 9000 is a fictional computer from "2001: A Space Odyssey."
+    explanation: "HAL 9000 is a fictional computer from '2001: A Space Odyssey.'"
   - answer: Stockfish
     explanation: Stockfish is a modern chess engine but Deep Blue was the first to defeat a world champion.
 

@@ -78,6 +78,19 @@ def readDataFile(fn):
   return readFile(dn)
 
 
+
+def readText(file, encoding="utf-8"):
+    for en in ["utf-8", "utf-16", "utf-32", "latin1", "ascii", "iso-8859-1"]:
+        try:
+            with open(file, "r", encoding=en) as f:
+                return f.read()
+        except UnicodeDecodeError:
+            pass
+    raise Exception(f"Could not read file {file} with any encoding")
+
+
+
+
 def readDataFileWithUnicode(fn, encoding='utf-8', errors='replace'):
   dn = GetDataPath(fn)
   with open(dn, 'r', encoding=encoding, errors=errors) as f:
@@ -105,7 +118,7 @@ def readYaml(fn):
   See: https://docs.python.org/3/tutorial/datastructures.html#dictionaries
   '''
   dn = GetDataPath(fn)
-  text = readDataFileWithUnicode(dn)
+  text = readText(dn)
   data = yaml.safe_load(text)
   subloadYaml(data)
   return data
