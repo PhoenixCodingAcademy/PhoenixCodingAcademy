@@ -46,9 +46,10 @@ school = libs.school.getSchool()
 data = libs.tools.GetAncestorPath("pages")
 fileTypes['pages'] = 0
 for fp in glob.glob(os.path.join(data, '**/*.md'), recursive=True):
-  if 'ai' in fp:
+  if 'Data.md' in fp:
     pass
   fn = fp[len(data) + 1:]
+  print(f"Reading {fp}")
   text = libs.tools.readText(fp)
   fn = fn.replace('\\', '/') # Url
   index(f"/pages/{fn}", text)
