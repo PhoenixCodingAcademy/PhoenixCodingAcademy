@@ -80,13 +80,13 @@ def readDataFile(fn):
 
 
 def readText(file, encoding="utf-8"):
-    for en in ["utf-8", "utf-16", "utf-32", "latin1", "ascii", "iso-8859-1"]:
-        try:
-            with open(file, "r", encoding=en) as f:
-                return f.read()
-        except UnicodeDecodeError:
-            pass
-    raise Exception(f"Could not read file {file} with any encoding")
+    """
+    Read a text file with the specified encoding (default: utf-8).
+    Uses errors='replace' to handle any encoding issues gracefully.
+    This ensures consistent behavior across platforms.
+    """
+    with open(file, "r", encoding=encoding, errors='replace') as f:
+        return f.read()
 
 
 
