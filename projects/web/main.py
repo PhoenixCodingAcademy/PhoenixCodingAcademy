@@ -498,7 +498,7 @@ def _search():
   '''
   term = request.args.get("search", '').lower()
   fn = tools.GetAncestorPath("projects/index.txt")
-  db = tools.readDataFile(fn)
+  db = tools.readText(fn)
   search = Search(db)
 
   school = getSchool()
