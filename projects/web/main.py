@@ -498,7 +498,9 @@ def _search():
   '''
   term = request.args.get("search", '').lower()
   fn = tools.GetAncestorPath("projects/index.txt")
+  print(f"DEBUG: fn = {fn}")
   db = tools.readText(fn)
+  print(f"DEBUG: db = {len(db)}")
   search = Search(db)
 
   school = getSchool()
