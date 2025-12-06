@@ -124,7 +124,8 @@
                likes.includes(searchText) ||
                trendingScore.includes(searchText) ||
                createdAt.includes(searchText) ||
-               privateStatus.includes(searchText);
+               privateStatus.includes(searchText) ||
+               model.url.includes(searchText);
       });
     }
     
@@ -175,7 +176,7 @@
       
       tableHtml += `
         <tr>
-          <td class="model-id">${model.id}</td>
+          <td class="model-id"><a href="${model.url}" target="_blank">${model.id}</a></td>
           <td class="trending-score">${model.trending_score}</td>
           <td class="created-at">${createdAt}</td>
           <td>${tags}</td>

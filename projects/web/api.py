@@ -43,7 +43,8 @@ def getModels():
                     'tags': model.pipeline_tag,
                     'library_name': model.library_name,
                     'trending_score': model.trending_score,
-                    'created_at': model.created_at.isoformat() if model.created_at else None
+                    'created_at': model.created_at.isoformat() if model.created_at else None,
+                    'url': f"https://huggingface.co/{model.id}"
                   })
 
   return jsonify(result)
