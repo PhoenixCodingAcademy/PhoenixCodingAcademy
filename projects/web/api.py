@@ -36,11 +36,14 @@ def getModels():
   for model in models:
     result.append({
                     'id': model.id,
+                    'private': model.private,
                     'downloads': getattr(model, 'downloads', 0),
                     'likes': model.likes or 0,
                     'private': model.private,
-                    'author': model.author,
-                    'lastModified': model.last_modified.isoformat() if model.last_modified else None
+                    'tags': model.pipeline_tag,
+                    'library_name': model.library_name,
+                    'trending_score': model.trending_score,
+                    'created_at': model.created_at.isoformat() if model.created_at else None
                   })
 
   return jsonify(result)
