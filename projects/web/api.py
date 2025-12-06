@@ -28,10 +28,10 @@ def getRandom():
 @get_name.route('/api/models', methods=['GET'])
 def getModels():
   from huggingface_hub import list_models
-  count = int(request.args.get('count', 100))
-  token = request.args.get('token', None)
-
-  models = list_models(filter="llm", limit=count, token=token)
+  count = int(request.args.get('count', 50))
+  skip = int(request.args.get('skip', 0))
+  
+  models = list_models(filter="llm", limit=None)
   result = []
   for model in models:
     result.append({

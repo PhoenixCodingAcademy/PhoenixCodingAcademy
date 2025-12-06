@@ -67,12 +67,84 @@
     font-size: 1.2em;
     color: #666;
   }
+  
+  .search-container {
+    margin: 20px 0;
+  }
+  
+  #search-input {
+    width: 100%;
+    max-width: 500px;
+    padding: 10px 15px;
+    font-size: 16px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+  
+  #search-input:focus {
+    outline: none;
+    border-color: #0066cc;
+  }
+  
+  .search-info {
+    margin-top: 10px;
+    color: #666;
+    font-size: 0.9em;
+  }
 </style>
 
 <script>
   let modelsData = [];
+  let filteredData = [];
   let sortColumn = null;
   let sortDirection = 'asc';
+  
+  function filterData(searchText) {
+    searchText = searchText.toLowerCase().trim();
+    
+    if (!searchText) {
+      filteredData = [...modelsData];
+    } else {
+      filteredData = modelsData.filter(model => {
+        // Search across all columns
+        const id = (model.id || '').toLowerCase();
+        const tags = (model.tags || '').toLowerCase();
+        const libraryName = (model.library_name || '').toLowerCase();
+        const downloads = String(model.downloads || '');
+        const likes = String(model.likes || '');
+        const trendingScore = String(model.trending_score || '');
+        const createdAt = (model.created_at || '').toLowerCase();
+        const privateStatus = model.private ? 'private' : 'public';
+        
+        return id.includes(searchText) ||
+               tags.includes(searchText) ||
+               libraryName.includes(searchText) ||
+               downloads.includes(searchText) ||
+               likes.includes(searchText) ||
+               trendingScore.includes(searchText) ||
+               createdAt.includes(searchText) ||
+               privateStatus.includes(searchText);
+      });
+    }
+    
+    // Update the search info
+    updateSearchInfo(searchText);
+    
+    // Re-render with filtered data
+    renderTable(filteredData);
+  }
+  
+  function updateSearchInfo(searchText) {
+    const total = modelsData.length;
+    const filtered = filteredData.length;
+    
+    if (searchText) {
+      $('#search-info').html(`Showing ${filtered} of ${total} models`);
+    } else {
+      $('#search-info').html(`Showing all ${total} models`);
+    }
+  }
   
   function renderTable(data) {
     let tableHtml = `
@@ -145,8 +217,8 @@
       sortDirection = 'asc';
     }
     
-    // Sort the data
-    modelsData.sort((a, b) => {
+    // Sort the filtered data (not the original data)
+    filteredData.sort((a, b) => {
       let aVal = a[column];
       let bVal = b[column];
       
@@ -178,19 +250,31 @@
       return 0;
     });
     
-    renderTable(modelsData);
+    renderTable(filteredData);
   }
   
   $(async () => {
     try {
-      const response = await fetch('/api/models?count=100');
+      const response = await fetch('/api/models?skip=0&count=100');
       modelsData = await response.json();
-      renderTable(modelsData);
+      filteredData = [...modelsData];
+      renderTable(filteredData);
+      updateSearchInfo('');
+      
+      // Add search input handler
+      $('#search-input').on('input', function() {
+        filterData($(this).val());
+      });
     } catch (error) {
       $('#output').html('<p style="color: red;">Error loading models: ' + error.message + '</p>');
     }
   });
 </script>
+
+<div class="search-container">
+  <input type="text" id="search-input" placeholder="Search models by ID, tags, library, downloads, likes, or status...">
+  <div id="search-info" class="search-info"></div>
+</div>
 
 <div id="output" class="loading">Loading models...</div>
 
