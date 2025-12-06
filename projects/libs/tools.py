@@ -81,7 +81,6 @@ def readDataFile(fn):
 
 def readText(file, encoding="utf-8"):
     import os
-    print(f"DEBUG readText: file={file}, exists={os.path.exists(file)}, size={os.path.getsize(file) if os.path.exists(file) else 'N/A'}")
     
     for en in ["utf-8", "utf-16", "utf-32", "latin1", "ascii", "iso-8859-1"]:
         try:
@@ -89,10 +88,8 @@ def readText(file, encoding="utf-8"):
                 # Force reading the entire file by using read() without size limit
                 # and ensure the file object reads to EOF
                 content = f.read(-1)  # -1 means read all data
-                print(f"DEBUG readText: Successfully read with encoding={en}, content_length={len(content)}")
                 return content
         except Exception as ex:
-            print(f"DEBUG readText: Failed with encoding={en}, error={ex}")
             pass
     raise Exception(f"Could not read file {file} with any encoding")
 
