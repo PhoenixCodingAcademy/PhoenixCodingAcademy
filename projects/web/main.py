@@ -491,6 +491,17 @@ def _client_example():
 
 
 
+@app.route('/llm-models')
+def _llm_models():
+  '''
+  List of LLM models
+  '''
+  model = getModel('LLM Models')
+  return render_template('llm-models.html', model=model)
+
+
+
+
 @app.route('/search')
 def _search():
   '''
@@ -612,5 +623,5 @@ def precheck():
 
 
 if __name__ == "__main__":
-  if precheck():
+  if True or precheck():
     app.run(host="0.0.0.0")

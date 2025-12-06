@@ -1,0 +1,110 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<h1>LLM Models</h1>
+
+<style>
+  #models-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  #models-table th {
+    background-color: #f2f2f2;
+    padding: 12px;
+    text-align: left;
+    border-bottom: 2px solid #ddd;
+    font-weight: bold;
+  }
+  
+  #models-table td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  #models-table tr:hover {
+    background-color: #f5f5f5;
+  }
+  
+  .model-id {
+    color: #0066cc;
+    font-family: monospace;
+  }
+  
+  .stats {
+    text-align: right;
+  }
+  
+  .private-badge {
+    background-color: #ffc107;
+    color: #000;
+    padding: 2px 6px;
+    border-radius: 3px;
+    font-size: 0.85em;
+  }
+  
+  .loading {
+    text-align: center;
+    padding: 20px;
+    font-size: 1.2em;
+    color: #666;
+  }
+</style>
+
+<script>
+  $(async () => {
+    try {
+      const response = await fetch('/api/models?count=100');
+      const list = await response.json();
+      
+      // Create table HTML
+      let tableHtml = `
+        <table id="models-table">
+          <thead>
+            <tr>
+              <th>Model ID</th>
+              <th>Author</th>
+              <th class="stats">Downloads</th>
+              <th class="stats">Likes</th>
+              <th>Last Modified</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+          <tbody>
+      `;
+      
+      list.forEach(model => {
+        const author = model.author || 'N/A';
+        const downloads = model.downloads ? model.downloads.toLocaleString() : '0';
+        const likes = model.likes ? model.likes.toLocaleString() : '0';
+        const lastModified = model.lastModified ? new Date(model.lastModified).toLocaleDateString() : 'N/A';
+        const privateStatus = model.private ? '<span class="private-badge">Private</span>' : '';
+        
+        tableHtml += `
+          <tr>
+            <td class="model-id">${model.id}</td>
+            <td>${author}</td>
+            <td class="stats">${downloads}</td>
+            <td class="stats">${likes}</td>
+            <td>${lastModified}</td>
+            <td>${privateStatus}</td>
+          </tr>
+        `;
+      });
+      
+      tableHtml += `
+          </tbody>
+        </table>
+      `;
+      
+      $('#output').html(tableHtml);
+    } catch (error) {
+      $('#output').html('<p style="color: red;">Error loading models: ' + error.message + '</p>');
+    }
+  });
+</script>
+
+<div id="output" class="loading">Loading models...</div>
+
+{% endblock %}

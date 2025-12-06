@@ -23,3 +23,25 @@ def getRandom():
   n = int(request.args['n'] or 10)
   r = random.Random()
   return jsonify([r.randint(0,1000000000) for x in range(n)])
+
+
+@get_name.route('/api/models', methods=['GET'])
+def getModels():
+  from huggingface_hub import list_models
+  count = int(request.args.get('count', 100))
+  token = request.args.get('token', None)
+
+  models = list_models(filter="llm", limit=count, token=token)
+  result = []
+  for model in models:
+    result.append({
+                    'id': model.id,
+                    'downloads': getattr(model, 'downloads', 0),
+                    'likes': model.likes or 0,
+                    'private': model.private,
+                    'author': model.author,
+                    'lastModified': model.last_modified.isoformat() if model.last_modified else None
+                  })
+
+  return jsonify(result)
+  
